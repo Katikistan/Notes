@@ -1,0 +1,18 @@
+---
+date: 06-03-23
+day: Mon
+week: 10
+year: 2023
+excalidraw-plugin: parsed
+tags: [excalidraw]
+---
+==⚠  Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠==
+##### Weekly note
+[[Uge 10 - 2023]]
+
+%%
+# Drawing
+```json
+{"type":"excalidraw","version":2,"source":"https://excalidraw.com","elements":[],"appState":{"theme":"dark","gridSize":null,"viewBackgroundColor":"#ffffff"}}
+```
+%%

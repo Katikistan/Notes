@@ -1,0 +1,100 @@
+{
+  "collapse-filter": false,
+  "search": "",
+  "showTags": false,
+  "showAttachments": false,
+  "hideUnresolved": true,
+  "showOrphans": true,
+  "collapse-color-groups": false,
+  "colorGroups": [
+    {
+      "query": "path:\"Misc/1. semester/Diskret matematik og algoritmer (DMA)\"",
+      "color": {
+        "a": 1,
+        "rgb": 14701138
+      }
+    },
+    {
+      "query": "path:\"Misc/1. semester/Programmering og problemløsning (PoP)\"",
+      "color": {
+        "a": 1,
+        "rgb": 14725458
+      }
+    },
+    {
+      "query": "path:Misc/Excalidraw",
+      "color": {
+        "a": 1,
+        "rgb": 8388718
+      }
+    },
+    {
+      "query": "path:\"2. semester/Softwareudvikling (SU)\"",
+      "color": {
+        "a": 1,
+        "rgb": 3941865
+      }
+    },
+    {
+      "query": "path:\"2. semester/Interaktionsdesign (Inter)\"",
+      "color": {
+        "a": 1,
+        "rgb": 14701249
+      }
+    },
+    {
+      "query": "path:\"Weekly notes\"",
+      "color": {
+        "a": 1,
+        "rgb": 5419488
+      }
+    },
+    {
+      "query": "path:\"Day Planners\"",
+      "color": {
+        "a": 1,
+        "rgb": 15010582
+      }
+    },
+    {
+      "query": "path:Misc/Templates",
+      "color": {
+        "a": 1,
+        "rgb": 16777210
+      }
+    },
+    {
+      "query": "path:\"2. semester/Linær algebra (LinAlgDat)\"",
+      "color": {
+        "a": 1,
+        "rgb": 6749697
+      }
+    },
+    {
+      "query": "path:\"Misc/3. semester\"",
+      "color": {
+        "a": 1,
+        "rgb": 4915457
+      }
+    },
+    {
+      "query": "path:Misc/Math",
+      "color": {
+        "a": 1,
+        "rgb": 223265
+      }
+    }
+  ],
+  "collapse-display": true,
+  "showArrow": true,
+  "textFadeMultiplier": 0,
+  "nodeSizeMultiplier": 1.79842446709917,
+  "lineSizeMultiplier": 2.80203892493049,
+  "collapse-forces": false,
+  "centerStrength": 0.416666666666667,
+  "repelStrength": 9.44444444444444,
+  "linkStrength": 1,
+  "linkDistance": 30,
+  "scale": 0.1968652734927937,
+  "close": true
+}

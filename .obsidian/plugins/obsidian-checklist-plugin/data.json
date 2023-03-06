@@ -1,0 +1,21 @@
+{
+  "todoPageName": "Task",
+  "showChecked": false,
+  "showAllTodos": false,
+  "autoRefresh": true,
+  "subGroups": false,
+  "groupBy": "page",
+  "sortDirectionItems": "new->old",
+  "sortDirectionGroups": "new->old",
+  "sortDirectionSubGroups": "new->old",
+  "includeFiles": "",
+  "lookAndFeel": "classic",
+  "_collapsedSections": [
+    "Weekly notes/Uge 5 - 2023.md",
+    "Weekly notes/Uge 7 - 2023.md",
+    "Weekly notes/Uge 10 - 2023.md",
+    "Weekly notes/Uge 9 - 2023.md",
+    "Weekly notes/Uge 8 - 2023.md"
+  ],
+  "_hiddenTags": []
+}

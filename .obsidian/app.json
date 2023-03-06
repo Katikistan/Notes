@@ -1,0 +1,20 @@
+{
+  "promptDelete": false,
+  "showLineNumber": true,
+  "spellcheck": true,
+  "vimMode": false,
+  "spellcheckLanguages": [
+    "da",
+    "en-GB"
+  ],
+  "livePreview": true,
+  "showFrontmatter": true,
+  "alwaysUpdateLinks": true,
+  "pdfExportSettings": {
+    "includeName": true,
+    "pageSize": "A4",
+    "landscape": false,
+    "margin": "0",
+    "downscalePercent": 100
+  }
+}

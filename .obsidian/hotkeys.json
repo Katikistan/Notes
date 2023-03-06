@@ -1,0 +1,95 @@
+{
+  "obsidian-emoji-toolbar:emoji-picker:open-picker": [
+    {
+      "modifiers": [
+        "Shift"
+      ],
+      "key": "E"
+    }
+  ],
+  "editor:insert-embed": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "2"
+    }
+  ],
+  "editor:insert-wikilink": [],
+  "editor:insert-tag": [],
+  "obsidian-footnotes:insert-footnote": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "F"
+    }
+  ],
+  "obsidian-excalidraw-plugin:insert-link-to-element": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "C"
+    }
+  ],
+  "copy-as-latex:copy-as-latex": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "L"
+    }
+  ],
+  "editor:toggle-code": [],
+  "cmenu-plugin:codeblock": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "C"
+    }
+  ],
+  "obsidian-excalidraw-plugin:excalidraw-autocreate-and-embed": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "D"
+    }
+  ],
+  "obsidian-statusbar-pomo:quit-satusbar-pomo": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "P"
+    }
+  ],
+  "obsidian-statusbar-pomo:start-satusbar-pomo": [],
+  "obsidian-admonition:insert-admonition": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "A"
+    }
+  ],
+  "cmenu-plugin:editor:toggle-code": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "X"
+    }
+  ]
+}

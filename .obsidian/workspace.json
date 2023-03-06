@@ -1,0 +1,219 @@
+{
+  "main": {
+    "id": "f2a6d4fb203de561",
+    "type": "split",
+    "children": [
+      {
+        "id": "73ffee752e3ad9be",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f7365d5c366cced9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "2. semester/Interaktionsdesign (Inter)/Spørgsmål til inter - Toby.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "218e9625771ce243",
+    "type": "split",
+    "children": [
+      {
+        "id": "ba6cd822d20dd61e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "23ea683fc4398039",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "cad1134225cd771a",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "implicit",
+                "matchingCase": true,
+                "explainSearch": true,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "d0c5e5dff73a98d4",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 272.5
+  },
+  "right": {
+    "id": "1bdbff370dc1606a",
+    "type": "split",
+    "children": [
+      {
+        "id": "aedee73421079598",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f3cc278245833a18",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "04b059e31d47c008",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "2. semester/Interaktionsdesign (Inter)/Spørgsmål til inter - Toby.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "7debee4989697129",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "2. semester/Interaktionsdesign (Inter)/Spørgsmål til inter - Toby.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "c34091497860b011",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "2. semester/Interaktionsdesign (Inter)/Spørgsmål til inter - Toby.md"
+              }
+            }
+          },
+          {
+            "id": "58d3277700a29132",
+            "type": "leaf",
+            "state": {
+              "type": "todo",
+              "state": {}
+            }
+          },
+          {
+            "id": "198c099aa189d75f",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          },
+          {
+            "id": "0bd64926e672992d",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 6
+      }
+    ],
+    "direction": "horizontal",
+    "width": 363.5,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "obsidian-excalidraw-plugin:New Excalidraw drawing": false,
+      "templater-obsidian:Templater": false,
+      "switcher:Open quick switcher": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "command-palette:Open command palette": false,
+      "audio-recorder:Start/stop recording": false,
+      "obsidian-statusbar-pomo:Start pomodoro": false,
+      "canvas:Create new canvas": false,
+      "graph:Open graph view": false,
+      "periodic-notes:Open today": false
+    }
+  },
+  "active": "0bd64926e672992d",
+  "lastOpenFiles": [
+    "Excalidraw/Spørgsmål til inter - Toby 06-03-23 22.45.23.excalidraw.md",
+    "2. semester/Interaktionsdesign (Inter)/Spørgsmål til inter - Toby.md",
+    "2. semester/Interaktionsdesign (Inter)/Inter - Lecture Mon - 6.md",
+    "Excalidraw/06-03-23 22.15.04.excalidraw.md",
+    "2. semester/Interaktionsdesign (Inter)/Inter - Lecture Mon - 10.md",
+    "2. semester/Interaktionsdesign (Inter)/Inter - Reading for week 10.md",
+    "2. semester/Interaktionsdesign (Inter)/Untitled.md",
+    "2. semester/Softwareudvikling (SU)/SU - Reading for week 10.md",
+    "2. semester/Softwareudvikling (SU)/SU - Lecture Tue - 9.md",
+    "Weekly notes/Uge 10 - 2023.md",
+    "2. semester/Interaktionsdesign (Inter)/Inter - Reading for week 8.md",
+    "Weekly notes/Uge 7 - 2023.md",
+    "SU - Reading for week 10.md",
+    "Weekly notes/Uge 8 - 2023.md",
+    "Weekly notes/Uge 9 - 2023.md",
+    "Del 3.md",
+    "Del 2.md",
+    "Teori til del 4.md",
+    "Teori til del 2.md",
+    "Teori til del 3.md",
+    "2. semester/Interaktionsdesign (Inter)/Spørgsmål til inter - Holger.md",
+    "del 1 su.md",
+    "2. semester/Softwareudvikling (SU)/C sharp 101.md",
+    "Excalidraw/15-02-23 13.22.06.excalidraw.md",
+    "2. semester/Linær algebra (LinAlgDat)/Linear transformations.md",
+    "Misc/åBilleder/Pasted image 20220927135428.png{width=50%}.md",
+    "Misc/åBilleder/Pasted image 20230228121134.png",
+    "Misc/åBilleder/Pasted image 20230228124227.png",
+    "Misc/åBilleder/Pasted image 20230228124107.png",
+    "Misc/åBilleder/Pasted image 20230228123745.png",
+    "Misc/åBilleder/Pasted image 20230228123656.png",
+    "Misc/åBilleder/Pasted image 20230228123630.png",
+    "Misc/åBilleder/Pasted Image 20230228123614_948.png",
+    "Misc/åBilleder/Pasted image 20230228123321.png",
+    "Misc/åBilleder/Pasted image 20230228123306.png",
+    "Misc/åBilleder/Pasted image 20230228123239.png",
+    "Untitled.canvas"
+  ]
+}

@@ -1,0 +1,161 @@
+{
+  "main": {
+    "id": "f2a6d4fb203de561",
+    "type": "split",
+    "children": [
+      {
+        "id": "67ae72513418675b",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Diskret matematik og algoritmer (DMA)/Algoritmer/Sorterings algoritmer/Sammenlignings sortering/Quick sort.md",
+            "mode": "source",
+            "backlinks": true,
+            "source": false
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "218e9625771ce243",
+    "type": "split",
+    "children": [
+      {
+        "id": "ba6cd822d20dd61e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "23ea683fc4398039",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "cad1134225cd771a",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": true,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "d0c5e5dff73a98d4",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 349.5
+  },
+  "right": {
+    "id": "1bdbff370dc1606a",
+    "type": "split",
+    "children": [
+      {
+        "id": "aedee73421079598",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e23d11ebc705a6dd",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Diskret matematik og algoritmer (DMA)/Algoritmer/Sorterings algoritmer/Sammenlignings sortering/Quick sort.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": true,
+                "unlinkedCollapsed": false
+              }
+            }
+          },
+          {
+            "id": "532c2d1eacb0f893",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Diskret matematik og algoritmer (DMA)/Algoritmer/Sorterings algoritmer/Sammenlignings sortering/Quick sort.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "f3cc278245833a18",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "8ba5fcd666285b6f",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Diskret matematik og algoritmer (DMA)/Algoritmer/Sorterings algoritmer/Sammenlignings sortering/Quick sort.md"
+              }
+            }
+          },
+          {
+            "id": "0d94658f09709133",
+            "type": "leaf",
+            "state": {
+              "type": "todo",
+              "state": {}
+            }
+          },
+          {
+            "id": "b28beac3bb22aa98",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "67ae72513418675b",
+  "lastOpenFiles": [
+    "Diskret matematik og algoritmer (DMA)/Algoritmer/Sorterings algoritmer/Sammenlignings sortering/Heap sort.md",
+    "Diskret matematik og algoritmer (DMA)/Algoritmer/Sorterings algoritmer/Søgning/Binary search.md",
+    "Diskret matematik og algoritmer (DMA)/Algoritmer/Datastrukturer/Heap.md",
+    "Diskret matematik og algoritmer (DMA)/Algoritmer/Sorterings algoritmer/Radix sort.md",
+    "Diskret matematik og algoritmer (DMA)/Algoritmer/Sorterings algoritmer/Counting sort.md",
+    "Diskret matematik og algoritmer (DMA)/Algoritmer/Datastrukturer/Binary tree.md",
+    "Diskret matematik og algoritmer (DMA)/Algoritmer/Sorterings algoritmer/Sammenlignings sortering/Quick sort.md",
+    "Diskret matematik og algoritmer (DMA)/Algoritmer/Løkke invarianter.md",
+    "Diskret matematik og algoritmer (DMA)/Algoritmer/Sorterings algoritmer/Bucket sort.md",
+    "Diskret matematik og algoritmer (DMA)/Algoritmer/Abstrakt begregningsmodel (RAM).md"
+  ]
+}
