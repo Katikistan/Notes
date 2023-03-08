@@ -21,12 +21,12 @@
             }
           },
           {
-            "id": "429545d1b00aa60e",
+            "id": "bdc430d8e6c312b2",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Wifi down.md",
+                "file": "2. semester/Softwareudvikling (SU)/SU - Lecture Tue - 10.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -84,7 +84,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 272.5
+    "width": 272.5,
+    "collapsed": true
   },
   "right": {
     "id": "1bdbff370dc1606a",
@@ -111,7 +112,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Wifi down.md",
+                "file": "2. semester/Softwareudvikling (SU)/SU - Lecture Tue - 10.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -128,7 +129,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Wifi down.md",
+                "file": "2. semester/Softwareudvikling (SU)/SU - Lecture Tue - 10.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -140,7 +141,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Wifi down.md"
+                "file": "2. semester/Softwareudvikling (SU)/SU - Lecture Tue - 10.md"
               }
             }
           },
@@ -198,10 +199,14 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "429545d1b00aa60e",
+  "active": "bdc430d8e6c312b2",
   "lastOpenFiles": [
-    "2. semester/Interaktionsdesign (Inter)/Inter - Lecture Wed - 6.md",
+    "Excalidraw/06-03-23 22.15.04.excalidraw.md",
+    "2. semester/Softwareudvikling (SU)/SU - Lecture Tue - 10.md",
+    "Excalidraw/Spørgsmål til inter - Toby 06-03-23 22.45.23.excalidraw.md",
+    "Excalidraw/07-03-23 12.35.42.excalidraw.md",
     "Wifi down.md",
+    "2. semester/Interaktionsdesign (Inter)/Inter - Lecture Wed - 6.md",
     "2. semester/Interaktionsdesign (Inter)/Perception.md",
     "2. semester/Interaktionsdesign (Inter)/Teori til del 2.md",
     "2. semester/Interaktionsdesign (Inter)/Inter - Reading for week 6.md",
@@ -211,9 +216,7 @@
     "2. semester/Interaktionsdesign (Inter)/Inter - Reading for week 10.md",
     "2. semester/Interaktionsdesign (Inter)/Inter - Lecture Mon - 10.md",
     "2. semester/Interaktionsdesign (Inter)/Spørgsmål til inter - Toby.md",
-    "Excalidraw/Spørgsmål til inter - Toby 06-03-23 22.45.23.excalidraw.md",
     "2. semester/Interaktionsdesign (Inter)/Inter - Lecture Mon - 6.md",
-    "Excalidraw/06-03-23 22.15.04.excalidraw.md",
     "2. semester/Interaktionsdesign (Inter)/Untitled.md",
     "2. semester/Softwareudvikling (SU)/SU - Reading for week 10.md",
     "2. semester/Softwareudvikling (SU)/SU - Lecture Tue - 9.md",
@@ -224,8 +227,6 @@
     "Weekly notes/Uge 9 - 2023.md",
     "Del 3.md",
     "Del 2.md",
-    "Teori til del 4.md",
-    "2. semester/Interaktionsdesign (Inter)/Teori til del 3.md",
     "Misc/åBilleder/Pasted image 20230228121134.png",
     "Misc/åBilleder/Pasted image 20230228124227.png",
     "Misc/åBilleder/Pasted image 20230228124107.png",
