@@ -26,7 +26,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2. semester/Interaktionsdesign (Inter)/Inter - Reading for week 8.md",
+                "file": "2. semester/Interaktionsdesign (Inter)/Inter - Reading for week 10.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -84,7 +84,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 225.5
+    "width": 225.5,
+    "collapsed": true
   },
   "right": {
     "id": "1bdbff370dc1606a",
@@ -111,7 +112,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2. semester/Interaktionsdesign (Inter)/Inter - Reading for week 8.md",
+                "file": "2. semester/Interaktionsdesign (Inter)/Inter - Reading for week 10.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -128,7 +129,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2. semester/Interaktionsdesign (Inter)/Inter - Reading for week 8.md",
+                "file": "2. semester/Interaktionsdesign (Inter)/Inter - Reading for week 10.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -140,7 +141,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2. semester/Interaktionsdesign (Inter)/Inter - Reading for week 8.md"
+                "file": "2. semester/Interaktionsdesign (Inter)/Inter - Reading for week 10.md"
               }
             }
           },
@@ -181,7 +182,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 289.5
+    "width": 289.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -199,10 +201,11 @@
   },
   "active": "51abd6b3a400f5cf",
   "lastOpenFiles": [
+    "2. semester/Interaktionsdesign (Inter)/Inter - Reading for week 11.md",
+    "2. semester/Interaktionsdesign (Inter)/Inter - Reading for week 10.md",
+    "2. semester/Interaktionsdesign (Inter)/Inter - Reading for week 8.md",
     "2. semester/Interaktionsdesign (Inter)/Inter - Reading for week 7.md",
     "2. semester/Interaktionsdesign (Inter)/Inter - Reading for week 9.md",
-    "2. semester/Interaktionsdesign (Inter)/Inter - Reading for week 10.md",
-    "2. semester/Interaktionsdesign (Inter)/Inter - Reading for week 11.md",
     "2. semester/Interaktionsdesign (Inter)/Spørgsmål til inter - Boxter.md",
     "2. semester/Interaktionsdesign (Inter)/Ref til inter assignment 1.md",
     "2. semester/Interaktionsdesign (Inter)/Spørgsmål til inter - Holger.md",
@@ -211,7 +214,6 @@
     "2. semester/Interaktionsdesign (Inter)/Teori til del 2.md",
     "2. semester/Interaktionsdesign (Inter)/Perception.md",
     "2. semester/Interaktionsdesign (Inter)/Motor-control.md",
-    "2. semester/Interaktionsdesign (Inter)/Inter - Reading for week 8.md",
     "2. semester/Interaktionsdesign (Inter)/Inter - Lecture Mon - 6.md",
     "2. semester/Interaktionsdesign (Inter)/Inter - Lecture Mon - 7.md",
     "2. semester/Interaktionsdesign (Inter)/Inter - Lecture Mon - 10.md",
