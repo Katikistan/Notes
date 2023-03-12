@@ -26,7 +26,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2. semester/Softwareudvikling (SU)/SU - Lecture Tue - 10.md",
+                "file": "2. semester/Softwareudvikling (SU)/C sharp 101.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -63,7 +63,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "implicit",
+                "query": "c",
                 "matchingCase": true,
                 "explainSearch": true,
                 "collapseAll": false,
@@ -84,7 +84,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 272.5,
+    "width": 225.5,
     "collapsed": true
   },
   "right": {
@@ -112,7 +112,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2. semester/Softwareudvikling (SU)/SU - Lecture Tue - 10.md",
+                "file": "2. semester/Interaktionsdesign (Inter)/Inter - Lecture Wed - 6.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -129,7 +129,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2. semester/Softwareudvikling (SU)/SU - Lecture Tue - 10.md",
+                "file": "2. semester/Interaktionsdesign (Inter)/Inter - Lecture Wed - 6.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -141,7 +141,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2. semester/Softwareudvikling (SU)/SU - Lecture Tue - 10.md"
+                "file": "2. semester/Interaktionsdesign (Inter)/Inter - Lecture Wed - 6.md"
               }
             }
           },
@@ -178,12 +178,11 @@
             }
           }
         ],
-        "currentTab": 7
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 363.5,
-    "collapsed": true
+    "width": 289.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -199,10 +198,10 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "bdc430d8e6c312b2",
+  "active": "23ea683fc4398039",
   "lastOpenFiles": [
-    "Excalidraw/06-03-23 22.15.04.excalidraw.md",
     "2. semester/Softwareudvikling (SU)/SU - Lecture Tue - 10.md",
+    "Excalidraw/06-03-23 22.15.04.excalidraw.md",
     "Excalidraw/Spørgsmål til inter - Toby 06-03-23 22.45.23.excalidraw.md",
     "Excalidraw/07-03-23 12.35.42.excalidraw.md",
     "Wifi down.md",
