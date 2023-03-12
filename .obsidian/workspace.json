@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "f7365d5c366cced9",
+            "id": "bdc430d8e6c312b2",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2. semester/Interaktionsdesign (Inter)/Inter - Lecture Wed - 6.md",
+                "file": "2. semester/Softwareudvikling (SU)/C sharp 101.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -21,12 +21,12 @@
             }
           },
           {
-            "id": "bdc430d8e6c312b2",
+            "id": "51abd6b3a400f5cf",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2. semester/Softwareudvikling (SU)/C sharp 101.md",
+                "file": "2. semester/Interaktionsdesign (Inter)/Inter - Reading for week 8.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -84,8 +84,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 225.5,
-    "collapsed": true
+    "width": 225.5
   },
   "right": {
     "id": "1bdbff370dc1606a",
@@ -112,7 +111,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2. semester/Interaktionsdesign (Inter)/Inter - Lecture Wed - 6.md",
+                "file": "2. semester/Interaktionsdesign (Inter)/Inter - Reading for week 8.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -129,7 +128,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2. semester/Interaktionsdesign (Inter)/Inter - Lecture Wed - 6.md",
+                "file": "2. semester/Interaktionsdesign (Inter)/Inter - Reading for week 8.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -141,7 +140,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2. semester/Interaktionsdesign (Inter)/Inter - Lecture Wed - 6.md"
+                "file": "2. semester/Interaktionsdesign (Inter)/Inter - Reading for week 8.md"
               }
             }
           },
@@ -198,34 +197,34 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "23ea683fc4398039",
+  "active": "51abd6b3a400f5cf",
   "lastOpenFiles": [
-    "2. semester/Softwareudvikling (SU)/SU - Lecture Tue - 10.md",
-    "Excalidraw/06-03-23 22.15.04.excalidraw.md",
-    "Excalidraw/Spørgsmål til inter - Toby 06-03-23 22.45.23.excalidraw.md",
-    "Excalidraw/07-03-23 12.35.42.excalidraw.md",
-    "Wifi down.md",
-    "2. semester/Interaktionsdesign (Inter)/Inter - Lecture Wed - 6.md",
-    "2. semester/Interaktionsdesign (Inter)/Perception.md",
-    "2. semester/Interaktionsdesign (Inter)/Teori til del 2.md",
-    "2. semester/Interaktionsdesign (Inter)/Inter - Reading for week 6.md",
-    "2. semester/Interaktionsdesign (Inter)/Inter - Reading for week 8.md",
     "2. semester/Interaktionsdesign (Inter)/Inter - Reading for week 7.md",
     "2. semester/Interaktionsdesign (Inter)/Inter - Reading for week 9.md",
     "2. semester/Interaktionsdesign (Inter)/Inter - Reading for week 10.md",
-    "2. semester/Interaktionsdesign (Inter)/Inter - Lecture Mon - 10.md",
+    "2. semester/Interaktionsdesign (Inter)/Inter - Reading for week 11.md",
+    "2. semester/Interaktionsdesign (Inter)/Spørgsmål til inter - Boxter.md",
+    "2. semester/Interaktionsdesign (Inter)/Ref til inter assignment 1.md",
+    "2. semester/Interaktionsdesign (Inter)/Spørgsmål til inter - Holger.md",
     "2. semester/Interaktionsdesign (Inter)/Spørgsmål til inter - Toby.md",
+    "2. semester/Interaktionsdesign (Inter)/Teori til del 3.md",
+    "2. semester/Interaktionsdesign (Inter)/Teori til del 2.md",
+    "2. semester/Interaktionsdesign (Inter)/Perception.md",
+    "2. semester/Interaktionsdesign (Inter)/Motor-control.md",
+    "2. semester/Interaktionsdesign (Inter)/Inter - Reading for week 8.md",
     "2. semester/Interaktionsdesign (Inter)/Inter - Lecture Mon - 6.md",
-    "2. semester/Interaktionsdesign (Inter)/Untitled.md",
+    "2. semester/Interaktionsdesign (Inter)/Inter - Lecture Mon - 7.md",
+    "2. semester/Interaktionsdesign (Inter)/Inter - Lecture Mon - 10.md",
+    "2. semester/Interaktionsdesign (Inter)/Inter - Lecture Wed - 6.md",
+    "2. semester/Interaktionsdesign (Inter)/Inter - Lecture Wed - 8.md",
+    "2. semester/Interaktionsdesign (Inter)/Inter - Reading for week 6.md",
+    "2. semester/Softwareudvikling (SU)/SU - Lecture Tue - 10.md",
+    "2. semester/Softwareudvikling (SU)/SU - Reading for week 8.md",
     "2. semester/Softwareudvikling (SU)/SU - Reading for week 10.md",
-    "2. semester/Softwareudvikling (SU)/SU - Lecture Tue - 9.md",
-    "Weekly notes/Uge 10 - 2023.md",
-    "Weekly notes/Uge 7 - 2023.md",
-    "SU - Reading for week 10.md",
-    "Weekly notes/Uge 8 - 2023.md",
-    "Weekly notes/Uge 9 - 2023.md",
-    "Del 3.md",
-    "Del 2.md",
+    "Weekly notes/Uge 11 - 2023.md",
+    "Excalidraw/06-03-23 22.15.04.excalidraw.md",
+    "Excalidraw/Spørgsmål til inter - Toby 06-03-23 22.45.23.excalidraw.md",
+    "Excalidraw/07-03-23 12.35.42.excalidraw.md",
     "Misc/åBilleder/Pasted image 20230228121134.png",
     "Misc/åBilleder/Pasted image 20230228124227.png",
     "Misc/åBilleder/Pasted image 20230228124107.png",

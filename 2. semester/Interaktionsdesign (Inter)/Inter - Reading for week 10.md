@@ -13,3 +13,5 @@ Summary: ""
 ##### Weekly note
 [[Uge 10 - 2023]]
 
+Hvis man bruger eksperter til sin evaluering er det en analytisk evaluering 
+bruger man brugerene er det en emperisk analyse
