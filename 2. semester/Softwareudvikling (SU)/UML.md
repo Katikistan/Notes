@@ -19,3 +19,6 @@ Summary: "UML basics"
 #### How to:
 This website contains a tool for making UML diagrams:
 http://www.umletino.com/umletino.html
+## Class diagram
+
+## Sequence diagram
