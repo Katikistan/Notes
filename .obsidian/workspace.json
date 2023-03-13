@@ -8,25 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "54c596973ea444c7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "2. semester/Softwareudvikling (SU)/SOLID principles.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
             "id": "fc45b9c3fea93ad6",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2. semester/Softwareudvikling (SU)/Design patterns.md",
+                "file": "Weekly notes/Uge 11 - 2023.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -34,12 +21,12 @@
             }
           },
           {
-            "id": "a1fe6c5339e82241",
+            "id": "ef53c5ed234ca632",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Mandag forelæsning.md",
+                "file": "2. semester/Interaktionsdesign (Inter)/Inter - Lecture Mon - 11.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -47,7 +34,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -124,7 +111,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Mandag forelæsning.md",
+                "file": "2. semester/Interaktionsdesign (Inter)/Inter - Lecture Mon - 11.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -141,7 +128,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Mandag forelæsning.md",
+                "file": "2. semester/Interaktionsdesign (Inter)/Inter - Lecture Mon - 11.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -153,7 +140,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Mandag forelæsning.md"
+                "file": "2. semester/Interaktionsdesign (Inter)/Inter - Lecture Mon - 11.md"
               }
             }
           },
@@ -194,7 +181,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 289.5
+    "width": 289.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -210,32 +198,35 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "a1fe6c5339e82241",
+  "active": "ef53c5ed234ca632",
   "lastOpenFiles": [
-    "Pasted image 20230313112008.png",
-    "Pasted image 20230313111956.png",
-    "Pasted image 20230313111855.png",
-    "Pasted image 20230313111831.png",
-    "Pasted image 20230313111810.png",
-    "Pasted image 20230313111758.png",
-    "Pasted image 20230313111746.png",
-    "Pasted image 20230313111640.png",
-    "Pasted image 20230313090119.png",
+    "Weekly notes/Uge 11 - 2023.md",
+    "2. semester/Interaktionsdesign (Inter)/Inter - Lecture Mon - 11.md",
+    "2. semester/Softwareudvikling (SU)/SU - Lecture Tue - 11.md",
+    "2. semester/Softwareudvikling (SU)/SU - Lecture Mon - 11.md",
+    "2. semester/Softwareudvikling (SU)/SU - Lecture Mon - 9.md",
+    "2. semester/Softwareudvikling (SU)/SU - Lecture Tue - 10.md",
+    "2. semester/Softwareudvikling (SU)/SU - Reading for week 8.md",
+    "Del 1.md",
     "().md",
-    "Mandag forelæsning.md",
+    "Misc/åBilleder/Pasted image 20230312183245.png",
+    "Misc/åBilleder/Pasted image 20230313112008.png",
+    "Misc/åBilleder/Pasted image 20230313111956.png",
+    "Misc/åBilleder/Pasted image 20230313111855.png",
+    "Misc/åBilleder/Pasted image 20230313111831.png",
+    "Misc/åBilleder/Pasted image 20230313111810.png",
+    "Misc/åBilleder/Pasted image 20230313111758.png",
+    "Misc/åBilleder/Pasted image 20230313111746.png",
+    "Misc/åBilleder/Pasted image 20230313111640.png",
+    "Misc/åBilleder/Pasted image 20230313090119.png",
     "2. semester/Softwareudvikling (SU)/Design patterns.md",
     "2. semester/Softwareudvikling (SU)/SU - Lecture Tue - 9.md",
-    "2. semester/Softwareudvikling (SU)/SU - Lecture Tue - 10.md",
-    "2. semester/Softwareudvikling (SU)/SU - Lecture Mon - 11.md",
     "2. semester/Softwareudvikling (SU)/SOLID principles.md",
     "2. semester/Softwareudvikling (SU)/UML.md",
-    "Pasted image 20230313093819.png",
-    "Pasted image 20230313093520.png",
     "2. semester/Softwareudvikling (SU)/SU - Reading for week 10.md",
     "Design patterns.md",
     "S.md",
     "2. semester/Softwareudvikling (SU)/WIKI uge 11 - Mon - 08-03-28 - (2023).md",
-    "Del 1.md",
     "2. semester/Interaktionsdesign (Inter)/Inter - Reading for week 10.md",
     "2. semester/Interaktionsdesign (Inter)/Inter - Reading for week 11.md",
     "2. semester/Interaktionsdesign (Inter)/Inter - Reading for week 8.md",
@@ -245,9 +236,6 @@
     "2. semester/Interaktionsdesign (Inter)/Ref til inter assignment 1.md",
     "2. semester/Interaktionsdesign (Inter)/Spørgsmål til inter - Holger.md",
     "2. semester/Interaktionsdesign (Inter)/Spørgsmål til inter - Toby.md",
-    "2. semester/Interaktionsdesign (Inter)/Teori til del 3.md",
-    "2. semester/Interaktionsdesign (Inter)/Teori til del 2.md",
-    "2. semester/Interaktionsdesign (Inter)/Perception.md",
     "Untitled.canvas"
   ]
 }

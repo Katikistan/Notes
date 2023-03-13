@@ -7,240 +7,302 @@ type: Lecture
 course: SU
 status: 
 semester: 2
-tags: SOLID, Designpatterns
-Summary: "SOLID principles and design patterns"
+tags: Designpatterns
+Summary: "Decorator, Strategy, Iterator, Observer"
 ---
 ##### Weekly note
 [[Uge 11 - 2023]]
 
-# Mediator pattern
-A mediator promotes the loose coupling of objects by avoiding an explicit relationship between the involved objects
+![](https://i.imgur.com/9RdzHyS.png)
 
-The distribution of the behavior to many objects is usually the basis for the good changeability and reusability of object-oriented systems
+# Decorator pattern  
+•A Decorator pattern  
+allows the creation of heterogeneous stack structures.  
+•Approach:  
+•A stack consists of structurally different elements,  
+•the last element without a successor and  
+•preceding elements, which have exactly one direct successor.  
+•The different elements offer different attributes and different  
+behavior.  
+•But the attributes and behavior refer with regards to content  
+always to all the following elements.  
+•Each additional element expands (= decorates) the existing  
+elements.  
+•The entire stack has the same semantics like its second element.  
+•Requirement:  
+All elements must offer the same interface to the outside.
+## Visualization Decorator pattern (object diagram)
+you have an atom that becomes decorated
+![](https://i.imgur.com/gcVwyp4.png)
+![](https://i.imgur.com/VxvyHC1.png)
+• Application scenarios for such stacks:  
+	• Further properties (= previous items) should be added dynamically to an  
+	output object (= the last element).  
+	• With the addition of a property, the overall behavior of the stack has to be  
+	changed, too.  
+	• The order, in which properties can be added, should be arbitrary.  
+	• The properties should also be able to be removed.  
+	• A property may also be added multiple times.  
+	• Further properties are to be supplemented easily during the development:  
+	All objects have to meet the same interface.
+![](https://i.imgur.com/zaUNJl3.png)
+atom is a leaf, decor has a single single a ref to single component no star but a one 
+## Examples for the use of the Decorator pattern
+![](https://i.imgur.com/z7KLjQU.png)
+## Visualization (example: price calculation for coffee)
+![](https://i.imgur.com/d6R4Kiz.png)
+![](https://i.imgur.com/ZwWDD6m.png)
+![](https://i.imgur.com/wU2zeh1.png)
+![](https://i.imgur.com/cq0zg9X.png)
+# Summary of decorator pattern
+### Advantages:  
+•Atoms and decors are treated uniformly.  
+•Several types of atoms or decors are possible.  
+•New atom or decor classes can easily be added.  
+•An atom is always associated with decors. It is not necessary to  
+convert already existing objects.  
+•It is not necessary to check the type of a component.  
+•The constructed object structure is unlimited.  
+•A stack is created, which is made up of specialized,  
+heterogeneous nodes.
+### Disadvantages:  
+Memory can be an issue, you make alot of objects
+Lot of message calls, you traverse a linked list essentially
 
-**But** Too many relationships between too many objects reduce the changeability and reusability because building such object structures is complex.
+# Covariant Conversions
+Covariant Conversions (CoCo): A Design Pattern for Type-Safe Modular Software  Evolution in Object-Oriented Systems
+# Strategy pattern
+allows to change the behavior of the methods of an  
+object during execution.  
+• Examples:  
+	•Arranging graphical elements in a window: Next to each other, among each other, in a grid, ....  
+	•Design of text formatting: Left-aligned, right-aligned, centered, ...  
+• But:  
+	•Various types of behavior should be provided, without  
+	expanding the class of the executing object.  
+	•The behaviour is supposed to be established only after the  
+	declaration of the class of the executing object.
 
-An object operates as an intermediary between the other objects
+• The behavior , which has to be changed, is encapsulated in a separate strategy class, which maintains a given interface.  
+• The behavior of a strategy object is accessed during the execution.  
+• If changes are made, the strategy object is replaced.
+![](https://i.imgur.com/gm3FGJw.png)
+![](https://i.imgur.com/xyNMYdy.png)
+The choice of the strategy is done by the application not the class, it's an external choice of the strategy
 
-Communication between all involved objects always takes place via the intermediary.
+# Summary – Strategy pattern
+The use of the pattern strategy is in some object-oriented programming languages the only way to exchange the behaviour during execution.  
 
-Further objects can be connected very easily.
-![[Pasted image 20230313090053.png]]
-![[Pasted image 20230313090119.png]]
-### General structure of a mediator pattern: class diagram
-![[Pasted image 20230313090201.png|300]]
-## Summary Mediator pattern
+A strategy class also offers the possibility of combining the interchangeable behavior with status information.
+
+# State pattern
+
+# Iterator pattern
+we want to decouple, we want to hideaway the underlying structure
+
+allows sequential access to the elements of a composite object (aggregate, e.g. list or tree) without revealing its underlying structure.  
+•Examples:  
+•Sequential throughput through a list  
+•Sequential throughput through a binary tree  
+•Sequential throughput through a composite structure (n-ary tree with different types of nodes)  
+•But:  
+•The exact structure of the aggregate should have no meaning for  
+the throughput.  
+•Several passages through an aggregate should be possible at the same time.  
+•Various types of throughputs are to be provided, without inflowing the aggregate class.
+
+**idea**
+Responsibility for the throughput is not in the  
+aggregate object, but is taken over by an iterator  
+object.
+
+Example list: general structure
+![](https://i.imgur.com/IUHgxWT.png)
+Example list: two different iterators
+the iterators refer to a value that determine iteraton
+![](https://i.imgur.com/s7wyXhf.png)
+![](https://i.imgur.com/CC5bstV.png)
+The application must ensure that the aggregate and  iterator match each other, e.g. connecting List and ForwardIterator.
+![](https://i.imgur.com/eP3L4Mj.png)
+But:  
+•The application would need to know, which data structure the  
+aggregate has. Otherwise, no reasonable allocation could be  
+made.  
+•The iterator could only access public methods of the  
+aggregate.  
+• Therefore, the following improvement:  
+•The aggregate implements a general interface, which makes  
+the aggregate iteratable.  
+•The iterator implements a uniform interface for iterators, so  
+that all iterators can be used equally.  
+•Each iteratable aggregate has its own iterator, which is  
+provided by the aggregate.  
+•Thus, the aggregate and the iterator are closely interlinked.  
+The iterator can obtain a preferred access to the aggregate,  
+thereby performing an (efficient) implementation.
+## Class diagram Iterator pattern (general view)
+![](https://i.imgur.com/7CHPABl.png)
+
+## Iterator pattern - evaluation
 ### Advantages:
-- The mediator pattern simplifies the protocol between objects: All partner objects call only the methods of the mediator. 
-- The mediator pattern abstracts from the collaboration between the objects: All partner objects know only the mediator. 
-- The mediator pattern decouples the objects of the system: Further objects as well as further partner classes can be easily integrate
+•The implementation of the data structure underlying the  
+aggregate remains hidden.  
+•The aggregate objects can be exchanged without modifying  
+the application, since the access via the iterator remains  
+unchanged.
 ### Disadvantages:
-The mediator fulfills a central task: The complexity of the interaction is replaced by the complexity of the mediator
-
-### Remarks: 
-**Comparison with the facade pattern:** 
-- A facade provides a more convenient interface to simplify the use. 
-- A facade supports a unidirectional protocol between classes. 
-- A mediator supports multidirectional protocol to simplify the collaboration of objects
-# Singleton pattern
-ensures that there is only one single object from a class.
-### Motivation
-There are classes, of which only one object can exist at runtime. 
-
-Example: 
-Assigning unique keys, such as order numbers, customer numbers, ..
-
-The class itself ensures that there is only one object: 
-- The implementation depends on the possibilities of the programming language. 
-- Access to constructors must be restricted, (e.g. by preventing access: The constructors are agreed privately! 
-- Instead of the constructor, special static methods control the creation of only one object
+•Iterators require additional programming effort.  
+•Iterators may need to be informed of changes to the  
+aggregate.
 ## Implementation
-![[Pasted image 20230313091459.png|400]]
-![[Pasted image 20230313091619.png|400]]
-![[Pasted image 20230313091644.png|400]]
-![[Pasted image 20230313091720.png|400]]
-# Abstract factory pattern
-allows the use of the same procedures for different families of objects
 
-A software product can be used with the largely identical processes in different contexts. The same parts should be maintained unchanged
+![](https://i.imgur.com/BHWoV7d.png)
+![](https://i.imgur.com/neLmAX6.png) 
+Movenext indicates wheter the end of the enumarble has been reached
+in a for loop, when movenext is reached the loop stops.
 
-The software consists of a constant application core and other components, which occur in different variants. 
-- Only components that match, that is, belong to a family of products, are selected for a configuration. 
-- The components required for a configuration are generated by a special component, the factory, as needed.
-![[Pasted image 20230313091842.png|300]]
-General structure (objects of application)
-![[Pasted image 20230313091920.png|200]]
-![[Pasted image 20230313092023.png|300]]
-![[Pasted image 20230313092057.png|300]]
-![[Pasted image 20230313092120.png|400]]
-## Summary of the factory pattern
-### Advantages: 
-- The Abstract factory pattern simplifies the customization of a software product by exchanging groups (families) of objects. 
-- The adjustment is made dynamically at runtime. 
-- Further product families can easily be added in the framework given by the interfaces
+The interface IEnumerable< T > is implemented  
+amongst others by the following classes: List< T >,  
+LinkedList< T >, Queue< T >, Stack< T >,  
+SynchronizedCollection< T >  
+• Each of these classes provides an GetEnumerator()  
+method using an IEnumerator< T > object.  
+• Some classes provide additional iterators
 
-### Disadvantages: 
-- The pre-recognition of a situation which is sustainably supported by an abstract factory is difficult. 
-- The construction of an abstract factory is complex. In particular, a suitable description of the scope of the product family must be carried out as preparation. 
-- The creation of an abstract factory is only profitable if actually several products can be identified in different families
-# Summary  - Design patterns
-All design patterns have been derived from experience. 
-	• Design patterns provide appropriate solutions for recurring problems. 
-	• Some design patterns are supported in standard libraries. 
-	• Design patterns can be flexibly implemented in various ways. 
-	• Design patterns provide a common vocabulary for developers. 
-	• Design patterns can be combined with each other Example: Observer iterates over the observed objects.
-![[Pasted image 20230313092350.png]]
-# SOLID principles
-What are reasons for unsuccessful applications? 
-	• Putting more functionalities on classes 
-	• Implementing tight coupling between software components (i.e., between classes). If classes are dependent on each other, then change in one class will affect other classes also 
+bind in the concrecte inumerator
+signature e to a t
+for example an int and and iterator of int are 2 different things, E is the enumator that gets turned into a certain int which is used in the enumarble  
+![](https://i.imgur.com/rOC23to.png)
+![](https://i.imgur.com/hRoJXmo.png)
+This is the preffered soultion, behind the scenes of foreach
+![](https://i.imgur.com/Z7U8sCz.png)
+**Example shows the advantages of the Iterator pattern:**  
+•The data structure underlying the implementation of the aggregate has no meaning for traversing the aggregate with the iterator.  
 
-How to overcome these problems? 
-	• Need to use correct design 
-	• Need to follow design principles (i.e., SOLID Principles, GRASP Principles) 
-	• Need to choose correct design patterns
+•Various aggregates can be treated equally.  
 
-The principles, when applied together, intend to make easy to maintain and extend over time system
-## S – SRP - Single responsibility principle
-Every class, function, variable should define a single responsibility, and that responsibility should be entirely encapsulated by the context
+•Aggregates can be exchanged without changing the application, since the access via the iterator remains unchanged.  
 
-It is important to keep a class focused on a single concern is that it makes the class more robust
+•Iterator object is external to the iterated data structure, so that the progress of the iterator can be determined by a method call from the outside (e.g., MoveNext ()).  
 
-“There should never be more than one reason for a class to change.”
+•Implementation options:  
 
-Each responsibility should be a separate class, because each responsibility is an axis of change. A class should have one, and only one, reason to change. If a change to the business rules causes a class to change, then a change to the database schema, GUI, report format, or any other segment of the system should not force that class to change.
+• The traversing: The throughput takes place in the aggregate.  
 
-Think of an car assembly line where each robot have been streamlined for one task.
+• A copy of the data structure of the aggregate is created within the iterator and this copy will be run through during the traversal.  
+•A need for clarification when implementing an iterator: How do changes affect the iterated data structure?
+# Observer pattern
+**Allows the detection of changes to objects.**
 
-• Axis of Change
-• Separation of Concern
-• Test-Driven Development
-• Logical Separation of Namespaces And Assemblies
-## O –OCP - Open/closed principle 
-Software entities (classes, modules, functions, etc.) should be open for extension, but closed for modification that is, such an entity can allow its behavior to be extended without modifying its source code
+the keyboard notifies others that a key has pressed and observers who wants to be notified that an event has occured , dont call us we will call you. we safe a lot of cycles, instead of observers keep asking "has a key been pressed" they simply wait
+Example
+	•Arrival of a new order  
+	•Log on to a new user  
+	•Import of new data with other software  
+	•In the real world, observing is an active activity by the  
+	observers.  
+	•Many observers can notice the same change immediately.  
+	•But then all observers are constantly concerned with the  
+	process of observing.
+## Objective of the Observer pattern
+•Changes to another object – the subject - are to be made known to interested objects – the observers - quickly and  
 
-This is especially valuable in a production environment, where changes to source code may necessitate code reviews, unit tests, and other such procedures to qualify it for use in a product
+•at the same time with little effort.  
+	•For this purpose, a property of programmed solutions is used: 
+	•Objects in the program cooperate reliably.  
+	•In the observer pattern, the (observed) subject and the observer cooperate. 
 
-software entities (classes, modules, functions, etc.) should be open for extension, but closed for modification.”
+Equations in the real world would be:  
+	•Amazon notifies about a new book of the favorite author.  
+	•The thief informs the detective about his theft.  
+•Idea:  
+	•The (observed) subject allows the logging on and off of observers.  
+	•Observers are waiting passively for notification by the subject.  
+	•The subject has a notification mechanism and informs all registered observers that an event has occurred.  
+	•The observer can obtain information about the subject after the notification of an event, which has occurred, thus completing the observation.
+## Structure of observer pattern
+Please
+![](https://i.imgur.com/e4AVerb.png)
+## Structure of the Observer pattern – general
+notify envoke all objects that are subscribed update method
 
-You can easily change the lens of most SLR cameras without having to saw off the old lens and weld on a new one
+observer only get notified when there is a change
+subject is the one that change the obserable objects state 
+![](https://i.imgur.com/7LKBwx1.png)
+### Structure of the Observer pattern –  realization
+![](https://i.imgur.com/yMnTVXu.png)
+Methods of the class Observable  
+- AddObserver checks in an observer, which implements the Observer interface
+  
+- DeleteObserver checks out an observer
 
+- SetChanged sets changed-attribute, which indicates whether the subject was  changed  
 
-Meyer's Open/Closed Principle 
-	• Implementation of a class should only be modified to correct errors. 
-	• Changes or new features require that a different class be created (Interfaces)
-Polymorphic Open/Closed Principle 
-	• All member variables should be private. 
-	• Global variables should be avoided
+- HasChanged returns the value of the changed-attribute  
 
-## L – LSP - Liskov substitution principle
-It is a particular definition of a subtyping relation, called behavioral subtyping
+- NotifyObservers notifies all observers, but only if the subject has actually been changed:  The changed-attribute allows a decoupling of change and notification  
 
-If S is a subtype of T, then objects of type T may be replaced with objects of type S *without altering* any of the desirable properties of that program
+Methods of the interface Observer  
+Update: 
+- is called by the NotifyObservers method and has to implement the actions that are to be performed when a change occurs in the specific observer.  
+- since the observed subject hands itself as a parameter, the observer does not need an attribute to remember it!  
 
-“Objects in a program should be replaceable with instances of their subtypes without altering the correctness of that program” 
+The flow will now be somewhat more complex, its description too!  
+(The observer pattern is a behavioral pattern!
+## Description of the order of method calls
+• Sequence diagram  
+	•It shows the flow of communication between objects.  
+	•It shows the temporal sequence of the communication steps.  
+	•It only displays the call of methods.  
 
-“Functions that use pointers or references to base classes must be able to use objects of derived classes without knowing it.”
+One speaks also generally of message exchange:  
+- Calling a method m for an object obj is interpreted as sending a message to obj.
+- The termination of m (and possibly the return of a value) are understood as the  answer of obj.
 
-- Polymorphism
-- Test-Driven Development (TDD)
-- Avoid Run-Time Type Information (RTTI)
-### Objects should be replaceable with subtypes
-When overriding a class you must be carful that the way you extend it does not cause it to no longer work in place of the class it inherited from
-![[Pasted image 20230313093107.png|400]]
-## I – ISP - Interface segregation principle
-It states that no client should be forced to depend on methods it does not use
+Sequence diagram for describing the flow of  the observer pattern
+![[Pasted image 20230313111640.png]]
+![[Pasted image 20230313111746.png]]
+<!--Upload failed, remote server returned an error: [object Object]-->
+![[Pasted image 20230313111758.png]]
+![[Pasted image 20230313111810.png]]
 
-ISP splits interfaces which are very large into smaller and more specific ones so that clients will only have to know about the methods that are of interest to them
+![[Pasted image 20230313111831.png]]
+![[Pasted image 20230313111855.png]]
+## Findings from class and sequence diagrams
+The implementation of the observer pattern requires  
+little effort, since essential sequences can be defined  
+by predefined classes.  
 
-“Many client specific interfaces are better than one general purpose interface” 
+Any number of observers can be supplied with  
+information during execution.  
 
-“Clients should not be forced to depend upon interfaces that they do not use.”
+The pattern is used, in particular, in the design of  
+graphic surfaces:  
 
-- Design by contract (DbC) / Design to Interfaces 
-- Test-Driven Development (TDD)
+The graphical elements of the interface, which the user can  
+manipulate, are observed: menus, switch buttons, text fields, ...  
 
-Many specific interfaces are better than one general
-
-Clients should not depend upon interfaces that they do not use
-![[Pasted image 20230313093256.png|300]]
-Each interface should specifically describe only what is needed and nothing more
-## D – DIP - Dependency inversion principle
-High-level modules should not depend on low-level modules: both should depend on abstractions.
-
-Abstractions should not depend on details. Details should depend on abstractions.
-
-“High level modules should not depend upon low level modules. both should depend upon abstractions.” 
-
-“Abstractions should not depend upon details. Details should depend upon abstractions.”
-
-- Loose Coupling
-- Dependency Injection / Inversion of Control
-### Dependency Injection / Inversion of Control
-![[Pasted image 20230313093422.png]]
-
-High & low level modules should depend upon abstractions
-
-No reference or dependency to a specific Data access technology should ever exist outside of the Data Access Assembly this includes ADO.net, LinqToSql, EF4, Nhibernate... 
-
-Only Interfaces and POCO (Plain Old CLR Objects) should be referenced between assemblies and primarily they should reference an interface.
-## SOLID BAD SMELLS
-![[Pasted image 20230313093520.png|350]]
-## A SOLID Summary
-### SRP: 
-There should never be more than one reason for a class to change
-### OCP: 
-Software entities should be open for extension but closed for modification
-### LSP: 
-Functions that use references to base classes must be able to use objects of derived classes without knowing it.
-### ISP: 
-Clients should not be forced to depend upon interfaces that they do not use .
-### DIP: 
-• High level modules should not depend upon low level modules. Both should depend upon abstractions. 
-• Abstractions should not depend upon details. Details should depend upon abstractions
-
-# GRASP Pattern
-**G**eneral **R**esponsibility **A**ssignment **S**oftware **P**atterns
-
-Assigning *responsibilities* to classes is critical aspect of object-oriented design.
-
-*Appropriate* assignment of responsibilities to classes is key to successful design.
-
-There are *fundamental principles* in assigning responsibilities that experienced designers apply.
-
-These principles are summarized in GRASP patterns.
-
-Has nine core principles that object-oriented designers apply when assigning responsibilities to classes and designing message interactions:
-
-**Information Expert (cf. information hiding)** 
-	• determines where to delegate responsibilities, e.g., methods and computation 
-**Creator** 
-	• determines responsibility for object creation • 
-**Controller** 
-	• non-user interface object responsible for receiving or handling system events  
-**Low Coupling (cf. Code Complexity lecture B4-03)** 
-	• measures of how strongly one element is dependent on other element
-**High Cohesion (cf. Code Complexity lecture B4-03)** 
-	• responsibilities of given set of elements are strongly related and highly focused on rather specific topic
-**Polymorphism** 
-	• defining variation of behaviors based on type is assigned to the type for which this variation happens 
-**Pure Fabrication** 
-	• Entity is service and does not represent concept in problem domain
-**Indirection** 
-	• assigns responsibility of mediation between them to intermediate object instead of direct connection (man-in-themiddle) 
-**Protected variations** 
-	• protects elements from variations on other elements by wrapping focus of instability with interface and using polymorphism (cf. OCP)
-# Summary – Design patterns
-Design patterns are ideas for solutions but no finished solutions. 
-
-Design patterns must be adapted to the specific problem. 
-
-The use of design patterns requires experience in the design of object-oriented software. 
-
-Design patterns usually comprise only a few classes, many design patterns are obvious object-oriented solutions. 
-
-Design patterns are difficult to recognize in source code. 
-It is even more difficult to recognize combinations of design patterns in the source text. 
-
-A senseless use of design patterns does not make software any better
+Observers are program sections, which are supposed to react  
+when manipulated by the user.
+## Events in C\#
+• Lightweight implementation of observer pattern  
+• A “protected delegate”  - type safe methods, can be passed to other methods
+	•Owning class gets full access  
+	•Consumers can only hook or unhook handlers  
+	•Similar to a property – supported with metadata  
+• Used throughout the frameworks  
+• Very easy to extend  
+• Syntactic sugar using keyword event
+### Event sourcing
+![[Pasted image 20230313111956.png]]
+### Event handling
+![[Pasted image 20230313112008.png]]
+## Summary of the observer pattern
+### Advantages:  
+- The observer pattern specifies a protocol on which the  information exchange between objects is oriented.  
+- The observer pattern decouples the observed subject from its observers. As a result, further observer classes can easily be created. During the execution, the number of observers is dynamic and not limited.  
+- The notification mechanism can be implemented independently of the specific problem.  
+### Disadvantages:  
+- If an observer object observes different subjects, the identification of the notifying object can be problematic.
+## Publish-subscribe pattern
+like game eventbus
