@@ -120,7 +120,7 @@ we therefore put an intermediate layer, so we can change a libary feature, witho
 A downside is that the facade can become very complicated, have many responsibities, it can be a bottleneck and therefore slow down runtime. 
 ![](https://i.imgur.com/3XPz4EQ.png)
 internals get more complicated
-
+![](https://i.imgur.com/kaUubHC.png)
 
 A facade creates a new, simpler interface.
 

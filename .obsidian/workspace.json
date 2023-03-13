@@ -11,11 +11,43 @@
             "id": "54c596973ea444c7",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "2. semester/Softwareudvikling (SU)/SOLID principles.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "fc45b9c3fea93ad6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "2. semester/Softwareudvikling (SU)/Design patterns.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "a1fe6c5339e82241",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Mandag forelæsning.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -92,6 +124,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Mandag forelæsning.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -108,6 +141,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Mandag forelæsning.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +152,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Mandag forelæsning.md"
+              }
             }
           },
           {
@@ -158,8 +194,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 289.5,
-    "collapsed": true
+    "width": 289.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -175,23 +210,28 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "54c596973ea444c7",
+  "active": "a1fe6c5339e82241",
   "lastOpenFiles": [
-    "2. semester/Softwareudvikling (SU)/UML.md",
+    "Pasted image 20230313112008.png",
+    "Pasted image 20230313111956.png",
+    "Pasted image 20230313111855.png",
+    "Pasted image 20230313111831.png",
+    "Pasted image 20230313111810.png",
+    "Pasted image 20230313111758.png",
+    "Pasted image 20230313111746.png",
+    "Pasted image 20230313111640.png",
+    "Pasted image 20230313090119.png",
+    "().md",
+    "Mandag forelæsning.md",
+    "2. semester/Softwareudvikling (SU)/Design patterns.md",
+    "2. semester/Softwareudvikling (SU)/SU - Lecture Tue - 9.md",
+    "2. semester/Softwareudvikling (SU)/SU - Lecture Tue - 10.md",
     "2. semester/Softwareudvikling (SU)/SU - Lecture Mon - 11.md",
     "2. semester/Softwareudvikling (SU)/SOLID principles.md",
+    "2. semester/Softwareudvikling (SU)/UML.md",
     "Pasted image 20230313093819.png",
     "Pasted image 20230313093520.png",
-    "Pasted image 20230313093422.png",
-    "Pasted image 20230313093420.png",
-    "Pasted image 20230313093256.png",
-    "Pasted image 20230313093107.png",
-    "Pasted image 20230313092350.png",
-    "Pasted image 20230313092120.png",
-    "Pasted image 20230313092057.png",
-    "Pasted image 20230313092023.png",
     "2. semester/Softwareudvikling (SU)/SU - Reading for week 10.md",
-    "2. semester/Softwareudvikling (SU)/Design patterns.md",
     "Design patterns.md",
     "S.md",
     "2. semester/Softwareudvikling (SU)/WIKI uge 11 - Mon - 08-03-28 - (2023).md",
@@ -208,10 +248,6 @@
     "2. semester/Interaktionsdesign (Inter)/Teori til del 3.md",
     "2. semester/Interaktionsdesign (Inter)/Teori til del 2.md",
     "2. semester/Interaktionsdesign (Inter)/Perception.md",
-    "2. semester/Interaktionsdesign (Inter)/Motor-control.md",
-    "2. semester/Interaktionsdesign (Inter)/Inter - Lecture Mon - 6.md",
-    "2. semester/Interaktionsdesign (Inter)/Inter - Lecture Mon - 7.md",
-    "2. semester/Interaktionsdesign (Inter)/Inter - Lecture Mon - 10.md",
     "Untitled.canvas"
   ]
 }
