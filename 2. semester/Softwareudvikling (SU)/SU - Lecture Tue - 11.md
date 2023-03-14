@@ -74,7 +74,9 @@ General structure (objects of application)
 ![[Pasted image 20230313092057.png|300]]
 ![[Pasted image 20230313092120.png|400]]
 ## Summary of the factory pattern
+bricks in breakout
 ### Advantages: 
+- Very flexible if you want to extent for other systems
 - The Abstract factory pattern simplifies the customization of a software product by exchanging groups (families) of objects. 
 - The adjustment is made dynamically at runtime. 
 - Further product families can easily be added in the framework given by the interfaces

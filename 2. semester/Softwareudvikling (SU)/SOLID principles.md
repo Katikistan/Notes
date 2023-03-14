@@ -14,7 +14,7 @@ Summary: "SOLID principles and design patterns"
 [[Uge 11 - 2023]]
 
 What are reasons for unsuccessful applications? 
-	• Putting more functionalities on classes 
+	• Putting more functionalities and responsibility on classes 
 	• Implementing tight coupling between software components (i.e., between classes). If classes are dependent on each other, then change in one class will affect other classes also 
 
 How to overcome these problems? 
@@ -96,6 +96,8 @@ Abstractions should not depend on details. Details should depend on abstractions
 
 “Abstractions should not depend upon details. Details should depend upon abstractions.”
 
+Can be done by using interfaces
+
 - Loose Coupling
 - Dependency Injection / Inversion of Control
 ### Dependency Injection / Inversion of Control
@@ -109,14 +111,14 @@ Only Interfaces and POCO (Plain Old CLR Objects) should be referenced between as
 # SOLID BAD SMELLS
 ![[Pasted image 20230313093520.png|350]]
 # A SOLID Summary
-### SRP: 
+### SRP:
 There should never be more than one reason for a class to change
-### OCP: 
+### OCP:
 Software entities should be open for extension but closed for modification
-### LSP: 
+### LSP:
 Functions that use references to base classes must be able to use objects of derived classes without knowing it.
-### ISP: 
+### ISP:
 Clients should not be forced to depend upon interfaces that they do not use .
-### DIP: 
+### DIP:
 • High level modules should not depend upon low level modules. Both should depend upon abstractions. 
 • Abstractions should not depend upon details. Details should depend upon abstractions

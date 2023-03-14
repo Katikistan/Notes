@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2. semester/Softwareudvikling (SU)/SU - Lecture Mon - 11.md",
+                "file": "2. semester/Softwareudvikling (SU)/SOLID principles.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -70,7 +70,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 225.5
+    "width": 225.5,
+    "collapsed": true
   },
   "right": {
     "id": "1bdbff370dc1606a",
@@ -97,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2. semester/Softwareudvikling (SU)/SU - Lecture Mon - 11.md",
+                "file": "2. semester/Softwareudvikling (SU)/SOLID principles.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2. semester/Softwareudvikling (SU)/SU - Lecture Mon - 11.md",
+                "file": "2. semester/Softwareudvikling (SU)/SOLID principles.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2. semester/Softwareudvikling (SU)/SU - Lecture Mon - 11.md"
+                "file": "2. semester/Softwareudvikling (SU)/SOLID principles.md"
               }
             }
           },
@@ -167,7 +168,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 289.5
+    "width": 289.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -185,10 +187,11 @@
   },
   "active": "fc45b9c3fea93ad6",
   "lastOpenFiles": [
-    "Weekly notes/Uge 11 - 2023.md",
-    "2. semester/Softwareudvikling (SU)/SU - Lecture Mon - 11.md",
-    "2. semester/Interaktionsdesign (Inter)/Inter - Lecture Mon - 11.md",
     "2. semester/Softwareudvikling (SU)/SU - Lecture Tue - 11.md",
+    "2. semester/Softwareudvikling (SU)/SOLID principles.md",
+    "2. semester/Softwareudvikling (SU)/SU - Lecture Mon - 11.md",
+    "Weekly notes/Uge 11 - 2023.md",
+    "2. semester/Interaktionsdesign (Inter)/Inter - Lecture Mon - 11.md",
     "2. semester/Softwareudvikling (SU)/SU - Lecture Mon - 9.md",
     "2. semester/Softwareudvikling (SU)/SU - Lecture Tue - 10.md",
     "2. semester/Softwareudvikling (SU)/SU - Reading for week 8.md",
@@ -206,7 +209,6 @@
     "Misc/åBilleder/Pasted image 20230313090119.png",
     "2. semester/Softwareudvikling (SU)/Design patterns.md",
     "2. semester/Softwareudvikling (SU)/SU - Lecture Tue - 9.md",
-    "2. semester/Softwareudvikling (SU)/SOLID principles.md",
     "2. semester/Softwareudvikling (SU)/UML.md",
     "2. semester/Softwareudvikling (SU)/SU - Reading for week 10.md",
     "Design patterns.md",
