@@ -1,9 +1,0 @@
-
-```csharp
-public class Vehicle {
-
-}
-
-
-```
-

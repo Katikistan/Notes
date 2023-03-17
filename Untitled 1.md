@@ -1,1 +1,0 @@
-A class should only have one reason to change, meaning a class should have only a single responsibility. If a class has to many responsibilities it should be broken down into smaller classes This principles tries to ensure that the class don't becomes unmanageable and makes it easier to extend the class later. In the galaga implementation 
