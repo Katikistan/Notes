@@ -31,7 +31,6 @@
   "minimal-style@@h5-color@@dark": "#3666E2",
   "minimal-style@@h6-color@@light": "#6E39D4",
   "minimal-style@@h6-color@@dark": "#6E39D4",
-  "minimal-style@@bg1@@light": "#FFFFFF",
   "minimal-style@@base@@light": "#FFFFFF",
-  "minimal-style@@ui1@@light": "#AFF2A5"
+  "minimal-style@@bg2@@light": "#FFFFFF"
 }

@@ -11,13 +11,8 @@
             "id": "aaf30c3a8a065be3",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "2. semester/Interaktionsdesign (Inter)/Inter - Reading for week 7.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -66,8 +61,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -98,7 +92,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2. semester/Interaktionsdesign (Inter)/Inter - Reading for week 7.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +108,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2. semester/Interaktionsdesign (Inter)/Inter - Reading for week 7.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "2. semester/Interaktionsdesign (Inter)/Inter - Reading for week 7.md"
-              }
+              "state": {}
             }
           },
           {
@@ -164,12 +154,11 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
-    "width": 289.5,
-    "collapsed": true
+    "width": 308.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -185,10 +174,12 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "cad1134225cd771a",
+  "active": "23ea683fc4398039",
   "lastOpenFiles": [
-    "2. semester/Interaktionsdesign (Inter)/Inter - Reading for week 6.md",
+    "Weekly notes/Uge 12 - 2023.md",
     "Untitled.md",
+    "2. semester/Interaktionsdesign (Inter)/Inter - Reading for week 7.md",
+    "2. semester/Interaktionsdesign (Inter)/Inter - Reading for week 6.md",
     "Untitled 2.md",
     "Untitled 1.md",
     "2. semester/Softwareudvikling (SU)/SU - Lecture Mon - 11.md",
@@ -203,7 +194,6 @@
     "2. semester/Softwareudvikling (SU)/SU - Lecture Tue - 6.md",
     "2. semester/Softwareudvikling (SU)/UML.md",
     "2. semester/Softwareudvikling (SU)/Design patterns.md",
-    "2. semester/Interaktionsdesign (Inter)/Inter - Reading for week 7.md",
     "2. semester/Interaktionsdesign (Inter)/Inter - Reading for week 10.md",
     "2. semester/Interaktionsdesign (Inter)/Inter - Reading for week 11.md",
     "2. semester/Interaktionsdesign (Inter)/Inter - Reading for week 9.md",
@@ -212,7 +202,6 @@
     "2. semester/Softwareudvikling (SU)/SU - Lecture Tue - 10.md",
     "2. semester/Softwareudvikling (SU)/guides/EditorConfigVSCode.md",
     "2. semester/Softwareudvikling (SU)/guides/CSharpStyle.md",
-    "2. semester/Interaktionsdesign (Inter)/Inter - Lecture Mon - 11.md",
     "Misc/åBilleder/Pasted image 20230312183245.png",
     "Misc/åBilleder/Pasted image 20230313112008.png",
     "Misc/åBilleder/Pasted image 20230313111956.png",
