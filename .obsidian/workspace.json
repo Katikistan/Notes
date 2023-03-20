@@ -65,7 +65,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 225.5
+    "width": 225.5,
+    "collapsed": true
   },
   "right": {
     "id": "1bdbff370dc1606a",
@@ -122,18 +123,18 @@
             }
           },
           {
-            "id": "58d3277700a29132",
-            "type": "leaf",
-            "state": {
-              "type": "todo",
-              "state": {}
-            }
-          },
-          {
             "id": "198c099aa189d75f",
             "type": "leaf",
             "state": {
               "type": "calendar",
+              "state": {}
+            }
+          },
+          {
+            "id": "58d3277700a29132",
+            "type": "leaf",
+            "state": {
+              "type": "todo",
               "state": {}
             }
           },
@@ -154,11 +155,12 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 308.5
+    "width": 308.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -174,8 +176,9 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "23ea683fc4398039",
+  "active": "04b059e31d47c008",
   "lastOpenFiles": [
+    "Wifi down.md",
     "Weekly notes/Uge 12 - 2023.md",
     "Untitled.md",
     "2. semester/Interaktionsdesign (Inter)/Inter - Reading for week 7.md",
@@ -201,7 +204,6 @@
     "Weekly notes/Uge 11 - 2023.md",
     "2. semester/Softwareudvikling (SU)/SU - Lecture Tue - 10.md",
     "2. semester/Softwareudvikling (SU)/guides/EditorConfigVSCode.md",
-    "2. semester/Softwareudvikling (SU)/guides/CSharpStyle.md",
     "Misc/åBilleder/Pasted image 20230312183245.png",
     "Misc/åBilleder/Pasted image 20230313112008.png",
     "Misc/åBilleder/Pasted image 20230313111956.png",
