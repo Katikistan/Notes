@@ -13,20 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2. semester/Interaktionsdesign (Inter)/Inter - Reading for week 9.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "7efad70b87067991",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "2. semester/Interaktionsdesign (Inter)/Inter - Lecture Wed - 6.md",
+                "file": "2. semester/Interaktionsdesign (Inter)/Inter - Reading for week 8.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -62,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "validit",
+                "query": "",
                 "matchingCase": true,
                 "explainSearch": true,
                 "collapseAll": false,
@@ -111,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2. semester/Interaktionsdesign (Inter)/Inter - Reading for week 9.md",
+                "file": "2. semester/Interaktionsdesign (Inter)/Inter - Reading for week 8.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -128,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2. semester/Interaktionsdesign (Inter)/Inter - Reading for week 9.md",
+                "file": "2. semester/Interaktionsdesign (Inter)/Inter - Reading for week 8.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -140,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2. semester/Interaktionsdesign (Inter)/Inter - Reading for week 9.md"
+                "file": "2. semester/Interaktionsdesign (Inter)/Inter - Reading for week 8.md"
               }
             }
           },
@@ -181,7 +168,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 308.5
+    "width": 308.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -199,21 +187,21 @@
   },
   "active": "aaf30c3a8a065be3",
   "lastOpenFiles": [
+    "2. semester/Interaktionsdesign (Inter)/Inter - Lecture Wed - 6.md",
+    "2. semester/Interaktionsdesign (Inter)/Inter - Reading for week 8.md",
+    "2. semester/Interaktionsdesign (Inter)/Inter - Reading for week 7.md",
+    "2. semester/Interaktionsdesign (Inter)/Inter - Reading for week 9.md",
     "2. semester/Interaktionsdesign (Inter)/Inter - Lecture Wed - 8.md",
     "2. semester/Interaktionsdesign (Inter)/Inter - Lecture Mon - 6.md",
     "2. semester/Interaktionsdesign (Inter)/Inter - Lecture Mon - 7.md",
     "2. semester/Interaktionsdesign (Inter)/Inter - Lecture Mon - 10.md",
     "2. semester/Interaktionsdesign (Inter)/Inter - Lecture Mon - 11.md",
-    "2. semester/Interaktionsdesign (Inter)/Inter - Lecture Wed - 6.md",
     "2. semester/Interaktionsdesign (Inter)/Inter - Reading for week 6.md",
-    "2. semester/Interaktionsdesign (Inter)/Inter - Reading for week 7.md",
-    "2. semester/Interaktionsdesign (Inter)/Inter - Reading for week 8.md",
     "2. semester/Interaktionsdesign (Inter)/Teori til del 2.md",
     "Misc/1. semester/Diskret matematik og algoritmer (DMA)/Diskret matematik/Logic/Methods of proof/Rule of inference.md",
     "Weekly notes/Uge 12 - 2023.md",
     "2. semester/Interaktionsdesign (Inter)/Inter - Reading for week 10.md",
     "Misc/1. semester/Diskret matematik og algoritmer (DMA)/Diskret matematik/Fundamentals/Relations.md",
-    "2. semester/Interaktionsdesign (Inter)/Inter - Reading for week 9.md",
     "Weekly notes/Uge 7 - 2023.md",
     "Weekly notes/Uge 8 - 2023.md",
     "Weekly notes/Uge 9 - 2023.md",
