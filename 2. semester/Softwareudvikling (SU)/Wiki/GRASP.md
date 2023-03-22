@@ -1,15 +1,16 @@
 ---
 date: 22-03-23
 day: ons
-week: 12
+week: 11
 year: 2023
-type: Reading
-course: Inter
-status: 
+type: Wiki
+course: SU
+status: open
 semester: 2
 tags:
 Summary: ""
 ---
 ##### Weekly note
-[[Uge 12 - 2023]]
+[[Uge 11 - 2023]]
+
 # 

@@ -54,7 +54,7 @@ atom is a leaf, decor has a single single a ref to single component no star but 
 ![](https://i.imgur.com/ZwWDD6m.png)
 ![](https://i.imgur.com/wU2zeh1.png)
 ![](https://i.imgur.com/cq0zg9X.png)
-# Summary of decorator pattern
+## Summary of decorator pattern
 ### Advantages:  
 •Atoms and decors are treated uniformly.  
 •Several types of atoms or decors are possible.  
@@ -90,7 +90,7 @@ object during execution.
 ![](https://i.imgur.com/xyNMYdy.png)
 The choice of the strategy is done by the application not the class, it's an external choice of the strategy
 
-# Summary – Strategy pattern
+## Summary – Strategy pattern
 The use of the pattern strategy is in some object-oriented programming languages the only way to exchange the behaviour during execution.  
 
 A strategy class also offers the possibility of combining the interchangeable behavior with status information.
@@ -304,5 +304,5 @@ when manipulated by the user.
 - The notification mechanism can be implemented independently of the specific problem.  
 ### Disadvantages:  
 - If an observer object observes different subjects, the identification of the notifying object can be problematic.
-## Publish-subscribe pattern
+# Publish-subscribe pattern
 like game eventbus
