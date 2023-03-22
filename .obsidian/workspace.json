@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2. semester/Softwareudvikling (SU)/SU - Lecture Mon - 11.md",
+                "file": "Weekly notes/Uge 12 - 2023.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -66,12 +66,11 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 225.5
+    "width": 261.50152587890625
   },
   "right": {
     "id": "1bdbff370dc1606a",
@@ -98,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2. semester/Softwareudvikling (SU)/SU - Lecture Mon - 11.md",
+                "file": "Weekly notes/Uge 12 - 2023.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2. semester/Softwareudvikling (SU)/SU - Lecture Mon - 11.md",
+                "file": "Weekly notes/Uge 12 - 2023.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -127,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2. semester/Softwareudvikling (SU)/SU - Lecture Mon - 11.md"
+                "file": "Weekly notes/Uge 12 - 2023.md"
               }
             }
           },
@@ -164,7 +163,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -187,26 +186,34 @@
   },
   "active": "aaf30c3a8a065be3",
   "lastOpenFiles": [
+    "2. semester/Interaktionsdesign (Inter)/Inter - Lecture Mon - 10.md",
+    "Weekly notes/Uge 12 - 2023.md",
+    "2. semester/Interaktionsdesign (Inter)/Inter - Lecture Mon - 11.md",
+    "2. semester/Interaktionsdesign (Inter)/Inter - Lecture Wed - 6.md",
+    "2. semester/Interaktionsdesign (Inter)/Inter - Lecture Wed - 8.md",
+    "2. semester/Interaktionsdesign (Inter)/Inter - Reading for week 11.md",
+    "2. semester/Interaktionsdesign (Inter)/Inter - Reading for week 10.md",
+    "2. semester/Interaktionsdesign (Inter)/Inter - Reading for week 9.md",
+    "2. semester/Interaktionsdesign (Inter)/Inter - Reading for week 7.md",
+    "2. semester/Interaktionsdesign (Inter)/Inter - Reading for week 8.md",
+    "2. semester/Interaktionsdesign (Inter)/Inter - Reading for week 6.md",
+    "Misc/åBilleder/Pasted image 20230320092241.png",
+    "2. semester/Softwareudvikling (SU)/SU - Lecture Mon - 11.md",
     "2. semester/Softwareudvikling (SU)/C sharp 101.md",
     "2. semester/Softwareudvikling (SU)/SU - Lecture man - 12.md",
-    "Pasted image 20230320093314.png",
-    "Pasted image 20230320093256.png",
-    "Pasted image 20230320093236.png",
-    "Pasted image 20230320093114.png",
-    "Pasted image 20230320093040.png",
-    "Pasted image 20230320093009.png",
-    "Pasted image 20230320092906.png",
-    "Pasted image 20230320092853.png",
-    "Pasted image 20230320092839.png",
-    "Pasted image 20230320092815.png",
+    "Misc/åBilleder/Pasted image 20230320093314.png",
+    "Misc/åBilleder/Pasted image 20230320093256.png",
+    "Misc/åBilleder/Pasted image 20230320093236.png",
+    "Misc/åBilleder/Pasted image 20230320093114.png",
+    "Misc/åBilleder/Pasted image 20230320093040.png",
+    "Misc/åBilleder/Pasted image 20230320093009.png",
+    "Misc/åBilleder/Pasted image 20230320092906.png",
+    "Misc/åBilleder/Pasted image 20230320092853.png",
+    "Misc/åBilleder/Pasted image 20230320092839.png",
     "Wifi down.md",
-    "Weekly notes/Uge 12 - 2023.md",
     "Untitled.md",
-    "2. semester/Interaktionsdesign (Inter)/Inter - Reading for week 7.md",
-    "2. semester/Interaktionsdesign (Inter)/Inter - Reading for week 6.md",
     "Untitled 2.md",
     "Untitled 1.md",
-    "2. semester/Softwareudvikling (SU)/SU - Lecture Mon - 11.md",
     "2. semester/Softwareudvikling (SU)/SU - Lecture Tue - 11.md",
     "2. semester/Softwareudvikling (SU)/SOLID principles.md",
     "2. semester/Softwareudvikling (SU)/SU - Lecture Mon - 7.md",
@@ -215,14 +222,6 @@
     "Weekly notes/Uge 9 - 2023.md",
     "Weekly notes/Uge 8 - 2023.md",
     "Weekly notes/Uge 10 - 2023.md",
-    "2. semester/Softwareudvikling (SU)/SU - Lecture Tue - 6.md",
-    "2. semester/Softwareudvikling (SU)/UML.md",
-    "2. semester/Softwareudvikling (SU)/Design patterns.md",
-    "2. semester/Interaktionsdesign (Inter)/Inter - Reading for week 10.md",
-    "2. semester/Interaktionsdesign (Inter)/Inter - Reading for week 11.md",
-    "2. semester/Interaktionsdesign (Inter)/Inter - Reading for week 9.md",
-    "2. semester/Interaktionsdesign (Inter)/Inter - Reading for week 8.md",
-    "Weekly notes/Uge 11 - 2023.md",
     "Untitled.canvas"
   ]
 }
