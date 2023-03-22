@@ -1,7 +1,7 @@
 ---
-date: 12-03-23
-day: Sun
-week: 11
+date: 22-03-23
+day: ons
+week: 12
 year: 2023
 type: Reading
 course: Inter
@@ -11,5 +11,5 @@ tags:
 Summary: ""
 ---
 ##### Weekly note
-[[Uge 11 - 2023]]
-# Interaction Techniques
+[[Uge 12 - 2023]]
+# 

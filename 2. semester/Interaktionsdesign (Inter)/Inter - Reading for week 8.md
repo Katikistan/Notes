@@ -12,7 +12,28 @@ Summary: "Interviews, analyse af interviews, affintiy diagrammer, spørgeskema"
 ---
 ##### Weekly note
 [[Uge 8 - 2023]]
-
-#  Interviews
-
-# Spørgeskema 
+# Introduction to User Research
+## Goals of User Research
+### PACT
+#### People
+#### Activities
+#### Contexts of use
+#### Technologies
+## Who is the ’User’ in ’User Research’ ?
+#### Target Audience
+#### Sampling
+### Sampling
+### Stakeholders
+## User Research Methods
+### Research Strategy
+#### Realism
+#### Precision
+#### Generalizability
+## Methodological Quality
+#### Validity
+#### Reliability
+#### Transparency
+#### Ethics
+## Data Analysis and Representation
+## Does User Research Work?
+## Summary

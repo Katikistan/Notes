@@ -41,6 +41,7 @@ and explorability, consistency
 ![|300](https://i.imgur.com/uihfG3i.png)
 ![|300](https://i.imgur.com/x3Ds7uf.png)
 ![|300](https://i.imgur.com/Rb7IhQQ.png)
+visual hiearchy 
 # Input devices
 A system needs to be capable of sensing a user’s movements or states and  
 turning them into information in the interactive system

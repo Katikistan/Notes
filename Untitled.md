@@ -1,0 +1,1 @@
+operator Mackenzie nævner og bruger til KLM modellen. 

@@ -14,6 +14,7 @@ Summary: "intro til faget, til begreber brugercentreret, perception, Fitt's lov 
 [[Uge 6 - 2023]]
 
 # Chapter 1 
+svært at imødekomme både eksperter og begynders behov.
 ## 1.1 Why is HCI Challenging?
 **First,** humans are complex biological and social organisms. HCI must account for individual differences. What may work for one user may be a failure for another.
 
