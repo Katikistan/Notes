@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "9244be2a73b33fd6",
+            "id": "d728e28730487f27",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2. semester/Interaktionsdesign (Inter)/Reading/Inter - Reading for week 10.md",
+                "file": "2. semester/Softwareudvikling (SU)/Wiki/GRASP.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -97,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2. semester/Interaktionsdesign (Inter)/Reading/Inter - Reading for week 10.md",
+                "file": "2. semester/Softwareudvikling (SU)/Wiki/GRASP.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2. semester/Interaktionsdesign (Inter)/Reading/Inter - Reading for week 10.md",
+                "file": "2. semester/Softwareudvikling (SU)/Wiki/GRASP.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2. semester/Interaktionsdesign (Inter)/Reading/Inter - Reading for week 10.md"
+                "file": "2. semester/Softwareudvikling (SU)/Wiki/GRASP.md"
               }
             }
           },
@@ -183,11 +183,13 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "9244be2a73b33fd6",
+  "active": "d728e28730487f27",
   "lastOpenFiles": [
+    "2. semester/Softwareudvikling (SU)/Wiki/Coupling.md",
+    "2. semester/Softwareudvikling (SU)/Wiki/GRASP.md",
+    "2. semester/Interaktionsdesign (Inter)/Reading/Inter - Reading for week 10.md",
     "2. semester/Interaktionsdesign (Inter)/Reading/Inter - Reading for week 11.md",
     "2. semester/Interaktionsdesign (Inter)/Reading/Inter - Reading for week 12.md",
-    "2. semester/Softwareudvikling (SU)/Wiki/GRASP.md",
     "2. semester/Softwareudvikling (SU)/Wiki/SOLID principles.md",
     "Misc/Excalidraw/Drawing 2022-12-03 13.04.39.excalidraw.md",
     "2. semester/Softwareudvikling (SU)/Wiki/Design patterns.md",
@@ -211,7 +213,6 @@
     "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture ons - 12.md",
     "2. semester/Softwareudvikling (SU)/Lecture",
     "Weekly notes/Uge 12 - 2023.md",
-    "2. semester/Interaktionsdesign (Inter)/Reading/Inter - Reading for week 10.md",
     "2. semester/Interaktionsdesign (Inter)/Lecture/Inter - Lecture Wed - 8.md",
     "2. semester/Interaktionsdesign (Inter)/Reading/Inter - Reading for week 7.md",
     "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture Tue - 11.md",
@@ -219,7 +220,6 @@
     "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture Tue - 10.md",
     "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture Tue - 9.md",
     "Untitled 1.md",
-    "2. semester/Softwareudvikling (SU)/Reading/SU - Reading for week 10.md",
     "Misc/åBilleder/Pasted image 20230320092241.png",
     "Misc/åBilleder/Pasted image 20230320093314.png",
     "Misc/åBilleder/Pasted image 20230320093256.png",
