@@ -23,3 +23,18 @@ Summary: ""
 ## Summary
 # Analytical Evaluation Methods
 ### Putting cognition into practice
+## Heuristic Evaluation
+vigtig
+### How to do a Heuristic Evaluation?
+## Identification of human error potential
+## Cognitive walkthrough
+### How to do a Cognitive Walkthrough?
+### A theory of how people learn via exploration
+## Keystroke-level modeling
+### How to do a KLM analysis
+### A Worked Example
+### Limits of KLM
+### Automated Usability Evaluation
+### Interactive Modeling Workbenches
+## Which Analytical Evaluation Method to Use?
+## Summary
