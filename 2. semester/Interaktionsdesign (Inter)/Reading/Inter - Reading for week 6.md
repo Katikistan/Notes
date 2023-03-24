@@ -8,7 +8,7 @@ course: Inter
 status: Open
 semester: 2
 tags: 
-Summary: "intro til faget, til begreber brugercentreret, perception, Fitt's lov og Gestalt love"
+Summary: "brugercentreret, perception, Fitt's lov og Gestalt love"
 ---
 ##### Weekly note
 [[Uge 6 - 2023]]
@@ -166,8 +166,14 @@ In the case of perception, we do this by drawing on concepts and models develope
 
 Explain why people use computers in the way they do. For instance, Figure 3.1 suggests that visual search on a UI is influenced by both expectations and visual features of the page.
 ## Sensory modalities
-## 3.1
-
+### Constructing percepts from sensory information
+### Multimodal perception
+### Discrimination
+### Detection
+### Recognition
+### Estimation
+### Search
+## Elementary functions of perception in HCI
 (fixations)
 We focus attention not in random, but on elements
 that have some probability of being the ones we look for.
@@ -188,8 +194,16 @@ vision, hearing (audition), and touch (tactition).
 
 Attention refers to the ability to focus processing on a
 select portion of the full perceptual scene.
-## 3.2
-## 3.3
+
+## Visual perception and attention
+### Limits to the human visual system
+### Eye movements
+### Perceptual organization
+### Visual Attention
+![](https://i.imgur.com/MoCBlkw.png)
+### Visual search
+### Visual saliency
+## Perception is an active process
 
 ## Summary Chapter 3
 - Perceptual experience is not determined by what is shown on the display alone, but in conjunction with our expectations and strategies of deploying attention.
@@ -200,16 +214,19 @@ select portion of the full perceptual scene.
 
 - Visual saliency refers to the probability with which something on display attracts our visual attention. When the user interface is cluttered, all visual primitives are ’congested’ and nothing can be made to stand out from the page.
 # 4 Motor control 
-## Motor control
-
-### Thinking
-
-### Needs
-
-### Experience
-
-### Communication
-## 4.2.1 fitts lov
+## Fundamental motor control models for HCI
+### Pointing
+### Crossing
+### Steering
+### Target Acquisition
+### Fitts’ law
+### Effective width
+### Model variants
+## Choice reaction
+### Hick–Hyman Law
+### Viviani power law of curvatur
+## Gesturing
+## Simple and Choice Reaction
 
 
 ## Summary
