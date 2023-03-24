@@ -5,7 +5,7 @@ week: 8
 year: 2023
 type: Reading
 course: Inter
-status: Open 
+status: Closed  
 semester: 2
 tags: 
 Summary: "user research, pact, affinity"
@@ -155,16 +155,19 @@ Scenarios are narrative accounts of what happens when users are trying to use a 
 • All methods for user research are limited, for instance, with respect to their realism, generalizability, and precision.
 # 11 Interviews
 ## Contextual Inquiry
+The key idea in contextual inquiries is to watch users do activities that are important to then and talk to them about those activities. Activities should be actual ongoing work
 ### Principles of Contextual Inquiry
-
+Inquiry is guided by four principles. These principles guide the interviewer’s attitude toward the interview situation and the subsequent analysis of the data.
 #### Context
-
+we prefer to be with the interviewee during the activities: watch them cook, listen in on them making a phone call, observe them finish their tax returns, or whatever is the focus of our inquiry
 #### Partnership
+The principle of partnership suggests a collaboration between the interviewer and the interviewee to understand the activity and the users’ perception of it.
 
+The ideal partnership in contextual inquiry is described as one between a master and an apprentice
 #### Interpretation
-
+The principle of interpretation suggests that users and interviewer together attempts to create meaning of the activity.
 #### Focus
-
+Finally, to make the most out of the interview, the interviewer should go for depth.
 # 15 Representations of User Research
 ## Representations of People
 ### Personas
@@ -215,22 +218,90 @@ The pre-service is about experience before registering or purchasing the service
 
 The post-service period takes place after the actual service, for example when posting to social media about the experience or complaining about service to customer service.
 ### Task analysis
+Task analysis is a method for decomposing tasks and presenting them as hierarchically organized sequences of subtasks.
 
+Task analysis is a functional description of behavior
+
+The output of task analysis is a task model.
+
+A sequential task model describes a task as consisting of a linear progression of subtasks
+
+1. Enter login name 
+2. Enter password 
+3. Click ’Login’
+But how does one ’enter’ something? The two first rows can be expanded into two more subgoals, resulting in a higher-fidelity task model:
+1. Click ’Username’ field with mouse 
+2. Type login name with keyboard 
+3. Click ’Password’ field with mouse 
+4. Type password with keyboard 
+5. Click ’Login’ with mouse
+
+Hierarchical Task Analysis (HTA) is an established task analysis method that assumes two kinds of relationships between subtasks: (1) order: task A precedes task B and (2) part-whole relationship: task B is a subtask of task A. Every subtask is thought to require operations for completing it. Operations are any actions that the user must take.
+
+Task analysis can be done in two ways: empirically and analytically
+
+In analytical task analysis, modeling is speculative; it is carried out as part of design or evaluation.
+
+#### How to HTA
+start with a sequential model of the highestlevel subtask. First, split the main task into a sequence of subtasks following each other 
+General steps in task analysis include: 
+1. Decide the purpose(s) of the analysis 
+2. Get agreement between stakeholders on the definition of task goals and criterion measures 
+3. Identify sources of task information and select means of data acquisition 
+4. Acquire data and draft decomposition table/diagram 
+5. Re-check validity of decomposition with stakeholders 
+6. Identify significant operations in light of purpose of analysis 
+7. Generate and, if possible, test hypotheses concerning factors affecting learning and performance.
+HTA offers additional notation to express plans, conditions, and parallelisms.
+Plans are routine procedures by people, ”do this, then this, then this..”. 
+
+Conditions are if-then rules (”if condition X, do this”) that describe conditions for actions. 
+
+Parallelisms are subtasks that can be pursued in parallel. 
+
+Moreover, stop rules can be expressed: telling when a user would stop executing a subtask. These are annotated in the diagram.
+![](https://i.imgur.com/Vta4MI1.png)
+one can continue splitting down the subtasks from figure 15.3:
+1. Point at vertical bar 
+2. Drag down finger 
+3. Confirm the right 
+![|300](https://i.imgur.com/fOQnMrX.png)
+HTA introduces conventions to mark the order in which sub-tasks can be executed. Here, either "/" 1.3.1 or 1.3.2 is executed.
+
+In user-centered design, task analysis forms the basis of several analytical evaluation methods, such as cognitive walkthrough and KLM
 ## Representations of Context
 ### Contextual inquiry
-
+An actor can be anything – human or non-human, digital or physical – that participates in some active sense in the activity
 #### Flow model
+A flow model enumerates the main actors in context and their relationships to the user.
 
+Actors can be humans, technology, or even physical objects like a kitchen table.
+
+Flow model is drawn as a graph where actors are nodes and actions are directional arrows connecting them. The direction of an arrow indicates who takes initiative. Arrows are annotated to describe what happens.
 #### sequence model
+A sequence model is an ordered list of actions needed to carry out to complete a 
 
+A sequence model is less rich representation of tasks than hierarchical task analysis (HTA). A sequence model provides an ordered list of subtasks at one level of depth in the HTA tree.
 #### artefact model
-
+An artefact model describes interactions among artefacts in a work flow. An artefact can be a physical or digital object, such as a paper note, a social media message, presentation template, or anything that is interacted with during work.
 #### cultural model
-
+A cultural model is an expression of different beliefs, values, and practices that the involved actors may have. The model is typically drawn as a Venn diagram, where each circle corresponds to a ’culture’.
 ## Requirements
+User requirements are used in software engineering to specify user’s expectations on what the software is able to do
 
+Triangulation is commonly recommended for identifying requirements.
+
+A requirement should be associated with verification criteria: a way of identifying whether a product fulfils the requirement. A verification criterion may be empirically defined, for example ’95 % of representative users are able to complete task A within time T with no significant error’
+
+Use cases are a technique for eliciting and specifying requirements
 ## Can Representations be Both Valid and Informative?
+the realist and the instrumentalist.
 
+the realist view, user research produces empirically grounded statements about users. A representation of user data is essentially a proposition, a claim about users.
+
+Decisions about which features to include or how to design can be thought as hypotheses about users. When those hypotheses are wrong, the design will fail, too.
+
+user research has instrumental value in inspiring design. The results of user research do not need to be valid in the realist sense – whatever helps design is valuable. In creative efforts where the goal is to envision novel possibilities, it may be detrimental to be tied too tightly to the present reality
 ## Summary
 • Representations of user research serve to capture and reflect upon findings and help prepare for design. 
 • They summarize basic aspects of user data: users, events, tasks, activities, and contexts.
