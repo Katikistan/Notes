@@ -13,7 +13,7 @@ Summary: "intro til faget, til begreber brugercentreret, perception, Fitt's lov 
 ##### Weekly note
 [[Uge 6 - 2023]]
 
-# Chapter 1 
+# 1 Introduction to Human-Computer Interaction
 svært at imødekomme både eksperter og begynders behov.
 ## 1.1 Why is HCI Challenging?
 **First,** humans are complex biological and social organisms. HCI must account for individual differences. What may work for one user may be a failure for another.
@@ -134,20 +134,8 @@ https://ethics.acm.org/
 - Essential activities in HCI are understanding people, studying what users need and want, designing and engineering interactive systems, and evaluating their benefits to users.
 - HCI is important because you are not the user. HCI offers a disciplined approach to some hard problems faced in design and innovation.
 
-# Chapter 2  
-### Perception
-
-### Motor control
-
-### Thinking
-
-### Needs
-
-### Experience
-
-### Communication
-
-## 2.1 Types of understanding
+# 2 Introduction to Understanding People
+## Types of understanding
 ### Concepts
 
 ### Taxonomies
@@ -157,15 +145,27 @@ https://ethics.acm.org/
 ### Models
 
 ### Guidelines
+## Areas of understanding
+### Seven areas of understanding people
+Special application areas
+User groups
+### Individual differences
+## Applying our understanding of people
+## Is a general understanding of people possible?
+## Summary
+• A deep and scientific engagement with interactive systems and the phenomena that surrounds them begins with people. We call that approach human-centered. 
 
-## Summary Chapter 2
-- A deep and scientific engagement with interactive systems and the phenomena that surrounds them begins with people. We call that approach human-centered.
+• This part of the book shows how being human-centered requires us to draw on theories and models of how people feel, think, and behave. 
 
-- This part of the book shows how being human-centered requires us to draw on theories and models of how people feel, think, and behave.
+• These understandings of people are general, holding across many individuals, many types of user interfaces, and many different use contexts.
 
-- These understandings of people are general, holding across many individuals, many types of user interfaces, and many different use contexts.
-# Chapter 3
-## Perception 
+# 3 Perception 
+A sensory modality is a biologically specialized system dedicated to a type of transduction
+![[Pasted image 20230324093503.png|300]]
+In the case of perception, we do this by drawing on concepts and models developed in biology, neuroscience, and the cognitive sciences. This may help us do the following in HCI:
+
+Explain why people use computers in the way they do. For instance, Figure 3.1 suggests that visual search on a UI is influenced by both expectations and visual features of the page.
+## Sensory modalities
 ## 3.1
 
 (fixations)
@@ -199,11 +199,19 @@ select portion of the full perceptual scene.
 - Another main role of perception is to ’bring order into chaos’, in other words organize the overwhelming sensory experience into something we can act on.
 
 - Visual saliency refers to the probability with which something on display attracts our visual attention. When the user interface is cluttered, all visual primitives are ’congested’ and nothing can be made to stand out from the page.
-# Chapter 4
+# 4 Motor control 
+## Motor control
+
+### Thinking
+
+### Needs
+
+### Experience
+
+### Communication
 ## 4.2.1 fitts lov
 
-## 4.2.2 fitts lov
 
-## Summary Chapter 4
+## Summary
 - Motor control is necessary for users to perform actions in a user interface.
 - The time it takes users to perform actions can be predicted for some fundamental activities, such as pointing, crossing, steering and reacting to stimuli.

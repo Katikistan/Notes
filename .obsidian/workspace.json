@@ -13,19 +13,6 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2. semester/Interaktionsdesign (Inter)/Reading/Inter - Reading for week 12.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "df4d9b6861927e60",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
                 "file": "2. semester/Interaktionsdesign (Inter)/Inter Overview.md",
                 "mode": "source",
                 "backlinks": true,
@@ -33,8 +20,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -181,7 +167,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 308.5
+    "width": 308.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -197,18 +184,20 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "df4d9b6861927e60",
+  "active": "d728e28730487f27",
   "lastOpenFiles": [
-    "2. semester/Interaktionsdesign (Inter)/Reading/Inter - Reading for week 11.md",
-    "2. semester/Interaktionsdesign (Inter)/Reading/Inter - Reading for week 8.md",
-    "2. semester/Interaktionsdesign (Inter)/Reading/Inter - Reading for week 7.md",
-    "2. semester/Interaktionsdesign (Inter)/Reading/Inter - Reading for week 6.md",
-    "2. semester/Interaktionsdesign (Inter)/Reading/Inter - Reading for week 9.md",
-    "2. semester/Interaktionsdesign (Inter)/Reading/Inter - Reading for week 10.md",
+    "2. semester/Interaktionsdesign (Inter)/Reading/Inter - Reading for week 12.md",
     "2. semester/Interaktionsdesign (Inter)/Inter Overview.md",
+    "2. semester/Interaktionsdesign (Inter)/Reading/Inter - Reading for week 6.md",
+    "Pasted image 20230324093503.png",
+    "2. semester/Interaktionsdesign (Inter)/Reading/Inter - Reading for week 7.md",
+    "2. semester/Interaktionsdesign (Inter)/Reading/Inter - Reading for week 8.md",
+    "2. semester/Interaktionsdesign (Inter)/Wiki/Perception.md",
+    "2. semester/Interaktionsdesign (Inter)/Reading/Inter - Reading for week 10.md",
+    "2. semester/Interaktionsdesign (Inter)/Reading/Inter - Reading for week 9.md",
+    "2. semester/Interaktionsdesign (Inter)/Reading/Inter - Reading for week 11.md",
     "Weekly notes/Uge 12 - 2023.md",
     "2. semester/Interaktionsdesign (Inter)/Lecture/Inter - Lecture Mon - 7.md",
-    "2. semester/Interaktionsdesign (Inter)/Reading/Inter - Reading for week 12.md",
     "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture Tue - 9.md",
     "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture Mon - 9.md",
     "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture Mon - 11.md",
@@ -226,11 +215,9 @@
     "2. semester/Interaktionsdesign (Inter)/Reading",
     "2. semester/Linær algebra (LinAlgDat)/Wiki/Linear transformations.md",
     "2. semester/Interaktionsdesign (Inter)/Lecture",
-    "2. semester/Softwareudvikling (SU)/Reading/SU - Reading for week 6.md",
     "2. semester/Linær algebra (LinAlgDat)/Wiki",
     "2. semester/Linær algebra (LinAlgDat)/Lecture",
     "2. semester/Linær algebra (LinAlgDat)/Reading",
-    "2. semester/Softwareudvikling (SU)/Wiki/C sharp 101.md",
     "2. semester/Softwareudvikling (SU)/Wiki",
     "2. semester/Softwareudvikling (SU)/Reading",
     "2. semester/Softwareudvikling (SU)/Lecture",
@@ -243,7 +230,6 @@
     "Misc/åBilleder/Pasted image 20230320093009.png",
     "Misc/åBilleder/Pasted image 20230320092906.png",
     "Misc/åBilleder/Pasted image 20230320092853.png",
-    "Misc/åBilleder/Pasted image 20230320092839.png",
     "Untitled.canvas"
   ]
 }

@@ -12,7 +12,83 @@ Summary: ""
 ---
 [[Uge 12 - 2023]]
 # Begreber
+● Usability 
+● Goodness-of-interaction 
+● User experience 
+● Feedforward 
+● Accessibility 
+● Goals, tasks, activities 
+● PACT 
+● Context 
+● Contextual inquiry 
+● Affinity diagramming 
+● Universal design 
+● Ecological validity 
+● Analytical/empirical investigation/evaluation
+● Cognitive walkthrough 
+● Evaluator effect 
+● Gestalt principles 
+	● Proximity 
+	● Similarity 
+● Continuity 
+● Memory load (data entry, display) 
+● Information assimilation (display) 
+● Flexibility (data entry, display)
+egocentric fallacy
+
+Discoverability: is it possible to figure out what is possible and how you would perform actions? (Norman 2013, p. 3)
+
+Signifier: A signal of an affordance. Signifying where the action should take place. Planned or accidental. (Norman 2013, p. 14)
+
+Mappings: Layout of controls to correspond with their function, fx placement of buttons for lights. Mapping between our action and what will happen. They work because of our conceptual model. (Norman 2013, p. 20)
+
+Conceptual model: A model of how the technology works, can be simplified (Norman 2013, p.25)
+
+Gulf of execution and gulf of evaluation: The gulf of execution is where people try to figure out how to execute their goals using the technology. The gulf of evaluation is faced when evaluating whether their actions resulted in what they wanted or how the system has changed. (Norman 2013, p. 38)
+### Usability
+● Accessibility (Benyon 2019, pp. 104-105) 
+● Universal design (Benyon 2019, p. 105) 
+● Inclusive design (Benyon 2019, p. 106) 
+● Usability (Benyon 2019, p. 108) 
+● Value sensitive design (Benyon 2019, p. 109) 
+● PACT (Benyon 2019, p. 109) 
+● Acceptability (Benyon 2019, p. 112) 
+● System Usability Scale (Benyon 2019, p. 113)
+● working memory: central executive, auditory loop, visuo-spatial sketchpad (Benyon 2019, p. 507) 
+### memory and attention
+● longterm memory (Benyon 2019, p. 508) 
+● recall and recognition (Benyon 2019, p. 510) 
+● accessibility vs availability (Benyon 2019, p. 510) 
+● Broadbent’s single-channel theory of attention (Benyon 2019, p. 513) 
+● Kahneman capacity allocation model of attention (Benyon 2019, p. 515) 
+● Mental workload (Benyon 2019, p. 515) 
+● visual search (Benyon 2019, p. 518
 # Modeller
+### User research
+PACT 
+Affinity diagramming
+HTA
+### Dialogue
+Normans 7 stage model 
+### Design
+Brainstorm 
+Norman’s 7 fundamental principles of design:
+#### Usability
+Nielsen
+ISO
+### Perception
+Gestalt 
+### Motor control
+Fitts lov 
+### Evaluation
+#### Analytical Evaluation 
+KLM 
+Heuristic evaluation
+Cognitive walkthrough 
+### Misc
+Guidelines for display Sch&Plai p. 63
+Guidelines for attention Sch&Plai p. 64
+Norman’s 3 levels of processing:
 # Reading 
 ```dataview
 TABLE status, summary

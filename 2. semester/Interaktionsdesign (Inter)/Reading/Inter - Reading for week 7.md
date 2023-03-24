@@ -427,8 +427,7 @@ The theory starts with a high-level metaphor: the limitedcapacity channel. From 
 - Theories of interaction helps design and evaluate interactive systems.
 # Chapter 18 Dialogue
 ## Normans Seven Stage Model
-one can compare Fitts’ theory of aimed movements with Donald Norman’s theory of interaction, both of which we discuss in this Part. Fitts’ theory of aimed movements has high statistical accuracy but low
-coverage. Donald Norman’s theory, on the other hand, has high coverage but low accuracy.
+one can compare Fitts’ theory of aimed movements with Donald Norman’s theory of interaction, both of which we discuss in this Part. Fitts’ theory of aimed movements has high statistical accuracy but low coverage. Donald Norman’s theory, on the other hand, has high coverage but low accuracy.
 ### Execution
 1.  Forming a goal about something that you want to accomplish.
 2.  Forming an intention to act.
