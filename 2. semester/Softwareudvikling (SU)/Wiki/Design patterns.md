@@ -482,7 +482,6 @@ bricks in breakout
 - The construction of an abstract factory is complex. In particular, a suitable description of the scope of the product family must be carried out as preparation. 
 - The creation of an abstract factory is only profitable if actually several products can be identified in different families
 ## Factory pattern
-## Singleton pattern
 ensures that there is only one single object from a class.
 ### Motivation
 There are classes, of which only one object can exist at runtime. 

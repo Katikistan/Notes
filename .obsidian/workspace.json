@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2. semester/Interaktionsdesign (Inter)/Inter Overview.md",
+                "file": "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture Tue - 9.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -97,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2. semester/Interaktionsdesign (Inter)/Inter Overview.md",
+                "file": "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture Tue - 9.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2. semester/Interaktionsdesign (Inter)/Inter Overview.md",
+                "file": "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture Tue - 9.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2. semester/Interaktionsdesign (Inter)/Inter Overview.md"
+                "file": "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture Tue - 9.md"
               }
             }
           },
@@ -167,8 +167,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 308.5,
-    "collapsed": true
+    "width": 308.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -186,8 +185,13 @@
   },
   "active": "d728e28730487f27",
   "lastOpenFiles": [
-    "2. semester/Interaktionsdesign (Inter)/Reading/Inter - Reading for week 12.md",
+    "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture Tue - 7.md",
+    "2. semester/Softwareudvikling (SU)/Wiki/Design patterns.md",
+    "2. semester/Softwareudvikling (SU)/guides/EditorConfigVSCode.md",
+    "2. semester/Softwareudvikling (SU)/guides/CSharpStyle.md",
+    "2. semester/Softwareudvikling (SU)/guides/ReportFormatting.md",
     "2. semester/Interaktionsdesign (Inter)/Inter Overview.md",
+    "2. semester/Interaktionsdesign (Inter)/Reading/Inter - Reading for week 12.md",
     "2. semester/Interaktionsdesign (Inter)/Reading/Inter - Reading for week 6.md",
     "Pasted image 20230324093503.png",
     "2. semester/Interaktionsdesign (Inter)/Reading/Inter - Reading for week 7.md",
@@ -205,15 +209,11 @@
     "2. semester/Softwareudvikling (SU)/Wiki/UML.md",
     "2. semester/Softwareudvikling (SU)/Wiki/SOLID principles.md",
     "2. semester/Softwareudvikling (SU)/Wiki/GRASP.md",
-    "2. semester/Softwareudvikling (SU)/Wiki/Design patterns.md",
     "2. semester/Softwareudvikling (SU)/Wiki/Coupling.md",
     "Misc/Excalidraw/Drawing 2022-12-03 13.04.39.excalidraw.md",
     "Untitled.md",
-    "2. semester/Interaktionsdesign (Inter)/Wiki/Motor-control.md",
     "2. semester/Interaktionsdesign (Inter)/Wiki",
-    "2. semester/Interaktionsdesign (Inter)/Lecture/Inter - Lecture Mon - 6.md",
     "2. semester/Interaktionsdesign (Inter)/Reading",
-    "2. semester/Linær algebra (LinAlgDat)/Wiki/Linear transformations.md",
     "2. semester/Interaktionsdesign (Inter)/Lecture",
     "2. semester/Linær algebra (LinAlgDat)/Wiki",
     "2. semester/Linær algebra (LinAlgDat)/Lecture",
