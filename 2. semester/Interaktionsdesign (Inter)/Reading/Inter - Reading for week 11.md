@@ -5,7 +5,7 @@ week: 11
 year: 2023
 type: Reading
 course: Inter
-status: 
+status: Open
 semester: 2
 tags:
 Summary: ""

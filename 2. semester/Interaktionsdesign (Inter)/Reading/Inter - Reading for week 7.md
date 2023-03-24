@@ -5,7 +5,7 @@ week: 7
 year: 2023
 type: Reading
 course: Inter
-status: 
+status: Closed
 semester: 2
 tags: ForståMennsker
 Summary: "Cognition, Experience, Normans model, utility og usability, needs and motivation"
@@ -487,10 +487,33 @@ usability is sometimes called quality-of-use, to emphasize that it is a quality 
 
 system may be usable for some task and less for others; it may be usable for some users but not for others.
 ### Models of Usability
-
+two models of the dimensions appear particularly useful. One is the ISO 9241, part 11, model of usability. It defines usability as comprising effectiveness, efficiency, and satisfaction. Table 19.1 shows the definition of these dimensions as well as examples of how they may be measured. Another model for thinking about usability is that of Nielsen [570]. It separates five dimensions of usability (see Table 19.1)
 ### How to select goals for measuring usability?
+ISO 
+Nielsen
 ![[Pasted image 20230215090514.png]]
-### Accessibility
+### How to select goals for measuring usability?
+How do one select or prioritize between dimensions and measures for a particular case? For instance, is the time it takes to complete a task always a good indicator of usability and one that we should seek to minimize? Is effectiveness always more important than satisfaction or is it the other way around? The answer is that the selection of usability measures is an exercise of judgment, which the models in themselves does not support. Rather, it is a matter of validity and of identifying the critical parameters.
+
+Newman and Taylor [567] presented a concrete approach to selecting usability measures, which the call selecting critical parameters, that is, “performance parameters that measure how well the system serves its purpose”. In particular, the critical parameters for a particular system are those that allow designers and evaluators to to establish whether an interactive system serves its purpose and compare one design with another.
+
+The categories of satisfaction in the ISO model and subjectively pleasing in Nielsen’s model both refer to the experience of using a tool to accomplish a task. Rather than looking at the total experience, such as expectations, memories, and general affect, satisfaction is historically been understood as more narrowly concerned with the experience of using a tool to accomplish a task.
+
+The sidebar shows one of the most popular questionnaires for doing, the System Usability Scale. It gives a satisfaction rating between 1 and 100 for an interactive system. Questionnaires with different levels of breadth exist for satisfaction:
+### System usability scale
+![](https://i.imgur.com/y1Vvl1j.png)
+### Acceptability
+**Practical acceptability** includes cost, the reliability of the interactive system, and its compatibility with other systems. The perceptions of utility and usability may also enter the judgment of practical acceptability. This follows the model of inference about experiences that was outlined in chapter 7.
+
+**Social acceptability**, in contrast, concerns whether interactions map well to the social norms and roles in the settings where they are used. Koelle et al. [420] surveyed approaches to social acceptability and found that indicators included "disturbing", "inappropriate", "creepy", and "impolite". These indicators would contribute to a user, or indirect users such as onlookers, would not find an interaction social appropriate. An example of considerations related to social acceptability occurred with early smart glasses, that is, eye wear with computational capabilities, in particular cameras [419].
+### Technology Acceptance Model
+TAM claims that decisions to adopt a technology are driven by two kinds of perceptions: (1) perceptions of how easy to use a system is and (2) perceptions of how useful it will be to use it [178].
+![](https://i.imgur.com/uRPe2Nq.png)
+
+From an HCI view point, TAM has a number of strengths and limitations [349]. It says very little about interaction, which in the end is the basis of the two critical types of perceptions. It also has very few non-trivial implications to design. It may tell which factors of tool use is more important: utility or usability. However, it does not tell what makes a system useful or usable.
+
+## Accessibility
+we want to ensure that products may be used by as large a group of users in as diverse situations as possible. We call that want accessibility. One prominent definition of accessibility is given in the standard ISO 9241-171. It defines accessibility as “the usability of a product, service, environment or facility by people with the widest range of capabilities”. Accessibility is also called universal design, universal usability, and inclusive design
 ### Designing Accessible Interfaces
 ## Summary
 - The use of interactive systems may be seen as tool use, using the system to achieve a particular objective.

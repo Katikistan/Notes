@@ -13,14 +13,28 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture Tue - 9.md",
+                "file": "2. semester/Interaktionsdesign (Inter)/Reading/Inter - Reading for week 12.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "df4d9b6861927e60",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "2. semester/Interaktionsdesign (Inter)/Reading/Inter - Reading for week 6.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -49,7 +63,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "needs",
                 "matchingCase": true,
                 "explainSearch": true,
                 "collapseAll": false,
@@ -97,7 +111,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture Tue - 9.md",
+                "file": "2. semester/Interaktionsdesign (Inter)/Reading/Inter - Reading for week 6.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +128,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture Tue - 9.md",
+                "file": "2. semester/Interaktionsdesign (Inter)/Reading/Inter - Reading for week 6.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +140,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture Tue - 9.md"
+                "file": "2. semester/Interaktionsdesign (Inter)/Reading/Inter - Reading for week 6.md"
               }
             }
           },
@@ -163,7 +177,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
@@ -183,8 +197,19 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "d728e28730487f27",
+  "active": "df4d9b6861927e60",
   "lastOpenFiles": [
+    "2. semester/Interaktionsdesign (Inter)/Reading/Inter - Reading for week 8.md",
+    "2. semester/Interaktionsdesign (Inter)/Reading/Inter - Reading for week 7.md",
+    "2. semester/Interaktionsdesign (Inter)/Reading/Inter - Reading for week 6.md",
+    "2. semester/Interaktionsdesign (Inter)/Reading/Inter - Reading for week 9.md",
+    "2. semester/Interaktionsdesign (Inter)/Reading/Inter - Reading for week 10.md",
+    "2. semester/Interaktionsdesign (Inter)/Inter Overview.md",
+    "Weekly notes/Uge 12 - 2023.md",
+    "2. semester/Interaktionsdesign (Inter)/Lecture/Inter - Lecture Mon - 7.md",
+    "2. semester/Interaktionsdesign (Inter)/Reading/Inter - Reading for week 12.md",
+    "2. semester/Interaktionsdesign (Inter)/Reading/Inter - Reading for week 11.md",
+    "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture Tue - 9.md",
     "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture Mon - 9.md",
     "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture Mon - 11.md",
     "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture man - 12.md",
@@ -193,13 +218,9 @@
     "2. semester/Softwareudvikling (SU)/Wiki/GRASP.md",
     "2. semester/Softwareudvikling (SU)/Wiki/Design patterns.md",
     "2. semester/Softwareudvikling (SU)/Wiki/Coupling.md",
-    "2. semester/Interaktionsdesign (Inter)/Reading/Inter - Reading for week 10.md",
-    "2. semester/Interaktionsdesign (Inter)/Reading/Inter - Reading for week 11.md",
-    "2. semester/Interaktionsdesign (Inter)/Reading/Inter - Reading for week 12.md",
     "Misc/Excalidraw/Drawing 2022-12-03 13.04.39.excalidraw.md",
     "Untitled.md",
     "2. semester/Interaktionsdesign (Inter)/Wiki/Motor-control.md",
-    "2. semester/Interaktionsdesign (Inter)/Reading/Inter - Reading for week 6.md",
     "2. semester/Interaktionsdesign (Inter)/Wiki",
     "2. semester/Interaktionsdesign (Inter)/Lecture/Inter - Lecture Mon - 6.md",
     "2. semester/Interaktionsdesign (Inter)/Reading",
@@ -210,16 +231,9 @@
     "2. semester/Linær algebra (LinAlgDat)/Lecture",
     "2. semester/Linær algebra (LinAlgDat)/Reading",
     "2. semester/Softwareudvikling (SU)/Wiki/C sharp 101.md",
-    "2. semester/Softwareudvikling (SU)/WIKI uge null - ons - 23-03-01 - (2023).md",
     "2. semester/Softwareudvikling (SU)/Wiki",
     "2. semester/Softwareudvikling (SU)/Reading",
-    "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture ons - 12.md",
     "2. semester/Softwareudvikling (SU)/Lecture",
-    "Weekly notes/Uge 12 - 2023.md",
-    "2. semester/Interaktionsdesign (Inter)/Lecture/Inter - Lecture Wed - 8.md",
-    "2. semester/Interaktionsdesign (Inter)/Reading/Inter - Reading for week 7.md",
-    "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture Tue - 11.md",
-    "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture Tue - 10.md",
     "Misc/åBilleder/Pasted image 20230320092241.png",
     "Misc/åBilleder/Pasted image 20230320093314.png",
     "Misc/åBilleder/Pasted image 20230320093256.png",

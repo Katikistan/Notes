@@ -5,10 +5,10 @@ week: 10
 year: 2023
 type: Reading
 course: Inter
-status: 
+status: Open
 semester: 2
 tags:
-Summary: ""
+Summary: "Evaluation, KLM, Herustic"
 ---
 ##### Weekly note
 [[Uge 10 - 2023]]

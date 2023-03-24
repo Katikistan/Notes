@@ -5,7 +5,7 @@ week: 6
 year: 2023
 type: Reading
 course: Inter
-open: true
+status: Open
 semester: 2
 tags: 
 Summary: "intro til faget, til begreber brugercentreret, perception, Fitt's lov og Gestalt love"

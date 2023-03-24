@@ -5,10 +5,10 @@ week: 9
 year: 2023
 type: Reading
 course: Inter
-status: 
+status: Open
 semester: 2
 tags:
-Summary: ""
+Summary: "Design, Design cognition, nielsen"
 ---
 ##### Weekly note
 [[Uge 9 - 2023]]
