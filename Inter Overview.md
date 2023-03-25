@@ -113,7 +113,7 @@ TABLE status, summary
 where course = "Inter" and type = "Lecture"
 ```
 # Eksamen
-## krav til Eksamen
+## formalia til Eksamen
 Onsdag 29 13:15
 Fredag 31 16:00
 

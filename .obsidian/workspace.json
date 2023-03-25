@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2. semester/Interaktionsdesign (Inter)/Reading/Inter - Reading for week 11.md",
+                "file": "Inter Overview.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -49,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "validity",
+                "query": "think out loud",
                 "matchingCase": true,
                 "explainSearch": true,
                 "collapseAll": false,
@@ -70,8 +70,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 261.50152587890625,
-    "collapsed": true
+    "width": 261.50152587890625
   },
   "right": {
     "id": "1bdbff370dc1606a",
@@ -98,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2. semester/Interaktionsdesign (Inter)/Reading/Inter - Reading for week 11.md",
+                "file": "Inter Overview.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2. semester/Interaktionsdesign (Inter)/Reading/Inter - Reading for week 11.md",
+                "file": "Inter Overview.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -127,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2. semester/Interaktionsdesign (Inter)/Reading/Inter - Reading for week 11.md"
+                "file": "Inter Overview.md"
               }
             }
           },
@@ -187,15 +186,18 @@
   },
   "active": "18064d5b72db1bbb",
   "lastOpenFiles": [
-    "Excalidraw/Ideer.md",
+    "Pasted image 20230324093503.png",
+    "Inter Overview.md",
+    "Untitled.md",
+    "Untitled 2.md",
+    "Untitled 1.md",
+    "2. semester/Interaktionsdesign (Inter)/Lecture/Inter - Lecture Mon - 10.md",
     "2. semester/Interaktionsdesign (Inter)/Reading/Inter - Reading for week 11.md",
+    "Excalidraw/Ideer.md",
     "2. semester/Interaktionsdesign (Inter)/Reading/Inter - Reading for week 10.md",
-    "2. semester/Interaktionsdesign (Inter)/Inter Overview.md",
     "2. semester/Interaktionsdesign (Inter)/Reading/Inter - Reading for week 9.md",
     "2. semester/Interaktionsdesign (Inter)/Reading/Inter - Reading for week 8.md",
     "2. semester/Interaktionsdesign (Inter)/Reading/Inter - Reading for week 7.md",
-    "Untitled 2.md",
-    "Untitled 1.md",
     "2. semester/Interaktionsdesign (Inter)/Reading/Inter - Reading for week 6.md",
     "2. semester/Interaktionsdesign (Inter)/Lecture/Inter - Lecture Wed - 6.md",
     "2. semester/Interaktionsdesign (Inter)/Reading/Inter - Reading for week 12.md",
@@ -210,11 +212,7 @@
     "2. semester/Interaktionsdesign (Inter)/Lecture/User Interface/How to design user interface.md",
     "2. semester/Interaktionsdesign (Inter)/Lecture/User Interface/Graphical user interfaces.md",
     "2. semester/Interaktionsdesign (Inter)/Lecture/User Interface/Display.md",
-    "2. semester/Interaktionsdesign (Inter)/Lecture/User Interface/Device input.md",
-    "2. semester/Interaktionsdesign (Inter)/Lecture/User Interface/Commandline interface.md",
     "2. semester/Interaktionsdesign (Inter)/Lecture/User Interface",
-    "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture Tue - 6.md",
-    "Pasted image 20230324093503.png",
     "2. semester/Interaktionsdesign (Inter)/Wiki",
     "2. semester/Interaktionsdesign (Inter)/Reading",
     "2. semester/Interaktionsdesign (Inter)/Lecture",
