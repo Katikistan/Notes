@@ -12,7 +12,7 @@ Summary: "User interfaces, Interaction teqniques, GUI, Command and navigation"
 ---
 ##### Weekly note
 [[Uge 11 - 2023]]
-# Introduction to User Interfaces
+# 23 Introduction to User Interfaces
 ## Definition and Elements
 ### Types of User Interfaces
 ### Forms
@@ -28,19 +28,19 @@ Summary: "User interfaces, Interaction teqniques, GUI, Command and navigation"
 - User interfaces are what the user comes into contact with when using an interactive system. 
 - User interfaces comprise input devices, displays, interaction techniques, representations, and substrates. 
 - The design of user interfaces faces a tradeoff between different, conflicting criteria.
-# Input Devices
+# 24 Input Devices
 ## Summary
 - Input devices allow users to provide information into a computer system. At a high level, they involve three levels: computation, representation, and implementation. 
 
 - Design factors for input devices include their temporal and spatial resolutions, accuracy, sensing modality, sensing interaction potential, sensing validity, integrality and separability, and accessibility. The choice of appropriate input devices will typically require a design decision involving these factors. 
 
 - Input devices span a wide range but can be roughly divided into key-based devices, direct and indirect pointing devices and uncertain control devices. These input devices provide different opportunities and challenges for design, and thus some are more suitable for particular interaction context than others.
-# Displays
+# 25 Displays
 ## Summary
 - Displays turn digital information into physical phenomena that users should be able to perceive accurately. 
 
 - A key consideration is their match to the human visual system. Any change in a display, be it visual or otherwise, may not be perceived or perceived proportionally by the user
-# Interaction Techniques
+# 26 Interaction Techniques
 ## Objectives for Interaction Techniques
 ### Tradeoffs in the design of interaction techniques
 ## Pointing techniques
@@ -62,7 +62,7 @@ Summary: "User interfaces, Interaction teqniques, GUI, Command and navigation"
 - Design should focus not only on ultimate performance but on incentivizing users to start and persist learning the technique 
 - Oft-researched interaction techniques include the pie menu, the marking menu, speed-dependent semantic zomoing, the CD gain function, and hypertext. 
 - Interaction techniques must be evaluated with realistic tasks and by relevant user groups to estimate their achievable performance.
-# Commands and Navigation
+# 27 Commands and Navigation
 ## Naming Objects and Actions
 ### Naming Objects and Actions
 ### Menu techniques
@@ -71,7 +71,7 @@ Summary: "User interfaces, Interaction teqniques, GUI, Command and navigation"
 ## Recognition versus Recall
 ## Summary 
 - In user interfaces, naming the objects and actions is a important activity, in particular because users are likely to call objects and actions different things, the so-called vocabulary problem
-# Graphical User Interfaces
+# 28 Graphical User Interfaces
 ## Design Objectives
 ### Visibility
 ### Consistency
@@ -91,3 +91,6 @@ Summary: "User interfaces, Interaction teqniques, GUI, Command and navigation"
 - Direct manipulation is a key principle of graphical user interfaces. 
 
 - Graphical user interfaces exploit a number of visual design principles, including visual hierarchy, grid lines, and undo.
+
+# 29 Reality-Based Interaction
+![](https://i.imgur.com/Xy1nEq6.png)

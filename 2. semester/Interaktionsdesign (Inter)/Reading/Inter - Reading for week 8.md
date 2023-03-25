@@ -31,6 +31,8 @@ They may be remembered by the acronym used by Benyon [64], PACT: People, Activit
 
 the is–ought problem, that is, from descriptions of how things are, we cannot conclude how they should be. For example, imagine that you have collected vast amounts of data on what your users do on mobile devices, say, when they are cooking. What can you say about their need for a new service? The difficulty is that the essential characteristics of that new service may not be present in that user data. Hence, user research results are rarely strongly prescriptive of designs alone. That said, a significant value of user research is that it can convince stakeholders about the quality of decisions taken.
 ### PACT
+![|250](https://i.imgur.com/NYsws2m.png)
+VI skal se på mennesker, deres aktiviteter og brugs kontekst i sammenspil med teknologien. Sammenspillet mellem 
 #### People
 People-related insights include user skills, personalities, socioeconomic status, abilities, beliefs, habits, motivations, needs, and wants. These types of insight involve the experiences and attitudes of users and their first-person views of themselves and their activities
 #### Activities

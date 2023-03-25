@@ -16,7 +16,7 @@ Summary: "Cognition, Experience, Normans model, utility og usability, needs and 
 # Læseplan
 ![](https://i.imgur.com/Spnh7la.png)
 
-# Chapter 5
+# 5 Cognition
 The main function of cognition in HCI is to help a user control a computer to do
 what they want.
 ## elementary cognitive capabilities: 5 elementary cognitive capacities 
@@ -247,7 +247,7 @@ between them. Modules have internal capacity limits and processing times.
 - Theories of cognition help understand several key questions of information-rich task
 - Environments, for example what makes multitasking situations demanding, what happens when users learn to use a user interface, why they may fail to remember something they have seen before, and how they draw conclusions based on their beliefs about systems that are opaque to them.
 - Many of HCI’s guidelines and evaluative models are rooted on theories of cognition.
-# Chapter 6
+# 6 Needs and Motivations
 Maslow’s famous hierarchy posited five needs ’stacked’ in the shape of a pyramid. From lower to higher:
 1. Physiological needs, such as food, water, warmth, rest;
 2. Safety needs, such as security;
@@ -338,7 +338,7 @@ service by coercing, steering, or deceiving users into making unintended and pot
 - Besides the identification of user needs, the main use of needs theories lies in behavior change applications, which is an ethically contested application.
 
 - The theory of motivations discussed in this chapter warns against the naive view that experiences can be designed. Because of the very complex relationship between internal and external processes in behavioral regulation, there is no deterministic relationship between design and experience. Only by thoroughly understanding both the prevailing state and the psychological processes in a particular case, one can hope to positively influence the formation of experiences.
-# Chapter 7
+# 7 Experience
 ## What is Experience?
 In a study of students’ experiences before, during, and after spring break, among other things, the researchers asked about students’ overall subjective experience [842].
 They asked them to rate the statement “I will be satisfied with this vacation” on a 1–5 scale. the satisfaction with the vacation was higher after the vacation than during the vacation. Satisfaction before the vacation influenced not only the experience during the vacation, but also how the experience afterwards.
@@ -404,7 +404,7 @@ peak-end-rule suggest that we should pay particular attention to the end of expe
 - Affect is a special aspect of experience characterized by positive and negative dimensions—valence.
 - Experiences are indirectly influenced by the designer—they cannot be directly designed.
 - 
-# Chapter 16
+# 16 Introduction to interaction
 ## What is a Theory of Interaction?
 we need to discuss what makes a good theory in HCI.
 
@@ -425,7 +425,7 @@ The theory starts with a high-level metaphor: the limitedcapacity channel. From 
 - Theories of interaction explain emergence of interactive behavior by reference to factors relating to the human, the computer, and the environment. Some of those factors can be latent; that is, they are not directly observable.
 - Theories of interaction have different theoretical commitments and they encompass different time scales and purposes.
 - Theories of interaction helps design and evaluate interactive systems.
-# Chapter 18 Dialogue
+# 18 Dialogue
 ## Normans Seven Stage Model
 one can compare Fitts’ theory of aimed movements with Donald Norman’s theory of interaction, both of which we discuss in this Part. Fitts’ theory of aimed movements has high statistical accuracy but low coverage. Donald Norman’s theory, on the other hand, has high coverage but low accuracy.
 ### Execution
@@ -468,7 +468,7 @@ We explore our environments to learn about what is possible
 - The core elements of dialogue are: a communication turn, communication context, and interpretation (of the turn).
 - Dialogue interaction includes both speech-based and graphical interaction.
 - Dialogue is understood as computation, as goal-directed action, as communication, and as embodied action. Each perspective provides its own methods to bear on the analysis and design of dialogues.
-# Chapter 19
+# 19 Tool use
 First, understanding computers as tools emphasizes the utility of a tool, by which wemean how well it supports what people want to do. Second, tools may be more or less easy to manipulate when used. This is called usability. Tools may also be more or less accessible to their users. This is orthogonal to the utility: Tools may be useful, but difficult to operate for an individual.
 ![[Pasted image 20230215090254.png]]
 ![[Pasted image 20230215090327.png]]

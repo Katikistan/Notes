@@ -12,7 +12,7 @@ Summary: "Evaluation, KLM, Herustic"
 ---
 ##### Weekly note
 [[Uge 10 - 2023]]
-# Introduction to Evaluation
+# 40 Introduction to Evaluation
 ## Goals of Evaluation
 ## Yardsticks of Evaluation
 ## Evaluation Methods
@@ -21,7 +21,7 @@ Summary: "Evaluation, KLM, Herustic"
 ### Validity, Reliability, and Impact 
 ## Is Evaluation Needed?
 ## Summary
-# Analytical Evaluation Methods
+# 41 Analytical Evaluation Methods
 ### Putting cognition into practice
 ## Heuristic Evaluation
 vigtig
