@@ -76,6 +76,8 @@ HTA
 Gulf of execution til venstre 
 Guld of evaluation til højre.
 ### Design
+![](https://i.imgur.com/mz8NA7G.png)
+
 Brainstorm 
 Norman’s 7 fundamental principles of design:
 ### Usability
