@@ -5,7 +5,7 @@ week: 7
 year: 2023
 type: Reading
 course: Inter
-status: Closed
+chapters: 5,6,7,16,18,19
 semester: 2
 tags: ForståMennsker
 Summary: "Cognition, Experience, Normans model, utility og usability, needs and motivation"

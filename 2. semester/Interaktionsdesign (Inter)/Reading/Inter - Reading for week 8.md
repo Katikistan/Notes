@@ -5,7 +5,7 @@ week: 8
 year: 2023
 type: Reading
 course: Inter
-status: Closed  
+chapters: 10,11,15
 semester: 2
 tags: 
 Summary: "user research, pact, affinity"

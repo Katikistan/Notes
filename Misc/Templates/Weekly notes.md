@@ -35,19 +35,19 @@ TABLE type, status, tags, summary
 where course = "SU" and week = <% theweek %>
 ```
 
-# Inter
+# Linær algebra
 ## Assigned reading
 <% task %>
- - [ ] [[Inter - Reading for week <% theweek %>#Chapter]]
+ - [ ] [[LinAlgDat - Reading for week <% theweek %>#Chapter]]
 
 ## Exercises 
-### Monday
-### Wednesday 
+### day 1
+### day 2
 ## Assignment:
 
 ## Notes from this week
 ```dataview
-TABLE type, status, tags, summary
-where course = "Inter" and week = <% theweek %>
+TABLE type, status, summary
+where course = "LinAlgDat" and week = <% theweek %>
 ```
 <% tp.file.rename ("Uge " + theweek +" - " + tp.date.now("YYYY")) %>

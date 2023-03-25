@@ -5,7 +5,7 @@ week: 12
 year: 2023
 type: Reading
 course: Inter
-status: Closed
+chapters: 45-46
 semester: 2
 tags:
 Summary: "HCI discipline, HCI research"

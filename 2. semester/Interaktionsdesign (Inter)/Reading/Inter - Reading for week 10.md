@@ -5,14 +5,14 @@ week: 10
 year: 2023
 type: Reading
 course: Inter
-status: Closed 
+chapters: 40,41
 semester: 2
 tags:
 Summary: "Evaluation, KLM, Herustic"
 ---
 ##### Weekly note
 [[Uge 10 - 2023]]
-# 39 Introduction to Evaluation
+# 40 Introduction to Evaluation
 We must ensure that the systems are practical, usable, and accessible, and if they can deliver the value to the people its designers imagined. In HCI, such assessments are called evaluations. This part describes how to conduct evaluations of interactive systems.
 
 Evaluation methods should be systematic so that their results can be trusted, taken seriously, and replicated and scrutinized by others.
@@ -56,7 +56,7 @@ Evaluation is essential for a human-centered development process and, in additio
 • Evaluation methods have different strengths and weaknesses; they may be tailored to specific technologies and user groups 
 
 • Validity, realiability, and impact are key concerns for evaluation methods
-# 39 Analytical Evaluation Methods
+# 41 Analytical Evaluation Methods
 ![](https://i.imgur.com/qv9EtRh.png)
 
 empirical evaluation: their prime source of data is derived from measurements and observations of real people.

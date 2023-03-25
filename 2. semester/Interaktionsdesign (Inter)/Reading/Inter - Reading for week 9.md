@@ -5,7 +5,7 @@ week: 9
 year: 2023
 type: Reading
 course: Inter
-status: Closed
+Chapters: 30-33
 semester: 2
 tags:
 Summary: "ideageneration, Design cognition,usability, Nielsen, ISO, convergent/divergent"
@@ -78,7 +78,7 @@ A key question in human-centered design is not what can be designed but what sho
 # 31 Design Cognition
 ## Cognitive Processes in Design
 Design cognition entails four thought processes,
-![Uploading file...2ubgt]()
+![](https://i.imgur.com/LO8QhXq.png)
 
 **Convergent thinking** Attempts to improve existing solutions iteratively by making local adjustments rather than by considering more radical novel solutions. 
 
@@ -212,8 +212,6 @@ You would be surprised how often someone accidentally make a graphical design wh
 
 • Design fiction helps designers take distance from the present and develop possible futures centered on a design idea.
 # 33 Design Processes
-![Uploading file...t7st9]()
-
 A core insight in HCI’s process models is that having a design process does not need to be antithetical to creativity. A process can be set to make room for and facilitate creativity. In other words, creativity can be managed just like engineering projects can be managed
 
 There are three other shared aspects in HCI’s process models:

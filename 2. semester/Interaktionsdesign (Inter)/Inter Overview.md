@@ -104,12 +104,12 @@ Getting design right: itererer øverest
 #### Norman’s 3 levels of processing:
 # Reading 
 ```dataview
-TABLE status, summary
+TABLE chapters, summary
 where course = "Inter" and type = "Reading"
 ```
 # Lectures
 ```dataview
-TABLE status, summary
+TABLE summary
 where course = "Inter" and type = "Lecture"
 ```
 # Eksamen

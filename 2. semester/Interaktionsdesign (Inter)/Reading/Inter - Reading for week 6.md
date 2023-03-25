@@ -5,7 +5,7 @@ week: 6
 year: 2023
 type: Reading
 course: Inter
-status: Closed
+chapters: 1-4
 semester: 2
 tags: 
 Summary: "brugercentreret, perception, Fitt's lov og Gestalt love"
