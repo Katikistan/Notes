@@ -8,7 +8,7 @@ course: Inter
 status: 
 semester: 2
 tags:
-Summary: ""
+Summary: "egocentrisk fejlslutning"
 ---
 ##### Weekly note
 [[Uge 6 - 2023]]

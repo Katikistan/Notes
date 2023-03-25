@@ -8,7 +8,7 @@ course: Inter
 status: 
 semester: 2
 tags:
-Summary: ""
+Summary: "Afslutining"
 ---
 ##### Weekly note
 [[Uge 12 - 2023]]

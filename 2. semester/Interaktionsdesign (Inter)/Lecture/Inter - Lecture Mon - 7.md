@@ -5,10 +5,10 @@ week: 7
 year: 2023
 type: Lecture
 course: Inter
-status: 
+status: Banger
 semester: 2
 tags: ForståMennsker
-Summary: "Menneskers tænkning, oplevelser, behov"
+Summary: "important stuff ,Multiple ressource theory, Chunking, Call to action"
 ---
 ##### Weekly note
 [[Uge 7 - 2023]]

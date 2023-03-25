@@ -8,7 +8,7 @@ course: Inter
 status: 
 semester: 2
 tags:
-Summary: ""
+Summary: "Gestalt principper, Centrale opg i perception, Loven om nærhed, fitts law"
 ---
 ##### Weekly note
 [[Uge 6 - 2023]]

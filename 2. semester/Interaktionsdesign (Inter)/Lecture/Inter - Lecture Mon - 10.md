@@ -8,7 +8,7 @@ course: Inter
 status: 
 semester: 2
 tags:
-Summary: ""
+Summary: "Evaluering, utility vs usability, brugbarhedsproblemer"
 ---
 ##### Weekly note
 [[Uge 10 - 2023]]
@@ -17,6 +17,16 @@ Summary: ""
 ![](https://i.imgur.com/zM3x00p.png)
 når man til eksamen bliver bedt om at lave en evaluering skal man vælge en metode men også forklare hvorfor man har valgt netop denne metode, fordele og ulemper.
 I denne note har jeg skrevet noter til evaluering som blev dækket i forelæsningen fra mandag og onsdag. Yderligere finder du en slags guide som du kan bruge til at skrive noget til del 2 inden vi mødes imorgen til øvelser. 
+
+problembeskrivelser kan bruges til at få tænkt over hvad problemet betyder for systemet
+
+problemer hentyder til brugbarhedsproblemer
+![](https://i.imgur.com/WvFhvVj.png)
+
+
+utitlity overvejelser er super nøddige 
+bør lægge mærke til om brugeren siger de kan lide systemet eller ej. 
+![](https://i.imgur.com/7uqG0D9.png)
 # Guide til skrivning af del 2
 **Læs teori noterne først fordi jeg referer til nogle af termerne han bruger i forelæsningerne**
 

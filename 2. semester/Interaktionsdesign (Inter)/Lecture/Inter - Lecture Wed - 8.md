@@ -8,7 +8,7 @@ course: Inter
 status: 
 semester: 2
 tags:
-Summary: ""
+Summary: "etnografi, spørgeskemaer"
 ---
 ##### Weekly note
 [[Uge 8 - 2023]]
