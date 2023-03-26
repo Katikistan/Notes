@@ -9,6 +9,7 @@ Summary: "Overview af begreber, modeller, læsestof, forelæsninger og eksamen"
 [[Uge 12 - 2023]]
 # Begreber
 - Usability 
+- Tacit knowledge
 - Goodness-of-interaction 
 - User experience 
 - Feedforward 
