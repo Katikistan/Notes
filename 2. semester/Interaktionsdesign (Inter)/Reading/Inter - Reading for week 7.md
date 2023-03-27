@@ -442,11 +442,6 @@ one can compare Fitts’ theory of aimed movements with Donald Norman’s theory
 7.  Evaluating whether or not the goal was reached.
 It considers interaction as goal-directed, turn-based dialogue. The model includes seven stages in a communication turn: a user formulating a goal, specifying and executing the actions needed to move toward the goal, and perceiving the resulting system state and relating that to the goal. These stages are presented linearly, one stage’s output serving as input to the next.
 
-gulf-of-execution and gulf-of-evaluation
-
-**Gulf-of-execution** This gulf is about knowing what to do to have a desired state change
-in the computer. For example, what should you do to get a piece of text copied to
-clipboard pasted in a particular spot?
 ![[Pasted image 20230215085504.png]]
 **Gulf-of-execution** This gulf is about knowing what to do to have a desired state change in the computer. For example, what should you do to get a piece of text copied to clipboard pasted in a particular spot? 
 
