@@ -15,16 +15,10 @@ Summary: "Overview af begreber, modeller, læsestof, forelæsninger og eksamen"
 - Feedforward 
 - Accessibility 
 - Goals, tasks, activities 
-- PACT 
 - Context 
 - Universal design 
 - Ecological validity 
-- Analytical/empirical investigation/evaluation
-- Cognitive walkthrough 
-- Evaluator effect 
-- Gestalt principles 
-	- Proximity 
-	- Similarity 
+- Evaluator effect : The evaluator effect in think-aloud studies The evaluator effect is the phenomenon that different evaluators find different usability problems; this is the case for both analytic evaluation techniques and think-aloud studies aimed at identifying usability problems (see Chapter 41). 
 - Continuity 
 - Memory load (data entry, display) 
 - Information assimilation (display) 
@@ -49,7 +43,6 @@ Gulf of execution and gulf of evaluation: The gulf of execution is where people 
 - Inclusive design (Benyon 2019, p. 106) 
 - Usability (Benyon 2019, p. 108) 
 - Value sensitive design (Benyon 2019, p. 109) 
-- PACT (Benyon 2019, p. 109) 
 - Acceptability (Benyon 2019, p. 112) 
 - System Usability Scale (Benyon 2019, p. 113)
 - working memory: central executive, auditory loop, visuo-spatial sketchpad (Benyon 2019, p. 507) 
@@ -68,35 +61,57 @@ Gulf of execution and gulf of evaluation: The gulf of execution is where people 
 altid gode at tænke og snakke om når man evaluerer
 ![](https://i.imgur.com/QId2Xzi.png)
 ### User research
-PACT 
-Affinity diagramming
-HTA
+[[Inter - Reading for week 8#PACT|PACT]]
+[[Inter - Reading for week 8#Task analysis|HTA]]
+[[Inter - Reading for week 8#Methodological Quality|Metode kvalitet(validity etc.)]]
+[[Inter - Reading for week 8#Personas|Persona]]
 ### Dialogue
 #### Normans 7 stage model 
+[[Inter - Reading for week 7#Normans Seven Stage Model|Normans 7 stage model]]
+[[Inter - Reading for week 7#Kirsch model|kirsch model]]
 ![](https://i.imgur.com/nSdv3Pk.png)
 Gulf of execution til venstre 
-Guld of evaluation til højre.
+Gul of evaluation til højre.
+[[Inter - Reading for week 7]]
+[[Inter - Reading for week 11#Benefits and limits of direct manipulation| gulfs ]]
 ### Design
+design guidelines
 ![](https://i.imgur.com/mz8NA7G.png)
 
 Brainstorm 
 Norman’s 7 fundamental principles of design:
+[[Inter - Reading for week 9#Nielsen usability model (usability engineering lifecycle)|nielsen]]
+[[Inter - Reading for week 9#Ideation methods]]
+
 ### Usability
-usability engineering lifecycle
+[[Inter - Reading for week 9#Nielsen usability model (usability engineering lifecycle)|nielsen usabilty model]]
 #### Nielsen
+[[Inter - Lecture Mon - 7#Nielsen & Morkes (1997)]]
+[[Inter - Reading for week 7#How to select goals for measuring usability?|nielsens model ]]
+
 ![](https://i.imgur.com/GkCRbR9.png)
 #### ISO
+[[Inter - Reading for week 7#How to select goals for measuring usability?|ISO]]
 ### Perception
 #### Gestalt 
-#### CRAP
+visual saliency
+visual search
+[[Inter - Reading for week 6#Gestalt principper|Gestalt love]]
+[[Inter - Lecture Wed - 6]]
 ### Motor control
 #### Fitts lov 
+[[Inter - Reading for week 6#Fitts’ law|fitts lov]]
 ### Evaluation
 ![](https://i.imgur.com/TcEd6jt.png)
 #### Analytical Evaluation 
+[[Inter - Reading for week 10]]
 #### KLM 
+[[Inter - Reading for week 10#Keystroke-level modeling|KLM]]
 #### Heuristic evaluation
+[[Inter - Reading for week 10#Heuristic Evaluation|Heuristic eval]] and [[Inter - Reading for week 7#Decision heuristics|what is heuristic]]
+[[Inter - Reading for week 9]]
 #### Cognitive walkthrough 
+[[Inter - Reading for week 10#Cognitive walkthrough|cognitive walkthrough]]
 ### Misc
 ![200](https://i.imgur.com/yWuXCEH.png)
 Getting design right: itererer øverest 

@@ -362,6 +362,7 @@ These effects matter in HCI.
 purchases made to provide users with an experience were valued more
 than those made for material possessions [788]: key argument for experiences being an important part of HCI [309].
 ### Processes in Experience
+McCarthy and wright 
 ![](https://i.imgur.com/udTp6X5.png)
 ## 3 Types of Experience
 ### The Pragmatic and the Hedonic
@@ -445,7 +446,9 @@ gulf-of-execution and gulf-of-evaluation
 in the computer. For example, what should you do to get a piece of text copied to
 clipboard pasted in a particular spot?
 ![[Pasted image 20230215085504.png]]
+**Gulf-of-execution** This gulf is about knowing what to do to have a desired state change in the computer. For example, what should you do to get a piece of text copied to clipboard pasted in a particular spot? 
 
+**Gulf-of-evaluation** This gulf refers to knowing how perceived change in the computer has moved toward the intended goal state. For example, you set the temperature to an intelligent thermostat. However, you feel no immediate effect. How do you know if your command had an effect on the system or not?
 ### Kirsch model
 Kirsh:  Norman’s model makes an unrealistic assumption: the user is assumed to know the
 environment and its options and is merely picking an option them. However, we do not

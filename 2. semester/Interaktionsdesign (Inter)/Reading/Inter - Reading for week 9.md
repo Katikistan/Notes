@@ -58,6 +58,8 @@ Design is a creative activity, the objective of which is to produce a novel and 
 design thinking offers methods for convergent and divergent thinking
 
 In divergent thinking, the goal is to chart the options that are available, while in convergent thinking, the goal is to narrow down the number of options to the most promising one
+
+**The double diamond model of design thinking**
 ![](https://i.imgur.com/W5UdCr6.png)
 ## Practicing design
 Instead, it occurs as the result of some deliberated application of techniques and practices.
