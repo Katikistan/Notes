@@ -245,7 +245,7 @@ Task analysis can be done in two ways: empirically and analytically
 In analytical task analysis, modeling is speculative; it is carried out as part of design or evaluation.
 
 #### How to HTA
-start with a sequential model of the highestlevel subtask. First, split the main task into a sequence of subtasks following each other 
+start with a sequential model of the highest level subtask. First, split the main task into a sequence of subtasks following each other 
 General steps in task analysis include: 
 1. Decide the purpose(s) of the analysis 
 2. Get agreement between stakeholders on the definition of task goals and criterion measures 

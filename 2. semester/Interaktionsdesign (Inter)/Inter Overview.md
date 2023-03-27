@@ -60,7 +60,7 @@ Gulf of execution and gulf of evaluation: The gulf of execution is where people 
 ![](https://i.imgur.com/ptxJzfa.png)
 altid gode at tænke og snakke om når man evaluerer
 ![](https://i.imgur.com/QId2Xzi.png)
-### User research
+### User research!
 [[Inter - Reading for week 8#PACT|PACT]]
 [[Inter - Reading for week 8#Task analysis|HTA]]
 [[Inter - Reading for week 8#Methodological Quality|Metode kvalitet(validity etc.)]]
@@ -88,8 +88,12 @@ Norman’s 7 fundamental principles of design:
 #### Nielsen
 [[Inter - Lecture Mon - 7#Nielsen & Morkes (1997)]]
 [[Inter - Reading for week 7#How to select goals for measuring usability?|nielsens model ]]
+![](https://i.imgur.com/45oN687.png)
 
 ![](https://i.imgur.com/GkCRbR9.png)
+Sometimes, other phrases are used in place of Human-Computer Interaction. They include usability, which emphasizes whether users can use systems to carry out goals as effectively, efficiently and safely as possible; user experience, which emphasizes the felt experience and motivation of users; interaction design, which emphasizes the design of user interfaces and conceptualization of novel interactions
+![](https://i.imgur.com/8Oqqyda.png)
+
 #### ISO
 [[Inter - Reading for week 7#How to select goals for measuring usability?|ISO]]
 ### Perception

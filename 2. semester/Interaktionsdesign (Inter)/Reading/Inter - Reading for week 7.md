@@ -391,6 +391,8 @@ basic emotions include fear, anger, surprise, disgust, happiness, and love.
 One method is to ask people to report their experiences. This can be through open-ended questioning, for example, in an interview session
 ### Measures
 ![](https://i.imgur.com/ngw9fvc.png)
+![](https://i.imgur.com/yKIrO94.png)
+model for user experience 
 ## Can experiences be designed?
 would it be possible to design an interactive system that makes users feel pride? 
 
