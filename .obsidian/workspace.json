@@ -8,25 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "4ffd7a88319c6aef",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "2. semester/Interaktionsdesign (Inter)/Reading/Inter - Reading for week 10.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
             "id": "c533fa641b1c5eef",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2. semester/Interaktionsdesign (Inter)/Reading/Inter - Reading for week 8.md",
+                "file": "Day Planners/28 - 03 - 23.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -62,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "yard",
+                "query": "call",
                 "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": false,
@@ -110,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2. semester/Interaktionsdesign (Inter)/Reading/Inter - Reading for week 10.md",
+                "file": "Day Planners/28 - 03 - 23.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2. semester/Interaktionsdesign (Inter)/Reading/Inter - Reading for week 10.md",
+                "file": "Day Planners/28 - 03 - 23.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2. semester/Interaktionsdesign (Inter)/Reading/Inter - Reading for week 10.md"
+                "file": "Day Planners/28 - 03 - 23.md"
               }
             }
           },
@@ -176,12 +163,11 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 308.5,
-    "collapsed": true
+    "width": 308.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -197,16 +183,21 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "4ffd7a88319c6aef",
+  "active": "c533fa641b1c5eef",
   "lastOpenFiles": [
+    "Day Planners/29-03-2023.md",
     "Day Planners/28 - 03 - 23.md",
-    "2. semester/Interaktionsdesign (Inter)/Reading/Inter - Reading for week 10.md",
+    "Day Planners/28-03-2023.md",
+    "2. semester/Interaktionsdesign (Inter)/Lecture/Inter - Lecture Mon - 7.md",
+    "2. semester/Softwareudvikling (SU)/Wiki/C sharp 101.md",
+    "Untitled.md",
     "2. semester/Interaktionsdesign (Inter)/Inter Overview.md",
     "2. semester/Interaktionsdesign (Inter)/Reading/Inter - Reading for week 7.md",
+    "2. semester/Interaktionsdesign (Inter)/Reading/Inter - Reading for week 11.md",
+    "2. semester/Interaktionsdesign (Inter)/Reading/Inter - Reading for week 10.md",
     "2. semester/Interaktionsdesign (Inter)/Reading/Inter - Reading for week 8.md",
     "2. semester/Interaktionsdesign (Inter)/Reading/Inter - Reading for week 6.md",
     "2. semester/Interaktionsdesign (Inter)/Lecture/Inter - Lecture Mon - 10.md",
-    "2. semester/Interaktionsdesign (Inter)/Lecture/Inter - Lecture Mon - 7.md",
     "2. semester/Interaktionsdesign (Inter)/Reading/Inter - Reading for week 9.md",
     "2. semester/Interaktionsdesign (Inter)/Reading/Inter - Reading for week 12.md",
     "2. semester/Interaktionsdesign (Inter)/Lecture/Inter - Lecture Wed - 8.md",
@@ -216,15 +207,10 @@
     "Weekly notes/Uge 13 - 2023.md",
     "Weekly notes/Uge 12 - 2023.md",
     "Weekly notes/Uge 8 - 2023.md",
-    "Untitled.md",
-    "2. semester/Interaktionsdesign (Inter)/Reading/Inter - Reading for week 11.md",
     "2. semester/Softwareudvikling (SU)/Reading/SU - Reading for week 10.md",
     "Misc/Templates/Linær algebra.md",
     "2. semester/Interaktionsdesign (Inter)/Lecture/Inter - Lecture Wed - 6.md",
     "2. semester/Interaktionsdesign (Inter)/Lecture/Inter - Lecture Mon - 11.md",
-    "2. semester/Interaktionsdesign (Inter)/Lecture/Inter - Lecture fre - 12.md",
-    "Misc/Templates/Weekly notes.md",
-    "Weekly notes/Uge 14 - 2023.md",
     "Misc/åBilleder/Pasted image 20230324093503.png",
     "2. semester/Interaktionsdesign (Inter)/Lecture/User Interface",
     "2. semester/Interaktionsdesign (Inter)/Wiki",
