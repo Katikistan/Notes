@@ -24,9 +24,12 @@
             "id": "c9badb313a73bcdf",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "markdown",
               "state": {
-                "file": "Excalidraw/Ideer.md"
+                "file": "2. semester/Interaktionsdesign (Inter)/Inter Overview.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
               }
             }
           }
@@ -60,7 +63,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "call",
+                "query": "klm",
                 "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": false,
@@ -108,7 +111,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Excalidraw/Ideer.md",
+                "file": "2. semester/Interaktionsdesign (Inter)/Inter Overview.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -125,7 +128,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Excalidraw/Ideer.md",
+                "file": "2. semester/Interaktionsdesign (Inter)/Inter Overview.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +140,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Excalidraw/Ideer.md"
+                "file": "2. semester/Interaktionsdesign (Inter)/Inter Overview.md"
               }
             }
           },
@@ -197,6 +200,8 @@
   },
   "active": "c9badb313a73bcdf",
   "lastOpenFiles": [
+    "2. semester/Interaktionsdesign (Inter)/Reading/Inter - Reading for week 10.md",
+    "Excalidraw/Ideer.md",
     "Day Planners/28 - 03 - 23.md",
     "Day Planners/29 - 03 - 23.md",
     "2. semester/Interaktionsdesign (Inter)/Reading/Inter - Reading for week 11.md",
@@ -208,13 +213,11 @@
     "Untitled.md",
     "2. semester/Interaktionsdesign (Inter)/Inter Overview.md",
     "2. semester/Interaktionsdesign (Inter)/Reading/Inter - Reading for week 7.md",
-    "2. semester/Interaktionsdesign (Inter)/Reading/Inter - Reading for week 10.md",
     "2. semester/Interaktionsdesign (Inter)/Reading/Inter - Reading for week 8.md",
     "2. semester/Interaktionsdesign (Inter)/Reading/Inter - Reading for week 6.md",
     "2. semester/Interaktionsdesign (Inter)/Lecture/Inter - Lecture Mon - 10.md",
     "2. semester/Interaktionsdesign (Inter)/Reading/Inter - Reading for week 9.md",
     "2. semester/Interaktionsdesign (Inter)/Lecture/Inter - Lecture Wed - 8.md",
-    "Excalidraw/Ideer.md",
     "Misc/Templates/Excalidraw.md",
     "2. semester/Interaktionsdesign (Inter)/Lecture/Inter - Lecture Mon - 6.md",
     "Weekly notes/Uge 13 - 2023.md",
