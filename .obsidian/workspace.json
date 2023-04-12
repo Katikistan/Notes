@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "ea231d2d79c5c23f",
+        "id": "73c04155e8adb0c5",
         "type": "tabs",
         "children": [
           {
-            "id": "95266f7ccc9e0eba",
+            "id": "bba27da98f1ef9f3",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2. semester/Interaktionsdesign (Inter)/Reading/Inter - Reading for week 7.md",
+                "file": "Day Planners/06 - 04 - 23.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -66,8 +66,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -98,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2. semester/Interaktionsdesign (Inter)/Reading/Inter - Reading for week 7.md",
+                "file": "Day Planners/06 - 04 - 23.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2. semester/Interaktionsdesign (Inter)/Reading/Inter - Reading for week 7.md",
+                "file": "Day Planners/06 - 04 - 23.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -127,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2. semester/Interaktionsdesign (Inter)/Reading/Inter - Reading for week 7.md"
+                "file": "Day Planners/06 - 04 - 23.md"
               }
             }
           },
@@ -164,12 +163,11 @@
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 308.5,
-    "collapsed": true
+    "width": 308.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -185,12 +183,13 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "95266f7ccc9e0eba",
+  "active": "bba27da98f1ef9f3",
   "lastOpenFiles": [
+    "Day Planners/06 - 04 - 23.md",
+    "2. semester/Interaktionsdesign (Inter)/Reading/Inter - Reading for week 7.md",
     "2. semester/Interaktionsdesign (Inter)/Lecture/Inter - Lecture Mon - 7.md",
     "Untitled.md",
     "2. semester/Interaktionsdesign (Inter)/Inter Overview.md",
-    "2. semester/Interaktionsdesign (Inter)/Reading/Inter - Reading for week 7.md",
     "2. semester/Interaktionsdesign (Inter)/Reading/Inter - Reading for week 12.md",
     "Day Planners/30 - 03 - 23.md",
     "Day Planners/31 - 01 - 23.md",
@@ -213,7 +212,6 @@
     "Weekly notes/Uge 13 - 2023.md",
     "Weekly notes/Uge 12 - 2023.md",
     "Weekly notes/Uge 8 - 2023.md",
-    "2. semester/Softwareudvikling (SU)/Reading/SU - Reading for week 10.md",
     "Misc/åBilleder/Pasted image 20230324093503.png",
     "2. semester/Interaktionsdesign (Inter)/Lecture/User Interface",
     "2. semester/Interaktionsdesign (Inter)/Wiki",
