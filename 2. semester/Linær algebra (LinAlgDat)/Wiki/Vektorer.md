@@ -1,1 +1,3 @@
-Skalar på engelsk: scaler, to scale something by 2. Man forestiller sig at man gøre vektoren dobbelt så stor, derfor skal man går dobbelt så langt langs x aksen og y aksen, ligeså ville 1/2 gøre vektoren halvt så stor. i forhold til [[Linear transformations]] så kalder også det en skalar når man ganger 2 ind på en 2x2 matrix fordi man scaler både 
+### Skalar
+Skalar på engelsk: scaler, to scale something by 2 for example. Man forestiller sig at man gør vektoren dobbelt så stor, derfor skal man gå dobbelt så langt langs x aksen og y aksen, ligeså ville 1/2 gøre vektoren halvt så stor. i forhold til [[Linear transformations]] så kalder også det en skalar når man ganger 2 ind på en 2x2 matrix fordi man scaler både vektorer.
+$$2~~\cdot \begin{bmatrix}1 & 2 \\ 2 & 1\end{bmatrix} $$

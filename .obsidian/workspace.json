@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Day Planners/06 - 04 - 23.md",
+                "file": "2. semester/Linær algebra (LinAlgDat)/Wiki/Linear transformations.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -97,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Day Planners/06 - 04 - 23.md",
+                "file": "2. semester/Linær algebra (LinAlgDat)/Wiki/Linear transformations.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Day Planners/06 - 04 - 23.md",
+                "file": "2. semester/Linær algebra (LinAlgDat)/Wiki/Linear transformations.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Day Planners/06 - 04 - 23.md"
+                "file": "2. semester/Linær algebra (LinAlgDat)/Wiki/Linear transformations.md"
               }
             }
           },
@@ -161,9 +161,17 @@
               "type": "git-view",
               "state": {}
             }
+          },
+          {
+            "id": "4c419c505c6e29b2",
+            "type": "leaf",
+            "state": {
+              "type": "mathpad-view",
+              "state": {}
+            }
           }
         ],
-        "currentTab": 4
+        "currentTab": 8
       }
     ],
     "direction": "horizontal",
@@ -180,11 +188,15 @@
       "obsidian-statusbar-pomo:Start pomodoro": false,
       "canvas:Create new canvas": false,
       "graph:Open graph view": false,
+      "mathpad:Open Mathpad": false,
       "periodic-notes:Open today": false
     }
   },
-  "active": "bba27da98f1ef9f3",
+  "active": "4c419c505c6e29b2",
   "lastOpenFiles": [
+    "2. semester/Linær algebra (LinAlgDat)/Wiki/Matrix.md",
+    "2. semester/Linær algebra (LinAlgDat)/Wiki/Vektorer.md",
+    "2. semester/Linær algebra (LinAlgDat)/Wiki/Linear transformations.md",
     "Day Planners/06 - 04 - 23.md",
     "2. semester/Interaktionsdesign (Inter)/Reading/Inter - Reading for week 7.md",
     "2. semester/Interaktionsdesign (Inter)/Lecture/Inter - Lecture Mon - 7.md",
@@ -209,9 +221,6 @@
     "2. semester/Interaktionsdesign (Inter)/Lecture/Inter - Lecture Wed - 8.md",
     "Misc/Templates/Excalidraw.md",
     "2. semester/Interaktionsdesign (Inter)/Lecture/Inter - Lecture Mon - 6.md",
-    "Weekly notes/Uge 13 - 2023.md",
-    "Weekly notes/Uge 12 - 2023.md",
-    "Weekly notes/Uge 8 - 2023.md",
     "Misc/åBilleder/Pasted image 20230324093503.png",
     "2. semester/Interaktionsdesign (Inter)/Lecture/User Interface",
     "2. semester/Interaktionsdesign (Inter)/Wiki",
