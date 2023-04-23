@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Day Planners/13 - 04 - 23.md",
+                "file": "Weekly notes/Uge 10 - 2023.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -97,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Day Planners/13 - 04 - 23.md",
+                "file": "Weekly notes/Uge 10 - 2023.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Day Planners/13 - 04 - 23.md",
+                "file": "Weekly notes/Uge 10 - 2023.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Day Planners/13 - 04 - 23.md"
+                "file": "Weekly notes/Uge 10 - 2023.md"
               }
             }
           },
@@ -192,22 +192,28 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "4c419c505c6e29b2",
+  "active": "bba27da98f1ef9f3",
   "lastOpenFiles": [
-    "Day Planners/13 - 04 - 23.md",
-    "Day Planners/13 - 04 - 23.md",
-    "2. semester/Linær algebra (LinAlgDat)/Wiki/Linear transformations.md",
+    "Weekly notes/Uge 7 - 2023.md",
+    "Weekly notes/Uge 6 - 2023.md",
+    "Weekly notes/Uge 5 - 2023.md",
     "2. semester/Linær algebra (LinAlgDat)/Wiki/Matrix.md",
+    "2. semester/Linær algebra (LinAlgDat)/Wiki/Linear transformations.md",
+    "2. semester/Interaktionsdesign (Inter)/Lecture/Inter - Lecture fre - 12.md",
+    "2. semester/Interaktionsdesign (Inter).zip",
+    "2. semester/Interaktionsdesign (Inter)/Reading/Inter - Reading for week 7.md",
+    "2. semester/Interaktionsdesign (Inter)/Inter Overview.md",
+    "2. semester/Interaktionsdesign (Inter)/Reading/Inter - Reading for week 6.md",
+    "2. semester/Interaktionsdesign (Inter)/Reading/Inter - Reading for week 8.md",
+    "Day Planners/13 - 04 - 23.md",
+    "Day Planners/13 - 04 - 23.md",
     "2. semester/Linær algebra (LinAlgDat)/Wiki/Vektorer.md",
     "Day Planners/06 - 04 - 23.md",
-    "2. semester/Interaktionsdesign (Inter)/Reading/Inter - Reading for week 7.md",
     "2. semester/Interaktionsdesign (Inter)/Lecture/Inter - Lecture Mon - 7.md",
     "Untitled.md",
-    "2. semester/Interaktionsdesign (Inter)/Inter Overview.md",
     "2. semester/Interaktionsdesign (Inter)/Reading/Inter - Reading for week 12.md",
     "Day Planners/30 - 03 - 23.md",
     "Day Planners/31 - 01 - 23.md",
-    "2. semester/Interaktionsdesign (Inter)/Reading/Inter - Reading for week 6.md",
     "2. semester/Interaktionsdesign (Inter)/Reading/Inter - Reading for week 9.md",
     "Excalidraw/Ideer.md",
     "Pasted Image 20230330181445_146.png",
@@ -216,11 +222,6 @@
     "Day Planners/29 - 03 - 23.md",
     "2. semester/Interaktionsdesign (Inter)/Reading/Inter - Reading for week 11.md",
     "Day Planners/29-03-2023.md",
-    "Day Planners/28-03-2023.md",
-    "2. semester/Softwareudvikling (SU)/Wiki/C sharp 101.md",
-    "2. semester/Interaktionsdesign (Inter)/Reading/Inter - Reading for week 8.md",
-    "2. semester/Interaktionsdesign (Inter)/Lecture/Inter - Lecture Mon - 10.md",
-    "2. semester/Interaktionsdesign (Inter)/Lecture/Inter - Lecture Wed - 8.md",
     "Misc/åBilleder/Pasted image 20230324093503.png",
     "2. semester/Interaktionsdesign (Inter)/Lecture/User Interface",
     "2. semester/Interaktionsdesign (Inter)/Wiki",
@@ -231,7 +232,6 @@
     "2. semester/Linær algebra (LinAlgDat)/Reading",
     "2. semester/Softwareudvikling (SU)/Wiki",
     "2. semester/Softwareudvikling (SU)/Reading",
-    "2. semester/Softwareudvikling (SU)/Lecture",
     "Misc/åBilleder/Pasted image 20230320092241.png",
     "Misc/åBilleder/Pasted image 20230320093314.png",
     "Misc/åBilleder/Pasted image 20230320093256.png",
