@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Weekly notes/Uge 10 - 2023.md",
+                "file": "2. semester/Softwareudvikling (SU)/Wiki/Creating project and using config.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -49,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "determination",
+                "query": "sln",
                 "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": false,
@@ -66,7 +66,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -97,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Weekly notes/Uge 10 - 2023.md",
+                "file": "2. semester/Softwareudvikling (SU)/Wiki/Creating project and using config.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Weekly notes/Uge 10 - 2023.md",
+                "file": "2. semester/Softwareudvikling (SU)/Wiki/Creating project and using config.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Weekly notes/Uge 10 - 2023.md"
+                "file": "2. semester/Softwareudvikling (SU)/Wiki/Creating project and using config.md"
               }
             }
           },
@@ -192,8 +193,14 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "bba27da98f1ef9f3",
+  "active": "4c419c505c6e29b2",
   "lastOpenFiles": [
+    "2. semester/Softwareudvikling (SU)/Wiki/Coupling.md",
+    "2. semester/Softwareudvikling (SU)/Wiki/Creating project and using config.md",
+    "Untitled.md",
+    "Pasted Image 20230330181445_146.png",
+    "2. semester/Softwareudvikling (SU)/guides/ReportFormatting.md",
+    "Weekly notes/Uge 10 - 2023.md",
     "Weekly notes/Uge 7 - 2023.md",
     "Weekly notes/Uge 6 - 2023.md",
     "Weekly notes/Uge 5 - 2023.md",
@@ -210,18 +217,12 @@
     "2. semester/Linær algebra (LinAlgDat)/Wiki/Vektorer.md",
     "Day Planners/06 - 04 - 23.md",
     "2. semester/Interaktionsdesign (Inter)/Lecture/Inter - Lecture Mon - 7.md",
-    "Untitled.md",
     "2. semester/Interaktionsdesign (Inter)/Reading/Inter - Reading for week 12.md",
     "Day Planners/30 - 03 - 23.md",
     "Day Planners/31 - 01 - 23.md",
     "2. semester/Interaktionsdesign (Inter)/Reading/Inter - Reading for week 9.md",
     "Excalidraw/Ideer.md",
-    "Pasted Image 20230330181445_146.png",
     "2. semester/Interaktionsdesign (Inter)/Reading/Inter - Reading for week 10.md",
-    "Day Planners/28 - 03 - 23.md",
-    "Day Planners/29 - 03 - 23.md",
-    "2. semester/Interaktionsdesign (Inter)/Reading/Inter - Reading for week 11.md",
-    "Day Planners/29-03-2023.md",
     "Misc/åBilleder/Pasted image 20230324093503.png",
     "2. semester/Interaktionsdesign (Inter)/Lecture/User Interface",
     "2. semester/Interaktionsdesign (Inter)/Wiki",
