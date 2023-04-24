@@ -19,8 +19,35 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "6270e66703c20acc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "2. semester/Linær algebra (LinAlgDat)/Lecture/LinAlgDat - Lecture man - 17.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "3533e8185c8a8b43",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "2. semester/Linær algebra (LinAlgDat)/Lecture/LinAlgDat - Lecture man - 17.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -49,7 +76,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "sln",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": false,
@@ -66,8 +93,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -98,7 +124,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2. semester/Softwareudvikling (SU)/Wiki/Creating project and using config.md",
+                "file": "2. semester/Linær algebra (LinAlgDat)/Lecture/LinAlgDat - Lecture man - 17.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +141,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2. semester/Softwareudvikling (SU)/Wiki/Creating project and using config.md",
+                "file": "2. semester/Linær algebra (LinAlgDat)/Lecture/LinAlgDat - Lecture man - 17.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -127,7 +153,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2. semester/Softwareudvikling (SU)/Wiki/Creating project and using config.md"
+                "file": "2. semester/Linær algebra (LinAlgDat)/Lecture/LinAlgDat - Lecture man - 17.md"
               }
             }
           },
@@ -172,7 +198,7 @@
             }
           }
         ],
-        "currentTab": 8
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -193,10 +219,14 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "4c419c505c6e29b2",
+  "active": "3533e8185c8a8b43",
   "lastOpenFiles": [
-    "2. semester/Softwareudvikling (SU)/Wiki/Coupling.md",
+    "Pasted image 20230424130800.png",
+    "Weekly notes/Uge 17 - 2023.md",
+    "2. semester/Linær algebra (LinAlgDat)/Lecture/LinAlgDat - Lecture man - 17.md",
+    "Weekly notes/Uge null - 2023.md",
     "2. semester/Softwareudvikling (SU)/Wiki/Creating project and using config.md",
+    "2. semester/Softwareudvikling (SU)/Wiki/Coupling.md",
     "Untitled.md",
     "Pasted Image 20230330181445_146.png",
     "2. semester/Softwareudvikling (SU)/guides/ReportFormatting.md",
@@ -219,10 +249,6 @@
     "2. semester/Interaktionsdesign (Inter)/Lecture/Inter - Lecture Mon - 7.md",
     "2. semester/Interaktionsdesign (Inter)/Reading/Inter - Reading for week 12.md",
     "Day Planners/30 - 03 - 23.md",
-    "Day Planners/31 - 01 - 23.md",
-    "2. semester/Interaktionsdesign (Inter)/Reading/Inter - Reading for week 9.md",
-    "Excalidraw/Ideer.md",
-    "2. semester/Interaktionsdesign (Inter)/Reading/Inter - Reading for week 10.md",
     "Misc/åBilleder/Pasted image 20230324093503.png",
     "2. semester/Interaktionsdesign (Inter)/Lecture/User Interface",
     "2. semester/Interaktionsdesign (Inter)/Wiki",
