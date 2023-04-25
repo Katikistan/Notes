@@ -39,7 +39,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2. semester/Linær algebra (LinAlgDat)/Lecture/LinAlgDat - Lecture man - 17.md",
+                "file": "2. semester/Softwareudvikling (SU)/Wiki/Creating project and using config.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -124,7 +124,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2. semester/Linær algebra (LinAlgDat)/Lecture/LinAlgDat - Lecture man - 17.md",
+                "file": "2. semester/Softwareudvikling (SU)/Wiki/Creating project and using config.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -141,7 +141,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2. semester/Linær algebra (LinAlgDat)/Lecture/LinAlgDat - Lecture man - 17.md",
+                "file": "2. semester/Softwareudvikling (SU)/Wiki/Creating project and using config.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -153,7 +153,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2. semester/Linær algebra (LinAlgDat)/Lecture/LinAlgDat - Lecture man - 17.md"
+                "file": "2. semester/Softwareudvikling (SU)/Wiki/Creating project and using config.md"
               }
             }
           },
@@ -221,9 +221,9 @@
   },
   "active": "4c419c505c6e29b2",
   "lastOpenFiles": [
+    "2. semester/Linær algebra (LinAlgDat)/Lecture/LinAlgDat - Lecture man - 17.md",
     "Pasted image 20230424130800.png",
     "Weekly notes/Uge 17 - 2023.md",
-    "2. semester/Linær algebra (LinAlgDat)/Lecture/LinAlgDat - Lecture man - 17.md",
     "Weekly notes/Uge null - 2023.md",
     "2. semester/Softwareudvikling (SU)/Wiki/Creating project and using config.md",
     "2. semester/Softwareudvikling (SU)/Wiki/Coupling.md",
@@ -266,7 +266,6 @@
     "Misc/åBilleder/Pasted image 20230320093114.png",
     "Misc/åBilleder/Pasted image 20230320093040.png",
     "Misc/åBilleder/Pasted image 20230320093009.png",
-    "Misc/åBilleder/Pasted image 20230320092906.png",
     "Untitled.canvas"
   ]
 }
