@@ -39,7 +39,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2. semester/Softwareudvikling (SU)/Wiki/Creating project and using config.md",
+                "file": "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture Mon - 9.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -124,7 +124,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2. semester/Softwareudvikling (SU)/Wiki/Creating project and using config.md",
+                "file": "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture Mon - 9.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -141,7 +141,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2. semester/Softwareudvikling (SU)/Wiki/Creating project and using config.md",
+                "file": "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture Mon - 9.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -153,7 +153,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2. semester/Softwareudvikling (SU)/Wiki/Creating project and using config.md"
+                "file": "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture Mon - 9.md"
               }
             }
           },
@@ -219,36 +219,37 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "4c419c505c6e29b2",
+  "active": "3533e8185c8a8b43",
   "lastOpenFiles": [
+    "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture Mon - 11.md",
+    "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture Tue - 6.md",
+    "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture Tue - 7.md",
+    "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture Tue - 9.md",
+    "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture Tue - 10.md",
+    "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture Tue - 11.md",
+    "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture Mon - 9.md",
+    "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture Mon - 7.md",
+    "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture man - 12.md",
+    "2. semester/Softwareudvikling (SU)/Wiki/Coupling.md",
+    "2. semester/Softwareudvikling (SU)/Wiki/Creating project and using config.md",
+    "2. semester/Softwareudvikling (SU)/Wiki/Design patterns.md",
+    "2. semester/Softwareudvikling (SU)/Wiki/GRASP.md",
+    "2. semester/Softwareudvikling (SU)/Wiki/SOLID principles.md",
+    "2. semester/Softwareudvikling (SU)/Wiki/UML.md",
+    "2. semester/Softwareudvikling (SU)/Reading/SU - Reading for week 10.md",
+    "2. semester/Softwareudvikling (SU)/Reading/SU - Reading for week 8.md",
+    "2. semester/Softwareudvikling (SU)/Reading/SU - Reading for week 7.md",
+    "2. semester/Softwareudvikling (SU)/Reading/SU - Reading for week 6.md",
     "2. semester/Linær algebra (LinAlgDat)/Lecture/LinAlgDat - Lecture man - 17.md",
     "Pasted image 20230424130800.png",
     "Weekly notes/Uge 17 - 2023.md",
     "Weekly notes/Uge null - 2023.md",
-    "2. semester/Softwareudvikling (SU)/Wiki/Creating project and using config.md",
-    "2. semester/Softwareudvikling (SU)/Wiki/Coupling.md",
     "Untitled.md",
     "Pasted Image 20230330181445_146.png",
     "2. semester/Softwareudvikling (SU)/guides/ReportFormatting.md",
     "Weekly notes/Uge 10 - 2023.md",
     "Weekly notes/Uge 7 - 2023.md",
-    "Weekly notes/Uge 6 - 2023.md",
-    "Weekly notes/Uge 5 - 2023.md",
-    "2. semester/Linær algebra (LinAlgDat)/Wiki/Matrix.md",
-    "2. semester/Linær algebra (LinAlgDat)/Wiki/Linear transformations.md",
-    "2. semester/Interaktionsdesign (Inter)/Lecture/Inter - Lecture fre - 12.md",
     "2. semester/Interaktionsdesign (Inter).zip",
-    "2. semester/Interaktionsdesign (Inter)/Reading/Inter - Reading for week 7.md",
-    "2. semester/Interaktionsdesign (Inter)/Inter Overview.md",
-    "2. semester/Interaktionsdesign (Inter)/Reading/Inter - Reading for week 6.md",
-    "2. semester/Interaktionsdesign (Inter)/Reading/Inter - Reading for week 8.md",
-    "Day Planners/13 - 04 - 23.md",
-    "Day Planners/13 - 04 - 23.md",
-    "2. semester/Linær algebra (LinAlgDat)/Wiki/Vektorer.md",
-    "Day Planners/06 - 04 - 23.md",
-    "2. semester/Interaktionsdesign (Inter)/Lecture/Inter - Lecture Mon - 7.md",
-    "2. semester/Interaktionsdesign (Inter)/Reading/Inter - Reading for week 12.md",
-    "Day Planners/30 - 03 - 23.md",
     "Misc/åBilleder/Pasted image 20230324093503.png",
     "2. semester/Interaktionsdesign (Inter)/Lecture/User Interface",
     "2. semester/Interaktionsdesign (Inter)/Wiki",
