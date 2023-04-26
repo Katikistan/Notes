@@ -13,80 +13,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2. semester/Softwareudvikling (SU)/Wiki/Creating project and using config.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "6270e66703c20acc",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "2. semester/Linær algebra (LinAlgDat)/Lecture/LinAlgDat - Lecture man - 17.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "3533e8185c8a8b43",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "2. semester/Linær algebra (LinAlgDat)/Wiki/Matrix.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "85430eeff63045e7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "2. semester/Linær algebra (LinAlgDat)/Lecture/LinAlgDat - Lecture ons - 17.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "7260d15b256ad6f0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "2. semester/Linær algebra (LinAlgDat)/Wiki/Vektorer.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "eb42165b630904f7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Mangler.md",
+                "file": "2. semester/Softwareudvikling (SU)/Wiki/Coupling.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 5
+        ]
       }
     ],
     "direction": "vertical"
@@ -115,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "coupli",
                 "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": false,
@@ -132,7 +66,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -163,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Mangler.md",
+                "file": "2. semester/Softwareudvikling (SU)/Wiki/Coupling.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -180,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Mangler.md",
+                "file": "2. semester/Softwareudvikling (SU)/Wiki/Coupling.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -192,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Mangler.md"
+                "file": "2. semester/Softwareudvikling (SU)/Wiki/Coupling.md"
               }
             }
           },
@@ -258,17 +193,19 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "eb42165b630904f7",
+  "active": "bba27da98f1ef9f3",
   "lastOpenFiles": [
-    "Mangler.md",
-    "2. semester/Linær algebra (LinAlgDat)/Wiki/Vektorer.md",
-    "2. semester/Linær algebra (LinAlgDat)/Wiki/Page ranking.md",
-    "2. semester/Linær algebra (LinAlgDat)/Wiki/Matrix.md",
-    "2. semester/Linær algebra (LinAlgDat)/Wiki/Linear transformations.md",
-    "2. semester/Linær algebra (LinAlgDat)/Lecture/LinAlgDat - Lecture ons - 17.md",
     "2. semester/Softwareudvikling (SU)/Wiki/Creating project and using config.md",
-    "Excalidraw/Ideer.md",
     "2. semester/Linær algebra (LinAlgDat)/Lecture/LinAlgDat - Lecture man - 17.md",
+    "2. semester/Linær algebra (LinAlgDat)/Wiki/Matrix.md",
+    "2. semester/Linær algebra (LinAlgDat)/Lecture/LinAlgDat - Lecture ons - 17.md",
+    "2. semester/Linær algebra (LinAlgDat)/Wiki/Vektorer.md",
+    "Weekly notes/Uge 11 - 2023.md",
+    "2. semester/Softwareudvikling (SU)/Wiki/Coupling.md",
+    "Mangler.md",
+    "2. semester/Linær algebra (LinAlgDat)/Wiki/Page ranking.md",
+    "2. semester/Linær algebra (LinAlgDat)/Wiki/Linear transformations.md",
+    "Excalidraw/Ideer.md",
     "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture Mon - 7.md",
     "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture Mon - 9.md",
     "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture Mon - 11.md",
@@ -278,14 +215,12 @@
     "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture Tue - 10.md",
     "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture Tue - 11.md",
     "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture man - 12.md",
-    "2. semester/Softwareudvikling (SU)/Wiki/Coupling.md",
     "2. semester/Softwareudvikling (SU)/Wiki/Design patterns.md",
     "2. semester/Softwareudvikling (SU)/Wiki/GRASP.md",
     "2. semester/Softwareudvikling (SU)/Wiki/SOLID principles.md",
     "2. semester/Softwareudvikling (SU)/Wiki/UML.md",
     "2. semester/Softwareudvikling (SU)/Reading/SU - Reading for week 10.md",
     "2. semester/Softwareudvikling (SU)/Reading/SU - Reading for week 8.md",
-    "2. semester/Softwareudvikling (SU)/Reading/SU - Reading for week 7.md",
     "Pasted image 20230424130800.png",
     "Pasted Image 20230330181445_146.png",
     "2. semester/Interaktionsdesign (Inter).zip",
