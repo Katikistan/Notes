@@ -45,9 +45,22 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "85430eeff63045e7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "2. semester/Linær algebra (LinAlgDat)/Lecture/LinAlgDat - Lecture ons - 17.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -124,7 +137,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2. semester/Softwareudvikling (SU)/Wiki/Creating project and using config.md",
+                "file": "2. semester/Linær algebra (LinAlgDat)/Lecture/LinAlgDat - Lecture ons - 17.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -141,7 +154,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2. semester/Softwareudvikling (SU)/Wiki/Creating project and using config.md",
+                "file": "2. semester/Linær algebra (LinAlgDat)/Lecture/LinAlgDat - Lecture ons - 17.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -153,7 +166,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2. semester/Softwareudvikling (SU)/Wiki/Creating project and using config.md"
+                "file": "2. semester/Linær algebra (LinAlgDat)/Lecture/LinAlgDat - Lecture ons - 17.md"
               }
             }
           },
@@ -219,8 +232,10 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "4c419c505c6e29b2",
+  "active": "85430eeff63045e7",
   "lastOpenFiles": [
+    "2. semester/Softwareudvikling (SU)/Wiki/Creating project and using config.md",
+    "2. semester/Linær algebra (LinAlgDat)/Lecture/LinAlgDat - Lecture ons - 17.md",
     "Excalidraw/Ideer.md",
     "2. semester/Linær algebra (LinAlgDat)/Wiki/Matrix.md",
     "2. semester/Linær algebra (LinAlgDat)/Lecture/LinAlgDat - Lecture man - 17.md",
@@ -234,7 +249,6 @@
     "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture Tue - 11.md",
     "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture man - 12.md",
     "2. semester/Softwareudvikling (SU)/Wiki/Coupling.md",
-    "2. semester/Softwareudvikling (SU)/Wiki/Creating project and using config.md",
     "2. semester/Softwareudvikling (SU)/Wiki/Design patterns.md",
     "2. semester/Softwareudvikling (SU)/Wiki/GRASP.md",
     "2. semester/Softwareudvikling (SU)/Wiki/SOLID principles.md",
@@ -248,7 +262,6 @@
     "Weekly notes/Uge null - 2023.md",
     "Untitled.md",
     "Pasted Image 20230330181445_146.png",
-    "2. semester/Softwareudvikling (SU)/guides/ReportFormatting.md",
     "2. semester/Interaktionsdesign (Inter).zip",
     "Misc/åBilleder/Pasted image 20230324093503.png",
     "2. semester/Interaktionsdesign (Inter)/Lecture/User Interface",
