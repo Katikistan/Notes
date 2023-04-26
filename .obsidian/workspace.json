@@ -71,9 +71,22 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "eb42165b630904f7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Mangler.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -150,7 +163,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2. semester/Linær algebra (LinAlgDat)/Wiki/Vektorer.md",
+                "file": "Mangler.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -167,7 +180,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2. semester/Linær algebra (LinAlgDat)/Wiki/Vektorer.md",
+                "file": "Mangler.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -179,7 +192,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2. semester/Linær algebra (LinAlgDat)/Wiki/Vektorer.md"
+                "file": "Mangler.md"
               }
             }
           },
@@ -245,8 +258,10 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "7260d15b256ad6f0",
+  "active": "eb42165b630904f7",
   "lastOpenFiles": [
+    "Mangler.md",
+    "2. semester/Linær algebra (LinAlgDat)/Wiki/Vektorer.md",
     "2. semester/Linær algebra (LinAlgDat)/Wiki/Page ranking.md",
     "2. semester/Linær algebra (LinAlgDat)/Wiki/Matrix.md",
     "2. semester/Linær algebra (LinAlgDat)/Wiki/Linear transformations.md",
@@ -271,9 +286,7 @@
     "2. semester/Softwareudvikling (SU)/Reading/SU - Reading for week 10.md",
     "2. semester/Softwareudvikling (SU)/Reading/SU - Reading for week 8.md",
     "2. semester/Softwareudvikling (SU)/Reading/SU - Reading for week 7.md",
-    "2. semester/Softwareudvikling (SU)/Reading/SU - Reading for week 6.md",
     "Pasted image 20230424130800.png",
-    "Weekly notes/Uge 17 - 2023.md",
     "Pasted Image 20230330181445_146.png",
     "2. semester/Interaktionsdesign (Inter).zip",
     "Misc/åBilleder/Pasted image 20230324093503.png",
