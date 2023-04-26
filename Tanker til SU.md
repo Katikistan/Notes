@@ -1,0 +1,1 @@
+Måske er det unødvendigt at gøre fra et string array til et character array
