@@ -10,7 +10,7 @@ her skal matricer have samme størrelse.
 ## multiplikation
 man kan skrive dem som ses på billede, matricer kan kun ganges sammen hvis $M1$'s række n = $M2$ column.
 ![|300](https://i.imgur.com/bqEN19q.png)
-
+Two matrices can be multiplied when the number of columns(n) in the first matrix($m \times n$) is equal to the number of rows(n) in the second matrix($n \times p$). result is a ($m \times p$) matrix
 ### skalar
 ### et trick til matrix multiplikation 
 ## invers af en matrix

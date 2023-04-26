@@ -39,7 +39,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture Mon - 9.md",
+                "file": "2. semester/Linær algebra (LinAlgDat)/Wiki/Matrix.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -97,7 +97,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 335.5
   },
   "right": {
     "id": "1bdbff370dc1606a",
@@ -124,7 +124,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture Mon - 9.md",
+                "file": "2. semester/Softwareudvikling (SU)/Wiki/Creating project and using config.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -141,7 +141,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture Mon - 9.md",
+                "file": "2. semester/Softwareudvikling (SU)/Wiki/Creating project and using config.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -153,7 +153,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture Mon - 9.md"
+                "file": "2. semester/Softwareudvikling (SU)/Wiki/Creating project and using config.md"
               }
             }
           },
@@ -219,16 +219,19 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "3533e8185c8a8b43",
+  "active": "4c419c505c6e29b2",
   "lastOpenFiles": [
+    "Excalidraw/Ideer.md",
+    "2. semester/Linær algebra (LinAlgDat)/Wiki/Matrix.md",
+    "2. semester/Linær algebra (LinAlgDat)/Lecture/LinAlgDat - Lecture man - 17.md",
+    "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture Mon - 7.md",
+    "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture Mon - 9.md",
     "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture Mon - 11.md",
     "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture Tue - 6.md",
     "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture Tue - 7.md",
     "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture Tue - 9.md",
     "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture Tue - 10.md",
     "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture Tue - 11.md",
-    "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture Mon - 9.md",
-    "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture Mon - 7.md",
     "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture man - 12.md",
     "2. semester/Softwareudvikling (SU)/Wiki/Coupling.md",
     "2. semester/Softwareudvikling (SU)/Wiki/Creating project and using config.md",
@@ -240,15 +243,12 @@
     "2. semester/Softwareudvikling (SU)/Reading/SU - Reading for week 8.md",
     "2. semester/Softwareudvikling (SU)/Reading/SU - Reading for week 7.md",
     "2. semester/Softwareudvikling (SU)/Reading/SU - Reading for week 6.md",
-    "2. semester/Linær algebra (LinAlgDat)/Lecture/LinAlgDat - Lecture man - 17.md",
     "Pasted image 20230424130800.png",
     "Weekly notes/Uge 17 - 2023.md",
     "Weekly notes/Uge null - 2023.md",
     "Untitled.md",
     "Pasted Image 20230330181445_146.png",
     "2. semester/Softwareudvikling (SU)/guides/ReportFormatting.md",
-    "Weekly notes/Uge 10 - 2023.md",
-    "Weekly notes/Uge 7 - 2023.md",
     "2. semester/Interaktionsdesign (Inter).zip",
     "Misc/åBilleder/Pasted image 20230324093503.png",
     "2. semester/Interaktionsdesign (Inter)/Lecture/User Interface",
