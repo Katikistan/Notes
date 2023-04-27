@@ -26,7 +26,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tanker til SU.md",
+                "file": "2. semester/Softwareudvikling (SU)/Wiki/GRASP.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -76,7 +76,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "cohe",
+                "query": "poly",
                 "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": false,
@@ -93,7 +93,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -124,7 +125,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tanker til SU.md",
+                "file": "2. semester/Softwareudvikling (SU)/Wiki/GRASP.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -141,7 +142,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Tanker til SU.md",
+                "file": "2. semester/Softwareudvikling (SU)/Wiki/GRASP.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -153,7 +154,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tanker til SU.md"
+                "file": "2. semester/Softwareudvikling (SU)/Wiki/GRASP.md"
               }
             }
           },
@@ -219,10 +220,10 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "4c419c505c6e29b2",
+  "active": "39930a9649de177d",
   "lastOpenFiles": [
-    "Mangler.md",
     "Tanker til SU.md",
+    "Mangler.md",
     "2. semester/Softwareudvikling (SU)/Wiki/GRASP.md",
     "Eksamen Su.md",
     "2. semester/Softwareudvikling (SU)/Wiki/Coupling.md",
