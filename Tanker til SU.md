@@ -17,4 +17,11 @@ når i er enige om level og den er done så lav tests
 
 ok lige et sidste spørgsmål: skal vi skrive om teori og forklare hvor den bliver brugt eller skal vi beskrive elementer af systemet og hvordan det relaterer sig noget teori: "Singleton pattern ensures ....bla bla... and we use that for our breakoutbus beacuse...." eller skal man nøjes med "we use a singleton pattern for our breakout beacuse ". med andre ord skal man beskrive teorien og så hvorfor man bruger den eller bare hvordan man bruger den. Vi har lidt svært at finde ud af hvad der skal skrives i design modsat implementation og analyse.
 
-![Uploading file...parpn]()
+![](https://i.imgur.com/FFl2Cim.png)
+
+domain model
+uml
+precondition
+association
+code coverage report
+playercentertest

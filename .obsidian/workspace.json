@@ -26,7 +26,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tanker til SU.md",
+                "file": "2. semester/Softwareudvikling (SU)/guides/CodeCoverageReport.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -124,7 +124,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tanker til SU.md",
+                "file": "2. semester/Softwareudvikling (SU)/guides/CodeCoverageReport.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -141,7 +141,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Tanker til SU.md",
+                "file": "2. semester/Softwareudvikling (SU)/guides/CodeCoverageReport.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -153,7 +153,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tanker til SU.md"
+                "file": "2. semester/Softwareudvikling (SU)/guides/CodeCoverageReport.md"
               }
             }
           },
@@ -221,11 +221,11 @@
   },
   "active": "39930a9649de177d",
   "lastOpenFiles": [
+    "Tanker til SU.md",
     "Mangler.md",
     "Eksamen Su.md",
     "2. semester/Softwareudvikling (SU)/guides/CodeCoverageReport.md",
     "2. semester/Softwareudvikling (SU)/guides/NUnit_guidelines.md",
-    "Tanker til SU.md",
     "2. semester/Softwareudvikling (SU)/Wiki/GRASP.md",
     "2. semester/Softwareudvikling (SU)/Wiki/Coupling.md",
     "2. semester/Softwareudvikling (SU)/Wiki/Creating project and using config.md",
