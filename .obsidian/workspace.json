@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "73c04155e8adb0c5",
+        "id": "60e3efafff6c6384",
         "type": "tabs",
         "children": [
           {
-            "id": "bba27da98f1ef9f3",
+            "id": "869c01c2dc6d7fd7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Mangler.md",
+                "file": "Weekly notes/Uge 18 - 2023.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -21,12 +21,12 @@
             }
           },
           {
-            "id": "39930a9649de177d",
+            "id": "03a5896c78eb8fa7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2. semester/Softwareudvikling (SU)/Wiki/GRASP.md",
+                "file": "2. semester/Linær algebra (LinAlgDat)/Reading/LinAlgDat - Reading for week 17.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -34,7 +34,7 @@
             }
           },
           {
-            "id": "899f275cb6b78c59",
+            "id": "ef62151d1374f8dc",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -45,9 +45,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "d709959325e92740",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Weekly notes/Uge 18 - 2023.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -76,7 +88,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "high coh",
+                "query": "orienteret",
                 "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": false,
@@ -93,8 +105,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -125,7 +136,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2. semester/Softwareudvikling (SU)/Wiki/GRASP.md",
+                "file": "Weekly notes/Uge 18 - 2023.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -142,7 +153,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2. semester/Softwareudvikling (SU)/Wiki/GRASP.md",
+                "file": "Weekly notes/Uge 18 - 2023.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -154,7 +165,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2. semester/Softwareudvikling (SU)/Wiki/GRASP.md"
+                "file": "Weekly notes/Uge 18 - 2023.md"
               }
             }
           },
@@ -220,34 +231,34 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "4c419c505c6e29b2",
+  "active": "869c01c2dc6d7fd7",
   "lastOpenFiles": [
+    "2. semester/Linær algebra (LinAlgDat)/Lecture/LinAlgDat - Lecture ons - 17.md",
+    "2. semester/Linær algebra (LinAlgDat)/Lecture/LinAlgDat - Lecture man - 17.md",
+    "2. semester/Linær algebra (LinAlgDat)/Wiki/Linære systemer.md",
+    "2. semester/Linær algebra (LinAlgDat)/Reading/LinAlgDat - Reading for week 17.md",
+    "Weekly notes/Uge 18 - 2023.md",
+    "Eksamen Su.md",
+    "2. semester/Linær algebra (LinAlgDat)/Reading/Untitled.md",
+    "2. semester/Linær algebra (LinAlgDat)/Wiki/Matricer.md",
+    "2. semester/Linær algebra (LinAlgDat)/Wiki/Page ranking.md",
+    "2. semester/Linær algebra (LinAlgDat)/Wiki/Page rank.md",
+    "Misc/1. semester/Diskret matematik og algoritmer (DMA)/Diskret matematik/Fundamentals/Relations.md",
+    "2. semester/Softwareudvikling (SU)/Wiki/GRASP.md",
     "2. semester/Softwareudvikling (SU)/guides/CodeCoverageReport.md",
     "Tanker til SU.md",
     "Mangler.md",
-    "Eksamen Su.md",
     "2. semester/Softwareudvikling (SU)/guides/NUnit_guidelines.md",
-    "2. semester/Softwareudvikling (SU)/Wiki/GRASP.md",
     "2. semester/Softwareudvikling (SU)/Wiki/Coupling.md",
     "2. semester/Softwareudvikling (SU)/Wiki/Creating project and using config.md",
-    "2. semester/Linær algebra (LinAlgDat)/Lecture/LinAlgDat - Lecture man - 17.md",
-    "2. semester/Linær algebra (LinAlgDat)/Wiki/Matrix.md",
-    "2. semester/Linær algebra (LinAlgDat)/Lecture/LinAlgDat - Lecture ons - 17.md",
     "2. semester/Linær algebra (LinAlgDat)/Wiki/Vektorer.md",
     "Weekly notes/Uge 11 - 2023.md",
-    "2. semester/Linær algebra (LinAlgDat)/Wiki/Page ranking.md",
     "2. semester/Linær algebra (LinAlgDat)/Wiki/Linear transformations.md",
     "Excalidraw/Ideer.md",
     "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture Mon - 7.md",
     "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture Mon - 9.md",
     "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture Mon - 11.md",
     "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture Tue - 6.md",
-    "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture Tue - 7.md",
-    "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture Tue - 9.md",
-    "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture Tue - 10.md",
-    "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture Tue - 11.md",
-    "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture man - 12.md",
-    "2. semester/Softwareudvikling (SU)/Wiki/Design patterns.md",
     "Pasted image 20230424130800.png",
     "Pasted Image 20230330181445_146.png",
     "2. semester/Interaktionsdesign (Inter).zip",
