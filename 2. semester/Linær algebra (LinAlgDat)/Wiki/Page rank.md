@@ -23,3 +23,4 @@ $$\begin{bmatrix} 0 & 0 & 1/3 & 1/2 \\ 1/2 & 0 & 1/3 & 0 \\  0 & 0 & 0 & 1/2 \\ 
 
 ### repræsentation
 man kunne også sætte det op som en orinteret graf
+![](https://i.imgur.com/xj0r7ZR.png)
