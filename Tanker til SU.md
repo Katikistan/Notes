@@ -19,9 +19,8 @@ ok lige et sidste spørgsmål: skal vi skrive om teori og forklare hvor den bliv
 
 ![](https://i.imgur.com/FFl2Cim.png)
 
-domain model
-uml
 precondition
-association
 code coverage report
-playercentertest
+statechart
+sequence diagram 
+Læs op på cohesion

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2. semester/Linær algebra (LinAlgDat)/Lecture/LinAlgDat - Lecture ons - 17.md",
+                "file": "Day Planners/30-04-2023.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -97,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2. semester/Linær algebra (LinAlgDat)/Lecture/LinAlgDat - Lecture ons - 17.md",
+                "file": "Day Planners/30-04-2023.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2. semester/Linær algebra (LinAlgDat)/Lecture/LinAlgDat - Lecture ons - 17.md",
+                "file": "Day Planners/30-04-2023.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2. semester/Linær algebra (LinAlgDat)/Lecture/LinAlgDat - Lecture ons - 17.md"
+                "file": "Day Planners/30-04-2023.md"
               }
             }
           },
@@ -194,32 +194,33 @@
   },
   "active": "4c419c505c6e29b2",
   "lastOpenFiles": [
-    "1. semester/Diskret matematik og algoritmer (DMA)/Diskret matematik/Group theory.md",
-    "2. semester/Linær algebra (LinAlgDat)/Wiki/Linære systemer.md",
+    "Day Planners/01-05-2023.md",
+    "Day Planners/30-04-2023.md",
+    "Weekly notes/Uge 17 - 2023.md",
+    "Day Planners/07-05-2023.md",
+    "Day Planners/30 - 04 - 23.md",
+    "Day Planners/13-05-2023.md",
+    "Day Planners/13 - 04 - 23.md",
+    "Day Planners/12-05-2023.md",
+    "Day Planners/11-05-2023.md",
+    "Day Planners/10-05-2023.md",
+    "Day Planners/09-05-2023.md",
+    "Day Planners/08-05-2023.md",
+    "Day Planners/06-05-2023.md",
+    "Day Planners/05-05-2023.md",
+    "Day Planners/04-05-2023.md",
+    "Day Planners/03-05-2023.md",
+    "Day Planners/02-05-2023.md",
+    "Day Planners/15-05-2023.md",
+    "Day Planners/14-05-2023.md",
+    "Day Planners/30 - 01 - 23.md",
     "2. semester/Linær algebra (LinAlgDat)/Wiki/Page rank.md",
-    "2. semester/Linær algebra (LinAlgDat)/Wiki/Page ranking.md",
-    "2. semester/Linær algebra (LinAlgDat)/Lecture/LinAlgDat - Lecture ons - 17.md",
-    "Weekly notes/Uge 18 - 2023.md",
-    "2. semester/Linær algebra (LinAlgDat)/Lecture/LinAlgDat - Lecture man - 17.md",
-    "2. semester/Linær algebra (LinAlgDat)/Reading/LinAlgDat - Reading for week 17.md",
-    "Eksamen Su.md",
-    "2. semester/Linær algebra (LinAlgDat)/Reading/Untitled.md",
-    "2. semester/Linær algebra (LinAlgDat)/Wiki/Matricer.md",
-    "1. semester/Diskret matematik og algoritmer (DMA)/Diskret matematik/Fundamentals/Relations.md",
-    "2. semester/Softwareudvikling (SU)/Wiki/GRASP.md",
-    "2. semester/Softwareudvikling (SU)/guides/CodeCoverageReport.md",
-    "Tanker til SU.md",
-    "Mangler.md",
-    "2. semester/Softwareudvikling (SU)/guides/NUnit_guidelines.md",
-    "2. semester/Softwareudvikling (SU)/Wiki/Coupling.md",
-    "2. semester/Softwareudvikling (SU)/Wiki/Creating project and using config.md",
-    "2. semester/Linær algebra (LinAlgDat)/Wiki/Vektorer.md",
-    "Weekly notes/Uge 11 - 2023.md",
-    "2. semester/Linær algebra (LinAlgDat)/Wiki/Linear transformations.md",
-    "Excalidraw/Ideer.md",
-    "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture Mon - 7.md",
-    "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture Mon - 9.md",
-    "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture Mon - 11.md",
+    "Day Planners/Untitled",
+    "Day Planners/31 - 01 - 23.md",
+    "Day Planners/30 - 03 - 23.md",
+    "Day Planners/29 - 03 - 23.md",
+    "Day Planners/28 - 03 - 23.md",
+    "Day Planners/06 - 04 - 23.md",
     "Pasted image 20230424130800.png",
     "Pasted Image 20230330181445_146.png",
     "2. semester/Interaktionsdesign (Inter).zip",
@@ -232,7 +233,6 @@
     "2. semester/Linær algebra (LinAlgDat)/Lecture",
     "2. semester/Linær algebra (LinAlgDat)/Reading",
     "2. semester/Softwareudvikling (SU)/Wiki",
-    "2. semester/Softwareudvikling (SU)/Reading",
     "Misc/åBilleder/Pasted image 20230320092241.png",
     "Misc/åBilleder/Pasted image 20230320093314.png",
     "Misc/åBilleder/Pasted image 20230320093256.png",
