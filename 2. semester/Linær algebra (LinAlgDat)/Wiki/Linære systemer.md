@@ -62,6 +62,10 @@ For at løse et ligningsystem vil man finde ud af om systemet  er inkonsitent. D
 # Elementære række operationer 
 # Eachelon form, række eachalon og rank
 flere måder at komme frem til eachlon form
+
+det er kun over pivotelementerne at der skal være nul, for at den er på reduceret rækkeechelon form. Pivot elementer er 1, men A1 har ikke nul over andet pivoi element. Selvom -2 har 6 over sig er det ok fordi -2 ikke er pivotelement. 
+![](https://i.imgur.com/ukXV9R4.png)
+
 # Applikationer 
 ## Linære modeller
 ## Generelle netværk
