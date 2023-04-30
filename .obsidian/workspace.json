@@ -11,12 +11,9 @@
             "id": "4040006acab43524",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "excalidraw",
               "state": {
-                "file": "Day Planners/01-05-2023.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
+                "file": "Excalidraw/30-04-23 21.35.11.excalidraw.md"
               }
             }
           }
@@ -97,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Day Planners/01-05-2023.md",
+                "file": "Excalidraw/30-04-23 21.35.11.excalidraw.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Day Planners/01-05-2023.md",
+                "file": "Excalidraw/30-04-23 21.35.11.excalidraw.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +123,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Day Planners/01-05-2023.md"
+                "file": "Excalidraw/30-04-23 21.35.11.excalidraw.md"
               }
             }
           },
@@ -194,8 +191,10 @@
   },
   "active": "4040006acab43524",
   "lastOpenFiles": [
-    "Day Planners/02-05-2023.md",
+    "Pasted Image 20230430220647_905.png",
     "Day Planners/01-05-2023.md",
+    "Excalidraw/30-04-23 21.35.11.excalidraw.md",
+    "Day Planners/02-05-2023.md",
     "Day Planners/30-04-2023.md",
     "2. semester/Linær algebra (LinAlgDat)/Wiki/Page rank.md",
     "2. semester/Linær algebra (LinAlgDat)/Wiki/Page ranking.md",
@@ -219,8 +218,6 @@
     "Day Planners/Untitled",
     "Day Planners/31 - 01 - 23.md",
     "Day Planners/30 - 03 - 23.md",
-    "Day Planners/29 - 03 - 23.md",
-    "Day Planners/28 - 03 - 23.md",
     "Pasted image 20230424130800.png",
     "Pasted Image 20230330181445_146.png",
     "2. semester/Interaktionsdesign (Inter).zip",
