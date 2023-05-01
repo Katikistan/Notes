@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Day Planners/01-05-2023.md",
+                "file": "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture man - 18.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -70,7 +70,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 335.5
+    "width": 335.5,
+    "collapsed": true
   },
   "right": {
     "id": "1bdbff370dc1606a",
@@ -97,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Day Planners/01-05-2023.md",
+                "file": "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture man - 18.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Day Planners/01-05-2023.md",
+                "file": "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture man - 18.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Day Planners/01-05-2023.md"
+                "file": "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture man - 18.md"
               }
             }
           },
@@ -194,8 +195,13 @@
   },
   "active": "4c419c505c6e29b2",
   "lastOpenFiles": [
-    "Day Planners/30-04-2023.md",
+    "2. semester/Linær algebra (LinAlgDat)/Reading/LinAlgDat - Reading for week 18.md",
+    "2. semester/Linær algebra (LinAlgDat)/Reading/LinAlgDat - Reading for week 17.md",
+    "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture man - 18.md",
+    "().md",
+    "Pasted image 20230501085814.png",
     "Day Planners/01-05-2023.md",
+    "Day Planners/30-04-2023.md",
     "Day Planners/02-05-2023.md",
     "Day Planners/03-05-2023.md",
     "Excalidraw/30-04-23 21.35.11.excalidraw.md",
@@ -217,10 +223,7 @@
     "Day Planners/04-05-2023.md",
     "Day Planners/15-05-2023.md",
     "Day Planners/14-05-2023.md",
-    "Day Planners/30 - 01 - 23.md",
     "Day Planners/Untitled",
-    "Day Planners/31 - 01 - 23.md",
-    "Day Planners/30 - 03 - 23.md",
     "Pasted image 20230424130800.png",
     "Pasted Image 20230330181445_146.png",
     "2. semester/Interaktionsdesign (Inter).zip",
@@ -238,7 +241,6 @@
     "Misc/åBilleder/Pasted image 20230320093256.png",
     "Misc/åBilleder/Pasted image 20230320093236.png",
     "Misc/åBilleder/Pasted image 20230320093114.png",
-    "Misc/åBilleder/Pasted image 20230320093040.png",
     "Untitled.canvas"
   ]
 }
