@@ -69,4 +69,5 @@ Det gælder at der må være
 Man kan forestille sig en anden matrix $D$, hvor samme sammenhænge var gældende, altså at $AD = DA = A$ for en vilkårlig matrix A. Denne vilkårlige matrix kunne være enhedsmatricen, og sammenfatter man så de to ligninger får man: $D = ED = DE = E. Da E = D$, findes der altså ikke andre matricer end enhedsmatricen $E$, der er et neutralt element for matrixproduktet.
 ## Inverse matricer til at løse ligningsystemer 
 $Ax=b$
+Hvis A har en invers er der netop 1 løsning til ligningsystemet. 
 ved at gange inverse til a på begge sider får jeg $XAx=bX=x=bX$

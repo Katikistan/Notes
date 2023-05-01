@@ -13,7 +13,20 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture man - 18.md",
+                "file": "2. semester/Linær algebra (LinAlgDat)/Reading/LinAlgDat - Reading for week 18.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "af2d02deaea414f1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Day Planners/03-05-2023.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -70,8 +83,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 335.5,
-    "collapsed": true
+    "width": 335.5
   },
   "right": {
     "id": "1bdbff370dc1606a",
@@ -98,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture man - 18.md",
+                "file": "2. semester/Linær algebra (LinAlgDat)/Reading/LinAlgDat - Reading for week 18.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture man - 18.md",
+                "file": "2. semester/Linær algebra (LinAlgDat)/Reading/LinAlgDat - Reading for week 18.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -127,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture man - 18.md"
+                "file": "2. semester/Linær algebra (LinAlgDat)/Reading/LinAlgDat - Reading for week 18.md"
               }
             }
           },
@@ -172,7 +184,7 @@
             }
           }
         ],
-        "currentTab": 8
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -193,17 +205,21 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "4c419c505c6e29b2",
+  "active": "2d24030b362d7b2f",
   "lastOpenFiles": [
-    "2. semester/Linær algebra (LinAlgDat)/Reading/LinAlgDat - Reading for week 18.md",
-    "2. semester/Linær algebra (LinAlgDat)/Reading/LinAlgDat - Reading for week 17.md",
+    "2. semester/Linær algebra (LinAlgDat)/Lecture/LinAlgDat - Lecture man - 18.md",
+    "2. semester/Linær algebra (LinAlgDat)/Lecture/LinAlgDat - Lecture ons - 17.md",
     "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture man - 18.md",
+    "Day Planners/03-05-2023.md",
+    "Day Planners/02-05-2023.md",
+    "Day Planners/01-05-2023.md",
+    "2. semester/Linær algebra (LinAlgDat)/Reading/LinAlgDat - Reading for week 18.md",
+    "Pasted image 20230501132328.png",
+    "Pasted image 20230501132036.png",
+    "2. semester/Linær algebra (LinAlgDat)/Reading/LinAlgDat - Reading for week 17.md",
     "().md",
     "Pasted image 20230501085814.png",
-    "Day Planners/01-05-2023.md",
     "Day Planners/30-04-2023.md",
-    "Day Planners/02-05-2023.md",
-    "Day Planners/03-05-2023.md",
     "Excalidraw/30-04-23 21.35.11.excalidraw.md",
     "Pasted Image 20230430220647_905.png",
     "2. semester/Linær algebra (LinAlgDat)/Wiki/Page rank.md",
@@ -221,8 +237,6 @@
     "Day Planners/06-05-2023.md",
     "Day Planners/05-05-2023.md",
     "Day Planners/04-05-2023.md",
-    "Day Planners/15-05-2023.md",
-    "Day Planners/14-05-2023.md",
     "Day Planners/Untitled",
     "Pasted image 20230424130800.png",
     "Pasted Image 20230330181445_146.png",
@@ -239,8 +253,6 @@
     "Misc/åBilleder/Pasted image 20230320092241.png",
     "Misc/åBilleder/Pasted image 20230320093314.png",
     "Misc/åBilleder/Pasted image 20230320093256.png",
-    "Misc/åBilleder/Pasted image 20230320093236.png",
-    "Misc/åBilleder/Pasted image 20230320093114.png",
     "Untitled.canvas"
   ]
 }
