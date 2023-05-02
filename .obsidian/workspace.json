@@ -11,11 +11,27 @@
             "id": "806f13e83582f7cf",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Day Planners/02-05-2023.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "4770498d3dac7a27",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.2.7"
+              }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -60,6 +76,14 @@
               "type": "starred",
               "state": {}
             }
+          },
+          {
+            "id": "90427023f1d9e353",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
           }
         ]
       }
@@ -92,6 +116,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Day Planners/02-05-2023.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -108,6 +133,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Day Planners/02-05-2023.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +144,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Day Planners/02-05-2023.md"
+              }
             }
           },
           {
