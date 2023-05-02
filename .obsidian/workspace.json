@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Day Planners/01-05-2023.md",
+                "file": "2. semester/Softwareudvikling (SU)/Wiki/C sharp 101.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -62,7 +62,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "orienteret",
+                "query": "format string",
                 "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": false,
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Day Planners/01-05-2023.md",
+                "file": "2. semester/Softwareudvikling (SU)/Wiki/C sharp 101.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Day Planners/01-05-2023.md",
+                "file": "2. semester/Softwareudvikling (SU)/Wiki/C sharp 101.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Day Planners/01-05-2023.md"
+                "file": "2. semester/Softwareudvikling (SU)/Wiki/C sharp 101.md"
               }
             }
           },
@@ -184,7 +184,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 8
       }
     ],
     "direction": "horizontal",
@@ -205,15 +205,16 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "2d24030b362d7b2f",
+  "active": "4c419c505c6e29b2",
   "lastOpenFiles": [
+    "2. semester/Softwareudvikling (SU)/guides/CSharpStyle.md",
+    "Day Planners/01-05-2023.md",
     "2. semester/Linær algebra (LinAlgDat)/Reading/LinAlgDat - Reading for week 18.md",
     "2. semester/Linær algebra (LinAlgDat)/Lecture/LinAlgDat - Lecture man - 18.md",
     "2. semester/Linær algebra (LinAlgDat)/Lecture/LinAlgDat - Lecture ons - 17.md",
     "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture man - 18.md",
     "Day Planners/03-05-2023.md",
     "Day Planners/02-05-2023.md",
-    "Day Planners/01-05-2023.md",
     "Pasted image 20230501132328.png",
     "Pasted image 20230501132036.png",
     "2. semester/Linær algebra (LinAlgDat)/Reading/LinAlgDat - Reading for week 17.md",
@@ -236,7 +237,6 @@
     "Day Planners/08-05-2023.md",
     "Day Planners/06-05-2023.md",
     "Day Planners/05-05-2023.md",
-    "Day Planners/04-05-2023.md",
     "Day Planners/Untitled",
     "Pasted image 20230424130800.png",
     "Pasted Image 20230330181445_146.png",
