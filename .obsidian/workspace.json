@@ -24,9 +24,12 @@
             "id": "4770498d3dac7a27",
             "type": "leaf",
             "state": {
-              "type": "release-notes",
+              "type": "markdown",
               "state": {
-                "currentVersion": "1.2.7"
+                "file": "Day Planners/02-05-2023.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
               }
             }
           }
@@ -213,12 +216,20 @@
   },
   "active": "4c419c505c6e29b2",
   "lastOpenFiles": [
-    "2. semester/Linær algebra (LinAlgDat)/Wiki/Page rank.md",
-    "2. semester/Linær algebra (LinAlgDat)/Lecture/LinAlgDat - Lecture ons - 17.md",
-    "Day Planners/01-05-2023.md",
+    "Day Planners/12-05-2023.md",
+    "Day Planners/11-05-2023.md",
+    "Day Planners/10-05-2023.md",
+    "Day Planners/09-05-2023.md",
+    "Day Planners/08-05-2023.md",
+    "Day Planners/07-05-2023.md",
+    "Day Planners/06-05-2023.md",
     "Day Planners/04-05-2023.md",
+    "Day Planners/05-05-2023.md",
     "Day Planners/03-05-2023.md",
     "Day Planners/02-05-2023.md",
+    "Day Planners/01-05-2023.md",
+    "2. semester/Linær algebra (LinAlgDat)/Wiki/Page rank.md",
+    "2. semester/Linær algebra (LinAlgDat)/Lecture/LinAlgDat - Lecture ons - 17.md",
     "Excalidraw/02-05-23 13.29.51.excalidraw.md",
     "Pasted Image 20230502133000_935.png",
     "2. semester/Linær algebra (LinAlgDat)/Wiki/Rank.md",
@@ -236,14 +247,6 @@
     "Day Planners/30-04-2023.md",
     "Excalidraw/30-04-23 21.35.11.excalidraw.md",
     "Pasted Image 20230430220647_905.png",
-    "2. semester/Linær algebra (LinAlgDat)/Wiki/Page ranking.md",
-    "Weekly notes/Uge 17 - 2023.md",
-    "Day Planners/07-05-2023.md",
-    "Day Planners/30 - 04 - 23.md",
-    "Day Planners/13-05-2023.md",
-    "Day Planners/13 - 04 - 23.md",
-    "Day Planners/12-05-2023.md",
-    "Day Planners/11-05-2023.md",
     "Day Planners/Untitled",
     "Pasted image 20230424130800.png",
     "Pasted Image 20230330181445_146.png",
