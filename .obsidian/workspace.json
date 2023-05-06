@@ -26,7 +26,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2. semester/Softwareudvikling (SU)/Wiki/code quality.md",
+                "file": "2. semester/Linær algebra (LinAlgDat)/Wiki/Til prøve 1.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -119,7 +119,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2. semester/Softwareudvikling (SU)/Wiki/code quality.md",
+                "file": "2. semester/Linær algebra (LinAlgDat)/Wiki/Til prøve 1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -136,7 +136,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2. semester/Softwareudvikling (SU)/Wiki/code quality.md",
+                "file": "2. semester/Linær algebra (LinAlgDat)/Wiki/Til prøve 1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -148,7 +148,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2. semester/Softwareudvikling (SU)/Wiki/code quality.md"
+                "file": "2. semester/Linær algebra (LinAlgDat)/Wiki/Til prøve 1.md"
               }
             }
           },
@@ -216,8 +216,9 @@
   },
   "active": "4770498d3dac7a27",
   "lastOpenFiles": [
-    "Day Planners/02-05-2023.md",
     "2. semester/Softwareudvikling (SU)/Wiki/code quality.md",
+    "2. semester/Linær algebra (LinAlgDat)/Wiki/Til prøve 1.md",
+    "Day Planners/02-05-2023.md",
     "Day Planners/12-05-2023.md",
     "Day Planners/11-05-2023.md",
     "Day Planners/10-05-2023.md",
@@ -245,7 +246,6 @@
     "2. semester/Linær algebra (LinAlgDat)/Reading/LinAlgDat - Reading for week 17.md",
     "().md",
     "Pasted image 20230501085814.png",
-    "Day Planners/30-04-2023.md",
     "Pasted Image 20230430220647_905.png",
     "Day Planners/Untitled",
     "Pasted image 20230424130800.png",
