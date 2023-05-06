@@ -26,7 +26,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Day Planners/02-05-2023.md",
+                "file": "2. semester/Softwareudvikling (SU)/Wiki/code quality.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -119,7 +119,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Day Planners/02-05-2023.md",
+                "file": "2. semester/Softwareudvikling (SU)/Wiki/code quality.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -136,7 +136,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Day Planners/02-05-2023.md",
+                "file": "2. semester/Softwareudvikling (SU)/Wiki/code quality.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -148,7 +148,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Day Planners/02-05-2023.md"
+                "file": "2. semester/Softwareudvikling (SU)/Wiki/code quality.md"
               }
             }
           },
@@ -214,8 +214,10 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "4c419c505c6e29b2",
+  "active": "4770498d3dac7a27",
   "lastOpenFiles": [
+    "Day Planners/02-05-2023.md",
+    "2. semester/Softwareudvikling (SU)/Wiki/code quality.md",
     "Day Planners/12-05-2023.md",
     "Day Planners/11-05-2023.md",
     "Day Planners/10-05-2023.md",
@@ -226,7 +228,6 @@
     "Day Planners/04-05-2023.md",
     "Day Planners/05-05-2023.md",
     "Day Planners/03-05-2023.md",
-    "Day Planners/02-05-2023.md",
     "Day Planners/01-05-2023.md",
     "2. semester/Linær algebra (LinAlgDat)/Wiki/Page rank.md",
     "2. semester/Linær algebra (LinAlgDat)/Lecture/LinAlgDat - Lecture ons - 17.md",
@@ -245,7 +246,6 @@
     "().md",
     "Pasted image 20230501085814.png",
     "Day Planners/30-04-2023.md",
-    "Excalidraw/30-04-23 21.35.11.excalidraw.md",
     "Pasted Image 20230430220647_905.png",
     "Day Planners/Untitled",
     "Pasted image 20230424130800.png",
