@@ -16,3 +16,5 @@ Summary: ""
 # Regler i forhold til rank
 **Rang ændres ikke ved elementære rækkeoperationer:** Dvs det rank du kommer frem til når du har reduceret matricen vil altid være det samme ligemeget hvordan du gør. 
 
+# Nullity
+nullity A = n - r, hvor n er mængden af ubekendte og r er rank. 

@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "24cad69431bcfc6f",
+        "id": "afaf22f65d12728e",
         "type": "tabs",
         "children": [
           {
-            "id": "f8c186195a7cd7f1",
+            "id": "6f14683e27103af7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2. semester/Linær algebra (LinAlgDat)/Lecture/LinAlgDat - Lecture man - 19.md",
+                "file": "2. semester/Linær algebra (LinAlgDat)/Lecture/LinAlgDat - Lecture ons - 17.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 335.5,
-    "collapsed": true
+    "width": 335.5
   },
   "right": {
     "id": "1bdbff370dc1606a",
@@ -106,7 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2. semester/Linær algebra (LinAlgDat)/Lecture/LinAlgDat - Lecture man - 19.md",
+                "file": "2. semester/Linær algebra (LinAlgDat)/Lecture/LinAlgDat - Lecture ons - 17.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +122,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2. semester/Linær algebra (LinAlgDat)/Lecture/LinAlgDat - Lecture man - 19.md",
+                "file": "2. semester/Linær algebra (LinAlgDat)/Lecture/LinAlgDat - Lecture ons - 17.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -135,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2. semester/Linær algebra (LinAlgDat)/Lecture/LinAlgDat - Lecture man - 19.md"
+                "file": "2. semester/Linær algebra (LinAlgDat)/Lecture/LinAlgDat - Lecture ons - 17.md"
               }
             }
           },
@@ -180,7 +179,7 @@
             }
           }
         ],
-        "currentTab": 8
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -201,14 +200,20 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "4c419c505c6e29b2",
+  "active": "6f14683e27103af7",
   "lastOpenFiles": [
-    "Excalidraw/LinAlgDat - Lecture man - 19 08-05-23 14.19.27.excalidraw.md",
-    "2. semester/Linær algebra (LinAlgDat)/Lecture/LinAlgDat - Lecture man - 19.md",
-    "Pasted Image 20230508141934_403.png",
+    "2. semester/Linær algebra (LinAlgDat)/Lecture/LinAlgDat - Lecture man - 17.md",
+    "2. semester/Linær algebra (LinAlgDat)/Wiki/Rank.md",
+    "2. semester/Linær algebra (LinAlgDat)/Wiki/Page rank.md",
     "Excalidraw/LinAlgDat - Lecture man - 19 08-05-23 13.19.36.excalidraw.md",
-    "Excalidraw/08-05-23 14.14.58.excalidraw.md",
+    "2. semester/Linær algebra (LinAlgDat)/Lecture/LinAlgDat - Lecture man - 19.md",
     "Excalidraw/LinAlgDat - Lecture man - 19 08-05-23 13.51.32.excalidraw.md",
+    "Excalidraw/LinAlgDat - Lecture man - 19 08-05-23 20.25.37.excalidraw.md",
+    "Weekly notes/Uge 19 - 2023.md",
+    "2. semester/Linær algebra (LinAlgDat)/Lecture/LinAlgDat - Lecture ons - 17.md",
+    "Excalidraw/LinAlgDat - Lecture man - 19 08-05-23 14.19.27.excalidraw.md",
+    "Pasted Image 20230508141934_403.png",
+    "Excalidraw/08-05-23 14.14.58.excalidraw.md",
     "Pasted Image 20230508135415_408.png",
     "2. semester/Linær algebra (LinAlgDat)/Lecture/Untitled.md",
     "2. semester/Softwareudvikling (SU)/Wiki/code quality.md",
@@ -222,14 +227,9 @@
     "2. semester/Linær algebra (LinAlgDat)/Wiki/Linear transformations.md",
     "2. semester/Linær algebra (LinAlgDat)/Wiki/Linære systemer.md",
     "LinAlgDat - Reading for week 19.md",
-    "Weekly notes/Uge 19 - 2023.md",
     "Weekly notes/Uge null - 2023.md",
     "Day Planners/02-05-2023.md",
     "Day Planners/12-05-2023.md",
-    "Day Planners/11-05-2023.md",
-    "Day Planners/10-05-2023.md",
-    "Day Planners/09-05-2023.md",
-    "Day Planners/08-05-2023.md",
     "Pasted Image 20230502133000_935.png",
     "Pasted image 20230501132328.png",
     "Pasted image 20230501132036.png",
