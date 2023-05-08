@@ -34,7 +34,7 @@ computation, [A|I] -> [I|X]
 AX=I
 opskriv ligningsystem med matrix multiplikation, her er X en matrixe med ubendte. den kommer til at fortælle hvilke parameter der har en bestemt værdi de skal overholde for at være inverse og hvilke der er fri. 
 ## hvor mange inverser
-hvis den er kvadratisk kan den have både venstre og højre, ellers kan den kun have en af de to. 
+hvis den er kvadratisk kan den have både venstre og højre, ellers kan den kun have en af de to.  yderligere skal columns være linært uafhængie. 
 XI: venstre invers
 IX: højre invers
 # Rank

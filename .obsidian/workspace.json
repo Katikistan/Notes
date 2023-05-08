@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2. semester/Linær algebra (LinAlgDat)/Wiki/Til prøve 1.md",
+                "file": "2. semester/Softwareudvikling (SU)/Wiki/Refactoring.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 335.5
+    "width": 335.5,
+    "collapsed": true
   },
   "right": {
     "id": "1bdbff370dc1606a",
@@ -105,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2. semester/Linær algebra (LinAlgDat)/Wiki/Til prøve 1.md",
+                "file": "2. semester/Softwareudvikling (SU)/Wiki/Refactoring.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -122,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2. semester/Linær algebra (LinAlgDat)/Wiki/Til prøve 1.md",
+                "file": "2. semester/Softwareudvikling (SU)/Wiki/Refactoring.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +135,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2. semester/Linær algebra (LinAlgDat)/Wiki/Til prøve 1.md"
+                "file": "2. semester/Softwareudvikling (SU)/Wiki/Refactoring.md"
               }
             }
           },
@@ -202,11 +203,18 @@
   },
   "active": "4c419c505c6e29b2",
   "lastOpenFiles": [
+    "2. semester/Linær algebra (LinAlgDat)/Reading/LinAlgDat - Reading for week 19.md",
+    "2. semester/Linær algebra (LinAlgDat)/Wiki/Til prøve 1.md",
+    "2. semester/Linær algebra (LinAlgDat)/Wiki/Linear transformations.md",
+    "2. semester/Linær algebra (LinAlgDat)/Wiki/Linære systemer.md",
+    "2. semester/Linær algebra (LinAlgDat)/Lecture/LinAlgDat - Lecture man - 19.md",
+    "LinAlgDat - Reading for week 19.md",
+    "Weekly notes/Uge 19 - 2023.md",
+    "Weekly notes/Uge null - 2023.md",
     "Day Planners/02-05-2023.md",
     "2. semester/Softwareudvikling (SU)/Wiki/Code smells.md",
     "2. semester/Softwareudvikling (SU)/Wiki/Refactoring.md",
     "2. semester/Softwareudvikling (SU)/Wiki/Technical debt.md",
-    "2. semester/Linær algebra (LinAlgDat)/Wiki/Til prøve 1.md",
     "2. semester/Softwareudvikling (SU)/Wiki/code quality.md",
     "Day Planners/12-05-2023.md",
     "Day Planners/11-05-2023.md",
@@ -221,14 +229,7 @@
     "Day Planners/01-05-2023.md",
     "2. semester/Linær algebra (LinAlgDat)/Wiki/Page rank.md",
     "2. semester/Linær algebra (LinAlgDat)/Lecture/LinAlgDat - Lecture ons - 17.md",
-    "Excalidraw/02-05-23 13.29.51.excalidraw.md",
     "Pasted Image 20230502133000_935.png",
-    "2. semester/Linær algebra (LinAlgDat)/Wiki/Rank.md",
-    "Weekly notes/Uge 18 - 2023.md",
-    "2. semester/Softwareudvikling (SU)/Wiki/C sharp 101.md",
-    "2. semester/Softwareudvikling (SU)/guides/CSharpStyle.md",
-    "2. semester/Linær algebra (LinAlgDat)/Reading/LinAlgDat - Reading for week 18.md",
-    "2. semester/Linær algebra (LinAlgDat)/Lecture/LinAlgDat - Lecture man - 18.md",
     "Pasted image 20230501132328.png",
     "Pasted image 20230501132036.png",
     "Pasted image 20230501085814.png",
