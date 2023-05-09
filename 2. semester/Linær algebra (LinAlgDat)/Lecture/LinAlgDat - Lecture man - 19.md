@@ -131,6 +131,26 @@ man laver et subset af U der kun indeholder linært uafhængige vektorer.
 spanner B hele det grå plan U. 
 man skal kunne svare på de 2 spørgsmål for at det kan være en basis for U.
 # Dimension
+Antallet af vektorer i en basis for et underrum er entydigt bestemt:
+
+**Theorem 3.9 (Om antallet af vektorer i en basis)**
+Lad $\mathcal{U}$ være et underrum af $\mathbb{R}^n$. Hvis
+$$
+\mathcal{B}=\left\{\mathbf{u}_1, \ldots, \mathbf{u}_m\right\} \quad \text { og } \quad \mathcal{C}=\left\{\mathbf{v}_1, \ldots, \mathbf{v}_n\right\}
+$$
+begge er baser for $\mathcal{U}$, så er $m=n$.
+...og dette antal vektorer er dimensionen af underrummet:
+
+**Definition 3.8 (Dimension af underrum)**
+Lad $\mathcal{U}$ være et underrum af $\mathbb{R}^n$. Antallet af vektorer i en basis for $\mathcal{U}$ kaldes dimensionen af $\mathcal{U}$ og skrives $\operatorname{dim} \mathcal{U}$. Vi definerer $\operatorname{dim}\{\mathbf{0}\}=0$
+![](https://i.imgur.com/INvUhod.png)
+![](https://i.imgur.com/Kxuoswv.png)
+
+**Theorem 3.10 (Kriterium for at være en basis)**
+Lad $\mathcal{U}$ være et underrum af $\mathbb{R}^n \operatorname{med} \operatorname{dim} \mathcal{U}=k$. Lad $\mathcal{B}=\left\{\mathbf{u}_1, \ldots, \mathbf{u}_k\right\}$ være en delmængde af $\mathcal{U}$ indeholdende $k$ vektorer.
+(a) Hvis $\mathcal{B}$ er lineært uafhængigt, da er $\mathcal{B}$ en basis for $\mathcal{U}$.
+(b) Hvis span $\mathcal{B}=\mathcal{U}$, da er $\mathcal{B}$ en basis for $\mathcal{U}$.
+![](https://i.imgur.com/L7vrYxx.png)
 
 # Opgaver 
 ![[LinAlgDat - Lecture man - 19 08-05-23 13.19.36.excalidraw]]
