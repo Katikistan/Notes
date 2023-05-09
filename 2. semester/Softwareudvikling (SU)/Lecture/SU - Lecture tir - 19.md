@@ -110,11 +110,41 @@ Unit testing uses stubs to isolate the module under test from its dependencies
 Bottom-up integration testing does not (i.e., modules call their “real” dependencies)
 ## System testing
 **Black box**
+![](https://i.imgur.com/Pypxmbs.png)
+"You're never done testing, the burden simply shifts from you to your customer."
+You're done testing when:
+	All "show stopper" bugs have been fixed
 ### acceptance testing
+Asserts that the code does what the users expect
+Evaluate system in life -like scenarios
+Passing the acceptance test => we can move on to further tests
 ### alpha testing
+Product not yet feature-complete (some things are missing)
+Give the product to trusted, enthusiastic customers for evaluation
+Lots of hand-holding by the developers
 ### beta testing
+Product much closer to shipment than with alpha testing
+Product much closer to shipment than with alpha testing
+Less hand-holding
 ## Regression testing
+Any change to a software product, even a slight one, has the potential to cause bugs anywhere in the system
+
+The regression test suite is a subset of tests that covers all product areas and can feasibly be run on every build
+
+The regression test suite will evolve (i.e., grow larger) over time
+
+• In addition to having regression tests that cover all functional areas of the product, you should also have a regression test for every bug that has been fixed 
+
+• Whenever a bug is discovered, if you don't already have one, design a test case that can be used later to verify that the bug has been fixed
+![](https://i.imgur.com/GSdX2pS.png)
+## Validation testing
+Ensure that each function or performance characteristic conforms to its specification.
+
+Deviations (deficiencies) must be negotiated with the customer to establish a means for resolving the errors
 # Who is testing
 ![](https://i.imgur.com/um22WjP.png)
 # Summary 
-
+- Testing consists of component-testing (unit testing, integration testing) and system testing 
+- Design Patterns can be used for integration testing
+- Testing has its own lifecycle 
+- Acceptance testing for testing user requirements
