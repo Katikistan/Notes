@@ -13,14 +13,25 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Weekly notes/Uge 19 - 2023.md",
+                "file": "2. semester/Linær algebra (LinAlgDat)/Wiki/Rank.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               }
             }
+          },
+          {
+            "id": "1c39939882ca6f8a",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.2.8"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -105,7 +116,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Weekly notes/Uge 19 - 2023.md",
+                "file": "2. semester/Linær algebra (LinAlgDat)/Wiki/Rank.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -122,7 +133,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Weekly notes/Uge 19 - 2023.md",
+                "file": "2. semester/Linær algebra (LinAlgDat)/Wiki/Rank.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +145,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Weekly notes/Uge 19 - 2023.md"
+                "file": "2. semester/Linær algebra (LinAlgDat)/Wiki/Rank.md"
               }
             }
           },
@@ -200,8 +211,9 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "6f14683e27103af7",
+  "active": "4c419c505c6e29b2",
   "lastOpenFiles": [
+    "Weekly notes/Uge 19 - 2023.md",
     "Tanker til SU.md",
     "Misc/3. semester/CompSys.md",
     "().md",
@@ -215,7 +227,6 @@
     "Excalidraw/LinAlgDat - Lecture man - 19 08-05-23 13.19.36.excalidraw.md",
     "Excalidraw/LinAlgDat - Lecture man - 19 08-05-23 13.51.32.excalidraw.md",
     "Excalidraw/LinAlgDat - Lecture man - 19 08-05-23 20.25.37.excalidraw.md",
-    "Weekly notes/Uge 19 - 2023.md",
     "Excalidraw/LinAlgDat - Lecture man - 19 08-05-23 14.19.27.excalidraw.md",
     "Misc/åBilleder/Pasted Image 20230508141934_403.png",
     "Excalidraw/08-05-23 14.14.58.excalidraw.md",

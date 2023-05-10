@@ -18,3 +18,5 @@ Summary: ""
 
 # Nullity
 nullity A = n - r, hvor n er mængden af ubekendte og r er rank. 
+
+![](https://i.imgur.com/gxrs3Hl.png)
