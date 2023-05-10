@@ -8,7 +8,7 @@ course: LinAlgDat
 status: undefined
 semester: 2
 tags:
-Summary: ""
+Summary: "underum, baser, linær uafhængig, dimensiomer"
 ---
 ##### Weekly note
 [[Uge 19 - 2023]]
