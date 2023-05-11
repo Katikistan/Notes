@@ -13,14 +13,25 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2. semester/Linær algebra (LinAlgDat)/Wiki/Til prøve 1.md",
+                "file": "2. semester/Linær algebra (LinAlgDat)/Reading/LinAlgDat - Reading for week 19.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               }
             }
+          },
+          {
+            "id": "d86dd13aa16ba032",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/11-05-23 13.34.10.excalidraw.md"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -105,7 +116,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2. semester/Linær algebra (LinAlgDat)/Wiki/Til prøve 1.md",
+                "file": "Excalidraw/11-05-23 13.34.10.excalidraw.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -122,7 +133,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2. semester/Linær algebra (LinAlgDat)/Wiki/Til prøve 1.md",
+                "file": "Excalidraw/11-05-23 13.34.10.excalidraw.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +145,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2. semester/Linær algebra (LinAlgDat)/Wiki/Til prøve 1.md"
+                "file": "Excalidraw/11-05-23 13.34.10.excalidraw.md"
               }
             }
           },
@@ -200,44 +211,44 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "4c419c505c6e29b2",
+  "active": "d86dd13aa16ba032",
   "lastOpenFiles": [
+    "2. semester/Linær algebra (LinAlgDat)/Wiki/Til prøve 1.md",
+    "Excalidraw/11-05-23 13.34.10.excalidraw.md",
+    "2. semester/Linær algebra (LinAlgDat)/Reading/LinAlgDat - Reading for week 19.md",
+    "2. semester/Linær algebra (LinAlgDat)/Reading/LinAlgDat - Reading for week 17.md",
+    "2. semester/Linær algebra (LinAlgDat)/Reading/LinAlgDat - Reading for week 18.md",
+    "2. semester/Linær algebra (LinAlgDat)/Lecture/LinAlgDat - Lecture man - 17.md",
+    "2. semester/Linær algebra (LinAlgDat)/Lecture/LinAlgDat - Lecture man - 18.md",
+    "2. semester/Linær algebra (LinAlgDat)/Lecture/LinAlgDat - Lecture man - 19.md",
+    "2. semester/Linær algebra (LinAlgDat)/Lecture/LinAlgDat - Lecture ons - 17.md",
+    "2. semester/Linær algebra (LinAlgDat)/Lecture/LinAlgDat - Lecture ons - 19.md",
+    "2. semester/Linær algebra (LinAlgDat)/Wiki/Linære systemer.md",
+    "2. semester/Linær algebra (LinAlgDat)/Wiki/Linear transformations.md",
+    "2. semester/Linær algebra (LinAlgDat)/Wiki/Matricer.md",
+    "2. semester/Linær algebra (LinAlgDat)/Wiki/Rank.md",
     "Pasted image 20230510230255.png",
     "Pasted image 20230510230022.png",
-    "2. semester/Linær algebra (LinAlgDat)/Lecture/LinAlgDat - Lecture ons - 19.md",
     "Excalidraw/LinAlgDat - Lecture ons - 19 10-05-23 09.51.12.excalidraw.md",
     "Pasted Image 20230510095122_988.png",
     "Excalidraw/LinAlgDat - Lecture ons - 19 10-05-23 09.17.53.excalidraw.md",
     "Pasted Image 20230510093208_895.png",
     "Excalidraw/LinAlgDat - Lecture ons - 19 10-05-23 09.08.38.excalidraw.md",
-    "2. semester/Linær algebra (LinAlgDat)/Lecture/LinAlgDat - Lecture man - 19.md",
     "Weekly notes/Uge 19 - 2023.md",
-    "2. semester/Linær algebra (LinAlgDat)/Reading/LinAlgDat - Reading for week 19.md",
-    "2. semester/Linær algebra (LinAlgDat)/Wiki/Rank.md",
     "Tanker til SU.md",
     "Misc/3. semester/CompSys.md",
     "().md",
     "Misc/åBilleder/Pasted image 20230424130800.png",
     "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture tir - 19.md",
     "2. semester/Linær algebra (LinAlgDat)/Wiki/Page rank.md",
-    "2. semester/Linær algebra (LinAlgDat)/Lecture/LinAlgDat - Lecture ons - 17.md",
-    "2. semester/Linær algebra (LinAlgDat)/Lecture/LinAlgDat - Lecture man - 17.md",
     "Excalidraw/LinAlgDat - Lecture man - 19 08-05-23 13.19.36.excalidraw.md",
     "Excalidraw/LinAlgDat - Lecture man - 19 08-05-23 13.51.32.excalidraw.md",
     "Excalidraw/LinAlgDat - Lecture man - 19 08-05-23 20.25.37.excalidraw.md",
-    "Excalidraw/LinAlgDat - Lecture man - 19 08-05-23 14.19.27.excalidraw.md",
     "Misc/åBilleder/Pasted Image 20230508141934_403.png",
-    "Excalidraw/08-05-23 14.14.58.excalidraw.md",
     "Misc/åBilleder/Pasted Image 20230508135415_408.png",
-    "2. semester/Softwareudvikling (SU)/Wiki/code quality.md",
-    "2. semester/Softwareudvikling (SU)/Wiki/Code smells.md",
-    "2. semester/Softwareudvikling (SU)/Wiki/C sharp 101.md",
-    "2. semester/Softwareudvikling (SU)/Wiki/Coupling.md",
-    "2. semester/Softwareudvikling (SU)/Wiki/Technical debt.md",
     "Misc/åBilleder/Pasted Image 20230502133000_935.png",
     "Misc/åBilleder/Pasted image 20230501132328.png",
     "Misc/åBilleder/Pasted image 20230501132036.png",
-    "Misc/åBilleder/Pasted image 20230501085814.png",
     "Day Planners/Untitled",
     "2. semester/Interaktionsdesign (Inter).zip",
     "2. semester/Interaktionsdesign (Inter)/Lecture/User Interface",

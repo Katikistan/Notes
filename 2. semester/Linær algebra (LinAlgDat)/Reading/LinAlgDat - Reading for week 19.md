@@ -242,7 +242,7 @@ $$
 $$
 There are infinitely many ways of writing $\mathbf{b}$ as a linear combination of $\mathbf{v}_1$. $\mathbf{v}_2, \mathbf{v}_3$. Choosing $t=2$ and $t=0$, for example, gives particular representations of $\mathbf{b}$, namely $\mathbf{v}_1-3 \mathbf{v}_2+2 \mathbf{v}_3=\mathbf{b}$ and $-\mathbf{v}_1+\mathbf{v}_2+0 \mathbf{v}_3=\mathbf{b}$ (or $\mathbf{v}_2-\mathbf{v}_1=\mathbf{b}$ ), respectively. Hence, $\mathbf{b}$ is in $\operatorname{span}\left\{\mathbf{v}_1, \mathbf{v}_2, \mathbf{v}_3\right\}$ and in fact $\mathbf{b}$ is in $\operatorname{span}\left\{\mathbf{v}_1, \mathbf{v}_2\right\}$, the point being that $\mathbf{b}$ can be represented in terms of $\mathbf{v}_1$ and $\mathbf{v}_2$ only. Can you see why $\mathbf{b}$ is also in $\operatorname{span}\left\{\mathbf{v}_1, \mathbf{v}_3\right\}$ and in $\operatorname{span}\left\{\mathbf{v}_2, \mathbf{v}_3\right\}$ ?
 
-hvis U er et subspace af$ R^n$ og S er et finitivt subset af U. hvis S=U er S kaldt det spanning set af U og man kan sige at **S generer U**.
+hvis U er et subspace af $R^n$ og S er et finitivt subset af U. hvis S=U er S kaldt det spanning set af U og man kan sige at **S generer U**.
 # Linær afhængighed 
 linær afhængihed det samme som antal af løsninger, hvis der er en løsning er kolonerne linært uafhængig 
 
