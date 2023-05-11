@@ -25,18 +25,26 @@ bring den på reduceret rækkeform. her vil du nok kunne se en måde hvorpå du 
 det er en koefficent matrice og en vektor med ubendte, du kan bruge den inverse og opskrive: $Ax=b \rightarrow x=A^{-1}b$
 ### Bestem samtlige løsninger 
 typisk er b givet, her laver man et ligningsystem der kommer ved at gange den ubekendte totalmatrice.
+## Tips 
 # Inverser
 ## Find den inverse
 computation, [A|I] -> [I|X]
 ![](https://i.imgur.com/ijqrkda.png)
 
-## Bestem inverser
+## Bestem samtlige inverser
 AX=I
 opskriv ligningsystem med matrix multiplikation, her er X en matrixe med ubendte. den kommer til at fortælle hvilke parameter der har en bestemt værdi de skal overholde for at være inverse og hvilke der er fri. 
+### 2x2 matrix
+![[Pasted image 20230510230022.png|200]]
 ## hvor mange inverser
 hvis den er kvadratisk kan den have både venstre og højre, ellers kan den kun have en af de to.  yderligere skal columns være linært uafhængie. 
 XI: venstre invers
-IX: højre invers
+IX: højre invers 
+## Højre venstre invers
+theorem 
+## kvadratisk matrice
+![[Pasted image 20230510230255.png]]
+## Ikke kvadratisk
 # Rank
 ero ændre ikke rank, hvis de ikke har samme rank er de ikke det samme system, det gælder selv først efter det er på echelon form 
 
@@ -45,6 +53,7 @@ hvis rank er lavere en antallet af ubekendte er der uendelig løsninger
 hvis rank i koefficentsmatricen er laver end totalmatrixen er der ingen løsninger
 
 Hvis rank A = rank M. er der en løsning
+## Alt det kan bruges til
 # Elementær matricer
 typisk er det bare at skrive et tal ind i matrixen,
 $\begin{bmatrix}1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1\end{bmatrix}$
@@ -52,4 +61,18 @@ hvis man sagde man skulle ligge 3 gange række 1 til række 2 ville det bare væ
 hvis vi får at vide at rækkeoperationer på I laver A såer (E4E3E2E1) = A fordi identietsmatricen kan ignoreres, her bliver a 
 ## Inverse elementær matrice
 
-# Homogent 
+# Homogent
+# Underum
+# Span 
+# Linær uafhængighed
+# Linær kombination
+# Baser
+## Basiskift
+### bestem basisskiftmatrix
+
+# Dimensioner
+mængden af basisvektorer i spanet. alle baser i et span har samme mængde af vektorer. 
+# Linær transfomation
+# Null space (ker)
+# Søjlerum (Ran)
+# Rækkerum
