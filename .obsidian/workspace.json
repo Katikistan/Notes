@@ -26,7 +26,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture tir - 19.md",
+                "file": "2. semester/Softwareudvikling (SU)/Wiki/Refactoring.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -119,7 +119,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture tir - 19.md",
+                "file": "2. semester/Softwareudvikling (SU)/Wiki/Refactoring.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -136,7 +136,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture tir - 19.md",
+                "file": "2. semester/Softwareudvikling (SU)/Wiki/Refactoring.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -148,7 +148,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture tir - 19.md"
+                "file": "2. semester/Softwareudvikling (SU)/Wiki/Refactoring.md"
               }
             }
           },
@@ -216,13 +216,13 @@
   },
   "active": "d86dd13aa16ba032",
   "lastOpenFiles": [
+    "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture tir - 19.md",
     "2. semester/Softwareudvikling (SU)/Wiki/Technical debt.md",
     "2. semester/Softwareudvikling (SU)/Wiki/code quality.md",
     "2. semester/Softwareudvikling (SU)/Wiki/Code smells.md",
     "2. semester/Softwareudvikling (SU)/Reading/SU - Reading for week 8.md",
     "2. semester/Softwareudvikling (SU)/Reading/SU - Reading for week 10.md",
     "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture man - 12.md",
-    "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture tir - 19.md",
     "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture man - 18.md",
     "2. semester/Softwareudvikling (SU)/Wiki/Refactoring.md",
     "2. semester/Softwareudvikling (SU)/Wiki/SOLID principles.md",
