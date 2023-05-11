@@ -24,9 +24,12 @@
             "id": "d86dd13aa16ba032",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "markdown",
               "state": {
-                "file": "Excalidraw/11-05-23 13.34.10.excalidraw.md"
+                "file": "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture tir - 19.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
               }
             }
           }
@@ -116,7 +119,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Excalidraw/11-05-23 13.34.10.excalidraw.md",
+                "file": "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture tir - 19.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -133,7 +136,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Excalidraw/11-05-23 13.34.10.excalidraw.md",
+                "file": "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture tir - 19.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -145,7 +148,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Excalidraw/11-05-23 13.34.10.excalidraw.md"
+                "file": "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture tir - 19.md"
               }
             }
           },
@@ -213,8 +216,18 @@
   },
   "active": "d86dd13aa16ba032",
   "lastOpenFiles": [
-    "2. semester/Linær algebra (LinAlgDat)/Wiki/Til prøve 1.md",
+    "2. semester/Softwareudvikling (SU)/Wiki/Technical debt.md",
+    "2. semester/Softwareudvikling (SU)/Wiki/code quality.md",
+    "2. semester/Softwareudvikling (SU)/Wiki/Code smells.md",
+    "2. semester/Softwareudvikling (SU)/Reading/SU - Reading for week 8.md",
+    "2. semester/Softwareudvikling (SU)/Reading/SU - Reading for week 10.md",
+    "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture man - 12.md",
+    "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture tir - 19.md",
+    "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture man - 18.md",
+    "2. semester/Softwareudvikling (SU)/Wiki/Refactoring.md",
+    "2. semester/Softwareudvikling (SU)/Wiki/SOLID principles.md",
     "Excalidraw/11-05-23 13.34.10.excalidraw.md",
+    "2. semester/Linær algebra (LinAlgDat)/Wiki/Til prøve 1.md",
     "2. semester/Linær algebra (LinAlgDat)/Reading/LinAlgDat - Reading for week 19.md",
     "2. semester/Linær algebra (LinAlgDat)/Reading/LinAlgDat - Reading for week 17.md",
     "2. semester/Linær algebra (LinAlgDat)/Reading/LinAlgDat - Reading for week 18.md",
@@ -233,17 +246,7 @@
     "Pasted Image 20230510095122_988.png",
     "Excalidraw/LinAlgDat - Lecture ons - 19 10-05-23 09.17.53.excalidraw.md",
     "Pasted Image 20230510093208_895.png",
-    "Excalidraw/LinAlgDat - Lecture ons - 19 10-05-23 09.08.38.excalidraw.md",
-    "Weekly notes/Uge 19 - 2023.md",
-    "Tanker til SU.md",
-    "Misc/3. semester/CompSys.md",
-    "().md",
     "Misc/åBilleder/Pasted image 20230424130800.png",
-    "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture tir - 19.md",
-    "2. semester/Linær algebra (LinAlgDat)/Wiki/Page rank.md",
-    "Excalidraw/LinAlgDat - Lecture man - 19 08-05-23 13.19.36.excalidraw.md",
-    "Excalidraw/LinAlgDat - Lecture man - 19 08-05-23 13.51.32.excalidraw.md",
-    "Excalidraw/LinAlgDat - Lecture man - 19 08-05-23 20.25.37.excalidraw.md",
     "Misc/åBilleder/Pasted Image 20230508141934_403.png",
     "Misc/åBilleder/Pasted Image 20230508135415_408.png",
     "Misc/åBilleder/Pasted Image 20230502133000_935.png",

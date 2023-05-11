@@ -8,7 +8,7 @@ course: SU
 status: 
 semester: 2
 tags:
-Summary: "Testing strategy
+Summary: "Testing strategy"
 ---
 ##### Weekly note
 [[Uge 19 - 2023]]
