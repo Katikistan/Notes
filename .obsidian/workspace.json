@@ -76,7 +76,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "format string",
+                "query": "high cohesion",
                 "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": false,
@@ -227,10 +227,11 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "4c419c505c6e29b2",
+  "active": "87bc98f1d09b60d8",
   "lastOpenFiles": [
-    "2. semester/Softwareudvikling (SU)/Wiki/code quality.md",
+    "2. semester/Softwareudvikling (SU)/Wiki/GRASP.md",
     "SU.md",
+    "2. semester/Softwareudvikling (SU)/Wiki/code quality.md",
     "2. semester/Softwareudvikling (SU)/Wiki/Refactoring.md",
     "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture tir - 19.md",
     "2. semester/Softwareudvikling (SU)/Wiki/Technical debt.md",
@@ -256,7 +257,6 @@
     "2. semester/Linær algebra (LinAlgDat)/Wiki/Rank.md",
     "Pasted image 20230510230255.png",
     "Pasted image 20230510230022.png",
-    "Excalidraw/LinAlgDat - Lecture ons - 19 10-05-23 09.51.12.excalidraw.md",
     "Pasted Image 20230510095122_988.png",
     "Pasted Image 20230510093208_895.png",
     "Misc/åBilleder/Pasted image 20230424130800.png",
