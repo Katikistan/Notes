@@ -14,11 +14,7 @@
 **skal rettes igennem**
 ## Evaluation
 hvad har været svært eller umuligt at teste
-- refactoring
 - State test
-- player collision
-- edit playtesting
+- player collision test
 **skal rettes igennem**
-## Konklusion
-- skal omskrives
 # KORT NED
