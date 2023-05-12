@@ -6,9 +6,7 @@
 - mangler playercollision test
 # Rapport
 ## Design 
-- Association table
 - attribute table 
-- UML
 **skal rettes igennem**
 ## Implementation
 **skal rettes igennem**
