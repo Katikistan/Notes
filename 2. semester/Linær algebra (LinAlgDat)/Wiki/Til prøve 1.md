@@ -488,6 +488,8 @@ Hvis man skulle bestemme kernen for S * T ville man gange matrixerne sammen, bri
 gang transformations matricer sammen, bring på reduceret rækkeform og aflæs kernen. 
 ### vektor der tilhører både ker og ran
 
+### ker af 1x3 matrix
+$\begin{bmatrix}2 & 0 & 1\end{bmatrix}$, rækkereducer: $\begin{bmatrix}1 & 0 & 1/2\end{bmatrix}$ , her er $x_2$ og $x_3$ ikke bundet derfor bliver ker $\{\begin{bmatrix}0 \\ 1 \\ 0\end{bmatrix},\begin{bmatrix}-1/2 \\ 0 \\ 1\end{bmatrix}\}$ fordi man fjerner $x_3$ fra venstre. $x_2$ er fri men fremkommer ikke i def af $x_1$, $x_3$ er fri.  
 # Søjlerum (Ran)
 $\operatorname{ran} T=\operatorname{col} \mathbf{A}\left(=\operatorname{row} \mathbf{A}^{\top}\right)$
 Theorem 3.13 (Basis for søjlerum)
