@@ -368,8 +368,19 @@ $$
 ![](https://i.imgur.com/JpYKdwP.png)
 
 ## Basiskift
-### bestem basisskiftmatrix
-
+### bestem basisskift matrix
+PB <- C:
+[B|C] -> [I|PB]
+PC <- B:
+[C|B] -> [I|PC]
+### Konverter koordianter
+Skriv vektoren $\mathbf{x}=3 \mathbf{v}_1+4 \mathbf{v}_2$ som en linearkombination af vektorerne $\mathbf{u}_1$ og $\mathbf{u}_2$.
+Det oplyses, at $\mathcal{B}=\left\{\mathbf{u}_1, \mathbf{u}_2\right\}$ og $\mathcal{C}=\left\{\mathbf{v}_1, \mathbf{v}_2\right\}$ begge er (ordnede) baser. Bestem basisskiftmatrix: 
+PB <- C:
+[B|C] -> [I|PB]
+Dernæst tag skalerne og skriv dem som vektor og regn  $P_B\begin{bmatrix}3 \\ 4\end{bmatrix} = \begin{bmatrix}[x_1]_B \\ [x_2]_B\end{bmatrix}$
+nu har du de tilsvarende skalers i basis B, skriv svaret op:  $\mathbf{x}=[x_1]_B  \mathbf{u}_1+[x_2]_B\mathbf{u}_2$
+**bemærk at vi bruger $u_{1}$ og $u_2$ og ikke $v_1,v_2$ fordi vi har skiftet basis**. 
 # Dimensioner
 mængden af basisvektorer i spanet. alle baser i et span har samme mængde af vektorer. 
 
@@ -426,6 +437,12 @@ IKKE surjektiv eller injektiv
 ## Opgaver
 ### Bestem forskriften for den linære transformation
 # Null space (ker)
+**skriv løsningen fra rækkereduktion op på parmeterfremstilling ellers kommer du til at fucke op:**
+$\left(\begin{array}{rrr}1 & 0 & 2 \\ 0 & 1 & -1 \\ 0 & 0 & 0 \\ 0 & 0 & 0\end{array}\right)$
+set her, ville det ikke være null A = $\begin{bmatrix}2 \\ -1 \\ 0 \\ 0\end{bmatrix}$
+fordi der kun er x variabler, yderligere ville der være 1t så det vil istedet være
+$\begin{bmatrix}2 \\ -1 \\ 1\end{bmatrix}$ fordi $\left(\begin{array}{l}x_1 \\ x_2 \\ x_3\end{array}\right)=t\left(\begin{array}{r}-2 \\ 1 \\ 1\end{array}\right)$, man skal jo også få dem over på højre siden.
+
 $\operatorname{ker} T=\operatorname{null} \mathbf{A}$
 
 Theorem 3.11 (Basis for nulrum)
