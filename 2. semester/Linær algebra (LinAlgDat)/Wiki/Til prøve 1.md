@@ -114,6 +114,9 @@ hvis den er kvadratisk kan den have både venstre og højre, ellers kan den kun 
 ![](https://i.imgur.com/jExx40h.png)
 ## Ikke kvadratisk
 har kun en højre eller venstre invers.
+
+Lad a = 0 og lad A betegne koefficientmatricen for ligningssystemet. Begrund, at der findes en invertibel matrix X så $\mathbf{X A}=\left[\begin{array}{llll}1 & 0 & 2 & 1 \\ 0 & 1 & 1 & 1 \\ 0 & 0 & 0 & 0\end{array}\right]$
+lad vis at man kan få systemet på den form med ero. hvis man kan det er der et produkt af elementærmatricer X der kan ganges ind på A fra venstre og give matricen. Elementærmatricer er invertible. et produkt af elementærmatricer er også invertibelt fordi alle elementerne af det produkt er invertibelt. 
 # Rank
 Rangen af en matrix $\mathbf{A}$ er antallet af ikke-nul-rækker i en echelonform af $\mathbf{A}$. Rangen betegnes rank $\mathbf{A}$.
 (Man kan vise, at der altid vil være samme antal ikke-nul-rækker i forskellige echelonformer af $\mathbf{A ! )}$
@@ -436,6 +439,20 @@ IKKE surjektiv eller injektiv
 ![](https://i.imgur.com/pn92wKZ.png)
 ## Opgaver
 ### Bestem forskriften for den linære transformation
+$$
+T\left(\begin{array}{l}
+x_1 \\
+x_2 \\
+x_3
+\end{array}\right)=\left(\begin{array}{c}
+x_1-x_2+x_3 \\
+2 x_1+x_2+5 x_3
+\end{array}\right) .
+$$
+(a) Bestem den $2 \times 3$ matrix $\mathbf{A}$ som opfylder $T(\mathbf{x})=\mathbf{A} \mathbf{x}$ for alle $\mathbf{x} \in \mathbb{R}^3$. det er bare:
+$$\begin{bmatrix}1 & -1 & 1 \\ 2 & 1 & 5\end{bmatrix}$$
+(b) Bestem en vektor $\mathbf{x} \in \mathbb{R}^2$ som opfylder $(T \circ S)(\mathbf{x})=\left(\begin{array}{l}2 \\ 4 \\ 1\end{array}\right)$.
+Her ganger man T og S, dernæst skrives en total matrice op, med Ax=b. bring på reduceret rækkeform. **bemærk de beder om en 2d vektor**
 # Null space (ker)
 **skriv løsningen fra rækkereduktion op på parmeterfremstilling ellers kommer du til at fucke op:**
 $\left(\begin{array}{rrr}1 & 0 & 2 \\ 0 & 1 & -1 \\ 0 & 0 & 0 \\ 0 & 0 & 0\end{array}\right)$
