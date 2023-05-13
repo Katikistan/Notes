@@ -41,13 +41,12 @@ lad vær med at forsøge at lave combo fjerner. Tag en kolone af gangen. når du
 
 så først venstre til højre og så højre til venstre.
 ## bestem samtlige løsninger
-bring på reduceret rækkeform. aflæs løsninger. hvis uendeligt opskriv på parmeter form
-### Opgave
-## Bestem a så der er: 1, 0 og uendelige løsninger
+bring på reduceret rækkeform. aflæs løsninger. hvis konsistent opskriv på parmeter form
+## Bestem a så der er: 1, 0 og uendelige løsninger (løsningsmængden)
 bring den på reduceret rækkeform. her vil der være en række der kun har en ubekendt med a og a i resultatsøjlen. her vil man kunne få en ide om hvilke værdier skal være og ikke være for at det giver 1, 0 eller uendelige. Den behøver ikke at kunne have alle 3. Hvis det er umuligt at vælge et a der giver uendelige løsninger så skriv det. 
 ### Opgave
 ## Ax=b
-det er en koefficent matrice og en vektor med ubendte, du kan bruge den inverse og opskrive: $Ax=b \rightarrow x=A^{-1}b$
+det er en koefficent matrice og en vektor med ubekendte, du kan bruge den inverse og opskrive: $Ax=b \rightarrow x=A^{-1}b$
 ### Opgave: Bestem samtlige løsninger 
 typisk er b givet, her laver man et ligningsystem der kommer ved at gange den vektor med ubekendte og A:
 
@@ -57,10 +56,52 @@ typisk er b givet, her laver man et ligningsystem der kommer ved at gange den ve
 computation, [A|I] -> [I|X]
 ![](https://i.imgur.com/hztOQ1Z.png)
 ## Bestem samtlige inverser
-Ax=I
-opskriv ligningsystem med matrix multiplikation, her er x en matrixe med ubekendte. den kommer til at fortælle hvilke parameter der har en bestemt værdi de skal overholde for at være inverse og hvilke der er fri. 
-### Opgave løsning
+For at bestemme alle venstre inverser til B, findes løsninger til ligningsystemt $\mathrm{XB}=\mathrm{I}$, hvor $\mathrm{X}$ er en matrice med ubekendte, hvis det er højre inverser bytte man bare rundt på XB til BX=I:
+$$
+\left[\begin{array}{lll}
+x_1 & x_2 & x_3 \\
+x_4 & x_5 & x_6
+\end{array}\right]\left[\begin{array}{cc}
+0 & 1 \\
+1 & -2 a \\
+0 & 0
+\end{array}\right]=\left[\begin{array}{ll}
+1 & 0 \\
+0 & 1
+\end{array}\right]
+$$
 
+### Opgave løsning
+Til denne matrix multiplikation kan et ligningsytem opskrives og løses, det er et ligningsystem med 4 ligninger og 6 ubekendte:
+$$
+\begin{aligned}
+x_2 & =1 \\
+1 x_1-2 a x_2 & =0 \\
+x_5 & =0 \\
+x_4+2 a x_5 & =1
+\end{aligned}
+$$
+Ligningsystem laves om til en totalmatrix og bringes på reduceret rækkeform:
+$\left[\begin{array}{llllll|c}1 & 0 & 0 & 0 & 0 & 0 & 2 a \\ 0 & 1 & 0 & 0 & 0 & 0 & 1 \\ 0 & 0 & 0 & 1 & 0 & 0 & 1 \\ 0 & 0 & 0 & 0 & 1 & 0 & 0\end{array}\right]$
+Hertil fås samtlige venstre inverser. $x_3 \mathrm{og} x_6$ er frie variabler, hvis man kigger på den inverse (2) ser man at $x_1=2 a, x_2=1, x_4=1$ og $x_5=0$, hvilket stemmer overens med de samtlige inverser til $B$ :
+$$
+\left[\begin{array}{l}
+x_1 \\
+x_2 \\
+x_3 \\
+x_4 \\
+x_5 \\
+x_6
+\end{array}\right]=\left[\begin{array}{c}
+2 a \\
+1 \\
+s \\
+1 \\
+0 \\
+t
+\end{array}\right]
+$$
+B har en venstre invers og kan derfor ikke også have en højre invers, kun kvadratiske matricer kan have både en venstre og højre invers. B er en 3x2 matrice.
 
 ## Højre og venstre invers
 hvis den er kvadratisk kan den have både venstre og højre, ellers kan den kun have en af de to. yderligere skal columns være linært uafhængie:
@@ -357,7 +398,6 @@ Lad $\mathcal{U}$ være et underrum af $\mathbb{R}^n$ med $\operatorname{dim} \m
 - Origo flytter sig ikke
 - Generelt kan man sige at man holder grid lines parallel og evenly spaced
 ![](https://i.imgur.com/IRO5r4v.png)
-## Opgaver
 Definition 3.12 (Lineare transformationer)
 En funktion $T: \mathbb{R}^n \rightarrow \mathbb{R}^m$ som opfylder
 $$
@@ -383,8 +423,8 @@ IKKE surjektiv eller injektiv
 ![](https://i.imgur.com/ZuqfVaa.png)
 ## Inverse Linære transformationer
 ![](https://i.imgur.com/pn92wKZ.png)
-
-### Opgaver
+## Opgaver
+### Bestem forskriften for den linære transformation
 # Null space (ker)
 $\operatorname{ker} T=\operatorname{null} \mathbf{A}$
 
@@ -411,6 +451,9 @@ OBS: skriv det op på parmeter fremstilling først fordi du skal fjerne de fri v
 Hvis man skulle bestemme kernen for S * T ville man gange matrixerne sammen, bringe dem på reduceret rækkeform. Dernæst kigger man på hvilke der er fri variabler, hvis det er x_3 og x_5 er det kolone 3 og 5 i den rækkereduceret, trækker man dem fra på venstre sider for at få dem over på nul kolonen(løsnings kolonen), det er basis for kernen. 
 ## Opgaver 
 ### bestem basis for kernen (S * T)
+gang transformations matricer sammen, bring på reduceret rækkeform og aflæs kernen. 
+### vektor der tilhører både ker og ran
+
 # Søjlerum (Ran)
 $\operatorname{ran} T=\operatorname{col} \mathbf{A}\left(=\operatorname{row} \mathbf{A}^{\top}\right)$
 Theorem 3.13 (Basis for søjlerum)
