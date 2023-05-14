@@ -1,4 +1,3 @@
-# Matrix regneregler 
 $\mathbf{A}(\mathbf{B C})=(\mathbf{A B}) \mathbf{C}$ gælder (associativ regel)
 $\mathbf{A}(\mathbf{B}+\mathbf{C})=\mathbf{A B}+\mathbf{A C}$ gælder (distributiv regel)
 $\mathbf{A B}=\mathbf{B A}$ gælder IKKE generelt (ingen kommutativ regel)
@@ -56,7 +55,6 @@ $Ax=b \rightarrow x=A^{-1}b$
 Hvis $\mathbf{A}$ er invertibel så har ligningen $\mathbf{A x}=\mathbf{y}$ netop en løsning $\mathbf{x}=\mathbf{A}^{-1} \mathbf{y}$
 ## Find den inverse
 computation, [A|I] -> [I|X]
-
 Lad $\mathbf{A}$ være en $n \times n$ matrix og lad $\mathbf{I}=\mathbf{I}_n$.
 1. Opskriv matricen [A|I].
 2. Lav elementære rækkeoperationer på matricen $[\mathbf{A} \mid \mathbf{I}]$ og bring den på reduceret rækkeechelonform.
@@ -76,7 +74,6 @@ x_4 & x_5 & x_6
 0 & 1
 \end{array}\right]
 $$
-
 ## Opgave: Find samtlige inverser
 Til denne matrix multiplikation kan et ligningsytem opskrives og løses, det er et ligningsystem med 4 ligninger og 6 ubekendte:
 $$
