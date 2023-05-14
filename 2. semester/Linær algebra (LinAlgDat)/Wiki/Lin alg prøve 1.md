@@ -1,18 +1,3 @@
----
-date: 06-05-23
-day: lør
-week: 18
-year: 2023
-type: Wiki
-course: LinAlgDat
-status: open
-semester: 2
-tags:
-Summary: ""
----
-##### Weekly note
-[[Uge 18 - 2023]]
-
 # Matrix regneregler 
 $\mathbf{A}(\mathbf{B C})=(\mathbf{A B}) \mathbf{C}$ gælder (associativ regel)
 $\mathbf{A}(\mathbf{B}+\mathbf{C})=\mathbf{A B}+\mathbf{A C}$ gælder (distributiv regel)
@@ -37,24 +22,45 @@ start med at identificere pivot elementer, du skal derfra altid arbejde med den 
 
 Fokuserer på en kolone af gangen.
 
-lad vær med at forsøge at lave combo fjerner. Tag en kolone af gangen. når du laver gauss jordan bruger du sidste ubekendte til at fjerne alt over og arbejder dig mod venstre. 
+lad vær med at forsøge at lave combo fjerner. Tag en kolone af gangen. når du laver gauss jordan bruger du sidste pivot til at fjerne alt over og arbejder dig mod venstre. 
 
 så først venstre til højre og så højre til venstre.
+
+**hvis der er ubekendte som a: husk skalering bliver sådan her: 2(2a-1), dvs at det er hele ledet der bliver skaleret og bliver 4a-2**
 ## bestem samtlige løsninger
 bring på reduceret rækkeform. aflæs løsninger. hvis konsistent opskriv på parmeter form
 ## Bestem a så der er: 1, 0 og uendelige løsninger (løsningsmængden)
-bring den på reduceret rækkeform. her vil der være en række der kun har en ubekendt med a og a i resultatsøjlen. her vil man kunne få en ide om hvilke værdier skal være og ikke være for at det giver 1, 0 eller uendelige. Den behøver ikke at kunne have alle 3. Hvis det er umuligt at vælge et a der giver uendelige løsninger så skriv det. 
-### Opgave
-## Ax=b
-det er en koefficent matrice og en vektor med ubekendte, du kan bruge den inverse og opskrive: $Ax=b \rightarrow x=A^{-1}b$
-### Opgave: Bestem samtlige løsninger 
-typisk er b givet, her laver man et ligningsystem der kommer ved at gange den vektor med ubekendte og A:
+Bring den på reduceret rækkeform. her vil der være en række der kun har en ubekendt med a og a i resultatsøjlen. her vil man kunne få en ide om hvilke værdier skal være og ikke være for at det giver 1, 0 eller uendelige. Den behøver ikke at kunne have alle 3. Hvis det er umuligt at vælge et a der giver uendelige løsninger så skriv det. du behøver ikke lave gauss jordan, bare gauss. 
 
+## Ax=b
+det er en koefficent matrice og en vektor med ubekendte, du kan bruge den inverse og opskrive hvis du ikke har A: $Ax=b \rightarrow x=A^{-1}b$
+ellers løses det som normalt. 
+### Opgave: Bestem samtlige løsninger 
+Lad a = −1/2 og lad A betegne koefficientmatricen for ligningssystemet. Bestem samtlige løsninger til ligningssystemet: 
+$$
+\mathbf{A}^2\left[\begin{array}{l}
+x_1 \\
+x_2 \\
+x_3
+\end{array}\right]=\left[\begin{array}{l}
+3 \\
+1 \\
+1
+\end{array}\right]
+$$
+her er a givet, man sætter det ind i et ligningsystem, ganger A med sig selv for at få $A^2$, dernæst opskriver man totalmatrix med A=B, man løser ligningsystemet og opskriver resultat evt på parameter form. 
+### Opgave: Bestem samtlige løsninger uden A
+her skal du bruge den inverse til A for at fjerne det. 
+$Ax=b \rightarrow x=A^{-1}b$
 # Inverser
-![](https://i.imgur.com/JPklVx7.png)
+Hvis $\mathbf{A}$ er invertibel så har ligningen $\mathbf{A x}=\mathbf{y}$ netop en løsning $\mathbf{x}=\mathbf{A}^{-1} \mathbf{y}$
 ## Find den inverse
 computation, [A|I] -> [I|X]
-![](https://i.imgur.com/hztOQ1Z.png)
+
+Lad $\mathbf{A}$ være en $n \times n$ matrix og lad $\mathbf{I}=\mathbf{I}_n$.
+1. Opskriv matricen [A|I].
+2. Lav elementære rækkeoperationer på matricen $[\mathbf{A} \mid \mathbf{I}]$ og bring den på reduceret rækkeechelonform.
+3. Hvis den reducerede rækkeechelonform er $[I \mid X]$ da $\operatorname{er} \mathbf{A}^{-1}=\mathbf{X}$, hvis ikke da er A ikke invertibel.
 ## Bestem samtlige inverser
 For at bestemme alle venstre inverser til B, findes løsninger til ligningsystemt $\mathrm{XB}=\mathrm{I}$, hvor $\mathrm{X}$ er en matrice med ubekendte, hvis det er højre inverser bytte man bare rundt på XB til BX=I:
 $$
@@ -71,7 +77,7 @@ x_4 & x_5 & x_6
 \end{array}\right]
 $$
 
-### Opgave løsning
+## Opgave: Find samtlige inverser
 Til denne matrix multiplikation kan et ligningsytem opskrives og løses, det er et ligningsystem med 4 ligninger og 6 ubekendte:
 $$
 \begin{aligned}
@@ -102,16 +108,26 @@ t
 \end{array}\right]
 $$
 B har en venstre invers og kan derfor ikke også have en højre invers, kun kvadratiske matricer kan have både en venstre og højre invers. B er en 3x2 matrice.
-
 ## Højre og venstre invers
 hvis den er kvadratisk kan den have både venstre og højre, ellers kan den kun have en af de to. yderligere skal columns være linært uafhængie:
 - $\mathbf{X}$ er en venstreinvers til $m \times n$ matricen $\mathbf{A}$ hvis $\mathbf{X A}=\mathbf{I}_n$
 - $\mathbf{X}$ er en højreinvers til $m \times n$ matricen $\mathbf{A}$ hvis $\mathbf{A X}=\mathbf{I}_m$
-![](https://i.imgur.com/U6qn4CF.png)
+
+**Theorem 2.10**
+Lad $\mathbf{A}$ være en $m \times n$ matrix med rank $\mathbf{A}=r$. Da gælder
+1. A har en højreinvers netop hvis $r=m \leq n$
+2. A har en venstreinvers netop hvis $r=n \leq m$
 ## kvadratisk matrice
 ### invers hurtigt af 2x2 matrix
 ![[Pasted image 20230510230022.png|200]]
-![](https://i.imgur.com/jExx40h.png)
+**Theorem 2.9**
+Lad A være en $n \times n$ matrix. Da er følgende betingelser ensbetydende:
+1. A er invertibel
+2. Ligningen $\mathbf{A x}=\mathbf{b}$ har netop en løsning for hvert $\mathbf{b}$
+3. Ligningen $\mathbf{A x}=\mathbf{0}$ har kun løsningen $\mathbf{x}=\mathbf{0}$
+4. Rangen af $\mathbf{A}$ er lig $n$
+5. Den reducerede rækkeechelonform af $\mathbf{A}$ er I
+6. A er et produkt af elementære matricer
 ## Ikke kvadratisk
 har kun en højre eller venstre invers.
 
@@ -121,7 +137,7 @@ lad vis at man kan få systemet på den form med ero. hvis man kan det er der et
 Rangen af en matrix $\mathbf{A}$ er antallet af ikke-nul-rækker i en echelonform af $\mathbf{A}$. Rangen betegnes rank $\mathbf{A}$.
 (Man kan vise, at der altid vil være samme antal ikke-nul-rækker i forskellige echelonformer af $\mathbf{A ! )}$
 
-![](https://i.imgur.com/7Q7mq4Y.png)
+![|500](https://i.imgur.com/7Q7mq4Y.png)
 
 Hvis rank $\mathbf{A}<$ rank $\mathbf{M}$ så har $(S)$ ingen løsninger
 Hvis rank $\mathbf{A}=\operatorname{rank} \mathbf{M}=n$ så har $(S)$ netop en løsning
@@ -146,7 +162,7 @@ hvis vi får at vide at rækkeoperationer på I laver A så er (E4E3E2E1) = A fo
 ## Inverse elementær matrice
 (E1E2E3E4)^-1 her er rækkefølgen vendt om, fordi vi lavet bevægelse E4 sidst er det den første vi skal anullere
 ## Opgaver
-![](https://i.imgur.com/yFEYhIZ.png)
+![|500](https://i.imgur.com/yFEYhIZ.png)
 Opg 1. Husk at man starter med identitets matricen, her bliver det klart at det er E1 fordi at E2 både bytter rundt på rækker og skalerer. En elementær matrice må kun udfører en transformation. 
 Opg 2. F2 vi går baglæns og undoer at række 3 er lagt til række 1. 
 # Homogent
@@ -172,7 +188,7 @@ $$
 \mathbf{A}(s \mathbf{u})=s \mathbf{A u}=s \mathbf{0}=\mathbf{0},
 $$
 og dermed gælder $s \mathbf{u} \in \mathcal{U}$.
-### Opgave
+## Opgave: hvilke er underum
 hvilke er underum:
 $\begin{aligned} & \mathcal{U}=\left\{\left(x_1, x_2\right) \in \mathbb{R}^2 \mid x_2=x_1\right\} \\ & \mathcal{V}=\left\{\left(x_1, x_2\right) \in \mathbb{R}^2 \mid x_2=x_1^2\right\}\end{aligned}$
 - $\mathcal{U}$ er et underrum (jfr. eksemplet ovenfor) fordi:
@@ -193,7 +209,7 @@ $$
 $$
 # Span 
 span $\mathcal{S}$ er mængden af alle linearkombinationer af $\mathbf{v}_1, \ldots, \mathbf{v}_k$.
-## eksempel for at finde ud af om noget er i span
+## For at finde ud af om noget er i span
 Betragt i $\mathbb{R}^3$ vektorerne
 $$
 \mathbf{v}_1=\left(\begin{array}{l}
@@ -312,12 +328,14 @@ viser, at ligningen $x_1 \mathbf{v}_1+x_2 \mathbf{v}_2=\mathbf{0}$ kun har løsn
 
 er der nogle variabler der kun kan defineres med andre så er de afhægnige. 
 # Linær kombination
-### Opgave
+$$
+a_1 \mathbf{v}_1+a_2 \mathbf{v}_2+a_3 \mathbf{v}_3+\cdots+a_n \mathbf{v}_n
+$$
 # Baser
 fjerner de linært afgænige vektorer fra spanet, Basen er også i underummet. 
 Baser er linært uafhængig.
 
-Basisvektorer, I hat og J hat. 
+Basisvektorer, I hat og J hat.
 
 Mængden af vektorer i en basis er det samme som dimensionen. 
 
@@ -341,6 +359,8 @@ $$
 1
 \end{array}\right)
 $$
+**hvis du ser $e_1,e_2$ osv er det elementær vektor, de svarer til identitesmatricen i den dimension der er givet:** hvis vi er i $R^4$ er standard basen: $\begin{bmatrix}1 & 0 & 0 & 0 \\ 0 & 1 & 0 & 0 \\ 0 & 0 & 1 & 0 \\ 0 & 0 & 0 & 1\end{bmatrix}$, her er $e_n$ svarende til den n'te kolone. hvis de spørger om $e_{3}$ ligger i spannet f.eks. så er det $\begin{bmatrix}0 \\ 0 \\ 1 \\ 0\end{bmatrix}$ der er snak om, der ville man bruge vektorne og skrive $e_3$ i resultat kolonen 
+der skal være mindst en løsning ellers er den ikke i basen. 
 ## Er det en base?
 $$
 \begin{array}{|ll|}
@@ -366,17 +386,15 @@ x_1 \\
 x_k
 \end{array}\right) \text {. }
 $$
-![](https://i.imgur.com/inljOZO.png)
-
-![](https://i.imgur.com/JpYKdwP.png)
-
-## Basiskift
-### bestem basisskift matrix
+bestem Koordinater.
+![|500](https://i.imgur.com/inljOZO.png)
+![|500](https://i.imgur.com/JpYKdwP.png)
+## Bestem basisskift matrix
 PB <- C:
 [B|C] -> [I|PB]
 PC <- B:
 [C|B] -> [I|PC]
-### Konverter koordianter
+## Konverter koordianter
 Skriv vektoren $\mathbf{x}=3 \mathbf{v}_1+4 \mathbf{v}_2$ som en linearkombination af vektorerne $\mathbf{u}_1$ og $\mathbf{u}_2$.
 Det oplyses, at $\mathcal{B}=\left\{\mathbf{u}_1, \mathbf{u}_2\right\}$ og $\mathcal{C}=\left\{\mathbf{v}_1, \mathbf{v}_2\right\}$ begge er (ordnede) baser. Bestem basisskiftmatrix: 
 PB <- C:
@@ -402,26 +420,24 @@ Theorem 3.10 (Kriterium for at være en basis)
 Lad $\mathcal{U}$ være et underrum af $\mathbb{R}^n$ med $\operatorname{dim} \mathcal{U}=k . \operatorname{Lad} \mathcal{B}=\left\{\mathbf{u}_1, \ldots, \mathbf{u}_k\right\}$ være en delmængde af $\mathcal{U}$ indeholdende $k$ vektorer.
 (a) Hvis $\mathcal{B}$ er lineært uafhængigt, da er $\mathcal{B}$ en basis for $\mathcal{U}$.
 (b) Hvis span $\mathcal{B}=\mathcal{U}$, da er $\mathcal{B}$ en basis for $\mathcal{U}$.
-## eksempel
-![](https://i.imgur.com/MVNCrto.png)
-![](https://i.imgur.com/JBHYrdg.png)
-
+![|550](https://i.imgur.com/MVNCrto.png)
+![|550](https://i.imgur.com/JBHYrdg.png)
 # Linær transfomation
 **Hvad gør det en linær transformation?**
 - Linjer forbliver linjer før og efter transformation
 - Origo flytter sig ikke
 - Generelt kan man sige at man holder grid lines parallel og evenly spaced
-![](https://i.imgur.com/IRO5r4v.png)
-Definition 3.12 (Lineare transformationer)
+![|550](https://i.imgur.com/IRO5r4v.png)
+**Definition 3.12 (Lineare transformationer)**
 En funktion $T: \mathbb{R}^n \rightarrow \mathbb{R}^m$ som opfylder
 $$
 T(\mathbf{u}+\mathbf{v})=T(\mathbf{u})+T(\mathbf{v}) \quad \text { og } \quad T(s \mathbf{v})=s T(\mathbf{v})
 $$
 for alle $\mathbf{u}, \mathbf{v} \in \mathbb{R}^n$ og $s \in \mathbb{R}$ kaldes en lineær transformation.
-![](https://i.imgur.com/mO9SbK1.png)
-![](https://i.imgur.com/yxHwB14.png)
-![](https://i.imgur.com/uR4URgj.png)
-![](https://i.imgur.com/JeZKE4e.png)
+![|550](https://i.imgur.com/mO9SbK1.png)
+![|550](https://i.imgur.com/yxHwB14.png)
+![|550](https://i.imgur.com/uR4URgj.png)
+![|550](https://i.imgur.com/JeZKE4e.png)
 Lad der være givet to lineære transformationer
 $$
 \mathbb{R}^n \underset{T(\mathbf{x})=\mathbf{A x}}{\longrightarrow} \mathbb{R}^m \stackrel{S}{S(\mathbf{y})=\mathbf{B y}} \mathbb{R}^k
@@ -430,15 +446,14 @@ Den sammensatte transformation $\underline{S} \circ T$ er givet ved matricen BA 
 $$
 (S \circ T)(\mathbf{x})=\underbrace{S(T(\mathbf{x}))}=S(\mathbf{A x})=\mathbf{B}(\mathbf{A} \mathbf{x})=(\mathbf{B A}) \mathbf{x} .
 $$
-![](https://i.imgur.com/gT6fQis.png)
-![](https://i.imgur.com/7Ic6vat.png)
+![|550](https://i.imgur.com/gT6fQis.png)
+![|550](https://i.imgur.com/7Ic6vat.png)
 IKKE surjektiv eller injektiv
 ### Afgør om den er injektiv eller surjektiv
 ![](https://i.imgur.com/ZuqfVaa.png)
 ## Inverse Linære transformationer
-![](https://i.imgur.com/pn92wKZ.png)
-## Opgaver
-### Bestem forskriften for den linære transformation
+![|550](https://i.imgur.com/pn92wKZ.png)
+## Opgave: Bestem forskriften for den linære transformation
 $$
 T\left(\begin{array}{l}
 x_1 \\
@@ -476,19 +491,16 @@ Om dimensionen, $p$, af null $\mathbf{A}$ gælder:
 $$
 p=\operatorname{dim}(\text { null } \mathbf{A})=n-\operatorname{rank} \mathbf{A}
 $$
-
-Bestem kernen for B.
-![](https://i.imgur.com/w2ihIzd.png)
+**Bestem kernen for B.**
+![|550](https://i.imgur.com/w2ihIzd.png)
 OBS: skriv det op på parmeter fremstilling først fordi du skal fjerne de fri variabler fra højre side først. 
 ![](https://i.imgur.com/MGVCveP.png)
 
 Hvis man skulle bestemme kernen for S * T ville man gange matrixerne sammen, bringe dem på reduceret rækkeform. Dernæst kigger man på hvilke der er fri variabler, hvis det er x_3 og x_5 er det kolone 3 og 5 i den rækkereduceret, trækker man dem fra på venstre sider for at få dem over på nul kolonen(løsnings kolonen), det er basis for kernen. 
-## Opgaver 
-### bestem basis for kernen (S * T)
+## Opgave bestem basis for kernen (S * T)
 gang transformations matricer sammen, bring på reduceret rækkeform og aflæs kernen. 
-### vektor der tilhører både ker og ran
-
-### ker af 1x3 matrix
+## Opgave vektor der tilhører både ker og ran
+## Opgave ker af 1x3 matrix
 $\begin{bmatrix}2 & 0 & 1\end{bmatrix}$, rækkereducer: $\begin{bmatrix}1 & 0 & 1/2\end{bmatrix}$ , her er $x_2$ og $x_3$ ikke bundet derfor bliver ker $\{\begin{bmatrix}0 \\ 1 \\ 0\end{bmatrix},\begin{bmatrix}-1/2 \\ 0 \\ 1\end{bmatrix}\}$ fordi man fjerner $x_3$ fra venstre. $x_2$ er fri men fremkommer ikke i def af $x_1$, $x_3$ er fri.  
 # Søjlerum (Ran)
 $\operatorname{ran} T=\operatorname{col} \mathbf{A}\left(=\operatorname{row} \mathbf{A}^{\top}\right)$
@@ -503,18 +515,17 @@ Om dimensionen af col $\mathbf{A}$ gælder:
 $$
 \operatorname{dim}(\operatorname{col} \mathbf{A})=\operatorname{rank} \mathbf{A}
 $$
-![](https://i.imgur.com/A26Ccrq.png)
+![|550](https://i.imgur.com/A26Ccrq.png)
 tag din matrix, bring den på reduceret rækkeform, kig på hvilke x'er der er fri variabler, fjerne deres kolone, så hvis x_3 er fri så fjern kolone 3. **Du fjerne alle de fri variabel koloner, fra den orignale matrice og giver det som basen, ikke den rækkereduceret som med kernen.** D
-## Opgaver
-![](https://i.imgur.com/KtYLTMg.png)
-
+## Opgave betem basis for col A
+![|550](https://i.imgur.com/KtYLTMg.png)
 # Rækkerum
 $\operatorname{ran} T=\operatorname{col} \mathbf{A}\left(=\operatorname{row} \mathbf{A}^{\top}\right)$
-![](https://i.imgur.com/4pqTtVN.png)
+![|500](https://i.imgur.com/4pqTtVN.png)
 Tager A normal, der ikke er transporneret, bringer den på reduceret rækkeform. 
 så tager jeg alle pivot rækkerne og skriver rækken som en kolone: B er A rækkereduceret
 Svaret bliver B's pivot rækker.
-![](https://i.imgur.com/UGcZxM8.png)
+![|500](https://i.imgur.com/UGcZxM8.png)
 En basis $\mathcal{B}$ for row $\mathbf{A}$ udgøres af ikke-nulrækkerne i $\mathbf{B}$, dvs.
 $$
 \mathcal{B}=\left\{{ }_1 \mathbf{B}, \ldots,{ }_r \mathbf{B}\right\} .
@@ -523,5 +534,5 @@ Om dimensionen af row $\mathbf{A}$ gælder:
 $$
 \operatorname{dim}(\operatorname{row} \mathbf{A})=\operatorname{rank} \mathbf{A} .
 $$
-## Opgaver
-![](https://i.imgur.com/9aIhjd6.png)
+## Opgave bestem rækkerum
+![|550](https://i.imgur.com/9aIhjd6.png)

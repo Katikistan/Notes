@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2. semester/Linær algebra (LinAlgDat)/Wiki/Til prøve 1.md",
+                "file": "2. semester/Linær algebra (LinAlgDat)/Wiki/Lin alg prøve 1.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -91,7 +91,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 335.5
+    "width": 335.5,
+    "collapsed": true
   },
   "right": {
     "id": "1bdbff370dc1606a",
@@ -118,7 +119,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2. semester/Linær algebra (LinAlgDat)/Wiki/Til prøve 1.md",
+                "file": "2. semester/Linær algebra (LinAlgDat)/Wiki/Lin alg prøve 1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -135,7 +136,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2. semester/Linær algebra (LinAlgDat)/Wiki/Til prøve 1.md",
+                "file": "2. semester/Linær algebra (LinAlgDat)/Wiki/Lin alg prøve 1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -147,7 +148,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2. semester/Linær algebra (LinAlgDat)/Wiki/Til prøve 1.md"
+                "file": "2. semester/Linær algebra (LinAlgDat)/Wiki/Lin alg prøve 1.md"
               }
             }
           },
@@ -213,7 +214,7 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "4c419c505c6e29b2",
+  "active": "88e11b294d1f51de",
   "lastOpenFiles": [
     "SU.md",
     "2. semester/Softwareudvikling (SU)/Wiki/GRASP.md",
@@ -228,7 +229,7 @@
     "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture man - 18.md",
     "2. semester/Softwareudvikling (SU)/Wiki/SOLID principles.md",
     "Excalidraw/11-05-23 13.34.10.excalidraw.md",
-    "2. semester/Linær algebra (LinAlgDat)/Wiki/Til prøve 1.md",
+    "2. semester/Linær algebra (LinAlgDat)/Wiki/Lin alg prøve 1.md",
     "2. semester/Linær algebra (LinAlgDat)/Reading/LinAlgDat - Reading for week 19.md",
     "2. semester/Linær algebra (LinAlgDat)/Reading/LinAlgDat - Reading for week 17.md",
     "2. semester/Linær algebra (LinAlgDat)/Reading/LinAlgDat - Reading for week 18.md",

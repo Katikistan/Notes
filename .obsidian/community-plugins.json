@@ -25,5 +25,6 @@
   "obsidian-admonition",
   "obsidian-hider",
   "cm-editor-syntax-highlight-obsidian",
-  "mathpad"
+  "mathpad",
+  "obsidian-plugin-toc"
 ]
