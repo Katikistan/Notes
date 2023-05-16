@@ -1,1 +1,0 @@
-Hejsa! mit navn er Oliver "Filuris" Sørensen jeg er 22 år gammel og altid klar på en snak, især om musik eller F1! Glæder mig til at være din tutor!!
