@@ -11,9 +11,12 @@
             "id": "88e11b294d1f51de",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "Misc/åBilleder/Pasted Image 20230510093208_895.png"
+                "file": "2. semester/Linær algebra (LinAlgDat)/Ortogonale og ortonomale matricer.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
               }
             }
           },
@@ -115,7 +118,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Misc/åBilleder/Pasted Image 20230510093208_895.png",
+                "file": "2. semester/Linær algebra (LinAlgDat)/Ortogonale og ortonomale matricer.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -132,7 +135,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Misc/åBilleder/Pasted Image 20230510093208_895.png",
+                "file": "2. semester/Linær algebra (LinAlgDat)/Ortogonale og ortonomale matricer.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -144,7 +147,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Misc/åBilleder/Pasted Image 20230510093208_895.png"
+                "file": "2. semester/Linær algebra (LinAlgDat)/Ortogonale og ortonomale matricer.md"
               }
             }
           },
@@ -210,10 +213,11 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "4c419c505c6e29b2",
+  "active": "88e11b294d1f51de",
   "lastOpenFiles": [
-    "Tutor intro.md",
     "Misc/åBilleder/Pasted Image 20230510093208_895.png",
+    "2. semester/Linær algebra (LinAlgDat)/Ortogonale og ortonomale matricer.md",
+    "Tutor intro.md",
     "2. semester/Softwareudvikling (SU)/Wiki/code quality.md",
     "2. semester/Softwareudvikling (SU)/Wiki/Refactoring.md",
     "2. semester/Linær algebra (LinAlgDat)/Wiki/Matrix regneregler.md",
@@ -237,7 +241,6 @@
     "2. semester/Linær algebra (LinAlgDat)/Lecture/LinAlgDat - Lecture ons - 17.md",
     "2. semester/Linær algebra (LinAlgDat)/Lecture/LinAlgDat - Lecture ons - 19.md",
     "2. semester/Linær algebra (LinAlgDat)/Wiki/Linære systemer.md",
-    "2. semester/Linær algebra (LinAlgDat)/Wiki/Linear transformations.md",
     "Misc/åBilleder/Pasted image 20230510230255.png",
     "Misc/åBilleder/Pasted image 20230510230022.png",
     "Misc/åBilleder/Pasted Image 20230510095122_988.png",
