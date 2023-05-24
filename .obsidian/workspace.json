@@ -23,7 +23,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2. semester/Linær algebra (LinAlgDat)/Lecture/LinAlgDat - Lecture ons - 21 Egenværdier og egenvektorer.md",
+                "file": "2. semester/Linær algebra (LinAlgDat)/Wiki/Ortogonale og ortonomale matricer.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -116,7 +116,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2. semester/Linær algebra (LinAlgDat)/Lecture/LinAlgDat - Lecture ons - 21 Egenværdier og egenvektorer.md",
+                "file": "2. semester/Linær algebra (LinAlgDat)/Wiki/Ortogonale og ortonomale matricer.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -133,7 +133,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2. semester/Linær algebra (LinAlgDat)/Lecture/LinAlgDat - Lecture ons - 21 Egenværdier og egenvektorer.md",
+                "file": "2. semester/Linær algebra (LinAlgDat)/Wiki/Ortogonale og ortonomale matricer.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -145,7 +145,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2. semester/Linær algebra (LinAlgDat)/Lecture/LinAlgDat - Lecture ons - 21 Egenværdier og egenvektorer.md"
+                "file": "2. semester/Linær algebra (LinAlgDat)/Wiki/Ortogonale og ortonomale matricer.md"
               }
             }
           },
@@ -190,7 +190,7 @@
             }
           }
         ],
-        "currentTab": 8
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -213,6 +213,13 @@
   },
   "active": "d26560d1a1f49a32",
   "lastOpenFiles": [
+    "Day Planners/08-05-2023.md",
+    "Day Planners/15-05-2023.md",
+    "Weekly notes/Uge 21 - 2023.md",
+    "2. semester/Linær algebra (LinAlgDat)/Wiki/EgenVærdier og Egenvektorer.md",
+    "2. semester/Linær algebra (LinAlgDat)/Wiki/Matrix regneregler.md",
+    "2. semester/Linær algebra (LinAlgDat)/Wiki/Determinant.md",
+    "2. semester/Linær algebra (LinAlgDat)/Wiki/Ortogonale og ortonomale matricer.md",
     "2. semester/Linær algebra (LinAlgDat)/Lecture/LinAlgDat - Lecture ons - 21 Egenværdier og egenvektorer.md",
     "Pasted Image 20230518160202_500.png",
     "Pasted Image 20230518160132_049.png",
@@ -221,11 +228,9 @@
     "2. semester/Linær algebra (LinAlgDat)/Lecture/LinAlgDat - Lecture ons - 20.md",
     "2. semester/Softwareudvikling (SU)/Wiki/code quality.md",
     "Excalidraw/17-05-23 09.17.43.excalidraw.md",
-    "2. semester/Linær algebra (LinAlgDat)/Ortogonale og ortonomale matricer.md",
     "Misc/åBilleder/Pasted Image 20230510093208_895.png",
     "Tutor intro.md",
     "2. semester/Softwareudvikling (SU)/Wiki/Refactoring.md",
-    "2. semester/Linær algebra (LinAlgDat)/Wiki/Matrix regneregler.md",
     "SU.md",
     "2. semester/Softwareudvikling (SU)/Wiki/GRASP.md",
     "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture tir - 19.md",
@@ -237,11 +242,6 @@
     "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture man - 18.md",
     "2. semester/Softwareudvikling (SU)/Wiki/SOLID principles.md",
     "Excalidraw/11-05-23 13.34.10.excalidraw.md",
-    "2. semester/Linær algebra (LinAlgDat)/Reading/LinAlgDat - Reading for week 19.md",
-    "2. semester/Linær algebra (LinAlgDat)/Reading/LinAlgDat - Reading for week 17.md",
-    "2. semester/Linær algebra (LinAlgDat)/Reading/LinAlgDat - Reading for week 18.md",
-    "2. semester/Linær algebra (LinAlgDat)/Lecture/LinAlgDat - Lecture man - 17.md",
-    "2. semester/Linær algebra (LinAlgDat)/Lecture/LinAlgDat - Lecture man - 18.md",
     "Misc/åBilleder/Pasted image 20230510230255.png",
     "Misc/åBilleder/Pasted image 20230510230022.png",
     "Misc/åBilleder/Pasted Image 20230510095122_988.png",

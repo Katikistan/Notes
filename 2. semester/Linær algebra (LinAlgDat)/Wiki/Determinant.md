@@ -1,7 +1,7 @@
 ---
-date: 17-05-23
+date: 24-05-23
 day: ons
-week: 20
+week: 21
 year: 2023
 type: Wiki
 course: LinAlgDat
@@ -11,6 +11,6 @@ tags:
 Summary: ""
 ---
 ##### Weekly note
-[[Uge 20 - 2023]]
+[[Uge 21 - 2023]]
 
-# Ortogonale og ortonomale matricer
+# 
