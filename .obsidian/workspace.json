@@ -29,9 +29,19 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "1c94a525496e666a",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.3.4"
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -190,7 +200,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 8
       }
     ],
     "direction": "horizontal",
@@ -211,7 +221,7 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "d26560d1a1f49a32",
+  "active": "4c419c505c6e29b2",
   "lastOpenFiles": [
     "Day Planners/08-05-2023.md",
     "Day Planners/15-05-2023.md",
