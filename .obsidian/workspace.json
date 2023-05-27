@@ -36,7 +36,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture tir - 19.md",
+                "file": "2. semester/Linær algebra (LinAlgDat)/Wiki/Ortogonale og ortonomale matricer.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -129,7 +129,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture tir - 19.md",
+                "file": "2. semester/Linær algebra (LinAlgDat)/Wiki/Ortogonale og ortonomale matricer.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -146,7 +146,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture tir - 19.md",
+                "file": "2. semester/Linær algebra (LinAlgDat)/Wiki/Ortogonale og ortonomale matricer.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -158,7 +158,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture tir - 19.md"
+                "file": "2. semester/Linær algebra (LinAlgDat)/Wiki/Ortogonale og ortonomale matricer.md"
               }
             }
           },
@@ -224,8 +224,9 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "4c419c505c6e29b2",
+  "active": "1c94a525496e666a",
   "lastOpenFiles": [
+    "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture tir - 19.md",
     "Day Planners/08-05-2023.md",
     "Day Planners/15-05-2023.md",
     "Weekly notes/Uge 21 - 2023.md",
@@ -246,7 +247,6 @@
     "2. semester/Softwareudvikling (SU)/Wiki/Refactoring.md",
     "SU.md",
     "2. semester/Softwareudvikling (SU)/Wiki/GRASP.md",
-    "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture tir - 19.md",
     "2. semester/Softwareudvikling (SU)/Wiki/Technical debt.md",
     "2. semester/Softwareudvikling (SU)/Wiki/Code smells.md",
     "2. semester/Softwareudvikling (SU)/Reading/SU - Reading for week 8.md",
