@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2. semester/Linær algebra (LinAlgDat)/Wiki/Til prøve 1.md",
+                "file": "2. semester/Linær algebra (LinAlgDat)/Wiki/Ortogonale og ortonomale matricer.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -105,7 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2. semester/Linær algebra (LinAlgDat)/Wiki/Til prøve 1.md",
+                "file": "2. semester/Linær algebra (LinAlgDat)/Wiki/Ortogonale og ortonomale matricer.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -122,7 +122,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2. semester/Linær algebra (LinAlgDat)/Wiki/Til prøve 1.md",
+                "file": "2. semester/Linær algebra (LinAlgDat)/Wiki/Ortogonale og ortonomale matricer.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2. semester/Linær algebra (LinAlgDat)/Wiki/Til prøve 1.md"
+                "file": "2. semester/Linær algebra (LinAlgDat)/Wiki/Ortogonale og ortonomale matricer.md"
               }
             }
           },
@@ -200,15 +200,15 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "4c419c505c6e29b2",
+  "active": "d328b0dbda1bb3b4",
   "lastOpenFiles": [
-    "2. semester/Linær algebra (LinAlgDat)/Wiki/Vektorer.md",
+    "2. semester/Linær algebra (LinAlgDat)/Wiki/Linear transformations.md",
     "2. semester/Linær algebra (LinAlgDat)/Wiki/Til prøve 1.md",
+    "2. semester/Linær algebra (LinAlgDat)/Wiki/Vektorer.md",
     "2. semester/Linær algebra (LinAlgDat)/Wiki/Page rank.md",
     "2. semester/Linær algebra (LinAlgDat)/Wiki/Ortogonale og ortonomale matricer.md",
     "2. semester/Linær algebra (LinAlgDat)/Wiki/Matricer.md",
     "2. semester/Linær algebra (LinAlgDat)/Wiki/Matrix regneregler.md",
-    "2. semester/Linær algebra (LinAlgDat)/Wiki/Linear transformations.md",
     "2. semester/Linær algebra (LinAlgDat)/Reading/LinAlgDat - Reading for week 17.md",
     "2. semester/Linær algebra (LinAlgDat)/Reading/LinAlgDat - Reading for week 19.md",
     "2. semester/Linær algebra (LinAlgDat)/Reading/LinAlgDat - Reading for week 18.md",

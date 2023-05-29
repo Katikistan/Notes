@@ -51,7 +51,7 @@ Ved at normere vektorer i en ortogonal base kan man bestemme en ortonormal base.
 ![](https://i.imgur.com/pPNOjej.png)
 ![](https://i.imgur.com/dooanW0.png)
 Hvis du skal bestemme en ortonomal basis bruger man graham schmidt
-	# Ortogonal Projektion(matricen), komponent og spejling
+# Ortogonal Projektion(matricen), komponent og spejling
 **Når Man arbejder med en ortonormal basis er længden af vektoren 1, derfor kan man fjerne divisionen.** 
 man får da:
 $proj_\mathcal{u}(v)=(v \bullet u_{1})u_1+(v\bullet u_{k})u_k$
