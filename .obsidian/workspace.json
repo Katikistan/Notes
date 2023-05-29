@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2. semester/Linær algebra (LinAlgDat)/Wiki/Ortogonale og ortonomale matricer.md",
+                "file": "2. semester/Linær algebra (LinAlgDat)/Wiki/Til prøve 1.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -105,7 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2. semester/Linær algebra (LinAlgDat)/Wiki/Ortogonale og ortonomale matricer.md",
+                "file": "2. semester/Linær algebra (LinAlgDat)/Wiki/Til prøve 1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -122,7 +122,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2. semester/Linær algebra (LinAlgDat)/Wiki/Ortogonale og ortonomale matricer.md",
+                "file": "2. semester/Linær algebra (LinAlgDat)/Wiki/Til prøve 1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2. semester/Linær algebra (LinAlgDat)/Wiki/Ortogonale og ortonomale matricer.md"
+                "file": "2. semester/Linær algebra (LinAlgDat)/Wiki/Til prøve 1.md"
               }
             }
           },
@@ -179,7 +179,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 8
       }
     ],
     "direction": "horizontal",
@@ -200,37 +200,37 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "d328b0dbda1bb3b4",
+  "active": "4c419c505c6e29b2",
   "lastOpenFiles": [
-    "2. semester/Linær algebra (LinAlgDat)/Wiki/EgenVærdier og Egenvektorer.md",
+    "2. semester/Linær algebra (LinAlgDat)/Wiki/Vektorer.md",
+    "2. semester/Linær algebra (LinAlgDat)/Wiki/Til prøve 1.md",
+    "2. semester/Linær algebra (LinAlgDat)/Wiki/Page rank.md",
     "2. semester/Linær algebra (LinAlgDat)/Wiki/Ortogonale og ortonomale matricer.md",
+    "2. semester/Linær algebra (LinAlgDat)/Wiki/Matricer.md",
+    "2. semester/Linær algebra (LinAlgDat)/Wiki/Matrix regneregler.md",
+    "2. semester/Linær algebra (LinAlgDat)/Wiki/Linear transformations.md",
+    "2. semester/Linær algebra (LinAlgDat)/Reading/LinAlgDat - Reading for week 17.md",
+    "2. semester/Linær algebra (LinAlgDat)/Reading/LinAlgDat - Reading for week 19.md",
+    "2. semester/Linær algebra (LinAlgDat)/Reading/LinAlgDat - Reading for week 18.md",
+    "2. semester/Linær algebra (LinAlgDat)/Lecture/LinAlgDat - Lecture man - 17.md",
+    "2. semester/Linær algebra (LinAlgDat)/Lecture/LinAlgDat - Lecture man - 18.md",
+    "2. semester/Linær algebra (LinAlgDat)/Lecture/LinAlgDat - Lecture man - 19.md",
+    "2. semester/Linær algebra (LinAlgDat)/Lecture/LinAlgDat - Lecture ons - 17.md",
+    "2. semester/Linær algebra (LinAlgDat)/Lecture/LinAlgDat - Lecture ons - 21 Egenværdier og egenvektorer.md",
+    "2. semester/Linær algebra (LinAlgDat)/Lecture/LinAlgDat - Lecture ons - 19.md",
+    "2. semester/Linær algebra (LinAlgDat)/Lecture/LinAlgDat - Lecture ons - 20.md",
+    "Pasted Image 20230518160132_049.png",
+    "Pasted Image 20230518160202_500.png",
+    "Tutor intro.md",
+    "2. semester/Linær algebra (LinAlgDat)/Wiki/Rank.md",
+    "2. semester/Linær algebra (LinAlgDat)/Wiki/EgenVærdier og Egenvektorer.md",
     "2. semester/Linær algebra (LinAlgDat)/Wiki/Determinant.md",
     "Excalidraw/18-05-23 16.01.22.excalidraw.md",
     "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture tir - 19.md",
     "Day Planners/08-05-2023.md",
     "Day Planners/15-05-2023.md",
     "Weekly notes/Uge 21 - 2023.md",
-    "2. semester/Linær algebra (LinAlgDat)/Wiki/Matrix regneregler.md",
-    "2. semester/Linær algebra (LinAlgDat)/Lecture/LinAlgDat - Lecture ons - 21 Egenværdier og egenvektorer.md",
-    "Pasted Image 20230518160202_500.png",
-    "Pasted Image 20230518160132_049.png",
-    "Excalidraw/17-05-23 11.45.10.excalidraw.md",
-    "2. semester/Linær algebra (LinAlgDat)/Lecture/LinAlgDat - Lecture ons - 20.md",
-    "2. semester/Softwareudvikling (SU)/Wiki/code quality.md",
-    "Excalidraw/17-05-23 09.17.43.excalidraw.md",
     "Misc/åBilleder/Pasted Image 20230510093208_895.png",
-    "Tutor intro.md",
-    "2. semester/Softwareudvikling (SU)/Wiki/Refactoring.md",
-    "SU.md",
-    "2. semester/Softwareudvikling (SU)/Wiki/GRASP.md",
-    "2. semester/Softwareudvikling (SU)/Wiki/Technical debt.md",
-    "2. semester/Softwareudvikling (SU)/Wiki/Code smells.md",
-    "2. semester/Softwareudvikling (SU)/Reading/SU - Reading for week 8.md",
-    "2. semester/Softwareudvikling (SU)/Reading/SU - Reading for week 10.md",
-    "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture man - 12.md",
-    "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture man - 18.md",
-    "2. semester/Softwareudvikling (SU)/Wiki/SOLID principles.md",
-    "Excalidraw/11-05-23 13.34.10.excalidraw.md",
     "Misc/åBilleder/Pasted image 20230510230255.png",
     "Misc/åBilleder/Pasted image 20230510230022.png",
     "Misc/åBilleder/Pasted Image 20230510095122_988.png",

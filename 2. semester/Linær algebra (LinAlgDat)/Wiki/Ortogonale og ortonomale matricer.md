@@ -91,6 +91,7 @@ $$
 ![](https://i.imgur.com/4TvRAKg.png)
 ![](https://i.imgur.com/nGQisn8.png)
 man kan altså bestemme nul rummet og det vil være det ortogonale rækkerum, man kan også transponer nulrummet
+**Det virker til at den her altid er fortrukket med tallene, hmmm... ROTTER!**
 ![|300](https://i.imgur.com/w95NYAD.png)
 ## Eksempel
 ![|400](https://i.imgur.com/9mSkx1t.png)
