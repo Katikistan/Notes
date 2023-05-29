@@ -33,6 +33,6 @@ Når en matrice er på øvre trekantsform kan man gange diagonalen sammen og få
 ![](https://i.imgur.com/XoxC4gS.png)
 # Cramers formel
 ![](https://i.imgur.com/EL3nk7j.png)
-![|350](https://i.imgur.com/dvBU1Eo.png)
+![|400](https://i.imgur.com/dvBU1Eo.png)
 ja gange den inverse på begge sider for at isolerer x i ligningen Ax=b.
 

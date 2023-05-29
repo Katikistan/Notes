@@ -58,6 +58,8 @@ $$
 \text { Pointe: } \mathbf{v}=\operatorname{proj}_{\mathcal{U}}(\mathbf{v})+\operatorname{comp}_{\mathcal{U}}(\mathbf{v}) \quad \text { og } \quad \operatorname{proj}_{\mathcal{U}}(\mathbf{v}) \perp \operatorname{comp}_{\mathcal{U}}(\mathbf{v}) \text {. }
 $$
 ## Projektionsmatricen
+**hvis du få givet to ortogonale vektorer skal du blot normerer dem. Så bliver det nemt at finde en protejectionsmatrice** 
+![](https://i.imgur.com/uI4yyAZ.png)
 ![](https://i.imgur.com/hCpqOpx.png)
 ![](https://i.imgur.com/XVRnpq1.png)
 # Ortogonale matricer
