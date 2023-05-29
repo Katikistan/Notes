@@ -13,4 +13,26 @@ Summary: ""
 ##### Weekly note
 [[Uge 21 - 2023]]
 
-# 
+# Determinant
+![](https://i.imgur.com/ki5Em6u.png)
+![](https://i.imgur.com/Q8sxxo6.png)
+![](https://i.imgur.com/rnL9pao.png)
+
+Det er det arealet af paralellogrammet der uspændes fra vektorne i matricen. 
+
+hvis determinanten er 0 er der ingen invertibel fordi at transformation presser vektorne der bliver transformeret ned i en lavere dimension
+# 2x2
+![](https://i.imgur.com/rAXbFEm.png)
+**HUSK:**
+$$det\begin{bmatrix}a & b \\ c & d\end{bmatrix}=ad-bc$$
+# 3x3 og op
+![](https://i.imgur.com/ILE1Dju.png)
+# Brug gauss
+Når en matrice er på øvre trekantsform kan man gange diagonalen sammen og få determinanten
+![](https://i.imgur.com/MVX4Zjc.png)
+![](https://i.imgur.com/XoxC4gS.png)
+# Cramers formel
+![](https://i.imgur.com/EL3nk7j.png)
+![|350](https://i.imgur.com/dvBU1Eo.png)
+ja gange den inverse på begge sider for at isolerer x i ligningen Ax=b.
+

@@ -13,4 +13,16 @@ Summary: ""
 ##### Weekly note
 [[Uge 21 - 2023]]
 
-# 
+# Egenværdier og Egenvektorer 
+## Egenværdier 
+## Egenvektorer
+# Cayley-Hamilton sætning
+# Diagonalisering af matricer
+# Potenser af diagonalisérbare matricer
+# Symmetriske matricer
+
+
+
+
+
+
