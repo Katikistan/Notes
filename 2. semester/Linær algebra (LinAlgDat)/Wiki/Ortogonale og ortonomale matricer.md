@@ -51,12 +51,15 @@ Ved at normere vektorer i en ortogonal base kan man bestemme en ortonormal base.
 ![](https://i.imgur.com/pPNOjej.png)
 ![](https://i.imgur.com/dooanW0.png)
 Hvis du skal bestemme en ortonomal basis bruger man graham schmidt
-# Ortogonal Projektion(matricen), komponent og spejling
+	# Ortogonal Projektion(matricen), komponent og spejling
 **Når Man arbejder med en ortonormal basis er længden af vektoren 1, derfor kan man fjerne divisionen.** 
-![](https://i.imgur.com/nlc3JDr.png)
+man får da:
+$proj_\mathcal{u}(v)=(v \bullet u_{1})u_1+(v\bullet u_{k})u_k$
+![](https://i.imgur.com/wSindBU.png)
 $$
 \text { Pointe: } \mathbf{v}=\operatorname{proj}_{\mathcal{U}}(\mathbf{v})+\operatorname{comp}_{\mathcal{U}}(\mathbf{v}) \quad \text { og } \quad \operatorname{proj}_{\mathcal{U}}(\mathbf{v}) \perp \operatorname{comp}_{\mathcal{U}}(\mathbf{v}) \text {. }
 $$
+
 ## Projektionsmatricen
 **hvis du få givet to ortogonale vektorer skal du blot normerer dem. Så bliver det nemt at finde en protejectionsmatrice** 
 ![](https://i.imgur.com/uI4yyAZ.png)

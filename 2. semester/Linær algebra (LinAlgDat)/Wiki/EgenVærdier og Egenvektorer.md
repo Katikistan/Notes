@@ -19,6 +19,7 @@ Summary: ""
 # Cayley-Hamilton sætning
 # Diagonalisering af matricer
 # Potenser af diagonalisérbare matricer
+## Det karakteriske polynomium
 # Symmetriske matricer
 
 
