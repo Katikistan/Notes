@@ -67,7 +67,7 @@ projectionen er den der har kortest afstand til v af alle vektorer i underummet 
 ![](https://i.imgur.com/uI4yyAZ.png)
 ![](https://i.imgur.com/hCpqOpx.png)
 ![](https://i.imgur.com/XVRnpq1.png)
-# Ortogonale matricer
+# Ortogonale matricer, projections matricen
 ![](https://i.imgur.com/zJLVGzW.png)
 ![](https://i.imgur.com/r0k6jIN.png)
 ![](https://i.imgur.com/mXE2fUM.png)
@@ -89,6 +89,7 @@ Lad $\mathcal{U}$ være et underrum af $\mathbb{R}^n$. Det ortogonale komplement
 $$
 \mathcal{U}^{\perp}=\left\{\mathbf{v} \in \mathbb{R}^n \mid \mathbf{v} \cdot \mathbf{u}=0 \text { for alle } \mathbf{u} \in \mathcal{U}\right\}
 $$
+**Nogen gange efterspørger de en ortonormal basis for det ortogonale komplement, her udregner man det ortogonale komplement og dernæst normer man vektorene i den basis.**
 ![|300](https://i.imgur.com/JFqtFmx.png)
 ![](https://i.imgur.com/4TvRAKg.png)
 ![](https://i.imgur.com/nGQisn8.png)

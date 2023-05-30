@@ -29,6 +29,13 @@ hvis determinanten er 0 er der ingen invertibel fordi at transformation presser 
 $$det\begin{bmatrix}a & b \\ c & d\end{bmatrix}=ad-bc$$
 # 3x3 og op
 ![](https://i.imgur.com/ILE1Dju.png)
+udvikel determinant fra første søjle:
+
+dæk første række og første søjle, det giver en 2x2 matrice, udregn determinanten og gang det med elementet i første række første søjle. 
+
+Dæk første søjle og anden række, det giver en 2x2 matrice, udregn determinanten og gang med 2. række, 1. søjle element. 
+
+Sidst dæk første søjle og 3. række, det giver 2x2 matrix, udregn determinant, gang med 3. række, 1 søjle elm. 
 # Brug gauss
 Når en matrice er på øvre trekantsform kan man gange diagonalen sammen og få determinanten
 ![](https://i.imgur.com/MVX4Zjc.png)
