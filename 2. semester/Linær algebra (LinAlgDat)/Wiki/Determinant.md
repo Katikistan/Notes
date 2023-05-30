@@ -14,8 +14,8 @@ Summary: ""
 [[Uge 21 - 2023]]
 
 # Determinant
-![](https://i.imgur.com/ki5Em6u.png)
-![](https://i.imgur.com/Q8sxxo6.png)
+![|400](https://i.imgur.com/ki5Em6u.png)
+![500](https://i.imgur.com/Q8sxxo6.png)
 ![](https://i.imgur.com/rnL9pao.png)
 
 Det er det arealet af paralellogrammet der uspændes fra vektorne i matricen. 
@@ -23,12 +23,12 @@ Det er det arealet af paralellogrammet der uspændes fra vektorne i matricen.
 hvis determinanten er 0 er der ingen invertibel fordi at transformation presser vektorne der bliver transformeret ned i en lavere dimension
 # 2x2
 ![](https://i.imgur.com/rAXbFEm.png)
-![](https://i.imgur.com/x5QkYvS.png)
+![|300](https://i.imgur.com/x5QkYvS.png)
 
 **HUSK:**
 $$det\begin{bmatrix}a & b \\ c & d\end{bmatrix}=ad-bc$$
 # 3x3 og op
-![](https://i.imgur.com/ILE1Dju.png)
+*![](https://i.imgur.com/ILE1Dju*.png)
 udvikel determinant fra første søjle:
 
 dæk første række og første søjle, det giver en 2x2 matrice, udregn determinanten og gang det med elementet i første række første søjle. 
