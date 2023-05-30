@@ -19,6 +19,17 @@ Summary: ""
 ## Egenværdier 
 ## Egenvektorer
 # Diagonalisering af matricer
+![](https://i.imgur.com/OcMWEDK.png)
+![](https://i.imgur.com/au5MIb9.png)
+![](https://i.imgur.com/ZetJHLe.png)
+![](https://i.imgur.com/VSvE2bk.png)
+## Eksempel diagonalisering
+![](https://i.imgur.com/CU1MdMS.png)
+![](https://i.imgur.com/Ks4nsTs.png)
+![](https://i.imgur.com/8nB0Zj5.png)
+## Udregning af potenser med diagonal matrix
+![](https://i.imgur.com/5AK69E3.png)
+
 ![](https://i.imgur.com/ZX3vc42.png)
 ![](https://i.imgur.com/EV7RBfb.png)
 
@@ -40,6 +51,11 @@ Summary: ""
 ![](https://i.imgur.com/nRRkjwJ.png)
 
 # Symmetriske matricer
+Vi minder om, at en matrix $\mathbf{A}$ er symmetrisk hvis $\mathbf{A}^{\top}=\mathbf{A}$, dvs. hvis $\mathbf{A}$ er symmetrisk omkring diagonalen.
+![](https://i.imgur.com/EwNzWK7.png)
+![](https://i.imgur.com/uvElahp.png)
+![](https://i.imgur.com/TkBmrXd.png)
+![](https://i.imgur.com/zxFZrsf.png)
 
 
 

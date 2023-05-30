@@ -23,6 +23,8 @@ Det er det arealet af paralellogrammet der uspændes fra vektorne i matricen.
 hvis determinanten er 0 er der ingen invertibel fordi at transformation presser vektorne der bliver transformeret ned i en lavere dimension
 # 2x2
 ![](https://i.imgur.com/rAXbFEm.png)
+![](https://i.imgur.com/x5QkYvS.png)
+
 **HUSK:**
 $$det\begin{bmatrix}a & b \\ c & d\end{bmatrix}=ad-bc$$
 # 3x3 og op
