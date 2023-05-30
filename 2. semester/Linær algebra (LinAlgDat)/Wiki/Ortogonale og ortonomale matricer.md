@@ -59,7 +59,9 @@ $proj_\mathcal{u}(v)=(v \bullet u_{1})u_1+(v\bullet u_{k})u_k$
 $$
 \text { Pointe: } \mathbf{v}=\operatorname{proj}_{\mathcal{U}}(\mathbf{v})+\operatorname{comp}_{\mathcal{U}}(\mathbf{v}) \quad \text { og } \quad \operatorname{proj}_{\mathcal{U}}(\mathbf{v}) \perp \operatorname{comp}_{\mathcal{U}}(\mathbf{v}) \text {. }
 $$
-
+Det er v der bliver projecteret ned i planen
+![](https://i.imgur.com/e6Jc1LJ.png)
+projectionen er den der har kortest afstand til v af alle vektorer i underummet u.
 ## Projektionsmatricen
 **hvis du få givet to ortogonale vektorer skal du blot normerer dem. Så bliver det nemt at finde en protejectionsmatrice** 
 ![](https://i.imgur.com/uI4yyAZ.png)
@@ -107,5 +109,8 @@ Givet en (almindelig) basis for U, er der så en metode til at konstruere en ort
 Ved at holde lidt nøjere regnskab med hvad der foregår i Gram–Schmidt processen kan man opnå følgende:
 ![](https://i.imgur.com/aYbFzSZ.png)
 ![](https://i.imgur.com/xrgNK0B.png)
+![](https://i.imgur.com/xbFOdbi.png)
+![](https://i.imgur.com/s5ix5Os.png)
+
 # Mindste kvadraters metode
 ![](https://i.imgur.com/WzzgsKV.png)
