@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2. semester/Linær algebra (LinAlgDat)/Wiki/EgenVærdier og Egenvektorer.md",
+                "file": "2. semester/Linær algebra (LinAlgDat)/Wiki/Determinant.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -105,7 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2. semester/Linær algebra (LinAlgDat)/Wiki/EgenVærdier og Egenvektorer.md",
+                "file": "2. semester/Linær algebra (LinAlgDat)/Wiki/Determinant.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -122,7 +122,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2. semester/Linær algebra (LinAlgDat)/Wiki/EgenVærdier og Egenvektorer.md",
+                "file": "2. semester/Linær algebra (LinAlgDat)/Wiki/Determinant.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2. semester/Linær algebra (LinAlgDat)/Wiki/EgenVærdier og Egenvektorer.md"
+                "file": "2. semester/Linær algebra (LinAlgDat)/Wiki/Determinant.md"
               }
             }
           },
@@ -202,9 +202,9 @@
   },
   "active": "4c419c505c6e29b2",
   "lastOpenFiles": [
+    "2. semester/Linær algebra (LinAlgDat)/Wiki/EgenVærdier og Egenvektorer.md",
     "2. semester/Linær algebra (LinAlgDat)/Wiki/Determinant.md",
     "2. semester/Linær algebra (LinAlgDat)/Wiki/Ortogonale og ortonomale matricer.md",
-    "2. semester/Linær algebra (LinAlgDat)/Wiki/EgenVærdier og Egenvektorer.md",
     "2. semester/Linær algebra (LinAlgDat)/Wiki/Linear transformations.md",
     "2. semester/Linær algebra (LinAlgDat)/Wiki/Til prøve 1.md",
     "2. semester/Linær algebra (LinAlgDat)/Wiki/Vektorer.md",

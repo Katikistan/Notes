@@ -27,8 +27,9 @@ hvis determinanten er 0 er der ingen invertibel fordi at transformation presser 
 
 **HUSK:**
 $$det\begin{bmatrix}a & b \\ c & d\end{bmatrix}=ad-bc$$
-# 3x3 og op
-*![](https://i.imgur.com/ILE1Dju*.png)
+# 3x3 
+safe til egenværdier.
+![](https://i.imgur.com/TTMhsMQ.png)
 udvikel determinant fra første søjle:
 
 dæk første række og første søjle, det giver en 2x2 matrice, udregn determinanten og gang det med elementet i første række første søjle. 
