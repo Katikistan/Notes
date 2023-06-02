@@ -19,8 +19,19 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "d4c184d31fd50eaf",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.3.5"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
