@@ -34,9 +34,12 @@
             "id": "af65e1d00acbf3ad",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "markdown",
               "state": {
-                "file": "Excalidraw/LinAlgDat - Lecture man - 19 08-05-23 14.19.27.excalidraw.md"
+                "file": "Untitled.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
               }
             }
           }
@@ -126,7 +129,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Excalidraw/LinAlgDat - Lecture man - 19 08-05-23 14.19.27.excalidraw.md",
+                "file": "Untitled.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -143,7 +146,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Excalidraw/LinAlgDat - Lecture man - 19 08-05-23 14.19.27.excalidraw.md",
+                "file": "Untitled.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -155,7 +158,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Excalidraw/LinAlgDat - Lecture man - 19 08-05-23 14.19.27.excalidraw.md"
+                "file": "Untitled.md"
               }
             }
           },
@@ -223,6 +226,7 @@
   },
   "active": "af65e1d00acbf3ad",
   "lastOpenFiles": [
+    "Excalidraw/LinAlgDat - Lecture man - 19 08-05-23 14.19.27.excalidraw.md",
     "Excalidraw/LinAlgDat - Lecture man - 19 08-05-23 20.25.37.excalidraw.md",
     "Excalidraw/LinAlgDat - Lecture ons - 19 10-05-23 09.51.12.excalidraw.md",
     "Excalidraw/LinAlgDat - Lecture man - 19 08-05-23 13.51.32.excalidraw.md",
@@ -250,7 +254,6 @@
     "2. semester/Linær algebra (LinAlgDat)/Lecture/LinAlgDat - Lecture ons - 20.md",
     "Pasted Image 20230518160132_049.png",
     "Pasted Image 20230518160202_500.png",
-    "Tutor intro.md",
     "Misc/åBilleder/Pasted Image 20230510093208_895.png",
     "Misc/åBilleder/Pasted image 20230510230255.png",
     "Misc/åBilleder/Pasted image 20230510230022.png",
