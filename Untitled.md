@@ -4,3 +4,6 @@ find snippets før de er blevet refactoret og efter de er blevet refactored
 
 timer mangler uml
 playercollsion mangler kommentarer
+
+points was refactored to be a singleton this helped to be able to access points in gamewon and gamelost
+
