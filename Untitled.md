@@ -7,3 +7,6 @@ playercollsion mangler kommentarer
 
 points was refactored to be a singleton this helped to be able to access points in gamewon and gamelost
 
+evt tage en specifik test med til eksamen
+ 
+
