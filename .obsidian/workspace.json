@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Overblik over tests.md",
+                "file": "2. semester/Softwareudvikling (SU)/guides/CodeCoverageReport.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -105,7 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Overblik over tests.md",
+                "file": "2. semester/Softwareudvikling (SU)/guides/CodeCoverageReport.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -122,7 +122,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Overblik over tests.md",
+                "file": "2. semester/Softwareudvikling (SU)/guides/CodeCoverageReport.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Overblik over tests.md"
+                "file": "2. semester/Softwareudvikling (SU)/guides/CodeCoverageReport.md"
               }
             }
           },
@@ -202,6 +202,12 @@
   },
   "active": "4c419c505c6e29b2",
   "lastOpenFiles": [
+    "2. semester/Softwareudvikling (SU)/Wiki/Design patterns.md",
+    "2. semester/Softwareudvikling (SU)/Wiki/GRASP.md",
+    "2. semester/Softwareudvikling (SU)/Wiki/Refactoring.md",
+    "2. semester/Softwareudvikling (SU)/Wiki/SOLID principles.md",
+    "2. semester/Softwareudvikling (SU)/Wiki/UML.md",
+    "2. semester/Softwareudvikling (SU)/Wiki/Technical debt.md",
     "Untitled.md",
     "Overblik over tests.md",
     "2. semester/Softwareudvikling (SU)/guides/NUnit_guidelines.md",
@@ -222,12 +228,6 @@
     "2. semester/Linær algebra (LinAlgDat)/Wiki/Linear transformations.md",
     "2. semester/Linær algebra (LinAlgDat)/Wiki/Til prøve 1.md",
     "2. semester/Linær algebra (LinAlgDat)/Wiki/Vektorer.md",
-    "2. semester/Linær algebra (LinAlgDat)/Wiki/Page rank.md",
-    "2. semester/Linær algebra (LinAlgDat)/Wiki/Matricer.md",
-    "2. semester/Linær algebra (LinAlgDat)/Wiki/Matrix regneregler.md",
-    "2. semester/Linær algebra (LinAlgDat)/Reading/LinAlgDat - Reading for week 17.md",
-    "2. semester/Linær algebra (LinAlgDat)/Reading/LinAlgDat - Reading for week 19.md",
-    "2. semester/Linær algebra (LinAlgDat)/Reading/LinAlgDat - Reading for week 18.md",
     "Pasted Image 20230518160132_049.png",
     "Pasted Image 20230518160202_500.png",
     "Misc/åBilleder/Pasted Image 20230510093208_895.png",
