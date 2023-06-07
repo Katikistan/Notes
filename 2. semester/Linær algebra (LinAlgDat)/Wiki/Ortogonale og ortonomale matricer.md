@@ -49,7 +49,7 @@ Ved at normere vektorer i en ortogonal base kan man bestemme en ortonormal base.
 ![|500](https://i.imgur.com/uHJkzln.png)
 ![|500](https://i.imgur.com/pPNOjej.png)
 ![|500](https://i.imgur.com/dooanW0.png)
-Hvis du skal bestemme en ortonomal basis bruger man graham schmidt
+Hvis du skal bestemme en ortonomal basis bruger man rgraham schmidt
 # Ortogonal Projektion(matricen), komponent og spejling
 **Når Man arbejder med en ortonormal basis er længden af vektoren 1, derfor kan man fjerne divisionen.** 
 man får da:
