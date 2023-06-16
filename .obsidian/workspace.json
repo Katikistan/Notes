@@ -11,12 +11,9 @@
             "id": "d8f7892100d5f0ca",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "excalidraw",
               "state": {
-                "file": "2. semester/Linær algebra (LinAlgDat)/Wiki/Ortogonale og ortonomale matricer.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
+                "file": "Excalidraw/15-06-23 23.19.04.excalidraw.md"
               }
             }
           }
@@ -78,7 +75,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 335.5
+    "width": 335.5,
+    "collapsed": true
   },
   "right": {
     "id": "1bdbff370dc1606a",
@@ -105,7 +103,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2. semester/Linær algebra (LinAlgDat)/Wiki/Ortogonale og ortonomale matricer.md",
+                "file": "Excalidraw/15-06-23 23.19.04.excalidraw.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -122,7 +120,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2. semester/Linær algebra (LinAlgDat)/Wiki/Ortogonale og ortonomale matricer.md",
+                "file": "Excalidraw/15-06-23 23.19.04.excalidraw.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +132,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2. semester/Linær algebra (LinAlgDat)/Wiki/Ortogonale og ortonomale matricer.md"
+                "file": "Excalidraw/15-06-23 23.19.04.excalidraw.md"
               }
             }
           },
@@ -200,10 +198,14 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "4c419c505c6e29b2",
+  "active": "d8f7892100d5f0ca",
   "lastOpenFiles": [
-    "2. semester/Linær algebra (LinAlgDat)/Wiki/Matricer.md",
+    "Pasted Image 20230615234718_017.png",
+    "Pasted Image 20230615234656_966.png",
+    "Pasted Image 20230615231910_792.png",
     "2. semester/Linær algebra (LinAlgDat)/Wiki/Ortogonale og ortonomale matricer.md",
+    "Excalidraw/15-06-23 23.19.04.excalidraw.md",
+    "2. semester/Linær algebra (LinAlgDat)/Wiki/Matricer.md",
     "2. semester/Softwareudvikling (SU)/Wiki/GRASP.md",
     "2. semester/Softwareudvikling (SU)/guides/CodeCoverageReport.md",
     "2. semester/Softwareudvikling (SU)/Wiki/Design patterns.md",
@@ -226,8 +228,6 @@
     "Excalidraw/LinAlgDat - Lecture man - 19 08-05-23 13.19.36.excalidraw.md",
     "Excalidraw/03-06-23 11.45.27.excalidraw.md",
     "2. semester/Linær algebra (LinAlgDat)/Wiki/EgenVærdier og Egenvektorer.md",
-    "2. semester/Linær algebra (LinAlgDat)/Wiki/Determinant.md",
-    "2. semester/Linær algebra (LinAlgDat)/Wiki/Linear transformations.md",
     "Pasted Image 20230518160132_049.png",
     "Pasted Image 20230518160202_500.png",
     "Misc/åBilleder/Pasted Image 20230510093208_895.png",
@@ -236,8 +236,6 @@
     "Misc/åBilleder/Pasted Image 20230510095122_988.png",
     "Misc/åBilleder/Pasted image 20230424130800.png",
     "Misc/åBilleder/Pasted Image 20230508141934_403.png",
-    "Misc/åBilleder/Pasted Image 20230508135415_408.png",
-    "Misc/åBilleder/Pasted Image 20230502133000_935.png",
     "Day Planners/Untitled",
     "2. semester/Interaktionsdesign (Inter).zip",
     "2. semester/Interaktionsdesign (Inter)/Lecture/User Interface",
