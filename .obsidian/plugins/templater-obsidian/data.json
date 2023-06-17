@@ -37,6 +37,18 @@
     {
       "folder": "Excalidraw",
       "template": "Misc/Templates/Excalidraw.md"
+    },
+    {
+      "folder": "3. semester/Mat Intro",
+      "template": "Misc/Templates/MatIntro.md"
+    },
+    {
+      "folder": "3. semester/Sandsynlighedsregning og statistik(SS)",
+      "template": "Misc/Templates/SS.md"
+    },
+    {
+      "folder": "3. semester/CompSys",
+      "template": "Misc/Templates/Compsys.md"
     }
   ],
   "syntax_highlighting": true,

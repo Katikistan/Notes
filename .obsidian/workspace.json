@@ -13,11 +13,25 @@
             "state": {
               "type": "excalidraw",
               "state": {
-                "file": "Excalidraw/15-06-23 23.19.04.excalidraw.md"
+                "file": "Excalidraw/Big o.md"
+              }
+            }
+          },
+          {
+            "id": "a2ad9d3870d84577",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Misc/Templates/SS.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -75,8 +89,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 335.5,
-    "collapsed": true
+    "width": 335.5
   },
   "right": {
     "id": "1bdbff370dc1606a",
@@ -103,7 +116,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Excalidraw/15-06-23 23.19.04.excalidraw.md",
+                "file": "Excalidraw/Big o.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -120,7 +133,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Excalidraw/15-06-23 23.19.04.excalidraw.md",
+                "file": "Excalidraw/Big o.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -132,7 +145,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Excalidraw/15-06-23 23.19.04.excalidraw.md"
+                "file": "Excalidraw/Big o.md"
               }
             }
           },
@@ -198,36 +211,47 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "d8f7892100d5f0ca",
+  "active": "4c419c505c6e29b2",
   "lastOpenFiles": [
+    "3. semester/CompSys/Wiki/WIKI uge 24 - lør - 00-06-31 - (2023).md",
+    "Misc/Templates/SS.md",
+    "Misc/Templates/Softwareudvikling.md",
+    "Misc/Templates/MatIntro.md",
+    "Misc/Templates/Compsys.md",
+    "Misc/Templates/Interaktionsdesign.md",
+    "3. semester/Sandsynlighedsregning og statistik(SS)/Wiki/Probability/Forelæsning.md",
+    "3. semester/CompSys/Wiki",
+    "3. semester/CompSys/Lecture",
+    "3. semester/CompSys/Reading",
+    "3. semester/Mat Intro/Reading",
+    "3. semester/Mat Intro/Wiki",
+    "3. semester/Mat Intro/Untitled.md",
+    "3. semester/Mat Intro/Lecture",
+    "Excalidraw/Big o.md",
+    "3. semester/Sandsynlighedsregning og statistik(SS)/Wiki",
+    "3. semester/Sandsynlighedsregning og statistik(SS)/Reading",
+    "3. semester/Sandsynlighedsregning og statistik(SS)/Lecture",
+    "3. semester/Lecture",
+    "3. semester/Comp.md",
+    "Excalidraw/probability lecture.md",
+    "Excalidraw/LinAlgDat - Lecture man - 19 08-05-23 13.19.36.excalidraw.md",
+    "Excalidraw/17-05-23 09.17.43.excalidraw.md",
+    "Excalidraw/LinAlgDat - Lecture ons - 19 10-05-23 09.51.12.excalidraw.md",
+    "Excalidraw/LinAlgDat - Lecture ons - 19 10-05-23 09.17.53.excalidraw.md",
+    "Excalidraw/LinAlgDat - Lecture man - 19 08-05-23 20.25.37.excalidraw.md",
+    "Excalidraw/LinAlgDat - Lecture man - 19 08-05-23 14.19.27.excalidraw.md",
+    "Excalidraw/LinAlgDat - Lecture man - 19 08-05-23 13.51.32.excalidraw.md",
+    "Excalidraw/Ideer.md",
+    "Excalidraw/30-04-23 21.35.11.excalidraw.md",
+    "Excalidraw/18-05-23 16.01.22.excalidraw.md",
+    "Excalidraw/17-05-23 11.45.10.excalidraw.md",
+    "Excalidraw/15-06-23 23.19.04.excalidraw.md",
+    "Excalidraw/11-05-23 13.34.10.excalidraw.md",
+    "Excalidraw/08-05-23 14.14.58.excalidraw.md",
+    "Excalidraw/02-05-23 13.29.51.excalidraw.md",
+    "Pasted Image 20230615231910_792.png",
     "Pasted Image 20230615234718_017.png",
     "Pasted Image 20230615234656_966.png",
-    "Pasted Image 20230615231910_792.png",
-    "2. semester/Linær algebra (LinAlgDat)/Wiki/Ortogonale og ortonomale matricer.md",
-    "Excalidraw/15-06-23 23.19.04.excalidraw.md",
-    "2. semester/Linær algebra (LinAlgDat)/Wiki/Matricer.md",
-    "2. semester/Softwareudvikling (SU)/Wiki/GRASP.md",
-    "2. semester/Softwareudvikling (SU)/guides/CodeCoverageReport.md",
-    "2. semester/Softwareudvikling (SU)/Wiki/Design patterns.md",
-    "2. semester/Softwareudvikling (SU)/Wiki/Refactoring.md",
-    "2. semester/Softwareudvikling (SU)/Wiki/SOLID principles.md",
-    "2. semester/Softwareudvikling (SU)/Wiki/UML.md",
-    "2. semester/Softwareudvikling (SU)/Wiki/Technical debt.md",
-    "Untitled.md",
-    "Overblik over tests.md",
-    "2. semester/Softwareudvikling (SU)/guides/NUnit_guidelines.md",
-    "2. semester/Softwareudvikling (SU)/Reading/SU - Reading for week 8.md",
-    "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture tir - 19.md",
-    "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture Tue - 10.md",
-    "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture Tue - 11.md",
-    "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture man - 12.md",
-    "Excalidraw/LinAlgDat - Lecture man - 19 08-05-23 14.19.27.excalidraw.md",
-    "Excalidraw/LinAlgDat - Lecture man - 19 08-05-23 20.25.37.excalidraw.md",
-    "Excalidraw/LinAlgDat - Lecture ons - 19 10-05-23 09.51.12.excalidraw.md",
-    "Excalidraw/LinAlgDat - Lecture man - 19 08-05-23 13.51.32.excalidraw.md",
-    "Excalidraw/LinAlgDat - Lecture man - 19 08-05-23 13.19.36.excalidraw.md",
-    "Excalidraw/03-06-23 11.45.27.excalidraw.md",
-    "2. semester/Linær algebra (LinAlgDat)/Wiki/EgenVærdier og Egenvektorer.md",
     "Pasted Image 20230518160132_049.png",
     "Pasted Image 20230518160202_500.png",
     "Misc/åBilleder/Pasted Image 20230510093208_895.png",
@@ -235,17 +259,6 @@
     "Misc/åBilleder/Pasted image 20230510230022.png",
     "Misc/åBilleder/Pasted Image 20230510095122_988.png",
     "Misc/åBilleder/Pasted image 20230424130800.png",
-    "Misc/åBilleder/Pasted Image 20230508141934_403.png",
-    "Day Planners/Untitled",
-    "2. semester/Interaktionsdesign (Inter).zip",
-    "2. semester/Interaktionsdesign (Inter)/Lecture/User Interface",
-    "2. semester/Interaktionsdesign (Inter)/Wiki",
-    "2. semester/Interaktionsdesign (Inter)/Reading",
-    "2. semester/Interaktionsdesign (Inter)/Lecture",
-    "2. semester/Linær algebra (LinAlgDat)/Wiki",
-    "2. semester/Linær algebra (LinAlgDat)/Lecture",
-    "2. semester/Linær algebra (LinAlgDat)/Reading",
-    "2. semester/Softwareudvikling (SU)/Wiki",
     "Untitled.canvas"
   ]
 }

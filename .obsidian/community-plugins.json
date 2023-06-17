@@ -16,9 +16,7 @@
   "media-extended",
   "nldates-obsidian",
   "find-unlinked-files",
-  "obsidian-zotero-desktop-connector",
   "obsidian-footnotes",
-  "obsidian-jupyter",
   "cmenu-plugin",
   "calendar",
   "periodic-notes",
@@ -26,6 +24,6 @@
   "obsidian-hider",
   "cm-editor-syntax-highlight-obsidian",
   "mathpad",
-  "obsidian-plugin-toc",
-  "obsidian-enhancing-export"
+  "obsidian-enhancing-export",
+  "obsidian-plugin-toc"
 ]
