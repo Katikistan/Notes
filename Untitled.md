@@ -10,3 +10,15 @@ points was refactored to be a singleton this helped to be able to access points 
 evt tage en specifik test med til eksamen
  
 
+# Fremlæggelse
+## Design
+### design patterns
+### Uml
+### SOLID AND GRASP
+## Implementation
+### code snippets
+### refactoring 
+
+## Testing
+## Workflow 
+### development 

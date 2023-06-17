@@ -23,7 +23,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Misc/Templates/SS.md",
+                "file": "Untitled.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -60,7 +60,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "graha",
+                "query": "facade",
                 "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": false,
@@ -116,7 +116,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Excalidraw/Big o.md",
+                "file": "Untitled.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -133,7 +133,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Excalidraw/Big o.md",
+                "file": "Untitled.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -145,7 +145,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Excalidraw/Big o.md"
+                "file": "Untitled.md"
               }
             }
           },
@@ -213,6 +213,8 @@
   },
   "active": "4c419c505c6e29b2",
   "lastOpenFiles": [
+    "2. semester/Softwareudvikling (SU)/Wiki/Design patterns.md",
+    "Excalidraw/Big o.md",
     "3. semester/CompSys/Wiki/WIKI uge 24 - lør - 00-06-31 - (2023).md",
     "Misc/Templates/SS.md",
     "Misc/Templates/Softwareudvikling.md",
@@ -227,7 +229,6 @@
     "3. semester/Mat Intro/Wiki",
     "3. semester/Mat Intro/Untitled.md",
     "3. semester/Mat Intro/Lecture",
-    "Excalidraw/Big o.md",
     "3. semester/Sandsynlighedsregning og statistik(SS)/Wiki",
     "3. semester/Sandsynlighedsregning og statistik(SS)/Reading",
     "3. semester/Sandsynlighedsregning og statistik(SS)/Lecture",
@@ -248,7 +249,6 @@
     "Excalidraw/15-06-23 23.19.04.excalidraw.md",
     "Excalidraw/11-05-23 13.34.10.excalidraw.md",
     "Excalidraw/08-05-23 14.14.58.excalidraw.md",
-    "Excalidraw/02-05-23 13.29.51.excalidraw.md",
     "Pasted Image 20230615231910_792.png",
     "Pasted Image 20230615234718_017.png",
     "Pasted Image 20230615234656_966.png",
