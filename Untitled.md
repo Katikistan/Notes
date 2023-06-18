@@ -52,7 +52,14 @@ a class encapsulates both state (variables) and behavior (methods)
 creator 
 ## Implementation
 ### code snippets
+levelreading
+blocks
+points
+powerups
 ### refactoring 
+states rendering change
+points
+metareader
 
 ## Testing
 Being confident due to TDD is true only in moment when you know your tests are bulletproof - most of beginners practitioners won't have that level of confidence you would have after years of TDD though
