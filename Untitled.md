@@ -22,3 +22,5 @@ evt tage en specifik test med til eksamen
 ## Testing
 ## Workflow 
 ### development 
+## Konklusion
+code quality
