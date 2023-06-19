@@ -61,6 +61,9 @@ testing performance, usability
 white box - finds unreachable code, infinite loops
 ## Software development life cycle
 ### agile
+Agile's focus on simplicity, incremental changes, and the ability to respond to changes quickly and efficiently
+
+
 Incremental delivery The software is developed in increments with the customer specifying the requirements to be included in each increment.
 
 The skills of the development team should be recognized and exploited. Team members should be left to develop their own ways of working without prescriptive processes
