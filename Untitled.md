@@ -13,12 +13,7 @@ læs på på code complexity
 
 # Fremlæggelse
 ## Design
-### design patterns
-factory 
-builder
-facade
 observer - one to many relationship
-state 
 ### Uml  (Unified Modeling Language)
 Describe the static structure of the system: Objects, Attributes, Associations
 Object model: class diagram
@@ -48,22 +43,9 @@ Software is getting increasingly more complex
 Code is not easily understandable by developers who did not write it
 
 a class encapsulates both state (variables) and behavior (methods)
-### SOLID AND GRASP
-creator 
-## Implementation
-### code snippets
-levelreading
-blocks
-points
-powerups
-### refactoring 
-states rendering change
-points
-metareader
-
 ## Testing
 Being confident due to TDD is true only in moment when you know your tests are bulletproof - most of beginners practitioners won't have that level of confidence you would have after years of TDD though
-
+![[Pasted image 20230226084702.png]]
 red green refactor.  
 
 functional tests 
@@ -77,12 +59,6 @@ non functtional
 testing performance, usability 
 
 white box - finds unreachable code, infinite loops
-
-code coverage
-### unit
-### module
-### sub system
-### system
 ## Software development life cycle
 ### agile
 Incremental delivery The software is developed in increments with the customer specifying the requirements to be included in each increment.
@@ -113,13 +89,9 @@ code reviews  Non-functional requirements/code qualities - walkthrough: informal
 ![](https://i.imgur.com/YrHHtfq.png)
 is this maintainable, for if we have to change things
 ### code quality
-efficenty, maintainablity, testability, Understandability
-
 Software becomes obsolete very quickly • because of fast evolution of technology, requirements or knowledge, equires continuous innovation and evolution
 
-shifted focused from secure to testable
-### refactoring
-efficient, refactored buttons, so they wont use huge amount of memory
-had to change points to singleton
-## Konklusion
-code quality
+
+
+mangler at aflklare association type
+få styr på dependecy inversion principle og grasp
