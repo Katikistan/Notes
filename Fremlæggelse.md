@@ -80,6 +80,9 @@ testing performance, usability
 
 white box - finds unreachable code, infinite loops
 ## Unit
+Equivalence Partitioning and Boundary Value Analysis work together to streamline the testing process. Equivalence Partitioning divides input data into manageable groups (equivalence classes), and Boundary Value Analysis focuses on the boundaries of these classes where errors are most likely to occur.
+
+Recovery testing involves crashing the program at arbitrary points during its execution and then assessing how well it restarts. It examines whether the program's persistent data was corrupted and if the extent of user data loss was within acceptable limits. The system's response to corrupted or deleted configuration files is also tested.
 ## integration
 ### stubs og drivers
 1. Stubs: A stub is a minimal implementation of a module or component that is used to simulate the behavior of the actual component it is replacing. Stubs are typically used when the module being tested depends on other modules that have not been developed or integrated yet. By providing a simplified version of the missing module, the stub allows the testing to proceed without waiting for the complete system to be available. Stubs usually return pre-defined values or follow a predefined behavior, often hardcoded, to simulate the interaction with the missing component.
