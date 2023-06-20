@@ -82,7 +82,9 @@ white box - finds unreachable code, infinite loops
 ## Unit
 ## integration
 ### stubs og drivers
-
+1. Stubs: A stub is a minimal implementation of a module or component that is used to simulate the behavior of the actual component it is replacing. Stubs are typically used when the module being tested depends on other modules that have not been developed or integrated yet. By providing a simplified version of the missing module, the stub allows the testing to proceed without waiting for the complete system to be available. Stubs usually return pre-defined values or follow a predefined behavior, often hardcoded, to simulate the interaction with the missing component.
+    
+2. Drivers: A driver, on the other hand, is used to replace a higher-level module or component that calls or invokes the component being tested. Drivers are used when the module being tested is dependent on lower-level modules that have not yet been developed or integrated. The driver provides the necessary functionality to invoke the module being tested and supply it with the required inputs. It helps in simulating the behavior of the missing higher-level component to test the lower-level component in isolation.
 ## White box
 ## black box
 ## andre typer
@@ -190,3 +192,7 @@ use tdd
 
 print statements
 Debugger
+# Specifying Program Properties
+What are the two main specification techniques used in formal methods? (Software Development, Specifying Program Properties, Slides 15-28)
+
+The two main specification techniques are the Algebraic approach and the Model-based approach. In the Algebraic approach, the system is specified in terms of its operations and their relationships. In the Model-based approach, the system is specified in terms of a state model that is constructed using mathematical constructs such as sets and sequences. Operations are defined by modifications to the system’s state.
