@@ -60,6 +60,8 @@ Code is not easily understandable by developers who did not write it
 
 a class encapsulates both state (variables) and behavior (methods)
 # Testing
+boundary testing
+
 Processen i Integration-Testing: 1. Baseret på strategy, udvælg et component som skal testes. 2. Sammensæt componenten med drivers og stubs 3. Functional testing: Test alle use cases med componentet 4. Structural testing: Enten White-Box eller Black-Box
 
 Being confident due to TDD is true only in moment when you know your tests are bulletproof - most of beginners practitioners won't have that level of confidence you would have after years of TDD though
