@@ -1,91 +1,160 @@
 # Design
-<!--⚠️Imgur upload failed, check dev console-->
-![[Pasted image 20230620090251.png]]
-<!--⚠️Imgur upload failed, check dev console-->
-![[Pasted image 20230620090304.png]]
-observer - one to many relationship
-
-<!--⚠️Imgur upload failed, check dev console-->
-![[Pasted image 20230620090335.png]]
-<!--⚠️Imgur upload failed, check dev console-->
-![[Pasted image 20230620090345.png]]
+![[Pasted image 20230620090304.png|300]]
+![[Pasted image 20230620090335.png|300]]
+![[Pasted image 20230620090345.png|300]]
 Tightly coupled -> Hard debugging
-![[Pasted image 20230620090438.png]]
-<!--⚠️Imgur upload failed, check dev console-->
-![[Pasted image 20230620090531.png]]
-<!--⚠️Imgur upload failed, check dev console-->
-![[Pasted image 20230620090541.png]]
+![[Pasted image 20230620090438.png|400]]
+Methods from C use methods/variables from D → classes C and D coupled.
 
-Traceability Matrix (2) Mapping: Use cases to Domain model
+**Hvad er design patterns?**
+det er nogle generelle ideer til løsning af problemer, i udvikling af software støder man tit på lignende problemer, design patterns giver nogle generelle løsninger til disse problemer. Disse design patterns skal tweakes til at passe til det bestemte scenarie  (Lignende løsninger til lignende problemer, skal dog tailors til ens specifikke use case.)
+
 
 System Sequence Diagrams considered interactions between the actors
 
 In use case analysis, we consider the system as a “black box. In domain analysis, we consider the system as a “transparent box”
 ## Patterns
-Abstract from a concrete problem to a context less solution
 Lignende løsninger til lignende problemer, skal dog tailors til ens specifikke use case.
 ### facade
-![[Pasted image 20230620093615.png]]
+
+
+**Forklar Hvad facade pattern er, fordele og ulemper?**
+Det er et hvor man laver et simpelt interface til at kunne tilgå og benytte et komplekst subsystem. f.eks. for at kunne lave et niveau: map, legend og meta data skal læses, Blocks skal dernæst laves med disse læste data, dernæst skal en timer laves, validation checks skal laves af niveauet. istedet for at skulle kalde alle metoder for at lave niveauet giver et facade pattern et simpelt interface til at tilgå og kalde alle disse metoder i korrekt sekvens osv. 
+
+*Fordele:* 
+- Adgang til subsystemet bliver simplificeret, ved at enkapsulerer det i en facade. 
+- Classer i subsystemet kender ikke til facaden
+- man kan sagents tilgå og benytte subsystemet uden facaden
+- ved at samle kald i facaden kan man måske forbedre performance
+*Ulemper:*
+- Strukturen af systemet kan blive mere kompliceret fordi  man tilføjere hieraki og et ekstra lag i systemet.
+- Facaden kan blive et såkaldt guds objekt
+
+**Hvad er det prime directive?**
+if you deviate from style guide, it has to be documented!!
 ## Uml  (Unified Modeling Language)
-Describe the static structure of the system: Objects, Attributes, Associations
-Object model: class diagram
-Can be misunderstood when using too many exotic features
-during requirements analysis to model problem domain concepts
-A class represent a concept
-during object design to model classes.
-A class encapsulates state (attributes) and behavior (operations)
+**Hvad er formålet med uml diagram:**
+beskrive/illusterer den statiske struktur af et systems objekter, attributer eller associationer.
+En objekt model er et klasse diagram, klasser repræsenterer koncepter.  
+**Hvad indeholder/enkapsulerer en klasse**:
+En klasse enkapsulerer state (attributes eller fields, variabler) og behavior (operations eller metoder)
 
-Associations
-The multiplicity of an association end denotes how many objects the source object can legitimately reference. MISSING
+**Hvad menes med associationer**
+Det er hvilke klasser der interagere med hianden, ændre hiandens states (coupling), multiplicitet af en association fortæller noget om hvor mange objekter kilde objektet kan referer. MISSING
 
-1 to 1, many to many
-aggregation and composition
-inheritance
+**Typer af associationer?**
+- Svage associationer
+- aggregation “has a”/”uses a” den ene kan godt leve uden den anden The *aggregate* is the *parent class*, the *components* are the *children class***. Udseende gennemsigtig diamant
 
-Abstract classes are used as interfaces in cases when only few methods have to be declared.
+- composition: “owns a”, objektet kan ikke leve uden anden. Udseende udfyldt diamant
 
-Abstract classes model concepts in domain model which are important as an abstraction but do not have tangible entity.
+- inheritance: nedarvning, den stærkeste form for association af dem alle. composition er altid forstrukket, har samme state og behavior måske noget ekstra fra forældren. 
 
-Abstract classes specified { Abstract } under class name
+**Hvad inkluderes i et UML diagram**
+kun relevante detaljer, hvad der er relevant afhænger af formålet med at lave diagrammet.
 
-They ignore irrelevant details and • They only represent the relevant details. • What is relevant or irrelevant depends on the purpose of the model.
-
-Software is getting increasingly more complex
-
-Code is not easily understandable by developers who did not write it
-
-a class encapsulates both state (variables) and behavior (methods)
 # Testing
-boundary testing
-
-Processen i Integration-Testing: 1. Baseret på strategy, udvælg et component som skal testes. 2. Sammensæt componenten med drivers og stubs 3. Functional testing: Test alle use cases med componentet 4. Structural testing: Enten White-Box eller Black-Box
-
+## TDD
 Being confident due to TDD is true only in moment when you know your tests are bulletproof - most of beginners practitioners won't have that level of confidence you would have after years of TDD though
-![[Pasted image 20230226084702.png]]
-red green refactor.  
 
-functional tests 
-1. unit (validate/test individual units ie individual classes or methods and see that they behave correctly/as intended)
-2. integration (testing multiple units togheter, testing that points are rechieved when block is destroyed) or state is switched when life reaches 0.
-3. end - to - end : emulate user behavior. 
-system testing (would catch bugs such as extensive us of memory)
-non functtional 
+**Hvad er principperne bag TDD**
+- Lav tests først, de vil fejle
+- lav implementation, du ved det er korrekt når tests passer
+- refactor for at få koden til at være pæn og optimal
+## Test doubles
+**Hvad er test doubles?**
+Nogle gange har systemet man tester nogle dependencies, men hvis man tester ved at bruge disse dependencies kræver det også at man tester dependcies, derved for man ikke rigtige unitests hvor man tester isoleret. derfor kan man lave falske implementationer (test doubles)
+
+**Hvad kunne være test doubles**
+- Stubs: 
+- Drivers: imiterer en dependency, for at se om en unit sender information korrekt til dependencies
+
+**Hvad inkluderes i funktionelle tests** 
+- unit test
+- integration test
+
+**Hvad inkluderes i system testing**
+Ikke funktionelle tests som
 - playtesting 
 - stresstesting
-testing performance, usability 
+- performance testing
+- aceptance testing
+- usability testing
 
-white box - finds unreachable code, infinite loops
+**Hvad er test strategier**
+- white box - finds unreachable code, infinite loops
+- Black box - opfører koden sig som forventet, er dokumentationen tilstrækkelig, bliver specifikationer opfyldt.
 ## Unit
-Equivalence Partitioning and Boundary Value Analysis work together to streamline the testing process. Equivalence Partitioning divides input data into manageable groups (equivalence classes), and Boundary Value Analysis focuses on the boundaries of these classes where errors are most likely to occur.
+**Hvad går Equivalence Partitioning and Boundary Value Analysis ud på?**
+Det gøres for at streamline testing processen 
+Equivalence Partitioning: deler inputs ind i grupper (equivalence classes)
 
-Recovery testing involves crashing the program at arbitrary points during its execution and then assessing how well it restarts. It examines whether the program's persistent data was corrupted and if the extent of user data loss was within acceptable limits. The system's response to corrupted or deleted configuration files is also tested.
+Boundary value analysis: fokuserer på boundaries i de her ekvivalens klasser, det er hvor fejl hyppigt sker.
+
+the stub allows the testing to proceed without waiting for the complete system to be available. 
+
+Stubs  return pre-defined values or follow a predefined behavior, often hardcoded, to simulate the interaction with the missing component.
+
+Stubs are typically used when the module being tested depends on other modules that have not been developed or integrated yet
+
+Drivers
+It helps in simulating the behavior of the missing higher-level component to test the lower-level component in isolation.
+
+A driver, on the other hand, is used to replace a higher-level module or component that calls or invokes the component being tested.
+
+Drivers are used when the module being tested is dependent on lower-level modules that have not yet been developed or integrated.
 ## integration
-### stubs og drivers
-1. Stubs: A stub is a minimal implementation of a module or component that is used to simulate the behavior of the actual component it is replacing. Stubs are typically used when the module being tested depends on other modules that have not been developed or integrated yet. By providing a simplified version of the missing module, the stub allows the testing to proceed without waiting for the complete system to be available. Stubs usually return pre-defined values or follow a predefined behavior, often hardcoded, to simulate the interaction with the missing component.
-    
-2. Drivers: A driver, on the other hand, is used to replace a higher-level module or component that calls or invokes the component being tested. Drivers are used when the module being tested is dependent on lower-level modules that have not yet been developed or integrated. The driver provides the necessary functionality to invoke the module being tested and supply it with the required inputs. It helps in simulating the behavior of the missing higher-level component to test the lower-level component in isolation.
+**Processen i Integration-Testing:** 
+1. Baseret på strategy, udvælg et component som skal testes. 
+2. Sammensæt componenten med drivers og stubs 
+3. Functional testing: Test alle use cases med componentet 
+4. Structural testing: Enten White-Box eller Black-Box
+5. performance testing
+
+**Unit testing eller Integration testing?**
+Nogle gange tror folk de laver unit test, de laver i virkeligheden bottom up integration testing.
+
+- Unit test: isolerer moduler (units: klasser eller metoder) og tester dem. moduler isoleres fra dens dependecies ved brug af stubs. 
+- Integration bruger ikke stubs, men bruger de rigtige dependcies istedet for test doubles
+**forskellen, fordele og ulemper ved  top down og bottom up?**
+Bottom up: man tester med lavest niveauer af systemet, de har typisk ikke dependencies og man behøver derfor ikke stubs.  Man kommer først til at teste vigtige dele til sidst
+
+Top down: man tester øveste del af systemet først, kræver man laver drivers og stubs hvilket kan være svært. vigtige dele testes først. 
+## System testing
+**validation testing** 
+Tester om funktioner or performance characteristic følger specifikation
+hjælper at have formelle specifikationer her fordi man nemt kan bruge black box og teste om formelle specifikationer mødes. 
+
+**Aceptance testing**
+Asserts at koden gør hvad brugeren forventer
+evaluerer systemet i virkeligheds lignede scenarie
+Hvis man fejler acceptance test er der ingen grund til at gå videre til rigtige bruger
+
+**Alpha testing**
+har nogle kendte brugerer og guide dem i gennem systemet, 
+
+**beta testing**
+mindre hand holding
+
+**REGRESSION testing**
+Når du finder en bug så lav en test. lav en test der kan bruges til at tjekke at buggen ikke kommer tilbage (regression), man kører disse tests på hvert build for at tjekke at bugs ikke kommer tilbage. 
+Et subset af tests der dækker hele systemet og kan be kørt på hvert build
 ## White box
+**hvad er white box testing**
+det er en testing stategi
+Man har adgang til kilde koden 
+tester for at finde bugs
+Man går efter at finde død kode
+kigger i koden og prøver at gå ramme alle branches i control flow
+C0 - statement coverage
+C1 - branch coverage
 ## black box
+**hvad er black box testing**
+det er en testing stategi
+Man har ikke adgang til kilde koden
+tester baseret på specifikationer og dokumentation
+man finder defects
+
 Specification-driven construction of a test suite: Based on analysis of specification
 First-level partitioning: Valid vs. invalid inputs 
 • Valid: Satisfies precondition 
@@ -115,78 +184,89 @@ Don't get so wrapped up in testing boundary cases that you neglect to test "norm
 
 Intuition will often lead you toward boundary cases, but not always
 Try loading a corrupted file
-## andre typer
+
+# Code quality
+Fagan‘s snail curve: The longer defects remain in the system, the more expensive they become
+
+**Hvad går Maintainability (ease of maintenance) ud på** 
+• Software must evolve to meet changing needs 
+• Software costs more to maintain than it does to develop. For systems with a long life, maintenance costs may be several times development costs
+Det kan blandt andet opnås ved at følge Open closed princippet
+
+**Hvad er kategorier af defekter**
+- funktionelle: features virker ikke som de skal
+- UI defects: usabiltiy problemer
+- Performance defect: For langsomt, bruger for meget memory osv
+- Error handling: Kan ikke håndtere fejl e
+- load: kan ikke klare mange bruger, meget data
+- konfikuration: virker ikke på alle OS, browser osv
+- Race conditions: behaviour afhænger af andre i gangværende processer
+- Dokumenation: dokumentationen er ikke forståele, upræcis, mangelfuld osv
+
+# Code complexity
+Øget kompleksitet øger risiko for fejl. 
+høj kompleksitet gør det svært at teste og maintaine
+Metrics kan bruges til at vurderer kompleksiset og dermed hvor svært og lang tid dev processen vil være
+## Metrics
+### Blackbox
+Function points, vurdering af vigtighed og kompleksitet af funktioner: vælg arbitræt
+COOCOMO: bruges til kost og tids estimering, 
+
+![|400](https://i.imgur.com/kG0nRG8.png)
+![|300](https://i.imgur.com/lrkoIGb.png)
+LOC is optimistic for bigger programs
+![|300](https://i.imgur.com/l5VqxM2.png)
 # Software development life cycle
 ## agile
-Agile's focus on simplicity, incremental changes, and the ability to respond to changes quickly and efficiently
+**Hvad er fokus i agile**
+Simplicity 
+incremental changes
+respond to changes quickly and efficiently
+itterativ udvikling
 
+**Hvordan forgår agile development**
+Dele af softwaren udvikles i korte intervaller - sprints
 
 Incremental delivery The software is developed in increments with the customer specifying the requirements to be included in each increment.
-
-The skills of the development team should be recognized and exploited. Team members should be left to develop their own ways of working without prescriptive processes
 
 Expect the system requirements to change and so design the system to accommodate these changes
 
 Focus on simplicity in both the software being developed and in the development process. Wherever possible, actively work to eliminate complexity from the system.
 
-Because of their focus on small, tightly-integrated teams, there are problems in scaling agile methods to large systems.
-
-2 week sprints, customer involvement?
-
-techincal debt
-
-plan driven og agile?
-
-SCRUM - what did you do, what will you do, do you have any trouble 
-
-tech lead for individual tasks
-
-pair programming - when something wasnt working
-
 ### code reviews
 code reviews  Non-functional requirements/code qualities - walkthrough: informal discussion of code between author and a single reviewer. bad design, Lack of clarity, style guide
-![](https://i.imgur.com/dSuoeJn.png)
-![](https://i.imgur.com/YrHHtfq.png)
+
 is this maintainable, for if we have to change things
 ### code quality
-Software becomes obsolete very quickly • because of fast evolution of technology, requirements or knowledge, equires continuous innovation and evolution
+Software becomes obsolete very quickly 
+• because of fast evolution of technology, requirements or knowledge, equires continuous innovation and evolution
 
+# Debugging
+**Hvad er en bug, hvad er en defekt?** 
+Bug: En fejl i koden
+Defect: afvigelse fra requirements
+**Metoder?**
+- Ved at bruge Test driven deleopment kan man bruge test resultater som en guide line for om man har bugs. 
+- print statements
+- Debugger: man sætter breakpoints op og kører koden, variabler og andet gemmes i stack trace som kan analyseres for at finde fejl
+# Specifying Program Properties
+**What are the two main specification techniques used in formal methods? (Software Development, Specifying Program Properties, Slides 15-28)**:
+Algebraic approach, the system is specified in terms of its operations and their relationships. 
 
+Model-based approach, the system is specified in terms of a state model that is constructed using mathematical constructs such as sets and sequences. Operations are defined by modifications to the system’s state.
 
-mangler at aflklare association type
-få styr på dependecy inversion principle og grasp
-
-# Code quality
-Fagan‘s snail curve: The longer defects remain in the system, the more expensive they become
-
-Poor architecture can cause many quality problems including but not limited to: 
-• Fragility 
-• Lack of scalability (Code Maintainability à) 
-• Resistance to modification (Code Maintainability à)
-
-Maintainability (ease of maintenance) 
-• Software must evolve to meet changing needs 
-• Software costs more to maintain than it does to develop. For systems with a long life, maintenance costs may be several times development costs
-<!--⚠️Imgur upload failed, check dev console-->
-![[Pasted image 20230620091842.png]]
-<!--⚠️Imgur upload failed, check dev console-->
-![[Pasted image 20230620091857.png]]
-
-Does usage and time cause degradation of a software product quality? yes, render i states
-
-Static & Dynamic Code Analysis to find programming errors
-Validate requirements to ensure that they are correct, unambiguous, complete, and verifiable
+Informel: nemmere at lave, men kan fortolkes 
+Formelt: svære at lave, men bulletproof.
 # Code review
-<!--⚠️Imgur upload failed, check dev console-->
+
 ![[Pasted image 20230620092200.png]]
 Reviewer gives suggestions for improvement on a logical and/or structural level, to conform to previously agreed upon set of quality standards.
 Feedback leads to refactoring, followed by a 2nd code review. 
 Eventually reviewer approves code
 
-<!--⚠️Imgur upload failed, check dev console-->
+
 ![[Pasted image 20230620092317.png]]
 
-<!--⚠️Imgur upload failed, check dev console-->
 ![[Pasted image 20230620092330.png]]
 
 A code review checklist change depending on what type of error we have 
@@ -207,24 +287,3 @@ Defects:
 - Error Handling (Hvordan håndtere man fejl?) 
 - Configuration (Fungerer det på alt hardware og software) 
 - Race conditions (Sker der fejl afhængig af rækkefølgen)
-# Code complexity
-![](https://i.imgur.com/utSgRcT.png)
-Methods from C use methods/variables from D → classes C and D coupled.
-![](https://i.imgur.com/kG0nRG8.png)
-
-![](https://i.imgur.com/lrkoIGb.png)
-
-LOC is optimistic for bigger programs
-![](https://i.imgur.com/l5VqxM2.png)
-
-# Debugging
-Bug = result of coding error Defect = deviation from requirements
-
-use tdd 
-
-print statements
-Debugger
-# Specifying Program Properties
-What are the two main specification techniques used in formal methods? (Software Development, Specifying Program Properties, Slides 15-28)
-
-The two main specification techniques are the Algebraic approach and the Model-based approach. In the Algebraic approach, the system is specified in terms of its operations and their relationships. In the Model-based approach, the system is specified in terms of a state model that is constructed using mathematical constructs such as sets and sequences. Operations are defined by modifications to the system’s state.
