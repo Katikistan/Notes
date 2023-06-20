@@ -26,10 +26,6 @@ Abstract from a concrete problem to a context less solution
 Lignende løsninger til lignende problemer, skal dog tailors til ens specifikke use case.
 ### facade
 ![[Pasted image 20230620093615.png]]
-### Builder
-### singleton
-### Factory
-### Observer
 ## Uml  (Unified Modeling Language)
 Describe the static structure of the system: Objects, Attributes, Associations
 Object model: class diagram
@@ -90,6 +86,35 @@ Recovery testing involves crashing the program at arbitrary points during its ex
 2. Drivers: A driver, on the other hand, is used to replace a higher-level module or component that calls or invokes the component being tested. Drivers are used when the module being tested is dependent on lower-level modules that have not yet been developed or integrated. The driver provides the necessary functionality to invoke the module being tested and supply it with the required inputs. It helps in simulating the behavior of the missing higher-level component to test the lower-level component in isolation.
 ## White box
 ## black box
+Specification-driven construction of a test suite: Based on analysis of specification
+First-level partitioning: Valid vs. invalid inputs 
+• Valid: Satisfies precondition 
+• Invalid: Not valid
+
+Partition valid inputs into equivalence classes
+
+Create a test case for at least one value from each equivalence class
+
+Two inputs are considered equivalent if we expect the program to process them in the same way, i.e. follow the same path through the code.
+
+If all elements of an equivalence either lead to no error or to an error, then testing is complete: it no errors are found, code is correct
+
+Equivalence 1: partition each component independently (e.g. negative, zero, positive) and form their products • (neg x neg, neg x zero, neg x pos, zero x neg, zero x zero, zero x pos, pos x neg, pos x zero, pos x pos)
+Input type: int x int (Cartesian product)
+
+Equivalence 2: partition inputs by type of file being retrieved (HTML, GIF, JPEG, Plain Text, etc.)
+![](https://i.imgur.com/86f5Dmy.png)
+
+When choosing values from an equivalence class to test, use the values that are most likely to cause the program to fail
+
+Good practice for choosing values from equivalence class: Include
+• ‘typical’ value 
+• values on the boundary to other equivalence classes
+
+Don't get so wrapped up in testing boundary cases that you neglect to test "normal" input values
+
+Intuition will often lead you toward boundary cases, but not always
+Try loading a corrupted file
 ## andre typer
 # Software development life cycle
 ## agile
@@ -183,6 +208,10 @@ Defects:
 - Configuration (Fungerer det på alt hardware og software) 
 - Race conditions (Sker der fejl afhængig af rækkefølgen)
 # Code complexity
+![](https://i.imgur.com/utSgRcT.png)
+Methods from C use methods/variables from D → classes C and D coupled.
+![](https://i.imgur.com/kG0nRG8.png)
+
 ![](https://i.imgur.com/lrkoIGb.png)
 
 LOC is optimistic for bigger programs
