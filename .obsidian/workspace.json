@@ -23,7 +23,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Untitled.md",
+                "file": "Fremlæggelse.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -116,7 +116,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Untitled.md",
+                "file": "Fremlæggelse.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -133,7 +133,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Untitled.md",
+                "file": "Fremlæggelse.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -145,7 +145,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Untitled.md"
+                "file": "Fremlæggelse.md"
               }
             }
           },
@@ -211,12 +211,23 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "4c419c505c6e29b2",
+  "active": "a2ad9d3870d84577",
   "lastOpenFiles": [
+    "Pasted image 20230620093615.png",
+    "Pasted image 20230620092706.png",
+    "Pasted image 20230620092645.png",
+    "Pasted image 20230620092330.png",
+    "Pasted image 20230620092317.png",
+    "Pasted image 20230620092200.png",
+    "Pasted image 20230620091857.png",
+    "Pasted image 20230620091842.png",
+    "Pasted image 20230620090541.png",
+    "Pasted image 20230620090531.png",
+    "Pasted image 20230620090438.png",
     "2. semester/Softwareudvikling (SU)/Wiki/SOLID principles.md",
     "2. semester/Softwareudvikling (SU)/code quality.md",
     "2. semester/Softwareudvikling (SU)/SU - Lecture man - 12.md",
-    "Untitled.md",
+    "Fremlæggelse.md",
     "2. semester/Softwareudvikling (SU)/Coupling.md",
     "2. semester/Softwareudvikling (SU)/GRASP.md",
     "2. semester/Softwareudvikling (SU)/SU - Lecture tir - 19.md",
@@ -238,7 +249,6 @@
     "2. semester/Softwareudvikling (SU)/Wiki/Code smells.md",
     "2. semester/Softwareudvikling (SU)/Technical debt.md",
     "2. semester/Softwareudvikling (SU)/Wiki/UML.md",
-    "2. semester/Softwareudvikling (SU)/Wiki/Design patterns.md",
     "3. semester/CompSys/Wiki",
     "3. semester/CompSys/Lecture",
     "3. semester/CompSys/Reading",
@@ -249,16 +259,6 @@
     "3. semester/Sandsynlighedsregning og statistik(SS)/Reading",
     "3. semester/Sandsynlighedsregning og statistik(SS)/Lecture",
     "3. semester/Lecture",
-    "Pasted Image 20230615231910_792.png",
-    "Pasted Image 20230615234718_017.png",
-    "Pasted Image 20230615234656_966.png",
-    "Pasted Image 20230518160132_049.png",
-    "Pasted Image 20230518160202_500.png",
-    "Misc/åBilleder/Pasted Image 20230510093208_895.png",
-    "Misc/åBilleder/Pasted image 20230510230255.png",
-    "Misc/åBilleder/Pasted image 20230510230022.png",
-    "Misc/åBilleder/Pasted Image 20230510095122_988.png",
-    "Misc/åBilleder/Pasted image 20230424130800.png",
     "Untitled.canvas"
   ]
 }
