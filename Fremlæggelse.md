@@ -176,6 +176,11 @@ Defects:
 - Configuration (Fungerer det på alt hardware og software) 
 - Race conditions (Sker der fejl afhængig af rækkefølgen)
 # Code complexity
+![](https://i.imgur.com/lrkoIGb.png)
+
+LOC is optimistic for bigger programs
+![](https://i.imgur.com/l5VqxM2.png)
+
 # Debugging
 Bug = result of coding error Defect = deviation from requirements
 
