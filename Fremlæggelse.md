@@ -85,6 +85,8 @@ Ikke funktionelle tests som
 - white box - finds unreachable code, infinite loops
 - Black box - opfører koden sig som forventet, er dokumentationen tilstrækkelig, bliver specifikationer opfyldt.
 ## Unit
+Stubs and drivers are used in unit testing to isolate the class or unit under test. Stubs are simple implementations of modules that interact with the unit under test. They are used to simulate the behavior of real modules. Drivers, on the other hand, invoke the class under test with fixed inputs and compare actual outputs with expected ones. They record failure if there's a mismatch and usually continue to execute even if a test case fails.
+
 **Hvad går Equivalence Partitioning and Boundary Value Analysis ud på?**
 Det gøres for at streamline testing processen 
 Equivalence Partitioning: deler inputs ind i grupper (equivalence classes)
@@ -215,6 +217,12 @@ COOCOMO: bruges til kost og tids estimering,
 ![|400](https://i.imgur.com/kG0nRG8.png)
 ![|300](https://i.imgur.com/lrkoIGb.png)
 LOC is optimistic for bigger programs
+
+WMC: measures the complexity of a class by summing the complexities of its methods.
+
+DIT represents the maximum depth of the inheritance hierarchy for a class - the deeper the hierarchy, the more complex the design.
+
+NOC counts the number of direct subclasses a class has, with a high NOC indicating a high level of reuse and potentially more time-consuming validation due to a large number of dependent subclasses.
 ![|300](https://i.imgur.com/l5VqxM2.png)
 # Software development life cycle
 ## agile
