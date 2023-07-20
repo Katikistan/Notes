@@ -21,12 +21,9 @@
             "id": "a2ad9d3870d84577",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "excalidraw",
               "state": {
-                "file": "Fremlæggelse.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
+                "file": "Excalidraw/21-07-23 00.58.14.excalidraw.md"
               }
             }
           }
@@ -116,7 +113,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Fremlæggelse.md",
+                "file": "Excalidraw/21-07-23 00.58.14.excalidraw.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -133,7 +130,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Fremlæggelse.md",
+                "file": "Excalidraw/21-07-23 00.58.14.excalidraw.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -145,7 +142,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Fremlæggelse.md"
+                "file": "Excalidraw/21-07-23 00.58.14.excalidraw.md"
               }
             }
           },
@@ -214,6 +211,7 @@
   "active": "a2ad9d3870d84577",
   "lastOpenFiles": [
     "Excalidraw/Big o.md",
+    "Excalidraw/21-07-23 00.58.14.excalidraw.md",
     "Misc/åBilleder/Pasted image 20230620090251.png",
     "Fremlæggelse.md",
     "2. semester/Softwareudvikling (SU)/GRASP.md",
@@ -248,7 +246,6 @@
     "2. semester/Softwareudvikling (SU)/Wiki/Creating project and using config.md",
     "2. semester/Softwareudvikling (SU)/Wiki/Code smells.md",
     "2. semester/Softwareudvikling (SU)/Technical debt.md",
-    "2. semester/Softwareudvikling (SU)/Wiki/UML.md",
     "3. semester/CompSys/Wiki",
     "3. semester/CompSys/Lecture",
     "3. semester/CompSys/Reading",
