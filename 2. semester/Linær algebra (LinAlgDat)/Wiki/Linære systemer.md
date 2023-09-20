@@ -70,4 +70,4 @@ det er kun over pivotelementerne at der skal være nul, for at den er på reduce
 ## Linære modeller
 ## Generelle netværk
 # 3brow1blue intution
-# Opsummering
+# d

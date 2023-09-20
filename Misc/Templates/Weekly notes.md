@@ -20,34 +20,34 @@ summary: ""
 TABLE day, summary 
 where type = "daily" and week = <% theweek %>
 ```
-# SU
+# COMPSYS
 ## Assigned reading
 <% task %>
- - [ ] [[SU - Reading for week <% theweek %>#Chapter]]
+ - [ ] [[CompSys - Reading for week <% theweek %>#Chapter]]
 ## Exercises 
-### Tuesday 
-### Friday
+### Monday
+### Weddensday
 ## Assignment:
 
 ## Notes from this week
 ```dataview
 TABLE type, status, tags, summary
-where course = "SU" and week = <% theweek %>
+where course = "CompSys" and week = <% theweek %>
 ```
 
-# Linær algebra
+# MatIntro
 ## Assigned reading
 <% task %>
- - [ ] [[LinAlgDat - Reading for week <% theweek %>#Chapter]]
+ - [ ] [[MatIntro - Reading for week <% theweek %>#Chapter]]
 
 ## Exercises 
-### day 1
-### day 2
+### Tuesday
+### Thursday
 ## Assignment:
 
 ## Notes from this week
 ```dataview
 TABLE type, status, summary
-where course = "LinAlgDat" and week = <% theweek %>
+where course = "MatIntro" and week = <% theweek %>
 ```
 <% tp.file.rename ("Uge " + theweek +" - " + tp.date.now("YYYY")) %>

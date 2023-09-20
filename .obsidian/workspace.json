@@ -4,31 +4,52 @@
     "type": "split",
     "children": [
       {
-        "id": "d033ac35fc46ce1d",
+        "id": "5a4ec561f37c39c0",
         "type": "tabs",
+        "dimension": 45.483870967741936,
         "children": [
           {
-            "id": "d8f7892100d5f0ca",
+            "id": "bbc516b2c8fdcb61",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "pdf",
               "state": {
-                "file": "Excalidraw/Big o.md"
+                "file": "3. semester/CompSys/Lecture/arrays.pdf"
               }
             }
           },
           {
-            "id": "a2ad9d3870d84577",
+            "id": "ae22f1a94fc52b61",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "markdown",
               "state": {
-                "file": "Excalidraw/21-07-23 00.58.14.excalidraw.md"
+                "file": "3. semester/CompSys/Lecture/CompSys - Lecture ons - 38.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
               }
             }
           }
         ],
         "currentTab": 1
+      },
+      {
+        "id": "cfd9746c0aae9a58",
+        "type": "tabs",
+        "dimension": 54.516129032258064,
+        "children": [
+          {
+            "id": "7ae0effd06a817de",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "3. semester/CompSys/Lecture/arrays.pdf"
+              }
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -57,7 +78,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "bad smells",
+                "query": "komplekse",
                 "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": false,
@@ -86,7 +107,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 335.5
+    "width": 315.504695892334,
+    "collapsed": true
   },
   "right": {
     "id": "1bdbff370dc1606a",
@@ -108,12 +130,30 @@
             }
           },
           {
-            "id": "04b059e31d47c008",
+            "id": "c34138374d4010bf",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency"
+              }
+            }
+          },
+          {
+            "id": "bfb28f217923fef3",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          },
+          {
+            "id": "32570be5f3e11fbe",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Excalidraw/21-07-23 00.58.14.excalidraw.md",
+                "file": "3. semester/CompSys/Lecture/CompSys - Lecture ons - 38.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -125,37 +165,29 @@
             }
           },
           {
-            "id": "7debee4989697129",
+            "id": "c1f7a7c8e5d25279",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Excalidraw/21-07-23 00.58.14.excalidraw.md",
+                "file": "3. semester/CompSys/Lecture/CompSys - Lecture ons - 38.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           },
           {
-            "id": "c34091497860b011",
+            "id": "3902b831a6fc6dd1",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "Excalidraw/21-07-23 00.58.14.excalidraw.md"
+                "file": "3. semester/CompSys/Lecture/CompSys - Lecture ons - 38.md"
               }
             }
           },
           {
-            "id": "198c099aa189d75f",
-            "type": "leaf",
-            "state": {
-              "type": "calendar",
-              "state": {}
-            }
-          },
-          {
-            "id": "58d3277700a29132",
+            "id": "7f1b279d020fab26",
             "type": "leaf",
             "state": {
               "type": "todo",
@@ -163,23 +195,7 @@
             }
           },
           {
-            "id": "0bd64926e672992d",
-            "type": "leaf",
-            "state": {
-              "type": "advanced-tables-toolbar",
-              "state": {}
-            }
-          },
-          {
-            "id": "1da139a43e55c09d",
-            "type": "leaf",
-            "state": {
-              "type": "git-view",
-              "state": {}
-            }
-          },
-          {
-            "id": "4c419c505c6e29b2",
+            "id": "6f89f17690fe2dbd",
             "type": "leaf",
             "state": {
               "type": "mathpad-view",
@@ -187,11 +203,12 @@
             }
           }
         ],
-        "currentTab": 8
+        "currentTab": 7
       }
     ],
     "direction": "horizontal",
-    "width": 308.5
+    "width": 308.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -208,54 +225,54 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "a2ad9d3870d84577",
+  "active": "ae22f1a94fc52b61",
   "lastOpenFiles": [
-    "Pasted Image 20230721010149_932.png",
-    "Pasted Image 20230721005951_927.png",
-    "Pasted Image 20230721005825_925.png",
-    "Excalidraw/Big o.md",
-    "Excalidraw/21-07-23 00.58.14.excalidraw.md",
-    "Misc/åBilleder/Pasted image 20230620090251.png",
-    "Fremlæggelse.md",
-    "2. semester/Softwareudvikling (SU)/GRASP.md",
-    "Misc/åBilleder/Pasted image 20230620093615.png",
-    "Misc/åBilleder/Pasted image 20230620092706.png",
-    "Misc/åBilleder/Pasted image 20230620092645.png",
-    "Misc/åBilleder/Pasted image 20230620092330.png",
-    "Misc/åBilleder/Pasted image 20230620092317.png",
-    "Misc/åBilleder/Pasted image 20230620092200.png",
-    "Misc/åBilleder/Pasted image 20230620091857.png",
-    "2. semester/Softwareudvikling (SU)/Wiki/SOLID principles.md",
-    "2. semester/Softwareudvikling (SU)/code quality.md",
-    "2. semester/Softwareudvikling (SU)/SU - Lecture man - 12.md",
-    "2. semester/Softwareudvikling (SU)/Coupling.md",
-    "2. semester/Softwareudvikling (SU)/SU - Lecture tir - 19.md",
-    "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture Tue - 6.md",
-    "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture Tue - 9.md",
-    "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture Tue - 7.md",
-    "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture Mon - 11.md",
-    "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture Mon - 7.md",
-    "2. semester/Softwareudvikling (SU)/SU - Lecture man - 18.md",
-    "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture Mon - 9.md",
-    "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture Tue - 11.md",
-    "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture Tue - 10.md",
-    "2. semester/Softwareudvikling (SU)/Reading/SU - Reading for week 6.md",
-    "2. semester/Softwareudvikling (SU)/Reading/SU - Reading for week 7.md",
-    "2. semester/Softwareudvikling (SU)/Reading/SU - Reading for week 8.md",
-    "2. semester/Softwareudvikling (SU)/Reading/SU - Reading for week 10.md",
-    "2. semester/Softwareudvikling (SU)/Wiki/C sharp 101.md",
-    "2. semester/Softwareudvikling (SU)/Wiki/Creating project and using config.md",
-    "2. semester/Softwareudvikling (SU)/Wiki/Code smells.md",
-    "3. semester/CompSys/Wiki",
-    "3. semester/CompSys/Lecture",
-    "3. semester/CompSys/Reading",
-    "3. semester/Mat Intro/Reading",
-    "3. semester/Mat Intro/Wiki",
-    "3. semester/Mat Intro/Lecture",
-    "3. semester/Sandsynlighedsregning og statistik(SS)/Wiki",
-    "3. semester/Sandsynlighedsregning og statistik(SS)/Reading",
-    "3. semester/Sandsynlighedsregning og statistik(SS)/Lecture",
-    "3. semester/Lecture",
+    "3. semester/CompSys/lectures/23-09-20_c_dynamic_memory/list/list",
+    "3. semester/CompSys/lectures/23-09-20_c_dynamic_memory/list/list.o",
+    "3. semester/CompSys/lectures/23-10-11_concurrency_II/lecture_code/futures.h",
+    "3. semester/CompSys/lectures/23-10-11_concurrency_II/lecture_code/fibs.c",
+    "3. semester/CompSys/lectures/23-10-11_concurrency_II/lecture_code/fibs-verytiny.input",
+    "3. semester/CompSys/lectures/23-10-11_concurrency_II/lecture_code/fibs-threadpool.c",
+    "3. semester/CompSys/lectures/23-10-11_concurrency_II/lecture_code/fibs-threadpool-spin.c",
+    "3. semester/CompSys/lectures/23-10-11_concurrency_II/lecture_code/fibs-mt.c",
+    "3. semester/CompSys/lectures/23-10-11_concurrency_II/lecture_code/fibs-medium.input",
+    "3. semester/CompSys/lectures/23-10-11_concurrency_II/lecture_code/fibs-many.input",
+    "3. semester/CompSys/lectures/23-10-11_concurrency_II/lecture_code/fibs-huge.input",
+    "3. semester/CompSys/lectures/23-10-11_concurrency_II/exercise_code/README.md",
+    "3. semester/CompSys/lectures/23-10-11_concurrency_II/exercises.md",
+    "3. semester/CompSys/lectures/23-10-11_concurrency_II/advanced_concurrency.md",
+    "3. semester/CompSys/lectures/23-10-09_concurrency_I/exercises.md",
+    "3. semester/CompSys/lectures/23-10-04_virtual_memory_os/exercises.md",
+    "3. semester/CompSys/lectures/23-10-02_virtual_memory_hardware/exercises.md",
+    "3. semester/CompSys/lectures/23-09-27_operating_systems/exercises.md",
+    "3. semester/CompSys/lectures/23-09-25_memory_heirarchy_and_caching/mountain_solution/mountain.png",
+    "3. semester/CompSys/lectures/23-09-25_memory_heirarchy_and_caching/matmul/README.md",
+    "3. semester/CompSys/lectures/23-09-25_memory_heirarchy_and_caching/exercises.md",
+    "3. semester/CompSys/lectures/23-09-20_c_dynamic_memory/exercises.md",
+    "3. semester/CompSys/lectures/23-09-18_c_pointers_and_memory/exercises.md",
+    "3. semester/CompSys/lectures/23-09-13_computer_arthimetic/exercises.md",
+    "3. semester/CompSys/lectures/23-09-13_computer_arthimetic/exercise_solutions.md",
+    "3. semester/CompSys/lectures/23-09-11_functions_and_text/exercises.md",
+    "3. semester/CompSys/lectures/23-09-06_assembly_and_machine_code/exercises.md",
+    "3. semester/CompSys/lectures/23-09-04_intro_and_c/exercises.md",
+    "3. semester/CompSys/Lecture/CompSys - Lecture ons - 38.md",
+    "Weekly notes/Uge 38 - 2023.md",
+    "Excalidraw/CompSys - Lecture man - 38 18-09-23 14.36.36.excalidraw.md",
+    "3. semester/CompSys/Lecture/CompSys - Lecture man - 36.md",
+    "3. semester/CompSys/compSys-e2023-pub-main/compSys-e2023-pub-main/courseinformation.md",
+    "Pasted Image 20230918143646_873.png",
+    "3. semester/CompSys/Lecture/CompSys - Lecture man - 38.md",
+    "Weekly notes/Uge 37 - 2023.md",
+    "3. semester/CompSys/Wiki/Talsystemer.md",
+    "Day Planners/13 - 09 - 23.md",
+    "Misc/åBilleder/Sine_and_cosine_animation.gif",
+    "Misc/åBilleder/Pasted image 20230905155035.png",
+    "Misc/åBilleder/Pasted image 20230905155022.png",
+    "Misc/åBilleder/Pasted image 20230905154946.png",
+    "Misc/åBilleder/Pasted image 20230905154920.png",
+    "Misc/åBilleder/Pasted image 20230905154825.png",
+    "Misc/åBilleder/Pasted image 20230905153522.png",
+    "Misc/åBilleder/Pasted image 20230905145612.png",
     "Untitled.canvas"
   ]
 }

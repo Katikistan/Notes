@@ -3,10 +3,7 @@
   "showLineNumber": true,
   "spellcheck": true,
   "vimMode": false,
-  "spellcheckLanguages": [
-    "da",
-    "en-GB"
-  ],
+  "spellcheckLanguages": null,
   "livePreview": true,
   "showFrontmatter": true,
   "alwaysUpdateLinks": true,
