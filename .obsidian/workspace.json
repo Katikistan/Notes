@@ -6,7 +6,7 @@
       {
         "id": "5a4ec561f37c39c0",
         "type": "tabs",
-        "dimension": 45.483870967741936,
+        "dimension": 45.48387096774193,
         "children": [
           {
             "id": "bbc516b2c8fdcb61",
@@ -37,7 +37,7 @@
       {
         "id": "cfd9746c0aae9a58",
         "type": "tabs",
-        "dimension": 54.516129032258064,
+        "dimension": 54.51612903225807,
         "children": [
           {
             "id": "7ae0effd06a817de",
@@ -207,8 +207,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 308.5,
-    "collapsed": true
+    "width": 308.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -225,7 +224,7 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "ae22f1a94fc52b61",
+  "active": "6f89f17690fe2dbd",
   "lastOpenFiles": [
     "3. semester/CompSys/lectures/23-09-20_c_dynamic_memory/list/list",
     "3. semester/CompSys/lectures/23-09-20_c_dynamic_memory/list/list.o",
