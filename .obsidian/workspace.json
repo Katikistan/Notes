@@ -4,48 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "5a4ec561f37c39c0",
+        "id": "3127e766839b8cdf",
         "type": "tabs",
-        "dimension": 45.48387096774193,
         "children": [
           {
-            "id": "bbc516b2c8fdcb61",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "3. semester/CompSys/Lecture/arrays.pdf"
-              }
-            }
-          },
-          {
-            "id": "ae22f1a94fc52b61",
+            "id": "4d4c1261fbf46089",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "3. semester/CompSys/Lecture/CompSys - Lecture ons - 38.md",
+                "file": "Untitled.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
-              }
-            }
-          }
-        ],
-        "currentTab": 1
-      },
-      {
-        "id": "cfd9746c0aae9a58",
-        "type": "tabs",
-        "dimension": 54.51612903225807,
-        "children": [
-          {
-            "id": "7ae0effd06a817de",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "3. semester/CompSys/Lecture/arrays.pdf"
               }
             }
           }
@@ -153,7 +124,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "3. semester/CompSys/Lecture/arrays.pdf",
+                "file": "Untitled.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -170,7 +141,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "3. semester/CompSys/Lecture/arrays.pdf",
+                "file": "Untitled.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -182,7 +153,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "3. semester/CompSys/Lecture/arrays.pdf"
+                "file": "Untitled.md"
               }
             }
           },
@@ -226,6 +197,8 @@
   },
   "active": "6f89f17690fe2dbd",
   "lastOpenFiles": [
+    "Pasted Image 20230918143646_873.png",
+    "3. semester/CompSys/Lecture/arrays.pdf",
     "3. semester/CompSys/lectures/23-09-20_c_dynamic_memory/list/list",
     "3. semester/CompSys/lectures/23-09-20_c_dynamic_memory/list/list.o",
     "3. semester/CompSys/lectures/23-10-11_concurrency_II/lecture_code/futures.h",
@@ -235,8 +208,6 @@
     "3. semester/CompSys/lectures/23-10-11_concurrency_II/lecture_code/fibs-threadpool-spin.c",
     "3. semester/CompSys/lectures/23-10-11_concurrency_II/lecture_code/fibs-mt.c",
     "3. semester/CompSys/lectures/23-10-11_concurrency_II/lecture_code/fibs-medium.input",
-    "3. semester/CompSys/lectures/23-10-11_concurrency_II/lecture_code/fibs-many.input",
-    "3. semester/CompSys/lectures/23-10-11_concurrency_II/lecture_code/fibs-huge.input",
     "3. semester/CompSys/lectures/23-10-11_concurrency_II/exercise_code/README.md",
     "3. semester/CompSys/lectures/23-10-11_concurrency_II/exercises.md",
     "3. semester/CompSys/lectures/23-10-11_concurrency_II/advanced_concurrency.md",
@@ -259,7 +230,6 @@
     "Excalidraw/CompSys - Lecture man - 38 18-09-23 14.36.36.excalidraw.md",
     "3. semester/CompSys/Lecture/CompSys - Lecture man - 36.md",
     "3. semester/CompSys/compSys-e2023-pub-main/compSys-e2023-pub-main/courseinformation.md",
-    "Pasted Image 20230918143646_873.png",
     "3. semester/CompSys/Lecture/CompSys - Lecture man - 38.md",
     "Weekly notes/Uge 37 - 2023.md",
     "3. semester/CompSys/Wiki/Talsystemer.md",
