@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "3127e766839b8cdf",
+        "id": "f02e5d3c226455c2",
         "type": "tabs",
         "children": [
           {
-            "id": "4d4c1261fbf46089",
+            "id": "5babe498f0dc0cb4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Untitled.md",
+                "file": "3. semester/CompSys/Lecture/CompSys - Lecture man - 39.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 315.504695892334,
-    "collapsed": true
+    "width": 315.504695892334
   },
   "right": {
     "id": "1bdbff370dc1606a",
@@ -124,7 +123,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Untitled.md",
+                "file": "3. semester/CompSys/Lecture/CompSys - Lecture man - 39.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -141,7 +140,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Untitled.md",
+                "file": "3. semester/CompSys/Lecture/CompSys - Lecture man - 39.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -153,7 +152,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Untitled.md"
+                "file": "3. semester/CompSys/Lecture/CompSys - Lecture man - 39.md"
               }
             }
           },
@@ -166,7 +165,7 @@
             }
           },
           {
-            "id": "6f89f17690fe2dbd",
+            "id": "0ca0183c23626661",
             "type": "leaf",
             "state": {
               "type": "mathpad-view",
@@ -195,8 +194,16 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "6f89f17690fe2dbd",
+  "active": "0ca0183c23626661",
   "lastOpenFiles": [
+    "3. semester/CompSys/lectures/23-09-25_memory_heirarchy_and_caching/exercises.md",
+    "3. semester/CompSys/Lecture/CompSys - Lecture man - 39.md",
+    "3. semester/CompSys/Lecture/CompSys - Lecture ons - 38.md",
+    "3. semester/CompSys/Lecture/CompSys - Lecture man - 37.md",
+    "3. semester/CompSys/Lecture/CompSys - Lecture man - 38.md",
+    "3. semester/CompSys/lectures/23-09-25_memory_heirarchy_and_caching/memory_hierarchy.pdf",
+    "Weekly notes/Uge 39 - 2023.md",
+    "Untitled.md",
     "Pasted Image 20230918143646_873.png",
     "3. semester/CompSys/Lecture/arrays.pdf",
     "3. semester/CompSys/lectures/23-09-20_c_dynamic_memory/list/list",
@@ -207,7 +214,6 @@
     "3. semester/CompSys/lectures/23-10-11_concurrency_II/lecture_code/fibs-threadpool.c",
     "3. semester/CompSys/lectures/23-10-11_concurrency_II/lecture_code/fibs-threadpool-spin.c",
     "3. semester/CompSys/lectures/23-10-11_concurrency_II/lecture_code/fibs-mt.c",
-    "3. semester/CompSys/lectures/23-10-11_concurrency_II/lecture_code/fibs-medium.input",
     "3. semester/CompSys/lectures/23-10-11_concurrency_II/exercise_code/README.md",
     "3. semester/CompSys/lectures/23-10-11_concurrency_II/exercises.md",
     "3. semester/CompSys/lectures/23-10-11_concurrency_II/advanced_concurrency.md",
@@ -217,7 +223,6 @@
     "3. semester/CompSys/lectures/23-09-27_operating_systems/exercises.md",
     "3. semester/CompSys/lectures/23-09-25_memory_heirarchy_and_caching/mountain_solution/mountain.png",
     "3. semester/CompSys/lectures/23-09-25_memory_heirarchy_and_caching/matmul/README.md",
-    "3. semester/CompSys/lectures/23-09-25_memory_heirarchy_and_caching/exercises.md",
     "3. semester/CompSys/lectures/23-09-20_c_dynamic_memory/exercises.md",
     "3. semester/CompSys/lectures/23-09-18_c_pointers_and_memory/exercises.md",
     "3. semester/CompSys/lectures/23-09-13_computer_arthimetic/exercises.md",
@@ -225,15 +230,10 @@
     "3. semester/CompSys/lectures/23-09-11_functions_and_text/exercises.md",
     "3. semester/CompSys/lectures/23-09-06_assembly_and_machine_code/exercises.md",
     "3. semester/CompSys/lectures/23-09-04_intro_and_c/exercises.md",
-    "3. semester/CompSys/Lecture/CompSys - Lecture ons - 38.md",
     "Weekly notes/Uge 38 - 2023.md",
     "Excalidraw/CompSys - Lecture man - 38 18-09-23 14.36.36.excalidraw.md",
     "3. semester/CompSys/Lecture/CompSys - Lecture man - 36.md",
     "3. semester/CompSys/compSys-e2023-pub-main/compSys-e2023-pub-main/courseinformation.md",
-    "3. semester/CompSys/Lecture/CompSys - Lecture man - 38.md",
-    "Weekly notes/Uge 37 - 2023.md",
-    "3. semester/CompSys/Wiki/Talsystemer.md",
-    "Day Planners/13 - 09 - 23.md",
     "Misc/åBilleder/Sine_and_cosine_animation.gif",
     "Misc/åBilleder/Pasted image 20230905155035.png",
     "Misc/åBilleder/Pasted image 20230905155022.png",
