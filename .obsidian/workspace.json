@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "3. semester/CompSys/Lecture/CompSys - Lecture man - 39.md",
+                "file": "Weekly notes/Uge 39 - 2023.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 315.504695892334
+    "width": 325.504695892334
   },
   "right": {
     "id": "1bdbff370dc1606a",
@@ -123,7 +123,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "3. semester/CompSys/Lecture/CompSys - Lecture man - 39.md",
+                "file": "Weekly notes/Uge 39 - 2023.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -140,7 +140,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "3. semester/CompSys/Lecture/CompSys - Lecture man - 39.md",
+                "file": "Weekly notes/Uge 39 - 2023.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -152,7 +152,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "3. semester/CompSys/Lecture/CompSys - Lecture man - 39.md"
+                "file": "Weekly notes/Uge 39 - 2023.md"
               }
             }
           },
@@ -196,8 +196,8 @@
   },
   "active": "0ca0183c23626661",
   "lastOpenFiles": [
-    "3. semester/CompSys/lectures/23-09-25_memory_heirarchy_and_caching/exercises.md",
     "3. semester/CompSys/Lecture/CompSys - Lecture man - 39.md",
+    "3. semester/CompSys/lectures/23-09-25_memory_heirarchy_and_caching/exercises.md",
     "3. semester/CompSys/Lecture/CompSys - Lecture ons - 38.md",
     "3. semester/CompSys/Lecture/CompSys - Lecture man - 37.md",
     "3. semester/CompSys/Lecture/CompSys - Lecture man - 38.md",
