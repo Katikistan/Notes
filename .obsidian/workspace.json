@@ -13,6 +13,19 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "3. semester/CompSys/Reading/CompSys - Reading for week 39.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "bcb1db35d811367d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "Weekly notes/Uge 39 - 2023.md",
                 "mode": "source",
                 "backlinks": true,
@@ -20,7 +33,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -196,13 +210,15 @@
   },
   "active": "0ca0183c23626661",
   "lastOpenFiles": [
-    "3. semester/CompSys/Lecture/CompSys - Lecture man - 39.md",
     "3. semester/CompSys/lectures/23-09-25_memory_heirarchy_and_caching/exercises.md",
+    "3. semester/CompSys/Lecture/CompSys - Lecture ons - 39.md",
+    "Weekly notes/Uge 39 - 2023.md",
+    "3. semester/CompSys/Reading/CompSys - Reading for week 39.md",
+    "3. semester/CompSys/Lecture/CompSys - Lecture man - 39.md",
     "3. semester/CompSys/Lecture/CompSys - Lecture ons - 38.md",
     "3. semester/CompSys/Lecture/CompSys - Lecture man - 37.md",
     "3. semester/CompSys/Lecture/CompSys - Lecture man - 38.md",
     "3. semester/CompSys/lectures/23-09-25_memory_heirarchy_and_caching/memory_hierarchy.pdf",
-    "Weekly notes/Uge 39 - 2023.md",
     "Untitled.md",
     "Pasted Image 20230918143646_873.png",
     "3. semester/CompSys/Lecture/arrays.pdf",
@@ -232,8 +248,6 @@
     "3. semester/CompSys/lectures/23-09-04_intro_and_c/exercises.md",
     "Weekly notes/Uge 38 - 2023.md",
     "Excalidraw/CompSys - Lecture man - 38 18-09-23 14.36.36.excalidraw.md",
-    "3. semester/CompSys/Lecture/CompSys - Lecture man - 36.md",
-    "3. semester/CompSys/compSys-e2023-pub-main/compSys-e2023-pub-main/courseinformation.md",
     "Misc/åBilleder/Sine_and_cosine_animation.gif",
     "Misc/åBilleder/Pasted image 20230905155035.png",
     "Misc/åBilleder/Pasted image 20230905155022.png",
