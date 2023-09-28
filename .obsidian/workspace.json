@@ -33,8 +33,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -92,8 +91,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 325.504695892334,
-    "collapsed": true
+    "width": 213.50469589233398
   },
   "right": {
     "id": "1bdbff370dc1606a",
@@ -192,7 +190,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 308.5
+    "width": 308.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -209,12 +208,12 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "0ca0183c23626661",
+  "active": "5babe498f0dc0cb4",
   "lastOpenFiles": [
-    "Weekly notes/Uge 39 - 2023.md",
-    "3. semester/CompSys/lectures/23-09-25_memory_heirarchy_and_caching/exercises.md",
     "3. semester/CompSys/Lecture/CompSys - Lecture ons - 39.md",
     "3. semester/CompSys/Reading/CompSys - Reading for week 39.md",
+    "Weekly notes/Uge 39 - 2023.md",
+    "3. semester/CompSys/lectures/23-09-25_memory_heirarchy_and_caching/exercises.md",
     "3. semester/CompSys/Lecture/CompSys - Lecture man - 39.md",
     "3. semester/CompSys/Lecture/CompSys - Lecture ons - 38.md",
     "3. semester/CompSys/Lecture/CompSys - Lecture man - 37.md",

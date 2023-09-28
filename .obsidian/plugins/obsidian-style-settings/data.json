@@ -34,5 +34,10 @@
   "minimal-style@@base@@light": "#FFFFFF",
   "minimal-style@@bg2@@light": "#FFFFFF",
   "minimal-style@@trim-cols": false,
-  "minimal-style@@bold-weight": 700
+  "minimal-style@@bold-weight": 700,
+  "minimal-style@@tabs-style": "tabs-modern",
+  "minimal-style@@header-height": "40px",
+  "minimal-style@@titlebar-text-weight": 600,
+  "minimal-advanced@@styled-scrollbars": true,
+  "minimal-advanced@@cursor": "default"
 }
