@@ -1,9 +1,9 @@
 {
-  "baseFontSize": 10,
-  "accentColor": "#a191f3",
+  "baseFontSize": 16,
+  "accentColor": "#b49ef0",
   "cssTheme": "Minimal",
   "theme": "obsidian",
-  "translucency": true,
+  "translucency": false,
   "showViewHeader": true,
   "nativeMenus": true
 }

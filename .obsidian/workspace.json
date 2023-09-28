@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "3. semester/CompSys/Reading/CompSys - Reading for week 39.md",
+                "file": "Day Planners/05-05-2023.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -26,14 +26,15 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "3. semester/CompSys/Lecture/CompSys - Lecture ons - 39.md",
+                "file": "Untitled.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -91,7 +92,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 213.50469589233398
+    "width": 278.5
   },
   "right": {
     "id": "1bdbff370dc1606a",
@@ -136,7 +137,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "3. semester/CompSys/Reading/CompSys - Reading for week 39.md",
+                "file": "Untitled.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -153,7 +154,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "3. semester/CompSys/Reading/CompSys - Reading for week 39.md",
+                "file": "Untitled.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -165,7 +166,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "3. semester/CompSys/Reading/CompSys - Reading for week 39.md"
+                "file": "Untitled.md"
               }
             }
           },
@@ -208,10 +209,15 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "5babe498f0dc0cb4",
+  "active": "bcb1db35d811367d",
   "lastOpenFiles": [
-    "3. semester/CompSys/Lecture/CompSys - Lecture ons - 39.md",
+    "2. semester/Linær algebra (LinAlgDat)/Lecture/LinAlgDat - Lecture man - 17.md",
+    "Day Planners/05-05-2023.md",
+    "Day Planners/01-05-2023.md",
+    "Day Planners/03-05-2023.md",
+    "Day Planners/02-05-2023.md",
     "3. semester/CompSys/Reading/CompSys - Reading for week 39.md",
+    "3. semester/CompSys/Lecture/CompSys - Lecture ons - 39.md",
     "Weekly notes/Uge 39 - 2023.md",
     "3. semester/CompSys/lectures/23-09-25_memory_heirarchy_and_caching/exercises.md",
     "3. semester/CompSys/Lecture/CompSys - Lecture man - 39.md",
@@ -243,11 +249,6 @@
     "3. semester/CompSys/lectures/23-09-18_c_pointers_and_memory/exercises.md",
     "3. semester/CompSys/lectures/23-09-13_computer_arthimetic/exercises.md",
     "3. semester/CompSys/lectures/23-09-13_computer_arthimetic/exercise_solutions.md",
-    "3. semester/CompSys/lectures/23-09-11_functions_and_text/exercises.md",
-    "3. semester/CompSys/lectures/23-09-06_assembly_and_machine_code/exercises.md",
-    "3. semester/CompSys/lectures/23-09-04_intro_and_c/exercises.md",
-    "Weekly notes/Uge 38 - 2023.md",
-    "Excalidraw/CompSys - Lecture man - 38 18-09-23 14.36.36.excalidraw.md",
     "Misc/åBilleder/Sine_and_cosine_animation.gif",
     "Misc/åBilleder/Pasted image 20230905155035.png",
     "Misc/åBilleder/Pasted image 20230905155022.png",
