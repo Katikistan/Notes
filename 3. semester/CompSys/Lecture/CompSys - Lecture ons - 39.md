@@ -12,8 +12,18 @@ Summary: ""
 ---
 ##### Weekly note
 [[Uge 39 - 2023]]
+# Caching
+![](https://i.imgur.com/ToA1IkB.png)
+![](https://i.imgur.com/pBdoGPx.png)
 
-# 
+![](https://i.imgur.com/9NfJL3U.png)
+![](https://i.imgur.com/Q0yxvhv.png)
+![](https://i.imgur.com/M93M6sm.png)
+offset should be 2^4
+## fully associative 
+![](https://i.imgur.com/X4ptQWB.png)
+
+# Operating system
 ![](https://i.imgur.com/58tJdop.png)
 
 ![](https://i.imgur.com/MsXMMQn.png)
