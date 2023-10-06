@@ -26,7 +26,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2. semester/Linær algebra (LinAlgDat)/Lecture/LinAlgDat - Lecture ons - 17.md",
+                "file": "Untitled.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -137,7 +137,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2. semester/Linær algebra (LinAlgDat)/Lecture/LinAlgDat - Lecture ons - 17.md",
+                "file": "Untitled.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -154,7 +154,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2. semester/Linær algebra (LinAlgDat)/Lecture/LinAlgDat - Lecture ons - 17.md",
+                "file": "Untitled.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -166,7 +166,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2. semester/Linær algebra (LinAlgDat)/Lecture/LinAlgDat - Lecture ons - 17.md"
+                "file": "Untitled.md"
               }
             }
           },
@@ -208,8 +208,9 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "0ca0183c23626661",
+  "active": "bcb1db35d811367d",
   "lastOpenFiles": [
+    "2. semester/Linær algebra (LinAlgDat)/Lecture/LinAlgDat - Lecture ons - 17.md",
     "Day Planners/05-05-2023.md",
     "2. semester/Linær algebra (LinAlgDat)/Lecture/LinAlgDat - Lecture man - 17.md",
     "Day Planners/01-05-2023.md",
@@ -247,7 +248,6 @@
     "3. semester/CompSys/lectures/23-09-20_c_dynamic_memory/exercises.md",
     "3. semester/CompSys/lectures/23-09-18_c_pointers_and_memory/exercises.md",
     "3. semester/CompSys/lectures/23-09-13_computer_arthimetic/exercises.md",
-    "3. semester/CompSys/lectures/23-09-13_computer_arthimetic/exercise_solutions.md",
     "Misc/åBilleder/Sine_and_cosine_animation.gif",
     "Misc/åBilleder/Pasted image 20230905155035.png",
     "Misc/åBilleder/Pasted image 20230905155022.png",
