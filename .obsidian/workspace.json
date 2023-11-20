@@ -11,8 +11,13 @@
             "id": "23de828ee21aef0c",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "TDC.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
             }
           }
         ]
@@ -93,8 +98,82 @@
                 "useHierarchy": true
               }
             }
+          },
+          {
+            "id": "03e89bfc5f3494df",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          },
+          {
+            "id": "7b78a2cddc1690b2",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "TDC.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "085168452821715b",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "TDC.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "6f5c99e8798fd84a",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency"
+              }
+            }
+          },
+          {
+            "id": "9c71f5e9f0549af1",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "TDC.md"
+              }
+            }
+          },
+          {
+            "id": "b2a4ff7928b7e9fb",
+            "type": "leaf",
+            "state": {
+              "type": "todo",
+              "state": {}
+            }
+          },
+          {
+            "id": "e613d9a5e7dd2cc6",
+            "type": "leaf",
+            "state": {
+              "type": "mathpad-view",
+              "state": {}
+            }
           }
-        ]
+        ],
+        "currentTab": 7
       }
     ],
     "direction": "horizontal",
@@ -117,6 +196,10 @@
   },
   "active": "23de828ee21aef0c",
   "lastOpenFiles": [
+    "LINUX.md",
+    "TDC.md",
+    "TDC ideer.md",
+    "Compsys a3.md",
     "Untitled.md",
     "Day Planners/05-05-2023.md",
     "2. semester/Linær algebra (LinAlgDat)/Lecture/LinAlgDat - Lecture ons - 17.md",
@@ -151,10 +234,6 @@
     "3. semester/CompSys/lectures/23-10-02_virtual_memory_hardware/exercises.md",
     "3. semester/CompSys/lectures/23-09-27_operating_systems/exercises.md",
     "3. semester/CompSys/lectures/23-09-25_memory_heirarchy_and_caching/mountain_solution/mountain.png",
-    "3. semester/CompSys/lectures/23-09-25_memory_heirarchy_and_caching/matmul/README.md",
-    "3. semester/CompSys/lectures/23-09-20_c_dynamic_memory/exercises.md",
-    "3. semester/CompSys/lectures/23-09-18_c_pointers_and_memory/exercises.md",
-    "3. semester/CompSys/lectures/23-09-13_computer_arthimetic/exercises.md",
     "Misc/åBilleder/Sine_and_cosine_animation.gif",
     "Misc/åBilleder/Pasted image 20230905155035.png",
     "Misc/åBilleder/Pasted image 20230905155022.png",
