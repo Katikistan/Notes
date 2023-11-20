@@ -4,7 +4,7 @@ let theweek;
 const task = "#task"
 const file_type = "weekly"
 if (file_type == "weekly") {
-    theweek = await tp.system.prompt("Which week?",tp.date.now("W",7))
+    theweek = await tp.system.prompt("Which week?",tp.date.now("W"))
 }
 -%>
 week: <% theweek %>
