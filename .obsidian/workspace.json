@@ -11,12 +11,9 @@
             "id": "23de828ee21aef0c",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "excalidraw",
               "state": {
-                "file": "TDC.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
+                "file": "Excalidraw/20-11-23 15.48.27.excalidraw.md"
               }
             }
           }
@@ -78,7 +75,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 278.5
+    "width": 200
   },
   "right": {
     "id": "1bdbff370dc1606a",
@@ -113,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TDC.md",
+                "file": "Excalidraw/20-11-23 15.48.27.excalidraw.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -130,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TDC.md",
+                "file": "Excalidraw/20-11-23 15.48.27.excalidraw.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -152,7 +149,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TDC.md"
+                "file": "Excalidraw/20-11-23 15.48.27.excalidraw.md"
               }
             }
           },
@@ -177,7 +174,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 308.5
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -196,8 +193,9 @@
   },
   "active": "e613d9a5e7dd2cc6",
   "lastOpenFiles": [
-    "LINUX.md",
     "TDC.md",
+    "Excalidraw/20-11-23 15.48.27.excalidraw.md",
+    "LINUX.md",
     "TDC ideer.md",
     "Compsys a3.md",
     "Untitled.md",
@@ -232,7 +230,6 @@
     "3. semester/CompSys/lectures/23-10-09_concurrency_I/exercises.md",
     "3. semester/CompSys/lectures/23-10-04_virtual_memory_os/exercises.md",
     "3. semester/CompSys/lectures/23-10-02_virtual_memory_hardware/exercises.md",
-    "3. semester/CompSys/lectures/23-09-27_operating_systems/exercises.md",
     "3. semester/CompSys/lectures/23-09-25_memory_heirarchy_and_caching/mountain_solution/mountain.png",
     "Misc/åBilleder/Sine_and_cosine_animation.gif",
     "Misc/åBilleder/Pasted image 20230905155035.png",
