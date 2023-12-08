@@ -1,0 +1,26 @@
+---
+title: "SS: Fredag d 28"
+output: html_document
+date: "2023-11-28"
+---
+# SS 5
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## ss 5: 1
+Antag at X er binomialfordelt med antalsparameter 33 og sandsynlighedsparameter
+0.18, altså X ∼ Bin(33, 0.18). Bestem sandsynlighederne P (X = 8) og P (X ≤ 6) ved
+at bruge R-funktionerne dbinom hhv. pbinom
+```{r}
+dbinom(8,33,0.18)
+pbinom(6,33,0.18)
+```
+
+## ss 5: 2
+```{r}
+dhyper(3,17,10,5)
+phyper(1,17,10,5,lower.tail = FALSE)
+```
+
+# SS 7: 
