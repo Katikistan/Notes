@@ -4,29 +4,32 @@
     "type": "split",
     "children": [
       {
-        "id": "96f67d6ae4f84cb7",
+        "id": "3c76d503112247d9",
         "type": "tabs",
         "children": [
           {
-            "id": "23de828ee21aef0c",
+            "id": "53b046b5e9497ae5",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture Tue - 9.md",
-                "mode": "preview",
+                "file": "3. semester/CompSys/Lecture/CompSys - Lecture ons - 1.md",
+                "mode": "source",
                 "backlinks": true,
                 "source": false
               }
             }
           },
           {
-            "id": "7ce9fc6fd077eedf",
+            "id": "b45fb00780d6f7f0",
             "type": "leaf",
             "state": {
-              "type": "release-notes",
+              "type": "markdown",
               "state": {
-                "currentVersion": "1.5.3"
+                "file": "CompSys Eksamens oplæsning.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
               }
             }
           }
@@ -124,7 +127,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture Tue - 9.md",
+                "file": "CompSys Eksamens oplæsning.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -141,7 +144,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture Tue - 9.md",
+                "file": "CompSys Eksamens oplæsning.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -165,7 +168,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture Tue - 9.md"
+                "file": "CompSys Eksamens oplæsning.md"
               }
             }
           },
@@ -190,7 +193,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -207,8 +211,23 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "e613d9a5e7dd2cc6",
+  "active": "b45fb00780d6f7f0",
   "lastOpenFiles": [
+    "3. semester/CompSys/Lecture/CompSys - Lecture ons - 1.md",
+    "CompSys Eksamens oplæsning.md",
+    "Pasted image 20240103105029.png",
+    "Pasted image 20240103104601.png",
+    "Pasted image 20240103104459.png",
+    "Pasted image 20240103104211.png",
+    "Pasted image 20240103104027.png",
+    "Pasted image 20240103103903.png",
+    "Pasted image 20240103103458.png",
+    "Pasted image 20240103102833.png",
+    "Pasted image 20240103102508.png",
+    "Pasted image 20240103102326.png",
+    "3. semester/CompSys/Lecture/CompSys - Lecture ons - 43.md",
+    "Weekly notes/Uge 1 - 2024.md",
+    "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture Tue - 9.md",
     "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture Tue - 7.md",
     "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture Tue - 6.md",
     "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture Mon - 11.md",
@@ -232,13 +251,7 @@
     "2. semester/Linær algebra (LinAlgDat)/Lecture/LinAlgDat - Lecture ons - 17.md",
     "2. semester/Linær algebra (LinAlgDat)/Lecture/LinAlgDat - Lecture man - 17.md",
     "Day Planners/01-05-2023.md",
-    "Day Planners/03-05-2023.md",
-    "Day Planners/02-05-2023.md",
-    "3. semester/CompSys/Reading/CompSys - Reading for week 39.md",
-    "3. semester/CompSys/Lecture/CompSys - Lecture ons - 39.md",
-    "Weekly notes/Uge 39 - 2023.md",
     "3. semester/CompSys/lectures/23-09-25_memory_heirarchy_and_caching/memory_hierarchy.pdf",
-    "Pasted Image 20230918143646_873.png",
     "3. semester/CompSys/Lecture/arrays.pdf",
     "3. semester/CompSys/lectures/23-09-20_c_dynamic_memory/list/list",
     "3. semester/CompSys/lectures/23-09-20_c_dynamic_memory/list/list.o",
@@ -246,15 +259,6 @@
     "3. semester/CompSys/lectures/23-10-11_concurrency_II/lecture_code/fibs.c",
     "3. semester/CompSys/lectures/23-10-11_concurrency_II/lecture_code/fibs-verytiny.input",
     "3. semester/CompSys/lectures/23-10-11_concurrency_II/lecture_code/fibs-threadpool.c",
-    "3. semester/CompSys/lectures/23-09-25_memory_heirarchy_and_caching/mountain_solution/mountain.png",
-    "Misc/åBilleder/Sine_and_cosine_animation.gif",
-    "Misc/åBilleder/Pasted image 20230905155035.png",
-    "Misc/åBilleder/Pasted image 20230905155022.png",
-    "Misc/åBilleder/Pasted image 20230905154946.png",
-    "Misc/åBilleder/Pasted image 20230905154920.png",
-    "Misc/åBilleder/Pasted image 20230905154825.png",
-    "Misc/åBilleder/Pasted image 20230905153522.png",
-    "Misc/åBilleder/Pasted image 20230905145612.png",
     "Untitled.canvas"
   ]
 }
