@@ -13,14 +13,25 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TDC.md",
+                "file": "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture Tue - 9.md",
                 "mode": "preview",
                 "backlinks": true,
                 "source": false
               }
             }
+          },
+          {
+            "id": "7ce9fc6fd077eedf",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.5.3"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -113,7 +124,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TDC.md",
+                "file": "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture Tue - 9.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -130,7 +141,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TDC.md",
+                "file": "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture Tue - 9.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -142,7 +153,9 @@
             "state": {
               "type": "all-properties",
               "state": {
-                "sortOrder": "frequency"
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
               }
             }
           },
@@ -152,7 +165,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TDC.md"
+                "file": "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture Tue - 9.md"
               }
             }
           },
@@ -196,11 +209,20 @@
   },
   "active": "e613d9a5e7dd2cc6",
   "lastOpenFiles": [
+    "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture Tue - 7.md",
+    "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture Tue - 6.md",
+    "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture Mon - 11.md",
+    "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture Mon - 7.md",
+    "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture Mon - 9.md",
+    "2. semester/Softwareudvikling (SU)/Reading/SU - Reading for week 6.md",
+    "2. semester/Softwareudvikling (SU)/code quality.md",
+    "2. semester/Softwareudvikling (SU)/SU - Lecture man - 12.md",
+    "2. semester/Softwareudvikling (SU)/SU - Lecture man - 18.md",
+    "TDC.md",
     "SS uge 2 tirsdag øvelser.Rmd",
     "SS-uge-2-tirsdag-øvelser.html",
     "SS.md",
     "MINE ØJNE!!!.md",
-    "TDC.md",
     "3. semester/Sandsynlighedsregning og statistik(SS)/Lecture/SS - Lecture fre - 47.md",
     "Excalidraw/20-11-23 15.48.27.excalidraw.md",
     "LINUX.md",
@@ -215,11 +237,6 @@
     "3. semester/CompSys/Reading/CompSys - Reading for week 39.md",
     "3. semester/CompSys/Lecture/CompSys - Lecture ons - 39.md",
     "Weekly notes/Uge 39 - 2023.md",
-    "3. semester/CompSys/lectures/23-09-25_memory_heirarchy_and_caching/exercises.md",
-    "3. semester/CompSys/Lecture/CompSys - Lecture man - 39.md",
-    "3. semester/CompSys/Lecture/CompSys - Lecture ons - 38.md",
-    "3. semester/CompSys/Lecture/CompSys - Lecture man - 37.md",
-    "3. semester/CompSys/Lecture/CompSys - Lecture man - 38.md",
     "3. semester/CompSys/lectures/23-09-25_memory_heirarchy_and_caching/memory_hierarchy.pdf",
     "Pasted Image 20230918143646_873.png",
     "3. semester/CompSys/Lecture/arrays.pdf",
@@ -229,10 +246,6 @@
     "3. semester/CompSys/lectures/23-10-11_concurrency_II/lecture_code/fibs.c",
     "3. semester/CompSys/lectures/23-10-11_concurrency_II/lecture_code/fibs-verytiny.input",
     "3. semester/CompSys/lectures/23-10-11_concurrency_II/lecture_code/fibs-threadpool.c",
-    "3. semester/CompSys/lectures/23-10-11_concurrency_II/lecture_code/fibs-threadpool-spin.c",
-    "3. semester/CompSys/lectures/23-10-11_concurrency_II/exercise_code/README.md",
-    "3. semester/CompSys/lectures/23-10-11_concurrency_II/exercises.md",
-    "3. semester/CompSys/lectures/23-10-11_concurrency_II/advanced_concurrency.md",
     "3. semester/CompSys/lectures/23-09-25_memory_heirarchy_and_caching/mountain_solution/mountain.png",
     "Misc/åBilleder/Sine_and_cosine_animation.gif",
     "Misc/åBilleder/Pasted image 20230905155035.png",
