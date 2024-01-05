@@ -193,8 +193,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -211,7 +210,7 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "b45fb00780d6f7f0",
+  "active": "e613d9a5e7dd2cc6",
   "lastOpenFiles": [
     "3. semester/CompSys/Lecture/CompSys - Lecture ons - 1.md",
     "CompSys Eksamens oplæsning.md",
