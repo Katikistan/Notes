@@ -32,9 +32,22 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "ae5f476dff771fc6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Untitled.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -127,7 +140,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CompSys Eksamens oplæsning.md",
+                "file": "Untitled.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -144,7 +157,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CompSys Eksamens oplæsning.md",
+                "file": "Untitled.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -168,7 +181,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CompSys Eksamens oplæsning.md"
+                "file": "Untitled.md"
               }
             }
           },
@@ -212,8 +225,9 @@
   },
   "active": "e613d9a5e7dd2cc6",
   "lastOpenFiles": [
-    "3. semester/CompSys/Lecture/CompSys - Lecture ons - 1.md",
     "CompSys Eksamens oplæsning.md",
+    "Untitled.md",
+    "3. semester/CompSys/Lecture/CompSys - Lecture ons - 1.md",
     "Pasted image 20240103105029.png",
     "Pasted image 20240103104601.png",
     "Pasted image 20240103104459.png",
@@ -249,7 +263,6 @@
     "Day Planners/05-05-2023.md",
     "2. semester/Linær algebra (LinAlgDat)/Lecture/LinAlgDat - Lecture ons - 17.md",
     "2. semester/Linær algebra (LinAlgDat)/Lecture/LinAlgDat - Lecture man - 17.md",
-    "Day Planners/01-05-2023.md",
     "3. semester/CompSys/lectures/23-09-25_memory_heirarchy_and_caching/memory_hierarchy.pdf",
     "3. semester/CompSys/Lecture/arrays.pdf",
     "3. semester/CompSys/lectures/23-09-20_c_dynamic_memory/list/list",
