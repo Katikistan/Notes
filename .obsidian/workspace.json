@@ -52,7 +52,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DR.md",
+                "file": "Weekly notes/Uge 40 - 2023.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -118,7 +118,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 383.5
   },
   "right": {
     "id": "1bdbff370dc1606a",
@@ -153,7 +153,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DR.md",
+                "file": "Weekly notes/Uge 40 - 2023.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -170,7 +170,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DR.md",
+                "file": "Weekly notes/Uge 40 - 2023.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -194,7 +194,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DR.md"
+                "file": "Weekly notes/Uge 40 - 2023.md"
               }
             }
           },
@@ -238,8 +238,16 @@
   },
   "active": "e613d9a5e7dd2cc6",
   "lastOpenFiles": [
-    "Weekly notes/Uge 40 - 2023.md",
+    "3. semester/CompSys/Lecture/CompSys - Lecture ons - 40.md",
+    "3. semester/CompSys/Lecture/CompSys - Lecture ons - 38.md",
+    "3. semester/CompSys/Lecture/CompSys - Lecture man - 47.md",
+    "3. semester/CompSys/Reading/CompSys - Reading for week 39.md",
+    "3. semester/CompSys/Wiki/Floats.md",
+    "3. semester/CompSys/Wiki/Computer arkitektur.md",
+    "3. semester/CompSys/Wiki/Computer architecture.md",
+    "3. semester/CompSys/Wiki/Assembly.md",
     "DR.md",
+    "Weekly notes/Uge 40 - 2023.md",
     "Weekly notes/Uge 44 - 2023.md",
     "Weekly notes/Uge 43 - 2023.md",
     "Weekly notes/Uge 39 - 2023.md",
@@ -250,13 +258,8 @@
     "Weekly notes/Uge 11 - 2023.md",
     "Weekly notes/Uge 10 - 2023.md",
     "3. semester/CompSys/Wiki/Talsystemer.md",
-    "3. semester/CompSys/Wiki/Floats.md",
     "3. semester/CompSys/Wiki/Networking.md",
-    "3. semester/CompSys/Wiki/Computer arkitektur.md",
-    "3. semester/CompSys/Wiki/Computer architecture.md",
     "3. semester/CompSys/Wiki/C basics.md",
-    "3. semester/CompSys/Wiki/Assembly.md",
-    "3. semester/CompSys/Reading/CompSys - Reading for week 39.md",
     "3. semester/CompSys/Reading/CompSys - Reading for week 36.md",
     "Untitled.md",
     "CompSys Eksamens oplæsning.md",
@@ -271,9 +274,6 @@
     "Pasted image 20240103102833.png",
     "Pasted image 20240103102508.png",
     "Pasted image 20240103102326.png",
-    "3. semester/CompSys/Lecture/CompSys - Lecture ons - 43.md",
-    "Weekly notes/Uge 1 - 2024.md",
-    "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture Tue - 9.md",
     "SS uge 2 tirsdag øvelser.Rmd",
     "SS-uge-2-tirsdag-øvelser.html",
     "3. semester/CompSys/lectures/23-09-25_memory_heirarchy_and_caching/memory_hierarchy.pdf",
