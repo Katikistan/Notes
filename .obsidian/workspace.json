@@ -4,37 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "3c76d503112247d9",
+        "id": "091b9c89a44449ac",
         "type": "tabs",
         "children": [
           {
-            "id": "53b046b5e9497ae5",
+            "id": "aa3f4217141a6628",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "excalidraw",
               "state": {
-                "file": "3. semester/CompSys/Lecture/CompSys - Lecture ons - 1.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "a45f2a37baeb5302",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "CompSys - Recap.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
+                "file": "Excalidraw/CompSys - Recap 12-01-24 23.09.59.excalidraw.md"
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -127,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "3. semester/CompSys/Lecture/CompSys - Lecture ons - 1.md",
+                "file": "Excalidraw/CompSys - Recap 12-01-24 23.09.59.excalidraw.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -144,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "3. semester/CompSys/Lecture/CompSys - Lecture ons - 1.md",
+                "file": "Excalidraw/CompSys - Recap 12-01-24 23.09.59.excalidraw.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -168,7 +151,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "3. semester/CompSys/Lecture/CompSys - Lecture ons - 1.md"
+                "file": "Excalidraw/CompSys - Recap 12-01-24 23.09.59.excalidraw.md"
               }
             }
           },
@@ -185,6 +168,14 @@
             "type": "leaf",
             "state": {
               "type": "mathpad-view",
+              "state": {}
+            }
+          },
+          {
+            "id": "9aed115236b9fe9d",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
               "state": {}
             }
           }
@@ -210,12 +201,22 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "e613d9a5e7dd2cc6",
+  "active": "aa3f4217141a6628",
   "lastOpenFiles": [
-    "Excalidraw/CompSys - Recap 10-01-24 14.20.43.excalidraw.md",
+    "Pasted Image 20240112231049_500.png",
     "CompSys - Recap.md",
-    "Excalidraw/CompSys - Recap 10-01-24 13.26.31.excalidraw.md",
+    "Excalidraw/CompSys - Recap 12-01-24 22.44.01.excalidraw.md",
+    "Excalidraw/CompSys - Recap 12-01-24 23.09.59.excalidraw.md",
+    "Excalidraw/CompSys - Recap 12-01-24 22.25.26.excalidraw.md",
+    "Pasted Image 20240112224431_236.png",
+    "Pasted Image 20240112224411_211.png",
+    "Pasted Image 20240112222536_113.png",
+    "Pasted image 20240112222522.png",
+    "Excalidraw/CompSys - Recap 12-01-24 21.28.04.excalidraw.md",
     "3. semester/CompSys/Lecture/CompSys - Lecture ons - 1.md",
+    "Pasted Image 20240112212814_842.png",
+    "Excalidraw/CompSys - Recap 10-01-24 14.20.43.excalidraw.md",
+    "Excalidraw/CompSys - Recap 10-01-24 13.26.31.excalidraw.md",
     "Pasted image 20240110132054.png",
     "Untitled 1.md",
     "CompSys Eksamens oplæsning.md",
@@ -234,20 +235,10 @@
     "Weekly notes/Uge 39 - 2023.md",
     "Weekly notes/Uge 38 - 2023.md",
     "Weekly notes/Uge 37 - 2023.md",
-    "Weekly notes/Uge 36 - 2023.md",
-    "Weekly notes/Uge 21 - 2023.md",
-    "Weekly notes/Uge 11 - 2023.md",
-    "Weekly notes/Uge 10 - 2023.md",
-    "3. semester/CompSys/Wiki/Talsystemer.md",
     "Pasted image 20240103105029.png",
     "Pasted image 20240103104601.png",
     "Pasted image 20240103104459.png",
     "Pasted image 20240103104211.png",
-    "Pasted image 20240103104027.png",
-    "Pasted image 20240103103903.png",
-    "Pasted image 20240103103458.png",
-    "Pasted image 20240103102833.png",
-    "Pasted image 20240103102508.png",
     "SS uge 2 tirsdag øvelser.Rmd",
     "SS-uge-2-tirsdag-øvelser.html",
     "3. semester/CompSys/lectures/23-09-25_memory_heirarchy_and_caching/memory_hierarchy.pdf",
