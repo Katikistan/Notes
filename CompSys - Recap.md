@@ -29,4 +29,14 @@ tegn en graf, forældre går ikke ind i if børn gør.
 ![[Pasted image 20240110132054.png]]
 ![[CompSys - Recap 10-01-24 14.20.43.excalidraw]]
 ## Heap
-WTF!!
+før du starter er du nødt til at huske et par ting
+en block har en header brik, en footer brik og n payload brikker. 
+
+- hoppen starter nedefra og op. man kigger altså på tabellen nedfra og op. 
+- hver brik i tabellen er 4 stor
+- størrelsen af en block er inklusivt header og footer som hver er 4 så 8 stor i alt. 
+- hver gang en block slutter starter en ny så du ved at når du ser footeren så er næste brik header til næste block
+- header og footer indeholder samme information omkring størrelse af blokken og om blokken selv er allokeret og blokken før er allokeret. det er typisk speciferes  
+
+**Skridt til at løse denne type opgave:**
+1. identificer den første block dvs find ud af hvor 
