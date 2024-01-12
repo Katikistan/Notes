@@ -21,38 +21,12 @@
             }
           },
           {
-            "id": "b45fb00780d6f7f0",
+            "id": "a45f2a37baeb5302",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CompSys Eksamens oplæsning.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "ae5f476dff771fc6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Weekly notes/Uge 40 - 2023.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "e1dfaee13baaafa5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Weekly notes/Uge 40 - 2023.md",
+                "file": "CompSys - Recap.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -60,7 +34,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -118,7 +92,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 383.5
+    "width": 200
   },
   "right": {
     "id": "1bdbff370dc1606a",
@@ -153,7 +127,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Weekly notes/Uge 40 - 2023.md",
+                "file": "CompSys - Recap.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -170,7 +144,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Weekly notes/Uge 40 - 2023.md",
+                "file": "CompSys - Recap.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -194,7 +168,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Weekly notes/Uge 40 - 2023.md"
+                "file": "CompSys - Recap.md"
               }
             }
           },
@@ -238,6 +212,14 @@
   },
   "active": "e613d9a5e7dd2cc6",
   "lastOpenFiles": [
+    "Excalidraw/CompSys - Recap 10-01-24 14.20.43.excalidraw.md",
+    "CompSys - Recap.md",
+    "Excalidraw/CompSys - Recap 10-01-24 13.26.31.excalidraw.md",
+    "3. semester/CompSys/Lecture/CompSys - Lecture ons - 1.md",
+    "Pasted image 20240110132054.png",
+    "Untitled 1.md",
+    "CompSys Eksamens oplæsning.md",
+    "Weekly notes/Uge 40 - 2023.md",
     "3. semester/CompSys/Lecture/CompSys - Lecture ons - 40.md",
     "3. semester/CompSys/Lecture/CompSys - Lecture ons - 38.md",
     "3. semester/CompSys/Lecture/CompSys - Lecture man - 47.md",
@@ -247,7 +229,6 @@
     "3. semester/CompSys/Wiki/Computer architecture.md",
     "3. semester/CompSys/Wiki/Assembly.md",
     "DR.md",
-    "Weekly notes/Uge 40 - 2023.md",
     "Weekly notes/Uge 44 - 2023.md",
     "Weekly notes/Uge 43 - 2023.md",
     "Weekly notes/Uge 39 - 2023.md",
@@ -258,12 +239,6 @@
     "Weekly notes/Uge 11 - 2023.md",
     "Weekly notes/Uge 10 - 2023.md",
     "3. semester/CompSys/Wiki/Talsystemer.md",
-    "3. semester/CompSys/Wiki/Networking.md",
-    "3. semester/CompSys/Wiki/C basics.md",
-    "3. semester/CompSys/Reading/CompSys - Reading for week 36.md",
-    "Untitled.md",
-    "CompSys Eksamens oplæsning.md",
-    "3. semester/CompSys/Lecture/CompSys - Lecture ons - 1.md",
     "Pasted image 20240103105029.png",
     "Pasted image 20240103104601.png",
     "Pasted image 20240103104459.png",
@@ -273,7 +248,6 @@
     "Pasted image 20240103103458.png",
     "Pasted image 20240103102833.png",
     "Pasted image 20240103102508.png",
-    "Pasted image 20240103102326.png",
     "SS uge 2 tirsdag øvelser.Rmd",
     "SS-uge-2-tirsdag-øvelser.html",
     "3. semester/CompSys/lectures/23-09-25_memory_heirarchy_and_caching/memory_hierarchy.pdf",
