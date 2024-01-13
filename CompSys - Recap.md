@@ -68,11 +68,23 @@ which means the size of the block is 32, which means the block should have 8 row
 
 When a block ends 
 **Skridt til at løse denne type opgave:**
-1. Find the first block by finding a header or footer (remember to look bottom up). tip 
-2.  check if the block header and footer are correct: is the previous block allocated (check bit 1: this should then be 1)? Is the size correct: should be mutiple of 8 and take up the right ammount of rows
+1. Find the first block by finding a header or footer (remember to look bottom up). 
+2.  check ii is a block header and footer: is the previous block allocated (check bit 1: this should then be 1)? Is the size correct: should be mutiple of 8 and take up the right ammount of rows.
 3. Find all the other blocks, remmeber: blocks are directly next to each other. so after first blocks footer comes second blocks header and so on. Therefore use the header of each block to find the size of the block, mark the rows of that block and continue onto next block. When you get to the top of the heap rememeber it continues of page, therefore you not be able to find the footer of the last block. 
 ![[CompSys - Recap 12-01-24 22.44.01.excalidraw]]
 4. after you have mapped out the different blocks you can begin to perform some operations and fill out how these will affect the rows of the heap, you are supposed to fill out the new headers and footers of the heap. use the adress to find out which block is being affected by the operation. Using malloc, free or realloc will affect the whole block an the headers of the adjacent blocks. 
 
-**Immediate coallesing:** 2 adjacent free blocks will be merged into 1 free block that means if block 1 (bottom up) and block 2 both become free (maybe block 1 is already free and block 2 becomes free or otherway) block 1's new footer will be where block 2's footer was. and block 1's footer and block 2's header will stay the same and become part of the block payload, meaning they are junk that will be overwritten when the block is allocated. The new Header  (same location as block's 1 before) and footer (same location as block 2's footer before) must change it's value to account for the new size of the block and the fact that the block is free and take into account whether the previous block is free. 
+**Immediate coallesing:** 2 adjacent blocks will be merged into 1 block when one is free and the other either also becomes free or is allocated and overlap into the free block, that means if block 1 (bottom up) and block 2 both become free (maybe block 1 is already free and block 2 becomes free or otherway) block 1's new footer will be where block 2's footer was. and block 1's footer and block 2's header will stay the same and become part of the block payload, meaning they are junk that will be overwritten when the block is allocated. The new Header  (same location as block's 1 before) and footer (same location as block 2's footer before) must change it's value to account for the new size of the block and the fact that the block is free and take into account whether the previous block is free. 
 ![[CompSys - Recap 12-01-24 23.09.59.excalidraw]]
+Sometimes things done line up so nicely, as metioned all blocks must be multiples of 8, what if we want to malloc or realloc 12 bytes: then we have to round up the nearest multiple of 8 which is 16, we wanted to alloc 12, but end up allocing 16 instead, we end up using 16+8=24 bytes in the heap because we also need 4+4 bytes for the header and footer. this is what is known as internal fragmentation. 
+
+example from exam 20/21
+we want have freed some memory (blue) and want to realloc 12 bytes (red)
+![[Pasted image 20240112234806.png]]
+We have to take 16(realloc) + 4(header) + 4(footer) = 24 bytes, which is 6 rows (each row has size 4). the black is the remaning free space, but since there is a block above the free space, it would mean we would get a block with size 2 * 4 = 8, however the exam test specifies that "we must never create blocks with 0 payload", this means we must not have a block thats only a header and footer, therefore we also need to take the remaing free space when realloc
+![[Pasted image 20240112235041.png]]Therefore:
+![[Pasted image 20240112235706.png]]
+Therefore we get a block that is 16 + 16 big, we remember that the old footer (0x13) and header (0x12) dont change since the 2 blocks merge into 1 due to immediate coalesing
+![[Pasted image 20240112235808.png]]
+
+###  Example walktrough

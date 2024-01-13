@@ -11,9 +11,12 @@
             "id": "aa3f4217141a6628",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "markdown",
               "state": {
-                "file": "Excalidraw/CompSys - Recap 12-01-24 23.09.59.excalidraw.md"
+                "file": "CompSys - Recap.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
               }
             }
           }
@@ -110,7 +113,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Excalidraw/CompSys - Recap 12-01-24 23.09.59.excalidraw.md",
+                "file": "CompSys - Recap.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +130,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Excalidraw/CompSys - Recap 12-01-24 23.09.59.excalidraw.md",
+                "file": "CompSys - Recap.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -151,7 +154,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Excalidraw/CompSys - Recap 12-01-24 23.09.59.excalidraw.md"
+                "file": "CompSys - Recap.md"
               }
             }
           },
@@ -201,12 +204,17 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "aa3f4217141a6628",
+  "active": "e613d9a5e7dd2cc6",
   "lastOpenFiles": [
+    "Pasted image 20240112235808.png",
+    "Pasted image 20240112235706.png",
+    "Pasted image 20240112235041.png",
+    "Pasted image 20240112235036.png",
+    "Pasted image 20240112234806.png",
+    "Excalidraw/CompSys - Recap 12-01-24 23.09.59.excalidraw.md",
     "Pasted Image 20240112231049_500.png",
     "CompSys - Recap.md",
     "Excalidraw/CompSys - Recap 12-01-24 22.44.01.excalidraw.md",
-    "Excalidraw/CompSys - Recap 12-01-24 23.09.59.excalidraw.md",
     "Excalidraw/CompSys - Recap 12-01-24 22.25.26.excalidraw.md",
     "Pasted Image 20240112224431_236.png",
     "Pasted Image 20240112224411_211.png",
@@ -217,7 +225,6 @@
     "Pasted Image 20240112212814_842.png",
     "Excalidraw/CompSys - Recap 10-01-24 14.20.43.excalidraw.md",
     "Excalidraw/CompSys - Recap 10-01-24 13.26.31.excalidraw.md",
-    "Pasted image 20240110132054.png",
     "Untitled 1.md",
     "CompSys Eksamens oplæsning.md",
     "Weekly notes/Uge 40 - 2023.md",
@@ -235,10 +242,6 @@
     "Weekly notes/Uge 39 - 2023.md",
     "Weekly notes/Uge 38 - 2023.md",
     "Weekly notes/Uge 37 - 2023.md",
-    "Pasted image 20240103105029.png",
-    "Pasted image 20240103104601.png",
-    "Pasted image 20240103104459.png",
-    "Pasted image 20240103104211.png",
     "SS uge 2 tirsdag øvelser.Rmd",
     "SS-uge-2-tirsdag-øvelser.html",
     "3. semester/CompSys/lectures/23-09-25_memory_heirarchy_and_caching/memory_hierarchy.pdf",
