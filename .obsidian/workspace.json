@@ -44,6 +44,22 @@
             }
           }
         ]
+      },
+      {
+        "id": "8e5bad5472c3c44d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ec35c06076a1f79c",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/DR 13-01-24 16.05.26.excalidraw.md"
+              }
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -136,7 +152,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DR.md",
+                "file": "Excalidraw/DR 13-01-24 16.05.26.excalidraw.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -153,7 +169,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DR.md",
+                "file": "Excalidraw/DR 13-01-24 16.05.26.excalidraw.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -177,7 +193,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DR.md"
+                "file": "Excalidraw/DR 13-01-24 16.05.26.excalidraw.md"
               }
             }
           },
@@ -229,8 +245,10 @@
   },
   "active": "e613d9a5e7dd2cc6",
   "lastOpenFiles": [
-    "Heap.md",
+    "Pasted Image 20240113160536_928.png",
     "DR.md",
+    "Excalidraw/DR 13-01-24 16.05.26.excalidraw.md",
+    "Heap.md",
     "Excalidraw/CompSys - Recap 12-01-24 22.44.01.excalidraw.md",
     "CompSys - Recap.md",
     "SS uge 2 tirsdag øvelser.Rmd",
@@ -264,7 +282,6 @@
     "3. semester/CompSys/Wiki/Assembly.md",
     "Weekly notes/Uge 44 - 2023.md",
     "Weekly notes/Uge 43 - 2023.md",
-    "Weekly notes/Uge 39 - 2023.md",
     "SS-uge-2-tirsdag-øvelser.html",
     "3. semester/CompSys/lectures/23-09-25_memory_heirarchy_and_caching/memory_hierarchy.pdf",
     "3. semester/CompSys/Lecture/arrays.pdf",

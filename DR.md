@@ -28,7 +28,7 @@
 - **immediate coalescing
 - When freeing a block, check for adjacent free blocks immediately.
 - If neighboring blocks are free, merge them into a single larger block.
-- Ensure that the new block's header and footer are adjusted for the combined size, if 2 blocks have size 16, new size will be 32. alternatively count the amount of rows in each block (each row is 4 in size).
+- Ensure that the new block's header and footer are adjusted for the combined size, if 2 blocks have size 16, new size will be 32. alternatively count the amount of rows in each block (each row is 4 in size), this not always possible(some rows of a block may be offscreen) so its better to look at header and footer of each block, determine their sizes, then add them up. See example below
 - Retain the headers and footers of the merged blocks in the payload area. That means the headers and footers in the middle of the block stay unchanged
 - Update the adjacent block's (the block above)  header and footer bits to reflect the merged block's status.
 - Verify that the merged block adheres to any specified constraints, such as not creating blocks with zero payload.
@@ -60,6 +60,7 @@
 - Understand that rounding up to the nearest multiple of 8 can cause internal fragmentation.
 - Example: If reallocating 12 bytes, you may end up with a block of 16 bytes, causing 4 bytes of internal fragmentation.
 **6. Example:**
+*Exam 20/21 *
 - Follow the given examples to understand how to apply the mentioned steps and concepts:
 - we want have freed some memory (blue) and want to realloc 12 bytes (red)
 ![[Pasted image 20240112234806.png]]
@@ -72,6 +73,8 @@ Exam text specifies that "we must never create blocks with 0 payload", this mean
 ![[Pasted image 20240112235706.png]]
 Therefore we get a block that is 16 + 16 in size, we remember that the old footer (0x13) and header (0x12) don't change since the 2 blocks merge into 1 due to immediate coalescing
 ![[Pasted image 20240112235808.png]]
+*Exam 22/23*
+![[DR 13-01-24 16.05.26.excalidraw]]
 **7. Additional Tips:**
 - Pay attention to the specific requirements of the assignment, such as restrictions on block sizes or the presence of payload in certain cases.
 - Be meticulous in tracking block sizes, allocation status, and immediate coalescing.
