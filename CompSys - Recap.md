@@ -154,7 +154,50 @@ instruction execution time or latency.
 ![[Pasted image 20240115035744.png]]
 The last four instructions are all dependent on the result in register x2 of the first instruction. If register x2 had the value 10 before the subtract instruction and −20 afterwards, the programmer intends that −20 will be used in the following instructions that refer to register x2.
 
-">>" indikerer at den staller i den fase som efterfølger, så "De >> Ex", betyder et stall i Ex.
+
 ## Full foward
+">>" indikerer at den staller i den fase som efterfølger, så "De >> Ex", betyder et stall i Ex.
+
+Vi kan beskrive maskinens ressourcer ved antallet af instruktioner som kan udføre samme aktivitet på samme tidspunkt. For den simple pipeline angives ressourcebegrænsningen ved
+```
+Fe: 1, De: 1, Ex: 1, Me: 1, Wb: 1
+```
+
+```
+                        0  1  2  3  4  5  6  7  8
+lw   x11,0(x10)         Fe De Ex Me Wb
+addi x11,x11,100           Fe De De Ex Me Wb
+sw   x11,0(x14)               Fe Fe De Ex Me Wb
+addi x10,x10,1                      Fe De Ex Me Wb
+```
+Her er skal addi bruge x11 og er derfor nødt til at vente på at lw har hentet en værdi fra memory og lagt den i x11, det sker i `Me`: derfor må addi vente med at execute til at lw er færdi med `Me`, der sker altså et stall i Ex hos addi. 
+
+Dernæst ser vi at De er nødt til at blive stallet fordi vi kun har en ressource til at køre De skridtet og derfor sker der et stall på De da vi venter med at den anden instruktion er færdig med at stalle; derfor behøver vi heller ikke stalle Ex hos sw da vi pga tidligere stall nu har x11 klar fra addi. 
+
+addi x10 bliver også udskudt fordi vi ikke kan fetche flere ting på en gang.
+### Dataafhængigheder
+Dataafhængigheder specificeres ved at angive hvilke aktiviteter der producerer og/eller afhænger af en værdi. Eksempel:
+
+```
+load: "Fe De Ex Me Wb"   depend(Ex,rs1), produce(Me,rd)
+store: "Fe De Ex Me"     depend(Ex,rs1), depend(Me,rs2)
+andre: "Fe De Ex Wb"     depend(Ex,rs1), depend(Ex,rs2), produce(Ex,rd)
+```
+Her refererer "rs1", "rs2" og "rd" til de to kilderegistre og destinationsregisteret på samme måde som på den grønne side forrest i COD. Ideen er at en instruktion der anfører depend(Ex,rs1) tidligst kan gennemføre "Ex" i en cyklus efter at rs1 er blevet produceret.
+
+Kontrolafhængigheder specificeres på samme måde som dataafhængigheder men med angivelse af et særlig register: "PC". Eksempel:
+```
+retur: produce(Ex, PC)
+alle: depend(Fe, PC)
+```
+
+Angiver at PC opdateres i "Ex" af retur instruktionen og at efter en retur-instruktion kan maskinen tidligst gennemføre "Fe" (instruktionshentning) for efterfølgende instruktioner, når PC er opdateret. Den sidste regel for alle instruktioner: "depend(Fe, PC)" er så indlysende at vi ikke vil anføre den fremover.
 
 
+```
+hop baglæns taget:       produce(De, PC)
+hop baglæns ikke taget:  produce(Ex, PC)
+hop forlæns taget:       produce(Ex, PC)
+hop forlæns ikke taget:  -
+```
+![[Pasted image 20240115162432.png]]
