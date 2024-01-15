@@ -7,17 +7,6 @@
 - run in same address as the calling process (changes are reflected)
 - have own thread context: ID, SP, PC, general purpose registers, condition codes
 - can access “critical memory” must be handled with semaphores (mutexes) and / or condition variables
-## Virtual memory  
-- split the address in its components VPO, VPN, and then split the VPN in index and tag
-- bits of the VPO = log2(pageSize)
-- bits of VPN = bit streng uden offset, så index og tag
-- bits of set = log2(#sets) bits of VPN
-- bits of Tag = rest of vpn
-
-- look up in TLB with index and set
-- if the tag exists AND the valid bit is set it is a hit, otherwise a miss.
-- if no hit in TLB look in page table , with VPN
-- if VPN exits AND the valid bit is set hit, otherwise page fault and a new page must be brought from memory
 ## Fork 
 print rælkkefølger?
 (fork() == 0) - det er kun barnet der kan der kan kører inde i if statement
@@ -112,3 +101,58 @@ Therefore we get a block that is 16 + 16 big, we remember that the old footer (0
 ![[Pasted image 20240112235808.png]]
 
 ###  Example walktrough
+# Pipelines
+The non-pipelined approach to laundry would be as follows:
+1. Place one dirty load of clothes in the washer.
+2. When the washer is finished, place the wet load in the dryer.
+3. When the dryer is finished, place the dry load on a table and fold.
+4. When folding is finished, ask your roommate to put the clothes away.
+As soon as thewasher is finished with the first load and placed in the dryer, you load the washer with the second dirty load. When the first load is dry, you place it on the table to start folding, move the wet load to the dryer, and put the next dirty load into the washer. Next, you have your roommate put the first load away, you start folding the second load, the dryer has the third load, and you put the fourth load into the washer. At this point all steps—called stages in pipelining—are operating concurrently. 
+
+pipelining is faster for many loads is that everything is working in parallel, so more loads are finished per hour. The same goes for instructions; they run in parrallel, since more instructions are handled at a time the program is executed faster
+
+The same principles apply to processors where we pipeline instruction execution. RISC-V instructions classically take five steps:
+1. FE: Fetch instruction from memory.
+2. DE: Read registers and decode the instruction.
+3. EX: Execute the operation or calculate an address.
+4. ME: Access an operand in data memory (if necessary)
+5. WB: Write the result into a register (if necessary).
+![[Pasted image 20240115035053.png]]
+The pipeline registers, in color, separate each pipeline stage.
+They are labeled by the stages that they separate; for example, the first is labeled IF/ID (FE/DE) because it separates the instruction fetch and instruction decode stages.
+![[Pasted image 20240115032235.png]]
+
+All RISC-V instructions are the same length. This restriction makes it much easier to fetch instructions in the first pipeline stage and to decode them in the second stage. RISC-V has just a few instruction formats, with the source and destination register fields being located in the same place in each instruction. Memory operands only appear in loads or stores in RISC-V.
+### Pipeline Hazards 
+There are situations in pipelining when the next instruction cannot execute in the following clock cycle (tal på x akse i afviklingsplot). These events are called hazards, and there are three different types.
+
+**Structural hazard:** When a planned instruction cannot execute in the proper clock cycle because the hardware does not support the combination of instructions that are set to execute.
+
+**Data hazard(stall):** Also called a pipeline data hazard. When a planned instruction cannot execute in the proper clock cycle because data that are needed to execute the instruction are not yet available. For example, suppose we have an add instruction
+followed immediately by a subtract instruction that uses that sum (x19):
+```Asm
+add *x19*, x0, x1
+sub x2, *x19*, x3
+```
+
+The primary solution is based on the observation that we don’t need to wait for the instruction to complete before trying to resolve the data hazard. For the code sequence above, as soon as the ALU creates the sum for the add, we can supply it as an input for the subtract. Adding extra hardware to retrieve the missing item early from the internal resources is called forwarding or
+bypassing.
+```ad-info
+Officially called a **pipeline stall**, but often given the nickname **bubble**. A stall initiated
+in order to resolve a
+hazard.
+```
+#### Ekstra
+![[Pasted image 20240115034216.png]]
+![[Pasted image 20240115034327.png]
+## Summary 
+Pipelining is a technique that exploits parallelism between the instructions in a sequential instruction stream. Pipelining increases the number of simultaneously executing instructions and the rate at which instructions are started and completed. Pipelining does not reduce the time it takes to complete an individual instruction,
+also called the latency. For example, the five-stage pipeline still takes five clock cycles for the instruction to complete. pipelining improves instruction throughput rather than individual
+instruction execution time or latency.
+## Stalls and fowarding
+![[Pasted image 20240115035654.png]]
+![[Pasted image 20240115035744.png]]
+The last four instructions are all dependent on the result in register x2 of the first instruction. If register x2 had the value 10 before the subtract instruction and −20 afterwards, the programmer intends that −20 will be used in the following instructions that refer to register x2.
+## Full foward
+
+
