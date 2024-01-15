@@ -153,6 +153,8 @@ instruction execution time or latency.
 ![[Pasted image 20240115035654.png]]
 ![[Pasted image 20240115035744.png]]
 The last four instructions are all dependent on the result in register x2 of the first instruction. If register x2 had the value 10 before the subtract instruction and −20 afterwards, the programmer intends that −20 will be used in the following instructions that refer to register x2.
+
+">>" indikerer at den staller i den fase som efterfølger, så "De >> Ex", betyder et stall i Ex.
 ## Full foward
 
 
