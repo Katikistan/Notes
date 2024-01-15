@@ -8,54 +8,15 @@
         "type": "tabs",
         "children": [
           {
-            "id": "aa3f4217141a6628",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "DR.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "0efa3941d8b838b2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Heap.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
             "id": "85abc71181766e9e",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "markdown",
               "state": {
-                "file": "Excalidraw/CompSys - Recap 12-01-24 22.44.01.excalidraw.md"
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "8e5bad5472c3c44d",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "ec35c06076a1f79c",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Excalidraw/DR 13-01-24 16.05.26.excalidraw.md"
+                "file": "CompSys - Recap.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
               }
             }
           }
@@ -152,7 +113,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Excalidraw/DR 13-01-24 16.05.26.excalidraw.md",
+                "file": "CompSys - Recap.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -169,7 +130,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Excalidraw/DR 13-01-24 16.05.26.excalidraw.md",
+                "file": "CompSys - Recap.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -193,7 +154,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Excalidraw/DR 13-01-24 16.05.26.excalidraw.md"
+                "file": "CompSys - Recap.md"
               }
             }
           },
@@ -245,11 +206,11 @@
   },
   "active": "e613d9a5e7dd2cc6",
   "lastOpenFiles": [
-    "Pasted Image 20240113160536_928.png",
+    "Excalidraw/CompSys - Recap 12-01-24 22.44.01.excalidraw.md",
+    "Heap.md",
     "DR.md",
     "Excalidraw/DR 13-01-24 16.05.26.excalidraw.md",
-    "Heap.md",
-    "Excalidraw/CompSys - Recap 12-01-24 22.44.01.excalidraw.md",
+    "Pasted Image 20240113160536_928.png",
     "CompSys - Recap.md",
     "SS uge 2 tirsdag øvelser.Rmd",
     "TDC.md",
@@ -265,7 +226,6 @@
     "Pasted image 20240112234806.png",
     "Pasted Image 20240112231049_500.png",
     "Excalidraw/CompSys - Recap 12-01-24 22.25.26.excalidraw.md",
-    "Pasted Image 20240112224431_236.png",
     "3. semester/CompSys/Lecture/CompSys - Lecture ons - 1.md",
     "Excalidraw/CompSys - Recap 10-01-24 14.20.43.excalidraw.md",
     "Excalidraw/CompSys - Recap 10-01-24 13.26.31.excalidraw.md",
