@@ -201,3 +201,7 @@ hop forlæns taget:       produce(Ex, PC)
 hop forlæns ikke taget:  -
 ```
 ![[Pasted image 20240115162432.png]]
+# Networking
+c1=send p1 : c1 send packet 1 
+c3=rec ak0+send p3: c3 recieve and acknowledge s0 (server packet 0)  + send packet 3 (client to server)
+
