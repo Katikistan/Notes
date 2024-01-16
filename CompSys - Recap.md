@@ -7,6 +7,7 @@
 - run in same address as the calling process (changes are reflected)
 - have own thread context: ID, SP, PC, general purpose registers, condition codes
 - can access “critical memory” must be handled with semaphores (mutexes) and / or condition variables
+- dies when the process containing the thread dies
 ## Fork 
 print rælkkefølger?
 (fork() == 0) - det er kun barnet der kan der kan kører inde i if statement
@@ -156,6 +157,10 @@ The last four instructions are all dependent on the result in register x2 of the
 
 
 ## Full foward
+Vi antager
+- At hop forudsiges taget i De.
+- At load data kan forwardes fra starten af Wb til store i Me
+
 ">>" indikerer at den staller i den fase som efterfølger, så "De >> Ex", betyder et stall i Ex.
 
 Vi kan beskrive maskinens ressourcer ved antallet af instruktioner som kan udføre samme aktivitet på samme tidspunkt. For den simple pipeline angives ressourcebegrænsningen ved
@@ -185,6 +190,8 @@ andre: "Fe De Ex Wb"     depend(Ex,rs1), depend(Ex,rs2), produce(Ex,rd)
 ```
 Her refererer "rs1", "rs2" og "rd" til de to kilderegistre og destinationsregisteret på samme måde som på den grønne side forrest i COD. Ideen er at en instruktion der anfører depend(Ex,rs1) tidligst kan gennemføre "Ex" i en cyklus efter at rs1 er blevet produceret.
 
+"The definition says that anything that produce(some step, some register) something can be used in the next cycle by something that depends(some step, that same register) on that register, in this case, lbu produces "rd" at the Mm step which is the result register, so a5 now has the new value and can be used in the next cycle by something that depends(Ex, rs1) where rs1 is an input like in bne and is here a5. I would highly recommend reading all the files explaining these details yourself in meticulous detail, they're really useful with great examples."
+
 Kontrolafhængigheder specificeres på samme måde som dataafhængigheder men med angivelse af et særlig register: "PC". Eksempel:
 ```
 retur: produce(Ex, PC)
@@ -201,7 +208,17 @@ hop forlæns taget:       produce(Ex, PC)
 hop forlæns ikke taget:  -
 ```
 ![[Pasted image 20240115162432.png]]
+## Superskalar
+## Discord
+
+Hvis depend(Ex, rs1) betyder, at en intruks først kan køre sin Ex en cyklus efter, rs1 blev produeret, hvordan skal produce(Wb, rd) eller produce(Ex, rd) forstås? 
+	Som at 'rd' blev produceret i den cycklus hvor instruktionen er i Wb hhv Ex
+
+Isn't it the Decode step that gets the values from the registers? So the Decode step of `bne a5,zero,.L3` should wait for the Memory step of `lbu a5,1(a0)` to finish, and stall one more step?
+	If there is forwarding it would be passed from the Me stage of lbu to the Ex stage of Bne.
+	Yes that sounds right. Decode doesn't really have any dependencies other than that phase being available. Eg. in simple one-way pipeline, it would only stall if another instruction is in that phase, or in x-way, it would only stall if x other instructions were currently in that phase
 # Networking
 c1=send p1 : c1 send packet 1 
 c3=rec ak0+send p3: c3 recieve and acknowledge s0 (server packet 0)  + send packet 3 (client to server)
+
 
