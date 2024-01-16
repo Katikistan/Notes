@@ -156,6 +156,12 @@ instruction execution time or latency.
 The last four instructions are all dependent on the result in register x2 of the first instruction. If register x2 had the value 10 before the subtract instruction and −20 afterwards, the programmer intends that −20 will be used in the following instructions that refer to register x2.
 ## Branching
 side 325 til 332
+```
+hop baglæns taget:       produce(De, PC)
+hop baglæns ikke taget:  produce(Ex, PC)
+hop forlæns taget:       produce(Ex, PC)
+hop forlæns ikke taget:  -
+```
 
 ## Full foward
 Vi antager
@@ -176,6 +182,15 @@ addi x11,x11,100           Fe De De Ex Me Wb
 sw   x11,0(x14)               Fe Fe De Ex Me Wb
 addi x10,x10,1                      Fe De Ex Me Wb
 ```
+
+```
+                        0  1  2  3  4  5  6  7  8
+lw   x11,0(x10)         Fe De Ex Me Wb
+addi x11,x11,100           Fe De Ex Ex Me Wb
+sw   x11,0(x14)               Fe De De Ex Me Wb
+addi x10,x10,1                      Fe De Ex Me Wb
+```
+
 Her er skal addi bruge x11 og er derfor nødt til at vente på at lw har hentet en værdi fra memory og lagt den i x11, det sker i `Me`: derfor må addi vente med at execute til at lw er færdi med `Me`, der sker altså et stall i Ex hos addi. 
 
 Dernæst ser vi at De er nødt til at blive stallet fordi vi kun har en ressource til at køre De skridtet og derfor sker der et stall på De da vi venter med at den anden instruktion er færdig med at stalle; derfor behøver vi heller ikke stalle Ex hos sw da vi pga tidligere stall nu har x11 klar fra addi. 
