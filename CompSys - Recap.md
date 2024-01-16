@@ -108,7 +108,7 @@ The non-pipelined approach to laundry would be as follows:
 2. When the washer is finished, place the wet load in the dryer.
 3. When the dryer is finished, place the dry load on a table and fold.
 4. When folding is finished, ask your roommate to put the clothes away.
-As soon as thewasher is finished with the first load and placed in the dryer, you load the washer with the second dirty load. When the first load is dry, you place it on the table to start folding, move the wet load to the dryer, and put the next dirty load into the washer. Next, you have your roommate put the first load away, you start folding the second load, the dryer has the third load, and you put the fourth load into the washer. At this point all steps—called stages in pipelining—are operating concurrently. 
+As soon as the washer is finished with the first load and placed in the dryer, you load the washer with the second dirty load. When the first load is dry, you place it on the table to start folding, move the wet load to the dryer, and put the next dirty load into the washer. Next, you have your roommate put the first load away, you start folding the second load, the dryer has the third load, and you put the fourth load into the washer. At this point all steps—called stages in pipelining—are operating concurrently. 
 
 pipelining is faster for many loads is that everything is working in parallel, so more loads are finished per hour. The same goes for instructions; they run in parrallel, since more instructions are handled at a time the program is executed faster
 
@@ -154,7 +154,8 @@ instruction execution time or latency.
 ![[Pasted image 20240115035654.png]]
 ![[Pasted image 20240115035744.png]]
 The last four instructions are all dependent on the result in register x2 of the first instruction. If register x2 had the value 10 before the subtract instruction and −20 afterwards, the programmer intends that −20 will be used in the following instructions that refer to register x2.
-
+## Branching
+side 325 til 332
 
 ## Full foward
 Vi antager
