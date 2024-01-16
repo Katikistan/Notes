@@ -19,8 +19,22 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "69fef111ff8e9b5e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "SS.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -113,7 +127,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CompSys - Recap.md",
+                "file": "SS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -130,7 +144,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CompSys - Recap.md",
+                "file": "SS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -154,7 +168,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CompSys - Recap.md"
+                "file": "SS.md"
               }
             }
           },
@@ -206,6 +220,8 @@
   },
   "active": "e613d9a5e7dd2cc6",
   "lastOpenFiles": [
+    "CompSys - Recap.md",
+    "SS.md",
     "Pasted image 20240115162432.png",
     "Pasted image 20240115035744.png",
     "Pasted image 20240115035654.png",
@@ -216,12 +232,10 @@
     "Pasted image 20240115034813.png",
     "Pasted image 20240115034327.png",
     "Pasted image 20240115034216.png",
-    "Pasted image 20240115032235.png",
     "Excalidraw/CompSys - Recap 12-01-24 22.44.01.excalidraw.md",
     "Heap.md",
     "DR.md",
     "Excalidraw/DR 13-01-24 16.05.26.excalidraw.md",
-    "CompSys - Recap.md",
     "SS uge 2 tirsdag øvelser.Rmd",
     "TDC.md",
     "Excalidraw/CompSys - Recap 12-01-24 21.28.04.excalidraw.md",
