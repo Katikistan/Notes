@@ -8,7 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "85abc71181766e9e",
+            "id": "69fef111ff8e9b5e",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -19,22 +19,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "69fef111ff8e9b5e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "SS.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -127,7 +113,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "SS.md",
+                "file": "CompSys - Recap.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -144,7 +130,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "SS.md",
+                "file": "CompSys - Recap.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -168,7 +154,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "SS.md"
+                "file": "CompSys - Recap.md"
               }
             }
           },
@@ -218,12 +204,15 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "e613d9a5e7dd2cc6",
+  "active": "69fef111ff8e9b5e",
   "lastOpenFiles": [
-    "Pasted image 20240116141738.png",
-    "Pasted image 20240116141450.png",
+    "Pasted image 20240117014935.png",
+    "CompSys Eksamens oplæsning.md",
+    "Excalidraw/CompSys - Recap 10-01-24 14.20.43.excalidraw.md",
     "CompSys - Recap.md",
     "SS.md",
+    "Pasted image 20240116141738.png",
+    "Pasted image 20240116141450.png",
     "Pasted image 20240115162432.png",
     "Pasted image 20240115035744.png",
     "Pasted image 20240115035654.png",
@@ -232,7 +221,6 @@
     "Pasted image 20240115035047.png",
     "Pasted image 20240115035042.png",
     "Pasted image 20240115034813.png",
-    "Pasted image 20240115034327.png",
     "Excalidraw/CompSys - Recap 12-01-24 22.44.01.excalidraw.md",
     "Heap.md",
     "DR.md",
@@ -243,10 +231,8 @@
     "Excalidraw/CompSys - Recap 12-01-24 23.09.59.excalidraw.md",
     "Excalidraw/CompSys - Recap 12-01-24 22.25.26.excalidraw.md",
     "3. semester/CompSys/Lecture/CompSys - Lecture ons - 1.md",
-    "Excalidraw/CompSys - Recap 10-01-24 14.20.43.excalidraw.md",
     "Excalidraw/CompSys - Recap 10-01-24 13.26.31.excalidraw.md",
     "Untitled 1.md",
-    "CompSys Eksamens oplæsning.md",
     "Weekly notes/Uge 40 - 2023.md",
     "3. semester/CompSys/Lecture/CompSys - Lecture ons - 40.md",
     "3. semester/CompSys/Lecture/CompSys - Lecture ons - 38.md",

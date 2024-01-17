@@ -1,16 +1,10 @@
 # Data Representation and Cache
 ## Locality
-## Caching
-### Page fault
+## Stride
+## row major vs column major
 ## Arithmetic
 ### IEEE FLOATING POINT
 ### TWOS COMPLEMENT
-# OS
-## Assembly
-## Virtual memory 
-### Hob managment 
-## Forking, concurrency
-## Adresses
 # Networking
 ## Applications lag
 HTTP
@@ -31,7 +25,11 @@ TCP
 client server
 P2P
 DNS
-Socket programming
+Socket programmingo way handshake (relliable data transerf
+	Congestion control
+client server
+P2P
+DNS
 #### KR chap 3 p40
 S. (398) figure 3.5.1 forklarer hvordan TCP congestion control virker
 

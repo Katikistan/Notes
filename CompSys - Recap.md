@@ -8,16 +8,26 @@
 - have own thread context: ID, SP, PC, general purpose registers, condition codes
 - can access “critical memory” must be handled with semaphores (mutexes) and / or condition variables
 - dies when the process containing the thread dies
+**Syscalls**
+**Virtual memory**
+**Memory allocation**
+## Semaphore
+![[CompSys - Recap 10-01-24 14.20.43.excalidraw]]
 ## Fork 
-print rælkkefølger?
-(fork() == 0) - det er kun barnet der kan der kan kører inde i if statement
-forældren kan printe 5, børn kan printe 1, 2 og 3
 
-tegn en graf, forældre går ikke ind i if børn gør. 
+if (fork() == 0) - It's the child that goes into this if statement.
+
+
+In the parent process, `waitpid` is used to wait for the child process to finish. Once the child process completes, it checks again and creates a new child process. The second child process prints "3", and the parent process prints "4".
+
+the parent can print 4 and 5
+children can print 1, 2 and 3
+![[Pasted image 20240110132054.png]]
+tegn en graf, forældre går ikke ind i if børn gør. Hver gang fork kaldes laver man en "gaffel"
 
 ![[CompSys - Recap 10-01-24 13.26.31.excalidraw]]
-![[Pasted image 20240110132054.png]]
-![[CompSys - Recap 10-01-24 14.20.43.excalidraw]]
+## Threads
+
 ## Heap
 Before you start it's vital that you read the provided information in the question, furthermore here are some things that are important to remember before trying to solve this type of problem:
 
@@ -102,7 +112,13 @@ Therefore we get a block that is 16 + 16 big, we remember that the old footer (0
 ![[Pasted image 20240112235808.png]]
 
 ###  Example walktrough
-# Pipelines
+# Maskin arkitektur
+## Assembly
+Kig efter call, jal, jalr hvis det skal være en funktion 
+
+**oversæt til c:**
+
+## Pipelines
 The non-pipelined approach to laundry would be as follows:
 1. Place one dirty load of clothes in the washer.
 2. When the washer is finished, place the wet load in the dryer.
@@ -146,15 +162,15 @@ hazard.
 #### Ekstra
 ![[Pasted image 20240115034216.png]]
 ![[Pasted image 20240115034327.png]
-## Summary 
+### Summary 
 Pipelining is a technique that exploits parallelism between the instructions in a sequential instruction stream. Pipelining increases the number of simultaneously executing instructions and the rate at which instructions are started and completed. Pipelining does not reduce the time it takes to complete an individual instruction,
 also called the latency. For example, the five-stage pipeline still takes five clock cycles for the instruction to complete. pipelining improves instruction throughput rather than individual
 instruction execution time or latency.
-## Stalls and fowarding
+### Stalls and fowarding
 ![[Pasted image 20240115035654.png]]
 ![[Pasted image 20240115035744.png]]
 The last four instructions are all dependent on the result in register x2 of the first instruction. If register x2 had the value 10 before the subtract instruction and −20 afterwards, the programmer intends that −20 will be used in the following instructions that refer to register x2.
-## Branching
+### Branching
 side 325 til 332
 ```
 hop baglæns taget:       produce(De, PC)
@@ -163,7 +179,7 @@ hop forlæns taget:       produce(Ex, PC)
 hop forlæns ikke taget:  -
 ```
 
-## Full foward
+### Full foward
 Vi antager
 - At hop forudsiges taget i De.
 - At load data kan forwardes fra starten af Wb til store i Me
@@ -183,14 +199,6 @@ sw   x11,0(x14)               Fe Fe De Ex Me Wb
 addi x10,x10,1                      Fe De Ex Me Wb
 ```
 
-```
-                        0  1  2  3  4  5  6  7  8
-lw   x11,0(x10)         Fe De Ex Me Wb
-addi x11,x11,100           Fe De Ex Ex Me Wb
-sw   x11,0(x14)               Fe De De Ex Me Wb
-addi x10,x10,1                      Fe De Ex Me Wb
-```
-
 Her er skal addi bruge x11 og er derfor nødt til at vente på at lw har hentet en værdi fra memory og lagt den i x11, det sker i `Me`: derfor må addi vente med at execute til at lw er færdi med `Me`, der sker altså et stall i Ex hos addi. 
 
 Dernæst ser vi at De er nødt til at blive stallet fordi vi kun har en ressource til at køre De skridtet og derfor sker der et stall på De da vi venter med at den anden instruktion er færdig med at stalle; derfor behøver vi heller ikke stalle Ex hos sw da vi pga tidligere stall nu har x11 klar fra addi. 
@@ -202,6 +210,7 @@ Dataafhængigheder specificeres ved at angive hvilke aktiviteter der producerer 
 ```
 load: "Fe De Ex Me Wb"   depend(Ex,rs1), produce(Me,rd)
 store: "Fe De Ex Me"     depend(Ex,rs1), depend(Me,rs2)
+branch: "Fe De Ex"
 andre: "Fe De Ex Wb"     depend(Ex,rs1), depend(Ex,rs2), produce(Ex,rd)
 ```
 Her refererer "rs1", "rs2" og "rd" til de to kilderegistre og destinationsregisteret på samme måde som på den grønne side forrest i COD. Ideen er at en instruktion der anfører depend(Ex,rs1) tidligst kan gennemføre "Ex" i en cyklus efter at rs1 er blevet produceret.
@@ -224,8 +233,29 @@ hop forlæns taget:       produce(Ex, PC)
 hop forlæns ikke taget:  -
 ```
 ![[Pasted image 20240115162432.png]]
-## Superskalar
-## Discord
+### Superskalar
+En maskine der kan udføre to eller flere instruktioner samtidigt kaldes "superskalar".
+
+Ressource-inddeling:
+```
+load:  "Fe De Ag Me Wb"
+store: "Fe De Ag Me"
+andre: "Fe De Ex Wb"
+
+ressourcer: Fe:2, De:2, Ex:2, Ag:1, Me:1, Wb:2
+```
+Forkortelsen "Ag" står for "Address generate" som så erstatter brugen af den generelle ALU til at beregne adresser ved lagertilgang.
+
+Der kan nu godt være 2 Fe på samme tid
+
+```
+aritmetisk op: depend(Ex,Rs1),depend(Ex,rs2),depend(Ex,rd),produce(Wb,rd)
+```
+Dette vil sikre at der maximalt er en instruktion for hvert register i trinnene fra Ex og frem ad gangen. Det udelukker forkert skrive rækkefølge og det sikrer at operand-referencer er unikke.
+
+![[Pasted image 20240117014935.png]]
+Her ser man at 2 instruktioner `lw` og `addi` begge kan være i fetch fasen på samme tid. 
+### Discord
 
 Hvis depend(Ex, rs1) betyder, at en intruks først kan køre sin Ex en cyklus efter, rs1 blev produeret, hvordan skal produce(Wb, rd) eller produce(Ex, rd) forstås? 
 	Som at 'rd' blev produceret i den cycklus hvor instruktionen er i Wb hhv Ex
@@ -236,5 +266,38 @@ Isn't it the Decode step that gets the values from the registers? So the Decode 
 # Networking
 c1=send p1 : c1 send packet 1 
 c3=rec ak0+send p3: c3 recieve and acknowledge s0 (server packet 0)  + send packet 3 (client to server)
+## Packet switching
+## Circuit switching
+## Application layer
+### HTTP
+## Transport layer
+
+TCP
+UDP
+
+### multiplexing demultiplexing
+### Congestion control
+### Flow control
+### Go-back-N
+### relliable data transfer
+
+## Link layer
+### IPV4
+getting new ip adresses, why we don't need ipv6
+### DNS
+### Subnet
+### Fowarding table
+## Routing algoritms
+### Link state
+### Distant vector
+## Security 
 
 
+
+en der kan forklare det her branch prediction i forhold til at lave et afviklingsplot? Det virker som om der er forskel på om det er et hop baglæns eller forlæns, hvad menes med forlæns og baglæns hop. kan se at der er tillfælde hvor efter en branch instruktion at næste instruktion starter ved Ex for branch instruktionen hvor den andre gange starter ved Me fasen. Hvad skyldes det?
+
+jeg havde forstået det således: hvis det er et forlæns hop kan den først starte i Me, hvis det er et baglæns hop kan den starte i Ex
+
+Hvad skal forstås med at man antager at bagudgående hop forudsiges taget i De? Og hvordan skal bagudgående forstås, er det instruktioner hvor PC bliver gjort mindre for at "gå tilbage" til overstående instruktioner?
+
+er det korrekt forstået at branch instruktioner i en super skalar kun løber igennem fe de ex og ikke me eller wb
