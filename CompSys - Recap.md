@@ -28,6 +28,16 @@ tegn en graf, forældre går ikke ind i if børn gør. Hver gang fork kaldes lav
 ![[CompSys - Recap 10-01-24 13.26.31.excalidraw]]
 ## Threads
 
+```
+                                0  1  2  3  4  5  6  7  8  
+0:      addi    x11,x11,4       Fe De Ex Wb
+4:      lw      x12,0(x11)         Fe De Ex Me Wb
+8:      add     x13,x13,x12           Fe >> De Ex Wb
+C:      bne     x11,x15,0                >> Fe De Ex
+0:      addi    x11,x11,4                         Fe De Ex 
+```
+
+
 ## Heap
 Before you start it's vital that you read the provided information in the question, furthermore here are some things that are important to remember before trying to solve this type of problem:
 
@@ -178,7 +188,7 @@ hop baglæns ikke taget:  produce(Ex, PC)
 hop forlæns taget:       produce(Ex, PC)
 hop forlæns ikke taget:  -
 ```
-
+Betinget hop behøver ikke Wb, tilsynladende hellet ikke Me
 ### Full foward
 Vi antager
 - At hop forudsiges taget i De.
@@ -198,6 +208,8 @@ addi x11,x11,100           Fe De De Ex Me Wb
 sw   x11,0(x14)               Fe Fe De Ex Me Wb
 addi x10,x10,1                      Fe De Ex Me Wb
 ```
+man behøver ikke skrive me ved addi
+
 
 Her er skal addi bruge x11 og er derfor nødt til at vente på at lw har hentet en værdi fra memory og lagt den i x11, det sker i `Me`: derfor må addi vente med at execute til at lw er færdi med `Me`, der sker altså et stall i Ex hos addi. 
 
@@ -210,8 +222,10 @@ Dataafhængigheder specificeres ved at angive hvilke aktiviteter der producerer 
 ```
 load: "Fe De Ex Me Wb"   depend(Ex,rs1), produce(Me,rd)
 store: "Fe De Ex Me"     depend(Ex,rs1), depend(Me,rs2)
-branch: "Fe De Ex"
-andre: "Fe De Ex Wb"     depend(Ex,rs1), depend(Ex,rs2), produce(Ex,rd)
+
+andre: "Fe De Ex Wb"     depend(Ex,rs1), depend(Ex,rs2),
+produce(Ex,rd)
+branch: "Fe De Ex" er under andre men behøver ikke Wb
 ```
 Her refererer "rs1", "rs2" og "rd" til de to kilderegistre og destinationsregisteret på samme måde som på den grønne side forrest i COD. Ideen er at en instruktion der anfører depend(Ex,rs1) tidligst kan gennemføre "Ex" i en cyklus efter at rs1 er blevet produceret.
 
@@ -292,12 +306,29 @@ getting new ip adresses, why we don't need ipv6
 ### Distant vector
 ## Security 
 
+```
+                                0  1  2  3  4  5  6  7  8  
+0:      addi    x11,x11,4       Fe De Ex Wb
+4:      lw      x12,0(x11)         Fe De Ex Me Wb
+8:      add     x13,x13,x12           Fe >> De Ex Wb
+C:      bne     x11,x15,0                >> Fe De Ex
+0:      addi    x11,x11,4                         Fe De Ex 
+```
+Men det virker ikke altid til det er muligt at se om der sker et hop eller ej, når jeg kigger på det her eksempel fra noten om afviklingsplot:
+```
+                                0  1  2  3  4  5  6  7  8  
+0:      addi    x11,x11,4       Fe De Ex Wb
+4:      lw      x12,0(x11)         Fe De Ex Me Wb
+8:      add     x13,x13,x12           Fe >> De Ex Wb
+C:      bne     x11,x15,0                >> Fe De Ex
+0:      addi    x11,x11,4                         Fe De Ex 
+```
+Om der sker et hop afhænger vel af værdien i x15, men det er tilsynladende ukendt.  hvordan kan man være sikker på at der sker et hop her?
 
 
-en der kan forklare det her branch prediction i forhold til at lave et afviklingsplot? Det virker som om der er forskel på om det er et hop baglæns eller forlæns, hvad menes med forlæns og baglæns hop. kan se at der er tillfælde hvor efter en branch instruktion at næste instruktion starter ved Ex for branch instruktionen hvor den andre gange starter ved Me fasen. Hvad skyldes det?
+Hvordan forholder det sig så når der et hop forlæns eller intet hop. 
 
-jeg havde forstået det således: hvis det er et forlæns hop kan den først starte i Me, hvis det er et baglæns hop kan den starte i Ex
+Det er heller ikke altid muligt at se om der sker et hop eller ej, i eksempelet der er givet i vil der ske et hop når x15 ikke er 0, men man kan ikke se x15 nogen steder og ved derfor heller ikke hvad x15 holder af værdi. Med andre ord, hvad skal jeg gøre hvis det ikke er muligt at se om der ville ske et hop eller ej.
+	
 
-Hvad skal forstås med at man antager at bagudgående hop forudsiges taget i De? Og hvordan skal bagudgående forstås, er det instruktioner hvor PC bliver gjort mindre for at "gå tilbage" til overstående instruktioner?
-
-er det korrekt forstået at branch instruktioner i en super skalar kun løber igennem fe de ex og ikke me eller wb
+i noterne om afviklingsplot unlades der at skrives at instruktioner som addi og bne bruger me, men i eksamens sln bruges der me til addi hvad burde man gøre til eksamen unlade me for instruktioner som addi eller ej.
