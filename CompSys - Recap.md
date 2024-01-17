@@ -3,16 +3,90 @@
 - duplicate of parent, but with own address space (changes are not reflected)
 - Child processes must be reaped, adopted but init process if termination of parent. 
 - Processes that never terminates are “zombie children”
+- program is the “dead” code
+- process is the “live” instance running the program
 **Threads**
 - run in same address as the calling process (changes are reflected)
 - have own thread context: ID, SP, PC, general purpose registers, condition codes
 - can access “critical memory” must be handled with semaphores (mutexes) and / or condition variables
 - dies when the process containing the thread dies
+**Kernel**
+- “Aways resident code that services request from the hardware and manages processes”
+- Unprivileged, must make calls to kernel to switch to privileged state (interrupts)
+- The kernel handles: hardware, system memory, File I/0 and context switching
 **Syscalls**
+
 **Virtual memory**
 **Memory allocation**
+## Locality 
+![[Pasted image 20240117220844.png]]
+- **Spatial locality:** Where data is located in terms of each other, good spacial locality is accessing things close in memory. 
+
+- **Temporal locality:** Data that has recently been accessed, is accessed again soon. Which is good since it's in the cache making it quick to access. 
+
+
+• Stride: How large are the jumps between memory accesses?
+
+row-major and column-major: How mulit dimensional arrays are stored in memory:
+```
+A[3][3]=
+[1, 2, 3],
+[4, 5, 6],
+[7, 8, 9]
+```
+![[Pasted image 20240117220603.png]]
+If we try to access the 1 in row 1, then the cache in this example will contain {1,2,3}. When we try to iterate through rows first then we have good spacial locality since we only have to jump little in memory to get the next element 2, futhermore it's in the cache making it quick to get. 
+
+However when using column major the cache will contain {1,4,7} which will be discarded since we are trying to access 2, which is futher away than when using row major.
+![[Pasted image 20240117221638.png]]
+**Stride in this example:**
+row major: on average we have to jump 1 block in memory to get the next element, therefore stride is 1.
+
+column: on average we have to jump 3 blocks in memory to get the next element, therefore stride is 3. from 1 to 2 the distance is 3. Even though we have to jump from 3 to 4 which is 5 blocks, most of the time we have to jump 3 blocks therefore stride becomes 3 regardless. 
+![[Pasted image 20240117222115.png]]
+C is row major
+R is column major
+
+
 ## Semaphore
-![[CompSys - Recap 10-01-24 14.20.43.excalidraw]]
+- Combination of a mutex and a counter
+- Locked if 0 (memory is inaccessible)
+- if the semaphore is 5, it would need 5 calls of P(s) to become locked.
+- A mutex is a type of semaphore that is only 0 (locked) or 1 (unlocked).
+```
+wait (S){ // originally called P(S)
+	while ( S < 0 ) do no-op;
+	S--;
+\}
+```
+```
+Signal (S){ // originally called V(S)
+	S++;
+\}
+```
+That means when you see p(a) it means that a is being decremented, if a=1 (unlocked), p(a) will make a = 0 (locked). When you see V(a) it means a is being incremented so if a=0 (unlocked)then V(a) wil make a 1 (unlocked)
+
+**Drawing a process graph:**
+![[Pasted image 20240117205126.png]]
+Make a graph with thread 1 and 2 along the axes as specified by the text, along the each axis put the semaphore operation starting from 0,0. 
+
+now make a square indicating where each variable is locked, in thread 1 a is locked from p(a) to v(a), same for thread 2. Blue square is where a is locked, red is where b is locked.  
+![[Pasted image 20240117204851.png]]
+when moving right, one thread is progressing, when moving up, the other thread is progressing. we can only go right or up. 
+
+The place where both of threads lock a is forbidden. Same goes for other variables. that means if we move into the square we have a deadlock
+
+Make a square indicating where each variable is locked, here we see it's not necessary to show where c  is locked (purple square) because it's within the area where a and b is locked.
+![[Pasted image 20240117211008.png]]
+We see a deadlock is possible since when at (p(b),p(a)) we can go neither up or right, meaning we are stuck (deadlock), a is already locked in thread 2 and now thread 1 is trying to claim it aswell, how sad...
+
+In this example we can always move up or right.
+![[Pasted image 20240117211217.png]]
+It's important to note that moving along is not forbidden, think of it this way: it's first moving past p(c) that a thread actually locks c so standing at (p(c),p(c)) is not a deadlock since it first (p(c),p(b)) where c is actually locked and we would not be allowed to move right, however we could just move up instead. 
+
+This could not cause a deadlock, since we can move along the lines (green lines indicate these paths)
+![[Pasted image 20240117212029.png]]
+
 ## Fork 
 
 if (fork() == 0) - It's the child that goes into this if statement.
@@ -27,17 +101,27 @@ tegn en graf, forældre går ikke ind i if børn gør. Hver gang fork kaldes lav
 
 ![[CompSys - Recap 10-01-24 13.26.31.excalidraw]]
 ## Threads
+## Virtual memory
+## Cache info
 
-```
-                                0  1  2  3  4  5  6  7  8  
-0:      addi    x11,x11,4       Fe De Ex Wb
-4:      lw      x12,0(x11)         Fe De Ex Me Wb
-8:      add     x13,x13,x12           Fe >> De Ex Wb
-C:      bne     x11,x15,0                >> Fe De Ex
-0:      addi    x11,x11,4                         Fe De Ex 
-```
+## Cache table
+If the index and tag is the same it's a hit. in a 4 way associative 
+we keep 4 tags in each index, getting a hit is a good thing since it means we don't have to go into memory which is slow. 
 
+LRU : in the state of tags we order the tags from most recently used to least recently used. 
 
+0 : {0x10, 0x0, 0x1, 0x11}
+Means that in index we have recently encounted 0x10 and not encountered 0x11 for some time. 
+
+If a new address comes in such as 0x12, 0x11 would be removed since we only have space for 4 in the cache:
+
+0 : {0x12, 0x10, 0x0, 0x1}
+
+if we now encounter 0x0 agian it gets moved to the front since thats the last we saw, this would be a hit: 
+
+0 : {0x0, 0x12, 0x10, 0x1}
+
+For this type of question use the script for calcut
 ## Heap
 Before you start it's vital that you read the provided information in the question, furthermore here are some things that are important to remember before trying to solve this type of problem:
 
