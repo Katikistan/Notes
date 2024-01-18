@@ -21,10 +21,78 @@ np.log2(7) # using log 2 in python
 1 MB = 1024KB = 1,048,576 bytes
 1 GB = 1 000 000 000 bytes
 1 Kbit = 1 kilobit = 125 bytes
+1 byte = 8 bits
+1 word = 2 bytes = 16 bits
+1 halfword = 4 bytes = 32 bits
+8 bytes = 64 bits
 # Data representation
+## Endians
+
 ## IEE float
+IEEE floating point has clear properties.
+Represents numbers of the form $M \cdot 2^E$ .
+![[Pasted image 20240118160025.png]]
+![[Pasted image 20240118160052.png]]
+![[Pasted image 20240118160735.png]]
+![[Pasted image 20240118160141.png]]
+![[Pasted image 20240118160219.png]]
+![[Pasted image 20240118160353.png]]
+![[Pasted image 20240118160433.png]]
+
+in the IEEE floating point format, the inaccuracies of calculations become larger as the numbers get larger due to the limited number of bits available to represent the mantissa (or significand) of the number. This means that the larger the number, the less precise the representation of that number in the format.
+
+This is because the mantissa is represented as a fixed-point number, with a fixed number of bits to the left and right of the radix point. As the number gets larger, more bits are required to
+represent the mantissa, but since the number of bits is fixed, the representation becomes less precise.
+
+This phenomenon is called the "floating-point precision error" and it affects all floating-point computations. Programs that need to perform high precision computation, such as scientific simulations and financial computations, use arbitrary precision libraries or other methods to perform these calculations.
+![[Pasted image 20240118160648.png]]
+![[Pasted image 20240118160544.png]]
+![[Pasted image 20240118160607.png]]
+![[Pasted image 20240118160901.png]]
+![[Pasted image 20240118160930.png]]
 ## Twos compliment
+![[Pasted image 20240118155421.png]]
+![[Pasted image 20240118155529.png]]
+![[Pasted image 20240118155607.png]]
+Distinguish between representation and interpretation.
+![[Pasted image 20240118155745.png]]
 ## Size of different data types
+![[Pasted image 20240118155325.png]]
+**in 32 bit architecture:**
+char: 1 byte 
+short: 2
+int: 4 bytes
+long: 4 bytes
+long long: 8 bytes
+*floating point:*
+float: 4 bytes
+double: 8 bytes
+long double: 16 bytes
+
+**in 64 bit architecture:**
+char: 1 byte 
+short: 2
+int: 4 bytes
+long: 8 bytes
+long long: 8 bytes
+*floating point:*
+float: 4 bytes
+double: 8 bytes
+long double: 16 bytes
+
+**Integer Type Aliases:**
+int8_t: 1 byte signed integer              
+int16_t: 2 byte signed integer               
+int32_t: 4 byte signed integer           
+int64_t: 8 byte signed integer         
+|intptr_t: Signed integer of size equal to a pointer 
+uint8_t: 1 byte unsigned integer 
+uint16_t: 2 byte unsigned integer   
+uint32_t: 4 byte unsigned integer                    
+uint64_t: 8 byte unsigned integer 
+uintptr_t: Unsigned integer of size equal to a pointer 
+
+
 # OS
 **Processes**
 - duplicate of parent, but with own address space (changes are not reflected)
@@ -53,6 +121,7 @@ what happens on a write depends on the method used:
 
 - No-write allocate: On a write miss, you write the data directly to the main memory and do not add the address to the cache. Full consistency, but slower.
 
+For more OS theory check out: exam notes detailed on DIKUnotes.
 ## Locality 
 ![[Pasted image 20240117220844.png]]
 - **Spatial locality:** Where data is located in terms of each other, good spacial locality is accessing things close in memory. 
@@ -247,7 +316,7 @@ RAM is volatile memory - the content is lost when the power is gone.
 Time it takes for the disk to rotate so that the head can
 read the first bit of the target sector. 
 **Maximum Rotational latency:** 
-Time it takes for the disk to do an entire rotation. Average is half of that.
+Time it takes for the disk to do an entire rotation. Average is half of that
 ## Cache info
 Always has the following order
 Tag | Index | Offset 
@@ -267,7 +336,23 @@ $tag=\text{bits in address}-(offset+index)$
 Use script to calculate size of each.  
 
 Number of lines pr. set = associativity
+## Virtual memory
+
 ## Virtual addresses
+Page faults are handled by software (kernel code), meaning we have flexibility.
+- Page fault handler can update the page table based on kernel data and policy.
+mmap() is powerful but inflexible:
+- Smallest granularity of allocation is a page.
+- Is a system call, so fairly slow.
+Instead programmers use dynamic memory allocators (e.g. malloc()) to aquire memory at runtime.
+- Run entirely in user space-not part of the kernel.
+- Acquires memory via mmap() and sbrk ().
+Region of virtual memory managed by such an allocator is known as the heap.
+- No relation to the datastructure known as a heap.
+- May have multiple heaps; heap might not be contiguous.
+- When we say the heap, we mean whatever malloc() manages by default.
+
+
 VPO: virtual page offset
 VPI: virtual page index
 PPO: physical page offset. Is the same number as VPO
@@ -285,6 +370,15 @@ Page fault?
 - Hvis valid -> Page fault = N
 - Hvis invalid -> Page fault = Y
 - Hvis VPN ikke kan findes, page fault = Y
+
+mmap () syscall allows processes to map virtual memory.
+- Can map files to memory, or make anonymous mapping.
+- Can share memory between processes.
+malloc () is a userspace memory manager.
+- Not a system call itself.
+- Requests memory from kernel with mmap () and sbrk () and then parcels it out.
+- Internal fragmentation is when allocated blocks have wasted space.
+- External fragmentation is when free space is split into many small blocks.
 ## Cache table
 **Cache organisation**
 - N-way set associative: N: how many blocks there are in each set.
@@ -464,7 +558,7 @@ Take the assembly code and write a comment for each line that in c like pseudo c
 lbu a5, 0(a0) would be a5 = a0 
 ![[Pasted image 20240118010227.png]]
 
-## Pipelines
+## Pipeline Teori 
 The non-pipelined approach to laundry would be as follows:
 1. Place one dirty load of clothes in the washer.
 2. When the washer is finished, place the wet load in the dryer.
@@ -472,7 +566,7 @@ The non-pipelined approach to laundry would be as follows:
 4. When folding is finished, ask your roommate to put the clothes away.
 As soon as the washer is finished with the first load and placed in the dryer, you load the washer with the second dirty load. When the first load is dry, you place it on the table to start folding, move the wet load to the dryer, and put the next dirty load into the washer. Next, you have your roommate put the first load away, you start folding the second load, the dryer has the third load, and you put the fourth load into the washer. At this point all steps—called stages in pipelining—are operating concurrently. 
 
-pipelining is faster for many loads is that everything is working in parallel, so more loads are finished per hour. The same goes for instructions; they run in parrallel, since more instructions are handled at a time the program is executed faster
+instructions run in parrallel, since more instructions are handled at a time the program is executed faster
 
 The same principles apply to processors where we pipeline instruction execution. RISC-V instructions classically take five steps:
 1. FE: Fetch instruction from memory.
@@ -482,10 +576,8 @@ The same principles apply to processors where we pipeline instruction execution.
 5. WB: Write the result into a register (if necessary).
 ![[Pasted image 20240115035053.png]]
 The pipeline registers, in color, separate each pipeline stage.
-They are labeled by the stages that they separate; for example, the first is labeled IF/ID (FE/DE) because it separates the instruction fetch and instruction decode stages.
-![[Pasted image 20240115032235.png]]
 
-All RISC-V instructions are the same length. This restriction makes it much easier to fetch instructions in the first pipeline stage and to decode them in the second stage. RISC-V has just a few instruction formats, with the source and destination register fields being located in the same place in each instruction. Memory operands only appear in loads or stores in RISC-V.
+In our case each stage takes one clock cycle to complete, when it doesn't get stalled
 ### Pipeline Hazards 
 There are situations in pipelining when the next instruction cannot execute in the following clock cycle (tal på x akse i afviklingsplot). These events are called hazards, and there are three different types.
 
@@ -516,44 +608,25 @@ instruction execution time or latency.
 ![[Pasted image 20240115035654.png]]
 ![[Pasted image 20240115035744.png]]
 The last four instructions are all dependent on the result in register x2 of the first instruction. If register x2 had the value 10 before the subtract instruction and −20 afterwards, the programmer intends that −20 will be used in the following instructions that refer to register x2.
-### Branching
-side 325 til 332
-```
-hop baglæns taget:       produce(De, PC)
-hop baglæns ikke taget:  produce(Ex, PC)
-hop forlæns taget:       produce(Ex, PC)
-hop forlæns ikke taget:  -
-```
-Betinget hop behøver ikke Wb, tilsynladende hellet ikke Me
-### Full foward
+## Pipeline praktisk (Finns noter)
+1. FE: Fetch instruction from memory.
+2. DE: Read registers and decode the instruction.
+3. EX: Execute the operation or calculate an address.
+4. ME: Access an operand in data memory (if necessary)
+5. WB: Write the result into a register (if necessary).
+### Full fowarding
 Vi antager
 - At hop forudsiges taget i De.
 - At load data kan forwardes fra starten af Wb til store i Me
-
-">>" indikerer at den staller i den fase som efterfølger, så "De >> Ex", betyder et stall i Ex.
-
 Vi kan beskrive maskinens ressourcer ved antallet af instruktioner som kan udføre samme aktivitet på samme tidspunkt. For den simple pipeline angives ressourcebegrænsningen ved
-
 ```
 Fe: 1, De: 1, Ex: 1, Me: 1, Wb: 1
 ```
 kun en instruktion kan være i hver fase samtidig.
-```
-                        0  1  2  3  4  5  6  7  8
-lw   x11,0(x10)         Fe De Ex Me Wb
-addi x11,x11,100           Fe De De Ex Me Wb
-sw   x11,0(x14)               Fe Fe De Ex Me Wb
-addi x10,x10,1                      Fe De Ex Me Wb
-```
-man behøver ikke skrive me ved addi
 
+">>" indikerer at den staller i den fase som efterfølger, så "`De >> Ex`", betyder et stall i Ex. Man kan også skrive `De De Ex`, fordi den holder i `De` fasen fordi `Ex` ikke er tilgænglig. Jeg synes den sidste metode er mere overskuelig fordi det bliver nemmere at spotte hvornår der skal ske stalls pga. ressourcebegrænsning 
 
-Her er skal addi bruge x11 og er derfor nødt til at vente på at lw har hentet en værdi fra memory og lagt den i x11, det sker i `Me`: derfor må addi vente med at execute til at lw er færdi med `Me`, der sker altså et stall i Ex hos addi. 
-
-Dernæst ser vi at De er nødt til at blive stallet fordi vi kun har en ressource til at køre De skridtet og derfor sker der et stall på De da vi venter med at den anden instruktion er færdig med at stalle; derfor behøver vi heller ikke stalle Ex hos sw da vi pga tidligere stall nu har x11 klar fra addi. 
-
-addi x10 bliver også udskudt fordi vi ikke kan fetche flere ting på en gang.
-### Dataafhængigheder
+#### Dataafhængigheder
 Dataafhængigheder specificeres ved at angive hvilke aktiviteter der producerer og/eller afhænger af en værdi. Eksempel:
 
 ```
@@ -563,7 +636,9 @@ andre: "Fe De Ex Wb"     depend(Ex,rs1), depend(Ex,rs2),
 produce(Ex,rd)
 branch: "Fe De Ex" // Wb behøves med betinget hop
 ```
-Her refererer "rs1", "rs2" og "rd" til de to kilderegistre og destinationsregisteret på samme måde som på den grønne side forrest i COD. Ideen er at en instruktion der anfører depend(Ex,rs1) tidligst kan gennemføre "Ex" i en cyklus efter at rs1 er blevet produceret.
+Her refererer "rs1", "rs2" og "rd" til de to kilderegistre og destinationsregisteret. Ideen er at en instruktion der anfører depend(Ex,rs1) tidligst kan gennemføre "Ex" i en cyklus efter at rs1 er blevet produceret.
+
+Load instruktioner producerer f.eks. deres register i `Me` fasen og derfor må en add instruktion f.eks vente  til at load er færdig med sin `Me` før add kan begynde sin `Ex` fase
 
 • **Format på instruktioner:**
 	• Load: rd, imm(rs1)
@@ -571,39 +646,53 @@ Her refererer "rs1", "rs2" og "rd" til de to kilderegistre og destinationsregist
 	• Alle andre: rd, rs1, rs2/imm/label
 • **Eksempler på dataafhængigheder**
 	• depend(Ex, rs1) betyder at rs1 skal være klar inden denne instruktion kan udføre Ex.
-	• produce(Wb, rd) betyder at rd bliver skrevet til i Wb-fasen af denne instruktion.
+	• produce(Wb, rd) betyder at rd bliver skrevet til registeret i Wb-fasen af denne instruktion.
 	• depend(Fe, PC) betyder at program counter skal være klar før denne instruktion kan gå ind i Fe (Fetch-fasen).
-
-"The definition says that anything that produce(some step, some register) something can be used in the next cycle by something that depends(some step, that same register) on that register, in this case, lbu produces "rd" at the Mm step which is the result register, so a5 now has the new value and can be used in the next cycle by something that depends(Ex, rs1) where rs1 is an input like in bne and is here a5. I would highly recommend reading all the files explaining these details yourself in meticulous detail, they're really useful with great examples."
-
+#### Kontrolafhængigheder
 Kontrolafhængigheder specificeres på samme måde som dataafhængigheder men med angivelse af et særlig register: "PC". Eksempel:
 ```
 retur: produce(Ex, PC)
 alle: depend(Fe, PC)
 ```
-
 Angiver at PC opdateres i "Ex" af retur instruktionen og at efter en retur-instruktion kan maskinen tidligst gennemføre "Fe" (instruktionshentning) for efterfølgende instruktioner, når PC er opdateret. Den sidste regel for alle instruktioner: "depend(Fe, PC)" er så indlysende at vi ikke vil anføre den fremover.
+#### Gennemgået eksempel
+```
+                        0  1  2  3  4  5  6  7  8
+lw   x11,0(x10)         Fe De Ex Me Wb
+addi x11,x11,100           Fe De De Ex Me Wb
+sw   x11,0(x14)               Fe Fe De Ex Me Wb
+addi x10,x10,1                      Fe De Ex Me Wb
+```
+Her er skal addi bruge x11 og er derfor nødt til at vente på at `lw` har hentet en værdi fra memory og lagt den i x11, det sker i `Me`: derfor må addi stalle `Ex`  til at `lw` er færdi med `Me`.
 
+I `sw` ser vi at `De` er nødt til at blive stallet fordi vi kun har en ressource til at køre `De` skridtet og derfor sker der et stall på `De` (`Fe Fe` eller `Fe >>`)  da vi venter på at `addi` er færdig med at stalle. Derfor behøver vi heller ikke stalle `Ex` hos `sw` da vi pga tidligere stall nu har x11 klar fra addi. 
 
+addi x10 bliver også udskudt fordi vi ikke kan fetche flere ting på en gang.
+
+### Branching
 ```
 hop baglæns taget:       produce(De, PC)
 hop baglæns ikke taget:  produce(Ex, PC)
 hop forlæns taget:       produce(Ex, PC)
 hop forlæns ikke taget:  -
+Betinget hop behøver ikke Wb
 ```
-Det betyder at hvis et hop baglæns tages så vil PC være klar i De derfor kan næste instruktions Fe fase begynde sammtidig med Ex fasen for branch instruktionen. Hvis hop ikke tages eller et hop forlæns tages så kan næste instruktions Fe fase først 
 ![[Pasted image 20240115162432.png]]
+Det betyder at hvis et hop baglæns tages så vil PC være klar i De derfor kan næste instruktions Fe fase begynde sammtidig med Ex fasen for branch instruktionen. Hvis hop ikke tages eller et hop forlæns tages så kan næste instruktions Fe fase først 
+
+her unlades `Me` fasen i add og branch instruktioner: Don't do that.
 ### Superskalar
 En maskine der kan udføre to eller flere instruktioner samtidigt kaldes "superskalar".
 
-Ressource-inddeling:
+2 way - Superskalar Ressource-inddeling:
+```
+ressourcer: Fe:2, De:2, Ex:2, Ag:1, Me:1, Wb:2
+```
 ```
 load:  "Fe De Ag Me Wb"
 store: "Fe De Ag Me"
 andre: "Fe De Ex Wb" // betingede hop behøver ikke Wb
 branch: "Fe De Ex" // kun med betinget hop
-
-ressourcer: Fe:2, De:2, Ex:2, Ag:1, Me:1, Wb:2
 ```
 Forkortelsen "Ag" står for "Address generate" som så erstatter brugen af den generelle ALU til at beregne adresser ved lagertilgang.
 
@@ -617,14 +706,6 @@ Dette vil sikre at der maximalt er en instruktion for hvert register i trinnene 
 ![[Pasted image 20240117014935.png]]
 Her ser man at 2 instruktioner `lw` og `addi` begge kan være i fetch fasen på samme tid. 
 
-### Discord
-
-Hvis depend(Ex, rs1) betyder, at en intruks først kan køre sin Ex en cyklus efter, rs1 blev produeret, hvordan skal produce(Wb, rd) eller produce(Ex, rd) forstås? 
-	Som at 'rd' blev produceret i den cycklus hvor instruktionen er i Wb hhv Ex
-
-Isn't it the Decode step that gets the values from the registers? So the Decode step of `bne a5,zero,.L3` should wait for the Memory step of `lbu a5,1(a0)` to finish, and stall one more step?
-	If there is forwarding it would be passed from the Me stage of lbu to the Ex stage of Bne.
-	Yes that sounds right. Decode doesn't really have any dependencies other than that phase being available. Eg. in simple one-way pipeline, it would only stall if another instruction is in that phase, or in x-way, it would only stall if x other instructions were currently in that phase
 # Networking
 c1=send p1 : c1 send packet 1 
 c3=rec ak0+send p3: c3 recieve and acknowledge s0 (server packet 0)  + send packet 3 (client to server)
@@ -653,30 +734,3 @@ getting new ip adresses, why we don't need ipv6
 ### Link state
 ### Distant vector
 ## Security 
-
-```
-                                0  1  2  3  4  5  6  7  8  
-0:      addi    x11,x11,4       Fe De Ex Wb
-4:      lw      x12,0(x11)         Fe De Ex Me Wb
-8:      add     x13,x13,x12           Fe >> De Ex Wb
-C:      bne     x11,x15,0                >> Fe De Ex
-0:      addi    x11,x11,4                         Fe De Ex 
-```
-Men det virker ikke altid til det er muligt at se om der sker et hop eller ej, når jeg kigger på det her eksempel fra noten om afviklingsplot:
-```
-                                0  1  2  3  4  5  6  7  8  
-0:      addi    x11,x11,4       Fe De Ex Wb
-4:      lw      x12,0(x11)         Fe De Ex Me Wb
-8:      add     x13,x13,x12           Fe >> De Ex Wb
-C:      bne     x11,x15,0                >> Fe De Ex
-0:      addi    x11,x11,4                         Fe De Ex 
-```
-Om der sker et hop afhænger vel af værdien i x15, men det er tilsynladende ukendt.  hvordan kan man være sikker på at der sker et hop her?
-
-
-Hvordan forholder det sig så når der et hop forlæns eller intet hop. 
-
-Det er heller ikke altid muligt at se om der sker et hop eller ej, i eksempelet der er givet i vil der ske et hop når x15 ikke er 0, men man kan ikke se x15 nogen steder og ved derfor heller ikke hvad x15 holder af værdi. Med andre ord, hvad skal jeg gøre hvis det ikke er muligt at se om der ville ske et hop eller ej.
-	
-
-i noterne om afviklingsplot unlades der at skrives at instruktioner som addi og bne bruger me, men i eksamens sln bruges der me til addi hvad burde man gøre til eksamen unlade me for instruktioner som addi eller ej.
