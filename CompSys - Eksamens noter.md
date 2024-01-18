@@ -1,4 +1,4 @@
-# Tips
+j# Tips
 Use scripts from DIKUnotes compsys (download before exam): https://github.com/Emil2468/CompSys-scripts
 
 Converting between bases:
@@ -27,9 +27,55 @@ np.log2(7) # using log 2 in python
 8 bytes = 64 bits
 # Data representation
 ## Endians
+![[32bit-Endianess.svg.png]]
 
+IEEE 754 uses big endian as a standard
+
+Many use the term _network order_, meaning the order of transmission for bytes _over the wire_ network protocols. Among others, defines the network order for protocols to be big-endian.
+
+Host order: litte endian
 ## IEE float
+The IEEE Standard for Floating-Point Arithmetic (IEEE 754) is a technical standard for floating-point computation.
+
 IEEE floating point has clear properties.
+
+There are several ways to represent floating point number but IEEE 754 is the most efficient in most cases. IEEE 754 has 3 basic components:
+1. **The Sign of Mantissa –**  
+    This is as simple as the name. 0 represents a positive number while 1 represents a negative number.
+2. **The Biased exponent –**  
+    The exponent field needs to represent both positive and negative exponents. A bias is added to the actual exponent in order to get the stored exponent.
+3. **The Normalised Mantissa –**  
+    The mantissa is part of a number in scientific notation or a floating-point number, consisting of its significant digits. Here we have only 2 digits, i.e. O and 1. So a normalised mantissa is one with only one 1 to the left of the decimal.
+
+```
+85.125
+85 = 1010101
+0.125 = 001
+85.125 = 1010101.001
+       =1.010101001 x 2^6 
+sign = 0 
+
+1. Single precision:
+biased exponent 127+6=133
+133 = 10000101
+Normalised mantisa = 010101001
+we will add 0's to complete the 23 bits
+
+The IEEE 754 Single precision is:
+= 0 10000101 01010100100000000000000
+This can be written in hexadecimal form **42AA4000**
+
+2. Double precision:
+biased exponent 1023+6=1029
+1029 = 10000000101
+Normalised mantisa = 010101001
+we will add 0's to complete the 52 bits
+
+The IEEE 754 Double precision is:
+= 0 10000000101 0101010010000000000000000000000000000000000000000000
+This can be written in hexadecimal form **4055480000000000**
+```
+
 Represents numbers of the form $M \cdot 2^E$ .
 ![[Pasted image 20240118160025.png]]
 ![[Pasted image 20240118160052.png]]
@@ -100,6 +146,16 @@ uintptr_t: Unsigned integer of size equal to a pointer
 - Processes that never terminates are “zombie children”
 - program is the “dead” code
 - process is the “live” instance running the program
+- Processes are a purely virtual concept, CPU has no idea what they are.
+- Processes are isolated from each other.
+- Processes can only directly interact with the outside world through system calls, mediated by the kernel.
+Unix process can be in the following states:
+- running
+- sleeping (waiting for an event or signal)
+- stopped (paused)
+- zombie (terminated but waiting for parent process to acknowledge)
+- uninterruptible sleep (waiting for a hardware event)
+
 **Threads**
 - run in same address as the calling process (changes are reflected)
 - have own thread context: ID, SP, PC, general purpose registers, condition codes
@@ -109,8 +165,30 @@ uintptr_t: Unsigned integer of size equal to a pointer
 - “Aways resident code that services request from the hardware and manages processes”
 - Unprivileged, must make calls to kernel to switch to privileged state (interrupts)
 - The kernel handles: hardware, system memory, File I/0 and context switching
+- Handles the following
+	- Memory allocation and deallocation
+	- Interrupt handling
+	- Task scheduling
+	- File system management
+	- Network stack management
+	- Access to hardware devices
+	- Creation and deletion of processes
+	- Control and manipulation of system resources such as CPU, memory, and I/O devices.
+- Allowing user-level programs to perform these operations could potentially lead to systeminstability or security vulnerabilities.
+- Process Management: The kernel manages the creation, execution and termination of processes. It also manages the scheduling of processes and assigns the CPU time to different processes.
+- Memory Management: The kernel manages the physical and virtual memory of the system and provides memory allocation and deallocation services to the processes.
+- File System: The kernel provides an interface for the file system, it manages the file system, and it controls the access to the file system by the processes.
+- Network Stack: The kernel provides the network stack, which is responsible for managing the network communication and protocols.
+- Device Drivers: The kernel provides the device drivers, which are responsible for managing the communication between the hardware and the kernel.
+- Security: The kernel provides security mechanisms such as access control and authentication to protect the system and user's data.
 **Syscalls**
-See man syscalls
+A request by a process that the kernel carries out some operation on its behalf.
+- Only the kernel has direct access to hardware and system memory.
+- Whenever we want to do IO we have to perform a system call
+- Much like a function call, but implemented very dierently.
+
+See man syscalls to which functions perform syscall
+
 **How to write to memory**
 what happens on a write depends on the method used:
 - Write-through: The more simple solution is to update the cache, and main memory each time we write. Data is written into the cache and the corresponding main memory location at the same time. The cached data allows for fast re-trieval on demand, while the same data in main memory ensures that nothing will get lost if a crash, power failure, or other system disruption occurs.
@@ -192,9 +270,32 @@ This could not cause a deadlock, since we can move along the lines (green lines 
 ![[Pasted image 20240117212029.png]]
 
 ## Context switching
+Only one process gets to run at a time, but we regularly switch between available processes. Doing this often and rapidly creates the illusion of simultaneous execution.
+
+Pausing a process, saving its entire state, then resuming some other process based on its saved state.
+
+**So what do we need to save?**
+1. All registers, including control registers.
+2. Contents of memory.
+**So when do we do this?**
+- Regular timer interrupts transfer control to the kernel, whose scheduler decides the next process to run.
+	- Scheduling is a big and interesting topic that we don't have time to go into.
+
 **![[Pasted image 20240118025222.png]]**
 ## Fork 
 See man fork() for more info.
+
+
+- Each process in Unix has a process ID (PID).
+- Each process has a parent.
+- ...except the initial process (init) with PID 1.
+- A process may have multiple children.
+- Implies processes are organised as a tree (pstree command shows it).
+- Creating processes: fork().
+- Terminating current process: exit().
+- Loading program code from disk into current process: exec().
+- Waiting for a specic child to die: waitpid().
+- Getting PID of running process: getpid().
 
 The child process and the parent process run in separate memory spaces. At the time of fork() both memory spaces have the same content. fork() is called once but returns twice.
 
@@ -337,10 +438,25 @@ Use script to calculate size of each.
 
 Number of lines pr. set = associativity
 ## Virtual memory
+Use DRAM as a cache for parts of a virtual address space
+Uses memory efficiently by caching virtual memory pages
+- Efficient only because of locality
+- Simplifies memory management and programming
+- Simplifies protection by providing a convenient interpositioning point to check permissions
 
+
+Each process gets the same uniform linear address space that cannot be corrupted by other processes
+
+**Isolates address spaces**
+- One process can’t interfere with another’s memory
+- User program cannot access privileged kernel information and code
+Simplifying memory allocation
+- Each virtual page can be mapped to any physical page
+- A virtual page can be stored in different physical pages at different times
 ## Virtual addresses
 Page faults are handled by software (kernel code), meaning we have flexibility.
 - Page fault handler can update the page table based on kernel data and policy.
+
 mmap() is powerful but inflexible:
 - Smallest granularity of allocation is a page.
 - Is a system call, so fairly slow.
@@ -351,12 +467,21 @@ Region of virtual memory managed by such an allocator is known as the heap.
 - No relation to the datastructure known as a heap.
 - May have multiple heaps; heap might not be contiguous.
 - When we say the heap, we mean whatever malloc() manages by default.
-
-
-VPO: virtual page offset
-VPI: virtual page index
-PPO: physical page offset. Is the same number as VPO
-VPN: virtual page number (like tag) 
+CompComponents of the virtual address (VA)
+- TLBI: TLB index
+- TLBT: TLB tag
+- VPO: Virtual page offset
+- VPN: Virtual page number
+Components of the physical address (PA)
+- PPO: Physical page offset (same as VPO)
+- PPN: Physical page numberonents of the virtual address (VA)
+- TLBI: TLB index
+- TLBT: TLB tag
+- VPO: Virtual page offset
+- VPN: Virtual page number
+Components of the physical address (PA)
+- PPO: Physical page offset (same as VPO)
+- PPN: Physical page number
 ![[416361371_7215294488509136_1498697205366660270_n.png]]
 TLB hit:
 - check TLB index som set.
@@ -709,28 +834,339 @@ Her ser man at 2 instruktioner `lw` og `addi` begge kan være i fetch fasen på 
 # Networking
 c1=send p1 : c1 send packet 1 
 c3=rec ak0+send p3: c3 recieve and acknowledge s0 (server packet 0)  + send packet 3 (client to server)
+
+## The 5 Different layers shortly described
+The OSI (Open Systems Interconnection) model is a framework that is used to understand and describe the different layers of a computer network. The OSI model consists of 7 different layers, each with its own specific functions and responsibilities.
+### Application Layer
+The highest layer of the OSI model, the application layer is
+responsible for providing the interface between the network and the applications that run on it. This layer is responsible for providing services to the user such as email, file transfer(HTTP), and web access.
+
+This layer interacts directly with the application and end-user, and
+provides services such as email, file transfer, and web access. Protocols that apply to this layer include HTTP (Hypertext Transfer Protocol), FTP (File Transfer Protocol), and SMTP (Simple Mail Transfer Protocol).
+### Transport Layer
+The transport layer is responsible for providing end-to-end
+communication between devices on the network. It is responsible for providing reliable communication, flow control, and error recovery.
+
+This layer provides end-to-end communication between applications. Protocols that apply to this layer include TCP (Transmission Control Protocol) and UDP (User Datagram Protocol).
+### Network Layer
+The network layer is responsible for providing routing and switching
+services. It is responsible for determining the best path for data to travel from one device to another and for managing the flow of data across the network.
+
+This layer is responsible for routing and forwarding packets through a network. Protocols that apply to this layer include IP (Internet Protocol) and ICMP (Internet Control Message Protocol).
+### Link Layer
+The link layer is responsible for providing communication between
+devices on the same network segment. It is responsible for providing services such as error detection, flow control, and addressing. 
+
+This layer provides a reliable link between devices on a network. Protocols that apply to this layer include MAC (Media Access Control) and LLC (Logical Link Control).
+
+### Physical Layer 
+The lowest layer of the OSI model, the physical layer is responsible for providing the physical connection between devices on the network. This layer is responsible for the transmission of bits over the physical medium such as copper or fiber-optic cables.
+
+This layer deals with the physical connection between devices, such as cables and switches. Protocols that apply to this layer include Ethernet and Wi-Fi.
+## CDN
+Content Distribution Networks (CDN s) are a system of distributed servers that are deployed in multiple data centers around the world. The goal of a CDN is to provide faster delivery of content to users by caching a copy of the content on servers that are closer to the user's location.
+
+CDN s can be used to speed up the delivery of a wide variety of content, including web pages, images, videos, audio and video streaming, software downloads and more. They work by intercepting requests for content from users and redirecting them to the nearest server that has a cached copy of the content. This reduces the distance that the data needs to travel, which can result in faster delivery times.
+## CDN and P2P
+CDN vs. Peer-to-peer:
+A Content Delivery Network (CDN) is a system of distributed servers that are used to deliver web content to users based on their geographic location. The goal of a CDN is to reduce latency and improve the performance of web content delivery. This is
+accomplished by caching frequently requested content on servers located in strategic locations around the world, so that users can access the content from a server that is geographically closer to them.
+
+Peer-to-peer (P2P) is a decentralized type of network, where each node (peer) acts as both a client and a server. In a P2P network, files and other resources are shared directly between users, rather than being stored on a central server.
+
+The main difference between CDN and P2P is the way content is delivered. CDN uses a centralized system where content is stored on servers that are strategically placed, while P2P uses a decentralized system where content is shared directly between
+users. CDN is typically used for delivering static content such as images and videos, while P2P is typically used for sharing files such as music and movies. CDN is mainly used by large companies and websites with high traffic, while P2P is mainly used by
+smaller groups of people for sharing files among themselves.
 ## Packet switching
 ## Circuit switching
 ## Application layer
 ### HTTP
 ## Transport layer
+### UDP
+One way data transfer, dosent guarnatue delivery, since there are no handshaking 
 
-TCP
-UDP
+Includes a checksum, but no way of knowing if packets are in correct order or lost. No retransmit
+
+UDP is typically used for applications that do not require a reliable, ordered delivery of data. This means that it's not good for something like video streaming or gaming. 
+### TCP
+Connection-oriented vs Connectionless: TCP is a connection-oriented protocol, which means that a connection must be established between the sender and receiver before any data can be sent. UDP, on the other hand, is connectionless, which means that data can be sent without establishing a connection first.
+
+TCP has error checking and correction mechanisms built in to
+ensure data integrity. UDP has minimal error checking, and any errors must be handled at the application level.
+
+TCP has more overhead than UDP because it establishes and maintains connections, performs error checking, and ensures data integrity. This can make TCP slower than UDP for some applications.
+
+Use case: TCP is typically used for applications that require a reliable, ordered delivery of data, such as web browsing, email, and file transfer. ordered delivery of data, such as streaming video and audio, online gaming, and DNS queries.
+has reliable data transfer.
 
 ### multiplexing demultiplexing
 ### Congestion control
+Congestion control adjusts the sending rate of the sender based on network conditions to prevent packet loss and delays. 
+
+Congestion control, is a mechanism used to prevent network
+congestion by regulating the rate at which data is sent into the network. Congestion occurs when too much data is sent into the network, causing network resources such as bandwidth and buffer space to become exhausted. Congestion control is mainly used at the transport layer. (Har mere at gøre med den fysiske “tykkelse” på ledingen og hvor meget der kan sendes.)
+![[blobid21-60f546786ae24.jpeg]]
+Every step in the reno protocol:
+- slow start
+- triple duplicate loss
+- Fast recovery ssthresh = control window/2
+((new control window = control window/2) + 3)
+- congestion control
+- triple duplicate loss
+- Fast recovery Fast recovery ssthresh = control window/2
+((new control window = control window/2) + 3)
+- congestion control
+- timeout (control window = control window/2)
+- slow start
+TCP Tahoe dosent have fast recovery 
 ### Flow control
+TCP uses flow control mechanisms to prevent the sender from overwhelming the receiver. UDP does not have flow control mechanisms, so the sender can potentially overwhelm the receiver.
+
+Flow control is a mechanism used to prevent a fast sender from overwhelming a slow receiver. It ensures that the receiver can handle the data being sent to it, by regulating the rate at which the sender sends data. Flow control is mainly used at the data link layer. ( only has to do with the receiver). It is done by having the receiver send a window of how much it can receive with its messages.
+
+Flow control in TCP helps with congestion control by allowing the receiver to limit the amount of data that the sender can send, preventing the sender from overwhelming the network.
+Both flow control and congestion control are necessary for
+efficient and stable network communication.
+### Sliding window
+
 ### Go-back-N
-### relliable data transfer
+Go-Back-N is a type of error control protocol used in computer networks to ensure the reliable transfer of data between devices. It is a type of sliding window protocol, which means that it uses a fixed-size window to control the flow of data between devices.
+
+In Go-Back-N, the sender sends multiple packets of data in sequence, and the receiver acknowledges receipt of each packet. If the sender does not receive an acknowledgement for a packet within a certain period of time, it will assume that the packet was lost and retransmit it. 
+
+If the receiver receives a packet out of order, it will discard it and request a retransmission of that packet. 
+
+Once the sender receives an acknowledgement for a packet, it will slide the window forward to the next unacknowledged packet, allowing it to continue sending data. 
+
+Go-Back-N is efficient in terms of network bandwidth usage, as it does not require the sender to wait for an acknowledgement for every packet sent, but if a packet is lost, all packets sent after it will be
+retransmited which leads to waste of bandwidth.
+### Selective repeat protocol
+Selective Repeat is a type of error control protocol used in computer networks to ensure the reliable transfer of data between devices. It is a variation of the sliding window protocol, like
+Go-Back-N and it is used in situations where the network has a high bit error rate. 
+
+In Selective Repeat, the sender sends multiple packets of data in sequence, and the receiver acknowledges receipt of each packet. However, unlike Go-Back-N, if the receiver receives a packet out of order, it will buffer it and request a retransmission of only the missing packets. This allows the receiver to continue processing the correctly received packets, reducing the delay caused by retransmitting all packets.
+### reliable data transfer
+TCP provides a reliable connection, which means that data sent using TCP is guaranteed to reach the receiver. In contrast, UDP does not guarantee that data will reach the receiver, and packets can be lost or delivered out of order.
 
 ## Link layer
-### IPV4
-getting new ip adresses, why we don't need ipv6
-### DNS
+### IP
+An IP address is considered hierarchical because it is divided into different fields that represent different levels of the network hierarchy. The most common format of an IP address is IPv4, which is a 32-bit address divided into four octets. Each octet represents a different level of the network hierarchy:
+
+An octet is a unit of digital information that consists of eight bits. In the context of IP addresses, an octet refers to one of the four 8-bit fields that make up an IPv4 address. Each octet is represented by a decimal number between 0 and 255, and is separated by a period. In IPv6 addresses, an octet is represented by a 16-bit field (2 bytes) instead of 8-bit field.
+
+- The first octet represents the network address, also known as the "class" of the IP address
+- The second and third octets represent the subnet address
+- The fourth octet represents the host address
+This hierarchical structure allows for efficient routing and 
+management of IP addresses.
+
+The hierarchical structure of IP addresses solves several problems:
+
+**Routing scalability:** The hierarchical structure of IP addresses allows routers to make forwarding decisions based on the network address rather than the entire IP address. This improves
+routing scalability and reduces the amount of memory and processing power required for routers.
+
+**Address aggregation:** The hierarchical structure of IP addresses allows for address aggregation, which is the process of combining multiple subnets into a single routing entry.
+
+**Hierarchical addressing:** The hierarchical structure of IP addresses allows for a hierarchical addressing scheme, which is a way of allocating IP addresses that reflects the topological structure of the network. This allows for efficient routing and management of IP addresses, and makes it easier to add and remove devices from
+the network.
+
+**How does one get a new IP-adress and why was IPv6 not needed:**
+
 ### Subnet
+### DNS (Domain Name System)
+The DNS protocol runs over UDP and uses port 53.
+
+It is a hierarchical, decentralized system for resolving domain names, such as www.example.com, into IP addresses. The IP address is the numerical label assigned to each device connected to a computer network that uses the Internet Protocol for communication. DNS allows users to access websites and other resources by typing domain names instead of IP addresses. DNS servers are responsible for resolving domain names to IP-addresses and caching the results for a certain period of time.
+
+DNS information is not stored in one location, but a collection of servers worldwide. These exist at different abstraction layers with root servers at the top serving all below. Top-level domains server specific domain names (eg. .com, .dk). Individual organisations have their own DNS servers at the bottom. This makes the system more robust by removing a central failure point, and quicker to respond by having servers closer to worldwide requests.
+
+Iterative DNS and Recursive DNS are two different methods of resolving domain names to IP addresses.
+
+Iterative DNS is a method in which the client queries a DNS server, and the server gives referrals if it does not have the answer, whereas Recursive DNS is a method in which the DNS server takes the responsibility of finding the answer for the client and don't
+give referrals. The recursive DNS is more efficient in terms of network and client resources, but the iterative DNS is more secure because it does not rely on a single DNS server.
+
 ### Fowarding table
+#### KR chap 4 p8
+11100001 01111111 11111111 111
+
+| Destination Address Range           | Link Interface |
+| ----------------------------------- | -------------- |
+| 11100000 00000000 00000000 00000000 |                |
+| through                             | 0              |
+| 11100000 00111111 11111111 11111111 |                |
+|                                     |                |
+| 11100000 01000000 00000000 00000000 |                |
+| through                             | 1              |
+| 11100000 01000000 11111111 11111111 |                |
+|                                     |                |
+| 11100000 01000001 00000000 00000000 |                |
+| through                             | 2              |
+| 11100001 01111111 11111111 11111111 |                |
+| otherwise                                    | 3               |
+- a) Provide a forwarding table that has five entries, uses longest prefix match-ing, and forwards packets to the correct link interfaces.
+Her kigger jeg på de adresses der skal gå iggennem 0 matcher på 10 bits
+*11100000 00***000000 00000000** 
+*11100000 00***111111 11111111 11111111**
+her kan man se at de matcher op til 10 bit derfor kan vi bruge de 10 bits som et prefix : 11100000 . 00, hvis vi har en adresse der har et match med det prefix skal er den i range mellem de 2 adresser den har en value der ligger imellem de 2 og skal derfor igennem 0.
+
+11100000 01000000 og 
+11100000 01000001 matcher, derfor er man nødt til at medtage de 16 bits i prefix tabellen
+
+specielt er
+*1110000*0 01000001 00000000 
+*1110000*1 01111111 11111111 11111111
+de matcher op til 7. bit, men efter det i *1110000*1 0111... kan 0'tallet godt være 1 og det ville faktisk gøre tallet større end den range vi vil have derfor er vi nødt til at have flere cases, der er et tilfælde hvor prefixet matcher og efterfulgt er 10 og det ville være inde for range derfor skal det mappe til 2, men hvis det er 11 vil det være ude for rangen og derfor skal det linke til 3, 01 ville være inde for range, det behøver vi ikke speciel case til
+
+| Prefix match  | Interface |
+| ------------- | --------- |
+| 11100000 . 00 | 0         |
+| 11100000 01000000 | 1         |
+| 1110000       | 2         |
+| 11100001 1    | 3         |
+| otherwise              | 3          |
+man kunne også tilføje flere cases for otherwise
+
+- b) Describe how your forwarding table determines the appropriate link inter-face for datagrams with destination addresses:
+		11001000 10010001 01010001 01010101 <- 5th entry : link 3 
+		11100001 01000000 11000011 00111100 <- 3rd entry : link 2
+		11100001 10000000 00010001 01110111 <- 4th entry : link 3
+den kigger på om der er match med nogle prefixes: 11001000 matcher ikke med nogle prefixes og bliver derfor linket til 3 
+### Mac
+MAC (Media Access Control) addresses are unique identifiers assigned to network interfaces, such as Ethernet cards, Wi-Fi adapters, and so on. They are used to identify devices at the Data Link Layer of the OSI model, which is responsible for providing a reliable link between devices on a local area network (LAN).
+
+The main purpose of MAC addresses is to provide a unique identifier for each device on a LAN, so that data can be properly delivered to the correct device. When a device on a LAN
+wants to send data to another device, it uses the destination device's MAC address to identify it. The data is then transmitted over the LAN in a special format called an Ethernet frame, which includes both the source and destination MAC addresses. 
+
+MAC addresses are not hierarchical because they are not divided into fields that represent different levels of the network hierarchy. Instead, they are fixed-length identifiers that are assigned to devices by their manufacturers. This makes them unique on the LAN, but they are not unique globally, as there's no concept of "network" or "subnet" on the MAC address. 
+
+MAC addresses are also not hierarchical because they are not used for routing purposes. Unlike IP addresses, which are used to route data between networks, MAC addresses are used only for identifying devices on a single LAN. The data is then delivered to the correct device based on the MAC address, but it is not used for routing the data between different networks.
+
+In summary, the purpose of MAC addresses is to identify devices on a LAN and to ensure that data is delivered to the correct device. They are not hierarchical in nature and are not used for routing purposes.
 ## Routing algoritms
 ### Link state
+Dijkstra's algorithm is a graph search algorithm that solves the single-source shortest path problem for a graph with non-negative edge weights, producing a shortest path tree. This means that the algorithm finds the shortest path from one particular source
+node to all other nodes in the graph. The algorithm repeatedly selects the node with the lowest distance, calculates the distance through it to each unvisited neighbor, and updates the neighbor's distance if smaller.
+#### Table
+
 ### Distant vector
+Distance vector routing is a method used by routers in a computer network to determine the best path for forwarding packets. In distance vector routing, each router maintains a table of the shortest distances to every other network, as well as the next hop on the path to that network. The basic function of distance vector routing is for each router to share its table of distances with its neighbors, and for each router to update its own table based on the
+information received from its neighbors. 
+
+This process is known as distance vector algorithm or Bellman-Ford algorithm. The algorithm is iterative and each router continues to update its distance vector until the values in the vector stabilize and no further updates are made.
+#### Table
+
+#### Count to infinity problem
+The count-to-infinity problem is a problem that can occur in distributed systems, particularly in distance-vector routing algorithms. It is a problem that can happen when two or more
+nodes in a network are trying to determine the best path to a destination. 
+
+The problem arises when two nodes, A and B, both have an incorrect distance to a destination, C. Each node assumes that the other node has the correct distance and starts incrementing its own distance in an attempt to converge on the correct value. However, since both nodes have incorrect distances, they will continue to increment their distances indefinitely, causing their distance values to grow larger and larger. This is referred to as
+"counting to infinity." 
+
+The problem can be mitigated by using a metric such as Bellman-Ford or Dijkstra algorithm, which incorporate a mechanism such as a maximum hop count or a timeout to prevent the distance values from growing indefinitely. The idea behind these algorithms is to prevent the nodes from counting to infinity by introducing a maximum value for the distance, when this maximum value is reached the node will consider that the information is incorrect and
+discard it.
+
+**Summary:**
+The count-to-infinity problem is a problem that can occur in distance-vector routing algorithms when two or more nodes in a network are trying to determine the best
+path to a destination, and the nodes keep incrementing the distance values indefinitely, leading them to become larger and larger, referred to as counting to infinity. This problem
+can be mitigated by using a different routing algorithm that incorporates a mechanism to prevent the distance values from growing indefinitely.
 ## Security 
+### Salting
+
+### Playback attack 
+A playback attack is a type of network attack in which an attacker intercepts and records a valid authentication or encryption message, such as an authentication token or a session ID and then replays it at a later time to gain unauthorized access to a system.
+
+A nonce (short for "number used once") is a unique value that is generated for each authentication or encryption message, and is included in the message as part of the authentication or encryption process. Because the nonce is generated anew for each
+message, it can only be used once, making it difficult for an attacker to replay a previously intercepted message.
+
+When a message is received, the nonce is checked against a database of previously used nonces. If the nonce has already been used, the message is rejected, thus preventing a replay attack.
+
+In summary, a nonce is a solution to a playback attack by ensuring that the message can only be used once, and that the message is coming from the expected sender, thus making it difficult for an attacker to replay a recorded message.
+
+### Nonce:
+A nonce is a number that is used only once. In cryptography, a nonce is a random or unique number that is generated for each encryption operation. The nonce is included as part of the
+input to the encryption algorithm, along with the plaintext and a key. The nonce provides an extra level of security by ensuring that the same plaintext and key will not produce the same ciphertext even if the same encryption algorithm is used. In some cases, the nonce is used to make sure that the data that is exchanged between the sender and receiver is unique and has not been tampered with. The nonce is sent along with the message and the recipient can check if it is unique or not, if the nonce is not unique then the message is dropped.
+
+Nonces are widely used in various cryptographic protocols like in the WPA2 wireless security protocol and in the AES-GCM encryption algorithm.
+### Replay attack
+A replay attack is a type of network security attack in which an attacker intercepts and records a legitimate network packet and then retransmits it at a later time. The goal of a replay attack is to gain unauthorized access to a network or system by replaying a previously captured packet that contains valid authentication or session information. 
+
+Replay attacks can occur at different layers of the OSI model, but most commonly occur at the transport layer, where they can exploit the stateless nature of the User Datagram
+Protocol (UDP) and the Transmission Control Protocol (TCP).
+
+For example, an attacker could intercept a packet that contains a valid username and password during an authentication process, and then replay that packet at a later time to gain unauthorized access to a network or system
+
+**Replay attacks can be prevented by using methods such as:**
+- Timestamps: adding a timestamp to the packet to ensure that it can only be used for a limited time.
+- Sequence numbers: assigning a unique number to each packet to prevent the replaying of a previously used packet.
+- Cryptographic techniques: encrypting the packet to prevent the attacker from reading and replaying it.
+### A man-in-the-middle (MITM) attack 
+A man-in-the-middle (MITM) attack  is a type of cyber attack in which an attacker intercepts and alters communications between two parties without their knowledge or consent. by intercepting and manipulating the communication between the two parties, the attacker can steal sensitive information, inject malware, or perform other malicious actions. In a MITM attack, the attacker can intercept the communication by either physically accessing the network or by using various techniques such as IP spoofing, DNS spoofing. Remember that protocols such as IP is not secure, it's in the other layers the security is provided, like in the application layer where you would use a secure form of HTTP (HTTPS). 
+
+Once the attacker has intercepted the communication, they can use various techniques to manipulate it, such as:
+- Eavesdropping: the attacker can read and record the intercepted communication
+- Modifying: the attacker can alter the intercepted communication to inject malware or steal sensitive information
+- Injecting: the attacker can inject new communication into the intercepted communication to trick the parties into revealing sensitive information.
+
+Packet sniffers like wireshark could be used and if the communication is on a non-encrypted channel (using HTTP instead of HTTPS) one could see all packets being send, which could contain all sorts of information, such as passwords. 
+
+**MITM attacks can be prevented by using methods such as:**
+- Encryption: encrypting the communication can prevent the attacker from reading and altering it
+- Authentication: using strong authentication methods can prevent the attacker from impersonating one of the parties
+- Network segmentation: segmenting the network and limiting the scope of the attack can prevent the attacker from accessing sensitive information.
+### Encryption
+Encryption is a technique that can be used to make a protocol more secure by protecting the confidentiality and integrity of the data being transmitted. There are several types of encryption that can be used, each with their own strengths and weaknesses. Some of the main types of encryption include:
+
+*Symmetric encryption:* This type of encryption involves using a shared secret key to encrypt and decrypt the data. The same key is used to encrypt the data before it is transmitted and decrypt it upon receipt. Examples of symmetric encryption algorithms include AES, DES, and Blowfish.
+
+*Asymmetric encryption:* This type of encryption involves using a public and private key pair to encrypt and decrypt the data. The public key is used to encrypt the data, while the private key is used to decrypt it. Examples of asymmetric encryption algorithms include RSA, Diffie-Hellman, and Elliptic Curve Cryptography (ECC).
+
+*Hash functions:* This type of encryption is not used to encrypt the data but to ensure integrity of the data by creating a unique digital signature. When a message is hashed it produces a fixed-length output that will change if the original data is changed. Examples of hash functions are SHA-256, SHA-3 and MD5
+
+*Stream ciphers:* This type of encryption uses a pseudorandom stream of data, also known as a keystream, to encrypt the data. Examples of stream ciphers are RC4 and Salsa20
+
+**Summary:**
+Encryption is a technique that can be used to make a protocol more secure by protecting the confidentiality and integrity of the data being transmitted. There are different types of encryption that can be used, such as symmetric encryption, asymmetric encryption, hash functions and stream ciphers each with their own strengths and weaknesses. It's important to choose the right encryption algorithm and its implementation to ensure the best security for the specific use case.
+### Keys in networking
+There are several different types of keys that can be used in a network, and their specific functions can vary depending on the context and the type of network being used. However,
+some common types of keys used in networks include:
+
+*Encryption keys:* These keys are used to encrypt and decrypt data as it is transmitted over a network. They can be used to secure data from unauthorized access, such as by encrypting login credentials or other sensitive information.
+
+*Authentication keys:* These keys are used to authenticate devices or users on a network. They can be used to ensure that only authorized devices or users can access the network or
+specific resources on the network.
+
+*Session keys:* These keys are used to establish and maintain a secure session between devices or users on a network. They can be used to encrypt and decrypt data for a specific session, and are typically discarded or changed after the session is completed.
+
+*Key management keys:* These keys are used to manage and distribute other types of keys on a network. They can be used to encrypt and decrypt keys for distribution, or to authenticate devices or users that are requesting keys.
+
+*Digital signature keys:* These keys are used to create and verify digital signatures. They can be used to ensure the authenticity and integrity of data transmitted over a network. 
+
+It's worth noting that depending on the type of network, protocols, and security standards the keys may be used in different ways, and some may not be necessary in some cases.
+
+### Cryptographic and non-cryptographic hash function
+**Non-cryptographic hash function:**
+If a hash function is non-cryptographic, it means that it is fairly simple to reverse engineer the hash. It can be used only to check integrity of a message, since we can send a hash of the contents along the message, so the receiver can check if the message is altered(by purpose or error) (checksum)
+**Cryptographic hash function:**
+Is very hard to be reverse engineered. And can then be used to send secret data.
+
+A cryptographic hash function has several properties that are different or stronger than those of a regular hash function. These properties are needed to make the cryptographic hash function suitable for use in various cryptographic applications such as digital signature, message authentication code (MAC) and password hashing.
+
+*Collision-Resistance:* It should be computationally infeasible to find two different input messages that produce the same output hash value, also known as a "collision".
+
+*Preimage-Resistance:* Given an output hash value, it should be computationally infeasible to find any input message that would produce that output hash value, also known as a "preimage".
+
+*Puzzle-friendliness:* It should be computationally hard to find any two input messages that have a difference of only one bit and produce very different output hash values.
+
+*Hiding property:* It should be computationally infeasible to determine anything about the input message by looking at its output hash value.
+
+*Avalanche effect:* A small change in the input message should cause a significant change in the output hash value.
+
+*Second preimage resistance:* Given an input message, it should be
+computationally infeasible to find a different input message that will produce the same output hash value.
+
+*Computational efficiency:* The hash function should be computationally efficient, meaning it should be able to process large input messages quickly.
+
+*Deterministic:* The output hash value should be deterministic, meaning that the same input message will always produce the same output hash value.
+
+These properties are needed to protect the integrity and confidentiality of the data in various cryptographic applications, and to make it difficult for an attacker to find any weaknesses in
+the hash function.

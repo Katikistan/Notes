@@ -8,16 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "91d57a78fd54ae97",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Excalidraw/CompSys - Recap 10-01-24 13.26.31.excalidraw.md"
-              }
-            }
-          },
-          {
             "id": "75b4eedb9d409381",
             "type": "leaf",
             "state": {
@@ -30,8 +20,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -194,7 +183,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 7
       }
     ],
     "direction": "horizontal",
@@ -215,32 +204,47 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "75b4eedb9d409381",
+  "active": "e613d9a5e7dd2cc6",
   "lastOpenFiles": [
-    "Pasted image 20240118160930.png",
-    "Pasted image 20240118160901.png",
-    "Pasted image 20240118160735.png",
-    "Pasted image 20240118160727.png",
-    "Pasted image 20240118160648.png",
-    "Pasted image 20240118160607.png",
-    "Pasted image 20240118160544.png",
-    "Pasted image 20240118160433.png",
-    "Pasted image 20240118160353.png",
-    "Pasted image 20240118160219.png",
-    "Pasted image 20240118160141.png",
+    "Compsys_eksamen.zip",
+    "ziDHR6nB",
+    "Compsys_eksamen/OS.pdf",
+    "Compsys_eksamen/ARC.pdf",
+    "OS.pdf",
+    "ARC.pdf",
+    "ziwzeKxI",
+    "ziDf4Frf",
+    "Compsys_eksamen/Pasted image 20240118160930.png",
+    "Compsys_eksamen/Pasted image 20240118160901.png",
+    "Compsys_eksamen/Pasted image 20240118160735.png",
+    "Compsys_eksamen/Pasted image 20240118160727.png",
+    "Compsys_eksamen/Pasted image 20240118160648.png",
+    "Compsys_eksamen/Pasted image 20240118160607.png",
+    "Compsys_eksamen/Pasted image 20240118160544.png",
+    "Compsys_eksamen/Pasted image 20240118160433.png",
+    "Compsys_eksamen/Pasted image 20240118160353.png",
+    "Compsys_eksamen/Pasted image 20240118160219.png",
+    "Compsys_eksamen/OS.md",
+    "Compsys_eksamen/Heap uddybende ulæsligt fordi det ikke er blevet rettet og fri tanke strøm fra mit krøllet hovedet.md",
+    "Compsys_eksamen/ARC.md",
+    "Compsys_eksamen",
+    "Compsys eksamen/OS.md",
+    "SS.md",
     "DR.md",
-    "Heap.md",
+    "Compsys eksamen/Heap uddybende ulæsligt fordi det ikke er blevet rettet og fri tanke strøm fra mit krøllet hovedet.md",
+    "CompSys Eksamens oplæsning.md",
+    "SS uge 2 tirsdag øvelser.Rmd",
+    "TDC.md",
     "CompSys - Eksamens noter.md",
+    "Untitled.md",
+    "Compsys eksamen",
+    "Compsys eksamen/ARC.md",
     "Excalidraw/CompSys - Recap 10-01-24 13.26.31.excalidraw.md",
     "Excalidraw/DR 13-01-24 16.05.26.excalidraw.md",
     "Excalidraw/CompSys - Recap 10-01-24 14.20.43.excalidraw.md",
     "Excalidraw/CompSys - Recap 12-01-24 22.25.26.excalidraw.md",
     "Excalidraw/CompSys - Recap 12-01-24 22.44.01.excalidraw.md",
     "Excalidraw/CompSys - Recap 12-01-24 23.09.59.excalidraw.md",
-    "CompSys Eksamens oplæsning.md",
-    "SS.md",
-    "SS uge 2 tirsdag øvelser.Rmd",
-    "TDC.md",
     "Excalidraw/CompSys - Recap 12-01-24 21.28.04.excalidraw.md",
     "3. semester/CompSys/Lecture/CompSys - Lecture ons - 1.md",
     "Untitled 1.md",
@@ -248,21 +252,6 @@
     "3. semester/CompSys/Lecture/CompSys - Lecture ons - 40.md",
     "3. semester/CompSys/Lecture/CompSys - Lecture ons - 38.md",
     "3. semester/CompSys/Lecture/CompSys - Lecture man - 47.md",
-    "3. semester/CompSys/Reading/CompSys - Reading for week 39.md",
-    "3. semester/CompSys/Wiki/Floats.md",
-    "3. semester/CompSys/Wiki/Computer arkitektur.md",
-    "3. semester/CompSys/Wiki/Computer architecture.md",
-    "3. semester/CompSys/Wiki/Assembly.md",
-    "Weekly notes/Uge 44 - 2023.md",
-    "SS-uge-2-tirsdag-øvelser.html",
-    "3. semester/CompSys/lectures/23-09-25_memory_heirarchy_and_caching/memory_hierarchy.pdf",
-    "3. semester/CompSys/Lecture/arrays.pdf",
-    "3. semester/CompSys/lectures/23-09-20_c_dynamic_memory/list/list",
-    "3. semester/CompSys/lectures/23-09-20_c_dynamic_memory/list/list.o",
-    "3. semester/CompSys/lectures/23-10-11_concurrency_II/lecture_code/futures.h",
-    "3. semester/CompSys/lectures/23-10-11_concurrency_II/lecture_code/fibs.c",
-    "3. semester/CompSys/lectures/23-10-11_concurrency_II/lecture_code/fibs-verytiny.input",
-    "3. semester/CompSys/lectures/23-10-11_concurrency_II/lecture_code/fibs-threadpool.c",
     "Untitled.canvas"
   ]
 }
