@@ -4,6 +4,7 @@
 - Blocks are collections of rows with a header, footer, and optional payload (sometimes blocks must have payload meaning they must be bigger than 8, which is the size of a block with only a header and footer).
 - The heap grows from bottom up.
 - Block sizes must be multiples of 8.
+- When one block ends the next block the next starts. By finding header of one block you also know the next row will be Header of next block. 
 ![[Pasted image 20240113142357.png|500]]
 **2. Analyzing Header and Footer Bits:**
 - Bit 0 in the header/footer indicates block usage (1 for allocated, 0 for free).
@@ -11,6 +12,7 @@
 - Bit 2 is unused and always set to 0.
 - The block size is determined when the first 3 bits are set to 0.
 	(this could change so be sure to read the text carefully)
+	
 	*example:* 0x23 = 0b0010 0011
 	bit 0 is 1: the block is allocated
 	bit 1 is 1: the previous block is allocated
@@ -18,6 +20,7 @@
 	
 	32 is a multiple of 8 the block would therefore have 8 rows since each row has a size of 4, therefore 8 * 4 = 32. 
 	of those 8 rows 2 rows are for the header and footer
+	
 ![[Pasted image 20240113142314.png|500]]
 **3. Steps to Solve the Assignment:**
 - Start by finding the first block (header or footer) from the bottom.
@@ -28,7 +31,7 @@
 - **immediate coalescing
 - When freeing a block, check for adjacent free blocks immediately.
 - If neighboring blocks are free, merge them into a single larger block.
-- Ensure that the new block's header and footer are adjusted for the combined size, if 2 blocks have size 16, new size will be 32. alternatively count the amount of rows in each block (each row is 4 in size), this not always possible(some rows of a block may be offscreen) so its better to look at header and footer of each block, determine their sizes, then add them up. See example below
+- Ensure that the new block's header and footer are adjusted for the combined size, if 2 blocks have size 16, new size will be 32. alternatively count the amount of rows in each block (each row is 4 in size), *this not always possible(some rows of a block may be offscreen) so its better to look at header and footer of each block, determine their sizes, then add them up. See example below*
 - Retain the headers and footers of the merged blocks in the payload area. That means the headers and footers in the middle of the block stay unchanged
 - Update the adjacent block's (the block above)  header and footer bits to reflect the merged block's status.
 - Verify that the merged block adheres to any specified constraints, such as not creating blocks with zero payload.
@@ -73,8 +76,6 @@ Exam text specifies that "we must never create blocks with 0 payload", this mean
 ![[Pasted image 20240112235706.png]]
 Therefore we get a block that is 16 + 16 in size, we remember that the old footer (0x13) and header (0x12) don't change since the 2 blocks merge into 1 due to immediate coalescing
 ![[Pasted image 20240112235808.png]]
-*Exam 22/23*
-![[DR 13-01-24 16.05.26.excalidraw]]
 **7. Additional Tips:**
 - Pay attention to the specific requirements of the assignment, such as restrictions on block sizes or the presence of payload in certain cases.
 - Be meticulous in tracking block sizes, allocation status, and immediate coalescing.

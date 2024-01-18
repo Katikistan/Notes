@@ -4,23 +4,34 @@
     "type": "split",
     "children": [
       {
-        "id": "21c82299b624e80e",
+        "id": "b94b9b7a84b67cde",
         "type": "tabs",
         "children": [
           {
-            "id": "6e8702902fcb08ae",
+            "id": "91d57a78fd54ae97",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/CompSys - Recap 10-01-24 13.26.31.excalidraw.md"
+              }
+            }
+          },
+          {
+            "id": "75b4eedb9d409381",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CompSys - Recap.md",
+                "file": "CompSys - Eksamens noter.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -113,7 +124,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CompSys - Recap.md",
+                "file": "CompSys - Eksamens noter.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -130,7 +141,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CompSys - Recap.md",
+                "file": "CompSys - Eksamens noter.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -154,7 +165,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CompSys - Recap.md"
+                "file": "CompSys - Eksamens noter.md"
               }
             }
           },
@@ -187,7 +198,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 445.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -206,32 +217,32 @@
   },
   "active": "e613d9a5e7dd2cc6",
   "lastOpenFiles": [
-    "Pasted image 20240117222115.png",
-    "Pasted image 20240117221638.png",
-    "Pasted image 20240117220844.png",
-    "Pasted image 20240117220603.png",
-    "Pasted image 20240117212029.png",
+    "Pasted image 20240118025222.png",
+    "Pasted image 20240118024906.png",
+    "Pasted image 20240118023124.png",
+    "Pasted image 20240118015633.png",
+    "Pasted image 20240118015622.png",
+    "Pasted image 20240118015601.png",
+    "Pasted image 20240118015538.png",
+    "Pasted image 20240118015534.png",
+    "Pasted image 20240118015516.png",
+    "Pasted image 20240118015448.png",
+    "Pasted image 20240118010227.png",
+    "DR.md",
+    "Heap.md",
+    "CompSys - Eksamens noter.md",
+    "Excalidraw/CompSys - Recap 10-01-24 13.26.31.excalidraw.md",
+    "Excalidraw/DR 13-01-24 16.05.26.excalidraw.md",
     "Excalidraw/CompSys - Recap 10-01-24 14.20.43.excalidraw.md",
     "Excalidraw/CompSys - Recap 12-01-24 22.25.26.excalidraw.md",
     "Excalidraw/CompSys - Recap 12-01-24 22.44.01.excalidraw.md",
     "Excalidraw/CompSys - Recap 12-01-24 23.09.59.excalidraw.md",
-    "CompSys - Recap.md",
-    "Pasted image 20240117211217.png",
-    "Pasted image 20240117211008.png",
-    "Pasted image 20240117205126.png",
-    "Pasted image 20240117204914.png",
-    "Pasted image 20240117204851.png",
-    "Pasted image 20240117014935.png",
     "CompSys Eksamens oplæsning.md",
     "SS.md",
-    "Heap.md",
-    "DR.md",
-    "Excalidraw/DR 13-01-24 16.05.26.excalidraw.md",
     "SS uge 2 tirsdag øvelser.Rmd",
     "TDC.md",
     "Excalidraw/CompSys - Recap 12-01-24 21.28.04.excalidraw.md",
     "3. semester/CompSys/Lecture/CompSys - Lecture ons - 1.md",
-    "Excalidraw/CompSys - Recap 10-01-24 13.26.31.excalidraw.md",
     "Untitled 1.md",
     "Weekly notes/Uge 40 - 2023.md",
     "3. semester/CompSys/Lecture/CompSys - Lecture ons - 40.md",
