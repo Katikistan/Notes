@@ -54,3 +54,24 @@ differenter invers $g'(x)^{⁻1}$
 gang de to sammen $f(g(x)^{⁻1})\cdot g'(x)^{⁻1}$
 
 husk at den nye tætheds billedmængde er X's der er blevet sat ind i g(x), så hvis f(x) har 0 < y < 1, så har g(x) g(0) < y < g(1)
+
+
+runif
+lm
+predict
+confint
+newdata
+plot
+qqplot
+rstandard
+lty 
+abline
+summary
+var mean sd
+t.test
+qt 
+qnorm
+
+DS 5.2 til to stikprøver sammenvejede estimat for varians:
+$$s^2=\frac{\left(n_1-1\right) s_x^2+\left(n_2-1\right) s_y^2}{n-2}$$
+tag kvadratrod få at for spredning
