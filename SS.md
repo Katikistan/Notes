@@ -53,6 +53,4 @@ sæt g ind i tæthed f:  $f(g(x)^{⁻1})$
 differenter invers $g'(x)^{⁻1}$
 gang de to sammen $f(g(x)^{⁻1})\cdot g'(x)^{⁻1}$
 
-
-
-
+husk at den nye tætheds billedmængde er X's der er blevet sat ind i g(x), så hvis f(x) har 0 < y < 1, så har g(x) g(0) < y < g(1)
