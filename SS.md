@@ -74,4 +74,42 @@ qnorm
 
 DS 5.2 til to stikprøver sammenvejede estimat for varians:
 $$s^2=\frac{\left(n_1-1\right) s_x^2+\left(n_2-1\right) s_y^2}{n-2}$$
-tag kvadratrod få at for spredning
+tag kvadratrod få at for spredning eller lad vær hvis det er varians
+
+
+hvis du bruger en eller anden log model og bliver bedt om at predicte noget som ikke er log:
+predict rev =4000
+newdata = logrev(4000)
+exp(predict(model,newdata))
+
+
+når normalfordelt fås standard error for mideelværdien, her er s spredning:
+$$
+\operatorname{SE}(\hat{\mu})=\frac{s}{\sqrt{n}}
+$$
+
+
+sammligne to datasæt eller subset af datasæt, evt give konfidensinterval:
+`subset(filmdata, Language=="EN")`
+`t.test(subset$ting_der_sammenlignes,subset$ting_der_sammenlignes, var.equal=TRUE)`
+
+du bliver bedt om at simulere for middelværdi eller varians, spredning:
+først bestem fordelingsfumktion G fra tæthed (integrate fra -uendelig til x)
+```r
+U <- runif(10000)
+X <- G(U) //fraktilfunktion af G
+mean(X) // eller hvis du bliver bedt om E(sqrt(X))
+mean(sqrt(X))
+```
+
+
+få grænsen til marginale tætheder:
+for $0 < x < 1$ , $0 < y < x^2$
+hvis det ikke er klart så prøv at få både og x og y i en lang ulighed
+$0<\sqrt{y}<x<1$
+på den måde har jeg fået en grænse jeg kan bruge til at få den marginale tæthed af y.
+for $0 < x < 2$ , $0 < y < \frac{1}{x}$
+det tyder på at man tit skal gange med den inverse på x og y siderne
+for $0 < x < 2$ , $0 < \frac{1}{y} < \frac{1}{\frac{1}{x}}<2$
+som er det samme som
+for $0 < x < 2$ , $0 < \frac{1}{y} < x< 2$
