@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CompSys - Eksamens noter.md",
+                "file": "SS.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -113,7 +113,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CompSys - Eksamens noter.md",
+                "file": "SS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -130,7 +130,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CompSys - Eksamens noter.md",
+                "file": "SS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -154,7 +154,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CompSys - Eksamens noter.md"
+                "file": "SS.md"
               }
             }
           },
@@ -206,6 +206,7 @@
   },
   "active": "e613d9a5e7dd2cc6",
   "lastOpenFiles": [
+    "CompSys - Eksamens noter.md",
     "Compsys_eksamen.zip",
     "ziDHR6nB",
     "Compsys_eksamen/OS.pdf",
@@ -235,9 +236,7 @@
     "CompSys Eksamens oplæsning.md",
     "SS uge 2 tirsdag øvelser.Rmd",
     "TDC.md",
-    "CompSys - Eksamens noter.md",
     "Untitled.md",
-    "Compsys eksamen",
     "Compsys eksamen/ARC.md",
     "Excalidraw/CompSys - Recap 10-01-24 13.26.31.excalidraw.md",
     "Excalidraw/DR 13-01-24 16.05.26.excalidraw.md",
