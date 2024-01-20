@@ -142,11 +142,19 @@ plot(styrke ~ tid, data=cement)
 plot(logStyrke ~ reciprokTid, data=cement)
 stdres <- rstandard(lin)
 hat_y  <- predict(lin)
-qqnorm(stdres); abline(0,1)
+qqnorm(stdres); abline(0,1,lty=2)
 plot(hat_y,stdres,main="Residualplot"); abline(0,0,lty=2)
 ```
+abline(h=0,lty=2) for lin reg
+qqnorm(stdres); abline(0,1,lty=2) residual for normal
+qqnorm(stdres); abline(0,1,lty=2) residual for normal
+plot(fitted(linreg),rstandard(linreg)) resudial for linreg
+```
+qqnorm(prothrombin$forskel) 
+abline(mean,spredning)
+```
 
-
+Det er en antagelse i modellen at varianserne er ens. Dette kaldes varianshomogenitet, og det bør altid kontrolleres om denne antagelse er fornuftig. Samme med uafhængighed (omkring 0 i residual)
 
 $P(X<x)$
 brug pnorm
@@ -160,7 +168,19 @@ $$
 # Opgave 1
 # Opgave 2
 # Opgave 3 og 4
+a=0.05
+1-a=0.95
+a/2 = 0.025
+fraktil = 1-0.025 = 0.975
+qt(0.975,n-1) 95% confidens
+
+a=0.1
+1-a=0.90
+a/2 = 0.05
+1-0.05
+qt(0.95,n-1) 90% confidens
 Længde af konfidens interval
+
 $$
 L=2 \cdot t_{n-2,1-\alpha / 2} \cdot  \frac{s}{\sqrt n}
 $$
