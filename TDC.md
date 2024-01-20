@@ -16,3 +16,4 @@ de skal tingtingelinge, med egen kop.
 
 # Troldmand
 # Pirat 
+![[kurser.png]]

@@ -16,8 +16,29 @@
                 "file": "Misc/Templates/Excalidraw.md"
               }
             }
+          },
+          {
+            "id": "56db87e1dd7e895e",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Misc/Templates/Excalidraw.md"
+              }
+            }
+          },
+          {
+            "id": "ae694c1ecc251f2a",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "kurser.png"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -201,13 +222,19 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "092e5c50894d2d21",
+  "active": "e613d9a5e7dd2cc6",
   "lastOpenFiles": [
+    "TDC.md",
+    "Kurser'.png",
+    "kurser.png",
+    "Pasted image 20240120031018.png",
+    "Pasted Image 20240120030843_227.png",
+    "Misc/Templates/Excalidraw.md",
     "Pasted Image 20240120024105_157.png",
     "Pasted Image 20240120024043_104.png",
-    "Misc/Templates/Excalidraw.md",
     "Pasted Image 20240120021924_911.png",
     "Pasted Image 20240120021854_869.png",
+    "Untitled.md",
     "Misc/Vigtig syntax.md",
     "SS.md",
     "32bit-Endianess.svg.png",
@@ -221,11 +248,6 @@
     "ziwzeKxI",
     "ziDf4Frf",
     "Compsys_eksamen/Pasted image 20240118160930.png",
-    "Compsys_eksamen/Pasted image 20240118160901.png",
-    "Compsys_eksamen/Pasted image 20240118160735.png",
-    "Compsys_eksamen/Pasted image 20240118160727.png",
-    "Compsys_eksamen/Pasted image 20240118160648.png",
-    "Compsys_eksamen/Pasted image 20240118160607.png",
     "Compsys_eksamen/OS.md",
     "Compsys_eksamen/Heap uddybende ulæsligt fordi det ikke er blevet rettet og fri tanke strøm fra mit krøllet hovedet.md",
     "Compsys_eksamen/ARC.md",
@@ -235,8 +257,6 @@
     "Compsys eksamen/Heap uddybende ulæsligt fordi det ikke er blevet rettet og fri tanke strøm fra mit krøllet hovedet.md",
     "CompSys Eksamens oplæsning.md",
     "SS uge 2 tirsdag øvelser.Rmd",
-    "TDC.md",
-    "Untitled.md",
     "Compsys eksamen/ARC.md",
     "Excalidraw/CompSys - Recap 10-01-24 13.26.31.excalidraw.md",
     "Excalidraw/DR 13-01-24 16.05.26.excalidraw.md",
