@@ -33,7 +33,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "SS.md",
+                "file": "CompSys - Eksamens noter.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -134,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "SS.md",
+                "file": "CompSys - Eksamens noter.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "SS.md",
+                "file": "CompSys - Eksamens noter.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -175,7 +175,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "SS.md"
+                "file": "CompSys - Eksamens noter.md"
               }
             }
           },
@@ -225,8 +225,9 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "ae694c1ecc251f2a",
+  "active": "e613d9a5e7dd2cc6",
   "lastOpenFiles": [
+    "SS.md",
     "Misc/Templates/Excalidraw.md",
     "TDC.md",
     "Kurser'.png",
@@ -239,7 +240,6 @@
     "Pasted Image 20240120021854_869.png",
     "Untitled.md",
     "Misc/Vigtig syntax.md",
-    "SS.md",
     "32bit-Endianess.svg.png",
     "CompSys - Eksamens noter.md",
     "Compsys_eksamen.zip",
