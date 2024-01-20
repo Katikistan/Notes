@@ -31,9 +31,12 @@
             "id": "ae694c1ecc251f2a",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "kurser.png"
+                "file": "SS.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
               }
             }
           }
@@ -131,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Misc/Templates/Excalidraw.md",
+                "file": "SS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -148,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Misc/Templates/Excalidraw.md",
+                "file": "SS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -172,7 +175,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Misc/Templates/Excalidraw.md"
+                "file": "SS.md"
               }
             }
           },
@@ -222,14 +225,14 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "e613d9a5e7dd2cc6",
+  "active": "ae694c1ecc251f2a",
   "lastOpenFiles": [
+    "Misc/Templates/Excalidraw.md",
     "TDC.md",
     "Kurser'.png",
     "kurser.png",
     "Pasted image 20240120031018.png",
     "Pasted Image 20240120030843_227.png",
-    "Misc/Templates/Excalidraw.md",
     "Pasted Image 20240120024105_157.png",
     "Pasted Image 20240120024043_104.png",
     "Pasted Image 20240120021924_911.png",

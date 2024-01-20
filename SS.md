@@ -72,21 +72,25 @@ t.test
 qt 
 qnorm
 
-DS 5.2 til to stikprøver sammenvejede estimat for varians:
+DS 5.2 til to stikprøver sammenvejede estimat for varians, to uafhængige stikprøver:
 $$s^2=\frac{\left(n_1-1\right) s_x^2+\left(n_2-1\right) s_y^2}{n-2}$$
 tag kvadratrod få at for spredning eller lad vær hvis det er varians
 
 
 hvis du bruger en eller anden log model og bliver bedt om at predicte noget som ikke er log:
 predict rev =4000
-newdata = logrev(4000)
+newdata = data.frame(logrev(4000))
 exp(predict(model,newdata))
 
+hvis det er et predictions interval så tag exp på endepunkter: 
 
-når normalfordelt fås standard error for mideelværdien, her er s spredning:
+når normalfordelt fås standard error for mideelværdien, her er s spredning. estimerede spredning (standarderror):
 $$
 \operatorname{SE}(\hat{\mu})=\frac{s}{\sqrt{n}}
 $$
+
+vil gerne have en estimeret spredning på n: sæt værdier ind, du får fra tekst på $\operatorname{SE}(\hat{\mu})$ 
+
 
 
 sammligne to datasæt eller subset af datasæt, evt give konfidensinterval:
@@ -113,3 +117,68 @@ det tyder på at man tit skal gange med den inverse på x og y siderne
 for $0 < x < 2$ , $0 < \frac{1}{y} < \frac{1}{\frac{1}{x}}<2$
 som er det samme som
 for $0 < x < 2$ , $0 < \frac{1}{y} < x< 2$
+
+
+konfidensinterval:
+$$
+\bar{Y} \pm t_{n-1,1-\alpha / 2} \frac{\tilde{\sigma}}{\sqrt{n}}=\left(\bar{Y}-t_{n-1,1-\alpha / 2} \frac{\tilde{\sigma}}{\sqrt{n}}, \bar{Y}+t_{n-1,1-\alpha / 2} \frac{\tilde{\sigma}}{\sqrt{n}}\right)
+$$
+$$
+\hat{\mu} \pm \text { fraktil } \cdot \text { spredning for } \hat{\mu} \text {. }
+$$
+qt
+
+```
+3.293+c(-1,1)*qt(0.975,499)*0.155/sqrt(500)
+confi <- mu+c(-1,1)*qnorm(0.975)*phi/sqrt(n)
+t <- t.test(laktose$forskel)
+```
+
+
+plot:
+
+```
+plot(styrke ~ tid, data=cement)
+plot(logStyrke ~ reciprokTid, data=cement)
+stdres <- rstandard(lin)
+hat_y  <- predict(lin)
+qqnorm(stdres); abline(0,1)
+plot(hat_y,stdres,main="Residualplot"); abline(0,0,lty=2)
+```
+
+
+
+$P(X<x)$
+brug pnorm
+
+"Betragt to jordprøver hvor jordprøve 1 har x gange så høj fosforkoncentration som jord-prøve 2. Hvor mange gange højere forventer du at fosforkoncentrationen er i vandprøven hørende til jordprøve 1 i forhold til vandprøven hørende til jordprøve 2?" 
+
+For log model
+$$
+x^\hat{\beta}
+$$
+# Opgave 1
+# Opgave 2
+# Opgave 3 og 4
+Længde af konfidens interval
+$$
+L=2 \cdot t_{n-2,1-\alpha / 2} \cdot  \frac{s}{\sqrt n}
+$$
+$$
+L=2 \cdot t_{n-2,1-\alpha / 2} \cdot \tilde{\sigma} \cdot \sqrt{\frac{1}{n_1}+\frac{1}{n_2}}
+$$
+$$
+F(x)=P(X \leq x)=P\left(\frac{X-\mu}{\sigma} \leq \frac{x-\mu}{\sigma}\right)=\Phi\left(\frac{x-\mu}{\sigma}\right) .
+$$
+$$
+P(|X|\leq x)P(-x \leq X \leq x)=P\left(\frac{-x-\mu}{\sigma}\leq X \leq \frac{x-\mu}{\sigma}\right)
+$$
+dernæst:
+$P(X\leq x)-P(-x\leq X)$
+
+$P(X<x)$
+brug pnorm(x)
+$P(X\leq x)$
+brug pnorm(x)
+$P(-x\leq X)$
+brug pnorm(x)
