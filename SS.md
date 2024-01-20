@@ -166,7 +166,25 @@ $$
 x^\hat{\beta}
 $$
 # Opgave 1
+inequal({0<x<1})
+hvis det er tæthed
+tæthed til fordeling
+fordeling til tæthed
+uafhængighed
+P(x<X<y)
+P(X<x)
+LOTUS
+2D LOTUS
+Trans
+varians
+covarian
+Simulation
 # Opgave 2
+eller = +
+og = *
+Middelværdi, gang med realistioner af X ikke 1..n
+LOTP
+Bayes
 # Opgave 3 og 4
 a=0.05
 1-a=0.95
@@ -202,3 +220,11 @@ $P(X\leq x)$
 brug pnorm(x)
 $P(-x\leq X)$
 brug pnorm(x)
+
+
+residual plot:
+plot(residuals(linreg)~predict(linreg))
+qq-plot:
+qqnorm(residuals(linreg))
+
+Lav et hypotesetest for nulhypotesen: summary aflæs pr(>|t|), hvis den er større end siknifikantniveauet (f.eks. 5% eller 0.05) kan man ikke forkaste nul hypotesen.
