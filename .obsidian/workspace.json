@@ -4,19 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "b94b9b7a84b67cde",
+        "id": "5ed85a188b213fcd",
         "type": "tabs",
         "children": [
           {
-            "id": "75b4eedb9d409381",
+            "id": "092e5c50894d2d21",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "excalidraw",
               "state": {
-                "file": "SS.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
+                "file": "Misc/Templates/Excalidraw.md"
               }
             }
           }
@@ -113,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "SS.md",
+                "file": "Misc/Templates/Excalidraw.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -130,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "SS.md",
+                "file": "Misc/Templates/Excalidraw.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -154,7 +151,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "SS.md"
+                "file": "Misc/Templates/Excalidraw.md"
               }
             }
           },
@@ -204,8 +201,15 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "e613d9a5e7dd2cc6",
+  "active": "092e5c50894d2d21",
   "lastOpenFiles": [
+    "Pasted Image 20240120024105_157.png",
+    "Pasted Image 20240120024043_104.png",
+    "Misc/Templates/Excalidraw.md",
+    "Pasted Image 20240120021924_911.png",
+    "Pasted Image 20240120021854_869.png",
+    "Misc/Vigtig syntax.md",
+    "SS.md",
     "32bit-Endianess.svg.png",
     "CompSys - Eksamens noter.md",
     "Compsys_eksamen.zip",
@@ -222,16 +226,11 @@
     "Compsys_eksamen/Pasted image 20240118160727.png",
     "Compsys_eksamen/Pasted image 20240118160648.png",
     "Compsys_eksamen/Pasted image 20240118160607.png",
-    "Compsys_eksamen/Pasted image 20240118160544.png",
-    "Compsys_eksamen/Pasted image 20240118160433.png",
-    "Compsys_eksamen/Pasted image 20240118160353.png",
-    "Compsys_eksamen/Pasted image 20240118160219.png",
     "Compsys_eksamen/OS.md",
     "Compsys_eksamen/Heap uddybende ulæsligt fordi det ikke er blevet rettet og fri tanke strøm fra mit krøllet hovedet.md",
     "Compsys_eksamen/ARC.md",
     "Compsys_eksamen",
     "Compsys eksamen/OS.md",
-    "SS.md",
     "DR.md",
     "Compsys eksamen/Heap uddybende ulæsligt fordi det ikke er blevet rettet og fri tanke strøm fra mit krøllet hovedet.md",
     "CompSys Eksamens oplæsning.md",
@@ -250,8 +249,6 @@
     "Untitled 1.md",
     "Weekly notes/Uge 40 - 2023.md",
     "3. semester/CompSys/Lecture/CompSys - Lecture ons - 40.md",
-    "3. semester/CompSys/Lecture/CompSys - Lecture ons - 38.md",
-    "3. semester/CompSys/Lecture/CompSys - Lecture man - 47.md",
     "Untitled.canvas"
   ]
 }
