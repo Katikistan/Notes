@@ -182,7 +182,7 @@ Simulation
 # Opgave 2
 eller = +
 og = *
-Middelværdi, gang med realistioner af X ikke 1..n
+	Middelværdi, gang med realistioner af X ikke 1..n
 LOTP
 Bayes
 # Opgave 3 og 4
