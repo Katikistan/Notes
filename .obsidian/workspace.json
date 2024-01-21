@@ -33,7 +33,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "SS.md",
+                "file": "CompSys - Eksamens noter.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -134,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "SS.md",
+                "file": "CompSys - Eksamens noter.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "SS.md",
+                "file": "CompSys - Eksamens noter.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -175,7 +175,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "SS.md"
+                "file": "CompSys - Eksamens noter.md"
               }
             }
           },
@@ -204,7 +204,7 @@
             }
           }
         ],
-        "currentTab": 7
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
@@ -225,23 +225,25 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "e613d9a5e7dd2cc6",
+  "active": "ae694c1ecc251f2a",
   "lastOpenFiles": [
-    "kurser.png",
+    "Pasted image 20240121140150.png",
+    "Pasted image 20240121134901.png",
+    "Pasted image 20240121134742.png",
+    "Pasted image 20240121133259.png",
+    "Pasted image 20240121133223.png",
+    "blobid21-60f546786ae24.jpeg",
     "CompSys - Eksamens noter.md",
     "SS.md",
+    "kurser.png",
     "Misc/Templates/Excalidraw.md",
     "TDC.md",
     "Kurser'.png",
     "Pasted image 20240120031018.png",
     "Pasted Image 20240120030843_227.png",
     "Pasted Image 20240120024105_157.png",
-    "Pasted Image 20240120024043_104.png",
-    "Pasted Image 20240120021924_911.png",
-    "Pasted Image 20240120021854_869.png",
     "Untitled.md",
     "Misc/Vigtig syntax.md",
-    "32bit-Endianess.svg.png",
     "Compsys_eksamen.zip",
     "ziDHR6nB",
     "Compsys_eksamen/OS.pdf",
@@ -250,7 +252,6 @@
     "ARC.pdf",
     "ziwzeKxI",
     "ziDf4Frf",
-    "Compsys_eksamen/Pasted image 20240118160930.png",
     "Compsys_eksamen/OS.md",
     "Compsys_eksamen/Heap uddybende ulæsligt fordi det ikke er blevet rettet og fri tanke strøm fra mit krøllet hovedet.md",
     "Compsys_eksamen/ARC.md",

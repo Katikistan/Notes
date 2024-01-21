@@ -881,7 +881,103 @@ smaller groups of people for sharing files among themselves.
 ## Circuit switching
 ## Application layer
 ### HTTP
+![[Pasted image 20240121133223.png]]
+![[Pasted image 20240121133259.png]]
+
+Get, POST, HEAD, PUT, and DELETE
+The GET method is used when the browser requests an object, with the requested object identified in the URL field.
+
+The header line Host:
+www.someschool.edu specifies the host on which the object resides.
+
+By including the Connection:
+close header line, the browser is telling the server that it doesn’t want to bother
+with persistent connection
+
+The User-agent: header line specifies the user agent, that
+is, the browser type that is making the request to the server
+
+the Accept-language:
+header indicates that the user prefers to receive a French version of the object, if such
+an object exists on the server; otherwise, the server should send its default version.
+
+
+
+An HTTP client
+often uses the POST method when the user fills out a form—for example, when a user provides search words to a search engine. With a POST message, the user is still requesting a Web page from the server, but the specific contents of the Web page depend on what the user entered into the form fields.
+
+When a server receives a request with the HEAD method, it responds with an HTTP message but it leaves out the requested object. Application developers often use the HEAD method for debugging.
+
+The PUT method is often used in conjunction with Web publishing tools. It
+allows a user to upload an object to a specific path (directory) on a specific Web
+server. The PUT method is also used by applications that need to upload objects
+to Web servers. The DELETE method allows a user, or an application, to delete an
+object on a Web server.
+
+Some common status codes and associated phrases include:
+• 200 OK: Request succeeded and the information is returned in the response.
+• 301 Moved Permanently: Requested object has been permanently moved;
+the new URL is specified in Location: header of the response message. The
+client software will automatically retrieve the new URL.
+
+400 Bad Request: This is a generic error code indicating that the request
+could not be understood by the server.
+• 404 Not Found: The requested document does not exist on this server.
+• 505 HTTP Version Not Supported: The requested HTTP protocol ver-
+sion is not supported by the server.
+
+
+should each request/response pair be sent over a separate TCP connec-tion, or should all of the requests and their corresponding responses be sent over the same TCP connection? **non-persistent connections**; and in the latter approach, **persistent connections**.
+
+HTTP is said to be a stateless protocol. We also
+remark that the Web uses the client-server application architecture
+
+Non persistent:
+1. The HTTP client process initiates a TCP connection to the server www.someSchool.edu on port number 80, which is the default port number for HTTP. Associated with the TCP connection, there will be a socket at the client and a socket at the server.
+2. The HTTP client sends an HTTP request message to the server via its socket. The request message includes the path name /someDepartment/home.index.
+3. The HTTP server process receives the request message via its socket, retrieves the object /someDepartment/home.index from its storage (RAM or disk), encapsulates the object in an HTTP response message, and sends the response message to the client via its socket.
+4. The HTTP server process tells TCP to close the TCP connection. (But TCP doesn’t actually terminate the connection until it knows for sure that the client has received the response message intact.)
+
+Persistent:
+Non-persistent connections have some shortcomings. First, a brand-new connection
+must be established and maintained for each requested object. For each of these
+connections, TCP buffers must be allocated and TCP variables must be kept in both
+the client and server. This can place a significant burden on the Web server, which
+may be serving requests from hundreds of different clients simultaneously.
+
+With HTTP/1.1 persistent connections, the server leaves the TCP connection
+open after sending a response.
+The default mode of HTTP uses persistent connections with pipelining.
+
+
+an HTTP server is stateless, but often desirable for
+a Web site to identify users: Cookies. allow sites to keep track
+of users
+![[Pasted image 20240121134742.png]]
+including in the HTTP response a Set-cookie: header, which contains the identification number: Set-cookie: 1678
+
+
+A Web cache—also called a proxy server—is a network entity that satisfies HTTP
+requests on the behalf of an origin Web server. The Web cache has its own disk
+storage and keeps copies of recently requested objects in this storage.
+![[Pasted image 20240121134901.png]]
+## HTTP2
+The primary goals for HTTP/2 are to reduce perceived latency by enabling request
+and response multiplexing over a single TCP connection, provide request prioritization
+and server push, and provide efficient compression of HTTP header fields. HTTP/2
+does not change HTTP methods, status codes, URLs, or header fields. Instead, HTTP/2
+changes how the data is formatted and transported between the client and server.
+
+developers of Web browsers quickly
+discovered that sending all the objects in a Web page over a single TCP connec-
+tion(HTTP1) has a Head of Line (HOL) blocking problem (side 144).
+
+One of the primary goals of HTTP/2 is to get rid of (or at least reduce the num-
+ber of) parallel TCP connections for transporting a single Web page. This not only
+reduces the number of sockets that need to be open and maintained at servers, but
+also allows TCP congestion control to operate as intended.
 ## Transport layer
+
 ### UDP
 One way data transfer, dosent guarnatue delivery, since there are no handshaking 
 
@@ -900,6 +996,45 @@ Use case: TCP is typically used for applications that require a reliable, ordere
 has reliable data transfer.
 
 ### multiplexing demultiplexing
+Now let’s consider how a receiving host directs an incoming transport-layer
+segment to the appropriate socket. Each transport-layer segment has a set of fields in
+the segment for this purpose. At the receiving end, the transport layer examines these
+fields to identify the receiving socket and then directs the segment to that socket.
+This job of delivering the data in a transport-layer segment to the correct socket is
+called demultiplexing. The job of gathering data chunks at the source host from
+different sockets, encapsulating each data chunk with header information (that will
+later be used in demultiplexing) to create segments, and passing the segments to the
+network layer is called multiplexing.
+
+we know that transport-layer multiplexing requires (1) that sockets have unique
+identifiers, and (2) that each segment have special fields that indicate the socket to
+which the segment is to be delivered. These special fields, illustrated in Figure 3.3,
+are the source port number field and the destination port number field. (The UDP
+and TCP segments have other fields as well, as discussed in the subsequent sections
+of this chapter.) Each port number is a 16-bit number, ranging from 0 to 65535.
+The port numbers ranging from 0 to 1023 are called well-known port numbers
+and are restricted, which means that they are reserved for use by well-known
+
+application protocols such as HTTP (which uses port number 80) and FTP (which
+uses port number 21).
+
+Each socket in the host could be assigned a port number, and when
+a segment arrives at the host, the transport layer examines the destination port
+number in the segment and directs the segment to the corresponding socket. The
+segment’s data then passes through the socket into the attached process. As we’ll
+see, this is basically how UDP does it. However, we’ll also see that multiplexing/
+demultiplexing in TCP is yet more subtle
+
+
+TCP socket and a UDP socket is that a TCP socket is identified by a four-tuple:
+(source IP address, source port number, destination IP address, destination port
+number). Thus, when a TCP segment arrives from the network to a host, the host
+uses all four values to direct (demultiplex) the segment to the appropriate socket.
+
+In particular, and in contrast with UDP, two arriving TCP segments with differ-
+ent source IP addresses or source port numbers will (with the exception of a TCP
+segment carrying the original connection-establishment request) be directed to two
+different sockets.
 ### Congestion control
 Congestion control adjusts the sending rate of the sender based on network conditions to prevent packet loss and delays. 
 
@@ -947,6 +1082,7 @@ Go-Back-N and it is used in situations where the network has a high bit error ra
 In Selective Repeat, the sender sends multiple packets of data in sequence, and the receiver acknowledges receipt of each packet. However, unlike Go-Back-N, if the receiver receives a packet out of order, it will buffer it and request a retransmission of only the missing packets. This allows the receiver to continue processing the correctly received packets, reducing the delay caused by retransmitting all packets.
 ### reliable data transfer
 TCP provides a reliable connection, which means that data sent using TCP is guaranteed to reach the receiver. In contrast, UDP does not guarantee that data will reach the receiver, and packets can be lost or delivered out of order.
+![[Pasted image 20240121140150.png]]
 
 ## Link layer
 ### IP
