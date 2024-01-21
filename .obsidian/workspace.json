@@ -31,9 +31,19 @@
             "id": "ae694c1ecc251f2a",
             "type": "leaf",
             "state": {
+              "type": "image",
+              "state": {
+                "file": "Misc/åBilleder/Pasted image 20240121133223.png"
+              }
+            }
+          },
+          {
+            "id": "73126ba0a3980052",
+            "type": "leaf",
+            "state": {
               "type": "markdown",
               "state": {
-                "file": "CompSys - Eksamens noter.md",
+                "file": "OS and Data representation.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -41,7 +51,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -134,7 +144,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CompSys - Eksamens noter.md",
+                "file": "OS and Data representation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +161,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CompSys - Eksamens noter.md",
+                "file": "OS and Data representation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -175,7 +185,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CompSys - Eksamens noter.md"
+                "file": "OS and Data representation.md"
               }
             }
           },
@@ -204,7 +214,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 7
       }
     ],
     "direction": "horizontal",
@@ -225,24 +235,26 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "ae694c1ecc251f2a",
+  "active": "e613d9a5e7dd2cc6",
   "lastOpenFiles": [
-    "Pasted image 20240121140150.png",
-    "Pasted image 20240121134901.png",
-    "Pasted image 20240121134742.png",
-    "Pasted image 20240121133259.png",
-    "Pasted image 20240121133223.png",
-    "blobid21-60f546786ae24.jpeg",
+    "Networking.md",
+    "OS and Data representation.md",
+    "Pasted image 20240121193201.png",
+    "Pasted image 20240121192653.png",
+    "Pasted image 20240121192556.png",
+    "Pasted image 20240121192451.png",
+    "Pasted image 20240121183946.png",
+    "Pasted image 20240121183836.png",
+    "Pasted image 20240121183439.png",
+    "Pasted image 20240121183302.png",
+    "Pasted image 20240121183103.png",
+    "Pasted image 20240121183057.png",
     "CompSys - Eksamens noter.md",
+    "ARC.md",
     "SS.md",
-    "kurser.png",
+    "DR.md",
+    "Misc/TDC.md",
     "Misc/Templates/Excalidraw.md",
-    "TDC.md",
-    "Kurser'.png",
-    "Pasted image 20240120031018.png",
-    "Pasted Image 20240120030843_227.png",
-    "Pasted Image 20240120024105_157.png",
-    "Untitled.md",
     "Misc/Vigtig syntax.md",
     "Compsys_eksamen.zip",
     "ziDHR6nB",
@@ -257,7 +269,6 @@
     "Compsys_eksamen/ARC.md",
     "Compsys_eksamen",
     "Compsys eksamen/OS.md",
-    "DR.md",
     "Compsys eksamen/Heap uddybende ulæsligt fordi det ikke er blevet rettet og fri tanke strøm fra mit krøllet hovedet.md",
     "CompSys Eksamens oplæsning.md",
     "SS uge 2 tirsdag øvelser.Rmd",
@@ -271,8 +282,6 @@
     "Excalidraw/CompSys - Recap 12-01-24 21.28.04.excalidraw.md",
     "3. semester/CompSys/Lecture/CompSys - Lecture ons - 1.md",
     "Untitled 1.md",
-    "Weekly notes/Uge 40 - 2023.md",
-    "3. semester/CompSys/Lecture/CompSys - Lecture ons - 40.md",
     "Untitled.canvas"
   ]
 }

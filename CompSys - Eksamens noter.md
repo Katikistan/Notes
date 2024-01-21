@@ -1,4 +1,4 @@
-j# Tips
+# Tips
 Use scripts from DIKUnotes compsys (download before exam): https://github.com/Emil2468/CompSys-scripts
 
 Converting between bases:
@@ -27,7 +27,7 @@ np.log2(7) # using log 2 in python
 8 bytes = 64 bits
 # Data representation
 ## Endians
-![[32bit-Endianess.svg.png]]
+![[Misc/åBilleder/32bit-Endianess.svg.png]]
 
 IEEE 754 uses big endian as a standard
 
@@ -877,8 +877,48 @@ Peer-to-peer (P2P) is a decentralized type of network, where each node (peer) ac
 The main difference between CDN and P2P is the way content is delivered. CDN uses a centralized system where content is stored on servers that are strategically placed, while P2P uses a decentralized system where content is shared directly between
 users. CDN is typically used for delivering static content such as images and videos, while P2P is typically used for sharing files such as music and movies. CDN is mainly used by large companies and websites with high traffic, while P2P is mainly used by
 smaller groups of people for sharing files among themselves.
+
 ## Packet switching
+To send a message from a source end system to a destination end
+system, the source breaks long messages into smaller chunks of data known as packets. Between source and destination, each packet travels through communication links and packet switches (for which there are two predominant types, routers and link-layer switches). Packets are transmitted over each communication link at a rate equal to the full transmission rate of the link. So, if a source end system or a packet switch is sending a packet of L bits over a link with transmission rate R bits/sec, then the time to transmit the packet is L / R seconds.
+![[Pasted image 20240121165741.png]]
+Store-and-forward transmission means that the packet switch must receive the entire packet before it can begin to transmit the first bit of the packet onto the outbound link.
+
+in addition to the store-and-forward delays, packets
+suffer output buffer queuing delays.
+
+an arriving packet may find that the buffer is completely full with other packets waiting for transmission. In this case, packet loss will occur—either the arriving packet or one of the already-queued packets will be dropped.
+## Delay 
+**Processing Delay**
+The time required to examine the packet’s header and determine where to direct the packet is part of the processing delay. The processing delay can also include other factors, such as the time needed to check for bit-level errors in the packet that occurred in transmitting the packet’s bits from the upstream node to router A.
+
+**Queuing Delay**
+At the queue, the packet experiences a queuing delay as it waits to be transmitted onto the link. The length of the queuing delay of a specific packet will depend on the number of earlier-arriving packets that are queued and waiting for transmission onto
+the link. If the queue is empty and no other packet is currently being transmitted, then our packet’s queuing delay will be zero. On the other hand, if the traffic is heavy and many other packets are also waiting to be transmitted, the queuing delay will be long.
+
+**Transmission Delay**
+Assuming that packets are transmitted in a first-come-first-served manner, as is common in packet-switched networks, our packet can be transmitted only after all the packets that have arrived before it have been transmitted. 
+
+Denote the length of the packet by L bits and denote the transmission rate of the link from router A to router B by R bits/sec. For example, for a 10 Mbps Ethernet link, the rate is R = 10 Mbps;
+for a 100 Mbps Ethernet link, the rate is R = 100 Mbps. The transmission delay is L/R. This is the amount of time required to push (that is, transmit) all of the packet’s bits into the link.
+
+**Propagation Delay**
+Once a bit is pushed into the link, it needs to propagate to router B. The time required to propagate from the beginning of the link to router B is the propagation delay. The bit propagates at the propagation speed of the link. The propagation speed depends
+on the physical medium of the link (that is, fiber optics, twisted-pair copper wire, and so on).
+**Propagation Delay vs Transmission Delay**
+The transmission delay is the amount of time required
+for the router to push out the packet; it is a function of the packet’s length and the transmission rate of the link, but has nothing to do with the distance between the two routers. The propagation delay, on the other hand, is the time it takes a bit to propagate from one router to the next; it is a function of the distance between the two routers, but has nothing to do with the packet’s length or the transmission rate of the link.
+**Nodal delay**
+$$
+d_{\text {nodal }}=d_{\text {proc }}+d_{\text {queue }}+d_{\text {trans }}+d_{\text {prop }}
+$$
+## Throughput
+In addition to delay and packet loss, another critical performance measure in computer networks is end-to-end throughput. To define throughput, consider transferring a large file from Host A to Host B across a computer network. This transfer might be, for example, a large video clip from one computer to another. The instantaneous throughput at any instant of time is the rate (in bits/sec) at which Host B is receiving the file.
 ## Circuit switching
+In circuit-switched networks, the resources needed along a path (buffers, link transmission rate) to provide for communication between the end systems are reserved for the duration of the communication session between the end systems.
+
+When the network establishes the circuit, it also
+reserves a constant transmission rate in the network’s links
 ## Application layer
 ### HTTP
 ![[Pasted image 20240121133223.png]]
@@ -890,92 +930,61 @@ The GET method is used when the browser requests an object, with the requested o
 The header line Host:
 www.someschool.edu specifies the host on which the object resides.
 
-By including the Connection:
-close header line, the browser is telling the server that it doesn’t want to bother
-with persistent connection
+By including the Connection: close header line, the browser is telling the server that it doesn’t want to bother with persistent connection
 
 The User-agent: header line specifies the user agent, that
 is, the browser type that is making the request to the server
 
-the Accept-language:
-header indicates that the user prefers to receive a French version of the object, if such
-an object exists on the server; otherwise, the server should send its default version.
+the Accept-language: header indicates that the user prefers to receive a French version of the object, if such an object exists on the server; otherwise, the server should send its default version.
 
 
 
-An HTTP client
-often uses the POST method when the user fills out a form—for example, when a user provides search words to a search engine. With a POST message, the user is still requesting a Web page from the server, but the specific contents of the Web page depend on what the user entered into the form fields.
+An HTTP client often uses the POST method when the user fills out a form—for example, when a user provides search words to a search engine. With a POST message, the user is still requesting a Web page from the server, but the specific contents of the Web page depend on what the user entered into the form fields.
 
 When a server receives a request with the HEAD method, it responds with an HTTP message but it leaves out the requested object. Application developers often use the HEAD method for debugging.
 
-The PUT method is often used in conjunction with Web publishing tools. It
-allows a user to upload an object to a specific path (directory) on a specific Web
-server. The PUT method is also used by applications that need to upload objects
-to Web servers. The DELETE method allows a user, or an application, to delete an
+The PUT method is often used in conjunction with Web publishing tools. It allows a user to upload an object to a specific path (directory) on a specific Web server. The PUT method is also used by applications that need to upload objects to Web servers. The DELETE method allows a user, or an application, to delete an
 object on a Web server.
 
-Some common status codes and associated phrases include:
-• 200 OK: Request succeeded and the information is returned in the response.
-• 301 Moved Permanently: Requested object has been permanently moved;
-the new URL is specified in Location: header of the response message. The
-client software will automatically retrieve the new URL.
+**Some common status codes and associated phrases include:**
+- *200 OK:* Request succeeded and the information is returned in the response.
+- *301 Moved Permanently:* Requested object has been permanently moved; the new URL is specified in Location: header of the response message. The client software will automatically retrieve the new URL.
+- *400 Bad Request:* This is a generic error code indicating that the request could not be understood by the server.
+- *404 Not Found:* The requested document does not exist on this server.
+- *505 HTTP Version Not Supported:* The requested HTTP protocol version is not supported by the server.
 
-400 Bad Request: This is a generic error code indicating that the request
-could not be understood by the server.
-• 404 Not Found: The requested document does not exist on this server.
-• 505 HTTP Version Not Supported: The requested HTTP protocol ver-
-sion is not supported by the server.
-
-
-should each request/response pair be sent over a separate TCP connec-tion, or should all of the requests and their corresponding responses be sent over the same TCP connection? **non-persistent connections**; and in the latter approach, **persistent connections**.
+should each request/response pair be sent over a separate TCP connection, or should all of the requests and their corresponding responses be sent over the same TCP connection? **non-persistent connections**; and in the latter approach, **persistent connections**.
 
 HTTP is said to be a stateless protocol. We also
 remark that the Web uses the client-server application architecture
 
-Non persistent:
+**Non persistent:**
 1. The HTTP client process initiates a TCP connection to the server www.someSchool.edu on port number 80, which is the default port number for HTTP. Associated with the TCP connection, there will be a socket at the client and a socket at the server.
 2. The HTTP client sends an HTTP request message to the server via its socket. The request message includes the path name /someDepartment/home.index.
 3. The HTTP server process receives the request message via its socket, retrieves the object /someDepartment/home.index from its storage (RAM or disk), encapsulates the object in an HTTP response message, and sends the response message to the client via its socket.
 4. The HTTP server process tells TCP to close the TCP connection. (But TCP doesn’t actually terminate the connection until it knows for sure that the client has received the response message intact.)
 
-Persistent:
-Non-persistent connections have some shortcomings. First, a brand-new connection
-must be established and maintained for each requested object. For each of these
-connections, TCP buffers must be allocated and TCP variables must be kept in both
-the client and server. This can place a significant burden on the Web server, which
-may be serving requests from hundreds of different clients simultaneously.
+**Persistent:**
+Non-persistent connections have some shortcomings. First, a brand-new connection must be established and maintained for each requested object. For each of these connections, TCP buffers must be allocated and TCP variables must be kept in both the client and server. This can place a significant burden on the Web server, which may be serving requests from hundreds of different clients simultaneously.
 
-With HTTP/1.1 persistent connections, the server leaves the TCP connection
-open after sending a response.
-The default mode of HTTP uses persistent connections with pipelining.
+With HTTP/1.1 persistent connections, the server leaves the TCP connection open after sending a response. The default mode of HTTP uses persistent connections with pipelining.
 
 
-an HTTP server is stateless, but often desirable for
-a Web site to identify users: Cookies. allow sites to keep track
-of users
+an HTTP server is stateless, but often desirable for a Web site to identify users: Cookies. allow sites to keep track of users
 ![[Pasted image 20240121134742.png]]
 including in the HTTP response a Set-cookie: header, which contains the identification number: Set-cookie: 1678
 
 
-A Web cache—also called a proxy server—is a network entity that satisfies HTTP
-requests on the behalf of an origin Web server. The Web cache has its own disk
-storage and keeps copies of recently requested objects in this storage.
+A Web cache—also called a proxy server—is a network entity that satisfies HTTP requests on the behalf of an origin Web server. The Web cache has its own disk storage and keeps copies of recently requested objects in this storage.
 ![[Pasted image 20240121134901.png]]
 ## HTTP2
-The primary goals for HTTP/2 are to reduce perceived latency by enabling request
-and response multiplexing over a single TCP connection, provide request prioritization
-and server push, and provide efficient compression of HTTP header fields. HTTP/2
-does not change HTTP methods, status codes, URLs, or header fields. Instead, HTTP/2
-changes how the data is formatted and transported between the client and server.
+The primary goals for HTTP/2 are to reduce perceived latency by enabling request and response multiplexing over a single TCP connection, provide request prioritization and server push, and provide efficient compression of HTTP header fields. HTTP/2
+does not change HTTP methods, status codes, URLs, or header fields. Instead, HTTP/2 changes how the data is formatted and transported between the client and server.
 
-developers of Web browsers quickly
-discovered that sending all the objects in a Web page over a single TCP connec-
-tion(HTTP1) has a Head of Line (HOL) blocking problem (side 144).
+developers of Web browsers quickly discovered that sending all the objects in a Web page over a single TCP connection(HTTP1) has a Head of Line (HOL) blocking problem (side 144).
 
-One of the primary goals of HTTP/2 is to get rid of (or at least reduce the num-
-ber of) parallel TCP connections for transporting a single Web page. This not only
-reduces the number of sockets that need to be open and maintained at servers, but
-also allows TCP congestion control to operate as intended.
+One of the primary goals of HTTP/2 is to get rid of (or at least reduce the number of) parallel TCP connections for transporting a single Web page. This not onlyreduces the number of sockets that 
+need to be open and maintained at servers, but also allows TCP congestion control to operate as intended.
 ## Transport layer
 
 ### UDP
@@ -985,12 +994,32 @@ Includes a checksum, but no way of knowing if packets are in correct order or lo
 
 UDP is typically used for applications that do not require a reliable, ordered delivery of data. This means that it's not good for something like video streaming or gaming. 
 ### TCP
+**The 32-bit sequence number field** and the **32-bit acknowledgment number** field are used by the TCP sender and receiver in implementing a reliable data transfer service.
+
+**The 16-bit receive window field** is used for flow control. Used to indicate the number of bytes that a receiver is willing to accept.¨
+
+**The 4-bit header length field** specifies the length of the TCP header in 32-bit words. The TCP header can be of variable length due to the TCP options field.
+
+**The optional and variable-length options field** is used when a sender and receiver negotiate the maximum segment size (MSS) or as a window scaling factor for use in high-speed networks.
+
+**The flag field contains 6 bits**. The ACK bit is used to indicate that the value carried in the acknowledgment field is valid; that is, the segment contains an acknowledgment for a segment that has been successfully received. The RST, SYN, and FIN bits are used for connection setup and teardown
+![[Pasted image 20240121160906.png]]
 Connection-oriented vs Connectionless: TCP is a connection-oriented protocol, which means that a connection must be established between the sender and receiver before any data can be sent. UDP, on the other hand, is connectionless, which means that data can be sent without establishing a connection first.
 
 TCP has error checking and correction mechanisms built in to
 ensure data integrity. UDP has minimal error checking, and any errors must be handled at the application level.
 
 TCP has more overhead than UDP because it establishes and maintains connections, performs error checking, and ensures data integrity. This can make TCP slower than UDP for some applications.
+![[Pasted image 20240121161354.png]]
+Fast Retransmit
+One of the problems with timeout-triggered retransmissions is that the timeout period can be relatively long. When a segment is lost, this long timeout period forces the sender to delay resending the lost packet, thereby increasing the end-to-end delay. Fortunately, the sender can often detect packet loss well before the timeout event occurs by noting so-called duplicate ACKs. A duplicate ACK is an ACK that reacknowledges a segment for which the sender has already received an earlier acknowledgment.
+![[Pasted image 20240121161630.png]]
+
+**Is TCP a GBN or an SR protocol?**
+TCP acknowledg-ments are cumulative and correctly received but out-of-order segments are not individually ACKed by the receiver. TCP looks a lot like a GBN-style protocol. But there are some striking differences between TCP and Go-Back-N. Many TCP implementations will buffer correctly received but out-of-order
+segments
+*example:*
+the sender sends a sequence of segments 1, 2, . . . , N, and all of the segments arrive in order without error at the receiver the acknowledgment for packet n < N gets lost, but the remaining N - 1 acknowledgments arrive at the sender before their respective timeouts. GBN would retransmit not only packet n, but also all of the subsequent packets n + 1, n + 2, . . . , N. TCP, on the other hand, would retransmit at most one segment, namely, segment n. Moreover, TCP would not even retransmit segment n if the acknowledgment for segment n + 1 arrived before the timeout for segment n.
 
 Use case: TCP is typically used for applications that require a reliable, ordered delivery of data, such as web browsing, email, and file transfer. ordered delivery of data, such as streaming video and audio, online gaming, and DNS queries.
 has reliable data transfer.
@@ -1036,6 +1065,9 @@ ent source IP addresses or source port numbers will (with the exception of a TCP
 segment carrying the original connection-establishment request) be directed to two
 different sockets.
 ### Congestion control
+congestion window=cwnd
+ssthresh (short-hand for “slow start threshold”)
+![[Pasted image 20240121163025.png]]
 Congestion control adjusts the sending rate of the sender based on network conditions to prevent packet loss and delays. 
 
 Congestion control, is a mechanism used to prevent network
@@ -1054,38 +1086,69 @@ Every step in the reno protocol:
 - timeout (control window = control window/2)
 - slow start
 TCP Tahoe dosent have fast recovery 
+![[Pasted image 20240121162934.png]]
 ### Flow control
 TCP uses flow control mechanisms to prevent the sender from overwhelming the receiver. UDP does not have flow control mechanisms, so the sender can potentially overwhelm the receiver.
 
-Flow control is a mechanism used to prevent a fast sender from overwhelming a slow receiver. It ensures that the receiver can handle the data being sent to it, by regulating the rate at which the sender sends data. Flow control is mainly used at the data link layer. ( only has to do with the receiver). It is done by having the receiver send a window of how much it can receive with its messages.
+Flow control is a mechanism used to prevent a fast sender from overwhelming a slow receiver. It ensures that the receiver can handle the data being sent to it, by regulating the rate at which the sender sends data. Flow control is mainly used at the data link layer. ( only has to do with the receiver). It is done by having the receiver send a window of how much it can receive with its messages.  Flow control is thus a speedmatching service
+
+TCP provides flow control by having the sender maintain a variable called the receive window.
 
 Flow control in TCP helps with congestion control by allowing the receiver to limit the amount of data that the sender can send, preventing the sender from overwhelming the network.
 Both flow control and congestion control are necessary for
 efficient and stable network communication.
-### Sliding window
+### TCP Connection Management
+Suppose a process running in one host (client) wants to initiate a connection with another process in another host (server)
 
+**Step 1.** The client-side TCP first sends a special TCP segment to the server-side TCP. This special segment contains no application-layer data. But one of the flag bits in the segment’s header (see Figure 3.29), the SYN bit, is set to 1.
+
+**step 2.** Once the IP datagram containing the TCP SYN segment arrives at the server host, the server extracts the TCP SYN segment from the datagram, allocates the TCP buffers and variables to the connection, and sends a connection-granted segment to the client TCP. the SYN bit is set to 1. Second, the
+acknowledgment field of the TCP segment header is set to client_isn+1. Finally, the server chooses its own initial sequence number (server_isn) and puts this value in the sequence number field of the TCP segment header. saying, in effect, “I received your SYN packet to start a connection with your initial sequence number, client_isn. I agree to establish this connection. My own initial sequence number is server_isn.” The connection-granted segment is referred to as a SYNACK segment.
+
+**Step 3.** Upon receiving the SYNACK segment, the client also allocates buffers and variables to the connection. The client host then sends the server yet another segment; this last segment acknowledges the server’s connection-granted segment. The SYN bit is set to zero, since the connection is established. This third stage of the three-way handshake may carry client-to-server data in the segment payload
+![[Pasted image 20240121162755.png]]
+Once these three steps have been completed, the client and server hosts can send segments containing data to each other. In each of these future segments, the SYN bit will be set to zero.
+![[Pasted image 20240121162828.png]]
+### Reliable data transfer
+![[Pasted image 20240121160801.png]]
+TCP provides a reliable connection, which means that data sent using TCP is guaranteed to reach the receiver. In contrast, UDP does not guarantee that data will reach the receiver, and packets can be lost or delivered out of order.
+![[Pasted image 20240121140150.png]]
+### Sliding window
+N is often referred to as the window size and the GBN protocol itself as a sliding-window protocol
 ### Go-back-N
-Go-Back-N is a type of error control protocol used in computer networks to ensure the reliable transfer of data between devices. It is a type of sliding window protocol, which means that it uses a fixed-size window to control the flow of data between devices.
+It is a type of sliding window protocol, which means that it uses a fixed-size window to control the flow of data between devices.
 
 In Go-Back-N, the sender sends multiple packets of data in sequence, and the receiver acknowledges receipt of each packet. If the sender does not receive an acknowledgement for a packet within a certain period of time, it will assume that the packet was lost and retransmit it. 
 
 If the receiver receives a packet out of order, it will discard it and request a retransmission of that packet. 
 
 Once the sender receives an acknowledgement for a packet, it will slide the window forward to the next unacknowledged packet, allowing it to continue sending data. 
+![[Pasted image 20240121155206.png]]
+constrained to have no more than some maximum allowable number, N, of unacknowledged packets in the pipeline
 
-Go-Back-N is efficient in terms of network bandwidth usage, as it does not require the sender to wait for an acknowledgement for every packet sent, but if a packet is lost, all packets sent after it will be
-retransmited which leads to waste of bandwidth.
-### Selective repeat protocol
-Selective Repeat is a type of error control protocol used in computer networks to ensure the reliable transfer of data between devices. It is a variation of the sliding window protocol, like
-Go-Back-N and it is used in situations where the network has a high bit error rate. 
+Go-Back-N is efficient in terms of network bandwidth usage, as it does not require the sender to wait for an acknowledgement for every packet sent, but if a packet is lost, all packets sent after it will be retransmited which leads to waste of bandwidth.
+
+In our GBN protocol, the receiver discards out-of-order packets. Although it may seem silly and wasteful to discard a correctly received (but out-of-order) packet, there is some justification for doing so. the only piece of information the receiver need maintain is
+the sequence number of the next in-order packet. If packet n is expected, but packet n + 1 arrives data must be delivered in order, the receiver could buffer (save) packet n + 1 and then deliver this packet to the upper layer after it had later received and delivered packet n. However, if packet n is lost, both it and packet n + 1 will eventually be retransmitted as a result of the GBN retransmission rule at the sender. Thus, the receiver can simply discard packet n + 1.
+
+**Invocation from above:** When rdt_send() is called from above, the sender first checks to see if the window is full, that is, whether there are N outstanding, unacknowledged packets. If the window is not full, a packet is created and sent, and variables are appropriately updated. If the window is full, the sender
+simply returns the data back to the upper layer, an implicit indication that the window is full. The upper layer would presumably then have to try again later
+
+**Receipt of an ACK:** In our GBN protocol, an acknowledgment for a packet with sequence number n will be taken to be a cumulative acknowledgment, indicating that all packets with a sequence number up to and including n have been correctly received at the receiver.
+
+**A timeout event:**. The protocol’s name, “Go-Back-N,” is derived from the sender’s behavior in the presence of lost or overly delayed packets. As in the stop-and-wait protocol, a timer will again be used to recover from lost data or acknowledgment
+packets. If a timeout occurs, the sender resends all packets that have been previously sent but that have not yet been acknowledged.
+![[Pasted image 20240121160102.png]]
+### Selective repeat protocol (SR)
+GBN(Go-back-N) avoids this stop-and-wait protocol, however this can also cause performance problems. If window size and bandwith delay are big, many packets can be in the pipeline, thus if there is a packet error a whole bunch of packets must be retransmitted.
+
 
 In Selective Repeat, the sender sends multiple packets of data in sequence, and the receiver acknowledges receipt of each packet. However, unlike Go-Back-N, if the receiver receives a packet out of order, it will buffer it and request a retransmission of only the missing packets. This allows the receiver to continue processing the correctly received packets, reducing the delay caused by retransmitting all packets.
-### reliable data transfer
-TCP provides a reliable connection, which means that data sent using TCP is guaranteed to reach the receiver. In contrast, UDP does not guarantee that data will reach the receiver, and packets can be lost or delivered out of order.
-![[Pasted image 20240121140150.png]]
-
+![[Pasted image 20240121160550.png]]
+![[Pasted image 20240121160711.png]]
 ## Link layer
 ### IP
+![[Pasted image 20240121163424.png]]
 An IP address is considered hierarchical because it is divided into different fields that represent different levels of the network hierarchy. The most common format of an IP address is IPv4, which is a 32-bit address divided into four octets. Each octet represents a different level of the network hierarchy:
 
 An octet is a unit of digital information that consists of eight bits. In the context of IP addresses, an octet refers to one of the four 8-bit fields that make up an IPv4 address. Each octet is represented by a decimal number between 0 and 255, and is separated by a period. In IPv6 addresses, an octet is represented by a 16-bit field (2 bytes) instead of 8-bit field.
@@ -1106,9 +1169,21 @@ routing scalability and reduces the amount of memory and processing power requir
 **Hierarchical addressing:** The hierarchical structure of IP addresses allows for a hierarchical addressing scheme, which is a way of allocating IP addresses that reflects the topological structure of the network. This allows for efficient routing and management of IP addresses, and makes it easier to add and remove devices from
 the network.
 
-**How does one get a new IP-adress and why was IPv6 not needed:**
+**IPv6 :**
+A prime motivation for this effort was the realization
+that the 32-bit IPv4 address space was beginning to be used up
 
-### Subnet
+The approach to IPv4-to-IPv6 transition that has been most widely adopted inpractice involves tunneling
+### Dynamic Host Configuration Protocol (DHCP)
+DHCP allows a host to obtain (be allocated) an IP address automatically. A network administrator can configure DHCP so that a given host receives the same IP address each time it connects to the network, or a host may be assigned a temporary IP address that will be different each time the host connects to the network. In addition to host IP address assignment, DHCP also allows a host to learn additional information, such as its subnet mask, the address of its first-hop router (often called the default gateway), and the address of its local DNS server.  
+
+DHCP is a client-server protocol.
+![[Pasted image 20240121165327.png]]
+
+Often referred to as a plug-and-play or zeroconf(zero-configuration) protocol. This capability makes it very attractive to the network administrator who would otherwise have to perform these tasks manually!
+
+the student who carries a laptop from a dormitory room to
+a library to a classroom. It is likely that in each location, the student will be connecting into a new subnet and hence will need a new IP address at each location. DHCP is ideally suited to this situation, as there are many users coming and going, and addresses are needed for only a limited amount of time.
 ### DNS (Domain Name System)
 The DNS protocol runs over UDP and uses port 53.
 
@@ -1120,8 +1195,22 @@ Iterative DNS and Recursive DNS are two different methods of resolving domain na
 
 Iterative DNS is a method in which the client queries a DNS server, and the server gives referrals if it does not have the answer, whereas Recursive DNS is a method in which the DNS server takes the responsibility of finding the answer for the client and don't
 give referrals. The recursive DNS is more efficient in terms of network and client resources, but the iterative DNS is more secure because it does not rely on a single DNS server.
+### Network Address Translation (NAT)
+here are hundreds of thousands of home networks, many using the same address space, 10.0.0.0/24. Devices within a given home network can send packets to each other using 10.0.0.0/24 addressing. However, packets forwarded beyond the home
+network into the larger global Internet clearly cannot use these addresses (as either a source or a destination address) because there are hundreds of thousands of networks using this block of addresses. That is, the 10.0.0.0/24 addresses can only have meaning within the given home network. But if private addresses only have meaning within a given network, how is addressing handled when packets are sent to or received from the global Internet, where addresses are necessarily unique? The
+answer lies in understanding NAT.
 
+The NAT-enabled router does not look like a router to the outside world. Instead the NAT router behaves to the outside world as a single device with a single IP address. In Figure 4.25, all traffic leaving the home router for the larger Internet has a source IP address of 138.76.29.7, and all traffic entering the home router must have a destination address of 138.76.29.7. In essence, the NAT-enabled router is hiding the details of the home network from the outside world.
+
+the home network computers get their addresses and the router gets its single IP address: the answer is the same—DHCP! The router gets its address from the ISP’s DHCP server, and the router runs a DHCP server to provide addresses to computers within the NAT-DHCP-router-controlled home network’s address space.
+
+If all datagrams arriving at the NAT router from the WAN have the same destination IP address (specifically, that of the WAN-side interface of the NAT router), then how does the router know the internal host to which it should forward a given datagram? The trick is to use a NAT translation table at the NAT router, and to
+include port numbers as well as IP addresses in the table entries.
+
+There are some detractors. First, one might argue that, port numbers are meant to be used for addressing processes, not for addressing hosts. This cause problems for servers running on the home network, since, server processes wait for incoming requests at well-known port numbers and peers in a P2P protocol need to accept incoming connections when acting as servers. How can one peer connect to another peer that is behind a NAT server, and has a DHCP-provided NAT address? Technical solutions to these problems include NAT traversal tools.
 ### Fowarding table
+When a source end system wants to send a packet to a destination end system, the source includes the destination’s IP address in the packet’s header. As with postal addresses, this address has a hierarchical structure. When a packet arrives at a router
+in the network, the router examines a portion of the packet’s destination address and forwards the packet to an adjacent router. More specifically, each router has a forwarding table that maps destination addresses
 #### KR chap 4 p8
 11100001 01111111 11111111 111
 
