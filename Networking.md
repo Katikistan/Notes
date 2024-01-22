@@ -1,5 +1,7 @@
 # The 5 Different layers shortly described
 The OSI (Open Systems Interconnection) model is a framework that is used to understand and describe the different layers of a computer network. The OSI model consists of 7 different layers, each with its own specific functions and responsibilities.
+
+by having different layers we can seperate functionality and services, each layer can depend on the layer below and each layer can provide services to the layer above. This way it's easy to add new specializing protocols or hardware without having to change the whole structure of the internet. 
 ### Application Layer
 The highest layer of the OSI model, the application layer is
 responsible for providing the interface between the network and the applications that run on it. This layer is responsible for providing services to the user such as email, file transfer(HTTP), and web access.
@@ -41,7 +43,19 @@ Peer-to-peer (P2P) is a decentralized type of network, where each node (peer) ac
 The main difference between CDN and P2P is the way content is delivered. CDN uses a centralized system where content is stored on servers that are strategically placed, while P2P uses a decentralized system where content is shared directly between
 users. CDN is typically used for delivering static content such as images and videos, while P2P is typically used for sharing files such as music and movies. CDN is mainly used by large companies and websites with high traffic, while P2P is mainly used by
 smaller groups of people for sharing files among themselves.
+### Typical exam question -----:)
+your boss wants a website should he use CDN or P2P, what are the benifits:
 
+**Availability and Fault Tolerance**: CDN ensures that the availability of the content is not dependent on  the number of active clients, their bandwidth limitations, P2P configuration settings but rather on the load distribution on the server side in the CDN. This also includes fault tolerant guarantees. P2P would provide a more robust network, where individual nodes can fail and the network remains, which may mean the store would always be online. However, this could equally be accomplished by simply having a backup server to act as the store in emergencies.
+
+**Level of Control:** Usage of a CDN would provide a high-level of control to the service to configure the locations of the CDN services, load-balancing of available servers which is not possible to do using a  P2P service. Configuration based on geographic locations, distance to clients. An online store wants central control of their stock, prices etc. Handing out control to customer nodes would compromise this. A CDN is centralized, therefore provide more control.
+
+**Caching Implications:** For content that changes often, CDNs can utilize efficient caching strategies to minimize the cost of propagation of changes. Managing this in a P2P service would require more sophisticated version management and is often impractical to implement without client intervention.  
+
+**Maintenance Overhead:** Usage of CDN allows the hosting service to make all possible optimizations at different layers of the networks stacks (DNS load balancing, usage of transport layer protocols, usage of network layer multi-casting protocols) which is not possible to do by only utilizing application-level  
+P2P service. 
+
+**Economic Implications:** (Extra) Usage of a P2P service would put the burden of network transfer costs on the the client for distributing the web-pages of the company.
 ## Packet switching
 To send a message from a source end system to a destination end
 system, the source breaks long messages into smaller chunks of data known as packets. Between source and destination, each packet travels through communication links and packet switches (for which there are two predominant types, routers and link-layer switches). Packets are transmitted over each communication link at a rate equal to the full transmission rate of the link. So, if a source end system or a packet switch is sending a packet of L bits over a link with transmission rate R bits/sec, then the time to transmit the packet is L / R seconds.

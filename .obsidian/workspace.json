@@ -137,6 +137,16 @@
             }
           },
           {
+            "id": "9c71f5e9f0549af1",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Networking.md"
+              }
+            }
+          },
+          {
             "id": "6f5c99e8798fd84a",
             "type": "leaf",
             "state": {
@@ -149,28 +159,10 @@
             }
           },
           {
-            "id": "9c71f5e9f0549af1",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "file": "Networking.md"
-              }
-            }
-          },
-          {
             "id": "b2a4ff7928b7e9fb",
             "type": "leaf",
             "state": {
               "type": "todo",
-              "state": {}
-            }
-          },
-          {
-            "id": "e613d9a5e7dd2cc6",
-            "type": "leaf",
-            "state": {
-              "type": "mathpad-view",
               "state": {}
             }
           },
@@ -183,11 +175,11 @@
             }
           }
         ],
-        "currentTab": 7
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 445.5
+    "width": 324.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -200,16 +192,15 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false,
       "templater-obsidian:Templater": false,
       "obsidian-statusbar-pomo:Start pomodoro": false,
-      "mathpad:Open Mathpad": false,
       "periodic-notes:Open today": false
     }
   },
-  "active": "e613d9a5e7dd2cc6",
+  "active": "d846c0d37fecd461",
   "lastOpenFiles": [
+    "OS and Data representation.md",
+    "Networking.md",
     "Misc/Templates/Excalidraw.md",
     "Misc/åBilleder/Pasted image 20240121133223.png",
-    "Networking.md",
-    "OS and Data representation.md",
     "unix_architecture.jpg",
     "traditional-unix-kernel.png",
     "SS.md",

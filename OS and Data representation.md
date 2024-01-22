@@ -185,6 +185,8 @@ Unix process can be in the following states:
 - Network Stack: The kernel provides the network stack, which is responsible for managing the network communication and protocols.
 - Device Drivers: The kernel provides the device drivers, which are responsible for managing the communication between the hardware and the kernel.
 - Security: The kernel provides security mechanisms such as access control and authentication to protect the system and user's data.
+
+cache is in hardware responsibility. 
 ## Syscalls
 A request by a process that the kernel carries out some operation on its behalf.
 - Only the kernel has direct access to hardware and system memory.
