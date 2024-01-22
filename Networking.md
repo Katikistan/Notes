@@ -189,6 +189,9 @@ TCP acknowledg-ments are cumulative and correctly received but out-of-order segm
 segments
 #### *example:*
 the sender sends a sequence of segments 1, 2, . . . , N, and all of the segments arrive in order without error at the receiver the acknowledgment for packet n < N gets lost, but the remaining N - 1 acknowledgments arrive at the sender before their respective timeouts. GBN would retransmit not only packet n, but also all of the subsequent packets n + 1, n + 2, . . . , N. TCP, on the other hand, would retransmit at most one segment, namely, segment n. Moreover, TCP would not even retransmit segment n if the acknowledgment for segment n + 1 arrived before the timeout for segment n.
+### Transmission rate for TCP --------- :)
+### Bandwidth for TCP --------- :)
+
 ### Use case
 TCP is typically used for applications that require a reliable, ordered delivery of data, such as web browsing, email, and file transfer. ordered delivery of data, such as streaming video and audio, online gaming, and DNS queries.
 has reliable data transfer.
@@ -217,6 +220,7 @@ Congestion control adjusts the sending rate of the sender based on network condi
 Congestion control, is a mechanism used to prevent network
 congestion by regulating the rate at which data is sent into the network. Congestion occurs when too much data is sent into the network, causing network resources such as bandwidth and buffer space to become exhausted. Congestion control is mainly used at the transport layer. (Har mere at gøre med den fysiske “tykkelse” på ledingen og hvor meget der kan sendes.)
 ![[blobid21-60f546786ae24.jpeg]]
+![[Tcp_westwood.gif]]
 ### Every step in the reno protocol:
 - slow start
 - triple duplicate loss
@@ -295,6 +299,29 @@ GBN(Go-back-N) avoids this stop-and-wait protocol, however this can also cause p
 In Selective Repeat, the sender sends multiple packets of data in sequence, and the receiver acknowledges receipt of each packet. However, unlike Go-Back-N, if the receiver receives a packet out of order, it will buffer it and request a retransmission of only the missing packets. This allows the receiver to continue processing the correctly received packets, reducing the delay caused by retransmitting all packets.
 ![[Pasted image 20240121160550.png]]
 ![[Pasted image 20240121160711.png]]
+#### Eksamens opgave
+![[Pasted image 20240121222638.png]]
+
+| c0  | Sent packet 0 | 
+| --- | ------------- |
+| c1  | Sent packet 1 (packet is lost              |
+| c2  | sent packet 2              |
+| c3  | Recieve ack0 and send packet 3              |
+| c4  | recieve ack2              |
+| c5  | recieved ack2 before ack1: packet 1 timeout and resend packet 1              |
+| c6  | no ack3. p3 timeout and resend p3              |
+| c7  | recieve ack1 send p4              |
+| c8  | send p5              |
+
+| s0 | Acknowledged packet 0 |
+| ---- | ---- |
+| s1 | ack2 |
+| s2 | ack3 (ack3 is lost) |
+| s3 | ack1 |
+| s4 | ack3 |
+| s5 | ack4 |
+we assume that the window size is 3. 3 bursts of packets are send after each other without waiting for ack. 
+
 # Link layer
 ## IP protocol
 ![[Pasted image 20240121163424.png]]
@@ -340,10 +367,13 @@ It is a hierarchical, decentralized system for resolving domain names, such as w
 
 DNS information is not stored in one location, but a collection of servers worldwide. These exist at different abstraction layers with root servers at the top serving all below. Top-level domains server specific domain names (eg. .com, .dk). Individual organisations have their own DNS servers at the bottom. This makes the system more robust by removing a central failure point, and quicker to respond by having servers closer to worldwide requests.
 
-Iterative DNS and Recursive DNS are two different methods of resolving domain names to IP addresses.
+### Iterative and Recursive DNS
+**Iterative DNS and Recursive DNS are two different methods of resolving domain names to IP addresses.**
 
 Iterative DNS is a method in which the client queries a DNS server, and the server gives referrals if it does not have the answer, whereas Recursive DNS is a method in which the DNS server takes the responsibility of finding the answer for the client and don't
-give referrals. The recursive DNS is more efficient in terms of network and client resources, but the iterative DNS is more secure because it does not rely on a single DNS server.
+give referrals. 
+
+The recursive DNS is more efficient in terms of network and client resources, but the iterative DNS is more secure because it does not rely on a single DNS server.
 ## Network Address Translation (NAT)
 here are hundreds of thousands of home networks, many using the same address space, 10.0.0.0/24. Devices within a given home network can send packets to each other using 10.0.0.0/24 addressing. However, packets forwarded beyond the home
 network into the larger global Internet clearly cannot use these addresses (as either a source or a destination address) because there are hundreds of thousands of networks using this block of addresses. That is, the 10.0.0.0/24 addresses can only have meaning within the given home network. But if private addresses only have meaning within a given network, how is addressing handled when packets are sent to or received from the global Internet, where addresses are necessarily unique? The
@@ -442,7 +472,7 @@ Control plane is responsible for routing, while the actual forwarding happens at
 Today, the routing is often implemented in software and a centralized server (Remote Controller) tells the router how datagrams should be forwarded. It is however, possible to manually alter a forwarding table in each router.
 ### Link state
 Dijkstra's algorithm is a graph search algorithm that solves the single-source shortest path problem for a graph with non-negative edge weights, producing a shortest path tree. This means that the algorithm finds the shortest path from one particular source
-node to all other nodes in the graph. The algorithm repeatedly selects the node with the lowest distance, calculates the distance through it to each unvisited neighbor, and updates the neighbor's distance if smaller.
+node to all other nodes in the graph. The algorithm repeatedly selects the node with the lowest distance, calculates the distance through it to each unvisited neighbor, and updates the neighbor's distance if smaller. It's better for static systems
 #### Practical 
 D(v): Cost of least path from u (source) to v in this iteration
 p(v): Previous node of v along least-cost path
@@ -512,7 +542,7 @@ No shorter paths where found therefore we are done.
 ![[Pasted image 20240121180651.png|150]]
 ### Distant vector
 Distance vector routing is a method used by routers in a computer network to determine the best path for forwarding packets. In distance vector routing, each router maintains a table of the shortest distances to every other network, as well as the next hop on the path to that network. The basic function of distance vector routing is for each router to share its table of distances with its neighbors, and for each router to update its own table based on the
-information received from its neighbors. 
+information received from its neighbors. It's best suited for dynamic systems, but suffer from the counting to infinty problem.
 
 This process is known as distance vector algorithm or Bellman-Ford algorithm. The algorithm is iterative and each router continues to update its distance vector until the values in the vector stabilize and no further updates are made.
 #### Practical
@@ -698,7 +728,3 @@ computationally infeasible to find a different input message that will produce t
 
 These properties are needed to protect the integrity and confidentiality of the data in various cryptographic applications, and to make it difficult for an attacker to find any weaknesses in
 the hash function.
-# Eksamnes opgaver
-## Networking relliable data transfer
-c1=send p1 : c1 send packet 1 
-c3=rec ak0+send p3: c3 recieve and acknowledge s0 (server packet 0)  + send packet 3 (client to server)

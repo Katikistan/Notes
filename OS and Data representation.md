@@ -140,7 +140,7 @@ uintptr_t: Unsigned integer of size equal to a pointer
 
 
 # OS
-**Processes**
+## Processes
 - duplicate of parent, but with own address space (changes are not reflected)
 - Child processes must be reaped, adopted but init process if termination of parent. 
 - Processes that never terminates are “zombie children”
@@ -156,12 +156,12 @@ Unix process can be in the following states:
 - zombie (terminated but waiting for parent process to acknowledge)
 - uninterruptible sleep or waiting (waiting for a hardware event)
 
-**Threads**
+## Threads
 - run in same address as the calling process (changes are reflected)
 - have own thread context: ID, SP, PC, general purpose registers, condition codes
 - can access “critical memory” must be handled with semaphores (mutexes) and / or condition variables
 - dies when the process containing the thread dies
-**Kernel**
+## Kernel
 - “Aways resident code that services request from the hardware and manages processes”
 - Unprivileged, must make calls to kernel to switch to privileged state (interrupts)
 - The kernel handles: hardware, system memory, File I/0 and context switching
@@ -174,6 +174,10 @@ Unix process can be in the following states:
 	- Access to hardware devices
 	- Creation and deletion of processes
 	- Control and manipulation of system resources such as CPU, memory, and I/O devices.
+
+![[unix_architecture.jpg|300]]
+![[traditional-unix-kernel.png|300]]
+![[overview-kernel.png|400]]
 - Allowing user-level programs to perform these operations could potentially lead to systeminstability or security vulnerabilities.
 - Process Management: The kernel manages the creation, execution and termination of processes. It also manages the scheduling of processes and assigns the CPU time to different processes.
 - Memory Management: The kernel manages the physical and virtual memory of the system and provides memory allocation and deallocation services to the processes.
@@ -181,13 +185,13 @@ Unix process can be in the following states:
 - Network Stack: The kernel provides the network stack, which is responsible for managing the network communication and protocols.
 - Device Drivers: The kernel provides the device drivers, which are responsible for managing the communication between the hardware and the kernel.
 - Security: The kernel provides security mechanisms such as access control and authentication to protect the system and user's data.
-**Syscalls**
+## Syscalls
 A request by a process that the kernel carries out some operation on its behalf.
 - Only the kernel has direct access to hardware and system memory.
 - Whenever we want to do IO we have to perform a system call
 - Much like a function call, but implemented very dierently.
 
-See man syscalls to which functions perform syscall
+See `man syscalls` to which functions perform syscall
 
 **How to write to memory**
 what happens on a write depends on the method used:
@@ -294,7 +298,7 @@ See man fork() for more info.
 - Creating processes: fork().
 - Terminating current process: exit().
 - Loading program code from disk into current process: exec().
-- Waiting for a specic child to die: waitpid().
+- Waiting for a specific child to die: waitpid().
 - Getting PID of running process: getpid().
 
 The child process and the parent process run in separate memory spaces. At the time of fork() both memory spaces have the same content. fork() is called once but returns twice.
@@ -321,7 +325,7 @@ children can print 1, 2 and 3
 ![[Pasted image 20240110132054.png]]
 Make a graph: Make a fork in the graph each time fork() is called. Beware of the level of each thing when making the graph, we see that print(4), print(3) are on the same level, therefore we can't be certain that one prints before the other, the same goes for the 2 print(5).
 ![[Pasted image 20240118001831.png]]
-## Threads
+## multi-threading
 Race condition: code is dependent on the sequence or timing of other uncontrollable events such as multiple threads accessing the same variable, leading to unexpected results.
 
 context switched, just like processes
@@ -384,12 +388,12 @@ In this example the worker thread would start working, but the thread in main wo
 Fork will have the child print one time, the parent process will also print one time after the fork.  
 
 Depending on whether the worker thread gets to run or not another print is made
-
+**parent dosent kill child when it dies**
 We will therefore either print 3 or 4 times
 
 if the worker thread newer runs any code, 3 prints are made and none of them are "2"
 
-if the worker thread runs before the parent process (main thread) and the child: 3 of the 4 prints are "2" 
+if the worker thread runs before the parent process (main thread) and the child: 3 of the 4 prints are "2", 
 
 its possible for the "2" to be printed 0-3 times.
 

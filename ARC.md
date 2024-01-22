@@ -118,7 +118,13 @@ Vi kan beskrive maskinens ressourcer ved antallet af instruktioner som kan udfø
 Fe: 1, De: 1, Ex: 1, Me: 1, Wb: 1
 ```
 kun en instruktion kan være i hver fase samtidig.
+```
+load: "Fe De Ex Me Wb"   
+store: "Fe De Ex Me Wb"     
+andre: "Fe De Ex Me Wb"     
 
+branch: "Fe De Ex Me Wb" // Wb behøves med betinget hop
+```
 ">>" indikerer at den staller i den fase som efterfølger, så "`De >> Ex`", betyder et stall i Ex. Man kan også skrive `De De Ex`, fordi den holder i `De` fasen fordi `Ex` ikke er tilgænglig. Jeg synes den sidste metode er mere overskuelig fordi det bliver nemmere at spotte hvornår der skal ske stalls pga. ressourcebegrænsning 
 
 #### Dataafhængigheder
@@ -174,8 +180,10 @@ Betinget hop behøver ikke Wb
 ```
 ![[Pasted image 20240115162432.png]]
 Det betyder at hvis et hop baglæns tages så vil PC være klar i De derfor kan næste instruktions Fe fase begynde sammtidig med Ex fasen for branch instruktionen. Hvis hop ikke tages eller et hop forlæns tages så kan næste instruktions Fe fase først 
-
+###### husk til eksamen
 her unlades `Me` fasen i add og branch instruktioner: Don't do that.
+
+"We assume backward branches are predicted during decode"
 ## Superskalar
 En maskine der kan udføre to eller flere instruktioner samtidigt kaldes "superskalar".
 
@@ -190,6 +198,10 @@ andre: "Fe De Ex Wb" // betingede hop behøver ikke Wb
 branch: "Fe De Ex" // kun med betinget hop
 ```
 Forkortelsen "Ag" står for "Address generate" som så erstatter brugen af den generelle ALU til at beregne adresser ved lagertilgang.
+
+**Hvis du staller  i Ex så skriver du De De, hvis der så er et hop som kan forudsiges i De, så kan du starte ved det andet De  fordi vi er færdig med De vi venter bare nu.**
+
+**Hvis du skal hoppe skal du vente på sidste er færdig med ex, men hvis du er done med instruktioner skal du ikke vente**
 
 Der kan nu godt være 2 Fe på samme tid
 

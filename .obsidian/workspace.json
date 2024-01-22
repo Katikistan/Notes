@@ -4,54 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "5ed85a188b213fcd",
+        "id": "11d2e9111b0ad84b",
         "type": "tabs",
         "children": [
           {
-            "id": "092e5c50894d2d21",
+            "id": "d846c0d37fecd461",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Misc/Templates/Excalidraw.md"
-              }
-            }
-          },
-          {
-            "id": "56db87e1dd7e895e",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Misc/Templates/Excalidraw.md"
-              }
-            }
-          },
-          {
-            "id": "ae694c1ecc251f2a",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "Misc/åBilleder/Pasted image 20240121133223.png"
-              }
-            }
-          },
-          {
-            "id": "73126ba0a3980052",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "OS and Data representation.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -144,7 +108,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "OS and Data representation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -161,7 +124,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "OS and Data representation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -184,9 +146,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "OS and Data representation.md"
-              }
+              "state": {}
             }
           },
           {
@@ -237,24 +197,24 @@
   },
   "active": "e613d9a5e7dd2cc6",
   "lastOpenFiles": [
+    "Misc/Templates/Excalidraw.md",
+    "Misc/åBilleder/Pasted image 20240121133223.png",
     "Networking.md",
     "OS and Data representation.md",
-    "Pasted image 20240121193201.png",
-    "Pasted image 20240121192653.png",
-    "Pasted image 20240121192556.png",
-    "Pasted image 20240121192451.png",
-    "Pasted image 20240121183946.png",
-    "Pasted image 20240121183836.png",
-    "Pasted image 20240121183439.png",
-    "Pasted image 20240121183302.png",
-    "Pasted image 20240121183103.png",
-    "Pasted image 20240121183057.png",
-    "CompSys - Eksamens noter.md",
-    "ARC.md",
+    "unix_architecture.jpg",
+    "traditional-unix-kernel.png",
     "SS.md",
+    "overview-kernel.png",
+    "Untitled 1.png",
+    "Untitled.png",
+    "ARC.md",
+    "Misc/CompSys - Eksamens noter.md",
+    "Misc/åBilleder/Tcp_westwood.gif",
+    "Misc/åBilleder/Pasted image 20240121174044.png",
+    "Misc/åBilleder/blobid21-60f546786ae24.jpeg",
+    "Misc/åBilleder/Pasted image 20240121222638.png",
     "DR.md",
     "Misc/TDC.md",
-    "Misc/Templates/Excalidraw.md",
     "Misc/Vigtig syntax.md",
     "Compsys_eksamen.zip",
     "ziDHR6nB",
