@@ -32,7 +32,16 @@ This layer deals with the physical connection between devices, such as cables an
 ## CDN
 Content Distribution Networks (CDN s) are a system of distributed servers that are deployed in multiple data centers around the world. The goal of a CDN is to provide faster delivery of content to users by caching a copy of the content on servers that are closer to the user's location.
 
-CDN s can be used to speed up the delivery of a wide variety of content, including web pages, images, videos, audio and video streaming, software downloads and more. They work by intercepting requests for content from users and redirecting them to the nearest server that has a cached copy of the content. This reduces the distance that the data needs to travel, which can result in faster delivery times.
+CDNs can be used to speed up the delivery of a wide variety of content, including web pages, images, videos, audio and video streaming, software downloads and more. They work by intercepting requests for content from users and redirecting them to the nearest server that has a cached copy of the content. This reduces the distance that the data needs to travel, which can result in faster delivery times.
+### Enter Deep
+Many as possible small(ish) clusters are built in many different locations. The idea here is to place them as physically close
+as possible to as many different users as possible. 
+
+This keeps response times to a minium. However, this approach can be both expensive due to the large amount of hardware needed, and also difficult to maintain.
+### Bring Home
+CDNs use few fewer clusters that are (relatively) cheaper and easier to maintain, but can have longer response times. 
+
+In both contexts, maintainence can refer to physically ensuring the hardware is still in a runnable condition, but also to the data within each cluster. A cache-like system can be used where only popular or recently viewed shows are stored in many locations and others are retreived more remotely when necessary.
 ## CDN and P2P
 CDN vs. Peer-to-peer:
 A Content Delivery Network (CDN) is a system of distributed servers that are used to deliver web content to users based on their geographic location. The goal of a CDN is to reduce latency and improve the performance of web content delivery. This is
@@ -43,7 +52,7 @@ Peer-to-peer (P2P) is a decentralized type of network, where each node (peer) ac
 The main difference between CDN and P2P is the way content is delivered. CDN uses a centralized system where content is stored on servers that are strategically placed, while P2P uses a decentralized system where content is shared directly between
 users. CDN is typically used for delivering static content such as images and videos, while P2P is typically used for sharing files such as music and movies. CDN is mainly used by large companies and websites with high traffic, while P2P is mainly used by
 smaller groups of people for sharing files among themselves.
-### Typical exam question -----:)
+### Typical exam question 
 your boss wants a website should he use CDN or P2P, what are the benifits:
 
 **Availability and Fault Tolerance**: CDN ensures that the availability of the content is not dependent on  the number of active clients, their bandwidth limitations, P2P configuration settings but rather on the load distribution on the server side in the CDN. This also includes fault tolerant guarantees. P2P would provide a more robust network, where individual nodes can fail and the network remains, which may mean the store would always be online. However, this could equally be accomplished by simply having a backup server to act as the store in emergencies.
@@ -79,7 +88,9 @@ Assuming that packets are transmitted in a first-come-first-served manner, as is
 
 Denote the length of the packet by L bits and denote the transmission rate of the link from router A to router B by R bits/sec. For example, for a 10 Mbps Ethernet link, the rate is R = 10 Mbps;
 for a 100 Mbps Ethernet link, the rate is R = 100 Mbps. The transmission delay is L/R. This is the amount of time required to push (that is, transmit) all of the packet’s bits into the link.
-
+$$
+d_{\text {trans }}=\frac{L}{R}
+$$
 **Propagation Delay**
 Once a bit is pushed into the link, it needs to propagate to router B. The time required to propagate from the beginning of the link to router B is the propagation delay. The bit propagates at the propagation speed of the link. The propagation speed depends
 on the physical medium of the link (that is, fiber optics, twisted-pair copper wire, and so on).
@@ -101,6 +112,8 @@ reserves a constant transmission rate in the network’s links
 ## HTTP
 ![[Pasted image 20240121133223.png]]
 ![[Pasted image 20240121133259.png]]
+
+Request an response should at least have these.
 
 Get, POST, HEAD, PUT, and DELETE
 ### GET
@@ -132,7 +145,8 @@ object on a Web server.
 - *400 Bad Request:* This is a generic error code indicating that the request could not be understood by the server.
 - *404 Not Found:* The requested document does not exist on this server.
 - *505 HTTP Version Not Supported:* The requested HTTP protocol version is not supported by the server.
-
+### HTTP server is moved
+The request does not require any changes. As a users you are not expected to know about this change. The response will be different. You are likely to get a 301 Moved Permanently back with the location of the Akamai server, that you should contact. This will come based in the server you are asked to contact through the geographical location in DNS. Then your browser will send a new request to this server for the new content.
 ## Persistent vs non-persistent
 should each request/response pair be sent over a separate TCP connection, or should all of the requests and their corresponding responses be sent over the same TCP connection? **non-persistent connections**; and in the latter approach, **persistent connections**.
 
@@ -203,8 +217,29 @@ TCP acknowledg-ments are cumulative and correctly received but out-of-order segm
 segments
 #### *example:*
 the sender sends a sequence of segments 1, 2, . . . , N, and all of the segments arrive in order without error at the receiver the acknowledgment for packet n < N gets lost, but the remaining N - 1 acknowledgments arrive at the sender before their respective timeouts. GBN would retransmit not only packet n, but also all of the subsequent packets n + 1, n + 2, . . . , N. TCP, on the other hand, would retransmit at most one segment, namely, segment n. Moreover, TCP would not even retransmit segment n if the acknowledgment for segment n + 1 arrived before the timeout for segment n.
-### Transmission rate for TCP --------- :)
-### Bandwidth for TCP --------- :)
+### Transmission rate for TCP
+*"In an ideal world if two TCP connections connect through the same bottleneck router of transmission rate R, each TCP connection will have a transmission rate of R/2. In practice, this is not the case and the rate will osculate around R/2. Why is this? For this question you can assume there are no other connections and that the router will always be the bottleneck for both connections"*
+
+congestion control mechanisms in TCP will use less than R/2 initially for both connections. These will each be automatically increased over time as the full throughput is unused an no packet loss occurs. As they each increase the probability of packet loss increases, until the total throughput expected by the combined connections is over R. One, or potentially both of the connections will then cut its connection and start increasing again. As each connection linearly increases then halves its throughput, it is prob-
+able that these will occur against each other (eg whilst one is high the other is low and vice versa), and so each will oscillate around R/2.
+
+transmission rate R = mbps eller gbps 
+L = packet size
+$$
+d_{\text {trans }}=\frac{L}{R}
+$$
+### Bandwidth for TCP 
+*Suppose there are k TCP connection ongoing over a shared link with bandwidth R. In addition to the k TCP connections, another TCP connection is initiated over this shared link. What is the bandwidth available to the new TCP connection and why?*
+
+Assuming equal RTT, window sizes and each of the TCP connections operating are under AIMD phase of congestion control algorithm (see Section 3.7.1 in KR), the bandwidth of the shared connection link would be equally shared between the k+1 TCP connections because of the nature of the congestion control algorithm. This would imply each of the TCP connections would have a bandwidth equal to R/(k+1) available. The assumption of all TCP connections entering the AIMD phase of the congestion
+control algorithm is important for the fair sharing guarantee.
+
+How should a TCP sender determine the rate at which it
+should send? 
+- A lost segment implies congestion, and hence, the TCP sender’s rate should be decreased when a segment is lost. A timeout event or the receipt of four acknowledgments for a given segment (one original ACK and then three duplicate ACKs) is interpreted as an implicit “loss event” indication, triggering a retransmission of the lost segment. 
+- An acknowledged segment indicates that the network is delivering the sender’s segments to the receiver, and hence, the sender’s rate can be increased when an ACK arrives for a previously unacknowledged segment. The arrival of acknowledgments is taken as an implicit indication that all is well—segments are being successfully delivered from sender to receiver, and the network is thus not congested. The congestion window size can thus be increased.
+- Bandwidth probing. Given ACKs indicating a congestion-free source-to-destination path and loss events indicating a congested path, TCP’s strategy for adjusting its transmission rate is to increase its rate in response to arriving ACKs until a loss event occurs, at which point, the transmission rate is decreased. The TCP sender thus increases its transmission rate to probe for the rate that at which congestion onset begins, backs off from that rate, and then to begins probing again to see if the congestion onset rate has changed. The TCP sender’s behavior is perhaps analogous to the child who requests (and gets) more and more goodies until finally he/she is finally told “No!”, backs off a bit, but then begins making requests again shortly afterward. 
+Note that there is no explicit signaling of congestion state by the network—ACKs and loss events serve as implicit signals—and that each TCP sender acts on local information asynchronously from other TCP senders.
 
 ### Use case
 TCP is typically used for applications that require a reliable, ordered delivery of data, such as web browsing, email, and file transfer. ordered delivery of data, such as streaming video and audio, online gaming, and DNS queries.
@@ -228,6 +263,18 @@ In particular, and in contrast with UDP, two arriving TCP segments with differen
 ## TCP Congestion control
 congestion window=cwnd
 ssthresh (short-hand for “slow start threshold”)
+
+the amount of unacknowledged data at a sender may not
+exceed the minimum of cwnd and rwnd, that is:
+$$
+\text { LastByteSent }- \text { LastByteAcked } \leq \min \{\text { cwnd, rwnd }\}
+$$
+TCP uses acknowledgments to trigger (or clock) its increase in
+congestion window size, TCP is said to be self-clocking.
+
+**How should a TCP sender determine the rate at which it**
+**should send?**
+
 ![[Pasted image 20240121163025.png]]
 Congestion control adjusts the sending rate of the sender based on network conditions to prevent packet loss and delays. 
 
@@ -247,6 +294,41 @@ congestion by regulating the rate at which data is sent into the network. Conges
 - slow start
 TCP Tahoe dosent have fast recovery 
 ![[Pasted image 20240121162934.png]]
+**RTT: round-trip time** 
+**cwnd: congestion window**
+**MSS: maximum segment size**
+**ssthresh: slow start threshold**
+### Slow start
+Slow start is for when the connection is completly dropped or start of connection. cwnd is small: 1 MSS, sending rate is  MSS/RTT(roundtrip delay). If  MSS = 500 bytes and RTT = 200 msec then sending rate is about 20 kbps. available bandwidth to the TCP sender may be much larger than MSS/RTT, the TCP sender would like to find the amount of available bandwidth quickly.  In the slow-start state, the value of cwnd begins
+at 1 MSS and increases by 1 MSS every time a transmitted segment is first acknowledged
+
+sender increasing the congestion window by 1 *MSS* for each of the acknowledged segments results in a doubling of the sending rate every *RTT*. Thus, the TCP send rate starts slow but grows exponentially during the slow start phase.
+
+ if there is a loss event (i.e., congestion) indicated by a timeout, the TCP sender sets the value of *cwnd* to 1 and begins the slow start process anew.  It also sets the value of a second state variable, *ssthresh* (short-hand for “slow start threshold”) to *cwnd/2*—half of the value of the congestion window value when congestion was detected
+
+when the value of *cwnd* equals *ssthresh*, slow start ends and TCP transitions into congestion avoidance mode
+
+The final way in which slow start can end is if three duplicate ACKs are detected, in which case TCP performs a fast retransmit.
+
+
+**After timeout:**
+Slow start increases the number of send frames by doubling the window size every time the send window is successful. This happens until the window size more than half of the window size before the connection dropped. 
+
+Slow start makes sure that the network is not flooded just after a connection drop (thus slow), but after initial success it quickly (exponentially) ramps-up until half the window size.
+### Congestion Avoidance
+when the value of *cwnd* is approx. half value when congestion was last encountered. value of *cwnd* increases by just a single *MSS* every *RTT*. Increase cwnd by MSS bytes (MSS/cwnd) when-
+ever a new acknowledgment arrives. 
+
+if MSS is 1,460 bytes and cwnd is 14,600 bytes, then 10 segments are being sent within an RT
+
+When a timeout occurs, same as slow-start: The value of cwnd is set to 1 MSS, and the value of ssthresh is updated to half the value of cwnd when the loss event occurred.
+### Fast Recovery
+In fast recovery, the value of cwnd is increased by 1 MSS for every duplicate ACK received for the missing segment that caused TCP to enter the fast-recovery state.  Eventually, when an ACK arrives for the missing segment, TCP enters the congestion-avoidance state after deflating cwnd. 
+
+If a timeout event occurs, fast recovery transitions to the slow-start state after performing the same actions as in slow start and congestion avoidance.
+
+### Retrospective
+ignoring and assuming that losses are indicated by triple duplicate ACKs rather than timeout TCP linearly increases its congestion window size (and hence its transmission rate) until a triple duplicate-ACK event occurs. It then decreases its congestion window size by a factor of two but then again begins increasing it linearly, probing to see if there is additional available bandwidth.
 ## TCP Connection Management
 Suppose a process running in one host (client) wants to initiate a connection with another process in another host (server)
 
@@ -262,6 +344,12 @@ Once these three steps have been completed, the client and server hosts can send
 ## Reliable data transfer
 ![[Pasted image 20240121160801.png]]
 TCP provides a reliable connection, which means that data sent using TCP is guaranteed to reach the receiver. In contrast, UDP does not guarantee that data will reach the receiver, and packets can be lost or delivered out of order.
+
+sequence number in TCP keeps track of the number of bytes sent, while the acknowledgement number informs the sender of the next expected sequence number
+
+The window size informs the sender of how many more bytes it can recieve before needing to wait. 
+
+all tcp connections are really 2 one way connections and have their own sequence of bytes, therefore both need a sequence number. 
 ![[Pasted image 20240121140150.png]]
 ## Flow control 
 TCP uses flow control mechanisms to prevent the sender from overwhelming the receiver. UDP does not have flow control mechanisms, so the sender can potentially overwhelm the receiver.
@@ -486,7 +574,7 @@ Control plane is responsible for routing, while the actual forwarding happens at
 Today, the routing is often implemented in software and a centralized server (Remote Controller) tells the router how datagrams should be forwarded. It is however, possible to manually alter a forwarding table in each router.
 ### Link state
 Dijkstra's algorithm is a graph search algorithm that solves the single-source shortest path problem for a graph with non-negative edge weights, producing a shortest path tree. This means that the algorithm finds the shortest path from one particular source
-node to all other nodes in the graph. The algorithm repeatedly selects the node with the lowest distance, calculates the distance through it to each unvisited neighbor, and updates the neighbor's distance if smaller. It's better for static systems
+node to all other nodes in the graph. The algorithm repeatedly selects the node with the lowest distance, calculates the distance through it to each unvisited neighbor, and updates the neighbor's distance if smaller. It's better for static systems like backbone routers. 
 #### Practical 
 D(v): Cost of least path from u (source) to v in this iteration
 p(v): Previous node of v along least-cost path
@@ -576,8 +664,7 @@ We take row B from node B table
 We take row C from node C table
 We take row D from node D table
 #### Count to infinity problem
-The count-to-infinity problem is a problem that can occur in distributed systems, particularly in distance-vector routing algorithms. It is a problem that can happen when two or more
-nodes in a network are trying to determine the best path to a destination. 
+Count to Infinity is a problem where the cost of a connection dramatically increases. It is a problem that can happen when two or more nodes in a network are trying to determine the best path to a destination. This is usually a sign of a link failure. Can happen in the distance-vector routing algorithms
 
 The problem arises when two nodes, A and B, both have an incorrect distance to a destination, C. Each node assumes that the other node has the correct distance and starts incrementing its own distance in an attempt to converge on the correct value. However, since both nodes have incorrect distances, they will continue to increment their distances indefinitely, causing their distance values to grow larger and larger. This is referred to as
 "counting to infinity." 
@@ -585,6 +672,9 @@ The problem arises when two nodes, A and B, both have an incorrect distance to a
 The problem can be mitigated by using a metric such as Bellman-Ford or Dijkstra algorithm, which incorporate a mechanism such as a maximum hop count or a timeout to prevent the distance values from growing indefinitely. The idea behind these algorithms is to prevent the nodes from counting to infinity by introducing a maximum value for the distance, when this maximum value is reached the node will consider that the information is incorrect and
 discard it.
 
+![|200](https://i.imgur.com/HKeIzu4.png)
+
+if the connection from A to B suddenly increased to 30, then B would detect this change. It would notify its neighbours, including A. To get to A now B only knows that the direct cost to A is 30, but that C still expects to be able to get there at cost 10 (4 + the old value 6). B therefore sends its update to A via C, which will then route it back to B. B and C will then be stuck in a loop routing the packet between each other. In this case it is finite, but if the connection cost had increased dramatically then the needless loop will take significantly longer.
 ##### Summary:
 The count-to-infinity problem is a problem that can occur in distance-vector routing algorithms when two or more nodes in a network are trying to determine the shortest path to a destination, and the nodes keep incrementing the distance values indefinitely, leading them to become larger and larger, referred to as counting to infinity. This problem can be mitigated by using a different routing algorithm that incorporates a mechanism to prevent the distance values from growing indefinitely.
 # Security 
@@ -718,6 +808,7 @@ Idealy is fast to compute, but time consuming to reverse engineer
 These are a subset of hash functions. They are much slower and conversely much more difficult to reverse engineer
 **Non-cryptographic hash function:**
 If a hash function is non-cryptographic, it means that it is fairly simple to reverse engineer the hash. It can be used only to check integrity of a message, since we can send a hash of the contents along the message, so the receiver can check if the message is altered(by purpose or error) (checksum)
+
 **Cryptographic hash function:**
 Is very hard to be reverse engineered. And can then be used to send secret data.
 

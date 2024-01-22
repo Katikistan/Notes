@@ -1,6 +1,4 @@
 # Tips
-Use scripts from DIKUnotes compsys (download before exam): https://github.com/Emil2468/CompSys-scripts
-
 Converting between bases:
 to convert between binary, hexadecimal and decimal use python 
 
@@ -28,6 +26,7 @@ np.log2(7) # using log 2 in python
 # Data representation
 ## Endians
 ![[Misc/åBilleder/32bit-Endianess.svg.png]]
+Determines where the most and least significant bit is.
 
 IEEE 754 uses big endian as a standard
 
@@ -37,7 +36,22 @@ Host order: litte endian
 ## IEE float
 The IEEE Standard for Floating-Point Arithmetic (IEEE 754) is a technical standard for floating-point computation.
 
+The standard defines:
+
+- _arithmetic formats:_ sets of binary and decimal floating-point data, which consist of finite numbers (including signed zeros and subnormal numbers), infinities, and special NAN values
+- _interchange formats:_ encodings (bit strings) that may be used to exchange floating-point data in an efficient and compact form
+- _rounding rules:_ properties to be satisfied when rounding numbers during arithmetic and conversions
+- _operations:_ arithmetic and other operations (such as trigonometric functions) on arithmetic formats
+- _exception handling:_ indications of exceptional conditions (such as division by zero, overflow, _etc._)
+
 IEEE floating point has clear properties.
+
+A floating-point format is specified by
+- a base (also called _radix_) _b_, which is either 2 (binary) or 10 (decimal) in IEEE 754;
+- a precision _p_;
+- an exponent range from _emin_ to _emax_, with _emin_ = 1 − _emax_ for all IEEE 754 formats.
+
+A format comprises
 
 There are several ways to represent floating point number but IEEE 754 is the most efficient in most cases. IEEE 754 has 3 basic components:
 1. **The Sign of Mantissa –**  
@@ -96,12 +110,42 @@ This phenomenon is called the "floating-point precision error" and it affects al
 ![[Pasted image 20240118160607.png]]
 ![[Pasted image 20240118160901.png]]
 ![[Pasted image 20240118160930.png]]
+In the IEEE floating point format, the inaccuracies of calculations become larger as the numbers get larger due to the limited number of bits available to represent the mantissa (or significand) of the number. This means that the larger the number, the less precise the representation of that number in the format.
+
+This is because the mantissa is represented as a fixed-point number, with a fixed number of bits to the left and right of the radix point. As the number gets larger, more bits are required to
+represent the mantissa, but since the number of bits is fixed, the representation becomes less precise.
 ## Twos compliment
+**Two's complement** is the most common method of representing signed (positive, negative, and zero) integers on computers, and more generally, fixed point binary values. Two's complement uses the binary digit with the greatest place value as the _sign_ to indicate whether the binary number is positive or negative.
+
+The two's complement of an integer is computed by:
+- Step 1: starting with the binary representation of the number, with the leading bit being a sign bit;
+- Step 2: inverting (or flipping) all bits – changing every 0 to 1, and every 1 to 0;
+- Step 3: adding 1 to the entire inverted number, ignoring any overflow. Accounting for overflow will produce the wrong value for the result.
+
+**−6** in binary from the number **6**:
+- Step 1: _+6_ in decimal is _0110_ in binary; the leftmost significant bit (the first 0) is the sign (just 110 in binary would be -2 in decimal).
+- Step 2: flip all bits in _0110_, giving _1001_.
+- Step 3: add the place value 1 to the flipped number _1001_, giving _1010_.
+
+To verify that _1010_ indeed has a value of _−6_, add the place values together, but _subtract_ the sign value from the final calculation. Because the most significant value is the sign value, it must be subtracted to produce the correct result: **1010** = **−**(**1**×23) + (**0**×22) + (**1**×21) + (**0**×20) = **1**×−8 + **0** + **1**×2 + **0** = −6.
 ![[Pasted image 20240118155421.png]]
 ![[Pasted image 20240118155529.png]]
 ![[Pasted image 20240118155607.png]]
 Distinguish between representation and interpretation.
 ![[Pasted image 20240118155745.png]]
+
+| Bits      | Unsigned value | Signed value  <br>(Two's complement) |
+| --------- | -------------- | ------------------------------------ |
+| 0000 0000 | 0              | 0                                    |
+| 0000 0001 | 1              | 1                                    |
+| 0000 0010 | 2              | 2                                    |
+| 0111 1110 | 126            | 126                                  |
+| 0111 1111 | 127            | 127                                  |
+| 1000 0000 | 128            | −128                                 |
+| 1000 0001 | 129            | −127                                 |
+| 1000 0010 | 130            | −126                                 |
+| 1111 1110 | 254            | −2                                   |
+| 1111 1111 | 255            | −1                                   |
 ## Size of different data types
 ![[Pasted image 20240118155325.png]]
 **in 32 bit architecture:**
@@ -278,7 +322,7 @@ This could not cause a deadlock, since we can move along the lines (green lines 
 ## Context switching
 Only one process gets to run at a time, but we regularly switch between available processes. Doing this often and rapidly creates the illusion of simultaneous execution.
 
-Pausing a process, saving its entire state, then resuming some other process based on its saved state.
+Pausing a process or thread, saving its entire state, then resuming some other process based on its saved state. That is context switching. 
 
 **So what do we need to save?**
 1. All registers, including control registers.
@@ -446,6 +490,12 @@ Number of lines pr. set = associativity
 
 REMEMBER we always want a cache that give many hits, thereby having a 4 way associative cache over a direct mapped is preferred. 
 ## Virtual memory
+Virtual memory uses both hardware and software to enable a computer to compensate for physical memory shortages, temporarily transferring data from RAM to disk storage. Mapping chunks of memory to disk files enables a computer to treat secondary memory as though it were main memory
+
+Virtual memory uses both hardware and software to operate. When an application is in use, data from that program is stored in a physical address using RAM. A memory management unit maps(MMU) the address to RAM and automatically translates addresses. The MMU can, for example, map a logical address space to a corresponding physical address.
+
+If, at any point, the RAM space is needed for something more urgent, data can be swapped out of RAM and into virtual memory. The computer's memory manager is in charge of keeping track of the shifts between physical and virtual memory. If that data is needed again, the computer's MMU will use a context switch to resume execution.
+
 Use DRAM as a cache for parts of a virtual address space
 Uses memory efficiently by caching virtual memory pages
 - Efficient only because of locality
@@ -463,6 +513,8 @@ Simplifying memory allocation
 - A virtual page can be stored in different physical pages at different times
 
 sometimes, there is not enough RAM to run several programs at one time. This is where virtual memory comes in. Virtual memory frees up RAM by swapping data that has not been used recently over to a storage device, such as a hard drive or solid-state drive. Thereby freeing up RAM and gives more efficient use of RAM.
+
+However, the process of swapping virtual memory to physical is rather slow. This means using virtual memory generally causes a noticeable reduction in performance. Because of swapping, computers with more RAM are considered to have better performance.
 ## Virtual addresses
 Page faults are handled by software (kernel code), meaning we have flexibility.
 - Page fault handler can update the page table based on kernel data and policy.
