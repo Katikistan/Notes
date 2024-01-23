@@ -6,21 +6,18 @@ by having different layers we can seperate functionality and services, each laye
 The highest layer of the OSI model, the application layer is
 responsible for providing the interface between the network and the applications that run on it. This layer is responsible for providing services to the user such as email, file transfer(HTTP), and web access.
 
-This layer interacts directly with the application and end-user, and
-provides services such as email, file transfer, and web access. Protocols that apply to this layer include HTTP (Hypertext Transfer Protocol), FTP (File Transfer Protocol), and SMTP (Simple Mail Transfer Protocol).
+This layer interacts directly with the application and end-user. Protocols that apply to this layer include HTTP (Hypertext Transfer Protocol), FTP (File Transfer Protocol), and SMTP (Simple Mail Transfer Protocol).
 ### Transport Layer
 The transport layer is responsible for providing end-to-end
-communication between devices on the network. It is responsible for providing reliable communication, flow control, and error recovery.
+communication between devices on the network. It is responsible for providing reliable communication, flow control, and error recovery. 
 
-This layer provides end-to-end communication between applications. Protocols that apply to this layer include TCP (Transmission Control Protocol) and UDP (User Datagram Protocol).
+This layer provides end-to-end communication between applications. Protocols that apply to this layer include TCP (Transmission Control Protocol) and UDP (User Datagram Protocol). Protocols such as HTTP use TCP to transport files.
 ### Network Layer
-The network layer is responsible for providing routing and switching
-services. It is responsible for determining the best path for data to travel from one device to another and for managing the flow of data across the network.
+The network layer is responsible for providing routing and switching services. It is responsible for determining the best path for data to travel from one device to another and for managing the flow of data across the network.
 
 This layer is responsible for routing and forwarding packets through a network. Protocols that apply to this layer include IP (Internet Protocol) and ICMP (Internet Control Message Protocol).
 ### Link Layer
-The link layer is responsible for providing communication between
-devices on the same network segment. It is responsible for providing services such as error detection, flow control, and addressing. 
+The link layer is responsible for providing communication between devices on the same network segment. It is responsible for providing services such as error detection, flow control, and addressing. 
 
 This layer provides a reliable link between devices on a network. Protocols that apply to this layer include MAC (Media Access Control) and LLC (Logical Link Control).
 
@@ -34,8 +31,7 @@ Content Distribution Networks (CDN s) are a system of distributed servers that a
 
 CDNs can be used to speed up the delivery of a wide variety of content, including web pages, images, videos, audio and video streaming, software downloads and more. They work by intercepting requests for content from users and redirecting them to the nearest server that has a cached copy of the content. This reduces the distance that the data needs to travel, which can result in faster delivery times.
 ### Enter Deep
-Many as possible small(ish) clusters are built in many different locations. The idea here is to place them as physically close
-as possible to as many different users as possible. 
+Many as possible small(ish) clusters are built in many different locations. The idea here is to place them as physically close as possible to as many different users as possible. 
 
 This keeps response times to a minium. However, this approach can be both expensive due to the large amount of hardware needed, and also difficult to maintain.
 ### Bring Home
@@ -44,18 +40,15 @@ CDNs use few fewer clusters that are (relatively) cheaper and easier to maintain
 In both contexts, maintainence can refer to physically ensuring the hardware is still in a runnable condition, but also to the data within each cluster. A cache-like system can be used where only popular or recently viewed shows are stored in many locations and others are retreived more remotely when necessary.
 ## CDN and P2P
 CDN vs. Peer-to-peer:
-A Content Delivery Network (CDN) is a system of distributed servers that are used to deliver web content to users based on their geographic location. The goal of a CDN is to reduce latency and improve the performance of web content delivery. This is
-accomplished by caching frequently requested content on servers located in strategic locations around the world, so that users can access the content from a server that is geographically closer to them.
+A Content Delivery Network (CDN) is a system of distributed servers that are used to deliver web content to users based on their geographic location. The goal of a CDN is to reduce latency and improve the performance of web content delivery. This is accomplished by caching frequently requested content on servers located in strategic locations around the world, so that users can access the content from a server that is geographically closer to them.
 
 Peer-to-peer (P2P) is a decentralized type of network, where each node (peer) acts as both a client and a server. In a P2P network, files and other resources are shared directly between users, rather than being stored on a central server.
 
-The main difference between CDN and P2P is the way content is delivered. CDN uses a centralized system where content is stored on servers that are strategically placed, while P2P uses a decentralized system where content is shared directly between
-users. CDN is typically used for delivering static content such as images and videos, while P2P is typically used for sharing files such as music and movies. CDN is mainly used by large companies and websites with high traffic, while P2P is mainly used by
-smaller groups of people for sharing files among themselves.
+The main difference between CDN and P2P is the way content is delivered. CDN uses a centralized system where content is stored on servers that are strategically placed, while P2P uses a decentralized system where content is shared directly between users. CDN is typically used for delivering static content such as images and videos, while P2P is typically used for sharing files such as music and movies. CDN is mainly used by large companies and websites with high traffic, while P2P is mainly used by smaller groups of people for sharing files among themselves.
 ### Typical exam question 
 your boss wants a website should he use CDN or P2P, what are the benifits:
 
-**Availability and Fault Tolerance**: CDN ensures that the availability of the content is not dependent on  the number of active clients, their bandwidth limitations, P2P configuration settings but rather on the load distribution on the server side in the CDN. This also includes fault tolerant guarantees. P2P would provide a more robust network, where individual nodes can fail and the network remains, which may mean the store would always be online. However, this could equally be accomplished by simply having a backup server to act as the store in emergencies.
+**Availability and Fault Tolerance**: CDN ensures that the availability of the content is not dependent on the number of active clients, their bandwidth limitations, P2P configuration settings but rather on the load distribution on the server side in the CDN. This also includes fault tolerant guarantees. P2P would provide a more robust network, where individual nodes can fail and the network remains, which may mean the store would always be online. However, this could equally be accomplished by simply having a backup server to act as the store in emergencies.
 
 **Level of Control:** Usage of a CDN would provide a high-level of control to the service to configure the locations of the CDN services, load-balancing of available servers which is not possible to do using a  P2P service. Configuration based on geographic locations, distance to clients. An online store wants central control of their stock, prices etc. Handing out control to customer nodes would compromise this. A CDN is centralized, therefore provide more control.
 
@@ -66,6 +59,8 @@ P2P service.
 
 **Economic Implications:** (Extra) Usage of a P2P service would put the burden of network transfer costs on the the client for distributing the web-pages of the company.
 ## Packet switching
+A packet consists of control information and user data, which is also known as the payload
+
 To send a message from a source end system to a destination end
 system, the source breaks long messages into smaller chunks of data known as packets. Between source and destination, each packet travels through communication links and packet switches (for which there are two predominant types, routers and link-layer switches). Packets are transmitted over each communication link at a rate equal to the full transmission rate of the link. So, if a source end system or a packet switch is sending a packet of L bits over a link with transmission rate R bits/sec, then the time to transmit the packet is L / R seconds.
 ![[Pasted image 20240121165741.png]]
@@ -452,6 +447,8 @@ A prime motivation for this effort was the realization
 that the 32-bit IPv4 address space was beginning to be used up
 
 The approach to IPv4-to-IPv6 transition that has been most widely adopted inpractice involves tunneling
+
+Bitmasking IP-addresses can be used for subnetting as well as converting IPv4 to IPv6.
 ## Dynamic Host Configuration Protocol (DHCP)
 DHCP allows a host to obtain (be allocated) an IP address automatically. A network administrator can configure DHCP so that a given host receives the same IP address each time it connects to the network, or a host may be assigned a temporary IP address that will be different each time the host connects to the network. In addition to host IP address assignment, DHCP also allows a host to learn additional information, such as its subnet mask, the address of its first-hop router (often called the default gateway), and the address of its local DNS server.  
 
@@ -489,6 +486,20 @@ If all datagrams arriving at the NAT router from the WAN have the same destinati
 include port numbers as well as IP addresses in the table entries.
 
 There are some detractors. First, one might argue that, port numbers are meant to be used for addressing processes, not for addressing hosts. This cause problems for servers running on the home network, since, server processes wait for incoming requests at well-known port numbers and peers in a P2P protocol need to accept incoming connections when acting as servers. How can one peer connect to another peer that is behind a NAT server, and has a DHCP-provided NAT address? Technical solutions to these problems include NAT traversal tools.
+## Address Resolution Protocol (ARP)
+Because there are both network-layer addresses (for example, Internet IP addresses) and link-layer addresses (that is, MAC addresses), there is a need to translate between them. For the Internet, this is the job of the Address Resolution Protocol (ARP)
+
+suppose that the host with IP address 222.222.222.220 wants to send an IP datagram to host 222.222.222.222. In this example, both the source and destination are in the same subnet, in the addressing sense of Section 4.3.3. To send a datagram, the source must give its adapter not only the IP datagram but also the MAC address for destination 222.222.222.222. The sending adapter will then construct a link-layer frame containing the destination’s MAC address and send the frame into the LAN.
+
+An ARP module in the sending host takes any IP address on the same LAN as input, and returns the corresponding MAC address
+
+ARP resolves an IP address to a MAC address. 
+
+Analogous to DNS which resolves host names to IP addresses
+
+DNS resolves host names for hosts anywhere in the Internet, whereas ARP resolves IP addresses only for hosts and router interfaces on the same subnet
+
+**How it works:  KR 512**
 ## Fowarding tables
 When a source end system wants to send a packet to a destination end system, the source includes the destination’s IP address in the packet’s header. As with postal addresses, this address has a hierarchical structure. When a packet arrives at a router
 in the network, the router examines a portion of the packet’s destination address and forwards the packet to an adjacent router. More specifically, each router has a forwarding table that maps destination addresses
@@ -741,6 +752,9 @@ A nonce is a number that is used only once. In cryptography, a nonce is a random
 input to the encryption algorithm, along with the plaintext and a key. The nonce provides an extra level of security by ensuring that the same plaintext and key will not produce the same ciphertext even if the same encryption algorithm is used. In some cases, the nonce is used to make sure that the data that is exchanged between the sender and receiver is unique and has not been tampered with. The nonce is sent along with the message and the recipient can check if it is unique or not, if the nonce is not unique then the message is dropped.
 
 Nonces are widely used in various cryptographic protocols like in the WPA2 wireless security protocol and in the AES-GCM encryption algorithm.
+
+can protect against a replay attack:
+When a message is received, the nonce is checked against a database of previously used nonces. If the nonce has already been used, the message is rejected, thus preventing a replay attack.
 ## Replay attack
 A replay attack is a type of network security attack in which an attacker intercepts and records a legitimate network packet and then retransmits it at a later time. The goal of a replay attack is to gain unauthorized access to a network or system by replaying a previously captured packet that contains valid authentication or session information. 
 
@@ -797,12 +811,28 @@ specific resources on the network.
 
 It's worth noting that depending on the type of network, protocols, and security standards the keys may be used in different ways, and some may not be necessary in some cases.
 
+### Eksamens spørgsmål
+*Consider a network application that uses asymmetric,*
+*public-key encryption on every communication. What would you expect the shortcomings of this system to be? Suggest some potential improvements, and what effect(s) you would then expect to see?* 
+
+One potential shortcoming of a network application that uses asymmetric, public-key encryption on every communication is that it can be relatively computationally expensive, particularly for resource-constrained devices such as mobile devices or Internet of Things (IoT) devices.  
+
+A potential improvement to address this issue would be to use a combination of asymmetric and symmetric encryption. In this approach, the client and server would use asymmetric encryption to establish a shared symmetric key, and then use that key for all subsequent communications. 
+
+Another potential shortcoming of a network application that uses asymmetric, public-key encryption on every communication is that it may be vulnerable to man-in-the-middle (MitM) attacks. 
+
+an improvement to address this issue would be to implement certificate pinning. In this approach, the client would have a pre-configured list of trusted root certificate authorities (CA), and would only accept certificates from those CAs. This would prevent an attacker from being able to use a compromised CA to issue a fraudulent certificate and intercept the communication. 
+
+Overall, using a combination of asymmetric and symmetric encryption and implementing certificate pinning would be expected to improve the performance and security
+of the system.
 ## Cryptographic and non-cryptographic hash function
 Function for deterministicly computing a fixed-length output from some variable length input.
 
 Minimise output collisions (eg two inputs producing the same output)
 
 Idealy is fast to compute, but time consuming to reverse engineer
+
+hash functions are asymmetric: 
 
 **Cryptographic hash functions:**
 These are a subset of hash functions. They are much slower and conversely much more difficult to reverse engineer

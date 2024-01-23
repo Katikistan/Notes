@@ -61,7 +61,9 @@ The non-pipelined approach to laundry would be as follows:
 4. When folding is finished, ask your roommate to put the clothes away.
 As soon as the washer is finished with the first load and placed in the dryer, you load the washer with the second dirty load. When the first load is dry, you place it on the table to start folding, move the wet load to the dryer, and put the next dirty load into the washer. Next, you have your roommate put the first load away, you start folding the second load, the dryer has the third load, and you put the fourth load into the washer. At this point all steps—called stages in pipelining—are operating concurrently. 
 
-instructions run in parrallel, since more instructions are handled at a time the program is executed faster
+instructions run in parrallel, since more instructions are handled at a time the program is executed faster.
+
+worth noting that the performance gain from having more stages in a pipeline is not linear. The more stages there are, the more difficult it becomes to keep all stages busy and to keep the pipeline full.
 
 The same principles apply to processors where we pipeline instruction execution. RISC-V instructions classically take five steps:
 1. FE: Fetch instruction from memory.
@@ -141,6 +143,7 @@ Her refererer "rs1", "rs2" og "rd" til de to kilderegistre og destinationsregist
 
 Load instruktioner producerer f.eks. deres register i `Me` fasen og derfor må en add instruktion f.eks vente  til at load er færdig med sin `Me` før add kan begynde sin `Ex` fase
 
+
 • **Format på instruktioner:**
 	• Load: rd, imm(rs1)
 	• Store: rs2, imm(rs1)
@@ -160,9 +163,9 @@ Angiver at PC opdateres i "Ex" af retur instruktionen og at efter en retur-instr
 ```
                         0  1  2  3  4  5  6  7  8
 lw   x11,0(x10)         Fe De Ex Me Wb
-addi x11,x11,100           Fe De De Ex Me Wb
-sw   x11,0(x14)               Fe Fe De Ex Me Wb
-addi x10,x10,1                      Fe De Ex Me Wb
+addi x11,x11,100           Fe De De Ex Wb
+sw   x11,0(x14)               Fe Fe De Ex Me
+addi x10,x10,1                      Fe De Ex Wb
 ```
 Her er skal addi bruge x11 og er derfor nødt til at vente på at `lw` har hentet en værdi fra memory og lagt den i x11, det sker i `Me`: derfor må addi stalle `Ex`  til at `lw` er færdi med `Me`.
 
@@ -181,9 +184,17 @@ Betinget hop behøver ikke Wb
 ![[Pasted image 20240115162432.png]]
 Det betyder at hvis et hop baglæns tages så vil PC være klar i De derfor kan næste instruktions Fe fase begynde sammtidig med Ex fasen for branch instruktionen. Hvis hop ikke tages eller et hop forlæns tages så kan næste instruktions Fe fase først 
 ###### husk til eksamen
-her unlades `Me` fasen i add og branch instruktioner: Don't do that.
 
 "We assume backward branches are predicted during decode"
+Following resources are available:
+Fe: 1, De: 1, Ex: 1, Me: 1, Wb: 1
+
+We assume instructions use the following resources:
+load: "Fe De Ex Me Wb"
+store: "Fe De Ex Me"
+others: "Fe De Ex Wb"
+branching instructions leave out Wb stage
+
 ## Superskalar
 En maskine der kan udføre to eller flere instruktioner samtidigt kaldes "superskalar".
 

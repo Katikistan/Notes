@@ -193,6 +193,7 @@ uintptr_t: Unsigned integer of size equal to a pointer
 - Processes are a purely virtual concept, CPU has no idea what they are.
 - Processes are isolated from each other.
 - Processes can only directly interact with the outside world through system calls, mediated by the kernel.
+- each process has its own virtual address space
 Unix process can be in the following states:
 - running
 - sleeping (waiting for an event or signal)
@@ -221,7 +222,6 @@ Unix process can be in the following states:
 
 ![[unix_architecture.jpg|300]]
 ![[traditional-unix-kernel.png|300]]
-![[overview-kernel.png|400]]
 - Allowing user-level programs to perform these operations could potentially lead to systeminstability or security vulnerabilities.
 - Process Management: The kernel manages the creation, execution and termination of processes. It also manages the scheduling of processes and assigns the CPU time to different processes.
 - Memory Management: The kernel manages the physical and virtual memory of the system and provides memory allocation and deallocation services to the processes.
@@ -241,7 +241,7 @@ See `man syscalls` to which functions perform syscall
 
 **How to write to memory**
 what happens on a write depends on the method used:
-- Write-through: The more simple solution is to update the cache, and main memory each time we write. Data is written into the cache and the corresponding main memory location at the same time. The cached data allows for fast re-trieval on demand, while the same data in main memory ensures that nothing will get lost if a crash, power failure, or other system disruption occurs.
+- Write-through: The more simple solution is to update the cache, and main memory each time we write. Data is written into the cache and the corresponding main memory location at the same time. The cached data allows for fast retrieval on demand, while the same data in main memory ensures that nothing will get lost if a crash, power failure, or other system disruption occurs.
 
 - Write-back: Another solution is that we only write to the cache so that the block is written to the main memory at a later time (when it is replaced by another block). Data is written into the cache every time a change occurs,but is written into the corresponding location in main memory only at specified intervals or under certain conditions.
 
@@ -318,15 +318,32 @@ It's important to note that moving along is not forbidden, think of it this way:
 
 This could not cause a deadlock, since we can move along the lines (green lines indicate these paths)
 ![[Pasted image 20240117212029.png]]
+## Exceptions
+An exception is a transfer of control to the kernel in response to some event (i.e., change in processor state).
+
+Asynchronous exception: caused by something external to the process. There might not always be information on what caused it.
+
+Synchronous exception: caused by something internal to the process. There is information on what caused it. Originated only as a result of execution where
+the exception is thrown.
+![](https://i.imgur.com/IbjBbmZ.png)
 
 ## Context switching
 Only one process gets to run at a time, but we regularly switch between available processes. Doing this often and rapidly creates the illusion of simultaneous execution.
 
 Pausing a process or thread, saving its entire state, then resuming some other process based on its saved state. That is context switching. 
 
+The page table, together with the program counter and the registers, specifies the state of a virtual machine. If we want to allow another virtual machine to use the processor, we must save this state.
+
+*each process has its own virtual address space*
+
+**Each process has its own page table in the kernel**.
+
+page tables remain in RAM, but the pointer to the page table is changed to the pointer for the page table that corresponds to the process being switched to
+
+change the page table register to point to P2’s page table (rather than to P1’s)
 **So what do we need to save?**
 1. All registers, including control registers.
-2. Contents of memory.
+3. MMU configuration
 **So when do we do this?**
 - Regular timer interrupts transfer control to the kernel, whose scheduler decides the next process to run.
 	- Scheduling is a big and interesting topic that we don't have time to go into.
@@ -334,8 +351,6 @@ Pausing a process or thread, saving its entire state, then resuming some other p
 **![[Pasted image 20240118025222.png]]**
 ## Fork 
 See man fork() for more info.
-
-
 - Each process in Unix has a process ID (PID).
 - Each process has a parent.
 - ...except the initial process (init) with PID 1.
@@ -364,6 +379,8 @@ Threads are not copied into the new process
 ![[Pasted image 20240118024906.png]]
 `If (waitpid(pid, NULL, 0)) > 0)` will be true when the child of pid has executed, in terms of the code example: 
 
+remember that pid still have to be assigned to something
+
 In the parent process, `waitpid` is used to wait for the child process to finish. Once the child process completes, it checks again and creates a new child process. The second child process prints "3", and the parent process prints "4".
 
 the parent can print 4 and 5
@@ -380,7 +397,7 @@ thread context: Thread ID, stack, stack pointer, PC, condition codes, and GP reg
 	the remaining process context is shared between the thread: Code, data, heap, and shared library segments of the process virtual address space. Open files and installed handlers.
 **Atomicity**
 Atomicity is a guarantee of isolation from concurrent processes. Additionally, atomic operations commonly have a succeed-or-fail definition — they either successfully change the state of the system, or have no apparent effect. That is atomic functions doesn’t need mutexes while non-atomic functions need mutexes
-if multiple thread
+if multiple thread. Either it does something or nothing at all. 
 
 remember that threads die with their process, this is not the same for forks. 
 
@@ -492,10 +509,20 @@ REMEMBER we always want a cache that give many hits, thereby having a 4 way asso
 ## Virtual memory
 Virtual memory uses both hardware and software to enable a computer to compensate for physical memory shortages, temporarily transferring data from RAM to disk storage. Mapping chunks of memory to disk files enables a computer to treat secondary memory as though it were main memory
 
-Virtual memory uses both hardware and software to operate. When an application is in use, data from that program is stored in a physical address using RAM. A memory management unit maps(MMU) the address to RAM and automatically translates addresses. The MMU can, for example, map a logical address space to a corresponding physical address.
+allow efficient and safe sharing of memory among several programs.
+```ad-info
+title: Virtual memory 
+collapse: open
+virtual memory A technique that uses main memory as a “cache” for secondary storage.
+```
+Virtual memory uses both hardware and software to operate. When an application is in use, data from that program is stored in a physical address using RAM. A memory management unit(MMU) maps the address to RAM and automatically translates addresses. The MMU can, for example, map a logical address space to a corresponding physical address.
 
 If, at any point, the RAM space is needed for something more urgent, data can be swapped out of RAM and into virtual memory. The computer's memory manager is in charge of keeping track of the shifts between physical and virtual memory. If that data is needed again, the computer's MMU will use a context switch to resume execution.
-
+```ad-info
+title: Physical address
+collapse: open
+An address in main memory.
+```
 Use DRAM as a cache for parts of a virtual address space
 Uses memory efficiently by caching virtual memory pages
 - Efficient only because of locality
@@ -515,15 +542,50 @@ Simplifying memory allocation
 sometimes, there is not enough RAM to run several programs at one time. This is where virtual memory comes in. Virtual memory frees up RAM by swapping data that has not been used recently over to a storage device, such as a hard drive or solid-state drive. Thereby freeing up RAM and gives more efficient use of RAM.
 
 However, the process of swapping virtual memory to physical is rather slow. This means using virtual memory generally causes a noticeable reduction in performance. Because of swapping, computers with more RAM are considered to have better performance.
-## Virtual addresses
+
+the two memory hierarchy levels controlled by virtual
+memory are usually DRAMs 
+
+Many design choices in virtual memory systems are motivated by the high cost of a page fault:
+- Pages should be large enough to try to amortize the high access time.
+- Organizations that reduce the page fault rate are attractive. The primary technique used here is to allow fully associative placement of pages in memory.
+- software can afford to use clever algorithms for choosing how to place pages because even little reductions in the miss rate will pay for the cost of such algorithms.
+- **Write-through will not work for virtual memory, since writes take too long. Instead, virtual memory systems use write-back.**
+
+**Inverted page table:** applying a hashing function to the virtual address so that the page table need be only the
+size of the number of physical pages in main memory.
+
+techniques aim at reducing the total maximum storage
+required as well as minimizing the main memory dedicated to page tables: 449 COD
+## Virtual addresses and page table
 Page faults are handled by software (kernel code), meaning we have flexibility.
 - Page fault handler can update the page table based on kernel data and policy.
+```ad-info
+title: Page fault
+An event that occurs when an accessed page is not present in main memory
+```
+OS creates a data structure that tracks which processes and which virtual addresses use each physical page. When there is a page fault, if all the pages in main memory are in use, the operating system must choose a page to replace (uses LRU to minimize page faults). 
 
+### Dirty bit
 To track whether a page has been written since it was read into the memory, a dirty bit is added to the page table. The dirty bit is set when any word in a page is written. If the operating system chooses to replace the page, the dirty bit indicates whether the page needs to be written out before its location in memory can be given to another page. Hence, a modified page is often called a dirty page. 
 
-Dirty bit:
-Indicates whether the corresponding block of memory has been modified. The bit indicates that its associated block of memory has been modified and has not been saved to storage yet. When a block of memory is to be replaced, its corresponding dirty bit is checked to see if the block needs to be written back to secondary memory before being replaced or if it can simply be removed, thereby saving time by not doing uneeded disk writes. 
+Indicates whether the corresponding block of memory has been modified. The bit indicates that its associated block of memory has been modified and has not been saved to storage yet. The dirty bit is set when any word in a page is written. When a block of memory is to be replaced, its corresponding dirty bit is checked to see if the block (or page) needs to be written back to secondary memory before being replaced or if it can simply be removed, thereby saving time by not doing uneeded disk writes. 
 
+ a modified page is often called a dirty page
+### translation-lookaside buffer (TLB)
+page tables are stored in main memory 
+
+memory access by a program can take at least twice as long: one memory access to obtain the physical address
+and a second access to get the data
+
+modern processors include a special cache that keeps track of recently used translations: the TLB, a translation cache.
+
+although multiple processes are sharing the same main memory, one renegade process cannot write into the address space of another user process or into the operating system either intentionally or unintentionally. The write access bit in the TLB can protect a page from being written. Without this level of protection, computer viruses would be even more widespread.
+
+during context switch, with a TLB, we must clear the TLB entries that belong to P1—both to protect the data of P1 and to force the TLB to load the entries for P2.
+
+P2 might load only a few TLB entries before the operating system switched back to P1. Unfortunately, P1 would then find that all its TLB entries were gone and would have to pay TLB misses to reload them...
+### Practical
 mmap() is powerful but inflexible:
 - Smallest granularity of allocation is a page.
 - Is a system call, so fairly slow.
@@ -545,7 +607,10 @@ malloc () is a userspace memory manager.
 - Requests memory from kernel with mmap () and sbrk () and then parcels it out.
 - Internal fragmentation is when allocated blocks have wasted space.
 - External fragmentation is when free space is split into many small blocks.
-
+```ad-important
+title: Virtual address
+An address that corresponds to a location in virtual space and is translated by address mapping to a physical address when memory is accessed.
+```
 Components of the virtual address (VA)
 - TLBI: TLB index
 - TLBT: TLB tag
@@ -562,6 +627,16 @@ Components of the physical address (PA)
 - PPO: Physical page offset (same as VPO)
 - PPN: Physical page number
 ![[416361371_7215294488509136_1498697205366660270_n.png]]
+```ad-important
+title: Page table
+The table containing the virtual
+to physical address translations in a virtual
+memory system. The table, which is stored in memory, is typically indexed by the virtual page
+number; each entry in the table contains the physical page number for that virtual page if the page is currently in memory.
+```
+the page table corresponds to a mapping between book titles and library locations. 
+
+
 TLB hit:
 - check TLB index som set.
 - Er der et TLB tag som matcher index, og er den valid?
@@ -575,17 +650,18 @@ Page fault?
 - Hvis invalid -> Page fault = Y
 - Hvis VPN ikke kan findes, page fault = Y
 
-I took the virtual address, converted it to binary. then used the following formulas to get the bits representing the parameter values:
+converted virtual address to binary. 
+the used these formulas (taken from TA recap slides)
 bits of the VPO = log2(pageSize)
 bits of index = log2(number of sets) 
 bits of VPN = virtual adress without bits of offset
 bits of Tag = address without offset and index 
 
-I use the index to look for the tag in the TLB, if it's there and it's valid i take the PPN, conclude there was TLB hit and no page fault, otherwise there is no TLB hit. 
+I use the index to look for tag in the TLB, if it's there and it's valid: take the PPN, conclude there was TLB hit and no page fault, otherwise there is no TLB hit. 
 
-if there isn't a TLB hit, i look in the page table, if there are no entry for the VPN or it isnt valid there is a page fault, therefore there are no PPN and physical address. If there are no page fault i take the PPN and construct a physcial address. 
+if there isn't a TLB hit: look in the page table, if there are no entry for the VPN or it isnt valid there is a page fault, therefore there are no PPN and physical address. If there are no page fault i take the PPN and construct a physcial address with PPN and VPO. 
 
-the physical address: i write the bits of VPO (right to left), then PPN in the squares. 
+the physical address: write bits of VPO, then PPN in the squares. 
 
 ## Cache table
 **Cache organisation**
