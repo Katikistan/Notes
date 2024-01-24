@@ -26,6 +26,13 @@ The lowest layer of the OSI model, the physical layer is responsible for providi
 
 This layer deals with the physical connection between devices, such as cables and switches. Protocols that apply to this layer include Ethernet and Wi-Fi.
 # Network core
+A process is analogous to a house and its socket is analogous to its door.
+
+the host is identified by its IP address
+
+the sending process must also identify the receiving process (more specifically, the receiving socket): a host could be running many network applications.
+
+Popular applications have been assigned specific port numbers
 ## CDN
 Content Distribution Networks (CDN s) are a system of distributed servers that are deployed in multiple data centers around the world. The goal of a CDN is to provide faster delivery of content to users by caching a copy of the content on servers that are closer to the user's location.
 
@@ -61,8 +68,7 @@ P2P service.
 ## Packet switching
 A packet consists of control information and user data, which is also known as the payload
 
-To send a message from a source end system to a destination end
-system, the source breaks long messages into smaller chunks of data known as packets. Between source and destination, each packet travels through communication links and packet switches (for which there are two predominant types, routers and link-layer switches). Packets are transmitted over each communication link at a rate equal to the full transmission rate of the link. So, if a source end system or a packet switch is sending a packet of L bits over a link with transmission rate R bits/sec, then the time to transmit the packet is L / R seconds.
+To send a message from a source end system to a destination end system, the source breaks long messages into smaller chunks of data known as packets. Between source and destination, each packet travels through communication links and packet switches (for which there are two predominant types, routers and link-layer switches). Packets are transmitted over each communication link at a rate equal to the full transmission rate of the link. So, if a source end system or a packet switch is sending a packet of L bits over a link with transmission rate R bits/sec, then the time to transmit the packet is L / R seconds.
 ![[Pasted image 20240121165741.png]]
 Store-and-forward transmission means that the packet switch must receive the entire packet before it can begin to transmit the first bit of the packet onto the outbound link.
 
@@ -97,7 +103,7 @@ $$
 d_{\text {nodal }}=d_{\text {proc }}+d_{\text {queue }}+d_{\text {trans }}+d_{\text {prop }}
 $$
 ## Throughput
-In addition to delay and packet loss, another critical performance measure in computer networks is end-to-end throughput. To define throughput, consider transferring a large file from Host A to Host B across a computer network. This transfer might be, for example, a large video clip from one computer to another. The instantaneous throughput at any instant of time is the rate (in bits/sec) at which Host B is receiving the file.
+In addition to delay and packet loss, another critical performance measure in computer networks is end-to-end throughput. To define throughput, consider transferring a large file from Host A to Host B across a computer network. The instantaneous throughput at any instant of time is the rate (in bits/sec) at which Host B is receiving the file.
 ## Circuit switching
 In circuit-switched networks, the resources needed along a path (buffers, link transmission rate) to provide for communication between the end systems are reserved for the duration of the communication session between the end systems.
 
@@ -105,13 +111,15 @@ When the network establishes the circuit, it also
 reserves a constant transmission rate in the network’s links
 # Application layer
 ## HTTP
+![](https://i.imgur.com/RTpbPsr.png)
 ![[Pasted image 20240121133223.png]]
 ![[Pasted image 20240121133259.png]]
+**extra line change before content**
 
-Request an response should at least have these.
+Request an response should at least have these. above
 
 Get, POST, HEAD, PUT, and DELETE
-### GET
+### Request line
 The GET method is used when the browser requests an object, with the requested object identified in the URL field.
 ### Host
 The header line Host: www.someschool.edu specifies the host on which the object resides.
@@ -128,11 +136,12 @@ An HTTP client often uses the POST method when the user fills out a form—for e
 
 ### HEAD
 When a server receives a request with the HEAD method, it responds with an HTTP message but it leaves out the requested object. Application developers often use the HEAD method for debugging.
+
 ### PUT
 The PUT method is often used in conjunction with Web publishing tools. It allows a user to upload an object to a specific path (directory) on a specific Web server. The PUT method is also used by applications that need to upload objects to Web servers. The 
+
 ### DELETE
-DELETE method allows a user, or an application, to delete an
-object on a Web server.
+DELETE method allows a user, or an application, to delete an object on a Web server.
 
 ### Common status codes
 - *200 OK:* Request succeeded and the information is returned in the response.
@@ -144,10 +153,6 @@ object on a Web server.
 The request does not require any changes. As a users you are not expected to know about this change. The response will be different. You are likely to get a 301 Moved Permanently back with the location of the Akamai server, that you should contact. This will come based in the server you are asked to contact through the geographical location in DNS. Then your browser will send a new request to this server for the new content.
 ## Persistent vs non-persistent
 should each request/response pair be sent over a separate TCP connection, or should all of the requests and their corresponding responses be sent over the same TCP connection? **non-persistent connections**; and in the latter approach, **persistent connections**.
-
-HTTP is said to be a stateless protocol. We also
-remark that the Web uses the client-server application architecture
-
 ### Non persistent
 1. The HTTP client process initiates a TCP connection to the server www.someSchool.edu on port number 80, which is the default port number for HTTP. Associated with the TCP connection, there will be a socket at the client and a socket at the server.
 2. The HTTP client sends an HTTP request message to the server via its socket. The request message includes the path name /someDepartment/home.index.
@@ -173,8 +178,38 @@ does not change HTTP methods, status codes, URLs, or header fields. Instead, HTT
 
 developers of Web browsers quickly discovered that sending all the objects in a Web page over a single TCP connection(HTTP1) has a Head of Line (HOL) blocking problem (side 144).
 
-One of the primary goals of HTTP/2 is to get rid of (or at least reduce the number of) parallel TCP connections for transporting a single Web page. This not onlyreduces the number of sockets that 
-need to be open and maintained at servers, but also allows TCP congestion control to operate as intended.
+One of the primary goals of HTTP/2 is to get rid of (or at least reduce the number of) parallel TCP connections for transporting a single Web page. This not only reduces the number of sockets that  need to be open and maintained at servers, but also allows TCP congestion control to operate as intended.
+## HTTPS
+• Threat model
+	• Eavesdropper listening on conversation (confidentiality)
+	• Man-in-the-middle modifying content (integrity)
+	• Adversary impersonating desired website (authentication, and confidentiality)
+• Enter HTTP-S
+	• HTTP sits on top of secure channel (SSL/TLS)
+	• All (HTTP) bytes written to secure channel are encrypted and authenticated
+	• Problem: What is actually authenticated to prevent impersonation? Which keys used for crypto protocols?
+
+SSL between application and TCP
+
+SSL provides application programming interface (API) to
+applications.
+
+Transport Layer Security (TLS) – Replaces SSL:
+![](https://i.imgur.com/61BoCoa.png)
+
+Note that HTTPS authenticates server, not content.
+
+If CDN (Akamai) serves content over HTTPS for its
+customers, customer must trust Akamai not to change
+content.
+
+Switch to symmetric-key crypto after public-key ops
+- Symmetric-key crypto much faster (100-1000x)
+- Public-key crypto can encrypt message only approx. as large as key (1024 bits – this is a simplification) – afterwards uses hybrid
+
+HTTPS on top of TCP, so reliable byte stream.
+- Can leverage fact that transmission is reliable to ensure: each data segment received exactly once
+- Adversary can’ t successfully drop or replay packet
 # Transport layer
 ## UDP
 ![[Pasted image 20240121174044.png|250]]
@@ -187,7 +222,7 @@ UDP is typically used for applications that do not require a reliable, ordered d
 ### Structure of TCP
 **The 32-bit sequence number field** and the **32-bit acknowledgment number** field are used by the TCP sender and receiver in implementing a reliable data transfer service.
 
-**The 16-bit receive window field** is used for flow control. Used to indicate the number of bytes that a receiver is willing to accept.¨
+**The 16-bit receive window field** is used for flow control. Used to indicate the number of bytes that a receiver is willing to accept.
 
 **The 4-bit header length field** specifies the length of the TCP header in 32-bit words. The TCP header can be of variable length due to the TCP options field.
 
@@ -198,8 +233,7 @@ UDP is typically used for applications that do not require a reliable, ordered d
 ### Connection-oriented vs Connectionless
 TCP is a connection-oriented protocol, which means that a connection must be established between the sender and receiver before any data can be sent. UDP, on the other hand, is connectionless, which means that data can be sent without establishing a connection first.
 ### Error checking
-TCP has error checking and correction mechanisms built in to
-ensure data integrity. UDP has minimal error checking, and any errors must be handled at the application level.
+TCP has error checking and correction mechanisms built in to ensure data integrity. UDP has minimal error checking, and any errors must be handled at the application level.
 
 TCP has more overhead than UDP because it establishes and maintains connections, performs error checking, and ensures data integrity. This can make TCP slower than UDP for some applications.
 ![[Pasted image 20240121161354.png]]
@@ -208,15 +242,14 @@ One of the problems with timeout-triggered retransmissions is that the timeout p
 ![[Pasted image 20240121161630.png]]
 
 ### Is TCP a GBN or an SR protocol?
-TCP acknowledg-ments are cumulative and correctly received but out-of-order segments are not individually ACKed by the receiver. TCP looks a lot like a GBN-style protocol. But there are some striking differences between TCP and Go-Back-N. Many TCP implementations will buffer correctly received but out-of-order
+TCP acknowledgments are cumulative and correctly received but out-of-order segments are not individually ACKed by the receiver. TCP looks a lot like a GBN-style protocol. But there are some striking differences between TCP and Go-Back-N. Many TCP implementations will buffer correctly received but out-of-order
 segments
 #### *example:*
 the sender sends a sequence of segments 1, 2, . . . , N, and all of the segments arrive in order without error at the receiver the acknowledgment for packet n < N gets lost, but the remaining N - 1 acknowledgments arrive at the sender before their respective timeouts. GBN would retransmit not only packet n, but also all of the subsequent packets n + 1, n + 2, . . . , N. TCP, on the other hand, would retransmit at most one segment, namely, segment n. Moreover, TCP would not even retransmit segment n if the acknowledgment for segment n + 1 arrived before the timeout for segment n.
 ### Transmission rate for TCP
 *"In an ideal world if two TCP connections connect through the same bottleneck router of transmission rate R, each TCP connection will have a transmission rate of R/2. In practice, this is not the case and the rate will osculate around R/2. Why is this? For this question you can assume there are no other connections and that the router will always be the bottleneck for both connections"*
 
-congestion control mechanisms in TCP will use less than R/2 initially for both connections. These will each be automatically increased over time as the full throughput is unused an no packet loss occurs. As they each increase the probability of packet loss increases, until the total throughput expected by the combined connections is over R. One, or potentially both of the connections will then cut its connection and start increasing again. As each connection linearly increases then halves its throughput, it is prob-
-able that these will occur against each other (eg whilst one is high the other is low and vice versa), and so each will oscillate around R/2.
+congestion control mechanisms in TCP will use less than R/2 initially for both connections. These will each be automatically increased over time as the full throughput is unused an no packet loss occurs. As they each increase the probability of packet loss increases, until the total throughput expected by the combined connections is over R. One, or potentially both of the connections will then cut its connection and start increasing again. As each connection linearly increases then halves its throughput, it is probable that these will occur against each other (eg whilst one is high the other is low and vice versa), and so each will oscillate around R/2.
 
 transmission rate R = mbps eller gbps 
 L = packet size
@@ -226,8 +259,9 @@ $$
 ### Bandwidth for TCP 
 *Suppose there are k TCP connection ongoing over a shared link with bandwidth R. In addition to the k TCP connections, another TCP connection is initiated over this shared link. What is the bandwidth available to the new TCP connection and why?*
 
-Assuming equal RTT, window sizes and each of the TCP connections operating are under AIMD phase of congestion control algorithm (see Section 3.7.1 in KR), the bandwidth of the shared connection link would be equally shared between the k+1 TCP connections because of the nature of the congestion control algorithm. This would imply each of the TCP connections would have a bandwidth equal to R/(k+1) available. The assumption of all TCP connections entering the AIMD phase of the congestion
-control algorithm is important for the fair sharing guarantee.
+Assuming equal RTT, window sizes and each of the TCP connections operating are under AIMD phase of congestion control algorithm (see Section 3.7.1 in KR), the bandwidth of the shared connection link would be equally shared between the k+1 TCP connections because of the nature of the congestion control algorithm. This would imply each of the TCP connections would have a bandwidth equal to R/(k+1) available. The assumption of all TCP connections entering the AIMD phase of the congestion control algorithm is important for the fair sharing guarantee.
+
+congestion control ensures fair sharing of bandwith, UDP dosent have that.
 
 How should a TCP sender determine the rate at which it
 should send? 
@@ -237,20 +271,22 @@ should send?
 Note that there is no explicit signaling of congestion state by the network—ACKs and loss events serve as implicit signals—and that each TCP sender acts on local information asynchronously from other TCP senders.
 
 ### Use case
-TCP is typically used for applications that require a reliable, ordered delivery of data, such as web browsing, email, and file transfer. ordered delivery of data, such as streaming video and audio, online gaming, and DNS queries.
-has reliable data transfer.
+TCP is typically used for applications that require a reliable, ordered delivery of data, such as web browsing, email, and file transfer. ordered delivery of data, such as streaming video and audio, online gaming, and DNS queries. has reliable data transfer.
 
 ## Multiplexing and Demultiplexing
-Now let’s consider how a receiving host directs an incoming transport-layer segment to the appropriate socket. Each transport-layer segment has a set of fields in the segment for this purpose. At the receiving end, the transport layer examines these fields to identify the receiving socket and then directs the segment to that socket. This job of delivering the data in a transport-layer segment to the correct socket is called demultiplexing. The job of gathering data chunks at the source host from different sockets, encapsulating each data chunk with header information (that will
-later be used in demultiplexing) to create segments, and passing the segments to the network layer is called multiplexing.
+Now let’s consider how a receiving host directs an incoming transport-layer segment to the appropriate socket. Each transport-layer segment has a set of fields in the segment for this purpose. At the receiving end, the transport layer examines these fields to identify the receiving socket and then directs the segment to that socket.
 
-we know that transport-layer multiplexing requires (1) that sockets have unique identifiers, and (2) that each segment have special 
- fields that indicate the socket to which the segment is to be delivered. These special fields, illustrated in Figure 3.3, are the source port number field and the destination port number field. (The UDP and TCP segments have other fields as well, as discussed in the subsequent sections of this chapter.) Each port number is a 16-bit number, ranging from 0 to 65535. The port numbers ranging from 0 to 1023 are called well-known port numbers and are restricted, which means that they are reserved for use by well-known
+**This job of delivering the data in a transport-layer segment to the correct socket is called demultiplexing. Its the reciever that does this**  
+
+**The job of gathering data chunks at the source host from different sockets, encapsulating each data chunk with header information (that will later be used in demultiplexing) to create segments, and passing the segments to the network layer is called multiplexing.**
+
+we know that transport-layer multiplexing requires (1) that sockets have unique identifiers, and (2) that each segment have special  fields that indicate the socket to which the segment is to be delivered. 
+
+are the source port number field and the destination port number field. Each port number is a 16-bit number, ranging from 0 to 65535. The port numbers ranging from 0 to 1023 are called well-known port numbers and are restricted, which means that they are reserved for use by well-known servers and such.
 ### HTTP 
 application protocols such as HTTP (which uses port number 80) and FTP (which uses port number 21).
 ### UDP
-Each socket in the host could be assigned a port number, and when
-a segment arrives at the host, the transport layer examines the destination port number in the segment and directs the segment to the corresponding socket. The segment’s data then passes through the socket into the attached process. As we’ll see, this is basically how UDP does it. However, we’ll also see that multiplexing/demultiplexing in TCP is yet more subtle
+Each socket in the host could be assigned a port number, and when a segment arrives at the host, the transport layer examines the destination port number in the segment and directs the segment to the corresponding socket. The segment’s data then passes through the socket into the attached process. As we’ll see, this is basically how UDP does it. However, we’ll also see that multiplexing/demultiplexing in TCP is yet more subtle
 ### TCP
 TCP socket and a UDP socket is that a TCP socket is identified by a four-tuple: (source IP address, source port number, destination IP address, destination port number). Thus, when a TCP segment arrives from the network to a host, the host uses all four values to direct (demultiplex) the segment to the appropriate socket.
 
@@ -264,8 +300,7 @@ exceed the minimum of cwnd and rwnd, that is:
 $$
 \text { LastByteSent }- \text { LastByteAcked } \leq \min \{\text { cwnd, rwnd }\}
 $$
-TCP uses acknowledgments to trigger (or clock) its increase in
-congestion window size, TCP is said to be self-clocking.
+TCP uses acknowledgments to trigger (or clock) its increase in congestion window size, TCP is said to be self-clocking.
 
 **How should a TCP sender determine the rate at which it**
 **should send?**
@@ -273,18 +308,17 @@ congestion window size, TCP is said to be self-clocking.
 ![[Pasted image 20240121163025.png]]
 Congestion control adjusts the sending rate of the sender based on network conditions to prevent packet loss and delays. 
 
-Congestion control, is a mechanism used to prevent network
-congestion by regulating the rate at which data is sent into the network. Congestion occurs when too much data is sent into the network, causing network resources such as bandwidth and buffer space to become exhausted. Congestion control is mainly used at the transport layer. (Har mere at gøre med den fysiske “tykkelse” på ledingen og hvor meget der kan sendes.)
+Congestion control, is a mechanism used to prevent network congestion by regulating the rate at which data is sent into the network. Congestion occurs when too much data is sent into the network, causing network resources such as bandwidth and buffer space to become exhausted. Congestion control is mainly used at the transport layer.
 ![[blobid21-60f546786ae24.jpeg]]
 ![[Tcp_westwood.gif]]
-### Every step in the reno protocol:
+### Every step in the reno protocol example:
 - slow start
 - triple duplicate loss
 - Fast recovery ssthresh = control window/2 ((new control window = control window/2) + 3)
-- congestion control
+- congestion avoidance
 - triple duplicate loss
 - Fast recovery Fast recovery ssthresh = control window/2 ((new control window = control window/2) + 3)
-- congestion control
+- congestion avoidance
 - timeout (control window = control window/2)
 - slow start
 TCP Tahoe dosent have fast recovery 
@@ -294,8 +328,7 @@ TCP Tahoe dosent have fast recovery
 **MSS: maximum segment size**
 **ssthresh: slow start threshold**
 ### Slow start
-Slow start is for when the connection is completly dropped or start of connection. cwnd is small: 1 MSS, sending rate is  MSS/RTT(roundtrip delay). If  MSS = 500 bytes and RTT = 200 msec then sending rate is about 20 kbps. available bandwidth to the TCP sender may be much larger than MSS/RTT, the TCP sender would like to find the amount of available bandwidth quickly.  In the slow-start state, the value of cwnd begins
-at 1 MSS and increases by 1 MSS every time a transmitted segment is first acknowledged
+Slow start is for when the connection is completly dropped or start of connection. cwnd is small: 1 MSS, sending rate is  MSS/RTT(roundtrip delay). If  MSS = 500 bytes and RTT = 200 msec then sending rate is about 20 kbps. available bandwidth to the TCP sender may be much larger than MSS/RTT, the TCP sender would like to find the amount of available bandwidth quickly.  In the slow-start state, the value of cwnd begins at 1 MSS and increases by 1 MSS every time a transmitted segment is first acknowledged
 
 sender increasing the congestion window by 1 *MSS* for each of the acknowledged segments results in a doubling of the sending rate every *RTT*. Thus, the TCP send rate starts slow but grows exponentially during the slow start phase.
 
@@ -305,14 +338,12 @@ when the value of *cwnd* equals *ssthresh*, slow start ends and TCP transitions 
 
 The final way in which slow start can end is if three duplicate ACKs are detected, in which case TCP performs a fast retransmit.
 
-
 **After timeout:**
 Slow start increases the number of send frames by doubling the window size every time the send window is successful. This happens until the window size more than half of the window size before the connection dropped. 
 
 Slow start makes sure that the network is not flooded just after a connection drop (thus slow), but after initial success it quickly (exponentially) ramps-up until half the window size.
 ### Congestion Avoidance
-when the value of *cwnd* is approx. half value when congestion was last encountered. value of *cwnd* increases by just a single *MSS* every *RTT*. Increase cwnd by MSS bytes (MSS/cwnd) when-
-ever a new acknowledgment arrives. 
+when the value of *cwnd* is approx. half value when congestion was last encountered. value of *cwnd* increases by just a single *MSS* every *RTT*. Increase cwnd by MSS bytes (MSS/cwnd) whenever a new acknowledgment arrives. 
 
 if MSS is 1,460 bytes and cwnd is 14,600 bytes, then 10 segments are being sent within an RT
 
@@ -329,8 +360,7 @@ Suppose a process running in one host (client) wants to initiate a connection wi
 
 **Step 1.** The client-side TCP first sends a special TCP segment to the server-side TCP. This special segment contains no application-layer data. But one of the flag bits in the segment’s header (see Figure 3.29), the SYN bit, is set to 1.
 
-**step 2.** Once the IP datagram containing the TCP SYN segment arrives at the server host, the server extracts the TCP SYN segment from the datagram, allocates the TCP buffers and variables to the connection, and sends a connection-granted segment to the client TCP. the SYN bit is set to 1. Second, the
-acknowledgment field of the TCP segment header is set to client_isn+1. Finally, the server chooses its own initial sequence number (server_isn) and puts this value in the sequence number field of the TCP segment header. saying, in effect, “I received your SYN packet to start a connection with your initial sequence number, client_isn. I agree to establish this connection. My own initial sequence number is server_isn.” The connection-granted segment is referred to as a SYNACK segment.
+**step 2.** Once the IP datagram containing the TCP SYN segment arrives at the server host, the server extracts the TCP SYN segment from the datagram, allocates the TCP buffers and variables to the connection, and sends a connection-granted segment to the client TCP. the SYN bit is set to 1. Second, the acknowledgment field of the TCP segment header is set to client_isn+1. Finally, the server chooses its own initial sequence number (server_isn) and puts this value in the sequence number field of the TCP segment header. saying, in effect, “I received your SYN packet to start a connection with your initial sequence number, client_isn. I agree to establish this connection. My own initial sequence number is server_isn.” The connection-granted segment is referred to as a SYNACK segment.
 
 **Step 3.** Upon receiving the SYNACK segment, the client also allocates buffers and variables to the connection. The client host then sends the server yet another segment; this last segment acknowledges the server’s connection-granted segment. The SYN bit is set to zero, since the connection is established. This third stage of the three-way handshake may carry client-to-server data in the segment payload
 ![[Pasted image 20240121162755.png]]
@@ -349,13 +379,30 @@ all tcp connections are really 2 one way connections and have their own sequence
 ## Flow control 
 TCP uses flow control mechanisms to prevent the sender from overwhelming the receiver. UDP does not have flow control mechanisms, so the sender can potentially overwhelm the receiver.
 
-Flow control is a mechanism used to prevent a fast sender from overwhelming a slow receiver. It ensures that the receiver can handle the data being sent to it, by regulating the rate at which the sender sends data. Flow control is mainly used at the data link layer. ( only has to do with the receiver). It is done by having the receiver send a window of how much it can receive with its messages.  Flow control is thus a speedmatching service
+Flow control is a mechanism used to prevent a fast sender from overwhelming a slow receiver. It ensures that the receiver can handle the data being sent to it, by regulating the rate at which the sender sends data. Flow control is mainly used at the data link layer. (only has to do with the receiver). It is done by having the receiver send a window of how much it can receive with its messages. Flow control is thus a speedmatching service.
 
 TCP provides flow control by having the sender maintain a variable called the receive window.
 
-Flow control in TCP helps with congestion control by allowing the receiver to limit the amount of data that the sender can send, preventing the sender from overwhelming the network.
-Both flow control and congestion control are necessary for
-efficient and stable network communication.
+Flow control in TCP helps with congestion control by allowing the receiver to limit the amount of data that the sender can send, preventing the sender from overwhelming the network. Both flow control and congestion control are necessary for efficient and stable network communication.
+
+The sender and receiver negotiate a window size during the connection setup, indicating the maximum amount of unacknowledged data that can be in transit.
+
+## Congestion control vs flow control
+TCP uses various congestion control algorithms, such as Slow Start, Congestion Avoidance, and Fast Retransmit/Fast Recovery, to dynamically adjust the sending rate based on network conditions. These algorithms aim to avoid overwhelming the network and respond to signs of congestion to maintain stability and fairness.
+
+TCP implements flow control through the use of a sliding window mechanism. The sender and receiver negotiate a window size during the connection setup, indicating the maximum amount of unacknowledged data that can be in transit. The sender adjusts its transmission rate based on the receiver's ability to handle incoming data, preventing congestion at the receiver's end.
+
+**Congestion control focuses on managing network-wide congestion by adjusting the overall transmission rate, while flow control is concerned with regulating the flow of data between a specific sender and receiver to prevent the receiver from being overwhelmed.**
+
+
+By implementing a flow control service, a sender ensures that it never overflows the receive buffers on the receiver by tracking the receive window on the receiver. This ensures that there are no wasted packets sent by the sender which cannot be stored in the receive buffer of the receiver and hence reduces the strain on the congestion in the network and helps with congestion control.
+
+
+
+Implementing flow control is not enough for congestion control because flow control only ensures that
+the senders do not overwhelm the receiver’s buffer but does not ensure that the cumulative effect of
+sending and receiving between multiple senders and receivers does not exceed the capacity of the links
+and the routers
 
 **Recap GBN vs SR:**
 both: Receive window/sending window
@@ -378,16 +425,14 @@ constrained to have no more than some maximum allowable number, N, of unacknowle
 
 Go-Back-N is efficient in terms of network bandwidth usage, as it does not require the sender to wait for an acknowledgement for every packet sent, but if a packet is lost, all packets sent after it will be retransmited which leads to waste of bandwidth.
 
-In our GBN protocol, the receiver discards out-of-order packets. Although it may seem silly and wasteful to discard a correctly received (but out-of-order) packet, there is some justification for doing so. the only piece of information the receiver need maintain is
-the sequence number of the next in-order packet. If packet n is expected, but packet n + 1 arrives data must be delivered in order, the receiver could buffer (save) packet n + 1 and then deliver this packet to the upper layer after it had later received and delivered packet n. However, if packet n is lost, both it and packet n + 1 will eventually be retransmitted as a result of the GBN retransmission rule at the sender. Thus, the receiver can simply discard packet n + 1.
+In our GBN protocol, the receiver discards out-of-order packets. Although it may seem silly and wasteful to discard a correctly received (but out-of-order) packet, there is some justification for doing so. the only piece of information the receiver need maintain is the sequence number of the next in-order packet. If packet n is expected, but packet n + 1 arrives data must be delivered in order, the receiver could buffer (save) packet n + 1 and then deliver this packet to the upper layer after it had later received and delivered packet n. However, if packet n is lost, both it and packet n + 1 will eventually be retransmitted as a result of the GBN retransmission rule at the sender. Thus, the receiver can simply discard packet n + 1.
 
 **Invocation from above:** When rdt_send() is called from above, the sender first checks to see if the window is full, that is, whether there are N outstanding, unacknowledged packets. If the window is not full, a packet is created and sent, and variables are appropriately updated. If the window is full, the sender
 simply returns the data back to the upper layer, an implicit indication that the window is full. The upper layer would presumably then have to try again later
 
 **Receipt of an ACK:** In our GBN protocol, an acknowledgment for a packet with sequence number n will be taken to be a cumulative acknowledgment, indicating that all packets with a sequence number up to and including n have been correctly received at the receiver.
 
-**A timeout event:**. The protocol’s name, “Go-Back-N,” is derived from the sender’s behavior in the presence of lost or overly delayed packets. As in the stop-and-wait protocol, a timer will again be used to recover from lost data or acknowledgment
-packets. If a timeout occurs, the sender resends all packets that have been previously sent but that have not yet been acknowledged.
+**A timeout event:**. The protocol’s name, “Go-Back-N,” is derived from the sender’s behavior in the presence of lost or overly delayed packets. As in the stop-and-wait protocol, a timer will again be used to recover from lost data or acknowledgment  bnpackets. If a timeout occurs, the sender resends all packets that have been previously sent but that have not yet been acknowledged.
 ![[Pasted image 20240121160102.png]]
 ### Selective repeat protocol (SR)
 GBN(Go-back-N) avoids this stop-and-wait protocol, however this can also cause performance problems. If window size and bandwith delay are big, many packets can be in the pipeline, thus if there is a packet error a whole bunch of packets must be retransmitted.
@@ -401,7 +446,7 @@ In Selective Repeat, the sender sends multiple packets of data in sequence, and 
 
 | c0  | Sent packet 0 | 
 | --- | ------------- |
-| c1  | Sent packet 1 (packet is lost              |
+| c1  | Sent packet 1 (packet is lost)              |
 | c2  | sent packet 2              |
 | c3  | Recieve ack0 and send packet 3              |
 | c4  | recieve ack2              |
@@ -419,23 +464,22 @@ In Selective Repeat, the sender sends multiple packets of data in sequence, and 
 | s5 | ack4 |
 we assume that the window size is 3. 3 bursts of packets are send after each other without waiting for ack. 
 
-# Link layer
+# Network layer
 ## IP protocol
 ![[Pasted image 20240121163424.png]]
 An IP address is considered hierarchical because it is divided into different fields that represent different levels of the network hierarchy. The most common format of an IP address is IPv4, which is a 32-bit address divided into four octets. Each octet represents a different level of the network hierarchy:
 
 An octet is a unit of digital information that consists of eight bits. In the context of IP addresses, an octet refers to one of the four 8-bit fields that make up an IPv4 address. Each octet is represented by a decimal number between 0 and 255, and is separated by a period. In IPv6 addresses, an octet is represented by a 16-bit field (2 bytes) instead of 8-bit field.
-
-- The first octet represents the network address, also known as the "class" of the IP address
-- The second and third octets represent the subnet address
-- The fourth octet represents the host address
+![](https://i.imgur.com/UkQN91R.png)
+- **The first octet represents the network address, also known as the "class" of the IP address**
+- **The second and third octets represent the subnet address**
+- **The fourth octet represents the host address**
 This hierarchical structure allows for efficient routing and 
 management of IP addresses.
 
 The hierarchical structure of IP addresses solves several problems:
 
-**Routing scalability:** The hierarchical structure of IP addresses allows routers to make forwarding decisions based on the network address rather than the entire IP address. This improves
-routing scalability and reduces the amount of memory and processing power required for routers.
+**Routing scalability:** The hierarchical structure of IP addresses allows routers to make forwarding decisions based on the network address rather than the entire IP address. This improves routing scalability and reduces the amount of memory and processing power required for routers.
 
 **Address aggregation:** The hierarchical structure of IP addresses allows for address aggregation, which is the process of combining multiple subnets into a single routing entry.
 
@@ -446,7 +490,7 @@ the network.
 A prime motivation for this effort was the realization
 that the 32-bit IPv4 address space was beginning to be used up
 
-The approach to IPv4-to-IPv6 transition that has been most widely adopted inpractice involves tunneling
+The approach to IPv4-to-IPv6 transition that has been most widely adopted in practice involves tunneling
 
 Bitmasking IP-addresses can be used for subnetting as well as converting IPv4 to IPv6.
 ## Dynamic Host Configuration Protocol (DHCP)
@@ -454,18 +498,18 @@ DHCP allows a host to obtain (be allocated) an IP address automatically. A netwo
 
 DHCP is a client-server protocol.
 ![[Pasted image 20240121165327.png]]
-
 Often referred to as a plug-and-play or zeroconf(zero-configuration) protocol. This capability makes it very attractive to the network administrator who would otherwise have to perform these tasks manually!
 
 the student who carries a laptop from a dormitory room to
 a library to a classroom. It is likely that in each location, the student will be connecting into a new subnet and hence will need a new IP address at each location. DHCP is ideally suited to this situation, as there are many users coming and going, and addresses are needed for only a limited amount of time.
 ## DNS (Domain Name System)
-The DNS protocol runs over UDP and uses port 53.
+The DNS protocol runs over UDP and uses port 53. Falls back to using TCP when it is unable to communicate on UDP, typically when the packet size is too large to push through in a single UDP packet.
 
 It is a hierarchical, decentralized system for resolving domain names, such as www.example.com, into IP addresses. The IP address is the numerical label assigned to each device connected to a computer network that uses the Internet Protocol for communication. DNS allows users to access websites and other resources by typing domain names instead of IP addresses. DNS servers are responsible for resolving domain names to IP-addresses and caching the results for a certain period of time.
 
 DNS information is not stored in one location, but a collection of servers worldwide. These exist at different abstraction layers with root servers at the top serving all below. Top-level domains server specific domain names (eg. .com, .dk). Individual organisations have their own DNS servers at the bottom. This makes the system more robust by removing a central failure point, and quicker to respond by having servers closer to worldwide requests.
 
+enter deep kinda 
 ### Iterative and Recursive DNS
 **Iterative DNS and Recursive DNS are two different methods of resolving domain names to IP addresses.**
 
@@ -474,9 +518,9 @@ give referrals.
 
 The recursive DNS is more efficient in terms of network and client resources, but the iterative DNS is more secure because it does not rely on a single DNS server.
 ## Network Address Translation (NAT)
-here are hundreds of thousands of home networks, many using the same address space, 10.0.0.0/24. Devices within a given home network can send packets to each other using 10.0.0.0/24 addressing. However, packets forwarded beyond the home
-network into the larger global Internet clearly cannot use these addresses (as either a source or a destination address) because there are hundreds of thousands of networks using this block of addresses. That is, the 10.0.0.0/24 addresses can only have meaning within the given home network. But if private addresses only have meaning within a given network, how is addressing handled when packets are sent to or received from the global Internet, where addresses are necessarily unique? The
-answer lies in understanding NAT.
+all local is funneled into the router and leave as one ip and return as one ip, in the router the (global) ip is converted to a (local) ip. 
+
+here are hundreds of thousands of home networks, many using the same address space, 10.0.0.0/24. Devices within a given home network can send packets to each other using 10.0.0.0/24 addressing. However, packets forwarded beyond the home network into the larger global Internet clearly cannot use these addresses (as either a source or a destination address) because there are hundreds of thousands of networks using this block of addresses. That is, the 10.0.0.0/24 addresses can only have meaning within the given home network. But if private addresses only have meaning within a given network, how is addressing handled when packets are sent to or received from the global Internet, where addresses are necessarily unique? The answer lies in understanding NAT.
 
 The NAT-enabled router does not look like a router to the outside world. Instead the NAT router behaves to the outside world as a single device with a single IP address. In Figure 4.25, all traffic leaving the home router for the larger Internet has a source IP address of 138.76.29.7, and all traffic entering the home router must have a destination address of 138.76.29.7. In essence, the NAT-enabled router is hiding the details of the home network from the outside world.
 
@@ -487,6 +531,8 @@ include port numbers as well as IP addresses in the table entries.
 
 There are some detractors. First, one might argue that, port numbers are meant to be used for addressing processes, not for addressing hosts. This cause problems for servers running on the home network, since, server processes wait for incoming requests at well-known port numbers and peers in a P2P protocol need to accept incoming connections when acting as servers. How can one peer connect to another peer that is behind a NAT server, and has a DHCP-provided NAT address? Technical solutions to these problems include NAT traversal tools.
 ## Address Resolution Protocol (ARP)
+IP to Mac 
+
 Because there are both network-layer addresses (for example, Internet IP addresses) and link-layer addresses (that is, MAC addresses), there is a need to translate between them. For the Internet, this is the job of the Address Resolution Protocol (ARP)
 
 suppose that the host with IP address 222.222.222.220 wants to send an IP datagram to host 222.222.222.222. In this example, both the source and destination are in the same subnet, in the addressing sense of Section 4.3.3. To send a datagram, the source must give its adapter not only the IP datagram but also the MAC address for destination 222.222.222.222. The sending adapter will then construct a link-layer frame containing the destination’s MAC address and send the frame into the LAN.
@@ -567,26 +613,26 @@ matches prefix of entry 3. Address is routed through link 2
 
 `11100001 10000000 00010001 01110111`
 matches prefix of entry 4. Address is routed through link 3. 
-## Mac
+# Link layer
+## MAC (Media Access Control)
 MAC (Media Access Control) addresses are unique identifiers assigned to network interfaces, such as Ethernet cards, Wi-Fi adapters, and so on. They are used to identify devices at the Data Link Layer of the OSI model, which is responsible for providing a reliable link between devices on a local area network (LAN).
 
-The main purpose of MAC addresses is to provide a unique identifier for each device on a LAN, so that data can be properly delivered to the correct device. When a device on a LAN
-wants to send data to another device, it uses the destination device's MAC address to identify it. The data is then transmitted over the LAN in a special format called an Ethernet frame, which includes both the source and destination MAC addresses. 
+The main purpose of MAC addresses is to provide a unique identifier for each device on a LAN, so that data can be properly delivered to the correct device. When a device on a LAN wants to send data to another device, it uses the destination device's MAC address to identify it. The data is then transmitted over the LAN in a special format called an Ethernet frame, which includes both the source and destination MAC addresses. 
 
-MAC addresses are not hierarchical because they are not divided into fields that represent different levels of the network hierarchy. Instead, they are fixed-length identifiers that are assigned to devices by their manufacturers. This makes them unique on the LAN, but they are not unique globally, as there's no concept of "network" or "subnet" on the MAC address. 
+MAC addresses are not hierarchical because they are not divided into fields that represent different levels of the network hierarchy. Instead, they are fixed-length identifiers that are assigned to devices by their manufacturers. This makes them unique on the LAN, but they are not unique globally, there nothing giving information about the "network" or "subnet", like on the ip address 
 
 MAC addresses are also not hierarchical because they are not used for routing purposes. Unlike IP addresses, which are used to route data between networks, MAC addresses are used only for identifying devices on a single LAN. The data is then delivered to the correct device based on the MAC address, but it is not used for routing the data between different networks.
 
-In summary, the purpose of MAC addresses is to identify devices on a LAN and to ensure that data is delivered to the correct device. They are not hierarchical in nature and are not used for routing purposes.
-## Routing algoritms
+In summary, the purpose of MAC addresses is to identify devices on a LAN(local area network) and to ensure that data is delivered to the correct device. They are not hierarchical in nature and are not used for routing purposes.
+# Routing 
 ![[Pasted image 20240121174909.png]]
 Control plane is responsible for routing, while the actual forwarding happens at the data plane.
 
 Today, the routing is often implemented in software and a centralized server (Remote Controller) tells the router how datagrams should be forwarded. It is however, possible to manually alter a forwarding table in each router.
-### Link state
+## Link state
 Dijkstra's algorithm is a graph search algorithm that solves the single-source shortest path problem for a graph with non-negative edge weights, producing a shortest path tree. This means that the algorithm finds the shortest path from one particular source
 node to all other nodes in the graph. The algorithm repeatedly selects the node with the lowest distance, calculates the distance through it to each unvisited neighbor, and updates the neighbor's distance if smaller. It's better for static systems like backbone routers. 
-#### Practical 
+### Practical 
 D(v): Cost of least path from u (source) to v in this iteration
 p(v): Previous node of v along least-cost path
 N’: subset of nodes, that are part of shortest path
@@ -653,12 +699,12 @@ No shorter paths where found therefore we are done.
 
 ‘edge’ here means standing at A in which direction should you go such that you end up taking the shortest path to the destination node.
 ![[Pasted image 20240121180651.png|150]]
-### Distant vector
+## Distant vector
 Distance vector routing is a method used by routers in a computer network to determine the best path for forwarding packets. In distance vector routing, each router maintains a table of the shortest distances to every other network, as well as the next hop on the path to that network. The basic function of distance vector routing is for each router to share its table of distances with its neighbors, and for each router to update its own table based on the
 information received from its neighbors. It's best suited for dynamic systems, but suffer from the counting to infinty problem.
 
 This process is known as distance vector algorithm or Bellman-Ford algorithm. The algorithm is iterative and each router continues to update its distance vector until the values in the vector stabilize and no further updates are made.
-#### Practical
+### Practical
 ![[Pasted image 20240121182814.png|300]]
 
 - Initialize distance vector for each node with distance to reachable neighbours
@@ -674,7 +720,7 @@ We take row A from node A table
 We take row B from node B table
 We take row C from node C table
 We take row D from node D table
-#### Count to infinity problem
+### Count to infinity problem
 Count to Infinity is a problem where the cost of a connection dramatically increases. It is a problem that can happen when two or more nodes in a network are trying to determine the best path to a destination. This is usually a sign of a link failure. Can happen in the distance-vector routing algorithms
 
 The problem arises when two nodes, A and B, both have an incorrect distance to a destination, C. Each node assumes that the other node has the correct distance and starts incrementing its own distance in an attempt to converge on the correct value. However, since both nodes have incorrect distances, they will continue to increment their distances indefinitely, causing their distance values to grow larger and larger. This is referred to as
@@ -690,7 +736,7 @@ if the connection from A to B suddenly increased to 30, then B would detect this
 The count-to-infinity problem is a problem that can occur in distance-vector routing algorithms when two or more nodes in a network are trying to determine the shortest path to a destination, and the nodes keep incrementing the distance values indefinitely, leading them to become larger and larger, referred to as counting to infinity. This problem can be mitigated by using a different routing algorithm that incorporates a mechanism to prevent the distance values from growing indefinitely.
 # Security 
 ## Confidentiality
-establish confidential communication between Alice and Bob
+Establish confidential communication between Alice and Bob
 
 Use encryption to ensure confidentiality
 
@@ -705,7 +751,7 @@ Just because something is confidential, it does not guarantee protection against
 Also in Databases, passwords are not stored in plaintext
 - Instead, a Hash of (Password+Salt) is stored – the salt helps guard against Rainbow Tables and dictionary attacks
 ## Integrity
-Another aim is for Alice and Bob to ensure that messages are no altered while in transit. A checksum can be used.
+Another aim is for Alice and Bob to ensure that messages are not altered while in transit. A checksum can be used.
 
 A checksum is a hash of the message, using a cryptographic hashing algorithm such as SHA-256, SHA-1 or MD5. If this is sent along the message, the receiver can generate his own hash and compare.
 
@@ -721,11 +767,9 @@ Second problem is that rainbow tables of hashes of common passwords definitely e
 ![[Pasted image 20240121192653.png|300]]
 Therefore add a salt to your password before hashing. Salts should idealy be long, random, and unique to ensure minimum chances of collisions.
 
-Note the salt is stored as plaintext as we need it to verify our
-salted hash, but that isn’t a problem really
+Note the salt is stored as plaintext as we need it to verify our salted hash, but that isn’t a problem really
 ![[Pasted image 20240121193201.png|300]]
-This doesn’t make it impossible to still brute force, but each
-hash needs to computed independently
+This doesn’t make it impossible to still brute force, but each hash needs to computed independently
 ## Rainbow table
 A rainbow table is a precomputed table for caching the outputs of a cryptographic hash function, usually for cracking password hashes. Passwords are typically stored not in plain text form, but as hash values.
 
@@ -735,37 +779,26 @@ Hashes help obfuscate passwords, but hashtables of common passwords exist. We ca
 ![[Pasted image 20240121192451.png|200]]
 More intelligent brute force attack, just try common password hashes.
 ![[Pasted image 20240121192556.png|200]]
-All the rainbow tables in the world won’t help if our passwords
-are salted before being hashed
-## Playback attack 
-A playback attack is a type of network attack in which an attacker intercepts and records a valid authentication or encryption message, such as an authentication token or a session ID and then replays it at a later time to gain unauthorized access to a system.
-
-A nonce (short for "number used once") is a unique value that is generated for each authentication or encryption message, and is included in the message as part of the authentication or encryption process. Because the nonce is generated anew for each
-message, it can only be used once, making it difficult for an attacker to replay a previously intercepted message.
-
-When a message is received, the nonce is checked against a database of previously used nonces. If the nonce has already been used, the message is rejected, thus preventing a replay attack.
-
-In summary, a nonce is a solution to a playback attack by ensuring that the message can only be used once, and that the message is coming from the expected sender, thus making it difficult for an attacker to replay a recorded message.
-
+All the rainbow tables in the world won’t help if our passwords are salted before being hashed
 ## Nonce:
-A nonce is a number that is used only once. In cryptography, a nonce is a random or unique number that is generated for each encryption operation. The nonce is included as part of the
-input to the encryption algorithm, along with the plaintext and a key. The nonce provides an extra level of security by ensuring that the same plaintext and key will not produce the same ciphertext even if the same encryption algorithm is used. In some cases, the nonce is used to make sure that the data that is exchanged between the sender and receiver is unique and has not been tampered with. The nonce is sent along with the message and the recipient can check if it is unique or not, if the nonce is not unique then the message is dropped.
+A nonce (short for "number used once") is a unique value that is generated for each authentication or encryption message, and is included in the message as part of the authentication or encryption process. Because the nonce is generated anew for each message, it can only be used once, making it difficult for an attacker to replay a previously intercepted message.
 
 Nonces are widely used in various cryptographic protocols like in the WPA2 wireless security protocol and in the AES-GCM encryption algorithm.
 
 can protect against a replay attack:
 When a message is received, the nonce is checked against a database of previously used nonces. If the nonce has already been used, the message is rejected, thus preventing a replay attack.
+
+In summary, a nonce is a solution to a playback attack by ensuring that the message can only be used once, and that the message is coming from the expected sender, thus making it difficult for an attacker to replay a recorded message.
 ## Replay attack
 A replay attack is a type of network security attack in which an attacker intercepts and records a legitimate network packet and then retransmits it at a later time. The goal of a replay attack is to gain unauthorized access to a network or system by replaying a previously captured packet that contains valid authentication or session information. 
 
-Replay attacks can occur at different layers of the OSI model, but most commonly occur at the transport layer, where they can exploit the stateless nature of the User Datagram
-Protocol (UDP) and the Transmission Control Protocol (TCP).
+Replay attacks can occur at different layers of the OSI model, but most commonly occur at the transport layer, where they can exploit the stateless nature of the User Datagram Protocol (UDP) and the Transmission Control Protocol (TCP).
 
 For example, an attacker could intercept a packet that contains a valid username and password during an authentication process, and then replay that packet at a later time to gain unauthorized access to a network or system
 
 **Replay attacks can be prevented by using methods such as:**
 - Timestamps: adding a timestamp to the packet to ensure that it can only be used for a limited time.
-- Sequence numbers: assigning a unique number to each packet to prevent the replaying of a previously used packet.
+- Sequence numbers: assigning a unique number to each packet to prevent the replaying of a previously used packet (nonce?).
 - Cryptographic techniques: encrypting the packet to prevent the attacker from reading and replaying it.
 ## A man-in-the-middle (MITM) attack 
 A man-in-the-middle (MITM) attack  is a type of cyber attack in which an attacker intercepts and alters communications between two parties without their knowledge or consent. by intercepting and manipulating the communication between the two parties, the attacker can steal sensitive information, inject malware, or perform other malicious actions. In a MITM attack, the attacker can intercept the communication by either physically accessing the network or by using various techniques such as IP spoofing, DNS spoofing. Remember that protocols such as IP is not secure, it's in the other layers the security is provided, like in the application layer where you would use a secure form of HTTP (HTTPS). 
@@ -781,6 +814,45 @@ Packet sniffers like wireshark could be used and if the communication is on a no
 - Encryption: encrypting the communication can prevent the attacker from reading and altering it
 - Authentication: using strong authentication methods can prevent the attacker from impersonating one of the parties
 - Network segmentation: segmenting the network and limiting the scope of the attack can prevent the attacker from accessing sensitive information.
+## IP security
+There are range of app-specific security
+mechanisms, but security concerns that cut across protocol layers.
+
+### IPSec
+General IP Security mechanism framework:
+allows access control, integrity, authentication, originality,
+and confidentiality.
+
+• Applicable to different settings
+	• Narrow streams: Specific TCP connections
+	• Wide streams: All packets between two gateways
+## Virtual Private Networks (VPNs)
+institutions often want private networks for security.
+	• costly: separate routers, links, DNS infrastructure.
+
+VPN: institution’s inter-office traffic is sent over
+public Internet instead
+	• encrypted before entering public Internet
+	• logically separate from other traffic
+![](https://i.imgur.com/aDcerI7.png)
+## Firewalls
+Isolates internal net from larger Internet, allowing some packets to pass, blocking others. Firewall filters packet-by-packet, based on:
+- Source/Dest IP address; Source/Dest TCP/UDP port numbers
+- TCP SYN and ACK bits; ICMP message type
+- Deep packet inspection on packet contents (DPI)
+
+Firewalls are only really useful for examine where messages say they are sent from and to, cannot verify correctness of this information, or the identity of sending party. Therefore and attacker could get around the Firewall by using methods such as IP spoofing.
+### Packet filtering example
+Block all packets with IP protocol field = 17 and
+with either source or dest port = 23, meaning:
+- All incoming and outgoing UDP flows blocked
+- All Telnet connections are blocked
+Block inbound TCP packets with SYN but no
+ACK, meaning:
+- Prevents external clients from making TCP connections with internal clients
+- But allows internal clients to connect to outside
+![](https://i.imgur.com/VMZMUlS.png)
+
 ## Encryption
 Encryption is a technique that can be used to make a protocol more secure by protecting the confidentiality and integrity of the data being transmitted. There are several types of encryption that can be used, each with their own strengths and weaknesses. Some of the main types of encryption include:
 
@@ -795,13 +867,11 @@ Encryption is a technique that can be used to make a protocol more secure by pro
 ### **Summary:**
 Encryption is a technique that can be used to make a protocol more secure by protecting the confidentiality and integrity of the data being transmitted. There are different types of encryption that can be used, such as symmetric encryption, asymmetric encryption, hash functions and stream ciphers each with their own strengths and weaknesses. It's important to choose the right encryption algorithm and its implementation to ensure the best security for the specific use case.
 ## Keys in networking
-There are several different types of keys that can be used in a network, and their specific functions can vary depending on the context and the type of network being used. However,
-some common types of keys used in networks include:
+There are several different types of keys that can be used in a network, and their specific functions can vary depending on the context and the type of network being used. However, some common types of keys used in networks include:
 
 *Encryption keys:* These keys are used to encrypt and decrypt data as it is transmitted over a network. They can be used to secure data from unauthorized access, such as by encrypting login credentials or other sensitive information.
 
-*Authentication keys:* These keys are used to authenticate devices or users on a network. They can be used to ensure that only authorized devices or users can access the network or
-specific resources on the network.
+*Authentication keys:* These keys are used to authenticate devices or users on a network. They can be used to ensure that only authorized devices or users can access the network or specific resources on the network.
 
 *Session keys:* These keys are used to establish and maintain a secure session between devices or users on a network. They can be used to encrypt and decrypt data for a specific session, and are typically discarded or changed after the session is completed.
 
@@ -823,8 +893,7 @@ Another potential shortcoming of a network application that uses asymmetric, pub
 
 an improvement to address this issue would be to implement certificate pinning. In this approach, the client would have a pre-configured list of trusted root certificate authorities (CA), and would only accept certificates from those CAs. This would prevent an attacker from being able to use a compromised CA to issue a fraudulent certificate and intercept the communication. 
 
-Overall, using a combination of asymmetric and symmetric encryption and implementing certificate pinning would be expected to improve the performance and security
-of the system.
+Overall, using a combination of asymmetric and symmetric encryption and implementing certificate pinning would be expected to improve the performance and security of the system.
 ## Cryptographic and non-cryptographic hash function
 Function for deterministicly computing a fixed-length output from some variable length input.
 
@@ -836,6 +905,7 @@ hash functions are asymmetric:
 
 **Cryptographic hash functions:**
 These are a subset of hash functions. They are much slower and conversely much more difficult to reverse engineer
+
 **Non-cryptographic hash function:**
 If a hash function is non-cryptographic, it means that it is fairly simple to reverse engineer the hash. It can be used only to check integrity of a message, since we can send a hash of the contents along the message, so the receiver can check if the message is altered(by purpose or error) (checksum)
 
@@ -843,6 +913,8 @@ If a hash function is non-cryptographic, it means that it is fairly simple to re
 Is very hard to be reverse engineered. And can then be used to send secret data.
 
 A cryptographic hash function has several properties that are different or stronger than those of a regular hash function. These properties are needed to make the cryptographic hash function suitable for use in various cryptographic applications such as digital signature, message authentication code (MAC) and password hashing.
+
+it should be resistent to collision, meaning two different inputs shouldnt give the same hash. One should not be able to deduce what the input is when looking at the hash(both by looking at it or computationally). Small changes to input should result in big change in output. It should also be deterministic as all hash functions, meaning that the same input always gives the same output. It should be very difficult to brute force inputs to find output.  
 
 *Collision-Resistance:* It should be computationally infeasible to find two different input messages that produce the same output hash value, also known as a "collision".
 
@@ -854,8 +926,7 @@ A cryptographic hash function has several properties that are different or stron
 
 *Avalanche effect:* A small change in the input message should cause a significant change in the output hash value.
 
-*Second preimage resistance:* Given an input message, it should be
-computationally infeasible to find a different input message that will produce the same output hash value.
+*Second preimage resistance:* Given an input message, it should be computationally infeasible to find a different input message that will produce the same output hash value.
 
 *Computational efficiency:* The hash function should be computationally efficient, meaning it should be able to process large input messages quickly.
 
@@ -863,3 +934,23 @@ computationally infeasible to find a different input message that will produce t
 
 These properties are needed to protect the integrity and confidentiality of the data in various cryptographic applications, and to make it difficult for an attacker to find any weaknesses in
 the hash function.
+## Summary
+Cryptographic hash Functions
+	• Zero keys
+	• Not sufficently secure
+	• Very quick
+• Secret-key functions (Symetric key)
+	• One key
+	• Very secure, very difficult to distribute
+	• Quick, compared to Public Keys
+• Public-key functions (Asymetric key)
+	• Two keys
+	• Very secure, easy to distribute
+	• Very slow
+Secret-key functions
+- secret s must be known by both ahead of time
+Public-key functions
+	reciever has a public key r+ and private key r-
+• How do you secure HTTP?
+	• Ensure sites are the sites you really requested
+	• Ensure no one else can read or forge requests/responses

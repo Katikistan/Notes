@@ -122,10 +122,10 @@ Fe: 1, De: 1, Ex: 1, Me: 1, Wb: 1
 kun en instruktion kan være i hver fase samtidig.
 ```
 load: "Fe De Ex Me Wb"   
-store: "Fe De Ex Me Wb"     
-andre: "Fe De Ex Me Wb"     
+store: "Fe De Ex Me"     
+andre: "Fe De Ex Wb"     
 
-branch: "Fe De Ex Me Wb" // Wb behøves med betinget hop
+branch: "Fe De Ex" // Wb behøves med betinget hop
 ```
 ">>" indikerer at den staller i den fase som efterfølger, så "`De >> Ex`", betyder et stall i Ex. Man kan også skrive `De De Ex`, fordi den holder i `De` fasen fordi `Ex` ikke er tilgænglig. Jeg synes den sidste metode er mere overskuelig fordi det bliver nemmere at spotte hvornår der skal ske stalls pga. ressourcebegrænsning 
 
@@ -185,15 +185,26 @@ Betinget hop behøver ikke Wb
 Det betyder at hvis et hop baglæns tages så vil PC være klar i De derfor kan næste instruktions Fe fase begynde sammtidig med Ex fasen for branch instruktionen. Hvis hop ikke tages eller et hop forlæns tages så kan næste instruktions Fe fase først 
 ###### husk til eksamen
 
-"We assume backward branches are predicted during decode"
+
+**Simpel 5 stage pipeline:**
+We assume backward branches are predicted during decode
+
 Following resources are available:
 Fe: 1, De: 1, Ex: 1, Me: 1, Wb: 1
+all instructions use the following stages
+Fe, De, Ex, Me and Wb
+since it's a **5 stage** pipeline
 
-We assume instructions use the following resources:
-load: "Fe De Ex Me Wb"
-store: "Fe De Ex Me"
-others: "Fe De Ex Wb"
-branching instructions leave out Wb stage
+
+**2 way super skalar:**
+We assume backward branches are predicted during decode
+
+Following resources are available:
+Fe:2, De:2, Ex:2, Ag:1, Me:1, Wb:2
+all instructions use the following stages
+Load: Fe De Ag Me Wb
+store: Fe De Ag Me
+others: Fe De Ex Wb <- branch instructions dont need Wb
 
 ## Superskalar
 En maskine der kan udføre to eller flere instruktioner samtidigt kaldes "superskalar".

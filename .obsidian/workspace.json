@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "d4bf172ea992d204",
+        "id": "f170e9b1eb8bdfac",
         "type": "tabs",
         "children": [
           {
-            "id": "ed4baaea993917b2",
+            "id": "b3ce6f50417e7e3f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Networking.md",
+                "file": "SS.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -113,7 +113,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Networking.md",
+                "file": "SS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -130,7 +130,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Networking.md",
+                "file": "SS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -142,7 +142,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Networking.md"
+                "file": "SS.md"
               }
             }
           },
@@ -195,13 +195,23 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "ed4baaea993917b2",
+  "active": "b3ce6f50417e7e3f",
   "lastOpenFiles": [
+    "Pasted Image 20240123223104_174.png",
+    "SS.md",
+    "traditional-unix-kernel.png",
+    "Networking.md",
+    "unix_architecture.jpg",
+    "Untitled 1.png",
+    "Untitled.png",
+    "Untitled.md",
     "OS and Data representation.md",
     "ARC.md",
+    "Compsys_eksamen/Heap uddybende.md",
+    "Excalidraw/23-01-24 22.30.44.excalidraw.md",
+    "Compsys_eksamen/Pasted image 20240113142159.png",
     "Excalidraw/OS and Data representation 23-01-24 09.06.07.excalidraw.md",
     "Excalidraw/OS and Data representation 23-01-24 09.04.49.excalidraw.md",
-    "Networking.md",
     "Compsys_eksamen/ARC 1.md",
     "compsys.zip",
     "zixTw1EQ",
@@ -212,19 +222,12 @@
     "Compsys_eksamen/ARC.pdf",
     "Compsys_eksamen/Pasted image 20240118160901.png",
     "Compsys_eksamen/ARC.md",
-    "SS.md",
     "1.md",
     "Misc/Templates/Excalidraw.md",
     "Misc/åBilleder/Pasted image 20240121133223.png",
-    "unix_architecture.jpg",
-    "traditional-unix-kernel.png",
     "overview-kernel.png",
-    "Untitled 1.png",
-    "Untitled.png",
     "Misc/CompSys - Eksamens noter.md",
     "Misc/åBilleder/Tcp_westwood.gif",
-    "Misc/åBilleder/Pasted image 20240121174044.png",
-    "Misc/åBilleder/blobid21-60f546786ae24.jpeg",
     "DR.md",
     "Misc/TDC.md",
     "Misc/Vigtig syntax.md",
@@ -232,7 +235,6 @@
     "ziDHR6nB",
     "OS.pdf",
     "ARC.pdf",
-    "Compsys_eksamen/Heap uddybende ulæsligt fordi det ikke er blevet rettet og fri tanke strøm fra mit krøllet hovedet.md",
     "Compsys eksamen/OS.md",
     "Compsys eksamen/Heap uddybende ulæsligt fordi det ikke er blevet rettet og fri tanke strøm fra mit krøllet hovedet.md",
     "CompSys Eksamens oplæsning.md",
@@ -240,9 +242,6 @@
     "Excalidraw/CompSys - Recap 10-01-24 13.26.31.excalidraw.md",
     "Excalidraw/DR 13-01-24 16.05.26.excalidraw.md",
     "Excalidraw/CompSys - Recap 10-01-24 14.20.43.excalidraw.md",
-    "Excalidraw/CompSys - Recap 12-01-24 22.25.26.excalidraw.md",
-    "Excalidraw/CompSys - Recap 12-01-24 22.44.01.excalidraw.md",
-    "Excalidraw/CompSys - Recap 12-01-24 23.09.59.excalidraw.md",
     "Untitled.canvas"
   ]
 }

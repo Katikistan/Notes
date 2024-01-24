@@ -16,7 +16,8 @@ np.log2(7) # using log 2 in python
 
 **Conversion betweeen data sizes**
 1 KB = 1 Kibibyte (KiB) = 1024 bytes
-1 MB = 1024KB = 1,048,576 bytes
+1 MB = 1024KB = = 1,048,576 bytes
+1 gibibyte  = 1073741824
 1 GB = 1 000 000 000 bytes
 1 Kbit = 1 kilobit = 125 bytes
 1 byte = 8 bits
@@ -101,8 +102,7 @@ Represents numbers of the form $M \cdot 2^E$ .
 
 in the IEEE floating point format, the inaccuracies of calculations become larger as the numbers get larger due to the limited number of bits available to represent the mantissa (or significand) of the number. This means that the larger the number, the less precise the representation of that number in the format.
 
-This is because the mantissa is represented as a fixed-point number, with a fixed number of bits to the left and right of the radix point. As the number gets larger, more bits are required to
-represent the mantissa, but since the number of bits is fixed, the representation becomes less precise.
+This is because the mantissa is represented as a fixed-point number, with a fixed number of bits to the left and right of the radix point. As the number gets larger, more bits are required to represent the mantissa, but since the number of bits is fixed, the representation becomes less precise.
 
 This phenomenon is called the "floating-point precision error" and it affects all floating-point computations. Programs that need to perform high precision computation, such as scientific simulations and financial computations, use arbitrary precision libraries or other methods to perform these calculations.
 ![[Pasted image 20240118160648.png]]
@@ -110,10 +110,10 @@ This phenomenon is called the "floating-point precision error" and it affects al
 ![[Pasted image 20240118160607.png]]
 ![[Pasted image 20240118160901.png]]
 ![[Pasted image 20240118160930.png]]
-In the IEEE floating point format, the inaccuracies of calculations become larger as the numbers get larger due to the limited number of bits available to represent the mantissa (or significand) of the number. This means that the larger the number, the less precise the representation of that number in the format.
 
-This is because the mantissa is represented as a fixed-point number, with a fixed number of bits to the left and right of the radix point. As the number gets larger, more bits are required to
-represent the mantissa, but since the number of bits is fixed, the representation becomes less precise.
+### 1/10
+The fractional part of a floating point number is represented by a binary number, which 1/10 cannot be.
+This results in rounding of numbers and specifically that imprecision is added to currencies calculations. Thus, floating point numbers are not used directly for this.
 ## Twos compliment
 **Two's complement** is the most common method of representing signed (positive, negative, and zero) integers on computers, and more generally, fixed point binary values. Two's complement uses the binary digit with the greatest place value as the _sign_ to indicate whether the binary number is positive or negative.
 
@@ -361,6 +361,8 @@ See man fork() for more info.
 - Loading program code from disk into current process: exec().
 - Waiting for a specific child to die: waitpid().
 - Getting PID of running process: getpid().
+
+**If you call `waitpid()` with a `pid` argument of `NULL`, the function will wait for any child process in the process group of the calling process to change state. The behavior is similar to using `-1` as the `pid` argument, which waits for any child process regardless of the process group.**
 
 The child process and the parent process run in separate memory spaces. At the time of fork() both memory spaces have the same content. fork() is called once but returns twice.
 

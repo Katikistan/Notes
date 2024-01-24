@@ -1,7 +1,7 @@
 Before you start it's vital that you read the provided information in the question, furthermore here are some things that are important to remember before trying to solve this type of problem:
 
 The assignment provides a Heap which individual rows, rows can be headers, footers or payload. The heap grows from bottom up (unless text says the upiside, it won't, but..), the first row of the heap is therefore at the bottom:
-![[Pasted image 20240113142357.png|10000]]
+![[Pasted image 20240113142357.png|]]
 Each row has a size of 4 
 
 exam2022-23: "The minimum block size is 8"(all blocks most contain header and footer, therefore block size is at least $header\_size+footer\_size=4+4=8$), blocks must therefore be multiples of 8. Unless other is stated such as  "The minimum block size is 4" which would mean each row has a size of 2 (this will probably never occur).
@@ -42,7 +42,7 @@ When a block ends
 1. Find the first block by finding a header or footer (remember to look bottom up). 
 2.  check ii is a block header and footer: is the previous block allocated (check bit 1: this should then be 1)? Is the size correct: should be mutiple of 8 and take up the right ammount of rows.
 3. Find all the other blocks, remmeber: blocks are directly next to each other. so after first blocks footer comes second blocks header and so on. Therefore use the header of each block to find the size of the block, mark the rows of that block and continue onto next block. When you get to the top of the heap rememeber it continues of page, therefore you not be able to find the footer of the last block. 
-![[Pasted image 20240113142314.png|10000]]
+![[Pasted image 20240113142314.png|]]
 4. after you have mapped out the different blocks you can begin to perform some operations and fill out how these will affect the rows of the heap, you are supposed to fill out the new headers and footers of the heap. use the adress to find out which block is being affected by the operation. Using malloc, free or realloc on an adress will affect the whole block of that adress, the headers/footers of the adjacent blocks will also be affected.
 
 **If you are asked to free:**
@@ -68,7 +68,7 @@ Remember that if 2 or more blocks next to each other all are free they become on
 **If you are asked to realloc** 
 you will a combination of free and malloc, you will first free a block, then you will malloc that from that block header and to the size you have been asked so, when freeing you
 **Immediate coallesing:** 2 adjacent blocks will be merged into 1 block when one is free and the other either also becomes free or is allocated and overlap into the free block, that means if block 1 (bottom up) and block 2 both become free (maybe block 1 is already free and block 2 becomes free or otherway) block 1's new footer will be where block 2's footer was. and block 1's footer and block 2's header will stay the same and become part of the block payload, meaning they are junk that will be overwritten when the block is allocated. The new Header  (same location as block's 1 before) and footer (same location as block 2's footer before) must change it's value to account for the new size of the block and the fact that the block is free and take into account whether the previous block is free. 
-![[Pasted image 20240113142159.png|10000]]
+![[Pasted image 20240113142159.png|]]
 Sometimes things dont line up so nicely, as metioned all blocks must be multiples of 8, what if we want to malloc or realloc 12 bytes: then we have to round up the nearest multiple of 8 which is 16, we wanted to alloc 12, but end up allocing 16 instead, we end up using 16+8=24 bytes in the heap because we also need 4+4 bytes for the header and footer. this is what is known as internal fragmentation. 
 
 **example from exam 20/21**
