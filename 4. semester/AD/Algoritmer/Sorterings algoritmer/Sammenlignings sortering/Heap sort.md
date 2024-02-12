@@ -1,4 +1,4 @@
-I heap sort bruger vi [[1. semester/Diskret matematik og algoritmer (DMA)/Algoritmer/Datastrukturer/Heap]] data skruturen:
+I heap sort bruger vi [[Heap]] data skruturen:
 
 ![[Pasted image 20220927143050.png|300]]
 https://www.geeksforgeeks.org/heap-sort/

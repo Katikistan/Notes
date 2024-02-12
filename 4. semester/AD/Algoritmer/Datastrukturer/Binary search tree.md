@@ -1,6 +1,6 @@
 I et binært search træ skal børnene til en knude altid have følgende orden: barnet til venstre er altid mindre end forældreren og barnet til højre er altid større en forældreren. På den måde kan man altid finde det største element i et binært træ ved forsat at gå til højre, det samme kan siges om det mindste element, hvor man bare skal gå til venstre.
 ![|132](https://i.imgur.com/15qUAqq.png)![|150](https://i.imgur.com/NcO6LF5.png)
-Modsat en [[1. semester/Diskret matematik og algoritmer (DMA)/Algoritmer/Datastrukturer/Heap]] hvor at børnene skal enten skal være større eller mindre en forældre, alt efter om det er en MAX-heap eller en Min-heap.
+Modsat en [[Heap]] hvor at børnene skal enten skal være større eller mindre en forældre, alt efter om det er en MAX-heap eller en Min-heap.
 
 Et binært søgetræ kan repræsenteres i hukommelsen således:
 ![|200](https://i.imgur.com/hOUNHv4.png)

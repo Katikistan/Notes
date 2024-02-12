@@ -9,7 +9,7 @@ if (file_type == "weekly") {
 -%>
 week: <% theweek %>
 year: <% tp.date.now("YYYY") %>
-semester: 2
+semester: 4
 block: 3
 type: weekly 
 tags: 
@@ -20,10 +20,7 @@ summary: ""
 TABLE day, summary 
 where type = "daily" and week = <% theweek %>
 ```
-# COMPSYS
-## Assigned reading
-<% task %>
- - [ ] [[CompSys - Reading for week <% theweek %>#Chapter]]
+# AD
 ## Exercises 
 ### Monday
 ### Weddensday
@@ -32,14 +29,10 @@ where type = "daily" and week = <% theweek %>
 ## Notes from this week
 ```dataview
 TABLE type, status, tags, summary
-where course = "CompSys" and week = <% theweek %>
+where course = "AD" and week = <% theweek %>
 ```
 
-# MatIntro
-## Assigned reading
-<% task %>
- - [ ] [[MatIntro - Reading for week <% theweek %>#Chapter]]
-
+# Data science
 ## Exercises 
 ### Tuesday
 ### Thursday
@@ -48,6 +41,6 @@ where course = "CompSys" and week = <% theweek %>
 ## Notes from this week
 ```dataview
 TABLE type, status, summary
-where course = "MatIntro" and week = <% theweek %>
+where course = "Data science" and week = <% theweek %>
 ```
 <% tp.file.rename ("Uge " + theweek +" - " + tp.date.now("YYYY")) %>

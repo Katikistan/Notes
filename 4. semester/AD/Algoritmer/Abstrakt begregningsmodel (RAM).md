@@ -17,3 +17,12 @@ Hver plads kan indeholde ord i form af bits, eller tal. store tal og karakterer 
 
 man kan binde variabler sammen med tal så man kan f.eks. sige at b = 4 hvor at 4 bliver gemt i hukommlsen. Her bliver 8 lagt til b således at b = 9 og dernæst bliver der lagt 9 til 4altså at a+b =13 som nu bliver gemt på a's plads. man ser også at et array kan blive gemt sammenhængende i denne RAM model. 
 ![[Pasted image 20221018163210.png|200]]![[Pasted image 20221018163057.png|200]]
+# Hvad RAM modellen abstraherer væk
+- Nogle maskinoperationer gør > 1 ting (SIMD, compare-swap, ...)
+- Uafhængige operationer kan ofte køre parallelt
+- Hukommelsesadgange er ikke lige hurtige (cache vs hukommelse vs SSD)
+- Computere har flere kerner, der kan arbejde parallelt
+- Computere har flere typer kerner (typisk CPU(er), GPU, måske FPGA, TPU)
+- Store beregninger kan fordeles over mange computere
+- ...
+- **Fokus i er RAM:** 1-trådet asymptotisk skalérbarhed, ikke optimering, parallelisme, etc.

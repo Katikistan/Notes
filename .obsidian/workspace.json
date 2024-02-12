@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "f170e9b1eb8bdfac",
+        "id": "b0a680ff8cb8e3b4",
         "type": "tabs",
         "children": [
           {
-            "id": "b3ce6f50417e7e3f",
+            "id": "9c94c27ea0e9b804",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "SS.md",
+                "file": "4. semester/AD/Algoritmer/Hashing.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -49,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "komplekse",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": false,
@@ -113,7 +113,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "SS.md",
+                "file": "4. semester/AD/Algoritmer/Hashing.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -130,7 +130,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "SS.md",
+                "file": "4. semester/AD/Algoritmer/Hashing.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -142,7 +142,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "SS.md"
+                "file": "4. semester/AD/Algoritmer/Hashing.md"
               }
             }
           },
@@ -195,53 +195,54 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "b3ce6f50417e7e3f",
+  "active": "9c94c27ea0e9b804",
   "lastOpenFiles": [
+    "4. semester/AD/Algoritmer/Beregning af køretid.md",
+    "4. semester/AD/Løkke invarianter.md",
+    "4. semester/AD/Topologisk sortering.md",
+    "4. semester/AD/Reccurence relations.md",
+    "4. semester/AD/Prims and Kruskals algoritme.md",
+    "Weekly notes/Uge 7 - 2024.md",
+    "4. semester/AD/AD - Lecture ons - 6.md",
+    "Misc/Templates/Weekly notes.md",
+    "Weekly notes/Uge 7 - 2023.md",
+    "1. semester/Diskret matematik og algoritmer (DMA)/Diskret matematik/Logic/Methods of proof/Rule of inference.md",
+    "1. semester/Diskret matematik og algoritmer (DMA)/Diskret matematik/Logic/Methods of proof/Proof by contrapositive.md",
+    "1. semester/Diskret matematik og algoritmer (DMA)/Diskret matematik/Logic/Methods of proof/Proof by contradiction.md",
+    "1. semester/Diskret matematik og algoritmer (DMA)/Diskret matematik/Logic/Methods of proof/Induction gennemgang.md",
+    "1. semester/Diskret matematik og algoritmer (DMA)/TODO/Direct proof.md",
+    "1. semester/Diskret matematik og algoritmer (DMA)/Diskret matematik/Group theory.md",
+    "1. semester/Diskret matematik og algoritmer (DMA)/TODO/Disjunkte mængder.md",
+    "1. semester/Diskret matematik og algoritmer (DMA)/TODO/Intro to graph theory.md",
+    "1. semester/Diskret matematik og algoritmer (DMA)/TODO/Series.md",
+    "1. semester/Diskret matematik og algoritmer (DMA)/TODO/Lattices, isomorphism & BOOLEAN ALGEBRA.md",
+    "1. semester/Diskret matematik og algoritmer (DMA)/TODO/Trees.md",
+    "1. semester/Diskret matematik og algoritmer (DMA)/TODO/Stærke sammenhængskomponenter.md",
+    "1. semester/Diskret matematik og algoritmer (DMA)/Forelæsninger/Forelæsning Proofs.md",
+    "1. semester/Diskret matematik og algoritmer (DMA)/Forelæsninger/Forelæsning permutations.md",
+    "1. semester/Diskret matematik og algoritmer (DMA)/TODO/Pigeonhole principle.md",
+    "1. semester/Diskret matematik og algoritmer (DMA)/TODO/Induktion.md",
+    "1. semester/Diskret matematik og algoritmer (DMA)/TODO/Permutations.md",
+    "1. semester/Diskret matematik og algoritmer (DMA)/Diskret matematik/Logic/Methods of proof",
+    "1. semester/Diskret matematik og algoritmer (DMA)/TODO/torsdag",
+    "1. semester/Diskret matematik og algoritmer (DMA)/TODO/søndag",
+    "1. semester/Diskret matematik og algoritmer (DMA)/TODO/onsdag",
+    "1. semester/Diskret matematik og algoritmer (DMA)/TODO/lørdag",
+    "1. semester/Diskret matematik og algoritmer (DMA)/TODO/fredag",
+    "1. semester/Diskret matematik og algoritmer (DMA)/Diskret matematik/Logic",
+    "1. semester/Diskret matematik og algoritmer (DMA)/Diskret matematik/Graph theory",
+    "1. semester/Diskret matematik og algoritmer (DMA)/Diskret matematik/Fundamentals",
+    "1. semester/Diskret matematik og algoritmer (DMA)/TODO",
+    "Pasted Image 20240125125314_921.png",
+    "Misc/åBilleder/unix_architecture.jpg",
+    "Misc/åBilleder/traditional-unix-kernel.png",
     "Pasted Image 20240123223104_174.png",
-    "SS.md",
-    "traditional-unix-kernel.png",
-    "Networking.md",
-    "unix_architecture.jpg",
     "Untitled 1.png",
     "Untitled.png",
-    "Untitled.md",
-    "OS and Data representation.md",
-    "ARC.md",
-    "Compsys_eksamen/Heap uddybende.md",
-    "Excalidraw/23-01-24 22.30.44.excalidraw.md",
-    "Compsys_eksamen/Pasted image 20240113142159.png",
-    "Excalidraw/OS and Data representation 23-01-24 09.06.07.excalidraw.md",
-    "Excalidraw/OS and Data representation 23-01-24 09.04.49.excalidraw.md",
-    "Compsys_eksamen/ARC 1.md",
-    "compsys.zip",
-    "zixTw1EQ",
-    "Compsys_eksamen/heap.py",
-    "Compsys_eksamen/ARC 1.pdf",
-    "Compsys_eksamen/OS.md",
-    "Compsys_eksamen/OS.pdf",
-    "Compsys_eksamen/ARC.pdf",
-    "Compsys_eksamen/Pasted image 20240118160901.png",
-    "Compsys_eksamen/ARC.md",
-    "1.md",
-    "Misc/Templates/Excalidraw.md",
+    "Misc/åBilleder/Compsys_eksamen/Pasted image 20240113142159.png",
+    "Misc/åBilleder/Compsys_eksamen/Pasted image 20240118160901.png",
     "Misc/åBilleder/Pasted image 20240121133223.png",
     "overview-kernel.png",
-    "Misc/CompSys - Eksamens noter.md",
-    "Misc/åBilleder/Tcp_westwood.gif",
-    "DR.md",
-    "Misc/TDC.md",
-    "Misc/Vigtig syntax.md",
-    "Compsys_eksamen.zip",
-    "ziDHR6nB",
-    "OS.pdf",
-    "ARC.pdf",
-    "Compsys eksamen/OS.md",
-    "Compsys eksamen/Heap uddybende ulæsligt fordi det ikke er blevet rettet og fri tanke strøm fra mit krøllet hovedet.md",
-    "CompSys Eksamens oplæsning.md",
-    "Compsys eksamen/ARC.md",
-    "Excalidraw/CompSys - Recap 10-01-24 13.26.31.excalidraw.md",
-    "Excalidraw/DR 13-01-24 16.05.26.excalidraw.md",
-    "Excalidraw/CompSys - Recap 10-01-24 14.20.43.excalidraw.md",
     "Untitled.canvas"
   ]
 }

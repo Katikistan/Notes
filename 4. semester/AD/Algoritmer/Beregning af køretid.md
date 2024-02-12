@@ -1,4 +1,4 @@
-## Basics 
+# Basics 
 Max antal skridt per linje.
 ![[Pasted image 20221018163916.png|200]]
 Til bestemmelse af køretid vil man tælle hver skridt pr linje og gange det med det max antal af gange som linjen bliver kørt igennem. 
@@ -20,7 +20,28 @@ $1 \cdot 1 + 7(n+1)+6n+2n+2 =15n+10=\Theta(n)$
 
 når vi taler om køretid er det hurtigst voksende led det der afgører den asymptotisk køretid fordi ved et vilkårligt stort n vil det være det største led der kommer til at dominerer hvad køretiden er, derfor kan man på overstående eksempel sige at det linære led kommer til at betyde mere for køretiden end det konstante derfor bliver køretiden $\Theta(n)$. 
 
-## Big O
+# Asymptotisk notation
+**Idé:**
+- Abstrahér detaljerne væk, fokusér på hvad der sker når $n$ er stor
+- Ignorér konstante faktorer (det gør RAM modellen allerede)
+Lad $T(n)$ betegne værstefalds køretiden på et input af længde $n$ - vi så at $T(n) \leq a_2 n^2+a_1 n+a_0$ for passende konstanter $a_0, a_1, a_2$
+
+For store $n$ er denne grænse domineret af $a_2 n^2$, mens de to lavere-ordens termer $a_1 n$ og $a_0$ er ubetydelige
+
+I asymptotisk notation er værstefalds køretiden $\Theta\left(n^2\right)$
+![](https://i.imgur.com/V9V6VZO.png)
+- Formelle definitioner: For en ikke-negativ funktion $g(n): \mathbb{N} \rightarrow \mathbb{R}$ er
+$$
+\begin{aligned}
+& O(g(n))=\left\{f(n) \mid \exists c>0, n_0>0: n \geq n_0 \Rightarrow 0 \leq f(n) \leq c g(n)\right\} \\
+& \Omega(g(n))=\left\{f(n) \mid \exists c>0, n_0>0: n \geq n_0 \Rightarrow c g(n) \leq f(n)\right\} \\
+& \Theta(g(n))=\left\{f(n) \mid \exists c_1, c_2>0, n_0>0: n \geq n_0 \Rightarrow c_1 g(n) \leq f(n) \leq c_2 g(n)\right\}
+\end{aligned}
+$$
+I praksis bruges notationen oftest til at betegne en (ikke navngivet) funktion, fx:
+- $g(n)=O\left(n^2\right)$ betyder $g(n)=f(n)$ for en eller anden $f(n) \in O\left(n^2\right)$
+- $g(n)=n^2+\Omega(n)$ betyder $g(n)=n^2+f(n)$ for en eller anden $f(n) \in \Omega(n)$
+# Big O
 ### Big O som en relation
 Recall: For asymptotically positive sequences $\left(a_n\right),\left(b_n\right)$, we say that $\left(a_n\right)$ is $\mathrm{O}\left(\left(b_n\right)\right)$ if $\exists C>0$ and $\exists k \geqslant 1$ such that $\forall n \geqslant k$
 $$
@@ -46,8 +67,19 @@ So $n \geqslant m \Rightarrow a_n \leqslant E c_n$
 Antisymmetric, $\left(a_n\right) \mathrm{O}\left(b_n\right) \wedge\left(b_n\right) \mathrm{O}\left(a_n\right) \Rightarrow\left(a_n\right)=\left(b_n\right) ?$   $\boldsymbol{x}$
 
 $(n) \mathrm{O}(2 n)$ and $(2 n) \mathrm{O}(n)$, but $(n) \neq(2 n)$
-## Small o
-## Theta 
+## Store O og addition
+Antag at $f(n)=O(g(n))$ og $f^{\prime}(n)=O\left(g^{\prime}(n)\right)$ er ikke-negative, dvs.
+- Der findes $n_0, c>0$ så $n \geq n_0 \Rightarrow f(n) \leq c g(n)$
+- Der findes $n_0^{\prime}, c^{\prime}>0$ så $n \geq n_0^{\prime} \Rightarrow f^{\prime}(n) \leq c^{\prime} g^{\prime}(n)$
+Hvad kan vi sige om $f(n)+f^{\prime}(n)$ ?
+$n \geq \max \left(n_0, n_0^{\prime}\right) \Rightarrow f(n)+f^{\prime}(n) \leq c g(n)+c^{\prime} g(n) \leq \max \left(c, c^{\prime}\right) \cdot\left(g(n)+g^{\prime}(n)\right)$
+Det vil sige at $f(n)+f^{\prime}(n)=O\left(g(n)+g^{\prime}(n)\right)$
+
+# Lille o
+![](https://i.imgur.com/CzBMkyM.png)
+![](https://i.imgur.com/Pt5hdg3.png)
+
+# Theta 
 ### Theta som en relation
 Recall: We say that $\left(a_n\right)$ is $\Theta\left(\left(b_n\right)\right)$ if $\left(a_n\right)$ is $\mathrm{O}\left(\left(b_n\right)\right)$ and $\left(b_n\right)$ is $\mathrm{O}\left(\left(a_n\right)\right)$
 - $A=\left\{\right.$ all asymptotically positive sequences $\left(c_n\right)$ of numbers $\}$
@@ -58,11 +90,11 @@ O is reflexive and transitive.
 - **Thm**. If R is reflexive/transitive then $R^{-1}$ is also
 - reflexive/transitive.
 - So $O^{-1}$ is reflexive and transitive.
-## Upper bound, lower bounding
-### Tight bound 
-## Analyse af køretid
-## Bevis for køretid
-## Asymptotically positive 
+# Upper bound, lower bounding
+## Tight bound 
+# Analyse af køretid
+# Bevis for køretid 
+# Asymptotically positive 
 # asymptotic growth
 It means that the function is positive after a cutoff point x_0
 f is O(g) means that g will grow faster or equal than f after a cutoff point x_0

@@ -49,6 +49,14 @@
     {
       "folder": "3. semester/CompSys",
       "template": "Misc/Templates/Compsys.md"
+    },
+    {
+      "folder": "4. semester/AD",
+      "template": "Misc/Templates/AD.md"
+    },
+    {
+      "folder": "4. semester/GDS",
+      "template": "Misc/Templates/GDS.md"
     }
   ],
   "syntax_highlighting": true,
