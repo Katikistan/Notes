@@ -1,4 +1,4 @@
-# Basics 
+	# Basics 
 Max antal skridt per linje.
 ![[Pasted image 20221018163916.png|200]]
 Til bestemmelse af køretid vil man tælle hver skridt pr linje og gange det med det max antal af gange som linjen bliver kørt igennem. 
@@ -77,6 +77,7 @@ Det vil sige at $f(n)+f^{\prime}(n)=O\left(g(n)+g^{\prime}(n)\right)$
 
 # Lille o
 ![](https://i.imgur.com/CzBMkyM.png)
+# Regler for diverse notationer
 ![](https://i.imgur.com/Pt5hdg3.png)
 
 # Theta 
@@ -171,7 +172,13 @@ They say things like “an O(n lg n)-time algorithm runs faster than an
 O(n2)-time algorithm.” Maybe it does, maybe it doesn’t. Since Onotation
 denotes only an asymptotic upper bound, that so-called O(n2)-
 time algorithm might actually run in Θ(n) time.
-
+# Nyttige regneregler
+For $n, m>0$ og $a, b \in \mathbb{R}$ :
+- $\lceil n / 2\rceil+\lfloor n / 2\rfloor=n$ for $n \in \mathbb{N}$
+- $n^a \cdot n^b=n^{a+b}$
+- $1 / n^a=n^{-a}$
+- $\log (n \cdot m)=\log n+\log m$
+- $\log \left(n^a\right)=a \log n$
 --- 
 Tags: #open
 

@@ -4,23 +4,37 @@
     "type": "split",
     "children": [
       {
-        "id": "b0a680ff8cb8e3b4",
+        "id": "d661e1d0b6e92110",
         "type": "tabs",
         "children": [
           {
-            "id": "9c94c27ea0e9b804",
+            "id": "85801628624bedce",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "4. semester/AD/Algoritmer/Hashing.md",
+                "file": "4. semester/AD/AD - Lecture man - 7.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b947fe1151a0b504",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Weekly notes/Uge 7 - 2024.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -74,11 +88,12 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 336.5
   },
   "right": {
     "id": "1bdbff370dc1606a",
@@ -113,7 +128,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "4. semester/AD/Algoritmer/Hashing.md",
+                "file": "Weekly notes/Uge 7 - 2024.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -130,7 +145,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "4. semester/AD/Algoritmer/Hashing.md",
+                "file": "Weekly notes/Uge 7 - 2024.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -142,7 +157,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "4. semester/AD/Algoritmer/Hashing.md"
+                "file": "Weekly notes/Uge 7 - 2024.md"
               }
             }
           },
@@ -195,34 +210,34 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "9c94c27ea0e9b804",
+  "active": "b947fe1151a0b504",
   "lastOpenFiles": [
-    "4. semester/AD/Algoritmer/Beregning af køretid.md",
-    "4. semester/AD/Løkke invarianter.md",
-    "4. semester/AD/Topologisk sortering.md",
-    "4. semester/AD/Reccurence relations.md",
-    "4. semester/AD/Prims and Kruskals algoritme.md",
+    "4. semester/AD/AD - Lecture man - 7.md",
+    "Misc/Templates/AD.md",
+    "4. semester/AD/Beregning af køretid.md",
     "Weekly notes/Uge 7 - 2024.md",
+    "4. semester/AD/Sortering/Counting sort.md",
+    "4. semester/AD/Divide-and-Conquer/Divide-and-Conquer.md",
+    "4. semester/AD/Divide-and-Conquer/Recurrences.md",
+    "4. semester/AD/Reccurence relations.md",
+    "4. semester/AD/Sortering/Sammenlignings sortering/Merge sort.md",
+    "Excalidraw/12-02-24 11.14.28.excalidraw.md",
+    "4. semester/AD/Sortering/Radix sort.md",
+    "4. semester/AD/Sortering/Lower_bounds_for_sorting.md",
+    "4. semester/AD/Sortering/Bucket sort.md",
+    "4. semester/AD/Induktion.md",
+    "1. semester/Diskret matematik og algoritmer (DMA)/Diskret matematik/Logic/Methods of proof/Induction gennemgang.md",
+    "4. semester/AD/Graf algoritmer/Prims and Kruskals algoritme.md",
+    "4. semester/AD/Hashing.md",
+    "4. semester/AD/Abstrakt begregningsmodel (RAM).md",
+    "4. semester/AD/Løkke invarianter.md",
+    "Misc/Templates/GDS.md",
+    "Misc/Templates/Compsys.md",
+    "4. semester/AD/Divide-and-Conquer",
+    "4. semester/AD/Amortiseret analyse.md",
+    "4. semester/AD/Topologisk sortering.md",
     "4. semester/AD/AD - Lecture ons - 6.md",
     "Misc/Templates/Weekly notes.md",
-    "Weekly notes/Uge 7 - 2023.md",
-    "1. semester/Diskret matematik og algoritmer (DMA)/Diskret matematik/Logic/Methods of proof/Rule of inference.md",
-    "1. semester/Diskret matematik og algoritmer (DMA)/Diskret matematik/Logic/Methods of proof/Proof by contrapositive.md",
-    "1. semester/Diskret matematik og algoritmer (DMA)/Diskret matematik/Logic/Methods of proof/Proof by contradiction.md",
-    "1. semester/Diskret matematik og algoritmer (DMA)/Diskret matematik/Logic/Methods of proof/Induction gennemgang.md",
-    "1. semester/Diskret matematik og algoritmer (DMA)/TODO/Direct proof.md",
-    "1. semester/Diskret matematik og algoritmer (DMA)/Diskret matematik/Group theory.md",
-    "1. semester/Diskret matematik og algoritmer (DMA)/TODO/Disjunkte mængder.md",
-    "1. semester/Diskret matematik og algoritmer (DMA)/TODO/Intro to graph theory.md",
-    "1. semester/Diskret matematik og algoritmer (DMA)/TODO/Series.md",
-    "1. semester/Diskret matematik og algoritmer (DMA)/TODO/Lattices, isomorphism & BOOLEAN ALGEBRA.md",
-    "1. semester/Diskret matematik og algoritmer (DMA)/TODO/Trees.md",
-    "1. semester/Diskret matematik og algoritmer (DMA)/TODO/Stærke sammenhængskomponenter.md",
-    "1. semester/Diskret matematik og algoritmer (DMA)/Forelæsninger/Forelæsning Proofs.md",
-    "1. semester/Diskret matematik og algoritmer (DMA)/Forelæsninger/Forelæsning permutations.md",
-    "1. semester/Diskret matematik og algoritmer (DMA)/TODO/Pigeonhole principle.md",
-    "1. semester/Diskret matematik og algoritmer (DMA)/TODO/Induktion.md",
-    "1. semester/Diskret matematik og algoritmer (DMA)/TODO/Permutations.md",
     "1. semester/Diskret matematik og algoritmer (DMA)/Diskret matematik/Logic/Methods of proof",
     "1. semester/Diskret matematik og algoritmer (DMA)/TODO/torsdag",
     "1. semester/Diskret matematik og algoritmer (DMA)/TODO/søndag",
@@ -232,7 +247,6 @@
     "1. semester/Diskret matematik og algoritmer (DMA)/Diskret matematik/Logic",
     "1. semester/Diskret matematik og algoritmer (DMA)/Diskret matematik/Graph theory",
     "1. semester/Diskret matematik og algoritmer (DMA)/Diskret matematik/Fundamentals",
-    "1. semester/Diskret matematik og algoritmer (DMA)/TODO",
     "Pasted Image 20240125125314_921.png",
     "Misc/åBilleder/unix_architecture.jpg",
     "Misc/åBilleder/traditional-unix-kernel.png",

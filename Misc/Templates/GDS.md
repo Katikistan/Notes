@@ -33,7 +33,7 @@ year: <% tp.date.now("YYYY") %>
 type: <% file_type %>
 course: <% course %>
 status: <% stat %>
-semester: 2
+semester: 4
 tags:
 Summary: ""
 ---
