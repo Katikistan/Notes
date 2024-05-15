@@ -5,7 +5,6 @@
   "dataview",
   "obsidian-excalidraw-plugin",
   "obsidian-checklist-plugin",
-  "obsidian-imgur-plugin",
   "templater-obsidian",
   "obsidian-minimal-settings",
   "obsidian-style-settings",
@@ -25,5 +24,6 @@
   "obsidian-enhancing-export",
   "obsidian-plugin-toc",
   "execute-code",
-  "obsidian-custom-file-extensions-plugin"
+  "obsidian-custom-file-extensions-plugin",
+  "obsidian-imgur-plugin"
 ]

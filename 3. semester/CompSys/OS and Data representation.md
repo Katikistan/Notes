@@ -7,7 +7,7 @@ hex() #convert binary or dec to hex
 bin() #convert hex or dec to binary
 0b1 # binary number
 0x10 # hex number
-# to convert hex to dec simply type 0x10 it will then be converted to dec
+ARC# to convert hex to dec simply type 0x10 it will then be converted to dec
 
 import numpy as np
 np.log2(7) # using log 2 in python
@@ -220,8 +220,8 @@ Unix process can be in the following states:
 	- Creation and deletion of processes
 	- Control and manipulation of system resources such as CPU, memory, and I/O devices.
 
-![[unix_architecture.jpg|300]]
-![[traditional-unix-kernel.png|300]]
+![[unix_architecture 1.jpg|300]]
+![[traditional-unix-kernel 1.png|300]]
 - Allowing user-level programs to perform these operations could potentially lead to systeminstability or security vulnerabilities.
 - Process Management: The kernel manages the creation, execution and termination of processes. It also manages the scheduling of processes and assigns the CPU time to different processes.
 - Memory Management: The kernel manages the physical and virtual memory of the system and provides memory allocation and deallocation services to the processes.

@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "d661e1d0b6e92110",
+        "id": "5cdac6283714b7ac",
         "type": "tabs",
         "children": [
           {
-            "id": "85801628624bedce",
+            "id": "c9dbca492d53341b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "4. semester/AD/AD - Lecture man - 7.md",
+                "file": "Misc/åBilleder/Shortest path properties.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -21,12 +21,12 @@
             }
           },
           {
-            "id": "b947fe1151a0b504",
+            "id": "6d665a0685983840",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Weekly notes/Uge 7 - 2024.md",
+                "file": "Misc/Templates/Weekly notes.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -88,12 +88,11 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 336.5
+    "width": 200
   },
   "right": {
     "id": "1bdbff370dc1606a",
@@ -128,7 +127,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Weekly notes/Uge 7 - 2024.md",
+                "file": "Misc/Templates/Weekly notes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -145,7 +144,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Weekly notes/Uge 7 - 2024.md",
+                "file": "Misc/Templates/Weekly notes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -157,7 +156,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Weekly notes/Uge 7 - 2024.md"
+                "file": "Misc/Templates/Weekly notes.md"
               }
             }
           },
@@ -194,7 +193,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 324.5
+    "width": 324.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -210,53 +210,54 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "b947fe1151a0b504",
+  "active": "6d665a0685983840",
   "lastOpenFiles": [
-    "4. semester/AD/AD - Lecture man - 7.md",
-    "Misc/Templates/AD.md",
-    "4. semester/AD/Beregning af køretid.md",
-    "Weekly notes/Uge 7 - 2024.md",
-    "4. semester/AD/Sortering/Counting sort.md",
-    "4. semester/AD/Divide-and-Conquer/Divide-and-Conquer.md",
-    "4. semester/AD/Divide-and-Conquer/Recurrences.md",
-    "4. semester/AD/Reccurence relations.md",
-    "4. semester/AD/Sortering/Sammenlignings sortering/Merge sort.md",
-    "Excalidraw/12-02-24 11.14.28.excalidraw.md",
-    "4. semester/AD/Sortering/Radix sort.md",
-    "4. semester/AD/Sortering/Lower_bounds_for_sorting.md",
-    "4. semester/AD/Sortering/Bucket sort.md",
-    "4. semester/AD/Induktion.md",
-    "1. semester/Diskret matematik og algoritmer (DMA)/Diskret matematik/Logic/Methods of proof/Induction gennemgang.md",
-    "4. semester/AD/Graf algoritmer/Prims and Kruskals algoritme.md",
-    "4. semester/AD/Hashing.md",
-    "4. semester/AD/Abstrakt begregningsmodel (RAM).md",
-    "4. semester/AD/Løkke invarianter.md",
-    "Misc/Templates/GDS.md",
-    "Misc/Templates/Compsys.md",
-    "4. semester/AD/Divide-and-Conquer",
-    "4. semester/AD/Amortiseret analyse.md",
-    "4. semester/AD/Topologisk sortering.md",
-    "4. semester/AD/AD - Lecture ons - 6.md",
-    "Misc/Templates/Weekly notes.md",
-    "1. semester/Diskret matematik og algoritmer (DMA)/Diskret matematik/Logic/Methods of proof",
+    "2. semester/Softwareudvikling (SU)/Reading/SU - Reading for week 6.md",
+    "2. semester/Softwareudvikling (SU)/Technical debt.md",
+    "2. semester/Softwareudvikling (SU)/SU - Lecture man - 18.md",
+    "2. semester/Softwareudvikling (SU)/SU - Lecture man - 12.md",
+    "2. semester/Softwareudvikling (SU)/GRASP.md",
+    "2. semester/Softwareudvikling (SU)/Coupling.md",
+    "2. semester/Softwareudvikling (SU)/code quality.md",
+    "2. semester/Softwareudvikling (SU)/Wiki/SOLID principles.md",
+    "2. semester/Softwareudvikling (SU)/Wiki/Refactoring.md",
+    "2. semester/Softwareudvikling (SU)/Wiki/Design patterns.md",
+    "2. semester/Softwareudvikling (SU)/Wiki/Creating project and using config.md",
+    "2. semester/Softwareudvikling (SU)/Wiki/C sharp 101.md",
+    "Excalidraw/DIs.md",
+    "Excalidraw/Drawing 2022-12-03 13.04.39.excalidraw.md",
+    "Excalidraw/bigo.md",
+    "Misc/åBilleder/Shortest path properties.md",
+    "Cyber Security/Attacks",
+    "Cyber Security",
+    "Test af nyt tastatur.md",
+    "Misc/åBilleder/Pasted image 20240406183233.png",
+    "billeder.md",
+    "4. semester/Algoritmer og datastrukturer/Hashing.md",
+    "Excalidraw/Cusine.md",
+    "3. semester/Sandsynlighedsregning og statistik(SS)/SS Eksamens noter.md",
+    "3. semester/Sandsynlighedsregning og statistik(SS)/Lecture/SS - Lecture fre - 47.md",
+    "3. semester/Sandsynlighedsregning og statistik(SS)/Reading/SS - Reading for week 47.md",
+    "1. semester/Diskret matematik/Forelæsning permutations.md",
+    "1. semester/Diskret matematik/Logic/Quantifiers.md",
+    "1. semester/Diskret matematik/Logic/Boolean algebra.md",
+    "Misc/kurser.png",
+    "Misc/åBilleder/Pasted image 20240121161630.png",
+    "Misc/åBilleder/Pasted image 20240121161354.png",
+    "Misc/åBilleder/Pasted image 20240408074459.png",
+    "Misc/åBilleder/Pasted Image 20240408073613_059.png",
+    "Misc/åBilleder/Pasted image 20240408071945.png",
+    "Misc/åBilleder/Pasted image 20240408071924.png",
+    "Misc/åBilleder/Pasted image 20240408071821.png",
+    "Misc/åBilleder/Pasted image 20240408071515.png",
+    "4. semester/Algoritmer og datastrukturer/Randomenisering",
+    "4. semester/Algoritmer og datastrukturer/Divide-and-Conquer",
+    "1. semester/Diskret matematik/Logic/Methods of proof",
     "1. semester/Diskret matematik og algoritmer (DMA)/TODO/torsdag",
     "1. semester/Diskret matematik og algoritmer (DMA)/TODO/søndag",
     "1. semester/Diskret matematik og algoritmer (DMA)/TODO/onsdag",
     "1. semester/Diskret matematik og algoritmer (DMA)/TODO/lørdag",
     "1. semester/Diskret matematik og algoritmer (DMA)/TODO/fredag",
-    "1. semester/Diskret matematik og algoritmer (DMA)/Diskret matematik/Logic",
-    "1. semester/Diskret matematik og algoritmer (DMA)/Diskret matematik/Graph theory",
-    "1. semester/Diskret matematik og algoritmer (DMA)/Diskret matematik/Fundamentals",
-    "Pasted Image 20240125125314_921.png",
-    "Misc/åBilleder/unix_architecture.jpg",
-    "Misc/åBilleder/traditional-unix-kernel.png",
-    "Pasted Image 20240123223104_174.png",
-    "Untitled 1.png",
-    "Untitled.png",
-    "Misc/åBilleder/Compsys_eksamen/Pasted image 20240113142159.png",
-    "Misc/åBilleder/Compsys_eksamen/Pasted image 20240118160901.png",
-    "Misc/åBilleder/Pasted image 20240121133223.png",
-    "overview-kernel.png",
     "Untitled.canvas"
   ]
 }

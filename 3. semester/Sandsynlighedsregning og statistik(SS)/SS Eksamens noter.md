@@ -1,6 +1,6 @@
 # Tables
 ![](https://i.imgur.com/Wu8cvJ3.png)
-![](https://i.imgur.com/uKnbhGm.png)
+![]([](<https://i.imgur.com/uKnbhGm.png)>)
 # Opgave 1
 $$\int_a^b f(x) g(x) d x=[f(x) G(x)]_a^b-\int_a^b f^{\prime}(x) G(x) d x$$
 ![|350](https://i.imgur.com/D1qwnen.png)
@@ -52,7 +52,7 @@ $$|x|\leq1-|y|$$
 når man har med nummerisk værdi vil man altid kunne gøre følgende
 $$|x|\leq y \rightarrow -y\leq x\leq y$$
 derfor
-$$-(1-|y|)\leq x\leq1-|y|$$
+$$**-(1-|y|)\leq x\leq1-|y|**$$
 
 ## Tæthed til fordeling <=> Fordeling til tæthed
 $$F(x)=\int_{-\infty}^x f(t) d t$$

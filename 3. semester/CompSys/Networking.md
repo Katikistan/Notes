@@ -69,7 +69,7 @@ P2P service.
 A packet consists of control information and user data, which is also known as the payload
 
 To send a message from a source end system to a destination end system, the source breaks long messages into smaller chunks of data known as packets. Between source and destination, each packet travels through communication links and packet switches (for which there are two predominant types, routers and link-layer switches). Packets are transmitted over each communication link at a rate equal to the full transmission rate of the link. So, if a source end system or a packet switch is sending a packet of L bits over a link with transmission rate R bits/sec, then the time to transmit the packet is L / R seconds.
-![[Pasted image 20240121165741.png]]
+![](https://i.imgur.com/zjHh1yn.png)
 Store-and-forward transmission means that the packet switch must receive the entire packet before it can begin to transmit the first bit of the packet onto the outbound link.
 
 in addition to the store-and-forward delays, packets
@@ -112,8 +112,8 @@ reserves a constant transmission rate in the network’s links
 # Application layer
 ## HTTP
 ![](https://i.imgur.com/RTpbPsr.png)
-![[Pasted image 20240121133223.png]]
-![[Pasted image 20240121133259.png]]
+![](https://i.imgur.com/6UVNG4N.png)
+
 **extra line change before content**
 
 Request an response should at least have these. above
@@ -166,12 +166,14 @@ With HTTP/1.1 persistent connections, the server leaves the TCP connection open 
 
 
 an HTTP server is stateless, but often desirable for a Web site to identify users: Cookies. allow sites to keep track of users
-![[Pasted image 20240121134742.png]]
+![](https://i.imgur.com/9MS4ytD.png)
+
 including in the HTTP response a Set-cookie: header, which contains the identification number: Set-cookie: 1678
 
 ## Web cache
 A Web cache—also called a proxy server—is a network entity that satisfies HTTP requests on the behalf of an origin Web server. The Web cache has its own disk storage and keeps copies of recently requested objects in this storage.
-![[Pasted image 20240121134901.png]]
+![](https://i.imgur.com/JAWTZZ0.png)
+
 ## HTTP2
 The primary goals for HTTP/2 are to reduce perceived latency by enabling request and response multiplexing over a single TCP connection, provide request prioritization and server push, and provide efficient compression of HTTP header fields. HTTP/2
 does not change HTTP methods, status codes, URLs, or header fields. Instead, HTTP/2 changes how the data is formatted and transported between the client and server.
@@ -212,7 +214,8 @@ HTTPS on top of TCP, so reliable byte stream.
 - Adversary can’ t successfully drop or replay packet
 # Transport layer
 ## UDP
-![[Pasted image 20240121174044.png|250]]
+![](https://i.imgur.com/TDR5ybq.png)
+
 One way data transfer, dosent guarantee delivery, since there are no handshaking. no congestion or flow control
 
 Includes a checksum, but no way of knowing if packets are in correct order or lost. No retransmit. 
@@ -229,17 +232,20 @@ UDP is typically used for applications that do not require a reliable, ordered d
 **The optional and variable-length options field** is used when a sender and receiver negotiate the maximum segment size (MSS) or as a window scaling factor for use in high-speed networks.
 
 **The flag field contains 6 bits**. The ACK bit is used to indicate that the value carried in the acknowledgment field is valid; that is, the segment contains an acknowledgment for a segment that has been successfully received. The RST, SYN, and FIN bits are used for connection setup and teardown
-![[Pasted image 20240121160906.png]]
+![](https://i.imgur.com/dfadmQR.png)
+
 ### Connection-oriented vs Connectionless
 TCP is a connection-oriented protocol, which means that a connection must be established between the sender and receiver before any data can be sent. UDP, on the other hand, is connectionless, which means that data can be sent without establishing a connection first.
 ### Error checking
 TCP has error checking and correction mechanisms built in to ensure data integrity. UDP has minimal error checking, and any errors must be handled at the application level.
 
 TCP has more overhead than UDP because it establishes and maintains connections, performs error checking, and ensures data integrity. This can make TCP slower than UDP for some applications.
-![[Pasted image 20240121161354.png]]
+![](https://i.imgur.com/MilqnUm.png)
+
 ### Fast Retransmit
 One of the problems with timeout-triggered retransmissions is that the timeout period can be relatively long. When a segment is lost, this long timeout period forces the sender to delay resending the lost packet, thereby increasing the end-to-end delay. Fortunately, the sender can often detect packet loss well before the timeout event occurs by noting so-called duplicate ACKs. A duplicate ACK is an ACK that reacknowledges a segment for which the sender has already received an earlier acknowledgment.
-![[Pasted image 20240121161630.png]]
+![](https://i.imgur.com/wVGZPN3.png)
+
 
 ### Is TCP a GBN or an SR protocol?
 TCP acknowledgments are cumulative and correctly received but out-of-order segments are not individually ACKed by the receiver. TCP looks a lot like a GBN-style protocol. But there are some striking differences between TCP and Go-Back-N. Many TCP implementations will buffer correctly received but out-of-order
@@ -305,12 +311,15 @@ TCP uses acknowledgments to trigger (or clock) its increase in congestion window
 **How should a TCP sender determine the rate at which it**
 **should send?**
 
-![[Pasted image 20240121163025.png]]
+![](https://i.imgur.com/IThuIKP.png)
+
 Congestion control adjusts the sending rate of the sender based on network conditions to prevent packet loss and delays. 
 
 Congestion control, is a mechanism used to prevent network congestion by regulating the rate at which data is sent into the network. Congestion occurs when too much data is sent into the network, causing network resources such as bandwidth and buffer space to become exhausted. Congestion control is mainly used at the transport layer.
-![[blobid21-60f546786ae24.jpeg]]
-![[Tcp_westwood.gif]]
+![](https://i.imgur.com/Bqs54HQ.png)
+
+![](https://i.imgur.com/PYMJStI.png)
+
 ### Every step in the reno protocol example:
 - slow start
 - triple duplicate loss
@@ -322,7 +331,8 @@ Congestion control, is a mechanism used to prevent network congestion by regulat
 - timeout (control window = control window/2)
 - slow start
 TCP Tahoe dosent have fast recovery 
-![[Pasted image 20240121162934.png]]
+![](https://i.imgur.com/2JLXxo9.png)
+
 **RTT: round-trip time** 
 **cwnd: congestion window**
 **MSS: maximum segment size**
@@ -363,19 +373,23 @@ Suppose a process running in one host (client) wants to initiate a connection wi
 **step 2.** Once the IP datagram containing the TCP SYN segment arrives at the server host, the server extracts the TCP SYN segment from the datagram, allocates the TCP buffers and variables to the connection, and sends a connection-granted segment to the client TCP. the SYN bit is set to 1. Second, the acknowledgment field of the TCP segment header is set to client_isn+1. Finally, the server chooses its own initial sequence number (server_isn) and puts this value in the sequence number field of the TCP segment header. saying, in effect, “I received your SYN packet to start a connection with your initial sequence number, client_isn. I agree to establish this connection. My own initial sequence number is server_isn.” The connection-granted segment is referred to as a SYNACK segment.
 
 **Step 3.** Upon receiving the SYNACK segment, the client also allocates buffers and variables to the connection. The client host then sends the server yet another segment; this last segment acknowledges the server’s connection-granted segment. The SYN bit is set to zero, since the connection is established. This third stage of the three-way handshake may carry client-to-server data in the segment payload
-![[Pasted image 20240121162755.png]]
+![](https://i.imgur.com/H4MW5rA.png)
+
 Once these three steps have been completed, the client and server hosts can send segments containing data to each other. In each of these future segments, the SYN bit will be set to zero.
-![[Pasted image 20240121162828.png]]
+![](https://i.imgur.com/54YnhKO.png)
+
 ## Reliable data transfer
-![[Pasted image 20240121160801.png]]
+![](https://i.imgur.com/fZSNg6R.png)
+
 TCP provides a reliable connection, which means that data sent using TCP is guaranteed to reach the receiver. In contrast, UDP does not guarantee that data will reach the receiver, and packets can be lost or delivered out of order.
 
-sequence number in TCP keeps track of the number of bytes sent, while the acknowledgement number informs the sender of the next expected sequence number
+sequence number in TCP keeps track of the number of bytes sent, while the acknowledgement number infors the sender of the next expected sequence number
 
 The window size informs the sender of how many more bytes it can recieve before needing to wait. 
 
 all tcp connections are really 2 one way connections and have their own sequence of bytes, therefore both need a sequence number. 
-![[Pasted image 20240121140150.png]]
+![](https://i.imgur.com/UFfChe0.png)
+
 ## Flow control 
 TCP uses flow control mechanisms to prevent the sender from overwhelming the receiver. UDP does not have flow control mechanisms, so the sender can potentially overwhelm the receiver.
 
@@ -420,7 +434,8 @@ In Go-Back-N, the sender sends multiple packets of data in sequence, and the rec
 If the receiver receives a packet out of order, it will discard it and request a retransmission of that packet. 
 
 Once the sender receives an acknowledgement for a packet, it will slide the window forward to the next unacknowledged packet, allowing it to continue sending data. 
-![[Pasted image 20240121155206.png]]
+![](https://i.imgur.com/tRIB5Oi.png)
+
 constrained to have no more than some maximum allowable number, N, of unacknowledged packets in the pipeline
 
 Go-Back-N is efficient in terms of network bandwidth usage, as it does not require the sender to wait for an acknowledgement for every packet sent, but if a packet is lost, all packets sent after it will be retransmited which leads to waste of bandwidth.
@@ -433,16 +448,20 @@ simply returns the data back to the upper layer, an implicit indication that the
 **Receipt of an ACK:** In our GBN protocol, an acknowledgment for a packet with sequence number n will be taken to be a cumulative acknowledgment, indicating that all packets with a sequence number up to and including n have been correctly received at the receiver.
 
 **A timeout event:**. The protocol’s name, “Go-Back-N,” is derived from the sender’s behavior in the presence of lost or overly delayed packets. As in the stop-and-wait protocol, a timer will again be used to recover from lost data or acknowledgment  bnpackets. If a timeout occurs, the sender resends all packets that have been previously sent but that have not yet been acknowledged.
-![[Pasted image 20240121160102.png]]
+![](https://i.imgur.com/mLjIPTO.png)
+
 ### Selective repeat protocol (SR)
 GBN(Go-back-N) avoids this stop-and-wait protocol, however this can also cause performance problems. If window size and bandwith delay are big, many packets can be in the pipeline, thus if there is a packet error a whole bunch of packets must be retransmitted.
 
 
 In Selective Repeat, the sender sends multiple packets of data in sequence, and the receiver acknowledges receipt of each packet. However, unlike Go-Back-N, if the receiver receives a packet out of order, it will buffer it and request a retransmission of only the missing packets. This allows the receiver to continue processing the correctly received packets, reducing the delay caused by retransmitting all packets.
-![[Pasted image 20240121160550.png]]
-![[Pasted image 20240121160711.png]]
+![](https://i.imgur.com/RrZUNk5.png)
+
+![](https://i.imgur.com/GIuiteG.png)
+
 #### Eksamens opgave
-![[Pasted image 20240121222638.png]]
+![](https://i.imgur.com/mr8MgIS.png)
+
 
 | c0  | Sent packet 0 | 
 | --- | ------------- |
@@ -466,9 +485,10 @@ we assume that the window size is 3. 3 bursts of packets are send after each oth
 
 # Network layer
 ## IP protocol
-![[Pasted image 20240121163424.png]]
-An IP address is considered hierarchical because it is divided into different fields that represent different levels of the network hierarchy. The most common format of an IP address is IPv4, which is a 32-bit address divided into four octets. Each octet represents a different level of the network hierarchy:
+![](https://i.imgur.com/av5njMR.png)
 
+An IP address is considered hierarchical because it is divided into different fields that represent different levels of the network hierarchy. The most common format of an IP address is IPv4, which is a 32-bit address divided into four octets. Each octet represents a different level of the network hierarchy:
+<
 An octet is a unit of digital information that consists of eight bits. In the context of IP addresses, an octet refers to one of the four 8-bit fields that make up an IPv4 address. Each octet is represented by a decimal number between 0 and 255, and is separated by a period. In IPv6 addresses, an octet is represented by a 16-bit field (2 bytes) instead of 8-bit field.
 ![](https://i.imgur.com/UkQN91R.png)
 - **The first octet represents the network address, also known as the "class" of the IP address**
@@ -497,7 +517,8 @@ Bitmasking IP-addresses can be used for subnetting as well as converting IPv4 to
 DHCP allows a host to obtain (be allocated) an IP address automatically. A network administrator can configure DHCP so that a given host receives the same IP address each time it connects to the network, or a host may be assigned a temporary IP address that will be different each time the host connects to the network. In addition to host IP address assignment, DHCP also allows a host to learn additional information, such as its subnet mask, the address of its first-hop router (often called the default gateway), and the address of its local DNS server.  
 
 DHCP is a client-server protocol.
-![[Pasted image 20240121165327.png]]
+![](https://i.imgur.com/ofzUWPI.png)
+
 Often referred to as a plug-and-play or zeroconf(zero-configuration) protocol. This capability makes it very attractive to the network administrator who would otherwise have to perform these tasks manually!
 
 the student who carries a laptop from a dormitory room to
@@ -625,7 +646,8 @@ MAC addresses are also not hierarchical because they are not used for routing pu
 
 In summary, the purpose of MAC addresses is to identify devices on a LAN(local area network) and to ensure that data is delivered to the correct device. They are not hierarchical in nature and are not used for routing purposes.
 # Routing 
-![[Pasted image 20240121174909.png]]
+![](https://i.imgur.com/V7MiTib.png)
+
 Control plane is responsible for routing, while the actual forwarding happens at the data plane.
 
 Today, the routing is often implemented in software and a centralized server (Remote Controller) tells the router how datagrams should be forwarded. It is however, possible to manually alter a forwarding table in each router.
@@ -636,7 +658,8 @@ node to all other nodes in the graph. The algorithm repeatedly selects the node 
 D(v): Cost of least path from u (source) to v in this iteration
 p(v): Previous node of v along least-cost path
 N’: subset of nodes, that are part of shortest path
-![[Pasted image 20240121175113.png|250]]
+![](https://i.imgur.com/lZHuQJD.png)
+
 Asked to start at node A:
 
 | Step | N'  | D(B),p(B) | D(C),p(C) | D(D),p(D) | D(E),p(E) | D(F),p(F) |
@@ -698,24 +721,29 @@ No shorter paths where found therefore we are done.
 - Shortest path from A to F is of cost 7. We see that the previous node on this path is D and we know that the shortest path to D is by taking edge (A,B). Hence shortest path from A to F is by taking edge (A,B).
 
 ‘edge’ here means standing at A in which direction should you go such that you end up taking the shortest path to the destination node.
-![[Pasted image 20240121180651.png|150]]
+![|200](https://i.imgur.com/jOZQ3b6.png)
+
 ## Distant vector
 Distance vector routing is a method used by routers in a computer network to determine the best path for forwarding packets. In distance vector routing, each router maintains a table of the shortest distances to every other network, as well as the next hop on the path to that network. The basic function of distance vector routing is for each router to share its table of distances with its neighbors, and for each router to update its own table based on the
 information received from its neighbors. It's best suited for dynamic systems, but suffer from the counting to infinty problem.
 
 This process is known as distance vector algorithm or Bellman-Ford algorithm. The algorithm is iterative and each router continues to update its distance vector until the values in the vector stabilize and no further updates are made.
 ### Practical
-![[Pasted image 20240121182814.png|300]]
+![](https://i.imgur.com/yU0zC7F.png)
+
 
 - Initialize distance vector for each node with distance to reachable neighbours
 - Distance to self is simply 0
 - If a neighbour is unreachable, initialize to infinity
-![[Pasted image 20240121183302.png]]
+![](https://i.imgur.com/wykqbPE.png)
+
 Continuing shorter distances are found A to B then B to C (6+4=10) is cheaper than A to C (18), do the same for all node tables:
-![[Pasted image 20240121183439.png]]
-![[Pasted image 20240121183836.png]]
+![](https://i.imgur.com/bvhC5fq.png)
+
+![](https://i.imgur.com/oiccafO.png)
+´
 As there are no more optimizations, changes have propagated and we stop and get the following routing table
-![[Pasted image 20240121183946.png]]
+
 We take row A from node A table
 We take row B from node B table
 We take row C from node C table
@@ -764,11 +792,13 @@ Another tool is the use of Digital Signatures where a private key is used to sig
 Because hashing is deterministic, the same input will have the same output. Definitely a problem when users can’t be relied upon to have unique passwords
 
 Second problem is that rainbow tables of hashes of common passwords definitely exist and are used
-![[Pasted image 20240121192653.png|300]]
+![](https://i.imgur.com/dfkl38H.png)
+
 Therefore add a salt to your password before hashing. Salts should idealy be long, random, and unique to ensure minimum chances of collisions.
 
 Note the salt is stored as plaintext as we need it to verify our salted hash, but that isn’t a problem really
-![[Pasted image 20240121193201.png|300]]
+![](https://i.imgur.com/96Exs1L.png)
+
 This doesn’t make it impossible to still brute force, but each hash needs to computed independently
 ## Rainbow table
 A rainbow table is a precomputed table for caching the outputs of a cryptographic hash function, usually for cracking password hashes. Passwords are typically stored not in plain text form, but as hash values.
@@ -776,9 +806,11 @@ A rainbow table is a precomputed table for caching the outputs of a cryptographi
 If such a database of hashed passwords falls into the hands of an attacker, they can use a precomputed rainbow table to recover the plaintext passwords. A common defense against this attack is to compute the hashes using a key derivation function that adds a salt to each password before hashing it, with different passwords receiving different salts, which are stored in plain text along with the hash.
 ## Dictionary attack
 Hashes help obfuscate passwords, but hashtables of common passwords exist. We can see that Irene and Kirsty share a password
-![[Pasted image 20240121192451.png|200]]
+![|200](https://i.imgur.com/1qw0rPk.png)
+
 More intelligent brute force attack, just try common password hashes.
-![[Pasted image 20240121192556.png|200]]
+![|200](https://i.imgur.com/P2GROCX.png)
+
 All the rainbow tables in the world won’t help if our passwords are salted before being hashed
 ## Nonce:
 A nonce (short for "number used once") is a unique value that is generated for each authentication or encryption message, and is included in the message as part of the authentication or encryption process. Because the nonce is generated anew for each message, it can only be used once, making it difficult for an attacker to replay a previously intercepted message.

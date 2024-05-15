@@ -1,14 +1,14 @@
 ---
-date: <% tp.date.now("DD-MM-YY") %>
-day: <% tp.date.now("ddd") %>
-week: <% tp.date.now("W") %>
-year: <% tp.date.now("YYYY") %>
+date: 29-04-24
+day: man
+week: 18
+year: 2024
 excalidraw-plugin: parsed
 tags: [excalidraw]
 ---
 ==⚠  Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠==
 ##### Weekly note
-[[Uge <% tp.date.now("W") %> - <% tp.date.now("YYYY") %>]]
+[[Uge 18 - 2024]]
 
 # Text Elements
 %%
