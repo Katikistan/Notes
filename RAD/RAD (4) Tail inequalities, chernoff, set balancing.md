@@ -110,5 +110,9 @@ $$
 \end{aligned}
 $$
 ## Set balancing 
-
+en algoritme der finder en B vektor der kan ganges på A for at minimere max normen. Det kan blandt andet bruges til udvælgelse af forsøgs personer i kliniske forsøg.
+$$\underbrace{\begin{bmatrix}   1 & 0 & 0\\   1 & 1 & 0   \\ 1 & 0 & 0  \\ \end{bmatrix}}_A\underbrace{\begin{bmatrix}\pm1 \\ \pm1\\ \pm1\end{bmatrix}}_{B}=AB$$
+$$|AB|_\infty$$
+Ved at bruge Chernoff kan vi opnå en øvre grænse for fejl sandsynligheden. Det betyder altså at vi ikke behøver at sandsynligheden for  algoritmen fejler er meget lav. Vi behøver i fleste tilfælde ikke at køre 
+$$<2\sqrt{2n\ln(n)}$$
 ### Chernoff in set balancing 
