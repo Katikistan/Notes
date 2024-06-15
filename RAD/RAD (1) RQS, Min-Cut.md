@@ -90,87 +90,29 @@ RandMinCut(G ) may return any cut. In particular, it may return a cut of size > 
 
 A specific min-cut C is returned iff no edge from C
 was contracted.
-## Bevis
-For any min-cut C , the probability that 
-RandMinCut(G ) returns C is $\geq \frac{2}{n(n−1)}$ 
 
-Let $e_1 , \cdots , e_{n−2}$ be the contracted edges, let 
-$G_0 = G~and~ G_i = G_{i−1} /e_i$
 
-C is returned iff we have the event E1 ∩ . . . ∩ En−2 .
-Let $\mathcal{E}_{i}$ be the event that $e_{i} \notin C$.
-$C$ is returned iff we have the event $\mathcal{E}_{1} \cap \ldots \cap \mathcal{E}_{n-2}$.
- $\mathcal{E}_{1} \cap \ldots \mathcal{E}_{n-2}$ is thus the event that $C$ is not destroyed in any step of the algorithm.
- 
+C er et set af min cuts. Den her algoritme vælger en tillfældig edge og fjerner den, der er derfor en mulighed for at den fjerner en edge hvilket resultere at de vertexes vi ender med ikke er i C, dvs vi har en graf der ikke er i min-cut.
+![|300](https://i.imgur.com/z8lKZ31.png)
+her ser vi at hvis vi trækker 1 sammen får vi nu en knude c,d. vi kan se at c og d skal være i samme knude så vi har stadig min cut, men hvis vi istedet trak 4' sammen får vi a,c som ikke er i min-cut og defor fejler algoritmen. 
+
+Da vi vælger tillfældige knuder er der self en chance for at vi f.eks. vælger 4'. Vi er derfor nødt til at køre algoritmen et hvis antal gange. Der gælder
 $$
+\operatorname{Pr}[\text { some min-cut is returned }] \geq \operatorname{Pr}[C \text { is returned }] \geq \frac{2}{n(n-1)}
+$$
+hvis vi kalder RandMinCut(G) $t \frac{n(n-1)}{2}$ gange $$
 \begin{aligned}
-& \operatorname{Pr} {[C \text { returned }] } \\
-& \quad=\operatorname{Pr}\left[\mathcal{E}_{1} \cap \cdots \cap \mathcal{E}_{n-2}\right] \\
-& \quad=\prod_{i=1}^{n-2} \operatorname{Pr}\left[\mathcal{E}_{i} \mid \cap_{j=1}^{i-1} \mathcal{E}_{j}\right] \\
-&=\prod_{i=1}^{n-2} p_{i} \quad \text { where } p_{i}=\operatorname{Pr}\left[\mathcal{E}_{i} \mid \cap_{j=1}^{i-1} \mathcal{E}_{j}\right]
-\end{aligned}
-$$
-Because any cut in the contracted graph is also a cut in the  original graph.
-
-
-- Note that the edges incident to a vertex $v$ form a cut and so $d_{i}(v) \geq \lambda\left(G_{i}\right) \geq|C|$. 
-- Note that the edges incident to a vertex $v$ form a cut and so $d_{i}(v) \geq \lambda\left(G_{i}\right) \geq|C|$.
-- We use that each edge is counted twice in the sum $\sum_{v \in V_{i}} d_{i}(v)$.
-
-
-Let $i \in\{0,1, \ldots, n-2\}$.
-$G_{i}=\left(V_{i}, E_{i}\right)$ has $n_{i}=n-i$ vertices.
-Since contractions cannot decrease the min-cut size,
- $\lambda\left(G_{i}\right) \geq|C|$.
- It follows that the degree $d_{i}(v)$ of each vertex $v$ in $G_{i}$ is at least $|C|$.
- Summing up all degrees of $G_{i}$,
- $$
-\left|E_{i}\right|=\frac{1}{2} \sum_{v \in V_{i}} d_{i}(v) \geq \frac{1}{2} n_{i}|C| .
-$$
-
-We have shown. 
-$$
-1-p_{i} \leq \frac{2}{n-i+1}
-$$
-We have shown that for each $i \in\{0,1, \ldots, n-2\}$, $G_{i}=\left(V_{i}, E_{i}\right)$ has $n_{i}=n-i$ vertices and that $\left|E_{i}\right| \geq \frac{1}{2} n_{i}|C|$ The probability of the bad event of picking an edge of $C$ in the ith iteration, given that no edge of $C$ has been picked in a previous iteration, is
-
-$1-p_{i}=\operatorname{Pr}\left[\right.$ uniformly random $e \in E_{i-1}$ is in $\left.C \mid \cap_{j=1}^{i-1} \mathcal{E}_{j}\right]$
-$$
-=\frac{|C|}{\left|E_{i-1}\right|} \leq \frac{|C|}{\frac{1}{2} n_{i-1}|C|}=\frac{2}{n_{i-1}}=\frac{2}{n-(i-1)}
-$$
-$\Rightarrow p_{i} \geq 1-\frac{2}{n-i+1}=\frac{n-i-1}{n-i+1}$
-
-
-
-
-$$
-\begin{aligned}
-& \operatorname{Pr}[C \text { returned] } \\
-& =\prod_{i=1}^{n-2} p_{i} \text { where } p_{i}=\operatorname{Pr}\left[\mathcal{E}_{i} \mid \mathcal{E}_{1}\right. \\
-& \geq \prod_{i=1}^{n-2} \frac{-i-1}{n-i+1} \\
-& =\frac{n-2}{n} \cdot \frac{n-3}{n-1} \cdot \frac{n-4}{n-2} \cdots \frac{3}{5} \\
-& =\frac{2}{n(n-1)}
-\end{aligned}
-$$
-
-$$
-\begin{aligned}
-& \text { So for min-cut } C, \operatorname{Pr}[C \text { is returned }] \geq \frac{2}{n(n-1)} \text {. } \\
-& \text { Hence, } \\
-& \operatorname{Pr}[\text { some min-cut is returned }] \geq \operatorname{Pr}[C \text { is returned }] \geq \frac{2}{n(n-1)} \text {. }
-\end{aligned}
-$$
-
-Imagine calling RAndMinCut(G) $t \frac{n(n-1)}{2}$ times
- and taking the smallest cut returned.
- $$
-\begin{aligned}
-\operatorname{Pr}[\text { not a min-cut }] & \leq\left(1-\frac{2}{n(n-1)}\right)^{t \frac{n(n-1)}{2}} \\
+\operatorname{Pr}[\text { not a min-cut }] & \leq\left(1+(-\frac{2}{n(n-1)})\right)^{t \frac{n(n-1)}{2}} \\
 & \leq\left(e^{-\frac{2}{n(n-1)}}\right)^{t \frac{n(n-1)}{2}} \\
 & =e^{-t}
 \end{aligned}
 $$
-This uses that $1+x \leq e^{x}$ for all $x \in \mathbb{R}$
+bruger at $1+x \leq e^{x}$
+bruger at $(x^a)^b=x^{a\cdot b}$
+derfor bliver $(e^{-\frac{2}{n(n-1)}})^{t \frac{n(n-1)}{2}} =e^{(-\frac{2}{n(n-1)})\cdot (t\frac{n(n-1)}{2})}=e^{-(t\frac{2n(n-1)}{2n(n-1)})}=e^{-t}$
 
+In each call to RandMinCut(G ), the probability that a
+min-cut is not returned is at most $e^{-t}$. Choosing e.g. t = 21 we reduce the error probability to around one in a billion.
 
-In each call to RandMinCut( $G$ ), the probability that a min-cut is not returned is at most $1-\frac{2}{n(n-1)}$. Since the calls to RandMinCut( $G$ ) are independent of each other, the probability that no min-cut is among the cuts returned is the product. Choosing e.g. $t=21$ we reduce the error probability to around one in a billion. Choosing $t=c \ln n$ for constant $c \geq 1$, the algorithm is correct with high probability, namely probability at least  $1-e^{-c \ln n}=1-1 / n^{c} \geq 1-1 / n$. We thus get a tradeoff between running time and probability of sucess
+We thus get a tradeoff between running time and probability of sucess
+

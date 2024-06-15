@@ -1,6 +1,5 @@
 # Strærk Universalitet
 ![](https://i.imgur.com/tu0pVoZ.png)
-
 # Multiply-mod-prime
 Let $U = [u]$ and pick prime $p \geq u$. For any $a, b \in [p]$, and $m < u$,
 define $h^m_{a,b} : U → [m]$ by
