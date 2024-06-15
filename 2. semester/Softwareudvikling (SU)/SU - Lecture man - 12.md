@@ -21,12 +21,11 @@ An object is  stateless if  S = unit (the unit type, containing exactly one elem
 A class is a stateless object that contains object constructors for objects with state of type S
 
 Objects are created by constructor functions
-![[Pasted image 20230320092241.png|250]]
 
 Object type is the type of the public methods, without mentioning the state type (which is confidential/private)
 
 We say the state is encapsulated by the methods.
-![[Pasted image 20230320092421.png|400]]
+
 # Commands and queries
 in OO languages the state of an object may encompass the entire heap, The heap can be the  
 entire run-time memory of a running process
@@ -41,27 +40,12 @@ immutable object: Object with only queries.
 
 Design pattern: Command Query Separation
 A method is either a command or a query.
-![[Pasted image 20230320092815.png|300]]
-## Example
-![[Pasted image 20230320092721.png]]
-## Benefits
-![[Pasted image 20230320092839.png]]
-# Interface contract
-![[Pasted image 20230320092853.png]]
-# Pre- and postconditions
-<!--⚠️Imgur upload failed, check dev console-->
-![[Pasted image 20230320092906.png]]
 # Object invariants
 Logical property P that must hold of all internal states an object is in.
 Must be preserved under all state updates.
 
 Useful for proving post-conditions
 E.g., Invariant: counter >= 0.
-# Design by Contract
-![[Pasted image 20230320093009.png]]
-## Defensive Programming vs. Design by Contract
-<!--⚠️Imgur upload failed, check dev console-->
-![[Pasted image 20230320093040.png]]
 # Defensive Programming
 ![[Pasted image 20230320093114.png]]
 static and runtime checking (configurable per project)

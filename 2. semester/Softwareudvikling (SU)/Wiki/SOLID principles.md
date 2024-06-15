@@ -101,15 +101,13 @@ Can be done by using interfaces
 - Loose Coupling
 - Dependency Injection / Inversion of Control
 ### Dependency Injection / Inversion of Control
-![[Pasted image 20230313093422.png]]
+
 
 High & low level modules should depend upon abstractions
 
 No reference or dependency to a specific Data access technology should ever exist outside of the Data Access Assembly this includes ADO.net, LinqToSql, EF4, Nhibernate... 
 
 Only Interfaces and POCO (Plain Old CLR Objects) should be referenced between assemblies and primarily they should reference an interface.
-# SOLID BAD SMELLS
-![[Pasted image 20230313093520.png|350]]
 # A SOLID Summary
 ### SRP:
 There should never be more than one reason for a class to change

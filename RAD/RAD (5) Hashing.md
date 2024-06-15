@@ -49,6 +49,8 @@ Den ene er hurtigere fordi den bruger færre multiplikationer. De er begge unive
 Vores mål: vellighold at S ⊆ U, |S| = n, so et x ∈ U, sig hvis x ∈ S.
 
 ide: lad $m \geq n$ vælg en universal hashfunktion $h : U → [m]$. Gem et array L hvor L[i] er en linked list over $\{y \in S | h(y) = i\}$
+
+
 ![[Pasted image 20240613162613.png|450]]
 ## Bevis at, for x∈ S, E[|L[h(x)]|] ≤ 1
 antag at $m \geq n$, vil vise at for $x \in S, E[|L[h(x)]|] \leq 1$
@@ -86,7 +88,7 @@ Hvis m=n gælder der $E[C]<\frac{n}{2}$
 $$Pr[C>n]<\frac{1}{2}$$
 her er pladsforbruget $O(n)$
 ## 2 Level hashing
-Givet et statiks set S, |n|, har vi nu:
+Givet et statisk set S, |n|, har vi nu:
 - en hashfunktion $h : U \rightarrow [n], S_i = \{x \in S | h(x) = i\}, n_i = |Si|$,
 
 Der gælder for antallet af kollisioner: hvis vi vælger 2 elementer fra $n_i$ er kollisions sandsynligheden mindre end n.

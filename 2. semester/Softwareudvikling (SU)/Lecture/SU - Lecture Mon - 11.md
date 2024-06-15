@@ -259,15 +259,6 @@ One speaks also generally of message exchange:
 - Calling a method m for an object obj is interpreted as sending a message to obj.
 - The termination of m (and possibly the return of a value) are understood as the  answer of obj.
 
-Sequence diagram for describing the flow of  the observer pattern
-![[Pasted image 20230313111640.png]]
-![[Pasted image 20230313111746.png]]
-<!--Upload failed, remote server returned an error: [object Object]-->
-![[Pasted image 20230313111758.png]]
-![[Pasted image 20230313111810.png]]
-
-![[Pasted image 20230313111831.png]]
-![[Pasted image 20230313111855.png]]
 ## Findings from class and sequence diagrams
 The implementation of the observer pattern requires  
 little effort, since essential sequences can be defined  
