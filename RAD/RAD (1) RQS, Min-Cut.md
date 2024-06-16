@@ -84,22 +84,15 @@ Problem: Given a connected graph $G = (V, E)$
 Find smallest C ⊆ E that splits G. C is called a min-cut, and λ(G ) := |C| is the min-cut size (also called the edge connectivity of G ).
 ![[Pasted image 20240614160453.png]]
 
-den trækker en edge sammen, dvs at vertexes der er forbundet med en edge bliver trukket sammen.
-
-RandMinCut(G ) may return any cut. In particular, it may return a cut of size > λ(G).
-
-A specific min-cut C is returned iff no edge from C
-was contracted.
-
-
-C er et set af min cuts. Den her algoritme vælger en tillfældig edge og fjerner den, der er derfor en mulighed for at den fjerner en edge hvilket resultere at de vertexes vi ender med ikke er i C, dvs vi har en graf der ikke er i min-cut.
+C er et set af min cuts. Den her algoritme vælger en tillfældig edge og fjerner den (trækker den sammen), der er derfor en mulighed for at den fjerner en edge hvilket resultere at de vertexes vi ender med ikke er i C, dvs vi har en graf der ikke er i min-cut.
 ![|300](https://i.imgur.com/z8lKZ31.png)
 her ser vi at hvis vi trækker 1 sammen får vi nu en knude c,d. vi kan se at c og d skal være i samme knude så vi har stadig min cut, men hvis vi istedet trak 4' sammen får vi a,c som ikke er i min-cut og defor fejler algoritmen. 
 
-Da vi vælger tillfældige knuder er der self en chance for at vi f.eks. vælger 4'. Vi er derfor nødt til at køre algoritmen et hvis antal gange. Der gælder
+Da vi vælger tillfældige knuder er der self en chance for at vi f.eks. vælger 4'. Vi er derfor nødt til at køre algoritmen et hvis antal gange. Der gælder sandsynligheden for vores min cut overlever er:
 $$
 \operatorname{Pr}[\text { some min-cut is returned }] \geq \operatorname{Pr}[C \text { is returned }] \geq \frac{2}{n(n-1)}
 $$
+
 hvis vi kalder RandMinCut(G) $t \frac{n(n-1)}{2}$ gange $$
 \begin{aligned}
 \operatorname{Pr}[\text { not a min-cut }] & \leq\left(1+(-\frac{2}{n(n-1)})\right)^{t \frac{n(n-1)}{2}} \\
@@ -109,10 +102,17 @@ hvis vi kalder RandMinCut(G) $t \frac{n(n-1)}{2}$ gange $$
 $$
 bruger at $1+x \leq e^{x}$
 bruger at $(x^a)^b=x^{a\cdot b}$
-derfor bliver $(e^{-\frac{2}{n(n-1)}})^{t \frac{n(n-1)}{2}} =e^{(-\frac{2}{n(n-1)})\cdot (t\frac{n(n-1)}{2})}=e^{-(t\frac{2n(n-1)}{2n(n-1)})}=e^{-t}$
+derfor bliver $(e^{-\frac{2}{n(n-1)}})^{t \frac{n(n-1)}{2}} =e^{(-\frac{2}{n(n-1)})\cdot (t\frac{n(n-1)}{2})}=e^{-(t\frac{2n(n-1)}{2n(n-1)})}=e^{-t}=\frac{e}{t}$
 
-In each call to RandMinCut(G ), the probability that a
-min-cut is not returned is at most $e^{-t}$. Choosing e.g. t = 21 we reduce the error probability to around one in a billion.
+I hvert kald, gælder der at sandsynligheden for at min-cut ikke returneres er højst $e^{-t}$. hvis vi nu vælger e.g. t = 21 reduceres fejl sandsynligheden til 1 ud af en milliard.
 
-We thus get a tradeoff between running time and probability of sucess
+vi vælger altså mellem høj sucess sandsynlighed og køretid. 
+# Binary planar partitions (ekstra)
+Given a set $S = \{s_1,s_2,. . ., s_n\}$ of non-intersecting line segments in the plane, we wish to find a binary planar partition such that every region in the partition contains at most one line segment (or a portion of one line segment). 
+![[Pasted image 20240616145023.png]]
+If every line used in a BPP contains one of the
+segments, it is called an autopartition.
+![[Pasted image 20240616145439.png]]
+The expected size of the returned autopartition is
+O(n log n) for any input of size n.
 
