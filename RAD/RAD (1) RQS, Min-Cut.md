@@ -93,7 +93,8 @@ $$
 \operatorname{Pr}[\text { some min-cut is returned }] \geq \operatorname{Pr}[C \text { is returned }] \geq \frac{2}{n(n-1)}
 $$
 
-hvis vi kalder RandMinCut(G) $t \frac{n(n-1)}{2}$ gange $$
+hvis vi kalder RandMinCut(G) $t \frac{n(n-1)}{2}$ gange 
+$$
 \begin{aligned}
 \operatorname{Pr}[\text { not a min-cut }] & \leq\left(1+(-\frac{2}{n(n-1)})\right)^{t \frac{n(n-1)}{2}} \\
 & \leq\left(e^{-\frac{2}{n(n-1)}}\right)^{t \frac{n(n-1)}{2}} \\

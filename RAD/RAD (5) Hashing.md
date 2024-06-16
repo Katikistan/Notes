@@ -1,33 +1,3 @@
-# Strærk Universalitet
-![](https://i.imgur.com/tu0pVoZ.png)
-# Multiply-mod-prime
-Let $U = [u]$ and pick prime $p \geq u$. For any $a, b \in [p]$, and $m < u$,
-define $h^m_{a,b} : U → [m]$ by
-$$h^m_{a,b}(x) = ((ax + b)~mod~ p) ~mod~ m$$
-hvis a er uniform i $[p]_+=\{1,...,p-1\}$
-og b er uniform i$[p]=\{1,...,p-1\}$
-så er $h^m_{a,b} : U → [m]$ en universal hash function
-*Tager konstant tid og plads*
-```
-MultiplyModPrime(x) 
-	q = 89
-	p = 2^q - 1 // mesinner prime
-	a,b = random.Bigint
-	y = ((a*x+b) & p) + ((a*x+b) >> q)
-	if (y >= p) 
-		y -= p
-	return y & ((2^l - 1))
-```
-# Multiply Shift
-
-**Def:** en hash funktion $h : U → [m]$ er c-approksimativt universal hvis, $\forall x  \neq y \in U: Pr[h(x) = h(y )] \leq c/m$.
-
-Let $u = 2^w$ and $m = 2^l$ være toer-potenser. lad $a$ være uniformt
-tillfældig ulige integer i $[u]$. Definer *mulitply-shift* hash funktionen
-$h_a : [u] → [m]$ ved:
-$$h_a(x)=\lfloor\frac{(ax)~mod~2^w}{2^{w-l}}\rfloor$$
-Dertil er $h_a$ 2-approksimativt universal
-**C kode:** $(a*x) >> (w-l)$
 # Fremlæggelse 
 ## Universality 
 A hash function $h : U → [m]$ is universal if, for all $$x \neq y \in U:
@@ -106,3 +76,34 @@ Der gælder at $n^2_i=n_i+2\begin{pmatrix}n_i\\2\end{pmatrix}=n_i+\frac{2n_i(n_i
 $$O(n+\sum_{i\in[n]}(n_i+2\begin{pmatrix}n_i\\2\end{pmatrix}))$$Det gælder at $\sum_{i\in[n]}2\begin{pmatrix}n_i\\2\end{pmatrix}=O(2C)$, summen af $\sum_{i\in[n]}n_i=O(n)$
 $$O(n+n+2C)=O(C)=O(n)$$
 C er højst n derfor gælder $O(C)=O(n)$.
+
+# Strærk Universalitet
+![](https://i.imgur.com/tu0pVoZ.png)
+# Multiply-mod-prime
+Let $U = [u]$ and pick prime $p \geq u$. For any $a, b \in [p]$, and $m < u$,
+define $h^m_{a,b} : U → [m]$ by
+$$h^m_{a,b}(x) = ((ax + b)~mod~ p) ~mod~ m$$
+hvis a er uniform i $[p]_+=\{1,...,p-1\}$
+og b er uniform i$[p]=\{1,...,p-1\}$
+så er $h^m_{a,b} : U → [m]$ en universal hash function
+*Tager konstant tid og plads*
+```
+MultiplyModPrime(x) 
+	q = 89
+	p = 2^q - 1 // mesinner prime
+	a,b = random.Bigint
+	y = ((a*x+b) & p) + ((a*x+b) >> q)
+	if (y >= p) 
+		y -= p
+	return y & ((2^l - 1))
+```
+# Multiply Shift
+
+**Def:** en hash funktion $h : U → [m]$ er c-approksimativt universal hvis, $\forall x  \neq y \in U: Pr[h(x) = h(y )] \leq c/m$.
+
+Let $u = 2^w$ and $m = 2^l$ være toer-potenser. lad $a$ være uniformt
+tillfældig ulige integer i $[u]$. Definer *mulitply-shift* hash funktionen
+$h_a : [u] → [m]$ ved:
+$$h_a(x)=\lfloor\frac{(ax)~mod~2^w}{2^{w-l}}\rfloor$$
+Dertil er $h_a$ 2-approksimativt universal
+**C kode:** $(a*x) >> (w-l)$

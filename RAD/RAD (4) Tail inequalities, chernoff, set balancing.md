@@ -91,28 +91,11 @@ $$
 & <e^{-\frac{\delta^{2}}{2} \mu}(\text { Theorem 4.2) }
 \end{aligned}
 $$
-This is exactly the same setup as for the first Chernoff bound, except that we require $\mu \leq \mathbb{E}[X]$ instead of $\mu \geq \mathbb{E}[X]$. Compare with the previous bound: for any $\delta>0$,
-$$
-\operatorname{Pr}[X>(1+\delta) \mu]<\left(\frac{e^{\delta}}{(1+\delta)^{(1+\delta)}}\right)^{\mu}
-$$
-![](https://i.imgur.com/yGjhXH1.png)
 ### Proof
 beviset er identisk men det er $1-\delta$ istedet og uligheden er vendt i $\operatorname{Pr}[X<(1-\delta) \mu]$ ellers er alle skridt ens. 
-$$
-\begin{aligned}
-\operatorname{Pr}[X<(1-\delta) \mu] & =\operatorname{Pr}\left[(1-\delta)^{x}>(1-\delta)^{(1-\delta) \mu}\right] \\
-& <\frac{\mathbb{E}\left[(1-\delta)^{x}\right]}{(1-\delta)^{(1-\delta) \mu}} \\
-& =\frac{\prod_{i=1}^{n} \mathbb{E}\left[(1-\delta)^{x_{i}}\right]}{(1-\delta)^{(1-\delta) \mu}} \\
-& =\frac{\prod_{i=1}^{n}\left(1-p_{i} \delta\right)}{(1-\delta)^{(1-\delta) \mu}} \\
-& \leq \frac{\prod_{i=1}^{n} e^{-p_{i} \delta}}{(1-\delta)^{(1-\delta) \mu}} \\
-& =\frac{e^{-\delta \sum_{i=1}^{n} p_{i}}}{(1-\delta)^{(1-\delta) \mu}} \\
-& \leq \frac{e^{-\delta \mu}}{(1-\delta)^{(1-\delta) \mu}}=\left(\frac{e^{-\delta}}{(1-\delta)^{(1-\delta)}}\right)^{\mu}
-\end{aligned}
-$$
 ## Set balancing 
 en algoritme der finder en B vektor der kan ganges på A for at minimere max normen. Det kan blandt andet bruges til udvælgelse af forsøgs personer i kliniske forsøg.
 $$\underbrace{\begin{bmatrix}   1 & 0 & 0\\   1 & 1 & 0   \\ 1 & 0 & 0  \\ \end{bmatrix}}_A\underbrace{\begin{bmatrix}\pm1 \\ \pm1\\ \pm1\end{bmatrix}}_{B}=AB$$
 $$|AB|_\infty$$
 Ved at bruge Chernoff kan vi opnå en øvre grænse for fejl sandsynligheden. Det betyder altså at vi ikke behøver at sandsynligheden for  algoritmen fejler er meget lav. Vi behøver i fleste tilfælde ikke at køre 
 $$<2\sqrt{2n\ln(n)}$$
-### Chernoff in set balancing 
