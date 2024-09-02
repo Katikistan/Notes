@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "49ed77bf6493f95b",
+        "id": "07a3521d50014df7",
         "type": "tabs",
         "children": [
           {
-            "id": "b650cf461bb04427",
+            "id": "1d3fd2185afe77bc",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "RAD/RAD (6-7) Basic count sketch.md",
+                "file": "5. semester/MLA/Lecture/MLA - Lecture man - 36.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 261.5
   },
   "right": {
     "id": "1bdbff370dc1606a",
@@ -113,7 +113,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "RAD/RAD (6-7) Basic count sketch.md",
+                "file": "5. semester/MLA/Lecture/MLA - Lecture man - 36.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -130,7 +130,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "RAD/RAD (6-7) Basic count sketch.md",
+                "file": "5. semester/MLA/Lecture/MLA - Lecture man - 36.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -142,7 +142,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "RAD/RAD (6-7) Basic count sketch.md"
+                "file": "5. semester/MLA/Lecture/MLA - Lecture man - 36.md"
               }
             }
           },
@@ -196,13 +196,35 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "b650cf461bb04427",
+  "active": "23ea683fc4398039",
   "lastOpenFiles": [
-    "RAD/RAD (4) Tail inequalities, chernoff, set balancing.md",
-    "RAD/RAD (6-7) Basic count sketch.md",
+    "5. semester/MLA/Wiki",
+    "5. semester/MLA/Reading",
+    "5. semester/MLA/Lecture/MLA - Lecture man - 36.md",
+    "Misc/Templates/Compsys.md",
+    "Misc/Templates/MLA.md",
+    "Untitled.md",
+    "5. semester/MLA/Lecture",
+    "5. semester/MLA",
+    "5. semester/MLA",
+    "MLA lecture 1.md",
+    "Misc/Templates/AD.md",
+    "RAD/RAD (1) RQS, Min-Cut.md",
+    "5. semester",
+    "RAD/rad.zip",
+    "RAD/zirYrMdV",
+    "RAD/RAD (1) RQS, Min-Cut.pdf",
     "RAD/RAD (2-3) Moments and Deviation.md",
+    "RAD/RAD (2-3) Moments and Deviation.pdf",
+    "4. semester/Algoritmer og datastrukturer/Randomenisering/3. Moments and Deviations.md",
+    "3. semester/Sandsynlighedsregning og statistik(SS)/SS Eksamens noter.md",
+    "RAD/RAD_(4).pdf",
     "RAD/RAD (5) Hashing.md",
-    "RAD/RAD (1).md",
+    "RAD/RAD (6-7) Basic count sketch.md",
+    "RAD/RAD (4) Tail inequalities, chernoff, set balancing.md",
+    "Pasted image 20240616145439.png",
+    "Pasted image 20240616145023.png",
+    "Pasted image 20240616143942.png",
     "Pasted image 20240614160453.png",
     "2. semester/Softwareudvikling (SU)/Coupling.md",
     "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture Tue - 11.md",
@@ -216,33 +238,12 @@
     "2. semester/Softwareudvikling (SU)/Reading/SU - Reading for week 10.md",
     "2. semester/Softwareudvikling (SU)/Reading/SU - Reading for week 7.md",
     "2. semester/Softwareudvikling (SU)/Reading/SU - Reading for week 6.md",
-    "2. semester/Softwareudvikling (SU)/Wiki/Creating project and using config.md",
-    "2. semester/Softwareudvikling (SU)/Wiki/Design patterns.md",
-    "2. semester/Softwareudvikling (SU)/Wiki/SOLID principles.md",
-    "2. semester/Softwareudvikling (SU)/Wiki/Refactoring.md",
-    "2. semester/Softwareudvikling (SU)/Wiki/C sharp 101.md",
-    "2. semester/Softwareudvikling (SU)/SU - Lecture man - 12.md",
-    "2. semester/Softwareudvikling (SU)/GRASP.md",
-    "2. semester/Softwareudvikling (SU)/code quality.md",
     "Pasted image 20240613162613.png",
     "Pasted image 20240613143345.png",
-    "RAD",
     "Weekly notes/Pasted image 20240605144601.png",
-    "Cyber Security/Attacks",
-    "Cyber Security",
     "Misc/åBilleder/Pasted image 20240406183233.png",
     "Misc/kurser.png",
     "Misc/åBilleder/Pasted image 20240121161630.png",
-    "Misc/åBilleder/Pasted image 20240121161354.png",
-    "Misc/åBilleder/Pasted image 20240408074459.png",
-    "Misc/åBilleder/Pasted Image 20240408073613_059.png",
-    "4. semester/Algoritmer og datastrukturer/Randomenisering",
-    "4. semester/Algoritmer og datastrukturer/Divide-and-Conquer",
-    "1. semester/Diskret matematik/Logic/Methods of proof",
-    "1. semester/Diskret matematik og algoritmer (DMA)/TODO/torsdag",
-    "1. semester/Diskret matematik og algoritmer (DMA)/TODO/søndag",
-    "1. semester/Diskret matematik og algoritmer (DMA)/TODO/onsdag",
-    "1. semester/Diskret matematik og algoritmer (DMA)/TODO/lørdag",
     "Untitled.canvas"
   ]
 }

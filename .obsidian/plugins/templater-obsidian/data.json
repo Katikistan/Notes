@@ -57,6 +57,10 @@
     {
       "folder": "4. semester/GDS",
       "template": "Misc/Templates/GDS.md"
+    },
+    {
+      "folder": "5. semester/MLA",
+      "template": "Misc/Templates/MLA.md"
     }
   ],
   "syntax_highlighting": true,

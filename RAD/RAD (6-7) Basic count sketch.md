@@ -3,7 +3,9 @@ vi vil estimere frekvens af elemener i en strøm: $(x_0 , \Delta_0 ), . . . , (x
 frekvens af x: $f_x:=\sum\{\Delta_i|x_i=x\}$
 E.g, with (7, 20), (3, −5), (7, −3), (9, 100), $f_{7}=20-3=17$ 
 
-vi bruger 2 hash funktioner og for et given ε > 0 giver vi et estimat $\hat{f_x}$, af frekvensen, $f_x$, for en given nøgle $x$ så at: $Pr[|\hat{f_x}-f_x|\leq \epsilon||f_{-x}||_{2}]\geq \frac{3}{4}$.
+vi bruger 2 hash funktioner og for et given ε > 0 giver vi et estimat $\hat{f_x}$, af frekvensen, $f_x$, for en given nøgle $x$ så at:
+
+$Pr[|\hat{f_x}-f_x|\leq \epsilon||f_{-x}||_{2}]\geq \frac{3}{4}$.
 
 her er Euclidean norm:
 $$||f_{-x}||_{2}=\sqrt{||f_{-x}||^2_2}=\sqrt{\sum_{y\neq x}f_y^2}$$
@@ -58,14 +60,18 @@ $$
 
 **Proof** $E[\hat{f}_{x}]=E[s(x) \cdot C[h(x)]]=f_x$
 
-her er $C[h(x)]$ hvor mange gange vi har countet h(x).
-Det er det samme som at vi løber igennem universet og 
+her er $C[h(x)]$ hvor mange gange vi har countet x.
+Det er det samme som at vi løber igennem universet
+$C[h(x)]=\sum_{y \in[u]} f_{y} s(y) B_{x y}$
+
+
+
 
 et element tælles kun når $B_{xy}=1$, da $B_{xy}$ er indikator
-$$=s(x) \cdot \sum_{y \in[u]} f_{y} s(y) B_{x y} \text { where } B_{x y}=[h(y)=h(x)]$$
+$$\hat{f_x}=s(x) \cdot \sum_{y \in[u]} f_{y} s(y) B_{x y} \text { where } B_{x y}=[h(y)=h(x)]$$
 ligesom at man må trække en konstant ud af en sum så må man også gerne putte den ind i en sum. 
 $$=\sum_{y \in[u]} f_{y} s(x) s(y) B_{x y}$$
-$s(x)^2B_{xx}=s(y)^2B_{yy}=1$ fordi $s(x)=\{-1,1\}$, $s(x)=s(y)$ så $s(x)^2=1$,  $B_{xx}=[h(x)=h(x)]=1$. Derfor splitter vi vores sum i to: alle de cases fra summen hvor x og y er ens, det er $f_x$:
+$s(x)^2B_{xx}=s(y)^2B_{yy}=1$ fordi $s(x)=\{-1,1\}$, $s(x)=s(y)$ så $s(x)^2=1$,  $B_{xx}=[h(x)=h(x)]=1$. Derfor splitter vi vores sum i to: alle de cases fra summen hvor x og y er ens, det er $f_x$: Der gælder $f_{x}\cdot s(x)^{2}\cdot B_{xx}=f_{x}$
 
 $$\hat{f}_{x}=f_{x}+\sum_{y \neq x} f_{y} s(x) s(y) B_{x y}$$
 $$\mathrm{E}\left[\hat{f}_{x}\right]=\mathrm{E}[f_{x}]+\mathrm{E}[\sum_{y \neq x} f_{y} s(x) s(y) B_{x y}]$$
@@ -106,13 +112,15 @@ $$
 # Full count sketch overordnet
 i full count sketch bruger vi median tricket til at begrænse fejlsandsynlighed for estimatet vi får på $f_x$, vi kan bruge median tricket til at få 1 − δ sandsynlighed istedet for $\frac{3}{4}$.
 
- For fejl sandsynlighed $\delta>0$, gentager vi algorithmen $m=\lceil 12 \log (1 / \delta)\rceil$ gange i parallel, så vi får estimater $\hat{f}_{x}^{(1)}, \ldots, \hat{f}_{x}^{(m)}$, $\hat{f}_{x}=\operatorname{median}\left\{\hat{f}_{x}^{(1)}, \ldots, \hat{f}_{x}^{(m)}\right\}$. der gælder så ved brug af median tricket at
+gentag algo m gange så vi får estimater $\hat{f}_{x}^{(1)}, \ldots, \hat{f}_{x}^{(m)}$, $\hat{f}_{x}=\operatorname{median}\left\{\hat{f}_{x}^{(1)}, \ldots, \hat{f}_{x}^{(m)}\right\}$. der gælder så ved brug af median tricket at
 $$
 \operatorname{Pr}\left[\left|\hat{f}_{x}-f_{x}\right| \leq \varepsilon\left\|\mathbf{f}_{-x}\right\|_{2}\right] \geq 1-e^{(-m / 12)} \geq 1-e^{(-\log (1 / \delta))}=1-\delta
 $$
 $$
 \operatorname{Pr}\left[\left|\hat{f}_{x}-f_{x}\right| \geq \varepsilon\left\|\mathbf{f}_{-x}\right\|_{2}\right] \leq \delta
 $$
+ For fejl sandsynlighed $\delta>0$, gentager vi algorithmen $m=\lceil 12 \log (1 / \delta)\rceil$ gange i parallel,
+ 
 Pladsforbrug: 
 $O(m k \log n)=O(\frac{4\cdot12log(1 / \delta)}{\epsilon^2})=O\left(\frac{\log (1 / \delta)}{\varepsilon^{2}} \log n\right)$ tid til at process et element i streamen er $O(\log (1 / \delta))$.
 # 2nd moment estimation (ekstra)

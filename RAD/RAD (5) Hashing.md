@@ -15,13 +15,13 @@ så er $h^m_{a,b} : U → [m]$ en universal hash function
 
 Den ene er hurtigere fordi den bruger færre multiplikationer. De er begge universelle.
 ## Hash tabel 
-Vores mål: vellighold at S ⊆ U, |S| = n, so et x ∈ U, sig hvis x ∈ S.
+Vores mål: vellighold at S ⊆ U, |S| = n, så et x ∈ U, sig hvis x ∈ S.
 
 ide: lad $m \geq n$ vælg en universal hashfunktion $h : U → [m]$. Gem et array L hvor L[i] er en linked list over $\{y \in S | h(y) = i\}$
 
 
 ![[Pasted image 20240613162613.png|450]]
-## Bevis at, for x∈ S, E[|L[h(x)]|] ≤ 1
+	## Bevis at, for x∈ S, E[|L[h(x)]|] ≤ 1
 antag at $m \geq n$, vil vise at for $x \in S, E[|L[h(x)]|] \leq 1$
 
 antallet af elementer der hasher til samme sted som x er antallet af y'er i S hvor dens hashværdi er den samme som x eller de y'er der lander i samme linked list som x. 
@@ -40,30 +40,26 @@ $$\frac{n}{m}\leq1$$
 vi kan altså upperbounde søgetiden til 1 med andre ord er søgetiden O(1). Vi har altså en **Forventet** søgetid på O(1)
 
 Her er vores table dynamisk, så vi kan justere størrelsen
-## 1 level hashing 
+## 2 Level hashing
 Den er statisk, så vi vælger én størrelse for tabellen og så bliver den ikke større. Vi vil gerne for faktisk konstant søgetid og ikke forventet som i hashing med chaining. 
 
-$$E[C]=\sum_{\{x,y\}\subseteq S}Pr[h(x)=h(y)]\leq$$
-Vi har en universal hash funktion sandsyndlighed for kollision 1/m, vi vælger 2 værdier fra S derfor vælger vi 2 værdier ud a |S|=n
-$$\begin{pmatrix}n\\2\end{pmatrix}\frac{1}{m}=\frac{n(n-1)}{2}\cdot\frac{1}{m}=\frac{n^2-n}{2m}$$
-Lad os nu bruge markov til at kigge på Sandynligheden for at kollision:
-$$Pr[C>2E[C]]<\frac{1}{2}$$
-Lad $m=n^2$, da bliver $E[C]<1/2$ fordi vores $n^2$ spiser $n(n-1)$ som bliver mindre end 1. 
-$$Pr[C>2\frac{1}{2}]<\frac{1}{2} \rightarrow Pr[C>1]<\frac{1}{2}$$
-altså gælder der at plads for bruget er $O(n+m)=O(n+n^2)=O(n^2)$
-Forventet antal af kollisioner er mindre end 1/2, sandsynligheden for at vi får 1 eller flere kollisioner er højst 1/2
+$m=n$
 
-Hvis m=n gælder der $E[C]<\frac{n}{2}$
-$$Pr[C>n]<\frac{1}{2}$$
-her er pladsforbruget $O(n)$
-## 2 Level hashing
-Givet et statisk set S, |n|, har vi nu:
-- en hashfunktion $h : U \rightarrow [n], S_i = \{x \in S | h(x) = i\}, n_i = |Si|$,
+Givet et statisk set S, |S|=n:
+
+**Første niveau:**
+1 universal hashfunktion:  $h : U \rightarrow [n]$,
+har hashfunktion hvor der skal gælde $C_{h} < n$
+vi prøver med nye hash funktioner indtil at $C_{h} < n$, vi forventer at bruge 2 forsøg. 
+Den liste h(x) hasher til: $S_i = \{x \in S | h(x) = i\}$
+
+**Andet niveau:** 
+one-level hash table for hvert $S_i$ hvor $|S_i|=n_{i}\geq 1$, vi laver n kollisionsfrie universale hashfunktioner: $i ∈ [n_i]$ hvor $n_i ≥ 1$, lad $h_i : U → [m_i]$
+$m_{i}=n_i^2$
 
 Der gælder for antallet af kollisioner: hvis vi vælger 2 elementer fra $n_i$ er kollisions sandsynligheden mindre end n.
 $$C=\sum_{i\in[n]}\begin{pmatrix}n_i\\2\end{pmatrix}<n$$
-- hvert $i \in [n]$, med $n_i > 0$ har en kollisions fri hashfunktion på $S_i$ $h_i : U → [n_i^2 ]$
-Dvs der er en hashfunktion der hasher et element ind i den første tabel med størrelse n og så $i$ hashfunktioner der hver især hasher et element ind i den indre tabel som har størrelsen $n_i^2$
+hvert $i \in [n]$, med $n_i > 0$ har en kollisions fri hashfunktion på $S_i$ $h_i : U → [n_i^2 ]$
 
 dvs der kan være n tabeller med $n_i^2$ elementer i.
 ### Bestemmelse af pladsforbrug for 2-level hashing
