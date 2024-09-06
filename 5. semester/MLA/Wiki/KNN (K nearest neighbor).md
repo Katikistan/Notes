@@ -3,9 +3,9 @@ date: 02-09-24
 day: man
 week: 36
 year: 2024
-type: Lecture
+type: Wiki
 course: MLA
-status: 
+status: open
 semester: 5
 tags:
 Summary: ""
@@ -13,9 +13,4 @@ Summary: ""
 ##### Weekly note
 [[Uge 36 - 2024]]
 
-# KNN
-
-## Choosing K 
-
-# Validation 
-
+# 

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "5. semester/MLA/Lecture/MLA - Lecture man - 36.md",
+                "file": "5. semester/MLA/Wiki/Markov (Mark) & Chebyshev (Chebysjov).md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -113,7 +113,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "5. semester/MLA/Lecture/MLA - Lecture man - 36.md",
+                "file": "5. semester/MLA/Wiki/Markov (Mark) & Chebyshev (Chebysjov).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -130,7 +130,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "5. semester/MLA/Lecture/MLA - Lecture man - 36.md",
+                "file": "5. semester/MLA/Wiki/Markov (Mark) & Chebyshev (Chebysjov).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -142,7 +142,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "5. semester/MLA/Lecture/MLA - Lecture man - 36.md"
+                "file": "5. semester/MLA/Wiki/Markov (Mark) & Chebyshev (Chebysjov).md"
               }
             }
           },
@@ -196,51 +196,86 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "23ea683fc4398039",
+  "floating": {
+    "id": "ce41cd80a6ec4e49",
+    "type": "floating",
+    "children": [
+      {
+        "id": "1e782e03dd2f2bc5",
+        "type": "window",
+        "children": [
+          {
+            "id": "03333fc78d5b349c",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "600b1baedbc85493",
+                "type": "leaf",
+                "state": {
+                  "type": "excalidraw",
+                  "state": {
+                    "file": "Excalidraw/02-09-24 15.23.25.excalidraw.md"
+                  }
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "vertical",
+        "x": 448,
+        "y": 156,
+        "width": 1024,
+        "height": 800,
+        "maximize": true,
+        "zoom": 2.5
+      }
+    ]
+  },
+  "active": "1d3fd2185afe77bc",
   "lastOpenFiles": [
+    "4. semester/RAD/RAD (2-3) Moments and Deviation.md",
+    "4. semester/RAD/RAD (1) RQS, Min-Cut.md",
+    "2. semester/Softwareudvikling (SU)/guides/CSharpStyle.md",
+    "Excalidraw/02-09-24 15.23.25.excalidraw.md",
+    "5. semester/MLA/Lecture/MLA - Lecture man - 36.md",
+    "5. semester/MLA/Wiki/Validation.md",
+    "5. semester/MLA/Wiki/KNN (K nearest neighbor).md",
+    "Untitled.md",
+    "5. semester/MLA/Wiki/Markov (Mark) & Chebyshev (Chebysjov).md",
+    "4. semester/RAD/RAD (2-3) Moments and Deviation.pdf",
+    "4. semester/RAD/RAD (4) Tail inequalities, chernoff, set balancing.md",
+    "Weekly notes/Uge 36 - 2024.md",
+    "Misc/Templates/Weekly notes.md",
+    "Weekly notes/Uge 36 - 2023.md",
+    "Uge 36 - 2024.md",
+    "Weekly notes/Uge 47 - 2023.md",
+    "Misc/DIS projekt.md",
+    "2_samtale copy.html",
+    "2_samtale.pdf",
+    "2_samtale.html",
+    "Misc/MLA lecture 1.md",
+    "Misc/Pasted image 20240613143345.png",
+    "Weekly notes/Pasted image 20240605144601.png",
     "5. semester/MLA/Wiki",
     "5. semester/MLA/Reading",
-    "5. semester/MLA/Lecture/MLA - Lecture man - 36.md",
     "Misc/Templates/Compsys.md",
     "Misc/Templates/MLA.md",
-    "Untitled.md",
+    "Misc/Untitled.md",
     "5. semester/MLA/Lecture",
     "5. semester/MLA",
     "5. semester/MLA",
-    "MLA lecture 1.md",
     "Misc/Templates/AD.md",
-    "RAD/RAD (1) RQS, Min-Cut.md",
     "5. semester",
-    "RAD/rad.zip",
-    "RAD/zirYrMdV",
-    "RAD/RAD (1) RQS, Min-Cut.pdf",
-    "RAD/RAD (2-3) Moments and Deviation.md",
-    "RAD/RAD (2-3) Moments and Deviation.pdf",
     "4. semester/Algoritmer og datastrukturer/Randomenisering/3. Moments and Deviations.md",
     "3. semester/Sandsynlighedsregning og statistik(SS)/SS Eksamens noter.md",
-    "RAD/RAD_(4).pdf",
-    "RAD/RAD (5) Hashing.md",
-    "RAD/RAD (6-7) Basic count sketch.md",
-    "RAD/RAD (4) Tail inequalities, chernoff, set balancing.md",
-    "Pasted image 20240616145439.png",
-    "Pasted image 20240616145023.png",
-    "Pasted image 20240616143942.png",
-    "Pasted image 20240614160453.png",
+    "4. semester/RAD/RAD (5) Hashing.md",
+    "4. semester/RAD/RAD (6-7) Basic count sketch.md",
+    "Misc/Pasted image 20240616145439.png",
+    "Misc/Pasted image 20240616145023.png",
+    "Misc/Pasted image 20240616143942.png",
+    "Misc/Pasted image 20240614160453.png",
     "2. semester/Softwareudvikling (SU)/Coupling.md",
-    "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture Tue - 11.md",
-    "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture Tue - 10.md",
-    "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture Tue - 9.md",
-    "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture Tue - 7.md",
-    "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture Tue - 6.md",
-    "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture Mon - 11.md",
-    "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture Mon - 9.md",
-    "2. semester/Softwareudvikling (SU)/Lecture/SU - Lecture Mon - 7.md",
-    "2. semester/Softwareudvikling (SU)/Reading/SU - Reading for week 10.md",
-    "2. semester/Softwareudvikling (SU)/Reading/SU - Reading for week 7.md",
-    "2. semester/Softwareudvikling (SU)/Reading/SU - Reading for week 6.md",
-    "Pasted image 20240613162613.png",
-    "Pasted image 20240613143345.png",
-    "Weekly notes/Pasted image 20240605144601.png",
+    "Misc/Pasted image 20240613162613.png",
     "Misc/åBilleder/Pasted image 20240406183233.png",
     "Misc/kurser.png",
     "Misc/åBilleder/Pasted image 20240121161630.png",
