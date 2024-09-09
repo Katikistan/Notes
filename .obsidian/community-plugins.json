@@ -26,5 +26,6 @@
   "execute-code",
   "obsidian-custom-file-extensions-plugin",
   "obsidian-imgur-plugin",
-  "obsidian-pandoc"
+  "obsidian-pandoc",
+  "obsidian-csv-table"
 ]
